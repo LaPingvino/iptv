@@ -515,8 +515,8 @@ https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_adv_example_
 #EXTINF:-1 tvg-id="HDR10Atmos4K.ref@UHD" tvg-name="HDR10 Dolby Atmos 4K" group-title="Diag",4K UHD • HDR10 & Dolby Vision / Atmos
 https://devstreaming-cdn.apple.com/videos/streaming/examples/adv_dv_atmos/main.m3u8
 
-#EXTINF:-1 tvg-id="Akamai1080p60.ref@HD" tvg-name="Akamai 1080p60 Reference" group-title="Diag",Akamai 1080p60 Multi-Bitrate Ladder
-https://cph-p2p-msl.akamaized.net/hls/live/2000341/test/master.m3u8
+#EXTINF:-1 tvg-id="BitrateLadder1080p60.ref@HD" tvg-name="1080p60 Bitrate Ladder" group-title="Diag",1080p60 Multi-Bitrate Adaptive Ladder
+https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8
 
 #EXTINF:-1 tvg-id="UnifiedTimecode.ref" tvg-name="Unified Timecode Test" group-title="Diag",Unified Streaming • Timecode & SCTE-35
 https://demo.unified-streaming.com/k8s/live/stable/scte35.isml/.m3u8
