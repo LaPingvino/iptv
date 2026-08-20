@@ -1,3 +1,8 @@
+- name: Gaming 24/7 (Auto-Live Streamer)
+  group: Gaming
+  tvg_id: GamingAutoLive.tv
+  tvg_name: Gaming 24/7 Auto-Live
+  url: https://kiefte.eu/iptv/gaming/live
 - name: Speedrun (24/7 Speedrun.com)
   group: Gaming
   tvg_id: Speedrun.tv

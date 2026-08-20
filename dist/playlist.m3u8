@@ -596,6 +596,9 @@ http://capeant.antfarm.co.za:8000/Bosveld
 #EXTINF:-1 tvg-id="FineMusicRadio.za" tvg-name="Fine Music Radio" group-title="Rádio Global" radio="true",Fine Music Radio (Cape Town Classical)
 https://edge.iono.fm/xhls/fmr_live_high.m3u8
 
+#EXTINF:-1 tvg-id="GamingAutoLive.tv" tvg-name="Gaming 24/7 Auto-Live" group-title="Gaming",Gaming 24/7 (Auto-Live Streamer)
+https://kiefte.eu/iptv/gaming/live
+
 #EXTINF:-1 tvg-id="Speedrun.tv" tvg-name="Speedrun" group-title="Gaming",Speedrun (24/7 Speedrun.com)
 https://kiefte.eu/iptv/twitch/speedrun
 
