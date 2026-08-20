@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-IPTV Live Bridge for Streamlink (Twitch, YouTube Live, Kick, etc.) - v3.3.0
-Multi-Game Aggregator & Social/Community-First IPTV Live Gateway.
+IPTV Live Bridge for Streamlink (Twitch, YouTube Live, Kick, etc.) - v3.4.0
+Smart Quality-Filtered, Multi-Game & Social/Community-First IPTV Live Gateway.
 
 Features:
 - Transparent HLS proxying (200 OK)
-- Multi-Game Aggregator: /twitch/games/<game1>+<game2> or /twitch/group/modern-tetris
-  Queries multiple distinct titles in parallel and streams the #1 top broadcaster!
-- Dynamic Game Directory: /twitch/game/<name> (e.g. NES Tetris, Celeste, Portal, Blue Prince)
+- Quality & Minimum Viewer Threshold: Ignores 1-viewer AFK/desktop screens and seeks real active broadcasts
+- Multi-Game Aggregator: /twitch/games/<g1>+<g2> or /twitch/group/modern-tetris
+- Curated Champion & Tournament Priority for Classic Tetris
 - 5-Tier Autonomous Social/Community Fallback Engine
 - Full GET, HEAD, and OPTIONS support
 """
@@ -33,6 +33,7 @@ HOST = os.environ.get("BRIDGE_HOST", "0.0.0.0")
 PORT = int(os.environ.get("BRIDGE_PORT", "7555"))
 QUALITY = os.environ.get("BRIDGE_QUALITY", "best")
 CACHE_TTL = int(os.environ.get("BRIDGE_CACHE_TTL", "15"))
+MIN_VIEWER_THRESHOLD = int(os.environ.get("BRIDGE_MIN_VIEWERS", "3"))
 
 # In-memory cache: url -> (resolved_url, timestamp)
 stream_cache = {}
@@ -47,6 +48,19 @@ GAME_GROUPS = {
 
 # Well-known Creator Affinity & Collaborator Circles (Tier 1B)
 CREATOR_CIRCLES = {
+    "classictetris": ["dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "classictetris2", "classictetris3", "classictetris4", "harddrop", "wumbotize", "doremy"],
+    "classictetris2": ["classictetris", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "classictetris3", "classictetris4"],
+    "classictetris3": ["classictetris", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "classictetris2", "classictetris4"],
+    "classictetris4": ["classictetris", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "classictetris2", "classictetris3"],
+    "vinesandwillows": ["wumbotize", "doremy", "harddrop", "dogplayingtetris", "fractal", "carrarium", "ambercyprian", "smallant", "speedrun"],
+    "wumbotize": ["doremy", "harddrop", "dogplayingtetris", "fractal", "speedrun"],
+    "doremy": ["wumbotize", "harddrop", "dogplayingtetris", "fractal", "speedrun"],
+    "harddrop": ["wumbotize", "doremy", "dogplayingtetris", "fractal", "classictetris", "speedrun"],
+    "dogplayingtetris": ["fractal", "ericicx", "alex_t", "bluescuti", "classictetris", "wumbotize"],
+    "ericicx": ["dogplayingtetris", "fractal", "alex_t", "bluescuti", "classictetris"],
+    "fractal": ["dogplayingtetris", "ericicx", "alex_t", "bluescuti", "classictetris"],
+    "alex_t": ["dogplayingtetris", "fractal", "ericicx", "bluescuti", "classictetris"],
+    "bluescuti": ["dogplayingtetris", "fractal", "ericicx", "alex_t", "classictetris"],
     "ryukahr": ["tamthegamer", "dgr_dave", "smallant", "thabeast721", "aurateur", "grandpoobear"],
     "tamthegamer": ["ryukahr", "elanaorama", "smallant", "dgr_dave"],
     "carlsagan42": ["juzcook", "dgr_dave", "grandpoobear", "thabeast721", "aurateur"],
@@ -61,13 +75,10 @@ CREATOR_CIRCLES = {
     "simpleflips": ["thabeast721", "grandpoobear", "smallant", "carlsagan42"],
     "mitchflowerpower": ["thabeast721", "grandpoobear", "speedrun", "aurateur"],
     "failstream": ["carlsagan42", "juzcook", "aurateur", "grandpoobear"],
-    "carrarium": ["tgh_sr", "speedrun", "gamesdonequick", "esamarathon"],
-    "tgh_sr": ["carrarium", "speedrun", "gamesdonequick", "esamarathon"],
-    "classictetris": ["classictetris2", "classictetris3", "classictetris4", "classictetrisleague"],
-    "classictetris2": ["classictetris", "classictetris3", "classictetris4", "classictetrisleague"],
-    "classictetris3": ["classictetris", "classictetris2", "classictetris4", "classictetrisleague"],
-    "classictetris4": ["classictetris", "classictetris2", "classictetris3", "classictetrisleague"],
-    "vinesandwillows": ["wumbotize", "doremy", "carrarium", "ambercyprian", "smallant", "speedrun"],
+    "carrarium": ["tgh_sr", "ambercyprian", "msushi", "speedrun", "gamesdonequick", "esamarathon"],
+    "tgh_sr": ["carrarium", "ambercyprian", "msushi", "speedrun", "gamesdonequick", "esamarathon"],
+    "ambercyprian": ["tgh_sr", "carrarium", "msushi", "speedrun"],
+    "msushi": ["carrarium", "tgh_sr", "ambercyprian", "speedrun"],
     "gamesdonequick": ["esamarathon", "speedrun", "tasvideos"],
     "esamarathon": ["speedrun", "gamesdonequick", "tasvideos"],
     "speedrun": ["esamarathon", "gamesdonequick", "tasvideos"],
@@ -83,7 +94,7 @@ COMMUNITY_ADJACENT_GAMES = {
     "celeste": ["super meat boy", "hollow knight", "pizza tower", "retro"],
     "portal": ["portal 2", "the talos principle", "half-life 2"],
     "portal 2": ["portal", "the talos principle", "half-life 2"],
-    "tetris": ["tetr.io", "tetris effect: connected", "tetris 99", "retro"],
+    "tetris": ["tetr.io", "tetris effect: connected", "tetris effect", "tetris 99", "retro"],
     "tetr.io": ["tetris effect: connected", "tetris", "puyo puyo tetris 2"],
     "planet coaster 2": ["planet coaster", "rollercoaster tycoon 2", "cities: skylines ii", "colony survival"],
     "darkest dungeon": ["darkest dungeon ii", "slay the spire", "hades ii", "roguelike"],
@@ -93,7 +104,7 @@ COMMUNITY_ADJACENT_GAMES = {
 ROMHACK_KEYWORDS = [
     "romhack", "hack", "kaizo", "smwc", "smwcentral", "lunar magic",
     "dram", "gauntlet", "precision", "item abuse", "shell", "blind",
-    "practice", "casual romhack", "mod", "custom", "nes", "rolling", "hypertap"
+    "practice", "casual romhack", "mod", "custom", "nes", "rolling", "hypertap", "ctwc"
 ]
 
 session = streamlink.Streamlink()
@@ -130,10 +141,10 @@ def resolve_stream(target_url, quality=QUALITY):
         logger.error(f"Error resolving {target_url}: {e}")
         return None
 
-def get_top_streamer_across_multi_games(game_names, bias=None, exclude_login=None):
-    """Queries Twitch across multiple game titles in parallel and returns the #1 highest-viewed broadcaster."""
+def get_top_streamer_across_multi_games(game_names, bias=None, exclude_login=None, min_viewers=MIN_VIEWER_THRESHOLD):
+    """Queries Twitch across multiple game titles in parallel, filtering out 1-viewer AFK desktop streams."""
     candidates = []
-    preferred_keywords = ROMHACK_KEYWORDS if bias == "romhack" or bias == "nes" else []
+    preferred_keywords = ROMHACK_KEYWORDS if bias in ["romhack", "nes"] else []
     if bias and bias not in ["romhack", "nes", "none"]:
         preferred_keywords = [k.strip().lower() for k in bias.split(",")]
         
@@ -142,7 +153,7 @@ def get_top_streamer_across_multi_games(game_names, bias=None, exclude_login=Non
         query GetGameStreams($name: String!) {
           game(name: $name) {
             name
-            streams(first: 15) {
+            streams(first: 20) {
               edges {
                 node {
                   viewersCount
@@ -177,6 +188,8 @@ def get_top_streamer_across_multi_games(game_names, bias=None, exclude_login=Non
                     if exclude_login and b_login and b_login.lower() == exclude_login.lower():
                         continue
                     
+                    viewers = node.get("viewersCount", 0)
+                    # Filter out low-quality/AFK 1-viewer streams unless no other option
                     title = node.get("title", "").lower()
                     tags = [t.get("name", "").lower() for t in node.get("freeformTags", [])]
                     all_text = title + " " + " ".join(tags)
@@ -184,7 +197,7 @@ def get_top_streamer_across_multi_games(game_names, bias=None, exclude_login=Non
                     
                     candidates.append({
                         "login": b_login,
-                        "viewers": node.get("viewersCount", 0),
+                        "viewers": viewers,
                         "title": node.get("title", ""),
                         "game": game.get("name"),
                         "has_bias": has_bias
@@ -195,17 +208,21 @@ def get_top_streamer_across_multi_games(game_names, bias=None, exclude_login=Non
     if not candidates:
         return None
 
-    # Sort with bias priority if applicable, then by viewer count
+    # Filter candidates with >= min_viewers if any exist
+    quality_candidates = [c for c in candidates if c["viewers"] >= min_viewers]
+    active_pool = quality_candidates if quality_candidates else candidates
+
+    # If bias given and matching quality streams exist
     if preferred_keywords:
-        biased = [c for c in candidates if c["has_bias"]]
+        biased = [c for c in active_pool if c["has_bias"]]
         if biased:
             biased.sort(key=lambda x: x["viewers"], reverse=True)
             top = biased[0]
             logger.info(f"Top Multi-Game BIAS Stream ({bias}): {top['login']} ({top['viewers']} viewers | {top['game']}) - {top['title']}")
             return top["login"]
 
-    candidates.sort(key=lambda x: x["viewers"], reverse=True)
-    top = candidates[0]
+    active_pool.sort(key=lambda x: x["viewers"], reverse=True)
+    top = active_pool[0]
     logger.info(f"Top Multi-Game Stream: {top['login']} ({top['viewers']} viewers | {top['game']}) - {top['title']}")
     return top["login"]
 
@@ -214,12 +231,22 @@ def find_autonomous_fallback_for_channel(channel_login):
     Tiered social & community discovery for ANY offline channel on Twitch:
     1. Tier 1A: Check Official Twitch Team live members
     2. Tier 1B: Check Creator Social/Friend Circles
-    3. Tier 2: Query streamer's last played game category (with Romhack bias)
-    4. Tier 3: Query community-adjacent game categories
+    3. Tier 2: Query streamer's last played game category (with Romhack bias & viewer threshold)
+    4. Tier 3: Query community-adjacent game categories (Modern Tetris, SMW, etc.)
     5. Tier 4: Speedrun.com 24/7 restream
     """
     req_clean = channel_login.lower().strip()
     
+    # Tier 1B Check: Creator Social & Friend Circle (Fast local check)
+    if req_clean in CREATOR_CIRCLES:
+        for friend in CREATOR_CIRCLES[req_clean]:
+            url = f"https://www.twitch.tv/{friend}"
+            resolved = resolve_stream(url)
+            if resolved:
+                logger.info(f"Tier 1B (Social Circle) fallback for {req_clean} -> {friend}")
+                return friend, resolved
+
+    # GraphQL Query for User context & primaryTeam
     raw_query = """
     query GetUserContext($login: String!) {
       user(login: $login) {
@@ -279,23 +306,14 @@ def find_autonomous_fallback_for_channel(channel_login):
                     logger.info(f"Tier 1A (Twitch Team '{team.get('displayName')}') fallback for {req_clean} -> {m_login}")
                     return m_login, resolved
 
-    # Tier 1B: Creator Social & Friend Circle
-    if req_clean in CREATOR_CIRCLES:
-        for friend in CREATOR_CIRCLES[req_clean]:
-            url = f"https://www.twitch.tv/{friend}"
-            resolved = resolve_stream(url)
-            if resolved:
-                logger.info(f"Tier 1B (Social Circle) fallback for {req_clean} -> {friend}")
-                return friend, resolved
-
-    # Tier 2: Same Game Category
+    # Tier 2: Same Game Category (with viewer threshold)
     if user:
         bs = user.get("broadcastSettings", {})
         game = bs.get("game")
         game_name = game.get("name") if game else None
         if game_name:
             logger.info(f"Tier 2 search: {channel_login} normally broadcasts '{game_name}'. Searching live streams...")
-            top_live_in_game = get_top_streamer_across_multi_games([game_name], exclude_login=req_clean)
+            top_live_in_game = get_top_streamer_across_multi_games([game_name], exclude_login=req_clean, min_viewers=3)
             if top_live_in_game:
                 url = f"https://www.twitch.tv/{top_live_in_game}"
                 resolved = resolve_stream(url)
@@ -307,7 +325,7 @@ def find_autonomous_fallback_for_channel(channel_login):
             g_clean = game_name.lower().strip()
             adjacent_list = COMMUNITY_ADJACENT_GAMES.get(g_clean, [])
             if adjacent_list:
-                top_adj = get_top_streamer_across_multi_games(adjacent_list, exclude_login=req_clean)
+                top_adj = get_top_streamer_across_multi_games(adjacent_list, exclude_login=req_clean, min_viewers=3)
                 if top_adj:
                     url = f"https://www.twitch.tv/{top_adj}"
                     resolved = resolve_stream(url)
@@ -371,7 +389,7 @@ class BridgeHandler(BaseHTTPRequestHandler):
             self.send_header("Access-Control-Allow-Origin", "*")
             self.end_headers()
             if not is_head:
-                self.wfile.write(b'{"status":"ok","service":"iptv-live-bridge","version":"3.3.0"}\n')
+                self.wfile.write(b'{"status":"ok","service":"iptv-live-bridge","version":"3.4.0"}\n')
             return
             
         # Serve local offline video segments if requested
@@ -403,7 +421,7 @@ class BridgeHandler(BaseHTTPRequestHandler):
         if path.startswith("twitch/group/") or path.startswith("group/"):
             group_name = path.split("/", 2)[-1].lower()
             games_list = GAME_GROUPS.get(group_name, [group_name])
-            top_streamer = get_top_streamer_across_multi_games(games_list, bias=bias)
+            top_streamer = get_top_streamer_across_multi_games(games_list, bias=bias, min_viewers=3)
             if top_streamer:
                 target_url = f"https://www.twitch.tv/{top_streamer}"
                 is_gaming = True
@@ -420,7 +438,7 @@ class BridgeHandler(BaseHTTPRequestHandler):
         elif path.startswith("twitch/games/") or path.startswith("games/"):
             raw_games = path.split("/", 2)[-1]
             games_list = [urllib.parse.unquote(g).strip() for g in raw_games.replace("+", ",").split(",")]
-            top_streamer = get_top_streamer_across_multi_games(games_list, bias=bias)
+            top_streamer = get_top_streamer_across_multi_games(games_list, bias=bias, min_viewers=3)
             if top_streamer:
                 target_url = f"https://www.twitch.tv/{top_streamer}"
                 is_gaming = True
@@ -432,12 +450,11 @@ class BridgeHandler(BaseHTTPRequestHandler):
         # 2. Single Game directory auto-resolver: /twitch/game/<name>
         elif path.startswith("twitch/game/") or path.startswith("game/"):
             game_name = path.split("/", 2)[-1]
-            # Check if game_name is an alias in GAME_GROUPS
             if game_name.lower() in GAME_GROUPS:
                 games_list = GAME_GROUPS[game_name.lower()]
-                top_streamer = get_top_streamer_across_multi_games(games_list, bias=bias)
+                top_streamer = get_top_streamer_across_multi_games(games_list, bias=bias, min_viewers=3)
             else:
-                top_streamer = get_top_streamer_across_multi_games([game_name], bias=bias)
+                top_streamer = get_top_streamer_across_multi_games([game_name], bias=bias, min_viewers=3)
                 
             if top_streamer:
                 target_url = f"https://www.twitch.tv/{top_streamer}"
@@ -499,7 +516,7 @@ class BridgeHandler(BaseHTTPRequestHandler):
                 logger.info(f"Stream '{requested_channel}' is OFFLINE. Discovering team/friend/community live streams...")
                 fallback_channel, fallback_url = find_autonomous_fallback_for_channel(requested_channel)
                 if fallback_url:
-                    logger.info(f"Routing offline {requested_channel} -> Social/Community fallback: {fallback_channel}")
+                    logger.info(f"Routing offline {requested_channel} -> Quality Social/Community fallback: {fallback_channel}")
                     self.serve_hls(fallback_url, is_head=is_head)
                     return
             
@@ -562,7 +579,7 @@ class BridgeHandler(BaseHTTPRequestHandler):
 def run():
     server_address = (HOST, PORT)
     httpd = HTTPServer(server_address, BridgeHandler)
-    logger.info(f"Starting Social Multi-Game Bridge v3.3 on http://{HOST}:{PORT}")
+    logger.info(f"Starting Quality Multi-Game Bridge v3.4 on http://{HOST}:{PORT}")
     try:
         httpd.serve_forever()
     except KeyboardInterrupt:
