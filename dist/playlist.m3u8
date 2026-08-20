@@ -184,9 +184,6 @@ https://streams2.sofast.tv/vglive-sk-231198/index.m3u8
 #EXTVLCOPT:http-referrer=https://portocanal.sapo.pt/
 https://pull-live-156-1.global.ssl.fastly.net/pc5865dc25400thmb-ea6bf03b14fa318f7133/pc1-jhrgyuoqe5865db-68tkgb14fa318f7133f03.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="LiveModeTV.pt" tvg-name="LiveMode TV" group-title="Desporto",LiveMode TV
-https://kiefte.eu/iptv/youtube/@LiveModeTV
-
 #EXTINF:-1 tvg-id="StudioBrussel.be" tvg-name="Studio Brussel Visual" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="Música & Video",Studio Brussel (Visual Radio)
 https://live.vrtcdn.be/groupb/live/450aa9d1-7173-47f3-aaaa-9701426f8ddd/live.isml/live.m3u8
 
@@ -520,6 +517,9 @@ https://kiefte.eu/iptv/youtube/@EurovisionSongContest
 
 #EXTINF:-1 tvg-id="NASATV.us@HD" tvg-name="NASA TV HD" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/NASA.png" group-title="Eventos ao Vivo",NASA TV HD (Lançamentos & Espaço)
 https://kiefte.eu/iptv/youtube/@NASA
+
+#EXTINF:-1 tvg-id="LiveModeTV.pt" tvg-name="LiveMode TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/LiveMode.png" group-title="Eventos ao Vivo",LiveMode TV (Desporto em Direto)
+https://kiefte.eu/iptv/youtube/@LiveModeTV
 
 #EXTINF:-1 tvg-id="TVManaMZ.mz" tvg-name="TV Maná Moçambique" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-Mocambique.png" group-title="Religião",TV Maná Moçambique
 https://w2.manasat.com/tvmana-mz/smil:tvmana-mz.smil/playlist.m3u8

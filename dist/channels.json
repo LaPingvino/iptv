@@ -411,13 +411,6 @@
     "http_origin": "https://portocanal.sapo.pt"
   },
   {
-    "name": "LiveMode TV",
-    "group": "Desporto",
-    "tvg_id": "LiveModeTV.pt",
-    "tvg_name": "LiveMode TV",
-    "url": "https://kiefte.eu/iptv/youtube/@LiveModeTV"
-  },
-  {
     "name": "Studio Brussel (Visual Radio)",
     "group": "Música & Video",
     "tvg_id": "StudioBrussel.be",
@@ -1250,6 +1243,14 @@
     "tvg_name": "NASA TV HD",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/NASA.png",
     "url": "https://kiefte.eu/iptv/youtube/@NASA"
+  },
+  {
+    "name": "LiveMode TV (Desporto em Direto)",
+    "group": "Eventos ao Vivo",
+    "tvg_id": "LiveModeTV.pt",
+    "tvg_name": "LiveMode TV",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/LiveMode.png",
+    "url": "https://kiefte.eu/iptv/youtube/@LiveModeTV"
   },
   {
     "name": "TV Maná Moçambique",
