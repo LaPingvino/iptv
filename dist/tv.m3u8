@@ -112,6 +112,9 @@ https://kiefte.eu/iptv/youtube/@NOS
 #EXTINF:-1 tvg-id="NOSJeugdjournaal.nl" tvg-name="NOS Jeugdjournaal" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nos.png" group-title="Notícias",NOS Jeugdjournaal (Live)
 https://kiefte.eu/iptv/youtube/@jeugdjournaal
 
+#EXTINF:-1 tvg-id="NHKWorldJapan.jp@HD" tvg-name="NHK World Japan" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nhkworld.png" group-title="Notícias",NHK World-Japan (English 1080p)
+https://media-tyo.hls.nhkworld.jp/hls/w/live/master.m3u8
+
 #EXTINF:-1 tvg-id="SportingTV.pt@HD" tvg-name="Sporting TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Sporting-TV.png" group-title="Desporto",Sporting TV
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3"
 #EXTVLCOPT:http-referrer=https://www.sporting.pt/
@@ -271,6 +274,9 @@ https://takeoff.jetstre.am/?account=atvijf&file=live&output=playlist.m3u8&protoc
 
 #EXTINF:-1 tvg-id="NHNieuws.nl@HD" tvg-name="NH Nieuws" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nhnieuws.png" group-title="Regional & Local",NH Nieuws (Noord-Holland)
 https://takeoff.jetstre.am/?account=nhnieuws&file=live&output=playlist.m3u8&protocol=https&service=wowza&type=live
+
+#EXTINF:-1 tvg-id="BruzzTV.be" tvg-name="BRUZZ TV" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/bruzz.png" group-title="Regional & Local",BRUZZ TV (Brussel)
+https://stream.bruzz.be/live/tv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="Arte.fr" tvg-name="ARTE" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/arte.png" group-title="Filmes & Docs",ARTE (Français / Deutsch)
 https://artesimulcast.akamaized.net/hls/live/2031003/artelive_fr/index.m3u8
@@ -464,6 +470,9 @@ https://kiefte.eu/iptv/twitch/game/Chess
 
 #EXTINF:-1 tvg-id="GeoGuessr.tv" tvg-name="GeoGuessr Live" group-title="Indie & Variety Gaming",GeoGuessr (World Exploration)
 https://kiefte.eu/iptv/twitch/game/GeoGuessr
+
+#EXTINF:-1 tvg-id="Trackmania.tv" tvg-name="Trackmania Live" group-title="Indie & Variety Gaming",Trackmania (Precision Racing Live)
+https://kiefte.eu/iptv/twitch/game/Trackmania
 
 #EXTINF:-1 tvg-id="TVGEuropa.es" tvg-name="Galicia TV Europa" group-title="Galiza",Galicia TV Europa (TVG)
 https://crtvg-europa.flumotion.cloud/playlist.m3u8

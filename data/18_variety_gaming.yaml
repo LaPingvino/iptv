@@ -48,3 +48,8 @@
   tvg_id: GeoGuessr.tv
   tvg_name: GeoGuessr Live
   url: https://kiefte.eu/iptv/twitch/game/GeoGuessr
+- name: Trackmania (Precision Racing Live)
+  group: Indie & Variety Gaming
+  tvg_id: Trackmania.tv
+  tvg_name: Trackmania Live
+  url: https://kiefte.eu/iptv/twitch/game/Trackmania

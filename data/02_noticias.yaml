@@ -97,3 +97,9 @@
   tvg_name: NOS Jeugdjournaal
   logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nos.png
   url: https://kiefte.eu/iptv/youtube/@jeugdjournaal
+- name: NHK World-Japan (English 1080p)
+  group: Notícias
+  tvg_id: NHKWorldJapan.jp@HD
+  tvg_name: NHK World Japan
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nhkworld.png
+  url: https://media-tyo.hls.nhkworld.jp/hls/w/live/master.m3u8
