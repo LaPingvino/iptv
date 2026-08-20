@@ -38,3 +38,13 @@
   tvg_id: DGR.tv
   tvg_name: DGR
   url: https://kiefte.eu/iptv/twitch/dgr_dave
+- name: Chess (Top Live Grandmaster)
+  group: Indie & Variety Gaming
+  tvg_id: Chess.tv
+  tvg_name: Chess Live
+  url: https://kiefte.eu/iptv/twitch/game/Chess
+- name: GeoGuessr (World Exploration)
+  group: Indie & Variety Gaming
+  tvg_id: GeoGuessr.tv
+  tvg_name: GeoGuessr Live
+  url: https://kiefte.eu/iptv/twitch/game/GeoGuessr

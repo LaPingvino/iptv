@@ -298,6 +298,12 @@ https://ott.tv5monde.com/Content/HLS/Live/channel(info)/index.m3u8
 #EXTINF:-1 tvg-id="KuriakosCine.pt" tvg-name="Kuriakos Cine" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Kuriakos-Cine.png" group-title="Filmes & Docs",Kuriakos Cine
 https://w2.manasat.com/kcine/kcine.smil/playlist.m3u8
 
+#EXTINF:-1 tvg-id="NASATV.us@HD" tvg-name="NASA TV" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nasatv.png" group-title="Filmes & Docs",NASA TV HD (Space & Science)
+https://ntv1.akamaized.net/hls/live/2014075/NASA-NTV1-HLS/master.m3u8
+
+#EXTINF:-1 tvg-id="TV5MondeEurope.fr" tvg-name="TV5Monde Europe" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tv5monde.png" group-title="Filmes & Docs",TV5Monde Europe (1080p)
+https://ott.tv5monde.com/Content/HLS/Live/channel(europe)/index.m3u8
+
 #EXTINF:-1 tvg-id="ARTV.pt" tvg-name="ARTV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/AR-TV.png" group-title="Cívico & Parlamento",ARTV (Canal Parlamento PT)
 #EXTVLCOPT:http-user-agent="Mozilla/5.0"
 https://playout175.livextend.cloud/livenlin4/_definst_/2liveartvpub2/playlist.m3u8
@@ -772,6 +778,12 @@ https://kiefte.eu/iptv/twitch/elanaorama
 
 #EXTINF:-1 tvg-id="DGR.tv" tvg-name="DGR" group-title="Indie & Variety Gaming",DGR (Mario Maker & Super Mario)
 https://kiefte.eu/iptv/twitch/dgr_dave
+
+#EXTINF:-1 tvg-id="Chess.tv" tvg-name="Chess Live" group-title="Indie & Variety Gaming",Chess (Top Live Grandmaster)
+https://kiefte.eu/iptv/twitch/game/Chess
+
+#EXTINF:-1 tvg-id="GeoGuessr.tv" tvg-name="GeoGuessr Live" group-title="Indie & Variety Gaming",GeoGuessr (World Exploration)
+https://kiefte.eu/iptv/twitch/game/GeoGuessr
 
 #EXTINF:-1 tvg-id="TVGEuropa.es" tvg-name="Galicia TV Europa" group-title="Galiza",Galicia TV Europa (TVG)
 https://crtvg-europa.flumotion.cloud/playlist.m3u8

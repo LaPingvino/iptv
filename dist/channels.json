@@ -713,6 +713,22 @@
     "url": "https://w2.manasat.com/kcine/kcine.smil/playlist.m3u8"
   },
   {
+    "name": "NASA TV HD (Space & Science)",
+    "group": "Filmes & Docs",
+    "tvg_id": "NASATV.us@HD",
+    "tvg_name": "NASA TV",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nasatv.png",
+    "url": "https://ntv1.akamaized.net/hls/live/2014075/NASA-NTV1-HLS/master.m3u8"
+  },
+  {
+    "name": "TV5Monde Europe (1080p)",
+    "group": "Filmes & Docs",
+    "tvg_id": "TV5MondeEurope.fr",
+    "tvg_name": "TV5Monde Europe",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tv5monde.png",
+    "url": "https://ott.tv5monde.com/Content/HLS/Live/channel(europe)/index.m3u8"
+  },
+  {
     "name": "ARTV (Canal Parlamento PT)",
     "group": "Cívico & Parlamento",
     "tvg_id": "ARTV.pt",
@@ -1895,6 +1911,20 @@
     "tvg_id": "DGR.tv",
     "tvg_name": "DGR",
     "url": "https://kiefte.eu/iptv/twitch/dgr_dave"
+  },
+  {
+    "name": "Chess (Top Live Grandmaster)",
+    "group": "Indie & Variety Gaming",
+    "tvg_id": "Chess.tv",
+    "tvg_name": "Chess Live",
+    "url": "https://kiefte.eu/iptv/twitch/game/Chess"
+  },
+  {
+    "name": "GeoGuessr (World Exploration)",
+    "group": "Indie & Variety Gaming",
+    "tvg_id": "GeoGuessr.tv",
+    "tvg_name": "GeoGuessr Live",
+    "url": "https://kiefte.eu/iptv/twitch/game/GeoGuessr"
   },
   {
     "name": "Galicia TV Europa (TVG)",
