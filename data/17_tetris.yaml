@@ -68,3 +68,8 @@
   tvg_id: BlueScuti.tv
   tvg_name: BlueScuti
   url: https://kiefte.eu/iptv/twitch/bluescuti
+- name: Anna D. (Tetris)
+  group: Tetris
+  tvg_id: AnnaD.tv
+  tvg_name: Anna D.
+  url: https://kiefte.eu/iptv/twitch/vinesandwillows

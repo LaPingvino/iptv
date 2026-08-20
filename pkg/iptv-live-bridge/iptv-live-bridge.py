@@ -67,6 +67,7 @@ CREATOR_CIRCLES = {
     "classictetris2": ["classictetris", "classictetris3", "classictetris4", "classictetrisleague"],
     "classictetris3": ["classictetris", "classictetris2", "classictetris4", "classictetrisleague"],
     "classictetris4": ["classictetris", "classictetris2", "classictetris3", "classictetrisleague"],
+    "vinesandwillows": ["wumbotize", "doremy", "carrarium", "ambercyprian", "smallant", "speedrun"],
     "gamesdonequick": ["esamarathon", "speedrun", "tasvideos"],
     "esamarathon": ["speedrun", "gamesdonequick", "tasvideos"],
     "speedrun": ["esamarathon", "gamesdonequick", "tasvideos"],

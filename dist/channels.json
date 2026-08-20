@@ -1720,6 +1720,13 @@
     "url": "https://kiefte.eu/iptv/twitch/bluescuti"
   },
   {
+    "name": "Anna D. (Tetris)",
+    "group": "Tetris",
+    "tvg_id": "AnnaD.tv",
+    "tvg_name": "Anna D.",
+    "url": "https://kiefte.eu/iptv/twitch/vinesandwillows"
+  },
+  {
     "name": "Gaming 24/7 (Auto-Live Streamer)",
     "group": "Indie & Variety Gaming",
     "tvg_id": "GamingAutoLive.tv",
@@ -1774,12 +1781,5 @@
     "tvg_id": "DGR.tv",
     "tvg_name": "DGR",
     "url": "https://kiefte.eu/iptv/twitch/dgr_dave"
-  },
-  {
-    "name": "Anna D.",
-    "group": "Indie & Variety Gaming",
-    "tvg_id": "AnnaD.tv",
-    "tvg_name": "Anna D.",
-    "url": "https://kiefte.eu/iptv/twitch/vinesandwillows"
   }
 ]

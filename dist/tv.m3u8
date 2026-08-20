@@ -419,6 +419,9 @@ https://kiefte.eu/iptv/twitch/alex_t
 #EXTINF:-1 tvg-id="BlueScuti.tv" tvg-name="BlueScuti" group-title="Tetris",BlueScuti (NES Tetris Crash Record)
 https://kiefte.eu/iptv/twitch/bluescuti
 
+#EXTINF:-1 tvg-id="AnnaD.tv" tvg-name="Anna D." group-title="Tetris",Anna D. (Tetris)
+https://kiefte.eu/iptv/twitch/vinesandwillows
+
 #EXTINF:-1 tvg-id="GamingAutoLive.tv" tvg-name="Gaming 24/7 Auto-Live" group-title="Indie & Variety Gaming",Gaming 24/7 (Auto-Live Streamer)
 https://kiefte.eu/iptv/gaming/live
 
@@ -442,6 +445,3 @@ https://kiefte.eu/iptv/twitch/elanaorama
 
 #EXTINF:-1 tvg-id="DGR.tv" tvg-name="DGR" group-title="Indie & Variety Gaming",DGR (Mario Maker & Super Mario)
 https://kiefte.eu/iptv/twitch/dgr_dave
-
-#EXTINF:-1 tvg-id="AnnaD.tv" tvg-name="Anna D." group-title="Indie & Variety Gaming",Anna D.
-https://kiefte.eu/iptv/twitch/vinesandwillows
