@@ -9,7 +9,7 @@
   tvg_id: DasErste.de
   tvg_name: Das Erste
   logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Das-Erste.png
-  url: https://daserste-live.ard-mcdn.de/daserste/live/hls/de/master.m3u8
+  url: https://daserste-live.ard-mcdn.de/daserste/live/hls/int/master.m3u8
 - name: ZDF (Germany)
   group: Filmes & Docs
   tvg_id: ZDF.de
