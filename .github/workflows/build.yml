@@ -1,12 +1,8 @@
 name: Build & Validate IPTV Playlists
 
 on:
-  push:
-    branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
   schedule:
-    # Run every Sunday at 04:00 UTC
+    # Run every Sunday at 04:00 UTC to refresh EPG & check stream health
     - cron: '0 4 * * 0'
   workflow_dispatch:
 
@@ -31,23 +27,22 @@ jobs:
           python -m pip install --upgrade pip
           pip install pyyaml
 
-      - name: Run Playlist Generator
+      - name: Run Playlist Generator & Fetch EPG
         run: |
           python src/builder.py
 
-      - name: Validate Public Streams (Non-PT geoblocked)
+      - name: Validate Public Streams
         run: |
           python src/validator.py --workers 16
 
-      - name: Commit and push generated playlists if changed
-        if: github.event_name != 'pull_request'
+      - name: Commit and push updated EPG & playlists if changed
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add dist/
           if git diff --staged --quiet; then
-            echo "No changes in generated playlists."
+            echo "No changes in generated files."
           else
-            git commit -m "Auto-generate IPTV playlists & JSON [skip ci]"
+            git commit -m "Weekly refresh: IPTV playlists & EPG data [skip ci]"
             git push
           fi

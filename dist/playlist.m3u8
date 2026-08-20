@@ -133,6 +133,11 @@ https://mvg-mv-xumo.otteravision.com/mvg/mv/mv.m3u8
 #EXTINF:-1 tvg-id="NauticalChannel.fr@HD" tvg-name="Nautical Channel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Nautical-Channel.png" group-title="Desporto",Nautical Channel
 https://streams2.sofast.tv/vglive-sk-231198/index.m3u8
 
+#EXTINF:-1 tvg-id="PortoCanal.pt@HD" tvg-name="Porto Canal" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Porto-Canal.png" group-title="Desporto",Porto Canal
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3"
+#EXTVLCOPT:http-referrer=https://portocanal.sapo.pt/
+https://video-auth6.iol.pt/live_portocanal/live_portocanal/playlist.m3u8
+
 #EXTINF:-1 tvg-id="StudioBrussel.be" tvg-name="Studio Brussel Visual" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="Música & Video",Studio Brussel (Visual Radio)
 https://live.vrtcdn.be/groupb/live/450aa9d1-7173-47f3-aaaa-9701426f8ddd/live.isml/live.m3u8
 
@@ -264,11 +269,6 @@ https://takeoff.jetstre.am/?account=atvijf&file=live&output=playlist.m3u8&protoc
 
 #EXTINF:-1 tvg-id="NHNieuws.nl@HD" tvg-name="NH Nieuws" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nhnieuws.png" group-title="Regional & Local",NH Nieuws (Noord-Holland)
 https://takeoff.jetstre.am/?account=nhnieuws&file=live&output=playlist.m3u8&protocol=https&service=wowza&type=live
-
-#EXTINF:-1 tvg-id="PortoCanal.pt@HD" tvg-name="Porto Canal" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Porto-Canal.png" group-title="Regional & Local",Porto Canal
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3"
-#EXTVLCOPT:http-referrer=https://portocanal.sapo.pt/
-https://video-auth6.iol.pt/live_portocanal/live_portocanal/playlist.m3u8
 
 #EXTINF:-1 tvg-id="Arte.fr" tvg-name="ARTE" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/arte.png" group-title="Filmes & Docs",ARTE (Français / Deutsch)
 https://artesimulcast.akamaized.net/hls/live/2031003/artelive_fr/index.m3u8

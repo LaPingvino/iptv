@@ -61,3 +61,12 @@
   tvg_name: Nautical Channel
   logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Nautical-Channel.png
   url: https://streams2.sofast.tv/vglive-sk-231198/index.m3u8
+- name: Porto Canal
+  group: Desporto
+  tvg_id: PortoCanal.pt@HD
+  tvg_name: Porto Canal
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Porto-Canal.png
+  http_user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/149.0.0.0 Safari/537.3
+  http_referrer: https://portocanal.sapo.pt/
+  url: https://video-auth6.iol.pt/live_portocanal/live_portocanal/playlist.m3u8
