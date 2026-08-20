@@ -23,8 +23,8 @@
   logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SIC.png
   http_user_agent: Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
   http_origin: https://sic.pt
-  http_referrer: https://opto.sic.pt/
-  url: https://production-fast-sic.content.okast.tv/fa2e8c4385712f9ad2ea37aa47087612/channels/d9070446-8448-455e-8075-773b1ba12562/3421255e-5683-4927-99f5-ff8cb339462c/media_.m3u8
+  http_referrer: https://sic.pt/
+  url: https://sic.live.impresa.pt/sic1080p.m3u8
 - name: TVI
   group: PT Geral
   tvg_id: TVI.pt
