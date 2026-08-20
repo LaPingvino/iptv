@@ -596,11 +596,47 @@ http://capeant.antfarm.co.za:8000/Bosveld
 #EXTINF:-1 tvg-id="FineMusicRadio.za" tvg-name="Fine Music Radio" group-title="Rádio Global" radio="true",Fine Music Radio (Cape Town Classical)
 https://edge.iono.fm/xhls/fmr_live_high.m3u8
 
-#EXTINF:-1 tvg-id="GrandPooBear.tv" tvg-name="GrandPooBear" group-title="Gaming",GrandPooBear (Twitch)
-https://kiefte.eu/iptv/twitch/grandpoobear
-
-#EXTINF:-1 tvg-id="Speedrun.tv" tvg-name="Speedrun" group-title="Gaming",Speedrun (Twitch)
+#EXTINF:-1 tvg-id="Speedrun.tv" tvg-name="Speedrun" group-title="Gaming",Speedrun (24/7 Speedrun.com)
 https://kiefte.eu/iptv/twitch/speedrun
 
-#EXTINF:-1 tvg-id="GamesDoneQuick.tv" tvg-name="GamesDoneQuick" group-title="Gaming",GamesDoneQuick (Twitch)
+#EXTINF:-1 tvg-id="GamesDoneQuick.tv" tvg-name="GamesDoneQuick" group-title="Gaming",GamesDoneQuick (GDQ)
 https://kiefte.eu/iptv/twitch/gamesdonequick
+
+#EXTINF:-1 tvg-id="ESAMarathon.tv" tvg-name="ESAMarathon" group-title="Gaming",ESAMarathon (European Speedrunner Assembly)
+https://kiefte.eu/iptv/twitch/esamarathon
+
+#EXTINF:-1 tvg-id="TASVideos.tv" tvg-name="TASVideos" group-title="Gaming",TASVideos (Tool-Assisted Speedruns)
+https://kiefte.eu/iptv/twitch/tasvideos
+
+#EXTINF:-1 tvg-id="Ryukahr.tv" tvg-name="Ryukahr" group-title="Gaming",Ryukahr
+https://kiefte.eu/iptv/twitch/ryukahr
+
+#EXTINF:-1 tvg-id="TamTheGamer.tv" tvg-name="TamTheGamer" group-title="Gaming",TamTheGamer (Tammy)
+https://kiefte.eu/iptv/twitch/tamthegamer
+
+#EXTINF:-1 tvg-id="ElanaOrama.tv" tvg-name="ElanaOrama" group-title="Gaming",ElanaOrama
+https://kiefte.eu/iptv/twitch/elanaorama
+
+#EXTINF:-1 tvg-id="GrandPooBear.tv" tvg-name="GrandPooBear" group-title="Gaming",GrandPooBear
+https://kiefte.eu/iptv/twitch/grandpoobear
+
+#EXTINF:-1 tvg-id="ThaBeast721.tv" tvg-name="ThaBeast721" group-title="Gaming",ThaBeast721 (Kaizo & Mario 64)
+https://kiefte.eu/iptv/twitch/thabeast721
+
+#EXTINF:-1 tvg-id="CarlSagan42.tv" tvg-name="CarlSagan42" group-title="Gaming",CarlSagan42 (Kaizo & Troll Maker)
+https://kiefte.eu/iptv/twitch/carlsagan42
+
+#EXTINF:-1 tvg-id="Aurateur.tv" tvg-name="Aurateur" group-title="Gaming",Aurateur (Endless Mario Maker)
+https://kiefte.eu/iptv/twitch/aurateur
+
+#EXTINF:-1 tvg-id="PangaeaPanga.tv" tvg-name="PangaeaPanga" group-title="Gaming",PangaeaPanga (Kaizo SMW)
+https://kiefte.eu/iptv/twitch/pangaeapanga
+
+#EXTINF:-1 tvg-id="SimpleFlips.tv" tvg-name="SimpleFlips" group-title="Gaming",SimpleFlips (SM64 Romhacks)
+https://kiefte.eu/iptv/twitch/simpleflips
+
+#EXTINF:-1 tvg-id="MitchFlowerPower.tv" tvg-name="MitchFlowerPower" group-title="Gaming",MitchFlowerPower (SMB3 Speedruns)
+https://kiefte.eu/iptv/twitch/mitchflowerpower
+
+#EXTINF:-1 tvg-id="Failstream.tv" tvg-name="Failstream" group-title="Gaming",Failstream (Mario Maker Builds)
+https://kiefte.eu/iptv/twitch/failstream

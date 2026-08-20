@@ -1482,24 +1482,108 @@
     "url": "https://edge.iono.fm/xhls/fmr_live_high.m3u8"
   },
   {
-    "name": "GrandPooBear (Twitch)",
-    "group": "Gaming",
-    "tvg_id": "GrandPooBear.tv",
-    "tvg_name": "GrandPooBear",
-    "url": "https://kiefte.eu/iptv/twitch/grandpoobear"
-  },
-  {
-    "name": "Speedrun (Twitch)",
+    "name": "Speedrun (24/7 Speedrun.com)",
     "group": "Gaming",
     "tvg_id": "Speedrun.tv",
     "tvg_name": "Speedrun",
     "url": "https://kiefte.eu/iptv/twitch/speedrun"
   },
   {
-    "name": "GamesDoneQuick (Twitch)",
+    "name": "GamesDoneQuick (GDQ)",
     "group": "Gaming",
     "tvg_id": "GamesDoneQuick.tv",
     "tvg_name": "GamesDoneQuick",
     "url": "https://kiefte.eu/iptv/twitch/gamesdonequick"
+  },
+  {
+    "name": "ESAMarathon (European Speedrunner Assembly)",
+    "group": "Gaming",
+    "tvg_id": "ESAMarathon.tv",
+    "tvg_name": "ESAMarathon",
+    "url": "https://kiefte.eu/iptv/twitch/esamarathon"
+  },
+  {
+    "name": "TASVideos (Tool-Assisted Speedruns)",
+    "group": "Gaming",
+    "tvg_id": "TASVideos.tv",
+    "tvg_name": "TASVideos",
+    "url": "https://kiefte.eu/iptv/twitch/tasvideos"
+  },
+  {
+    "name": "Ryukahr",
+    "group": "Gaming",
+    "tvg_id": "Ryukahr.tv",
+    "tvg_name": "Ryukahr",
+    "url": "https://kiefte.eu/iptv/twitch/ryukahr"
+  },
+  {
+    "name": "TamTheGamer (Tammy)",
+    "group": "Gaming",
+    "tvg_id": "TamTheGamer.tv",
+    "tvg_name": "TamTheGamer",
+    "url": "https://kiefte.eu/iptv/twitch/tamthegamer"
+  },
+  {
+    "name": "ElanaOrama",
+    "group": "Gaming",
+    "tvg_id": "ElanaOrama.tv",
+    "tvg_name": "ElanaOrama",
+    "url": "https://kiefte.eu/iptv/twitch/elanaorama"
+  },
+  {
+    "name": "GrandPooBear",
+    "group": "Gaming",
+    "tvg_id": "GrandPooBear.tv",
+    "tvg_name": "GrandPooBear",
+    "url": "https://kiefte.eu/iptv/twitch/grandpoobear"
+  },
+  {
+    "name": "ThaBeast721 (Kaizo & Mario 64)",
+    "group": "Gaming",
+    "tvg_id": "ThaBeast721.tv",
+    "tvg_name": "ThaBeast721",
+    "url": "https://kiefte.eu/iptv/twitch/thabeast721"
+  },
+  {
+    "name": "CarlSagan42 (Kaizo & Troll Maker)",
+    "group": "Gaming",
+    "tvg_id": "CarlSagan42.tv",
+    "tvg_name": "CarlSagan42",
+    "url": "https://kiefte.eu/iptv/twitch/carlsagan42"
+  },
+  {
+    "name": "Aurateur (Endless Mario Maker)",
+    "group": "Gaming",
+    "tvg_id": "Aurateur.tv",
+    "tvg_name": "Aurateur",
+    "url": "https://kiefte.eu/iptv/twitch/aurateur"
+  },
+  {
+    "name": "PangaeaPanga (Kaizo SMW)",
+    "group": "Gaming",
+    "tvg_id": "PangaeaPanga.tv",
+    "tvg_name": "PangaeaPanga",
+    "url": "https://kiefte.eu/iptv/twitch/pangaeapanga"
+  },
+  {
+    "name": "SimpleFlips (SM64 Romhacks)",
+    "group": "Gaming",
+    "tvg_id": "SimpleFlips.tv",
+    "tvg_name": "SimpleFlips",
+    "url": "https://kiefte.eu/iptv/twitch/simpleflips"
+  },
+  {
+    "name": "MitchFlowerPower (SMB3 Speedruns)",
+    "group": "Gaming",
+    "tvg_id": "MitchFlowerPower.tv",
+    "tvg_name": "MitchFlowerPower",
+    "url": "https://kiefte.eu/iptv/twitch/mitchflowerpower"
+  },
+  {
+    "name": "Failstream (Mario Maker Builds)",
+    "group": "Gaming",
+    "tvg_id": "Failstream.tv",
+    "tvg_name": "Failstream",
+    "url": "https://kiefte.eu/iptv/twitch/failstream"
   }
 ]
