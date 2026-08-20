@@ -277,9 +277,6 @@ https://zdf-hls-18.akamaized.net/hls/live/2016501/dach/veryhigh/master.m3u8
 #EXTINF:-1 tvg-id="Phoenix.de" tvg-name="Phoenix" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/phoenix.png" group-title="Filmes & Docs",Phoenix (Dokumentationen)
 https://zdf-hls-19.akamaized.net/hls/live/2016502/de/veryhigh/master.m3u8
 
-#EXTINF:-1 tvg-id="TV5Monde.fr" tvg-name="TV5Monde" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tv5monde.png" group-title="Filmes & Docs",TV5Monde Info (Francophonie)
-https://ott.tv5monde.com/Content/HLS/Live/channel(info)/index.m3u8
-
 #EXTINF:-1 tvg-id="KuriakosCine.pt" tvg-name="Kuriakos Cine" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Kuriakos-Cine.png" group-title="Filmes & Docs",Kuriakos Cine
 https://w2.manasat.com/kcine/kcine.smil/playlist.m3u8
 
