@@ -30,7 +30,7 @@
   tvg_id: CNNBrasil.br@HD
   tvg_name: CNN Brasil
   logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CNN-Brasil.png
-  url: https://kiefte.eu/iptv/youtube/@CNNBrasil
+  url: https://d25usgadhphvwi.cloudfront.net/hls/main.m3u8
 - name: France 24 (Français)
   group: Notícias
   tvg_id: France24.fr
@@ -107,7 +107,7 @@
   group: Notícias
   tvg_id: TVBrasil.br@HD
   tvg_name: TV Brasil
-  url: https://kiefte.eu/iptv/youtube/@TVBrasil
+  url: https://tvbrasilinternacional-stream.ebc.com.br/index.m3u8
 - name: ABC News Australia
   group: Notícias
   tvg_id: ABCNews.au@HD

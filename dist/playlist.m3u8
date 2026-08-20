@@ -122,7 +122,7 @@ https://sicnot.live.impresa.pt/sicnot.m3u8
 https://github.com/LITUATUI/M3UPT/raw/main/M3U/CNN_Portugal.m3u8
 
 #EXTINF:-1 tvg-id="CNNBrasil.br@HD" tvg-name="CNN Brasil" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CNN-Brasil.png" group-title="Notícias",CNN Brasil
-https://kiefte.eu/iptv/youtube/@CNNBrasil
+https://d25usgadhphvwi.cloudfront.net/hls/main.m3u8
 
 #EXTINF:-1 tvg-id="France24.fr" tvg-name="France 24 Français" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png" group-title="Notícias",France 24 (Français)
 https://live.france24.com/hls/live/2037179/F24_FR_HI_HLS/master_5000.m3u8
@@ -161,7 +161,7 @@ https://kiefte.eu/iptv/youtube/@jeugdjournaal
 https://media-tyo.hls.nhkworld.jp/hls/w/live/master.m3u8
 
 #EXTINF:-1 tvg-id="TVBrasil.br@HD" tvg-name="TV Brasil" group-title="Notícias",TV Brasil (EBC)
-https://kiefte.eu/iptv/youtube/@TVBrasil
+https://tvbrasilinternacional-stream.ebc.com.br/index.m3u8
 
 #EXTINF:-1 tvg-id="ABCNews.au@HD" tvg-name="ABC News Australia" group-title="Notícias",ABC News Australia
 https://kiefte.eu/iptv/youtube/@abcnews
@@ -305,7 +305,7 @@ https://kiefte.eu/iptv/youtube/@NASA
 https://ott.tv5monde.com/Content/HLS/Live/channel(europe)/index.m3u8
 
 #EXTINF:-1 tvg-id="TVCultura.br@HD" tvg-name="TV Cultura" group-title="Filmes & Docs",TV Cultura (São Paulo)
-https://kiefte.eu/iptv/youtube/@tvcultura
+https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8
 
 #EXTINF:-1 tvg-id="XON.nl" tvg-name="XON Ede" group-title="Regional & Local",XON (Ede TV)
 https://ms7.mx-cd.net/tv/113-474263/EdeTV.smil/playlist.m3u8
