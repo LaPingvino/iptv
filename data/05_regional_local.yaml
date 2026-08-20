@@ -1,0 +1,99 @@
+- name: XON (Ede TV)
+  group: Regional & Local
+  tvg_id: XON.nl
+  tvg_name: XON Ede
+  logo: https://i.imgur.com/8QeA67e.png
+  url: https://ms7.mx-cd.net/tv/113-474263/EdeTV.smil/playlist.m3u8
+- name: Omroep Gelderland
+  group: Regional & Local
+  tvg_id: OmroepGelderland.nl@HD
+  tvg_name: Omroep Gelderland
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepgelderland.png
+  url: https://d2od87akyl46nm.cloudfront.net/live/omroepgelderland/tvgelderland-hls/index.m3u8
+- name: Omroep Brabant
+  group: Regional & Local
+  tvg_id: OmroepBrabant.nl@HD
+  tvg_name: Omroep Brabant
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepbrabant.png
+  url: https://d3slqp9xhts6qb.cloudfront.net/live/omroepbrabant/tv/index.m3u8
+- name: Omroep West
+  group: Regional & Local
+  tvg_id: OmroepWest.nl@HD
+  tvg_name: Omroep West
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepwest.png
+  url: https://d1axml5ozykh3g.cloudfront.net/live/omroepwest/tv/index.m3u8
+- name: Omroep Zeeland
+  group: Regional & Local
+  tvg_id: OmroepZeeland.nl@HD
+  tvg_name: Omroep Zeeland
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepzeeland.png
+  url: https://d3isaxd2t6q8zm.cloudfront.net/live/omroepzeeland/tv/index.m3u8
+- name: Omroep Flevoland
+  group: Regional & Local
+  tvg_id: OmroepFlevoland.nl@HD
+  tvg_name: Omroep Flevoland
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepflevoland.png
+  url: https://d5ms27yy6exnf.cloudfront.net/live/omroepflevoland/tv/index.m3u8
+- name: RTV Oost
+  group: Regional & Local
+  tvg_id: RTVOost.nl@HD
+  tvg_name: RTV Oost
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvoost.png
+  url: https://d34cg2bnc08ruf.cloudfront.net/live/rtvoost/tv/index.m3u8
+- name: RTV Rijnmond (Rotterdam)
+  group: Regional & Local
+  tvg_id: Rijnmond.nl@HD
+  tvg_name: RTV Rijnmond
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rijnmond.png
+  url: https://dcur8bjarl5c2.cloudfront.net/live/rijnmond/tv/index.m3u8
+- name: RTV Utrecht
+  group: Regional & Local
+  tvg_id: RTVUtrecht.nl@HD
+  tvg_name: RTV Utrecht
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvutrecht.png
+  url: https://d18rwjdhpr8dcw.cloudfront.net/live/rtvutrecht/rtvutrecht/index.m3u8
+- name: RTV Drenthe
+  group: Regional & Local
+  tvg_id: RTVDrenthe.nl@HD
+  tvg_name: RTV Drenthe
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvdrenthe.png
+  url: https://cdn.rtvdrenthe.nl/live/rtvdrenthe/tv/index.m3u8
+- name: RTV Noord
+  group: Regional & Local
+  tvg_id: RTVNoord.nl@HD
+  tvg_name: RTV Noord
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvnoord.png
+  url: https://media.rtvnoord.nl/live/rtvnoord/tv/index.m3u8
+- name: L1 TV (Limburg)
+  group: Regional & Local
+  tvg_id: L1.nl@HD
+  tvg_name: L1
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/l1.png
+  url: https://d34pj260kw1xmk.cloudfront.net/live/l1/tv/index.m3u8
+- name: Omrop Fryslân TV (Frysk)
+  group: Regional & Local
+  tvg_id: OmropFryslan.nl@HD
+  tvg_name: Omrop Fryslân
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omropfryslan.png
+  url: https://s-d15f8b0b.b.cdn.bluebillywig.com/live/omropfryslan/f8f68bd5/index.m3u8
+- name: AT5 (Amsterdam)
+  group: Regional & Local
+  tvg_id: AT5.nl@HD
+  tvg_name: AT5
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/at5.png
+  url: https://takeoff.jetstre.am/?account=atvijf&file=live&output=playlist.m3u8&protocol=https&service=wowza&type=live
+- name: NH Nieuws (Noord-Holland)
+  group: Regional & Local
+  tvg_id: NHNieuws.nl@HD
+  tvg_name: NH Nieuws
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nhnieuws.png
+  url: https://takeoff.jetstre.am/?account=nhnieuws&file=live&output=playlist.m3u8&protocol=https&service=wowza&type=live
+- name: Porto Canal
+  group: Regional & Local
+  tvg_id: PortoCanal.pt@HD
+  tvg_name: Porto Canal
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Porto-Canal.png
+  http_user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/149.0.0.0 Safari/537.3
+  http_referrer: https://portocanal.sapo.pt/
+  url: https://video-auth6.iol.pt/live_portocanal/live_portocanal/playlist.m3u8

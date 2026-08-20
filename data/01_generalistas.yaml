@@ -1,0 +1,92 @@
+- name: RTP 1
+  group: PT Geral
+  tvg_id: RTP1.pt@HD
+  tvg_name: RTP 1
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP1.png
+  http_user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/149.0.0.0 Safari/537.3
+  http_referrer: https://www.rtp.pt/
+  url: https://streaming-live.rtp.pt/livertp1/rtp1.smil/playlist.m3u8
+- name: RTP 2
+  group: PT Geral
+  tvg_id: RTP2.pt@HD
+  tvg_name: RTP 2
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP2.png
+  http_user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/149.0.0.0 Safari/537.3
+  http_referrer: https://www.rtp.pt/
+  url: https://streaming-live.rtp.pt/livertp2/rtp2.smil/playlist.m3u8
+- name: SIC
+  group: PT Geral
+  tvg_id: SIC.pt@HD
+  tvg_name: SIC
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SIC.png
+  http_user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/149.0.0.0 Safari/537.3
+  http_origin: https://optotv.sic.pt
+  http_referrer: https://optotv.sic.pt/
+  url: https://live-opto.impresa.pt/live/sic/sic.m3u8
+- name: TVI
+  group: PT Geral
+  tvg_id: TVI.pt@HD
+  tvg_name: TVI
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TVI.png
+  http_user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/149.0.0.0 Safari/537.3
+  http_origin: https://tviplayer.iol.pt
+  http_referrer: https://tviplayer.iol.pt/
+  url: https://video-auth1.iol.pt/live_tvi/live_tvi/playlist.m3u8
+- name: RTP Memória
+  group: PT Geral
+  tvg_id: RTPMemoria.pt@HD
+  tvg_name: RTP Memória
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Memoria.png
+  http_user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/149.0.0.0 Safari/537.3
+  http_referrer: https://www.rtp.pt/
+  url: https://streaming-live.rtp.pt/livertpmemoria/rtpmemoria.smil/playlist.m3u8
+- name: RTP Madeira
+  group: PT Geral
+  tvg_id: RTPMadeira.pt@HD
+  tvg_name: RTP Madeira
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Madeira.png
+  http_user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/149.0.0.0 Safari/537.3
+  http_referrer: https://www.rtp.pt/
+  url: https://streaming-live.rtp.pt/livertpmadeira/rtpmadeira.smil/playlist.m3u8
+- name: RTP Açores
+  group: PT Geral
+  tvg_id: RTPAcores.pt@HD
+  tvg_name: RTP Açores
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Acores.png
+  http_user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/149.0.0.0 Safari/537.3
+  http_referrer: https://www.rtp.pt/
+  url: https://streaming-live.rtp.pt/livertpacores/rtpacores.smil/playlist.m3u8
+- name: RTP África
+  group: PT Geral
+  tvg_id: RTPAfrica.pt@HD
+  tvg_name: RTP África
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Africa.png
+  http_user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/149.0.0.0 Safari/537.3
+  http_referrer: https://www.rtp.pt/
+  url: https://streaming-live.rtp.pt/livertpafrica/rtpafrica.smil/playlist.m3u8
+- name: TVM (Televisão de Moçambique)
+  group: MZ Geral
+  tvg_id: TVM.mz
+  tvg_name: TVM
+  logo: https://i.imgur.com/gKjW2tA.png
+  url: https://stream.tvm.co.mz/hls/tvm/playlist.m3u8
+- name: MNTV Moçambique
+  group: MZ Geral
+  tvg_id: MNTV.mz
+  tvg_name: MNTV
+  logo: https://i.imgur.com/nJgqKZs.png
+  url: https://www.khuwemultimedia.com/hls/mntv/mntv.m3u8
+- name: TV Vitória Moçambique
+  group: MZ Geral
+  tvg_id: TVVitoria.mz
+  tvg_name: TV Vitória
+  logo: https://i.imgur.com/Qh1sQo1.png
+  url: https://stmv1.srvif.com/tvvitoriamz/tvvitoriamz/playlist.m3u8

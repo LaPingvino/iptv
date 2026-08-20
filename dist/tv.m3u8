@@ -1,0 +1,283 @@
+#EXTM3U x-tvg-url="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/EPG/m3upt.xml.xz" url-tvg="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/EPG/m3upt.xml.xz"
+
+
+#EXTINF:-1 tvg-id="RTP1.pt@HD" tvg-name="RTP 1" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP1.png" group-title="PT Geral",RTP 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+#EXTVLCOPT:http-referrer=https://www.rtp.pt/
+https://streaming-live.rtp.pt/livertp1/rtp1.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="RTP2.pt@HD" tvg-name="RTP 2" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP2.png" group-title="PT Geral",RTP 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+#EXTVLCOPT:http-referrer=https://www.rtp.pt/
+https://streaming-live.rtp.pt/livertp2/rtp2.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="SIC.pt@HD" tvg-name="SIC" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SIC.png" group-title="PT Geral",SIC
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+#EXTVLCOPT:http-referrer=https://optotv.sic.pt/
+#EXTVLCOPT:http-origin=https://optotv.sic.pt
+https://live-opto.impresa.pt/live/sic/sic.m3u8
+
+#EXTINF:-1 tvg-id="TVI.pt@HD" tvg-name="TVI" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TVI.png" group-title="PT Geral",TVI
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+#EXTVLCOPT:http-referrer=https://tviplayer.iol.pt/
+#EXTVLCOPT:http-origin=https://tviplayer.iol.pt
+https://video-auth1.iol.pt/live_tvi/live_tvi/playlist.m3u8
+
+#EXTINF:-1 tvg-id="RTPMemoria.pt@HD" tvg-name="RTP Memória" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Memoria.png" group-title="PT Geral",RTP Memória
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+#EXTVLCOPT:http-referrer=https://www.rtp.pt/
+https://streaming-live.rtp.pt/livertpmemoria/rtpmemoria.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="RTPMadeira.pt@HD" tvg-name="RTP Madeira" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Madeira.png" group-title="PT Geral",RTP Madeira
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+#EXTVLCOPT:http-referrer=https://www.rtp.pt/
+https://streaming-live.rtp.pt/livertpmadeira/rtpmadeira.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="RTPAcores.pt@HD" tvg-name="RTP Açores" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Acores.png" group-title="PT Geral",RTP Açores
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+#EXTVLCOPT:http-referrer=https://www.rtp.pt/
+https://streaming-live.rtp.pt/livertpacores/rtpacores.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="RTPAfrica.pt@HD" tvg-name="RTP África" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Africa.png" group-title="PT Geral",RTP África
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+#EXTVLCOPT:http-referrer=https://www.rtp.pt/
+https://streaming-live.rtp.pt/livertpafrica/rtpafrica.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TVM.mz" tvg-name="TVM" tvg-logo="https://i.imgur.com/gKjW2tA.png" group-title="MZ Geral",TVM (Televisão de Moçambique)
+https://stream.tvm.co.mz/hls/tvm/playlist.m3u8
+
+#EXTINF:-1 tvg-id="MNTV.mz" tvg-name="MNTV" tvg-logo="https://i.imgur.com/nJgqKZs.png" group-title="MZ Geral",MNTV Moçambique
+https://www.khuwemultimedia.com/hls/mntv/mntv.m3u8
+
+#EXTINF:-1 tvg-id="TVVitoria.mz" tvg-name="TV Vitória" tvg-logo="https://i.imgur.com/Qh1sQo1.png" group-title="MZ Geral",TV Vitória Moçambique
+https://stmv1.srvif.com/tvvitoriamz/tvvitoriamz/playlist.m3u8
+
+#EXTINF:-1 tvg-id="RTP3.pt@HD" tvg-name="RTP 3" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP3.png" group-title="Notícias",RTP 3
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+#EXTVLCOPT:http-referrer=https://www.rtp.pt/
+https://streaming-live.rtp.pt/livertp3/rtp3.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="SICNoticias.pt@HD" tvg-name="SIC Notícias" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SIC-Noticias.png" group-title="Notícias",SIC Notícias
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+#EXTVLCOPT:http-referrer=https://optotv.sic.pt/
+#EXTVLCOPT:http-origin=https://optotv.sic.pt
+https://live-opto.impresa.pt/live/sicn/sicn.m3u8
+
+#EXTINF:-1 tvg-id="CNNPortugal.pt@HD" tvg-name="CNN Portugal" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CNN-Portugal.png" group-title="Notícias",CNN Portugal
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+#EXTVLCOPT:http-referrer=https://tviplayer.iol.pt/
+#EXTVLCOPT:http-origin=https://tviplayer.iol.pt
+https://video-auth1.iol.pt/live_cnn/live_cnn/playlist.m3u8
+
+#EXTINF:-1 tvg-id="CNNBrasil.br@HD" tvg-name="CNN Brasil" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CNN-Brasil.png" group-title="Notícias",CNN Brasil
+https://videos01.fabricahost.com.br/cnn/cnn.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="EuronewsPortuguese.fr@HD" tvg-name="Euronews (Português)" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png" group-title="Notícias",Euronews Português
+https://euronews-euronews-portuguese-1-pt.samsung.wurl.com/manifest/playlist.m3u8
+
+#EXTINF:-1 tvg-id="EuronewsEnglish.fr@HD" tvg-name="Euronews (English)" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png" group-title="Notícias",Euronews English
+https://euronews-euronews-world-1-eu.rakuten.wurl.com/manifest/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Canal11.pt@HD" tvg-name="Canal 11" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Canal11.png" group-title="Desporto",Canal 11
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+#EXTVLCOPT:http-referrer=https://canal11.pt/
+https://d10r248w3452pe.cloudfront.net/live/eds/canal11_clean/live.m3u8
+
+#EXTINF:-1 tvg-id="SportingTV.pt@HD" tvg-name="Sporting TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Sporting-TV.png" group-title="Desporto",Sporting TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+#EXTVLCOPT:http-referrer=https://www.sporting.pt/
+https://video-auth1.iol.pt/live_sporting/live_sporting/playlist.m3u8
+
+#EXTINF:-1 tvg-id="ABolaTV.pt@HD" tvg-name="A Bola TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/A-Bola-TV.png" group-title="Desporto",A Bola TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+#EXTVLCOPT:http-referrer=https://www.abola.pt/
+https://video-auth1.iol.pt/live_abolatv/live_abolatv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="RealMadridTV.es@HD" tvg-name="Real Madrid TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Real-Madrid-TV.png" group-title="Desporto",Real Madrid TV
+https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
+
+#EXTINF:-1 tvg-id="FIFAPlus.ch" tvg-name="FIFA+" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/FIFA-Plus.png" group-title="Desporto",FIFA+
+https://f7ccf7fc.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLXB0X0ZJRkFQbHVzUG9ydHVndWVzZV9ITFM/playlist.m3u8
+
+#EXTINF:-1 tvg-id="RedBullTV.at@HD" tvg-name="Red Bull TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Red-Bull-TV.png" group-title="Desporto",Red Bull TV
+https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
+
+#EXTINF:-1 tvg-id="SuperTennis.it@HD" tvg-name="SuperTennis" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SuperTennis.png" group-title="Desporto",SuperTennis
+https://live-embed.supertennix.hiway.media/restreamer/supertennix_client/gpu-a-c0-16/restreamer/outgest/aa3673f1-e178-44a9-a947-ef41db73211a/manifest.m3u8
+
+#EXTINF:-1 tvg-id="Motorvision.de@HD" tvg-name="Motorvision" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Motorvision.png" group-title="Desporto",Motorvision
+https://mvg-mv-xumo.otteravision.com/mvg/mv/mv.m3u8
+
+#EXTINF:-1 tvg-id="NauticalChannel.fr@HD" tvg-name="Nautical Channel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Nautical-Channel.png" group-title="Desporto",Nautical Channel
+https://streams2.sofast.tv/vglive-sk-231198/index.m3u8
+
+#EXTINF:-1 tvg-id="StudioBrussel.be" tvg-name="Studio Brussel Visual" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="Música & Video",Studio Brussel (Visual Radio)
+https://live.vrtcdn.be/groupb/live/450aa9d1-7173-47f3-aaaa-9701426f8ddd/live.isml/live.m3u8
+
+#EXTINF:-1 tvg-id="Qmusic.nl" tvg-name="Qmusic NL Visual" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Qmusic_logo_2019.svg/512px-Qmusic_logo_2019.svg.png" group-title="Música & Video",Qmusic NL Kijk Live (Visual Radio)
+https://stream.qmusic.nl/qmusic/videohls.m3u8
+
+#EXTINF:-1 tvg-id="DeluxeMusic.de@HD" tvg-name="DELUXE MUSIC" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Deluxe_Music_2013_Logo.svg/512px-Deluxe_Music_2013_Logo.svg.png" group-title="Música & Video",DELUXE MUSIC
+https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8
+
+#EXTINF:-1 tvg-id="DeluxeDance.de" tvg-name="DELUXE DANCE" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Deluxe_Music_2013_Logo.svg/512px-Deluxe_Music_2013_Logo.svg.png" group-title="Música & Video",DELUXE DANCE by Kontor
+https://sdn-global-live-streaming-packager-cache.3qsdn.com/64733/64733_264_live.m3u8
+
+#EXTINF:-1 tvg-id="DeluxeRap.de" tvg-name="DELUXE RAP" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Deluxe_Music_2013_Logo.svg/512px-Deluxe_Music_2013_Logo.svg.png" group-title="Música & Video",DELUXE RAP
+https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.m3u8
+
+#EXTINF:-1 tvg-id="DanceTV.nl" tvg-name="Dance TV" tvg-logo="https://i.imgur.com/v8tT94X.png" group-title="Música & Video",Dance TV
+https://m1b2.worldcast.tv/dancetelevisionone/2/dancetelevisionone.m3u8
+
+#EXTINF:-1 tvg-id="TraceToca.fr@HD" tvg-name="Trace Toca" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Toca.png" group-title="Música & Video",Trace Toca (Kizomba / Zouk / PALOP)
+https://channels.trace.plus/Traceprod/TOCA_hd/index.m3u8
+
+#EXTINF:-1 tvg-id="TraceAfrica.fr@HD" tvg-name="Trace Africa" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Africa.png" group-title="Música & Video",Trace Africa
+https://channels.trace.plus/Traceprod/AFRICA_FR_hd/index.m3u8
+
+#EXTINF:-1 tvg-id="TraceBrazuca.br@HD" tvg-name="Trace Brasil" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Brazuca.png" group-title="Música & Video",Trace Brasil
+https://amg01131-tracetv-tracebrazuca-xiaomi-vvr19.amagi.tv/playlist/amg01131-tracetv-tracebrazuca-xiaomi/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TraceNaija.ng@HD" tvg-name="Trace Naija" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Naija.png" group-title="Música & Video",Trace Naija (Afrobeats)
+https://channels.trace.plus/Traceprod/NAIJA_hd/index.m3u8
+
+#EXTINF:-1 tvg-id="TraceKitoko.fr@HD" tvg-name="Trace Kitoko" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Kitoko.png" group-title="Música & Video",Trace Kitoko (Lingala / Central Africa)
+https://channels.trace.plus/Traceprod/KITOKO_hd/index.m3u8
+
+#EXTINF:-1 tvg-id="TraceMziki.ke@HD" tvg-name="Trace Miziki" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Miziki.png" group-title="Música & Video",Trace Miziki (East Africa)
+https://channels.trace.plus/Traceprod/MZIKI_hd/index.m3u8
+
+#EXTINF:-1 tvg-id="TraceUrban.fr@HD" tvg-name="Trace Urban" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Urban.png" group-title="Música & Video",Trace Urban
+https://lightning-traceurban-samsungau.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TraceLatina.fr@HD" tvg-name="Trace Latina" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Latina.png" group-title="Música & Video",Trace Latina
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01131-tracetv-tracelatinaes-samsungspain/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TraceUK.uk@HD" tvg-name="Trace UK" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-UK.png" group-title="Música & Video",Trace UK
+https://channels.trace.plus/Traceprod/UK_FAST_hd/index.m3u8
+
+#EXTINF:-1 tvg-id="TraceGospel.fr@HD" tvg-name="Trace Gospel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Gospel.png" group-title="Música & Video",Trace Gospel
+https://channels.trace.plus/Traceprod/GOSPEL_FR/.m3u8
+
+#EXTINF:-1 tvg-id="XITE.nl@HD" tvg-name="XITE" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.png" group-title="Música & Video",XITE
+https://xite-rakuten.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="XITEHitsUK.uk@HD" tvg-name="XITE Hits UK" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.png" group-title="Música & Video",XITE Hits UK
+https://amg01243-xitenetworksint-hitsuk-samsunguk-mvovq.amagi.tv/playlist/amg01243-xitenetworksint-hitsuk-samsunguk/playlist.m3u8
+
+#EXTINF:-1 tvg-id="XITEHitsDE.de@HD" tvg-name="XITE Hits Germany" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.png" group-title="Música & Video",XITE Hits Germany
+https://d726x48n2pd5h.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-skxr1pazhltvp/XITE_Hits.m3u8
+
+#EXTINF:-1 tvg-id="Now70s.uk" tvg-name="Now 70s" tvg-logo="https://i.imgur.com/eB0rJ1W.png" group-title="Música & Video",Now 70s
+https://lightning-now70s-samsungnz.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Now80s.uk" tvg-name="Now 80s" tvg-logo="https://i.imgur.com/Z4w2Q2m.png" group-title="Música & Video",Now 80s
+https://lightning-now80s-samsungnz.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="NowRock.uk" tvg-name="Now Rock" tvg-logo="https://i.imgur.com/kP8z4K9.png" group-title="Música & Video",Now Rock
+https://lightning-now90s-samsungnz.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="RetroMusicTV.cz" tvg-name="Retro Music TV" tvg-logo="https://i.imgur.com/7bQ6p1X.png" group-title="Música & Video",Retro Music TV
+https://stream.mediawork.cz/retrotv/smil:retrotv2.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="4FunTV.pl@HD" tvg-name="4Fun TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/4Fun-TV.png" group-title="Música & Video",4Fun.TV
+https://stream.4fun.tv:8888/hls/4f_high/index.m3u8
+
+#EXTINF:-1 tvg-id="DeeJayTV.it@HD" tvg-name="DeeJay TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/DeeJay-TV.png" group-title="Música & Video",DeeJay TV
+https://streamcdng5-4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S85984808/sMO0tz9Sr2Rk/playlist.m3u8
+
+#EXTINF:-1 tvg-id="NRG91TV.gr@HD" tvg-name="NRG 91 TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/NRG-91-TV.png" group-title="Música & Video",NRG 91 TV
+http://tv.nrg91.gr:1935/onweb/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="FMItaliaTV.it@HD" tvg-name="FM Italia TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/FM-Italia-TV.png" group-title="Música & Video",FM Italia TV
+https://stream1.xdevel.com/video0s975817-1182/stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="CaliforniaMusicChannel.us@HD" tvg-name="California Music Channel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/California-Music-Channel.png" group-title="Música & Video",California Music Channel
+https://cmc-cmctv-cineverse.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="KpopTVPlay.kr@HD" tvg-name="KpopTV Play" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/KpopTV-Play.png" group-title="Música & Video",KpopTV Play
+https://183.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8
+
+#EXTINF:-1 tvg-id="XON.nl" tvg-name="XON Ede" tvg-logo="https://i.imgur.com/8QeA67e.png" group-title="Regional & Local",XON (Ede TV)
+https://ms7.mx-cd.net/tv/113-474263/EdeTV.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="OmroepGelderland.nl@HD" tvg-name="Omroep Gelderland" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepgelderland.png" group-title="Regional & Local",Omroep Gelderland
+https://d2od87akyl46nm.cloudfront.net/live/omroepgelderland/tvgelderland-hls/index.m3u8
+
+#EXTINF:-1 tvg-id="OmroepBrabant.nl@HD" tvg-name="Omroep Brabant" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepbrabant.png" group-title="Regional & Local",Omroep Brabant
+https://d3slqp9xhts6qb.cloudfront.net/live/omroepbrabant/tv/index.m3u8
+
+#EXTINF:-1 tvg-id="OmroepWest.nl@HD" tvg-name="Omroep West" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepwest.png" group-title="Regional & Local",Omroep West
+https://d1axml5ozykh3g.cloudfront.net/live/omroepwest/tv/index.m3u8
+
+#EXTINF:-1 tvg-id="OmroepZeeland.nl@HD" tvg-name="Omroep Zeeland" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepzeeland.png" group-title="Regional & Local",Omroep Zeeland
+https://d3isaxd2t6q8zm.cloudfront.net/live/omroepzeeland/tv/index.m3u8
+
+#EXTINF:-1 tvg-id="OmroepFlevoland.nl@HD" tvg-name="Omroep Flevoland" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepflevoland.png" group-title="Regional & Local",Omroep Flevoland
+https://d5ms27yy6exnf.cloudfront.net/live/omroepflevoland/tv/index.m3u8
+
+#EXTINF:-1 tvg-id="RTVOost.nl@HD" tvg-name="RTV Oost" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvoost.png" group-title="Regional & Local",RTV Oost
+https://d34cg2bnc08ruf.cloudfront.net/live/rtvoost/tv/index.m3u8
+
+#EXTINF:-1 tvg-id="Rijnmond.nl@HD" tvg-name="RTV Rijnmond" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rijnmond.png" group-title="Regional & Local",RTV Rijnmond (Rotterdam)
+https://dcur8bjarl5c2.cloudfront.net/live/rijnmond/tv/index.m3u8
+
+#EXTINF:-1 tvg-id="RTVUtrecht.nl@HD" tvg-name="RTV Utrecht" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvutrecht.png" group-title="Regional & Local",RTV Utrecht
+https://d18rwjdhpr8dcw.cloudfront.net/live/rtvutrecht/rtvutrecht/index.m3u8
+
+#EXTINF:-1 tvg-id="RTVDrenthe.nl@HD" tvg-name="RTV Drenthe" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvdrenthe.png" group-title="Regional & Local",RTV Drenthe
+https://cdn.rtvdrenthe.nl/live/rtvdrenthe/tv/index.m3u8
+
+#EXTINF:-1 tvg-id="RTVNoord.nl@HD" tvg-name="RTV Noord" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvnoord.png" group-title="Regional & Local",RTV Noord
+https://media.rtvnoord.nl/live/rtvnoord/tv/index.m3u8
+
+#EXTINF:-1 tvg-id="L1.nl@HD" tvg-name="L1" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/l1.png" group-title="Regional & Local",L1 TV (Limburg)
+https://d34pj260kw1xmk.cloudfront.net/live/l1/tv/index.m3u8
+
+#EXTINF:-1 tvg-id="OmropFryslan.nl@HD" tvg-name="Omrop Fryslân" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omropfryslan.png" group-title="Regional & Local",Omrop Fryslân TV (Frysk)
+https://s-d15f8b0b.b.cdn.bluebillywig.com/live/omropfryslan/f8f68bd5/index.m3u8
+
+#EXTINF:-1 tvg-id="AT5.nl@HD" tvg-name="AT5" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/at5.png" group-title="Regional & Local",AT5 (Amsterdam)
+https://takeoff.jetstre.am/?account=atvijf&file=live&output=playlist.m3u8&protocol=https&service=wowza&type=live
+
+#EXTINF:-1 tvg-id="NHNieuws.nl@HD" tvg-name="NH Nieuws" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nhnieuws.png" group-title="Regional & Local",NH Nieuws (Noord-Holland)
+https://takeoff.jetstre.am/?account=nhnieuws&file=live&output=playlist.m3u8&protocol=https&service=wowza&type=live
+
+#EXTINF:-1 tvg-id="PortoCanal.pt@HD" tvg-name="Porto Canal" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Porto-Canal.png" group-title="Regional & Local",Porto Canal
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+#EXTVLCOPT:http-referrer=https://portocanal.sapo.pt/
+https://video-auth6.iol.pt/live_portocanal/live_portocanal/playlist.m3u8
+
+#EXTINF:-1 tvg-id="KuriakosCine.pt@HD" tvg-name="Kuriakos Cine" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Kuriakos-Cine.png" group-title="Filmes & Docs",Kuriakos Cine
+https://w2.manasat.com/kcine/kcine.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="ARTV.pt@HD" tvg-name="ARTV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/AR-TV.png" group-title="Cívico & Parlamento",ARTV (Canal Parlamento PT)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://canalparlamentolivestream.video.ar.parlamento.pt/artv/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TweedeKamerPlenair.nl" tvg-name="Tweede Kamer Plenair" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png" group-title="Cívico & Parlamento",Tweede Kamer: Plenaire zaal (NL)
+https://livestreaming.b67buv2.tweedekamer.nl/live/plenairezaal/index.m3u8?hd=1&keyframes=1&subtitles=live
+
+#EXTINF:-1 tvg-id="TweedeKamerTroelstra.nl" tvg-name="Tweede Kamer Troelstrazaal" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png" group-title="Cívico & Parlamento",Tweede Kamer: Troelstrazaal (NL)
+https://livestreaming.b67buv2.tweedekamer.nl/live/troelstrazaal/index.m3u8?hd=1&keyframes=1&subtitles=live
+
+#EXTINF:-1 tvg-id="TweedeKamerThorbecke.nl" tvg-name="Tweede Kamer Thorbeckezaal" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png" group-title="Cívico & Parlamento",Tweede Kamer: Thorbeckezaal (NL)
+https://livestreaming.b67buv2.tweedekamer.nl/live/thorbeckezaal/index.m3u8?hd=1&keyframes=1&subtitles=live
+
+#EXTINF:-1 tvg-id="TweedeKamerGroen.nl" tvg-name="Tweede Kamer Groen van Prinstererzaal" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png" group-title="Cívico & Parlamento",Tweede Kamer: Groen van Prinstererzaal (NL)
+https://livestreaming.b67buv2.tweedekamer.nl/live/groenvanprinstererzaal/index.m3u8?hd=1&keyframes=1&subtitles=live
+
+#EXTINF:-1 tvg-id="TVManaMZ.mz" tvg-name="TV Maná Moçambique" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-Mocambique.png" group-title="Religião",TV Maná Moçambique
+https://w2.manasat.com/tvmana-mz/smil:tvmana-mz.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TVMana1.pt@HD" tvg-name="TV Maná 1" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-1.png" group-title="Religião",TV Maná 1 (PT)
+https://w1.manasat.com/tvmana-1/smil:tvmana-1.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TVMana2.pt@HD" tvg-name="TV Maná 2" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-2.png" group-title="Religião",TV Maná 2 (PT)
+https://w1.manasat.com/tvmana-2/smil:tvmana-2.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="KuriakosTV.pt@HD" tvg-name="Kuriakos TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Kuriakos-TV.png" group-title="Religião",Kuriakos TV
+https://w1.manasat.com/ktv/ktv.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="CancaoNova.pt@HD" tvg-name="Canção Nova" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Cancao-Nova.png" group-title="Religião",Canção Nova Portugal
+https://5c65286fc6ace.streamlock.net/cancaonova/CancaoNova.stream_720p/playlist.m3u8

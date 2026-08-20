@@ -1,0 +1,63 @@
+- name: Canal 11
+  group: Desporto
+  tvg_id: Canal11.pt@HD
+  tvg_name: Canal 11
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Canal11.png
+  http_user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/149.0.0.0 Safari/537.3
+  http_referrer: https://canal11.pt/
+  url: https://d10r248w3452pe.cloudfront.net/live/eds/canal11_clean/live.m3u8
+- name: Sporting TV
+  group: Desporto
+  tvg_id: SportingTV.pt@HD
+  tvg_name: Sporting TV
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Sporting-TV.png
+  http_user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/149.0.0.0 Safari/537.3
+  http_referrer: https://www.sporting.pt/
+  url: https://video-auth1.iol.pt/live_sporting/live_sporting/playlist.m3u8
+- name: A Bola TV
+  group: Desporto
+  tvg_id: ABolaTV.pt@HD
+  tvg_name: A Bola TV
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/A-Bola-TV.png
+  http_user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/149.0.0.0 Safari/537.3
+  http_referrer: https://www.abola.pt/
+  url: https://video-auth1.iol.pt/live_abolatv/live_abolatv/playlist.m3u8
+- name: Real Madrid TV
+  group: Desporto
+  tvg_id: RealMadridTV.es@HD
+  tvg_name: Real Madrid TV
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Real-Madrid-TV.png
+  url: https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
+- name: FIFA+
+  group: Desporto
+  tvg_id: FIFAPlus.ch
+  tvg_name: FIFA+
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/FIFA-Plus.png
+  url: https://f7ccf7fc.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLXB0X0ZJRkFQbHVzUG9ydHVndWVzZV9ITFM/playlist.m3u8
+- name: Red Bull TV
+  group: Desporto
+  tvg_id: RedBullTV.at@HD
+  tvg_name: Red Bull TV
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Red-Bull-TV.png
+  url: https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
+- name: SuperTennis
+  group: Desporto
+  tvg_id: SuperTennis.it@HD
+  tvg_name: SuperTennis
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SuperTennis.png
+  url: https://live-embed.supertennix.hiway.media/restreamer/supertennix_client/gpu-a-c0-16/restreamer/outgest/aa3673f1-e178-44a9-a947-ef41db73211a/manifest.m3u8
+- name: Motorvision
+  group: Desporto
+  tvg_id: Motorvision.de@HD
+  tvg_name: Motorvision
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Motorvision.png
+  url: https://mvg-mv-xumo.otteravision.com/mvg/mv/mv.m3u8
+- name: Nautical Channel
+  group: Desporto
+  tvg_id: NauticalChannel.fr@HD
+  tvg_name: Nautical Channel
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Nautical-Channel.png
+  url: https://streams2.sofast.tv/vglive-sk-231198/index.m3u8

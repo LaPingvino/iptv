@@ -1,0 +1,47 @@
+- name: RTP 3
+  group: Notícias
+  tvg_id: RTP3.pt@HD
+  tvg_name: RTP 3
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP3.png
+  http_user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/149.0.0.0 Safari/537.3
+  http_referrer: https://www.rtp.pt/
+  url: https://streaming-live.rtp.pt/livertp3/rtp3.smil/playlist.m3u8
+- name: SIC Notícias
+  group: Notícias
+  tvg_id: SICNoticias.pt@HD
+  tvg_name: SIC Notícias
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SIC-Noticias.png
+  http_user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/149.0.0.0 Safari/537.3
+  http_origin: https://optotv.sic.pt
+  http_referrer: https://optotv.sic.pt/
+  url: https://live-opto.impresa.pt/live/sicn/sicn.m3u8
+- name: CNN Portugal
+  group: Notícias
+  tvg_id: CNNPortugal.pt@HD
+  tvg_name: CNN Portugal
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CNN-Portugal.png
+  http_user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/149.0.0.0 Safari/537.3
+  http_origin: https://tviplayer.iol.pt
+  http_referrer: https://tviplayer.iol.pt/
+  url: https://video-auth1.iol.pt/live_cnn/live_cnn/playlist.m3u8
+- name: CNN Brasil
+  group: Notícias
+  tvg_id: CNNBrasil.br@HD
+  tvg_name: CNN Brasil
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CNN-Brasil.png
+  url: https://videos01.fabricahost.com.br/cnn/cnn.smil/playlist.m3u8
+- name: Euronews Português
+  group: Notícias
+  tvg_id: EuronewsPortuguese.fr@HD
+  tvg_name: Euronews (Português)
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png
+  url: https://euronews-euronews-portuguese-1-pt.samsung.wurl.com/manifest/playlist.m3u8
+- name: Euronews English
+  group: Notícias
+  tvg_id: EuronewsEnglish.fr@HD
+  tvg_name: Euronews (English)
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png
+  url: https://euronews-euronews-world-1-eu.rakuten.wurl.com/manifest/playlist.m3u8

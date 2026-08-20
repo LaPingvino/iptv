@@ -1,0 +1,31 @@
+- name: ARTV (Canal Parlamento PT)
+  group: Cívico & Parlamento
+  tvg_id: ARTV.pt@HD
+  tvg_name: ARTV
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/AR-TV.png
+  http_user_agent: Mozilla/5.0
+  url: https://canalparlamentolivestream.video.ar.parlamento.pt/artv/live/playlist.m3u8
+- name: 'Tweede Kamer: Plenaire zaal (NL)'
+  group: Cívico & Parlamento
+  tvg_id: TweedeKamerPlenair.nl
+  tvg_name: Tweede Kamer Plenair
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png
+  url: https://livestreaming.b67buv2.tweedekamer.nl/live/plenairezaal/index.m3u8?hd=1&keyframes=1&subtitles=live
+- name: 'Tweede Kamer: Troelstrazaal (NL)'
+  group: Cívico & Parlamento
+  tvg_id: TweedeKamerTroelstra.nl
+  tvg_name: Tweede Kamer Troelstrazaal
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png
+  url: https://livestreaming.b67buv2.tweedekamer.nl/live/troelstrazaal/index.m3u8?hd=1&keyframes=1&subtitles=live
+- name: 'Tweede Kamer: Thorbeckezaal (NL)'
+  group: Cívico & Parlamento
+  tvg_id: TweedeKamerThorbecke.nl
+  tvg_name: Tweede Kamer Thorbeckezaal
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png
+  url: https://livestreaming.b67buv2.tweedekamer.nl/live/thorbeckezaal/index.m3u8?hd=1&keyframes=1&subtitles=live
+- name: 'Tweede Kamer: Groen van Prinstererzaal (NL)'
+  group: Cívico & Parlamento
+  tvg_id: TweedeKamerGroen.nl
+  tvg_name: Tweede Kamer Groen van Prinstererzaal
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png
+  url: https://livestreaming.b67buv2.tweedekamer.nl/live/groenvanprinstererzaal/index.m3u8?hd=1&keyframes=1&subtitles=live

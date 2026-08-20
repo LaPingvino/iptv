@@ -1,0 +1,30 @@
+- name: TV Maná Moçambique
+  group: Religião
+  tvg_id: TVManaMZ.mz
+  tvg_name: TV Maná Moçambique
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-Mocambique.png
+  url: https://w2.manasat.com/tvmana-mz/smil:tvmana-mz.smil/playlist.m3u8
+- name: TV Maná 1 (PT)
+  group: Religião
+  tvg_id: TVMana1.pt@HD
+  tvg_name: TV Maná 1
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-1.png
+  url: https://w1.manasat.com/tvmana-1/smil:tvmana-1.smil/playlist.m3u8
+- name: TV Maná 2 (PT)
+  group: Religião
+  tvg_id: TVMana2.pt@HD
+  tvg_name: TV Maná 2
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-2.png
+  url: https://w1.manasat.com/tvmana-2/smil:tvmana-2.smil/playlist.m3u8
+- name: Kuriakos TV
+  group: Religião
+  tvg_id: KuriakosTV.pt@HD
+  tvg_name: Kuriakos TV
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Kuriakos-TV.png
+  url: https://w1.manasat.com/ktv/ktv.smil/playlist.m3u8
+- name: Canção Nova Portugal
+  group: Religião
+  tvg_id: CancaoNova.pt@HD
+  tvg_name: Canção Nova
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Cancao-Nova.png
+  url: https://5c65286fc6ace.streamlock.net/cancaonova/CancaoNova.stream_720p/playlist.m3u8

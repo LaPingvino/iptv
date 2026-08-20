@@ -1,0 +1,108 @@
+- name: Radio Paradise - Main Mix (FLAC)
+  group: Rádio Global
+  tvg_id: RadioParadiseMain.us
+  tvg_name: Radio Paradise Main FLAC
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radioparadise.png
+  url: https://stream.radioparadise.com/flac
+- name: Radio Paradise - Mellow Mix (FLAC)
+  group: Rádio Global
+  tvg_id: RadioParadiseMellow.us
+  tvg_name: Radio Paradise Mellow FLAC
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radioparadise.png
+  url: https://stream.radioparadise.com/mellow-flac
+- name: Radio Paradise - Rock Mix (FLAC)
+  group: Rádio Global
+  tvg_id: RadioParadiseRock.us
+  tvg_name: Radio Paradise Rock FLAC
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radioparadise.png
+  url: https://stream.radioparadise.com/rock-flac
+- name: Radio Paradise - Global Mix (FLAC)
+  group: Rádio Global
+  tvg_id: RadioParadiseGlobal.us
+  tvg_name: Radio Paradise Global FLAC
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radioparadise.png
+  url: https://stream.radioparadise.com/global-flac
+- name: FIP (Radio France)
+  group: Rádio Global
+  tvg_id: FIP.fr
+  tvg_name: FIP
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/fip.png
+  url: https://icecast.radiofrance.fr/fip-midfi.mp3
+- name: FIP Rock
+  group: Rádio Global
+  tvg_id: FIPRock.fr
+  tvg_name: FIP Rock
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/fip.png
+  url: https://icecast.radiofrance.fr/fiprock-midfi.mp3
+- name: FIP Jazz
+  group: Rádio Global
+  tvg_id: FIPJazz.fr
+  tvg_name: FIP Jazz
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/fip.png
+  url: https://icecast.radiofrance.fr/fipjazz-midfi.mp3
+- name: FIP Electro
+  group: Rádio Global
+  tvg_id: FIPElectro.fr
+  tvg_name: FIP Electro
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/fip.png
+  url: https://icecast.radiofrance.fr/fipelectro-midfi.mp3
+- name: FIP Groove
+  group: Rádio Global
+  tvg_id: FIPGroove.fr
+  tvg_name: FIP Groove
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/fip.png
+  url: https://icecast.radiofrance.fr/fipgroove-midfi.mp3
+- name: NTS Radio 1 (London)
+  group: Rádio Global
+  tvg_id: NTSRadio1.uk
+  tvg_name: NTS Live 1
+  logo: https://i.imgur.com/zV8V1b2.png
+  url: https://stream-relay-geo.ntslive.net/stream
+- name: NTS Radio 2 (London)
+  group: Rádio Global
+  tvg_id: NTSRadio2.uk
+  tvg_name: NTS Live 2
+  logo: https://i.imgur.com/zV8V1b2.png
+  url: https://stream-relay-geo.ntslive.net/stream2
+- name: 'SomaFM: Groove Salad'
+  group: Rádio Global
+  tvg_id: SomaFMGrooveSalad.us
+  tvg_name: SomaFM Groove Salad
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png
+  url: https://ice6.somafm.com/groovesalad-256-mp3
+- name: 'SomaFM: Secret Agent'
+  group: Rádio Global
+  tvg_id: SomaFMSecretAgent.us
+  tvg_name: SomaFM Secret Agent
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png
+  url: https://ice6.somafm.com/secretagent-128-mp3
+- name: 'SomaFM: Drone Zone'
+  group: Rádio Global
+  tvg_id: SomaFMDroneZone.us
+  tvg_name: SomaFM Drone Zone
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png
+  url: https://ice6.somafm.com/dronezone-256-mp3
+- name: 'SomaFM: Indie Pop Rocks!'
+  group: Rádio Global
+  tvg_id: SomaFMIndiePop.us
+  tvg_name: SomaFM Indie Pop Rocks
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png
+  url: https://ice6.somafm.com/indiepop-128-mp3
+- name: BBC World Service
+  group: Rádio Global
+  tvg_id: BBCWorldService.uk
+  tvg_name: BBC World Service
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/bbcworldservice.png
+  url: https://stream.live.vc.bbcmedia.co.uk/bbc_world_service
+- name: BBC Radio 6 Music
+  group: Rádio Global
+  tvg_id: BBCRadio6Music.uk
+  tvg_name: BBC Radio 6 Music
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/bbcradio6music.png
+  url: https://stream.live.vc.bbcmedia.co.uk/bbc_6music
+- name: KEXP 90.3 FM (Seattle)
+  group: Rádio Global
+  tvg_id: KEXP.us
+  tvg_name: KEXP
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/kexp.png
+  url: https://kexp.streamguys1.com/kexp160.aac

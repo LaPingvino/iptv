@@ -1,0 +1,6 @@
+- name: Kuriakos Cine
+  group: Filmes & Docs
+  tvg_id: KuriakosCine.pt@HD
+  tvg_name: Kuriakos Cine
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Kuriakos-Cine.png
+  url: https://w2.manasat.com/kcine/kcine.smil/playlist.m3u8

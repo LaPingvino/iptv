@@ -1,0 +1,96 @@
+- name: RDP Antena 1
+  group: PT Rádio
+  tvg_id: Antena1.pt
+  tvg_name: RDP Antena 1
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-1.png
+  url: https://streaming-live.rtp.pt/liveradio/antena180a/playlist.m3u8
+- name: RDP Antena 2
+  group: PT Rádio
+  tvg_id: Antena2.pt
+  tvg_name: RDP Antena 2
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-2.png
+  url: https://streaming-live.rtp.pt/liveradio/antena280a/playlist.m3u8
+- name: RDP Antena 3
+  group: PT Rádio
+  tvg_id: Antena3.pt
+  tvg_name: RDP Antena 3
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-3.png
+  url: https://streaming-live.rtp.pt/liveradio/antena380a/playlist.m3u8
+- name: RDP África
+  group: PT Rádio
+  tvg_id: RDPAfrica.pt
+  tvg_name: RDP África
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RDP-Africa.png
+  url: https://streaming-live.rtp.pt/liveradio/rdpafrica80a/playlist.m3u8
+- name: Antena 1 Açores
+  group: PT Rádio
+  tvg_id: Antena1Acores.pt
+  tvg_name: Antena 1 Açores
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-1-Acores.png
+  url: https://streaming-live.rtp.pt/liveradio/antena1acores80a/playlist.m3u8
+- name: Antena 1 Madeira
+  group: PT Rádio
+  tvg_id: Antena1Madeira.pt
+  tvg_name: Antena 1 Madeira
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-1-Madeira.png
+  url: https://streaming-live.rtp.pt/liveradio/antena1madeira80a/playlist.m3u8
+- name: Antena 3 Madeira
+  group: PT Rádio
+  tvg_id: Antena3Madeira.pt
+  tvg_name: Antena 3 Madeira
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-3-Madeira.png
+  url: https://streaming-live.rtp.pt/liveradio/antena3madeira80a/playlist.m3u8
+- name: Rádio Renascença
+  group: PT Rádio
+  tvg_id: Renascenca.pt
+  tvg_name: Rádio Renascença
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-Renascenca.png
+  url: https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_RENASCENCA.mp3
+- name: RFM
+  group: PT Rádio
+  tvg_id: RFM.pt
+  tvg_name: RFM
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RFM.png
+  url: https://playerservices.streamtheworld.com/api/livestream-redirect/RFM.mp3
+- name: Mega Hits
+  group: PT Rádio
+  tvg_id: MegaHits.pt
+  tvg_name: Mega Hits
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Mega-Hits.png
+  url: https://playerservices.streamtheworld.com/api/livestream-redirect/MEGA_HITS.mp3
+- name: Rádio Comercial
+  group: PT Rádio
+  tvg_id: RadioComercial.pt
+  tvg_name: Rádio Comercial
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-Comercial.png
+  url: https://stream-icy.bauermedia.pt/comercial.mp3
+- name: M80 Portugal
+  group: PT Rádio
+  tvg_id: M80.pt
+  tvg_name: M80 Portugal
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/M80-Radio.png
+  url: https://stream-icy.bauermedia.pt/m80.mp3
+- name: Cidade FM
+  group: PT Rádio
+  tvg_id: CidadeFM.pt
+  tvg_name: Cidade FM
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Cidade-FM.png
+  url: https://stream-icy.bauermedia.pt/cidade.mp3
+- name: Smooth FM
+  group: PT Rádio
+  tvg_id: SmoothFM.pt
+  tvg_name: Smooth FM
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Smooth-FM.png
+  url: https://stream-icy.bauermedia.pt/smooth.mp3
+- name: TSF Rádio Notícias
+  group: PT Rádio
+  tvg_id: TSF.pt
+  tvg_name: TSF
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TSF.png
+  url: https://tsfdirecto.tsf.pt/tsfdirecto.mp3
+- name: RUC - Rádio Universidade de Coimbra
+  group: PT Rádio
+  tvg_id: RUC.pt
+  tvg_name: Rádio Universitária de Coimbra
+  logo: https://bucket-backblaze.ruc.pt/file/bucket-ruc-pt/wp-content/uploads/2021/02/15233926/Logo-RUC-2020_assinaturas_Prancheta-1-copia.png
+  url: https://stream.ruc.pt/high

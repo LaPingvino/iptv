@@ -1,0 +1,150 @@
+- name: NPO Radio 1
+  group: NL Rádio
+  tvg_id: NPORadio1.nl
+  tvg_name: NPO Radio 1
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nporadio1.png
+  url: https://icecast.omroep.nl/radio1-bb-mp3
+- name: NPO Radio 2
+  group: NL Rádio
+  tvg_id: NPORadio2.nl
+  tvg_name: NPO Radio 2
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nporadio2.png
+  url: https://icecast.omroep.nl/radio2-bb-mp3
+- name: NPO 3FM
+  group: NL Rádio
+  tvg_id: NPO3FM.nl
+  tvg_name: NPO 3FM
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/npo3fm.png
+  url: https://icecast.omroep.nl/3fm-bb-mp3
+- name: NPO Klassiek (Radio 4)
+  group: NL Rádio
+  tvg_id: NPOKlassiek.nl
+  tvg_name: NPO Klassiek
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/npoklassiek.png
+  url: https://icecast.omroep.nl/radio4-bb-mp3
+- name: NPO Radio 5
+  group: NL Rádio
+  tvg_id: NPORadio5.nl
+  tvg_name: NPO Radio 5
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nporadio5.png
+  url: https://icecast.omroep.nl/radio5-bb-mp3
+- name: NPO FunX
+  group: NL Rádio
+  tvg_id: FunX.nl
+  tvg_name: NPO FunX
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/funx.png
+  url: https://icecast.omroep.nl/funx-bb-mp3
+- name: NPO Blend
+  group: NL Rádio
+  tvg_id: NPOBlend.nl
+  tvg_name: NPO Blend
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/funx.png
+  url: https://icecast.omroep.nl/radio6-bb-mp3
+- name: Radio 538
+  group: NL Rádio
+  tvg_id: Radio538.nl
+  tvg_name: Radio 538
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/538.png
+  url: https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO538.mp3
+- name: Qmusic NL
+  group: NL Rádio
+  tvg_id: QmusicRadio.nl
+  tvg_name: Qmusic
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Qmusic_logo_2019.svg/512px-Qmusic_logo_2019.svg.png
+  url: https://stream.qmusic.nl/qmusic/mp3
+- name: Radio Veronica
+  group: NL Rádio
+  tvg_id: RadioVeronica.nl
+  tvg_name: Radio Veronica
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radioveronica.png
+  url: https://playerservices.streamtheworld.com/api/livestream-redirect/VERONICA.mp3
+- name: Sky Radio
+  group: NL Rádio
+  tvg_id: SkyRadio.nl
+  tvg_name: Sky Radio
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/skyradio.png
+  url: https://playerservices.streamtheworld.com/api/livestream-redirect/SKYRADIO.mp3
+- name: Radio 10
+  group: NL Rádio
+  tvg_id: Radio10.nl
+  tvg_name: Radio 10
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radio10.png
+  url: https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO10.mp3
+- name: Arrow Classic Rock
+  group: NL Rádio
+  tvg_id: ArrowClassicRock.nl
+  tvg_name: Arrow Classic Rock
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/arrowclassicrock.png
+  url: http://stream.gal.io/arrow
+- name: Sublime
+  group: NL Rádio
+  tvg_id: Sublime.nl
+  tvg_name: Sublime
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/sublime.png
+  url: https://stream.sublime.nl/sublime_mp3
+- name: BNR Nieuwsradio
+  group: NL Rádio
+  tvg_id: BNRNieuwsradio.nl
+  tvg_name: BNR Nieuwsradio
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/bnr.png
+  url: https://stream.bnr.nl/bnr_mp3_128_01
+- name: KINK
+  group: NL Rádio
+  tvg_id: KINK.nl
+  tvg_name: KINK
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/kink.png
+  url: https://playerservices.streamtheworld.com/api/livestream-redirect/KINK.mp3
+- name: Omrop Fryslân Radio (Frysk)
+  group: NL Rádio
+  tvg_id: OmropFryslanRadio.nl
+  tvg_name: Omrop Fryslân Radio
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omropfryslan.png
+  url: https://d3pvma9xb2775h.cloudfront.net/icecast/omropfryslan/radio.mp3
+- name: L1 Radio (Limburgs Dialect)
+  group: NL Rádio
+  tvg_id: L1Radio.nl
+  tvg_name: L1 Radio
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/l1.png
+  url: http://d34pj260kw1xmk.cloudfront.net/icecast/l1/radio-bb-mp3
+- name: L1 Plat-eweg (Limburgs Dialectmuziek)
+  group: NL Rádio
+  tvg_id: L1Plateweg.nl
+  tvg_name: L1 Plat-eweg
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/l1.png
+  url: https://d34pj260kw1xmk.cloudfront.net/icecast/l1/plat-eweg-bb-mp3
+- name: Omroep Brabant Radio
+  group: NL Rádio
+  tvg_id: OmroepBrabantRadio.nl
+  tvg_name: Omroep Brabant Radio
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepbrabant.png
+  url: https://av.omroepbrabant.nl/icecast/omroepbrabant/mp3hq
+- name: Omroep West Radio
+  group: NL Rádio
+  tvg_id: OmroepWestRadio.nl
+  tvg_name: Omroep West Radio
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepwest.png
+  url: http://icecast.stream.bbvms.com/omroepwest_radio
+- name: Omroep Zeeland Radio
+  group: NL Rádio
+  tvg_id: OmroepZeelandRadio.nl
+  tvg_name: Omroep Zeeland Radio
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepzeeland.png
+  url: https://d3isaxd2t6q8zm.cloudfront.net/icecast/omroepzeeland/omroepzeeland_radio
+- name: Tukker FM (Twents / Piratenhits)
+  group: NL Rádio
+  tvg_id: TukkerFM.nl
+  tvg_name: Tukker FM
+  logo: https://i.imgur.com/8QeA67e.png
+  url: https://stream.tukkerfm.nl/tukkerfm
+- name: Radio Continu (Noord & Oost NL)
+  group: NL Rádio
+  tvg_id: RadioContinu.nl
+  tvg_name: Radio Continu
+  logo: https://i.imgur.com/8QeA67e.png
+  url: https://stream.radiocontinu.nl/radiocontinu
+- name: Gigant FM (Piratenmuziek)
+  group: NL Rádio
+  tvg_id: GigantFM.nl
+  tvg_name: Gigant FM
+  logo: https://i.imgur.com/8QeA67e.png
+  url: https://stream.gigantfm.nl/gigantfm

@@ -1,0 +1,174 @@
+- name: Studio Brussel (Visual Radio)
+  group: Música & Video
+  tvg_id: StudioBrussel.be
+  tvg_name: Studio Brussel Visual
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png
+  url: https://live.vrtcdn.be/groupb/live/450aa9d1-7173-47f3-aaaa-9701426f8ddd/live.isml/live.m3u8
+- name: Qmusic NL Kijk Live (Visual Radio)
+  group: Música & Video
+  tvg_id: Qmusic.nl
+  tvg_name: Qmusic NL Visual
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Qmusic_logo_2019.svg/512px-Qmusic_logo_2019.svg.png
+  url: https://stream.qmusic.nl/qmusic/videohls.m3u8
+- name: DELUXE MUSIC
+  group: Música & Video
+  tvg_id: DeluxeMusic.de@HD
+  tvg_name: DELUXE MUSIC
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Deluxe_Music_2013_Logo.svg/512px-Deluxe_Music_2013_Logo.svg.png
+  url: https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8
+- name: DELUXE DANCE by Kontor
+  group: Música & Video
+  tvg_id: DeluxeDance.de
+  tvg_name: DELUXE DANCE
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Deluxe_Music_2013_Logo.svg/512px-Deluxe_Music_2013_Logo.svg.png
+  url: https://sdn-global-live-streaming-packager-cache.3qsdn.com/64733/64733_264_live.m3u8
+- name: DELUXE RAP
+  group: Música & Video
+  tvg_id: DeluxeRap.de
+  tvg_name: DELUXE RAP
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Deluxe_Music_2013_Logo.svg/512px-Deluxe_Music_2013_Logo.svg.png
+  url: https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.m3u8
+- name: Dance TV
+  group: Música & Video
+  tvg_id: DanceTV.nl
+  tvg_name: Dance TV
+  logo: https://i.imgur.com/v8tT94X.png
+  url: https://m1b2.worldcast.tv/dancetelevisionone/2/dancetelevisionone.m3u8
+- name: Trace Toca (Kizomba / Zouk / PALOP)
+  group: Música & Video
+  tvg_id: TraceToca.fr@HD
+  tvg_name: Trace Toca
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Toca.png
+  url: https://channels.trace.plus/Traceprod/TOCA_hd/index.m3u8
+- name: Trace Africa
+  group: Música & Video
+  tvg_id: TraceAfrica.fr@HD
+  tvg_name: Trace Africa
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Africa.png
+  url: https://channels.trace.plus/Traceprod/AFRICA_FR_hd/index.m3u8
+- name: Trace Brasil
+  group: Música & Video
+  tvg_id: TraceBrazuca.br@HD
+  tvg_name: Trace Brasil
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Brazuca.png
+  url: https://amg01131-tracetv-tracebrazuca-xiaomi-vvr19.amagi.tv/playlist/amg01131-tracetv-tracebrazuca-xiaomi/playlist.m3u8
+- name: Trace Naija (Afrobeats)
+  group: Música & Video
+  tvg_id: TraceNaija.ng@HD
+  tvg_name: Trace Naija
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Naija.png
+  url: https://channels.trace.plus/Traceprod/NAIJA_hd/index.m3u8
+- name: Trace Kitoko (Lingala / Central Africa)
+  group: Música & Video
+  tvg_id: TraceKitoko.fr@HD
+  tvg_name: Trace Kitoko
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Kitoko.png
+  url: https://channels.trace.plus/Traceprod/KITOKO_hd/index.m3u8
+- name: Trace Miziki (East Africa)
+  group: Música & Video
+  tvg_id: TraceMziki.ke@HD
+  tvg_name: Trace Miziki
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Miziki.png
+  url: https://channels.trace.plus/Traceprod/MZIKI_hd/index.m3u8
+- name: Trace Urban
+  group: Música & Video
+  tvg_id: TraceUrban.fr@HD
+  tvg_name: Trace Urban
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Urban.png
+  url: https://lightning-traceurban-samsungau.amagi.tv/playlist.m3u8
+- name: Trace Latina
+  group: Música & Video
+  tvg_id: TraceLatina.fr@HD
+  tvg_name: Trace Latina
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Latina.png
+  url: https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01131-tracetv-tracelatinaes-samsungspain/playlist.m3u8
+- name: Trace UK
+  group: Música & Video
+  tvg_id: TraceUK.uk@HD
+  tvg_name: Trace UK
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-UK.png
+  url: https://channels.trace.plus/Traceprod/UK_FAST_hd/index.m3u8
+- name: Trace Gospel
+  group: Música & Video
+  tvg_id: TraceGospel.fr@HD
+  tvg_name: Trace Gospel
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Gospel.png
+  url: https://channels.trace.plus/Traceprod/GOSPEL_FR/.m3u8
+- name: XITE
+  group: Música & Video
+  tvg_id: XITE.nl@HD
+  tvg_name: XITE
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.png
+  url: https://xite-rakuten.amagi.tv/playlist.m3u8
+- name: XITE Hits UK
+  group: Música & Video
+  tvg_id: XITEHitsUK.uk@HD
+  tvg_name: XITE Hits UK
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.png
+  url: https://amg01243-xitenetworksint-hitsuk-samsunguk-mvovq.amagi.tv/playlist/amg01243-xitenetworksint-hitsuk-samsunguk/playlist.m3u8
+- name: XITE Hits Germany
+  group: Música & Video
+  tvg_id: XITEHitsDE.de@HD
+  tvg_name: XITE Hits Germany
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.png
+  url: https://d726x48n2pd5h.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-skxr1pazhltvp/XITE_Hits.m3u8
+- name: Now 70s
+  group: Música & Video
+  tvg_id: Now70s.uk
+  tvg_name: Now 70s
+  logo: https://i.imgur.com/eB0rJ1W.png
+  url: https://lightning-now70s-samsungnz.amagi.tv/playlist.m3u8
+- name: Now 80s
+  group: Música & Video
+  tvg_id: Now80s.uk
+  tvg_name: Now 80s
+  logo: https://i.imgur.com/Z4w2Q2m.png
+  url: https://lightning-now80s-samsungnz.amagi.tv/playlist.m3u8
+- name: Now Rock
+  group: Música & Video
+  tvg_id: NowRock.uk
+  tvg_name: Now Rock
+  logo: https://i.imgur.com/kP8z4K9.png
+  url: https://lightning-now90s-samsungnz.amagi.tv/playlist.m3u8
+- name: Retro Music TV
+  group: Música & Video
+  tvg_id: RetroMusicTV.cz
+  tvg_name: Retro Music TV
+  logo: https://i.imgur.com/7bQ6p1X.png
+  url: https://stream.mediawork.cz/retrotv/smil:retrotv2.smil/playlist.m3u8
+- name: 4Fun.TV
+  group: Música & Video
+  tvg_id: 4FunTV.pl@HD
+  tvg_name: 4Fun TV
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/4Fun-TV.png
+  url: https://stream.4fun.tv:8888/hls/4f_high/index.m3u8
+- name: DeeJay TV
+  group: Música & Video
+  tvg_id: DeeJayTV.it@HD
+  tvg_name: DeeJay TV
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/DeeJay-TV.png
+  url: https://streamcdng5-4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S85984808/sMO0tz9Sr2Rk/playlist.m3u8
+- name: NRG 91 TV
+  group: Música & Video
+  tvg_id: NRG91TV.gr@HD
+  tvg_name: NRG 91 TV
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/NRG-91-TV.png
+  url: http://tv.nrg91.gr:1935/onweb/live/playlist.m3u8
+- name: FM Italia TV
+  group: Música & Video
+  tvg_id: FMItaliaTV.it@HD
+  tvg_name: FM Italia TV
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/FM-Italia-TV.png
+  url: https://stream1.xdevel.com/video0s975817-1182/stream/playlist.m3u8
+- name: California Music Channel
+  group: Música & Video
+  tvg_id: CaliforniaMusicChannel.us@HD
+  tvg_name: California Music Channel
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/California-Music-Channel.png
+  url: https://cmc-cmctv-cineverse.amagi.tv/playlist.m3u8
+- name: KpopTV Play
+  group: Música & Video
+  tvg_id: KpopTVPlay.kr@HD
+  tvg_name: KpopTV Play
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/KpopTV-Play.png
+  url: https://183.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8
