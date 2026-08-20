@@ -3,6 +3,11 @@
   tvg_id: GamingAutoLive.tv
   tvg_name: Gaming 24/7 Auto-Live
   url: https://kiefte.eu/iptv/gaming/live
+- name: Blue Prince (Top Live Streamer)
+  group: Gaming
+  tvg_id: BluePrince.tv
+  tvg_name: Blue Prince Live
+  url: https://kiefte.eu/iptv/twitch/game/Blue%20Prince
 - name: Speedrun (24/7 Speedrun.com)
   group: Gaming
   tvg_id: Speedrun.tv
@@ -33,7 +38,7 @@
   tvg_id: TamTheGamer.tv
   tvg_name: TamTheGamer
   url: https://kiefte.eu/iptv/twitch/tamthegamer
-- name: ElanaOrama
+- name: ElanaOrama (Colony Sim & Variety)
   group: Gaming
   tvg_id: ElanaOrama.tv
   tvg_name: ElanaOrama

@@ -320,6 +320,9 @@ https://5c65286fc6ace.streamlock.net/cancaonova/CancaoNova.stream_720p/playlist.
 #EXTINF:-1 tvg-id="GamingAutoLive.tv" tvg-name="Gaming 24/7 Auto-Live" group-title="Gaming",Gaming 24/7 (Auto-Live Streamer)
 https://kiefte.eu/iptv/gaming/live
 
+#EXTINF:-1 tvg-id="BluePrince.tv" tvg-name="Blue Prince Live" group-title="Gaming",Blue Prince (Top Live Streamer)
+https://kiefte.eu/iptv/twitch/game/Blue%20Prince
+
 #EXTINF:-1 tvg-id="Speedrun.tv" tvg-name="Speedrun" group-title="Gaming",Speedrun (24/7 Speedrun.com)
 https://kiefte.eu/iptv/twitch/speedrun
 
@@ -338,7 +341,7 @@ https://kiefte.eu/iptv/twitch/ryukahr
 #EXTINF:-1 tvg-id="TamTheGamer.tv" tvg-name="TamTheGamer" group-title="Gaming",TamTheGamer (Tammy)
 https://kiefte.eu/iptv/twitch/tamthegamer
 
-#EXTINF:-1 tvg-id="ElanaOrama.tv" tvg-name="ElanaOrama" group-title="Gaming",ElanaOrama
+#EXTINF:-1 tvg-id="ElanaOrama.tv" tvg-name="ElanaOrama" group-title="Gaming",ElanaOrama (Colony Sim & Variety)
 https://kiefte.eu/iptv/twitch/elanaorama
 
 #EXTINF:-1 tvg-id="GrandPooBear.tv" tvg-name="GrandPooBear" group-title="Gaming",GrandPooBear

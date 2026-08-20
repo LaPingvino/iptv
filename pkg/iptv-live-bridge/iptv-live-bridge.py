@@ -3,6 +3,7 @@
 IPTV Live Bridge for Streamlink (Twitch, YouTube Live, Kick, etc.)
 Features:
 - Transparent HLS proxying (200 OK)
+- Dynamic Game Directory: /twitch/game/<game_name> (e.g. /twitch/game/Blue%20Prince) automatically streams the #1 most watched live streamer for that game!
 - Dynamic Live Fallback: Automatically rolls over to any active Mario/Speedrun streamer when a requested channel is offline
 - Dedicated /gaming/live (Auto-Zapper) channel
 - Custom offline video slate for sports / YouTube
@@ -12,6 +13,7 @@ Features:
 import os
 import sys
 import time
+import json
 import logging
 import urllib.parse
 import urllib.request
@@ -86,6 +88,52 @@ def resolve_stream(target_url, quality=QUALITY):
         logger.error(f"Error resolving {target_url}: {e}")
         return None
 
+def get_top_streamer_for_game(game_name):
+    """Queries Twitch GraphQL for the top active broadcaster playing a specific game."""
+    raw_query = """
+    query GetGameStreams($name: String!) {
+      game(name: $name) {
+        name
+        streams(first: 5) {
+          edges {
+            node {
+              viewersCount
+              title
+              broadcaster {
+                login
+                displayName
+              }
+            }
+          }
+        }
+      }
+    }
+    """
+    cleaned_name = urllib.parse.unquote(game_name).replace("-", " ")
+    req = urllib.request.Request(
+        "https://gql.twitch.tv/gql",
+        data=json.dumps({"query": raw_query, "variables": {"name": cleaned_name}}).encode("utf-8"),
+        headers={
+            "Client-Id": "kimne78kx3ncx6brgo4mv6wki5h1ko",
+            "Content-Type": "application/json"
+        }
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=5) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+        game = data.get("data", {}).get("game")
+        if game and game.get("streams"):
+            edges = game["streams"].get("edges", [])
+            if edges:
+                top_broadcaster = edges[0]["node"]["broadcaster"]["login"]
+                viewers = edges[0]["node"]["viewersCount"]
+                title = edges[0]["node"]["title"]
+                logger.info(f"Top stream for game '{cleaned_name}': {top_broadcaster} ({viewers} viewers) - {title}")
+                return top_broadcaster
+    except Exception as e:
+        logger.error(f"Error querying top stream for game '{cleaned_name}': {e}")
+    return None
+
 def find_active_gaming_fallback(exclude_channel=None):
     """Finds the first currently live stream from the curated gaming pool."""
     for channel in GAMING_FALLBACK_POOL:
@@ -146,7 +194,7 @@ class BridgeHandler(BaseHTTPRequestHandler):
             self.send_header("Access-Control-Allow-Origin", "*")
             self.end_headers()
             if not is_head:
-                self.wfile.write(b'{"status":"ok","service":"iptv-live-bridge","version":"2.0.0"}\n')
+                self.wfile.write(b'{"status":"ok","service":"iptv-live-bridge","version":"2.1.0"}\n')
             return
             
         # Serve local offline video segments if requested
@@ -173,7 +221,26 @@ class BridgeHandler(BaseHTTPRequestHandler):
         is_gaming = False
         requested_channel = None
         
-        if path in ["gaming/live", "twitch/auto-live", "twitch/live"]:
+        # 1. Game directory auto-resolver: /twitch/game/<name> or /game/<name>
+        if path.startswith("twitch/game/") or path.startswith("game/"):
+            game_name = path.split("/", 2)[-1]
+            top_streamer = get_top_streamer_for_game(game_name)
+            if top_streamer:
+                target_url = f"https://www.twitch.tv/{top_streamer}"
+                is_gaming = True
+                requested_channel = top_streamer
+            else:
+                logger.info(f"No active streams for game '{game_name}'. Falling back...")
+                if allow_fallback:
+                    fb_ch, fb_url = find_active_gaming_fallback()
+                    if fb_url:
+                        self.serve_hls(fb_url, is_head=is_head)
+                        return
+                self.serve_offline_slate(is_head=is_head)
+                return
+
+        # 2. General auto-live
+        elif path in ["gaming/live", "twitch/auto-live", "twitch/live"]:
             is_gaming = True
             fallback_channel, resolved_url = find_active_gaming_fallback()
             if resolved_url:
@@ -183,10 +250,14 @@ class BridgeHandler(BaseHTTPRequestHandler):
             else:
                 self.serve_offline_slate(is_head=is_head)
                 return
+
+        # 3. Specific Twitch channel
         elif path.startswith("twitch/"):
             requested_channel = path.split("/", 1)[1]
             target_url = f"https://www.twitch.tv/{requested_channel}"
             is_gaming = True
+
+        # 4. YouTube Live
         elif path.startswith("youtube/"):
             identifier = path.split("/", 1)[1]
             if identifier.startswith("@") or identifier.startswith("channel/") or identifier.startswith("c/"):
@@ -194,6 +265,8 @@ class BridgeHandler(BaseHTTPRequestHandler):
             else:
                 target_url = f"https://www.youtube.com/@{identifier}/live"
             is_gaming = False  # Sports/other YouTube channels don't fallback to gaming
+
+        # 5. Generic URL
         elif path == "live" and "url" in params:
             target_url = params["url"][0]
             
@@ -202,7 +275,7 @@ class BridgeHandler(BaseHTTPRequestHandler):
             self.send_header("Content-Type", "text/plain")
             self.end_headers()
             if not is_head:
-                self.wfile.write(b"400 Bad Request: Expected /twitch/<channel>, /youtube/<@handle>, /gaming/live or /live?url=<url>\n")
+                self.wfile.write(b"400 Bad Request: Expected /twitch/<channel>, /twitch/game/<name>, /youtube/<@handle>, or /gaming/live\n")
             return
             
         resolved_url = resolve_stream(target_url, quality=quality)
@@ -247,7 +320,6 @@ class BridgeHandler(BaseHTTPRequestHandler):
         if os.path.exists(slate_m3u8):
             with open(slate_m3u8, "r") as f:
                 content = f.read()
-            # Rewrite segments to point to current host /offline/
             base_url = f"https://kiefte.eu/iptv/offline/"
             lines = []
             for line in content.splitlines():
@@ -277,7 +349,7 @@ class BridgeHandler(BaseHTTPRequestHandler):
 def run():
     server_address = (HOST, PORT)
     httpd = HTTPServer(server_address, BridgeHandler)
-    logger.info(f"Starting IPTV Live Bridge v2.0 on http://{HOST}:{PORT}")
+    logger.info(f"Starting IPTV Live Bridge v2.1 on http://{HOST}:{PORT}")
     try:
         httpd.serve_forever()
     except KeyboardInterrupt:
