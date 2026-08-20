@@ -658,3 +658,9 @@ https://kiefte.eu/iptv/twitch/mitchflowerpower
 
 #EXTINF:-1 tvg-id="Failstream.tv" tvg-name="Failstream" group-title="Gaming",Failstream (Mario Maker Builds)
 https://kiefte.eu/iptv/twitch/failstream
+
+#EXTINF:-1 tvg-id="SmallAnt.tv" tvg-name="SmallAnt" group-title="Gaming",SmallAnt (Challenges & Speedruns)
+https://kiefte.eu/iptv/twitch/smallant
+
+#EXTINF:-1 tvg-id="DGR.tv" tvg-name="DGR" group-title="Gaming",DGR (Mario Maker & Super Mario)
+https://kiefte.eu/iptv/twitch/dgr_dave

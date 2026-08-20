@@ -103,3 +103,13 @@
   tvg_id: Failstream.tv
   tvg_name: Failstream
   url: https://kiefte.eu/iptv/twitch/failstream
+- name: SmallAnt (Challenges & Speedruns)
+  group: Gaming
+  tvg_id: SmallAnt.tv
+  tvg_name: SmallAnt
+  url: https://kiefte.eu/iptv/twitch/smallant
+- name: DGR (Mario Maker & Super Mario)
+  group: Gaming
+  tvg_id: DGR.tv
+  tvg_name: DGR
+  url: https://kiefte.eu/iptv/twitch/dgr_dave
