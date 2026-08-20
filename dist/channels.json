@@ -777,6 +777,14 @@
     "url": "https://5c65286fc6ace.streamlock.net/cancaonova/CancaoNova.stream_720p/playlist.m3u8"
   },
   {
+    "name": "Radio Bahá'í (WLGI 90.9 FM)",
+    "group": "Religião",
+    "radio": true,
+    "tvg_id": "WLGI.us",
+    "tvg_name": "Radio Bahai",
+    "url": "https://wlgi.streamguys1.com/live"
+  },
+  {
     "name": "RDP Antena 1",
     "group": "PT Rádio",
     "tvg_id": "Antena1.pt",
