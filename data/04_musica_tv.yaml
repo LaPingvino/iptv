@@ -140,3 +140,18 @@
   tvg_name: KpopTV Play
   logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/KpopTV-Play.png
   url: https://183.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8
+- name: SLAM! TV (Visual Radio)
+  group: Música & Video
+  tvg_id: SLAMTV.nl
+  tvg_name: SLAM! TV
+  url: https://stream.slam.nl/slam-tv/index.m3u8
+- name: NPO Radio 2 (Top 2000 Visual)
+  group: Música & Video
+  tvg_id: NPORadio2Visual.nl
+  tvg_name: NPO Radio 2 Visual
+  url: https://kiefte.eu/iptv/youtube/@NPORadio2
+- name: NPO 3FM (Visual & Serious Request)
+  group: Música & Video
+  tvg_id: NPO3FMVisual.nl
+  tvg_name: NPO 3FM Visual
+  url: https://kiefte.eu/iptv/youtube/@npo3fm

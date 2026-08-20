@@ -220,6 +220,15 @@ https://cmc-cmctv-cineverse.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="KpopTVPlay.kr@HD" tvg-name="KpopTV Play" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/KpopTV-Play.png" group-title="Música & Video",KpopTV Play
 https://183.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8
 
+#EXTINF:-1 tvg-id="SLAMTV.nl" tvg-name="SLAM! TV" group-title="Música & Video",SLAM! TV (Visual Radio)
+https://stream.slam.nl/slam-tv/index.m3u8
+
+#EXTINF:-1 tvg-id="NPORadio2Visual.nl" tvg-name="NPO Radio 2 Visual" group-title="Música & Video",NPO Radio 2 (Top 2000 Visual)
+https://kiefte.eu/iptv/youtube/@NPORadio2
+
+#EXTINF:-1 tvg-id="NPO3FMVisual.nl" tvg-name="NPO 3FM Visual" group-title="Música & Video",NPO 3FM (Visual & Serious Request)
+https://kiefte.eu/iptv/youtube/@npo3fm
+
 #EXTINF:-1 tvg-id="XON.nl" tvg-name="XON Ede" group-title="Regional & Local",XON (Ede TV)
 https://ms7.mx-cd.net/tv/113-474263/EdeTV.smil/playlist.m3u8
 
