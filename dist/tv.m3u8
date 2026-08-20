@@ -49,13 +49,13 @@ https://streaming-live.rtp.pt/liverepeater/smil:rtpacoresHD.smil/playlist.m3u8
 #EXTVLCOPT:http-referrer=https://www.rtp.pt/play/direto/rtpafrica
 https://streaming-live.rtp.pt/liverepeater/smil:rtpafricaHD.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="TVM.mz" tvg-name="TVM" tvg-logo="https://i.imgur.com/gKjW2tA.png" group-title="MZ Geral",TVM (Televisão de Moçambique)
+#EXTINF:-1 tvg-id="TVM.mz" tvg-name="TVM" group-title="MZ Geral",TVM (Televisão de Moçambique)
 https://stream.tvm.co.mz/hls/tvm/playlist.m3u8
 
-#EXTINF:-1 tvg-id="MNTV.mz" tvg-name="MNTV" tvg-logo="https://i.imgur.com/nJgqKZs.png" group-title="MZ Geral",MNTV Moçambique
+#EXTINF:-1 tvg-id="MNTV.mz" tvg-name="MNTV" group-title="MZ Geral",MNTV Moçambique
 https://www.khuwemultimedia.com/hls/mntv/mntv.m3u8
 
-#EXTINF:-1 tvg-id="TVVitoria.mz" tvg-name="TV Vitória" tvg-logo="https://i.imgur.com/Qh1sQo1.png" group-title="MZ Geral",TV Vitória Moçambique
+#EXTINF:-1 tvg-id="TVVitoria.mz" tvg-name="TV Vitória" group-title="MZ Geral",TV Vitória Moçambique
 https://stmv1.srvif.com/tvvitoriamz/tvvitoriamz/playlist.m3u8
 
 #EXTINF:-1 tvg-id="RTP3.pt" tvg-name="RTP 3" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP3.png" group-title="Notícias",RTP 3
@@ -148,7 +148,7 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/64733/64733_264_live.
 #EXTINF:-1 tvg-id="DeluxeRap.de" tvg-name="DELUXE RAP" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Deluxe_Music_2013_Logo.svg/512px-Deluxe_Music_2013_Logo.svg.png" group-title="Música & Video",DELUXE RAP
 https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.m3u8
 
-#EXTINF:-1 tvg-id="DanceTV.nl" tvg-name="Dance TV" tvg-logo="https://i.imgur.com/v8tT94X.png" group-title="Música & Video",Dance TV
+#EXTINF:-1 tvg-id="DanceTV.nl" tvg-name="Dance TV" group-title="Música & Video",Dance TV
 https://m1b2.worldcast.tv/dancetelevisionone/2/dancetelevisionone.m3u8
 
 #EXTINF:-1 tvg-id="TraceToca.fr@HD" tvg-name="Trace Toca" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Toca.png" group-title="Música & Video",Trace Toca (Kizomba / Zouk / PALOP)
@@ -190,16 +190,16 @@ https://amg01243-xitenetworksint-hitsuk-samsunguk-mvovq.amagi.tv/playlist/amg012
 #EXTINF:-1 tvg-id="XITEHitsDE.de@HD" tvg-name="XITE Hits Germany" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.png" group-title="Música & Video",XITE Hits Germany
 https://d726x48n2pd5h.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-skxr1pazhltvp/XITE_Hits.m3u8
 
-#EXTINF:-1 tvg-id="Now70s.uk" tvg-name="Now 70s" tvg-logo="https://i.imgur.com/eB0rJ1W.png" group-title="Música & Video",Now 70s
+#EXTINF:-1 tvg-id="Now70s.uk" tvg-name="Now 70s" group-title="Música & Video",Now 70s
 https://lightning-now70s-samsungnz.amagi.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Now80s.uk" tvg-name="Now 80s" tvg-logo="https://i.imgur.com/Z4w2Q2m.png" group-title="Música & Video",Now 80s
+#EXTINF:-1 tvg-id="Now80s.uk" tvg-name="Now 80s" group-title="Música & Video",Now 80s
 https://lightning-now80s-samsungnz.amagi.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="NowRock.uk" tvg-name="Now Rock" tvg-logo="https://i.imgur.com/kP8z4K9.png" group-title="Música & Video",Now Rock
+#EXTINF:-1 tvg-id="NowRock.uk" tvg-name="Now Rock" group-title="Música & Video",Now Rock
 https://lightning-now90s-samsungnz.amagi.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="RetroMusicTV.cz" tvg-name="Retro Music TV" tvg-logo="https://i.imgur.com/7bQ6p1X.png" group-title="Música & Video",Retro Music TV
+#EXTINF:-1 tvg-id="RetroMusicTV.cz" tvg-name="Retro Music TV" group-title="Música & Video",Retro Music TV
 https://stream.mediawork.cz/retrotv/smil:retrotv2.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-id="4FunTV.pl@HD" tvg-name="4Fun TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/4Fun-TV.png" group-title="Música & Video",4Fun.TV
@@ -220,7 +220,7 @@ https://cmc-cmctv-cineverse.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="KpopTVPlay.kr@HD" tvg-name="KpopTV Play" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/KpopTV-Play.png" group-title="Música & Video",KpopTV Play
 https://183.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8
 
-#EXTINF:-1 tvg-id="XON.nl" tvg-name="XON Ede" tvg-logo="https://i.imgur.com/8QeA67e.png" group-title="Regional & Local",XON (Ede TV)
+#EXTINF:-1 tvg-id="XON.nl" tvg-name="XON Ede" group-title="Regional & Local",XON (Ede TV)
 https://ms7.mx-cd.net/tv/113-474263/EdeTV.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-id="OmroepGelderland.nl@HD" tvg-name="Omroep Gelderland" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepgelderland.png" group-title="Regional & Local",Omroep Gelderland

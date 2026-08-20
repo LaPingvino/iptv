@@ -92,7 +92,6 @@
     "group": "MZ Geral",
     "tvg_id": "TVM.mz",
     "tvg_name": "TVM",
-    "logo": "https://i.imgur.com/gKjW2tA.png",
     "url": "https://stream.tvm.co.mz/hls/tvm/playlist.m3u8"
   },
   {
@@ -100,7 +99,6 @@
     "group": "MZ Geral",
     "tvg_id": "MNTV.mz",
     "tvg_name": "MNTV",
-    "logo": "https://i.imgur.com/nJgqKZs.png",
     "url": "https://www.khuwemultimedia.com/hls/mntv/mntv.m3u8"
   },
   {
@@ -108,7 +106,6 @@
     "group": "MZ Geral",
     "tvg_id": "TVVitoria.mz",
     "tvg_name": "TV Vitória",
-    "logo": "https://i.imgur.com/Qh1sQo1.png",
     "url": "https://stmv1.srvif.com/tvvitoriamz/tvvitoriamz/playlist.m3u8"
   },
   {
@@ -331,7 +328,6 @@
     "group": "Música & Video",
     "tvg_id": "DanceTV.nl",
     "tvg_name": "Dance TV",
-    "logo": "https://i.imgur.com/v8tT94X.png",
     "url": "https://m1b2.worldcast.tv/dancetelevisionone/2/dancetelevisionone.m3u8"
   },
   {
@@ -443,7 +439,6 @@
     "group": "Música & Video",
     "tvg_id": "Now70s.uk",
     "tvg_name": "Now 70s",
-    "logo": "https://i.imgur.com/eB0rJ1W.png",
     "url": "https://lightning-now70s-samsungnz.amagi.tv/playlist.m3u8"
   },
   {
@@ -451,7 +446,6 @@
     "group": "Música & Video",
     "tvg_id": "Now80s.uk",
     "tvg_name": "Now 80s",
-    "logo": "https://i.imgur.com/Z4w2Q2m.png",
     "url": "https://lightning-now80s-samsungnz.amagi.tv/playlist.m3u8"
   },
   {
@@ -459,7 +453,6 @@
     "group": "Música & Video",
     "tvg_id": "NowRock.uk",
     "tvg_name": "Now Rock",
-    "logo": "https://i.imgur.com/kP8z4K9.png",
     "url": "https://lightning-now90s-samsungnz.amagi.tv/playlist.m3u8"
   },
   {
@@ -467,7 +460,6 @@
     "group": "Música & Video",
     "tvg_id": "RetroMusicTV.cz",
     "tvg_name": "Retro Music TV",
-    "logo": "https://i.imgur.com/7bQ6p1X.png",
     "url": "https://stream.mediawork.cz/retrotv/smil:retrotv2.smil/playlist.m3u8"
   },
   {
@@ -523,7 +515,6 @@
     "group": "Regional & Local",
     "tvg_id": "XON.nl",
     "tvg_name": "XON Ede",
-    "logo": "https://i.imgur.com/8QeA67e.png",
     "url": "https://ms7.mx-cd.net/tv/113-474263/EdeTV.smil/playlist.m3u8"
   },
   {
@@ -1094,7 +1085,6 @@
     "group": "NL Rádio",
     "tvg_id": "TukkerFM.nl",
     "tvg_name": "Tukker FM",
-    "logo": "https://i.imgur.com/8QeA67e.png",
     "url": "https://stream.tukkerfm.nl/tukkerfm"
   },
   {
@@ -1102,7 +1092,6 @@
     "group": "NL Rádio",
     "tvg_id": "RadioContinu.nl",
     "tvg_name": "Radio Continu",
-    "logo": "https://i.imgur.com/8QeA67e.png",
     "url": "https://stream.radiocontinu.nl/radiocontinu"
   },
   {
@@ -1110,7 +1099,6 @@
     "group": "NL Rádio",
     "tvg_id": "GigantFM.nl",
     "tvg_name": "Gigant FM",
-    "logo": "https://i.imgur.com/8QeA67e.png",
     "url": "https://stream.gigantfm.nl/gigantfm"
   },
   {
@@ -1118,7 +1106,6 @@
     "group": "MZ Rádio",
     "tvg_id": "RMAntenaNacional.mz",
     "tvg_name": "RM Antena Nacional",
-    "logo": "https://i.imgur.com/gKjW2tA.png",
     "url": "http://node.stream-africa.com:8000/AntenaNacional"
   },
   {
@@ -1126,7 +1113,6 @@
     "group": "MZ Rádio",
     "tvg_id": "RMDesporto.mz",
     "tvg_name": "RM Desporto",
-    "logo": "https://i.imgur.com/gKjW2tA.png",
     "url": "http://node.stream-africa.com:8000/RMDesporto"
   },
   {
@@ -1134,7 +1120,6 @@
     "group": "MZ Rádio",
     "tvg_id": "RMCidadeMaputo.mz",
     "tvg_name": "RM Cidade Maputo",
-    "logo": "https://i.imgur.com/gKjW2tA.png",
     "url": "http://node.stream-africa.com:8000/RadioCidadeMaputo"
   },
   {
@@ -1142,7 +1127,6 @@
     "group": "MZ Rádio",
     "tvg_id": "RMCidadeBeira.mz",
     "tvg_name": "RM Cidade Beira",
-    "logo": "https://i.imgur.com/gKjW2tA.png",
     "url": "http://node.stream-africa.com:8000/RadioCidadeBeira"
   },
   {
@@ -1150,7 +1134,6 @@
     "group": "MZ Rádio",
     "tvg_id": "RMProvincialMaputo.mz",
     "tvg_name": "RM Maputo Provincial",
-    "logo": "https://i.imgur.com/gKjW2tA.png",
     "url": "http://node.stream-africa.com:8000/MaputoFM"
   },
   {
@@ -1158,7 +1141,6 @@
     "group": "MZ Rádio",
     "tvg_id": "RMProvincialGaza.mz",
     "tvg_name": "RM Gaza Provincial",
-    "logo": "https://i.imgur.com/gKjW2tA.png",
     "url": "http://node.stream-africa.com:8000/Gaza"
   },
   {
@@ -1166,7 +1148,6 @@
     "group": "MZ Rádio",
     "tvg_id": "RMProvincialInhambane.mz",
     "tvg_name": "RM Inhambane Provincial",
-    "logo": "https://i.imgur.com/gKjW2tA.png",
     "url": "http://node.stream-africa.com:8000/InhambaneFM"
   },
   {
@@ -1174,7 +1155,6 @@
     "group": "MZ Rádio",
     "tvg_id": "RMProvincialSofala.mz",
     "tvg_name": "RM Sofala Provincial",
-    "logo": "https://i.imgur.com/gKjW2tA.png",
     "url": "http://node.stream-africa.com:8000/Sofala"
   },
   {
@@ -1182,7 +1162,6 @@
     "group": "MZ Rádio",
     "tvg_id": "RMProvincialManica.mz",
     "tvg_name": "RM Manica Provincial",
-    "logo": "https://i.imgur.com/gKjW2tA.png",
     "url": "http://node.stream-africa.com:8000/ManicaFM"
   },
   {
@@ -1190,7 +1169,6 @@
     "group": "MZ Rádio",
     "tvg_id": "RMProvincialTete.mz",
     "tvg_name": "RM Tete Provincial",
-    "logo": "https://i.imgur.com/gKjW2tA.png",
     "url": "http://node.stream-africa.com:8000/TeteFM"
   },
   {
@@ -1198,7 +1176,6 @@
     "group": "MZ Rádio",
     "tvg_id": "RMProvincialZambezia.mz",
     "tvg_name": "RM Zambézia Provincial",
-    "logo": "https://i.imgur.com/gKjW2tA.png",
     "url": "http://node.stream-africa.com:8000/ZambeziaFM"
   },
   {
@@ -1206,7 +1183,6 @@
     "group": "MZ Rádio",
     "tvg_id": "RMProvincialNampula.mz",
     "tvg_name": "RM Nampula Provincial",
-    "logo": "https://i.imgur.com/gKjW2tA.png",
     "url": "http://node.stream-africa.com:8000/Nampula"
   },
   {
@@ -1214,7 +1190,6 @@
     "group": "MZ Rádio",
     "tvg_id": "RMProvincialCaboDelgado.mz",
     "tvg_name": "RM Cabo Delgado Provincial",
-    "logo": "https://i.imgur.com/gKjW2tA.png",
     "url": "http://node.stream-africa.com:8000/CaboDelgadoFM"
   },
   {
@@ -1222,7 +1197,6 @@
     "group": "MZ Rádio",
     "tvg_id": "RMProvincialNiassa.mz",
     "tvg_name": "RM Niassa Provincial",
-    "logo": "https://i.imgur.com/gKjW2tA.png",
     "url": "http://node.stream-africa.com:8000/NiassaFM"
   },
   {
@@ -1230,7 +1204,6 @@
     "group": "MZ Rádio",
     "tvg_id": "LMRadio.mz",
     "tvg_name": "LM Radio",
-    "logo": "https://i.imgur.com/mO2eUv7.png",
     "url": "https://ukwesta.streaming.broadcast.radio/lmradio"
   },
   {
@@ -1238,7 +1211,6 @@
     "group": "MZ Rádio",
     "tvg_id": "MaputoCorridor.mz",
     "tvg_name": "Maputo Corridor Radio",
-    "logo": "https://i.imgur.com/gKjW2tA.png",
     "url": "http://node.stream-africa.com:8000/MaputoCorridor"
   },
   {
@@ -1366,7 +1338,6 @@
     "group": "Rádio Global",
     "tvg_id": "NTSRadio1.uk",
     "tvg_name": "NTS Live 1",
-    "logo": "https://i.imgur.com/zV8V1b2.png",
     "url": "https://stream-relay-geo.ntslive.net/stream"
   },
   {
@@ -1374,7 +1345,6 @@
     "group": "Rádio Global",
     "tvg_id": "NTSRadio2.uk",
     "tvg_name": "NTS Live 2",
-    "logo": "https://i.imgur.com/zV8V1b2.png",
     "url": "https://stream-relay-geo.ntslive.net/stream2"
   },
   {
@@ -1438,7 +1408,6 @@
     "group": "Rádio Global",
     "tvg_id": "Muzaiko.eo",
     "tvg_name": "Muzaiko Esperanto",
-    "logo": "https://i.imgur.com/G5v92yG.png",
     "url": "http://fluo.muzaiko.saluton.dk:8000/radio.mp3"
   },
   {
@@ -1446,7 +1415,6 @@
     "group": "Rádio Global",
     "tvg_id": "RadioHabanaCuba.eo",
     "tvg_name": "Radio Habana Cuba Esperanto",
-    "logo": "https://i.imgur.com/G5v92yG.png",
     "url": "https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/McW3fLhs"
   },
   {
@@ -1454,7 +1422,6 @@
     "group": "Rádio Global",
     "tvg_id": "BokRadio.za",
     "tvg_name": "Bok Radio Afrikaans",
-    "logo": "https://i.imgur.com/k7F8Q4s.png",
     "url": "http://bokradio.highquality.radiostream.co.za/"
   },
   {
@@ -1462,7 +1429,6 @@
     "group": "Rádio Global",
     "tvg_id": "BosveldStereo.za",
     "tvg_name": "Bosveld Stereo Afrikaans",
-    "logo": "https://i.imgur.com/k7F8Q4s.png",
     "url": "http://capeant.antfarm.co.za:8000/Bosveld"
   },
   {
@@ -1470,7 +1436,6 @@
     "group": "Rádio Global",
     "tvg_id": "FineMusicRadio.za",
     "tvg_name": "Fine Music Radio",
-    "logo": "https://i.imgur.com/k7F8Q4s.png",
     "url": "https://edge.iono.fm/xhls/fmr_live_high.m3u8"
   }
 ]

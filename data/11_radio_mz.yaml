@@ -2,95 +2,79 @@
   group: MZ Rádio
   tvg_id: RMAntenaNacional.mz
   tvg_name: RM Antena Nacional
-  logo: https://i.imgur.com/gKjW2tA.png
   url: http://node.stream-africa.com:8000/AntenaNacional
 - name: Rádio Moçambique - RM Desporto
   group: MZ Rádio
   tvg_id: RMDesporto.mz
   tvg_name: RM Desporto
-  logo: https://i.imgur.com/gKjW2tA.png
   url: http://node.stream-africa.com:8000/RMDesporto
 - name: Rádio Moçambique - Cidade Maputo
   group: MZ Rádio
   tvg_id: RMCidadeMaputo.mz
   tvg_name: RM Cidade Maputo
-  logo: https://i.imgur.com/gKjW2tA.png
   url: http://node.stream-africa.com:8000/RadioCidadeMaputo
 - name: Rádio Moçambique - Cidade Beira
   group: MZ Rádio
   tvg_id: RMCidadeBeira.mz
   tvg_name: RM Cidade Beira
-  logo: https://i.imgur.com/gKjW2tA.png
   url: http://node.stream-africa.com:8000/RadioCidadeBeira
 - name: RM Emissor Provincial de Maputo (Changana / Ronga)
   group: MZ Rádio
   tvg_id: RMProvincialMaputo.mz
   tvg_name: RM Maputo Provincial
-  logo: https://i.imgur.com/gKjW2tA.png
   url: http://node.stream-africa.com:8000/MaputoFM
 - name: RM Emissor Provincial de Gaza (Changana / Chope)
   group: MZ Rádio
   tvg_id: RMProvincialGaza.mz
   tvg_name: RM Gaza Provincial
-  logo: https://i.imgur.com/gKjW2tA.png
   url: http://node.stream-africa.com:8000/Gaza
 - name: RM Emissor Provincial de Inhambane (Gitonga / Matsua / Bitonga)
   group: MZ Rádio
   tvg_id: RMProvincialInhambane.mz
   tvg_name: RM Inhambane Provincial
-  logo: https://i.imgur.com/gKjW2tA.png
   url: http://node.stream-africa.com:8000/InhambaneFM
 - name: RM Emissor Provincial de Sofala (Sena / Ndau)
   group: MZ Rádio
   tvg_id: RMProvincialSofala.mz
   tvg_name: RM Sofala Provincial
-  logo: https://i.imgur.com/gKjW2tA.png
   url: http://node.stream-africa.com:8000/Sofala
 - name: RM Emissor Provincial de Manica (Manyika / Ndau)
   group: MZ Rádio
   tvg_id: RMProvincialManica.mz
   tvg_name: RM Manica Provincial
-  logo: https://i.imgur.com/gKjW2tA.png
   url: http://node.stream-africa.com:8000/ManicaFM
 - name: RM Emissor Provincial de Tete (Nyanja / Nyungwe)
   group: MZ Rádio
   tvg_id: RMProvincialTete.mz
   tvg_name: RM Tete Provincial
-  logo: https://i.imgur.com/gKjW2tA.png
   url: http://node.stream-africa.com:8000/TeteFM
 - name: RM Emissor Provincial da Zambézia (Elomwe / Echuwabo)
   group: MZ Rádio
   tvg_id: RMProvincialZambezia.mz
   tvg_name: RM Zambézia Provincial
-  logo: https://i.imgur.com/gKjW2tA.png
   url: http://node.stream-africa.com:8000/ZambeziaFM
 - name: RM Emissor Provincial de Nampula (Emakhuwa)
   group: MZ Rádio
   tvg_id: RMProvincialNampula.mz
   tvg_name: RM Nampula Provincial
-  logo: https://i.imgur.com/gKjW2tA.png
   url: http://node.stream-africa.com:8000/Nampula
 - name: RM Emissor Provincial de Cabo Delgado (Emakhuwa / Shimakonde / Kimwani)
   group: MZ Rádio
   tvg_id: RMProvincialCaboDelgado.mz
   tvg_name: RM Cabo Delgado Provincial
-  logo: https://i.imgur.com/gKjW2tA.png
   url: http://node.stream-africa.com:8000/CaboDelgadoFM
 - name: RM Emissor Provincial do Niassa (Yao / Emakhuwa / Nyanja)
   group: MZ Rádio
   tvg_id: RMProvincialNiassa.mz
   tvg_name: RM Niassa Provincial
-  logo: https://i.imgur.com/gKjW2tA.png
   url: http://node.stream-africa.com:8000/NiassaFM
 - name: LM Radio (Maputo / Southern Africa)
   group: MZ Rádio
   tvg_id: LMRadio.mz
   tvg_name: LM Radio
-  logo: https://i.imgur.com/mO2eUv7.png
   url: https://ukwesta.streaming.broadcast.radio/lmradio
 - name: Maputo Corridor Radio
   group: MZ Rádio
   tvg_id: MaputoCorridor.mz
   tvg_name: Maputo Corridor Radio
-  logo: https://i.imgur.com/gKjW2tA.png
   url: http://node.stream-africa.com:8000/MaputoCorridor

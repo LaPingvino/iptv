@@ -49,13 +49,13 @@ https://streaming-live.rtp.pt/liverepeater/smil:rtpacoresHD.smil/playlist.m3u8
 #EXTVLCOPT:http-referrer=https://www.rtp.pt/play/direto/rtpafrica
 https://streaming-live.rtp.pt/liverepeater/smil:rtpafricaHD.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="TVM.mz" tvg-name="TVM" tvg-logo="https://i.imgur.com/gKjW2tA.png" group-title="MZ Geral",TVM (Televisão de Moçambique)
+#EXTINF:-1 tvg-id="TVM.mz" tvg-name="TVM" group-title="MZ Geral",TVM (Televisão de Moçambique)
 https://stream.tvm.co.mz/hls/tvm/playlist.m3u8
 
-#EXTINF:-1 tvg-id="MNTV.mz" tvg-name="MNTV" tvg-logo="https://i.imgur.com/nJgqKZs.png" group-title="MZ Geral",MNTV Moçambique
+#EXTINF:-1 tvg-id="MNTV.mz" tvg-name="MNTV" group-title="MZ Geral",MNTV Moçambique
 https://www.khuwemultimedia.com/hls/mntv/mntv.m3u8
 
-#EXTINF:-1 tvg-id="TVVitoria.mz" tvg-name="TV Vitória" tvg-logo="https://i.imgur.com/Qh1sQo1.png" group-title="MZ Geral",TV Vitória Moçambique
+#EXTINF:-1 tvg-id="TVVitoria.mz" tvg-name="TV Vitória" group-title="MZ Geral",TV Vitória Moçambique
 https://stmv1.srvif.com/tvvitoriamz/tvvitoriamz/playlist.m3u8
 
 #EXTINF:-1 tvg-id="RTP3.pt" tvg-name="RTP 3" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP3.png" group-title="Notícias",RTP 3
@@ -148,7 +148,7 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/64733/64733_264_live.
 #EXTINF:-1 tvg-id="DeluxeRap.de" tvg-name="DELUXE RAP" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Deluxe_Music_2013_Logo.svg/512px-Deluxe_Music_2013_Logo.svg.png" group-title="Música & Video",DELUXE RAP
 https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.m3u8
 
-#EXTINF:-1 tvg-id="DanceTV.nl" tvg-name="Dance TV" tvg-logo="https://i.imgur.com/v8tT94X.png" group-title="Música & Video",Dance TV
+#EXTINF:-1 tvg-id="DanceTV.nl" tvg-name="Dance TV" group-title="Música & Video",Dance TV
 https://m1b2.worldcast.tv/dancetelevisionone/2/dancetelevisionone.m3u8
 
 #EXTINF:-1 tvg-id="TraceToca.fr@HD" tvg-name="Trace Toca" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Toca.png" group-title="Música & Video",Trace Toca (Kizomba / Zouk / PALOP)
@@ -190,16 +190,16 @@ https://amg01243-xitenetworksint-hitsuk-samsunguk-mvovq.amagi.tv/playlist/amg012
 #EXTINF:-1 tvg-id="XITEHitsDE.de@HD" tvg-name="XITE Hits Germany" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.png" group-title="Música & Video",XITE Hits Germany
 https://d726x48n2pd5h.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-skxr1pazhltvp/XITE_Hits.m3u8
 
-#EXTINF:-1 tvg-id="Now70s.uk" tvg-name="Now 70s" tvg-logo="https://i.imgur.com/eB0rJ1W.png" group-title="Música & Video",Now 70s
+#EXTINF:-1 tvg-id="Now70s.uk" tvg-name="Now 70s" group-title="Música & Video",Now 70s
 https://lightning-now70s-samsungnz.amagi.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Now80s.uk" tvg-name="Now 80s" tvg-logo="https://i.imgur.com/Z4w2Q2m.png" group-title="Música & Video",Now 80s
+#EXTINF:-1 tvg-id="Now80s.uk" tvg-name="Now 80s" group-title="Música & Video",Now 80s
 https://lightning-now80s-samsungnz.amagi.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="NowRock.uk" tvg-name="Now Rock" tvg-logo="https://i.imgur.com/kP8z4K9.png" group-title="Música & Video",Now Rock
+#EXTINF:-1 tvg-id="NowRock.uk" tvg-name="Now Rock" group-title="Música & Video",Now Rock
 https://lightning-now90s-samsungnz.amagi.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="RetroMusicTV.cz" tvg-name="Retro Music TV" tvg-logo="https://i.imgur.com/7bQ6p1X.png" group-title="Música & Video",Retro Music TV
+#EXTINF:-1 tvg-id="RetroMusicTV.cz" tvg-name="Retro Music TV" group-title="Música & Video",Retro Music TV
 https://stream.mediawork.cz/retrotv/smil:retrotv2.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-id="4FunTV.pl@HD" tvg-name="4Fun TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/4Fun-TV.png" group-title="Música & Video",4Fun.TV
@@ -220,7 +220,7 @@ https://cmc-cmctv-cineverse.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="KpopTVPlay.kr@HD" tvg-name="KpopTV Play" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/KpopTV-Play.png" group-title="Música & Video",KpopTV Play
 https://183.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8
 
-#EXTINF:-1 tvg-id="XON.nl" tvg-name="XON Ede" tvg-logo="https://i.imgur.com/8QeA67e.png" group-title="Regional & Local",XON (Ede TV)
+#EXTINF:-1 tvg-id="XON.nl" tvg-name="XON Ede" group-title="Regional & Local",XON (Ede TV)
 https://ms7.mx-cd.net/tv/113-474263/EdeTV.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-id="OmroepGelderland.nl@HD" tvg-name="Omroep Gelderland" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepgelderland.png" group-title="Regional & Local",Omroep Gelderland
@@ -436,61 +436,61 @@ http://icecast.stream.bbvms.com/omroepwest_radio
 #EXTINF:-1 tvg-id="OmroepZeelandRadio.nl" tvg-name="Omroep Zeeland Radio" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepzeeland.png" group-title="NL Rádio" radio="true",Omroep Zeeland Radio
 https://d3isaxd2t6q8zm.cloudfront.net/icecast/omroepzeeland/omroepzeeland_radio
 
-#EXTINF:-1 tvg-id="TukkerFM.nl" tvg-name="Tukker FM" tvg-logo="https://i.imgur.com/8QeA67e.png" group-title="NL Rádio" radio="true",Tukker FM (Twents / Piratenhits)
+#EXTINF:-1 tvg-id="TukkerFM.nl" tvg-name="Tukker FM" group-title="NL Rádio" radio="true",Tukker FM (Twents / Piratenhits)
 https://stream.tukkerfm.nl/tukkerfm
 
-#EXTINF:-1 tvg-id="RadioContinu.nl" tvg-name="Radio Continu" tvg-logo="https://i.imgur.com/8QeA67e.png" group-title="NL Rádio" radio="true",Radio Continu (Noord & Oost NL)
+#EXTINF:-1 tvg-id="RadioContinu.nl" tvg-name="Radio Continu" group-title="NL Rádio" radio="true",Radio Continu (Noord & Oost NL)
 https://stream.radiocontinu.nl/radiocontinu
 
-#EXTINF:-1 tvg-id="GigantFM.nl" tvg-name="Gigant FM" tvg-logo="https://i.imgur.com/8QeA67e.png" group-title="NL Rádio" radio="true",Gigant FM (Piratenmuziek)
+#EXTINF:-1 tvg-id="GigantFM.nl" tvg-name="Gigant FM" group-title="NL Rádio" radio="true",Gigant FM (Piratenmuziek)
 https://stream.gigantfm.nl/gigantfm
 
-#EXTINF:-1 tvg-id="RMAntenaNacional.mz" tvg-name="RM Antena Nacional" tvg-logo="https://i.imgur.com/gKjW2tA.png" group-title="MZ Rádio" radio="true",Rádio Moçambique - Antena Nacional
+#EXTINF:-1 tvg-id="RMAntenaNacional.mz" tvg-name="RM Antena Nacional" group-title="MZ Rádio" radio="true",Rádio Moçambique - Antena Nacional
 http://node.stream-africa.com:8000/AntenaNacional
 
-#EXTINF:-1 tvg-id="RMDesporto.mz" tvg-name="RM Desporto" tvg-logo="https://i.imgur.com/gKjW2tA.png" group-title="MZ Rádio" radio="true",Rádio Moçambique - RM Desporto
+#EXTINF:-1 tvg-id="RMDesporto.mz" tvg-name="RM Desporto" group-title="MZ Rádio" radio="true",Rádio Moçambique - RM Desporto
 http://node.stream-africa.com:8000/RMDesporto
 
-#EXTINF:-1 tvg-id="RMCidadeMaputo.mz" tvg-name="RM Cidade Maputo" tvg-logo="https://i.imgur.com/gKjW2tA.png" group-title="MZ Rádio" radio="true",Rádio Moçambique - Cidade Maputo
+#EXTINF:-1 tvg-id="RMCidadeMaputo.mz" tvg-name="RM Cidade Maputo" group-title="MZ Rádio" radio="true",Rádio Moçambique - Cidade Maputo
 http://node.stream-africa.com:8000/RadioCidadeMaputo
 
-#EXTINF:-1 tvg-id="RMCidadeBeira.mz" tvg-name="RM Cidade Beira" tvg-logo="https://i.imgur.com/gKjW2tA.png" group-title="MZ Rádio" radio="true",Rádio Moçambique - Cidade Beira
+#EXTINF:-1 tvg-id="RMCidadeBeira.mz" tvg-name="RM Cidade Beira" group-title="MZ Rádio" radio="true",Rádio Moçambique - Cidade Beira
 http://node.stream-africa.com:8000/RadioCidadeBeira
 
-#EXTINF:-1 tvg-id="RMProvincialMaputo.mz" tvg-name="RM Maputo Provincial" tvg-logo="https://i.imgur.com/gKjW2tA.png" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Maputo (Changana / Ronga)
+#EXTINF:-1 tvg-id="RMProvincialMaputo.mz" tvg-name="RM Maputo Provincial" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Maputo (Changana / Ronga)
 http://node.stream-africa.com:8000/MaputoFM
 
-#EXTINF:-1 tvg-id="RMProvincialGaza.mz" tvg-name="RM Gaza Provincial" tvg-logo="https://i.imgur.com/gKjW2tA.png" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Gaza (Changana / Chope)
+#EXTINF:-1 tvg-id="RMProvincialGaza.mz" tvg-name="RM Gaza Provincial" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Gaza (Changana / Chope)
 http://node.stream-africa.com:8000/Gaza
 
-#EXTINF:-1 tvg-id="RMProvincialInhambane.mz" tvg-name="RM Inhambane Provincial" tvg-logo="https://i.imgur.com/gKjW2tA.png" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Inhambane (Gitonga / Matsua / Bitonga)
+#EXTINF:-1 tvg-id="RMProvincialInhambane.mz" tvg-name="RM Inhambane Provincial" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Inhambane (Gitonga / Matsua / Bitonga)
 http://node.stream-africa.com:8000/InhambaneFM
 
-#EXTINF:-1 tvg-id="RMProvincialSofala.mz" tvg-name="RM Sofala Provincial" tvg-logo="https://i.imgur.com/gKjW2tA.png" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Sofala (Sena / Ndau)
+#EXTINF:-1 tvg-id="RMProvincialSofala.mz" tvg-name="RM Sofala Provincial" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Sofala (Sena / Ndau)
 http://node.stream-africa.com:8000/Sofala
 
-#EXTINF:-1 tvg-id="RMProvincialManica.mz" tvg-name="RM Manica Provincial" tvg-logo="https://i.imgur.com/gKjW2tA.png" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Manica (Manyika / Ndau)
+#EXTINF:-1 tvg-id="RMProvincialManica.mz" tvg-name="RM Manica Provincial" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Manica (Manyika / Ndau)
 http://node.stream-africa.com:8000/ManicaFM
 
-#EXTINF:-1 tvg-id="RMProvincialTete.mz" tvg-name="RM Tete Provincial" tvg-logo="https://i.imgur.com/gKjW2tA.png" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Tete (Nyanja / Nyungwe)
+#EXTINF:-1 tvg-id="RMProvincialTete.mz" tvg-name="RM Tete Provincial" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Tete (Nyanja / Nyungwe)
 http://node.stream-africa.com:8000/TeteFM
 
-#EXTINF:-1 tvg-id="RMProvincialZambezia.mz" tvg-name="RM Zambézia Provincial" tvg-logo="https://i.imgur.com/gKjW2tA.png" group-title="MZ Rádio" radio="true",RM Emissor Provincial da Zambézia (Elomwe / Echuwabo)
+#EXTINF:-1 tvg-id="RMProvincialZambezia.mz" tvg-name="RM Zambézia Provincial" group-title="MZ Rádio" radio="true",RM Emissor Provincial da Zambézia (Elomwe / Echuwabo)
 http://node.stream-africa.com:8000/ZambeziaFM
 
-#EXTINF:-1 tvg-id="RMProvincialNampula.mz" tvg-name="RM Nampula Provincial" tvg-logo="https://i.imgur.com/gKjW2tA.png" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Nampula (Emakhuwa)
+#EXTINF:-1 tvg-id="RMProvincialNampula.mz" tvg-name="RM Nampula Provincial" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Nampula (Emakhuwa)
 http://node.stream-africa.com:8000/Nampula
 
-#EXTINF:-1 tvg-id="RMProvincialCaboDelgado.mz" tvg-name="RM Cabo Delgado Provincial" tvg-logo="https://i.imgur.com/gKjW2tA.png" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Cabo Delgado (Emakhuwa / Shimakonde / Kimwani)
+#EXTINF:-1 tvg-id="RMProvincialCaboDelgado.mz" tvg-name="RM Cabo Delgado Provincial" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Cabo Delgado (Emakhuwa / Shimakonde / Kimwani)
 http://node.stream-africa.com:8000/CaboDelgadoFM
 
-#EXTINF:-1 tvg-id="RMProvincialNiassa.mz" tvg-name="RM Niassa Provincial" tvg-logo="https://i.imgur.com/gKjW2tA.png" group-title="MZ Rádio" radio="true",RM Emissor Provincial do Niassa (Yao / Emakhuwa / Nyanja)
+#EXTINF:-1 tvg-id="RMProvincialNiassa.mz" tvg-name="RM Niassa Provincial" group-title="MZ Rádio" radio="true",RM Emissor Provincial do Niassa (Yao / Emakhuwa / Nyanja)
 http://node.stream-africa.com:8000/NiassaFM
 
-#EXTINF:-1 tvg-id="LMRadio.mz" tvg-name="LM Radio" tvg-logo="https://i.imgur.com/mO2eUv7.png" group-title="MZ Rádio" radio="true",LM Radio (Maputo / Southern Africa)
+#EXTINF:-1 tvg-id="LMRadio.mz" tvg-name="LM Radio" group-title="MZ Rádio" radio="true",LM Radio (Maputo / Southern Africa)
 https://ukwesta.streaming.broadcast.radio/lmradio
 
-#EXTINF:-1 tvg-id="MaputoCorridor.mz" tvg-name="Maputo Corridor Radio" tvg-logo="https://i.imgur.com/gKjW2tA.png" group-title="MZ Rádio" radio="true",Maputo Corridor Radio
+#EXTINF:-1 tvg-id="MaputoCorridor.mz" tvg-name="Maputo Corridor Radio" group-title="MZ Rádio" radio="true",Maputo Corridor Radio
 http://node.stream-africa.com:8000/MaputoCorridor
 
 #EXTINF:-1 tvg-id="StudioBrusselAudio.be" tvg-name="Studio Brussel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="BE Rádio" radio="true",Studio Brussel
@@ -538,10 +538,10 @@ https://icecast.radiofrance.fr/fipelectro-midfi.mp3
 #EXTINF:-1 tvg-id="FIPGroove.fr" tvg-name="FIP Groove" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/fip.png" group-title="Rádio Global" radio="true",FIP Groove
 https://icecast.radiofrance.fr/fipgroove-midfi.mp3
 
-#EXTINF:-1 tvg-id="NTSRadio1.uk" tvg-name="NTS Live 1" tvg-logo="https://i.imgur.com/zV8V1b2.png" group-title="Rádio Global" radio="true",NTS Radio 1 (London)
+#EXTINF:-1 tvg-id="NTSRadio1.uk" tvg-name="NTS Live 1" group-title="Rádio Global" radio="true",NTS Radio 1 (London)
 https://stream-relay-geo.ntslive.net/stream
 
-#EXTINF:-1 tvg-id="NTSRadio2.uk" tvg-name="NTS Live 2" tvg-logo="https://i.imgur.com/zV8V1b2.png" group-title="Rádio Global" radio="true",NTS Radio 2 (London)
+#EXTINF:-1 tvg-id="NTSRadio2.uk" tvg-name="NTS Live 2" group-title="Rádio Global" radio="true",NTS Radio 2 (London)
 https://stream-relay-geo.ntslive.net/stream2
 
 #EXTINF:-1 tvg-id="SomaFMGrooveSalad.us" tvg-name="SomaFM Groove Salad" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png" group-title="Rádio Global" radio="true",SomaFM: Groove Salad
@@ -565,17 +565,17 @@ https://stream.live.vc.bbcmedia.co.uk/bbc_6music
 #EXTINF:-1 tvg-id="KEXP.us" tvg-name="KEXP" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/kexp.png" group-title="Rádio Global" radio="true",KEXP 90.3 FM (Seattle)
 https://kexp.streamguys1.com/kexp160.aac
 
-#EXTINF:-1 tvg-id="Muzaiko.eo" tvg-name="Muzaiko Esperanto" tvg-logo="https://i.imgur.com/G5v92yG.png" group-title="Rádio Global" radio="true",Muzaiko (24/7 Esperanto Radio)
+#EXTINF:-1 tvg-id="Muzaiko.eo" tvg-name="Muzaiko Esperanto" group-title="Rádio Global" radio="true",Muzaiko (24/7 Esperanto Radio)
 http://fluo.muzaiko.saluton.dk:8000/radio.mp3
 
-#EXTINF:-1 tvg-id="RadioHabanaCuba.eo" tvg-name="Radio Habana Cuba Esperanto" tvg-logo="https://i.imgur.com/G5v92yG.png" group-title="Rádio Global" radio="true",Radio Habana Cuba (Esperanto)
+#EXTINF:-1 tvg-id="RadioHabanaCuba.eo" tvg-name="Radio Habana Cuba Esperanto" group-title="Rádio Global" radio="true",Radio Habana Cuba (Esperanto)
 https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/McW3fLhs
 
-#EXTINF:-1 tvg-id="BokRadio.za" tvg-name="Bok Radio Afrikaans" tvg-logo="https://i.imgur.com/k7F8Q4s.png" group-title="Rádio Global" radio="true",Bok Radio 98.9 FM (Afrikaans)
+#EXTINF:-1 tvg-id="BokRadio.za" tvg-name="Bok Radio Afrikaans" group-title="Rádio Global" radio="true",Bok Radio 98.9 FM (Afrikaans)
 http://bokradio.highquality.radiostream.co.za/
 
-#EXTINF:-1 tvg-id="BosveldStereo.za" tvg-name="Bosveld Stereo Afrikaans" tvg-logo="https://i.imgur.com/k7F8Q4s.png" group-title="Rádio Global" radio="true",Bosveld Stereo 107.5 FM (Afrikaans)
+#EXTINF:-1 tvg-id="BosveldStereo.za" tvg-name="Bosveld Stereo Afrikaans" group-title="Rádio Global" radio="true",Bosveld Stereo 107.5 FM (Afrikaans)
 http://capeant.antfarm.co.za:8000/Bosveld
 
-#EXTINF:-1 tvg-id="FineMusicRadio.za" tvg-name="Fine Music Radio" tvg-logo="https://i.imgur.com/k7F8Q4s.png" group-title="Rádio Global" radio="true",Fine Music Radio (Cape Town Classical)
+#EXTINF:-1 tvg-id="FineMusicRadio.za" tvg-name="Fine Music Radio" group-title="Rádio Global" radio="true",Fine Music Radio (Cape Town Classical)
 https://edge.iono.fm/xhls/fmr_live_high.m3u8

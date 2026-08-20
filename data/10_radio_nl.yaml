@@ -134,17 +134,14 @@
   group: NL Rádio
   tvg_id: TukkerFM.nl
   tvg_name: Tukker FM
-  logo: https://i.imgur.com/8QeA67e.png
   url: https://stream.tukkerfm.nl/tukkerfm
 - name: Radio Continu (Noord & Oost NL)
   group: NL Rádio
   tvg_id: RadioContinu.nl
   tvg_name: Radio Continu
-  logo: https://i.imgur.com/8QeA67e.png
   url: https://stream.radiocontinu.nl/radiocontinu
 - name: Gigant FM (Piratenmuziek)
   group: NL Rádio
   tvg_id: GigantFM.nl
   tvg_name: Gigant FM
-  logo: https://i.imgur.com/8QeA67e.png
   url: https://stream.gigantfm.nl/gigantfm

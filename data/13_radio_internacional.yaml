@@ -56,13 +56,11 @@
   group: Rádio Global
   tvg_id: NTSRadio1.uk
   tvg_name: NTS Live 1
-  logo: https://i.imgur.com/zV8V1b2.png
   url: https://stream-relay-geo.ntslive.net/stream
 - name: NTS Radio 2 (London)
   group: Rádio Global
   tvg_id: NTSRadio2.uk
   tvg_name: NTS Live 2
-  logo: https://i.imgur.com/zV8V1b2.png
   url: https://stream-relay-geo.ntslive.net/stream2
 - name: 'SomaFM: Groove Salad'
   group: Rádio Global

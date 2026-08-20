@@ -2,29 +2,24 @@
   group: Rádio Global
   tvg_id: Muzaiko.eo
   tvg_name: Muzaiko Esperanto
-  logo: https://i.imgur.com/G5v92yG.png
   url: http://fluo.muzaiko.saluton.dk:8000/radio.mp3
 - name: Radio Habana Cuba (Esperanto)
   group: Rádio Global
   tvg_id: RadioHabanaCuba.eo
   tvg_name: Radio Habana Cuba Esperanto
-  logo: https://i.imgur.com/G5v92yG.png
   url: https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/McW3fLhs
 - name: Bok Radio 98.9 FM (Afrikaans)
   group: Rádio Global
   tvg_id: BokRadio.za
   tvg_name: Bok Radio Afrikaans
-  logo: https://i.imgur.com/k7F8Q4s.png
   url: http://bokradio.highquality.radiostream.co.za/
 - name: Bosveld Stereo 107.5 FM (Afrikaans)
   group: Rádio Global
   tvg_id: BosveldStereo.za
   tvg_name: Bosveld Stereo Afrikaans
-  logo: https://i.imgur.com/k7F8Q4s.png
   url: http://capeant.antfarm.co.za:8000/Bosveld
 - name: Fine Music Radio (Cape Town Classical)
   group: Rádio Global
   tvg_id: FineMusicRadio.za
   tvg_name: Fine Music Radio
-  logo: https://i.imgur.com/k7F8Q4s.png
   url: https://edge.iono.fm/xhls/fmr_live_high.m3u8

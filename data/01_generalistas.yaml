@@ -74,17 +74,14 @@
   group: MZ Geral
   tvg_id: TVM.mz
   tvg_name: TVM
-  logo: https://i.imgur.com/gKjW2tA.png
   url: https://stream.tvm.co.mz/hls/tvm/playlist.m3u8
 - name: MNTV Moçambique
   group: MZ Geral
   tvg_id: MNTV.mz
   tvg_name: MNTV
-  logo: https://i.imgur.com/nJgqKZs.png
   url: https://www.khuwemultimedia.com/hls/mntv/mntv.m3u8
 - name: TV Vitória Moçambique
   group: MZ Geral
   tvg_id: TVVitoria.mz
   tvg_name: TV Vitória
-  logo: https://i.imgur.com/Qh1sQo1.png
   url: https://stmv1.srvif.com/tvvitoriamz/tvvitoriamz/playlist.m3u8

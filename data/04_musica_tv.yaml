@@ -32,7 +32,6 @@
   group: Música & Video
   tvg_id: DanceTV.nl
   tvg_name: Dance TV
-  logo: https://i.imgur.com/v8tT94X.png
   url: https://m1b2.worldcast.tv/dancetelevisionone/2/dancetelevisionone.m3u8
 - name: Trace Toca (Kizomba / Zouk / PALOP)
   group: Música & Video
@@ -116,25 +115,21 @@
   group: Música & Video
   tvg_id: Now70s.uk
   tvg_name: Now 70s
-  logo: https://i.imgur.com/eB0rJ1W.png
   url: https://lightning-now70s-samsungnz.amagi.tv/playlist.m3u8
 - name: Now 80s
   group: Música & Video
   tvg_id: Now80s.uk
   tvg_name: Now 80s
-  logo: https://i.imgur.com/Z4w2Q2m.png
   url: https://lightning-now80s-samsungnz.amagi.tv/playlist.m3u8
 - name: Now Rock
   group: Música & Video
   tvg_id: NowRock.uk
   tvg_name: Now Rock
-  logo: https://i.imgur.com/kP8z4K9.png
   url: https://lightning-now90s-samsungnz.amagi.tv/playlist.m3u8
 - name: Retro Music TV
   group: Música & Video
   tvg_id: RetroMusicTV.cz
   tvg_name: Retro Music TV
-  logo: https://i.imgur.com/7bQ6p1X.png
   url: https://stream.mediawork.cz/retrotv/smil:retrotv2.smil/playlist.m3u8
 - name: 4Fun.TV
   group: Música & Video
