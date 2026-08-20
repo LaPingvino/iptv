@@ -1,6 +1,9 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/epg.xml.gz,https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-m3upt.xml.xz,https://raw.githubusercontent.com/Free-TV/IPTV/master/epg.xml.gz" x-tvg-url="https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/epg.xml.gz,https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-m3upt.xml.xz,https://raw.githubusercontent.com/Free-TV/IPTV/master/epg.xml.gz"
 
 
+#EXTINF:-1 tvg-id="CadenaSER.es" tvg-name="Cadena SER" group-title="ES Rádio" radio="true",Cadena SER España
+https://playerservices.streamtheworld.com/api/livestream-redirect/CADENASER.mp3
+
 #EXTINF:-1 tvg-id="WLGI.us" tvg-name="Radio Bahai" group-title="Religião" radio="true",Radio Bahá'í (WLGI 90.9 FM)
 https://wlgi.streamguys1.com/live
 
@@ -163,6 +166,42 @@ https://stream.deltafm.nl/deltafm
 #EXTINF:-1 tvg-id="Studio040.nl" tvg-name="Studio 040" group-title="NL Rádio" radio="true",Studio 040 (Eindhoven)
 https://stream.studio040.nl/studio040
 
+#EXTINF:-1 tvg-id="StudioBrussel.be" tvg-name="Studio Brussel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="BE Rádio" radio="true",Studio Brussel
+https://icecast.vrtcdn.be/stubru-high.mp3
+
+#EXTINF:-1 tvg-id="StuBruDeTijdloze.be" tvg-name="StuBru De Tijdloze" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="BE Rádio" radio="true",StuBru De Tijdloze
+https://icecast.vrtcdn.be/stubru_tijdloze-high.mp3
+
+#EXTINF:-1 tvg-id="Radio1.be" tvg-name="Radio 1 VRT" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-1-BE.png" group-title="BE Rádio" radio="true",Radio 1 (VRT Belgium)
+https://icecast.vrtcdn.be/ra1-high.mp3
+
+#EXTINF:-1 tvg-id="Radio2Antwerpen.be" tvg-name="Radio 2 Antwerpen" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-2-BE.png" group-title="BE Rádio" radio="true",Radio 2 (VRT Antwerpen)
+https://icecast.vrtcdn.be/ra2ant-high.mp3
+
+#EXTINF:-1 tvg-id="MNM.be" tvg-name="MNM" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/MNM.png" group-title="BE Rádio" radio="true",MNM (VRT)
+https://icecast.vrtcdn.be/mnm-high.mp3
+
+#EXTINF:-1 tvg-id="Klara.be" tvg-name="Klara" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Klara.png" group-title="BE Rádio" radio="true",Klara (VRT Classical)
+https://icecast.vrtcdn.be/klara-high.mp3
+
+#EXTINF:-1 tvg-id="KlaraContinuo.be" tvg-name="Klara Continuo" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Klara.png" group-title="BE Rádio" radio="true",Klara Continuo
+https://icecast.vrtcdn.be/klaracontinuo-high.mp3
+
+#EXTINF:-1 tvg-id="Classic21.be" tvg-name="Classic 21" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Classic-21.png" group-title="BE Rádio" radio="true",Classic 21 (RTBF Rock)
+https://radios.rtbf.be/classic21-128.mp3
+
+#EXTINF:-1 tvg-id="LaPremiere.be" tvg-name="RTBF La Première" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/La-Premiere.png" group-title="BE Rádio" radio="true",RTBF La Première
+https://radios.rtbf.be/laprem1ere-128.mp3
+
+#EXTINF:-1 tvg-id="Musiq3.be" tvg-name="RTBF Musiq3" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Musiq3.png" group-title="BE Rádio" radio="true",RTBF Musiq3
+https://radios.rtbf.be/musiq3-128.mp3
+
+#EXTINF:-1 tvg-id="BRF1.be" tvg-name="BRF 1" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/brf1.png" group-title="BE Rádio" radio="true",BRF 1 (Ostbelgien Deutsch)
+http://mp3.stream.brf.be/brf1.mp3
+
+#EXTINF:-1 tvg-id="BRF2.be" tvg-name="BRF 2" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/brf2.png" group-title="BE Rádio" radio="true",BRF 2 (Ostbelgien Deutsch Schlager)
+http://mp3.stream.brf.be/brf2.mp3
+
 #EXTINF:-1 tvg-id="RMAntenaNacional.mz" tvg-name="RM Antena Nacional" group-title="MZ Rádio" radio="true",Rádio Moçambique - Antena Nacional
 http://node.stream-africa.com:8000/AntenaNacional
 
@@ -210,42 +249,6 @@ https://ukwesta.streaming.broadcast.radio/lmradio
 
 #EXTINF:-1 tvg-id="MaputoCorridor.mz" tvg-name="Maputo Corridor Radio" group-title="MZ Rádio" radio="true",Maputo Corridor Radio
 http://node.stream-africa.com:8000/MaputoCorridor
-
-#EXTINF:-1 tvg-id="StudioBrussel.be" tvg-name="Studio Brussel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="BE Rádio" radio="true",Studio Brussel
-https://icecast.vrtcdn.be/stubru-high.mp3
-
-#EXTINF:-1 tvg-id="StuBruDeTijdloze.be" tvg-name="StuBru De Tijdloze" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="BE Rádio" radio="true",StuBru De Tijdloze
-https://icecast.vrtcdn.be/stubru_tijdloze-high.mp3
-
-#EXTINF:-1 tvg-id="Radio1.be" tvg-name="Radio 1 VRT" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-1-BE.png" group-title="BE Rádio" radio="true",Radio 1 (VRT Belgium)
-https://icecast.vrtcdn.be/ra1-high.mp3
-
-#EXTINF:-1 tvg-id="Radio2Antwerpen.be" tvg-name="Radio 2 Antwerpen" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-2-BE.png" group-title="BE Rádio" radio="true",Radio 2 (VRT Antwerpen)
-https://icecast.vrtcdn.be/ra2ant-high.mp3
-
-#EXTINF:-1 tvg-id="MNM.be" tvg-name="MNM" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/MNM.png" group-title="BE Rádio" radio="true",MNM (VRT)
-https://icecast.vrtcdn.be/mnm-high.mp3
-
-#EXTINF:-1 tvg-id="Klara.be" tvg-name="Klara" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Klara.png" group-title="BE Rádio" radio="true",Klara (VRT Classical)
-https://icecast.vrtcdn.be/klara-high.mp3
-
-#EXTINF:-1 tvg-id="KlaraContinuo.be" tvg-name="Klara Continuo" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Klara.png" group-title="BE Rádio" radio="true",Klara Continuo
-https://icecast.vrtcdn.be/klaracontinuo-high.mp3
-
-#EXTINF:-1 tvg-id="Classic21.be" tvg-name="Classic 21" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Classic-21.png" group-title="BE Rádio" radio="true",Classic 21 (RTBF Rock)
-https://radios.rtbf.be/classic21-128.mp3
-
-#EXTINF:-1 tvg-id="LaPremiere.be" tvg-name="RTBF La Première" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/La-Premiere.png" group-title="BE Rádio" radio="true",RTBF La Première
-https://radios.rtbf.be/laprem1ere-128.mp3
-
-#EXTINF:-1 tvg-id="Musiq3.be" tvg-name="RTBF Musiq3" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Musiq3.png" group-title="BE Rádio" radio="true",RTBF Musiq3
-https://radios.rtbf.be/musiq3-128.mp3
-
-#EXTINF:-1 tvg-id="BRF1.be" tvg-name="BRF 1" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/brf1.png" group-title="BE Rádio" radio="true",BRF 1 (Ostbelgien Deutsch)
-http://mp3.stream.brf.be/brf1.mp3
-
-#EXTINF:-1 tvg-id="BRF2.be" tvg-name="BRF 2" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/brf2.png" group-title="BE Rádio" radio="true",BRF 2 (Ostbelgien Deutsch Schlager)
-http://mp3.stream.brf.be/brf2.mp3
 
 #EXTINF:-1 tvg-id="RadioParadiseMain.us" tvg-name="Radio Paradise Main FLAC" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radioparadise.png" group-title="Rádio Global" radio="true",Radio Paradise - Main Mix (FLAC)
 https://stream.radioparadise.com/flac
@@ -315,6 +318,3 @@ http://capeant.antfarm.co.za:8000/Bosveld
 
 #EXTINF:-1 tvg-id="FineMusicRadio.za" tvg-name="Fine Music Radio" group-title="Rádio Global" radio="true",Fine Music Radio (Cape Town Classical)
 https://edge.iono.fm/xhls/fmr_live_high.m3u8
-
-#EXTINF:-1 tvg-id="CadenaSER.es" tvg-name="Cadena SER" group-title="ES Rádio" radio="true",Cadena SER España
-https://playerservices.streamtheworld.com/api/livestream-redirect/CADENASER.mp3

@@ -58,6 +58,45 @@ https://www.khuwemultimedia.com/hls/mntv/mntv.m3u8
 #EXTINF:-1 tvg-id="TVVitoria.mz" tvg-name="TV Vitória" group-title="MZ Geral",TV Vitória Moçambique
 https://stmv1.srvif.com/tvvitoriamz/tvvitoriamz/playlist.m3u8
 
+#EXTINF:-1 tvg-id="La1.es" tvg-name="La 1" group-title="ES Geral & TDT",RTVE La 1
+https://ztnr.rtve.es/ztnr/1688877.m3u8
+
+#EXTINF:-1 tvg-id="La2.es" tvg-name="La 2" group-title="ES Geral & TDT",RTVE La 2
+https://ztnr.rtve.es/ztnr/1688885.m3u8
+
+#EXTINF:-1 tvg-id="Canal24Horas.es" tvg-name="24 Horas" group-title="ES Geral & TDT",RTVE Canal 24 Horas
+https://ztnr.rtve.es/ztnr/1694255.m3u8
+
+#EXTINF:-1 tvg-id="Teledeporte.es" tvg-name="Teledeporte" group-title="ES Geral & TDT",RTVE Teledeporte (TDP)
+https://ztnr.rtve.es/ztnr/1688926.m3u8
+
+#EXTINF:-1 tvg-id="ClanTVE.es" tvg-name="Clan" group-title="ES Geral & TDT",RTVE Clan TV
+https://ztnr.rtve.es/ztnr/5466990.m3u8
+
+#EXTINF:-1 tvg-id="CanalSur.es" tvg-name="Canal Sur" group-title="ES Geral & TDT",Canal Sur Andalucía
+https://dfk2a268yviz9.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ddiii1m6jt6of/CanalSurAndaluciaES.m3u8
+
+#EXTINF:-1 tvg-id="RealMadridTV.es" tvg-name="Real Madrid TV" group-title="ES Geral & TDT",Real Madrid TV
+https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
+
+#EXTINF:-1 tvg-id="CadenaSER.es" tvg-name="Cadena SER" group-title="ES Rádio" radio="true",Cadena SER España
+https://playerservices.streamtheworld.com/api/livestream-redirect/CADENASER.mp3
+
+#EXTINF:-1 tvg-id="TVGEuropa.es" tvg-name="Galicia TV Europa" group-title="Galiza",Galicia TV Europa (TVG)
+https://crtvg-europa.flumotion.cloud/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TeleVigo.es" tvg-name="TeleVigo" group-title="Galiza",TeleVigo (Galicia)
+https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=12687
+
+#EXTINF:-1 tvg-id="TVGMiraRadioGalega.es" tvg-name="TVG Mira Radio Galega" group-title="Galiza",TVG Mira Radio Galega (Visual)
+https://crtvg-mirarg-schlive.flumotion.cloud/crtvglive/smil:channel1PRG.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="RadioGalega.es" tvg-name="Radio Galega" group-title="Galiza",Radio Galega (Galego)
+https://crtvg-radiogalega-hls.flumotion.cloud/playlist.m3u8
+
+#EXTINF:-1 tvg-id="RadioGalegaMusica.es" tvg-name="Radio Galega Música" group-title="Galiza",Radio Galega Música
+https://crtvg-rgmusica-hls.flumotion.cloud/playlist.m3u8
+
 #EXTINF:-1 tvg-id="RTP3.pt" tvg-name="RTP 3" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP3.png" group-title="Notícias",RTP 3
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
 #EXTVLCOPT:http-origin=https://www.rtp.pt
@@ -220,6 +259,33 @@ https://kiefte.eu/iptv/youtube/@NPORadio2
 #EXTINF:-1 tvg-id="NPO3FMVisual.nl" tvg-name="NPO 3FM Visual" group-title="Música & Video",NPO 3FM (Visual & Serious Request)
 https://kiefte.eu/iptv/youtube/@npo3fm
 
+#EXTINF:-1 tvg-id="Arte.fr" tvg-name="ARTE" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/arte.png" group-title="Filmes & Docs",ARTE (Français / Deutsch)
+https://artesimulcast.akamaized.net/hls/live/2031003/artelive_fr/index.m3u8
+
+#EXTINF:-1 tvg-id="DasErste.de" tvg-name="Das Erste" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Das-Erste.png" group-title="Filmes & Docs",Das Erste (ARD Germany)
+https://daserste-live.ard-mcdn.de/daserste/live/hls/de/master.m3u8
+
+#EXTINF:-1 tvg-id="ZDF.de" tvg-name="ZDF" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/zdf.png" group-title="Filmes & Docs",ZDF (Germany)
+https://zdf-hls-15.akamaized.net/hls/live/2016498/de/veryhigh/master.m3u8
+
+#EXTINF:-1 tvg-id="3sat.de" tvg-name="3sat" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/3sat.png" group-title="Filmes & Docs",3sat (DACH Cultural)
+https://zdf-hls-18.akamaized.net/hls/live/2016501/dach/veryhigh/master.m3u8
+
+#EXTINF:-1 tvg-id="Phoenix.de" tvg-name="Phoenix" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/phoenix.png" group-title="Filmes & Docs",Phoenix (Dokumentationen)
+https://zdf-hls-19.akamaized.net/hls/live/2016502/de/veryhigh/master.m3u8
+
+#EXTINF:-1 tvg-id="TV5Monde.fr" tvg-name="TV5Monde" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tv5monde.png" group-title="Filmes & Docs",TV5Monde Info (Francophonie)
+https://ott.tv5monde.com/Content/HLS/Live/channel(info)/index.m3u8
+
+#EXTINF:-1 tvg-id="KuriakosCine.pt" tvg-name="Kuriakos Cine" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Kuriakos-Cine.png" group-title="Filmes & Docs",Kuriakos Cine
+https://w2.manasat.com/kcine/kcine.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="NASATV.us@HD" tvg-name="NASA TV" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nasatv.png" group-title="Filmes & Docs",NASA TV HD (Space & Science)
+https://kiefte.eu/iptv/youtube/@NASA
+
+#EXTINF:-1 tvg-id="TV5MondeEurope.fr" tvg-name="TV5Monde Europe" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tv5monde.png" group-title="Filmes & Docs",TV5Monde Europe (1080p)
+https://ott.tv5monde.com/Content/HLS/Live/channel(europe)/index.m3u8
+
 #EXTINF:-1 tvg-id="XON.nl" tvg-name="XON Ede" group-title="Regional & Local",XON (Ede TV)
 https://ms7.mx-cd.net/tv/113-474263/EdeTV.smil/playlist.m3u8
 
@@ -268,33 +334,6 @@ https://takeoff.jetstre.am/?account=nhnieuws&file=live&output=playlist.m3u8&prot
 #EXTINF:-1 tvg-id="BruzzTV.be" tvg-name="BRUZZ TV" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/bruzz.png" group-title="Regional & Local",BRUZZ TV (Brussel)
 https://stream.bruzz.be/live/tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Arte.fr" tvg-name="ARTE" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/arte.png" group-title="Filmes & Docs",ARTE (Français / Deutsch)
-https://artesimulcast.akamaized.net/hls/live/2031003/artelive_fr/index.m3u8
-
-#EXTINF:-1 tvg-id="DasErste.de" tvg-name="Das Erste" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Das-Erste.png" group-title="Filmes & Docs",Das Erste (ARD Germany)
-https://daserste-live.ard-mcdn.de/daserste/live/hls/de/master.m3u8
-
-#EXTINF:-1 tvg-id="ZDF.de" tvg-name="ZDF" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/zdf.png" group-title="Filmes & Docs",ZDF (Germany)
-https://zdf-hls-15.akamaized.net/hls/live/2016498/de/veryhigh/master.m3u8
-
-#EXTINF:-1 tvg-id="3sat.de" tvg-name="3sat" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/3sat.png" group-title="Filmes & Docs",3sat (DACH Cultural)
-https://zdf-hls-18.akamaized.net/hls/live/2016501/dach/veryhigh/master.m3u8
-
-#EXTINF:-1 tvg-id="Phoenix.de" tvg-name="Phoenix" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/phoenix.png" group-title="Filmes & Docs",Phoenix (Dokumentationen)
-https://zdf-hls-19.akamaized.net/hls/live/2016502/de/veryhigh/master.m3u8
-
-#EXTINF:-1 tvg-id="TV5Monde.fr" tvg-name="TV5Monde" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tv5monde.png" group-title="Filmes & Docs",TV5Monde Info (Francophonie)
-https://ott.tv5monde.com/Content/HLS/Live/channel(info)/index.m3u8
-
-#EXTINF:-1 tvg-id="KuriakosCine.pt" tvg-name="Kuriakos Cine" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Kuriakos-Cine.png" group-title="Filmes & Docs",Kuriakos Cine
-https://w2.manasat.com/kcine/kcine.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-id="NASATV.us@HD" tvg-name="NASA TV" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nasatv.png" group-title="Filmes & Docs",NASA TV HD (Space & Science)
-https://kiefte.eu/iptv/youtube/@NASA
-
-#EXTINF:-1 tvg-id="TV5MondeEurope.fr" tvg-name="TV5Monde Europe" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tv5monde.png" group-title="Filmes & Docs",TV5Monde Europe (1080p)
-https://ott.tv5monde.com/Content/HLS/Live/channel(europe)/index.m3u8
-
 #EXTINF:-1 tvg-id="ARTV.pt" tvg-name="ARTV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/AR-TV.png" group-title="Cívico & Parlamento",ARTV (Canal Parlamento PT)
 #EXTVLCOPT:http-user-agent="Mozilla/5.0"
 https://playout175.livextend.cloud/livenlin4/_definst_/2liveartvpub2/playlist.m3u8
@@ -310,6 +349,144 @@ https://livestreaming.b67buv2.tweedekamer.nl/live/thorbeckezaal/index.m3u8?hd=1&
 
 #EXTINF:-1 tvg-id="TweedeKamerGroen.nl" tvg-name="Tweede Kamer Groen van Prinstererzaal" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png" group-title="Cívico & Parlamento",Tweede Kamer: Groen van Prinstererzaal (NL)
 https://livestreaming.b67buv2.tweedekamer.nl/live/groenvanprinstererzaal/index.m3u8?hd=1&keyframes=1&subtitles=live
+
+#EXTINF:-1 tvg-id="Speedrun.tv" tvg-name="Speedrun" group-title="Speedrunning & Marathons",Speedrun (24/7 Speedrun.com)
+https://kiefte.eu/iptv/twitch/speedrun
+
+#EXTINF:-1 tvg-id="GamesDoneQuick.tv" tvg-name="GamesDoneQuick" group-title="Speedrunning & Marathons",GamesDoneQuick (GDQ)
+https://kiefte.eu/iptv/twitch/gamesdonequick
+
+#EXTINF:-1 tvg-id="ESAMarathon.tv" tvg-name="ESAMarathon" group-title="Speedrunning & Marathons",ESAMarathon (European Speedrunner Assembly)
+https://kiefte.eu/iptv/twitch/esamarathon
+
+#EXTINF:-1 tvg-id="TASVideos.tv" tvg-name="TASVideos" group-title="Speedrunning & Marathons",TASVideos (Tool-Assisted Speedruns)
+https://kiefte.eu/iptv/twitch/tasvideos
+
+#EXTINF:-1 tvg-id="MitchFlowerPower.tv" tvg-name="MitchFlowerPower" group-title="Speedrunning & Marathons",MitchFlowerPower (SMB3 Speedruns)
+https://kiefte.eu/iptv/twitch/mitchflowerpower
+
+#EXTINF:-1 tvg-id="SmallAnt.tv" tvg-name="SmallAnt" group-title="Speedrunning & Marathons",SmallAnt (Challenges & Speedruns)
+https://kiefte.eu/iptv/twitch/smallant
+
+#EXTINF:-1 tvg-id="Carrarium.tv" tvg-name="Carrarium" group-title="Speedrunning & Marathons",Carrarium (Celeste & GDQ)
+https://kiefte.eu/iptv/twitch/carrarium
+
+#EXTINF:-1 tvg-id="TGH.tv" tvg-name="TGH" group-title="Speedrunning & Marathons",TGH (Celeste & Retro Speedruns)
+https://kiefte.eu/iptv/twitch/tgh_sr
+
+#EXTINF:-1 tvg-id="AmberCyprian.tv" tvg-name="AmberCyprian" group-title="Speedrunning & Marathons",AmberCyprian (Speedruns & Retro)
+https://kiefte.eu/iptv/twitch/ambercyprian
+
+#EXTINF:-1 tvg-id="Msushi.tv" tvg-name="Msushi" group-title="Speedrunning & Marathons",Msushi (Celeste & Portal Speedruns)
+https://kiefte.eu/iptv/twitch/msushi
+
+#EXTINF:-1 tvg-id="SMWRomhacks.tv" tvg-name="SMW Romhacks Live" group-title="Mario & Romhacks",Super Mario World (Romhacks & Kaizo Live)
+https://kiefte.eu/iptv/twitch/game/Super%20Mario%20World?bias=romhack
+
+#EXTINF:-1 tvg-id="Ryukahr.tv" tvg-name="Ryukahr" group-title="Mario & Romhacks",Ryukahr
+https://kiefte.eu/iptv/twitch/ryukahr
+
+#EXTINF:-1 tvg-id="GrandPooBear.tv" tvg-name="GrandPooBear" group-title="Mario & Romhacks",GrandPooBear
+https://kiefte.eu/iptv/twitch/grandpoobear
+
+#EXTINF:-1 tvg-id="ThaBeast721.tv" tvg-name="ThaBeast721" group-title="Mario & Romhacks",ThaBeast721 (Kaizo & Mario 64)
+https://kiefte.eu/iptv/twitch/thabeast721
+
+#EXTINF:-1 tvg-id="CarlSagan42.tv" tvg-name="CarlSagan42" group-title="Mario & Romhacks",CarlSagan42 (Kaizo & Troll Maker)
+https://kiefte.eu/iptv/twitch/carlsagan42
+
+#EXTINF:-1 tvg-id="Juzcook.tv" tvg-name="Juzcook" group-title="Mario & Romhacks",Juzcook (Kaizo & Mario Maker)
+https://kiefte.eu/iptv/twitch/juzcook
+
+#EXTINF:-1 tvg-id="Aurateur.tv" tvg-name="Aurateur" group-title="Mario & Romhacks",Aurateur (Endless Mario Maker)
+https://kiefte.eu/iptv/twitch/aurateur
+
+#EXTINF:-1 tvg-id="PangaeaPanga.tv" tvg-name="PangaeaPanga" group-title="Mario & Romhacks",PangaeaPanga (Kaizo SMW)
+https://kiefte.eu/iptv/twitch/pangaeapanga
+
+#EXTINF:-1 tvg-id="SimpleFlips.tv" tvg-name="SimpleFlips" group-title="Mario & Romhacks",SimpleFlips (SM64 Romhacks)
+https://kiefte.eu/iptv/twitch/simpleflips
+
+#EXTINF:-1 tvg-id="Failstream.tv" tvg-name="Failstream" group-title="Mario & Romhacks",Failstream (Mario Maker Builds)
+https://kiefte.eu/iptv/twitch/failstream
+
+#EXTINF:-1 tvg-id="ClassicTetris.tv" tvg-name="ClassicTetris" group-title="Tetris",Classic Tetris (CTWC Main)
+https://kiefte.eu/iptv/twitch/classictetris
+
+#EXTINF:-1 tvg-id="ClassicTetris2.tv" tvg-name="ClassicTetris 2" group-title="Tetris",Classic Tetris 2 (CTWC)
+https://kiefte.eu/iptv/twitch/classictetris2
+
+#EXTINF:-1 tvg-id="ClassicTetris3.tv" tvg-name="ClassicTetris 3" group-title="Tetris",Classic Tetris 3 (CTWC)
+https://kiefte.eu/iptv/twitch/classictetris3
+
+#EXTINF:-1 tvg-id="ClassicTetris4.tv" tvg-name="ClassicTetris 4" group-title="Tetris",Classic Tetris 4 (CTWC)
+https://kiefte.eu/iptv/twitch/classictetris4
+
+#EXTINF:-1 tvg-id="NESTetris.tv" tvg-name="NES Tetris Live" group-title="Tetris",NES Tetris (Top Live Streamer)
+https://kiefte.eu/iptv/twitch/game/Tetris?bias=nes
+
+#EXTINF:-1 tvg-id="ModernTetris.tv" tvg-name="Modern Tetris Live" group-title="Tetris",Modern Tetris (Top Live Streamer)
+https://kiefte.eu/iptv/twitch/group/modern-tetris
+
+#EXTINF:-1 tvg-id="Wumbotize.tv" tvg-name="Wumbotize" group-title="Tetris",Wumbotize (Modern Tetris Master)
+https://kiefte.eu/iptv/twitch/wumbotize
+
+#EXTINF:-1 tvg-id="Doremy.tv" tvg-name="Doremy" group-title="Tetris",Doremy (Modern Tetris & TETR.IO)
+https://kiefte.eu/iptv/twitch/doremy
+
+#EXTINF:-1 tvg-id="HardDrop.tv" tvg-name="Hard Drop" group-title="Tetris",Hard Drop (Tetris Community & Tourneys)
+https://kiefte.eu/iptv/twitch/harddrop
+
+#EXTINF:-1 tvg-id="DogPlayingTetris.tv" tvg-name="DogPlayingTetris" group-title="Tetris",DogPlayingTetris (3x CTWC World Champion)
+https://kiefte.eu/iptv/twitch/dogplayingtetris
+
+#EXTINF:-1 tvg-id="EricICX.tv" tvg-name="EricICX" group-title="Tetris",EricICX (CTWC World Champion)
+https://kiefte.eu/iptv/twitch/ericicx
+
+#EXTINF:-1 tvg-id="FractalTetris.tv" tvg-name="Fractal" group-title="Tetris",Fractal (CTWC World Champion)
+https://kiefte.eu/iptv/twitch/fractal
+
+#EXTINF:-1 tvg-id="AlexT.tv" tvg-name="Alex T" group-title="Tetris",Alex_T (CTWC Champion)
+https://kiefte.eu/iptv/twitch/alex_t
+
+#EXTINF:-1 tvg-id="BlueScuti.tv" tvg-name="BlueScuti" group-title="Tetris",BlueScuti (NES Tetris Crash Record)
+https://kiefte.eu/iptv/twitch/bluescuti
+
+#EXTINF:-1 tvg-id="AnnaD.tv" tvg-name="Anna D." group-title="Tetris",Anna D. (Tetris)
+https://kiefte.eu/iptv/twitch/vinesandwillows
+
+#EXTINF:-1 tvg-id="GamingAutoLive.tv" tvg-name="Gaming 24/7 Auto-Live" group-title="Indie & Variety Gaming",Gaming 24/7 (Auto-Live Streamer)
+https://kiefte.eu/iptv/gaming/live
+
+#EXTINF:-1 tvg-id="BluePrince.tv" tvg-name="Blue Prince Live" group-title="Indie & Variety Gaming",Blue Prince (Top Live Streamer)
+https://kiefte.eu/iptv/twitch/game/Blue%20Prince
+
+#EXTINF:-1 tvg-id="Celeste.tv" tvg-name="Celeste Live" group-title="Indie & Variety Gaming",Celeste (Top Live Streamer)
+https://kiefte.eu/iptv/twitch/game/Celeste
+
+#EXTINF:-1 tvg-id="Portal.tv" tvg-name="Portal Live" group-title="Indie & Variety Gaming",Portal (Top Live Streamer)
+https://kiefte.eu/iptv/twitch/game/Portal
+
+#EXTINF:-1 tvg-id="Portal2.tv" tvg-name="Portal 2 Live" group-title="Indie & Variety Gaming",Portal 2 (Top Live Streamer)
+https://kiefte.eu/iptv/twitch/game/Portal%202
+
+#EXTINF:-1 tvg-id="TamTheGamer.tv" tvg-name="TamTheGamer" group-title="Indie & Variety Gaming",TamTheGamer (Tammy)
+https://kiefte.eu/iptv/twitch/tamthegamer
+
+#EXTINF:-1 tvg-id="ElanaOrama.tv" tvg-name="ElanaOrama" group-title="Indie & Variety Gaming",ElanaOrama (Colony Sim & Variety)
+https://kiefte.eu/iptv/twitch/elanaorama
+
+#EXTINF:-1 tvg-id="DGR.tv" tvg-name="DGR" group-title="Indie & Variety Gaming",DGR (Mario Maker & Super Mario)
+https://kiefte.eu/iptv/twitch/dgr_dave
+
+#EXTINF:-1 tvg-id="Chess.tv" tvg-name="Chess Live" group-title="Indie & Variety Gaming",Chess (Top Live Grandmaster)
+https://kiefte.eu/iptv/twitch/game/Chess
+
+#EXTINF:-1 tvg-id="GeoGuessr.tv" tvg-name="GeoGuessr Live" group-title="Indie & Variety Gaming",GeoGuessr (World Exploration)
+https://kiefte.eu/iptv/twitch/game/GeoGuessr
+
+#EXTINF:-1 tvg-id="Trackmania.tv" tvg-name="Trackmania Live" group-title="Indie & Variety Gaming",Trackmania (Precision Racing Live)
+https://kiefte.eu/iptv/twitch/game/Trackmania
 
 #EXTINF:-1 tvg-id="TVManaMZ.mz" tvg-name="TV Maná Moçambique" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-Mocambique.png" group-title="Religião",TV Maná Moçambique
 https://w2.manasat.com/tvmana-mz/smil:tvmana-mz.smil/playlist.m3u8
@@ -488,6 +665,42 @@ https://stream.deltafm.nl/deltafm
 #EXTINF:-1 tvg-id="Studio040.nl" tvg-name="Studio 040" group-title="NL Rádio" radio="true",Studio 040 (Eindhoven)
 https://stream.studio040.nl/studio040
 
+#EXTINF:-1 tvg-id="StudioBrussel.be" tvg-name="Studio Brussel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="BE Rádio" radio="true",Studio Brussel
+https://icecast.vrtcdn.be/stubru-high.mp3
+
+#EXTINF:-1 tvg-id="StuBruDeTijdloze.be" tvg-name="StuBru De Tijdloze" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="BE Rádio" radio="true",StuBru De Tijdloze
+https://icecast.vrtcdn.be/stubru_tijdloze-high.mp3
+
+#EXTINF:-1 tvg-id="Radio1.be" tvg-name="Radio 1 VRT" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-1-BE.png" group-title="BE Rádio" radio="true",Radio 1 (VRT Belgium)
+https://icecast.vrtcdn.be/ra1-high.mp3
+
+#EXTINF:-1 tvg-id="Radio2Antwerpen.be" tvg-name="Radio 2 Antwerpen" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-2-BE.png" group-title="BE Rádio" radio="true",Radio 2 (VRT Antwerpen)
+https://icecast.vrtcdn.be/ra2ant-high.mp3
+
+#EXTINF:-1 tvg-id="MNM.be" tvg-name="MNM" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/MNM.png" group-title="BE Rádio" radio="true",MNM (VRT)
+https://icecast.vrtcdn.be/mnm-high.mp3
+
+#EXTINF:-1 tvg-id="Klara.be" tvg-name="Klara" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Klara.png" group-title="BE Rádio" radio="true",Klara (VRT Classical)
+https://icecast.vrtcdn.be/klara-high.mp3
+
+#EXTINF:-1 tvg-id="KlaraContinuo.be" tvg-name="Klara Continuo" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Klara.png" group-title="BE Rádio" radio="true",Klara Continuo
+https://icecast.vrtcdn.be/klaracontinuo-high.mp3
+
+#EXTINF:-1 tvg-id="Classic21.be" tvg-name="Classic 21" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Classic-21.png" group-title="BE Rádio" radio="true",Classic 21 (RTBF Rock)
+https://radios.rtbf.be/classic21-128.mp3
+
+#EXTINF:-1 tvg-id="LaPremiere.be" tvg-name="RTBF La Première" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/La-Premiere.png" group-title="BE Rádio" radio="true",RTBF La Première
+https://radios.rtbf.be/laprem1ere-128.mp3
+
+#EXTINF:-1 tvg-id="Musiq3.be" tvg-name="RTBF Musiq3" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Musiq3.png" group-title="BE Rádio" radio="true",RTBF Musiq3
+https://radios.rtbf.be/musiq3-128.mp3
+
+#EXTINF:-1 tvg-id="BRF1.be" tvg-name="BRF 1" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/brf1.png" group-title="BE Rádio" radio="true",BRF 1 (Ostbelgien Deutsch)
+http://mp3.stream.brf.be/brf1.mp3
+
+#EXTINF:-1 tvg-id="BRF2.be" tvg-name="BRF 2" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/brf2.png" group-title="BE Rádio" radio="true",BRF 2 (Ostbelgien Deutsch Schlager)
+http://mp3.stream.brf.be/brf2.mp3
+
 #EXTINF:-1 tvg-id="RMAntenaNacional.mz" tvg-name="RM Antena Nacional" group-title="MZ Rádio" radio="true",Rádio Moçambique - Antena Nacional
 http://node.stream-africa.com:8000/AntenaNacional
 
@@ -535,42 +748,6 @@ https://ukwesta.streaming.broadcast.radio/lmradio
 
 #EXTINF:-1 tvg-id="MaputoCorridor.mz" tvg-name="Maputo Corridor Radio" group-title="MZ Rádio" radio="true",Maputo Corridor Radio
 http://node.stream-africa.com:8000/MaputoCorridor
-
-#EXTINF:-1 tvg-id="StudioBrussel.be" tvg-name="Studio Brussel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="BE Rádio" radio="true",Studio Brussel
-https://icecast.vrtcdn.be/stubru-high.mp3
-
-#EXTINF:-1 tvg-id="StuBruDeTijdloze.be" tvg-name="StuBru De Tijdloze" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="BE Rádio" radio="true",StuBru De Tijdloze
-https://icecast.vrtcdn.be/stubru_tijdloze-high.mp3
-
-#EXTINF:-1 tvg-id="Radio1.be" tvg-name="Radio 1 VRT" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-1-BE.png" group-title="BE Rádio" radio="true",Radio 1 (VRT Belgium)
-https://icecast.vrtcdn.be/ra1-high.mp3
-
-#EXTINF:-1 tvg-id="Radio2Antwerpen.be" tvg-name="Radio 2 Antwerpen" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-2-BE.png" group-title="BE Rádio" radio="true",Radio 2 (VRT Antwerpen)
-https://icecast.vrtcdn.be/ra2ant-high.mp3
-
-#EXTINF:-1 tvg-id="MNM.be" tvg-name="MNM" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/MNM.png" group-title="BE Rádio" radio="true",MNM (VRT)
-https://icecast.vrtcdn.be/mnm-high.mp3
-
-#EXTINF:-1 tvg-id="Klara.be" tvg-name="Klara" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Klara.png" group-title="BE Rádio" radio="true",Klara (VRT Classical)
-https://icecast.vrtcdn.be/klara-high.mp3
-
-#EXTINF:-1 tvg-id="KlaraContinuo.be" tvg-name="Klara Continuo" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Klara.png" group-title="BE Rádio" radio="true",Klara Continuo
-https://icecast.vrtcdn.be/klaracontinuo-high.mp3
-
-#EXTINF:-1 tvg-id="Classic21.be" tvg-name="Classic 21" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Classic-21.png" group-title="BE Rádio" radio="true",Classic 21 (RTBF Rock)
-https://radios.rtbf.be/classic21-128.mp3
-
-#EXTINF:-1 tvg-id="LaPremiere.be" tvg-name="RTBF La Première" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/La-Premiere.png" group-title="BE Rádio" radio="true",RTBF La Première
-https://radios.rtbf.be/laprem1ere-128.mp3
-
-#EXTINF:-1 tvg-id="Musiq3.be" tvg-name="RTBF Musiq3" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Musiq3.png" group-title="BE Rádio" radio="true",RTBF Musiq3
-https://radios.rtbf.be/musiq3-128.mp3
-
-#EXTINF:-1 tvg-id="BRF1.be" tvg-name="BRF 1" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/brf1.png" group-title="BE Rádio" radio="true",BRF 1 (Ostbelgien Deutsch)
-http://mp3.stream.brf.be/brf1.mp3
-
-#EXTINF:-1 tvg-id="BRF2.be" tvg-name="BRF 2" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/brf2.png" group-title="BE Rádio" radio="true",BRF 2 (Ostbelgien Deutsch Schlager)
-http://mp3.stream.brf.be/brf2.mp3
 
 #EXTINF:-1 tvg-id="RadioParadiseMain.us" tvg-name="Radio Paradise Main FLAC" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radioparadise.png" group-title="Rádio Global" radio="true",Radio Paradise - Main Mix (FLAC)
 https://stream.radioparadise.com/flac
@@ -640,180 +817,3 @@ http://capeant.antfarm.co.za:8000/Bosveld
 
 #EXTINF:-1 tvg-id="FineMusicRadio.za" tvg-name="Fine Music Radio" group-title="Rádio Global" radio="true",Fine Music Radio (Cape Town Classical)
 https://edge.iono.fm/xhls/fmr_live_high.m3u8
-
-#EXTINF:-1 tvg-id="Speedrun.tv" tvg-name="Speedrun" group-title="Speedrunning & Marathons",Speedrun (24/7 Speedrun.com)
-https://kiefte.eu/iptv/twitch/speedrun
-
-#EXTINF:-1 tvg-id="GamesDoneQuick.tv" tvg-name="GamesDoneQuick" group-title="Speedrunning & Marathons",GamesDoneQuick (GDQ)
-https://kiefte.eu/iptv/twitch/gamesdonequick
-
-#EXTINF:-1 tvg-id="ESAMarathon.tv" tvg-name="ESAMarathon" group-title="Speedrunning & Marathons",ESAMarathon (European Speedrunner Assembly)
-https://kiefte.eu/iptv/twitch/esamarathon
-
-#EXTINF:-1 tvg-id="TASVideos.tv" tvg-name="TASVideos" group-title="Speedrunning & Marathons",TASVideos (Tool-Assisted Speedruns)
-https://kiefte.eu/iptv/twitch/tasvideos
-
-#EXTINF:-1 tvg-id="MitchFlowerPower.tv" tvg-name="MitchFlowerPower" group-title="Speedrunning & Marathons",MitchFlowerPower (SMB3 Speedruns)
-https://kiefte.eu/iptv/twitch/mitchflowerpower
-
-#EXTINF:-1 tvg-id="SmallAnt.tv" tvg-name="SmallAnt" group-title="Speedrunning & Marathons",SmallAnt (Challenges & Speedruns)
-https://kiefte.eu/iptv/twitch/smallant
-
-#EXTINF:-1 tvg-id="Carrarium.tv" tvg-name="Carrarium" group-title="Speedrunning & Marathons",Carrarium (Celeste & GDQ)
-https://kiefte.eu/iptv/twitch/carrarium
-
-#EXTINF:-1 tvg-id="TGH.tv" tvg-name="TGH" group-title="Speedrunning & Marathons",TGH (Celeste & Retro Speedruns)
-https://kiefte.eu/iptv/twitch/tgh_sr
-
-#EXTINF:-1 tvg-id="AmberCyprian.tv" tvg-name="AmberCyprian" group-title="Speedrunning & Marathons",AmberCyprian (Speedruns & Retro)
-https://kiefte.eu/iptv/twitch/ambercyprian
-
-#EXTINF:-1 tvg-id="Msushi.tv" tvg-name="Msushi" group-title="Speedrunning & Marathons",Msushi (Celeste & Portal Speedruns)
-https://kiefte.eu/iptv/twitch/msushi
-
-#EXTINF:-1 tvg-id="SMWRomhacks.tv" tvg-name="SMW Romhacks Live" group-title="Mario & Romhacks",Super Mario World (Romhacks & Kaizo Live)
-https://kiefte.eu/iptv/twitch/game/Super%20Mario%20World?bias=romhack
-
-#EXTINF:-1 tvg-id="Ryukahr.tv" tvg-name="Ryukahr" group-title="Mario & Romhacks",Ryukahr
-https://kiefte.eu/iptv/twitch/ryukahr
-
-#EXTINF:-1 tvg-id="GrandPooBear.tv" tvg-name="GrandPooBear" group-title="Mario & Romhacks",GrandPooBear
-https://kiefte.eu/iptv/twitch/grandpoobear
-
-#EXTINF:-1 tvg-id="ThaBeast721.tv" tvg-name="ThaBeast721" group-title="Mario & Romhacks",ThaBeast721 (Kaizo & Mario 64)
-https://kiefte.eu/iptv/twitch/thabeast721
-
-#EXTINF:-1 tvg-id="CarlSagan42.tv" tvg-name="CarlSagan42" group-title="Mario & Romhacks",CarlSagan42 (Kaizo & Troll Maker)
-https://kiefte.eu/iptv/twitch/carlsagan42
-
-#EXTINF:-1 tvg-id="Juzcook.tv" tvg-name="Juzcook" group-title="Mario & Romhacks",Juzcook (Kaizo & Mario Maker)
-https://kiefte.eu/iptv/twitch/juzcook
-
-#EXTINF:-1 tvg-id="Aurateur.tv" tvg-name="Aurateur" group-title="Mario & Romhacks",Aurateur (Endless Mario Maker)
-https://kiefte.eu/iptv/twitch/aurateur
-
-#EXTINF:-1 tvg-id="PangaeaPanga.tv" tvg-name="PangaeaPanga" group-title="Mario & Romhacks",PangaeaPanga (Kaizo SMW)
-https://kiefte.eu/iptv/twitch/pangaeapanga
-
-#EXTINF:-1 tvg-id="SimpleFlips.tv" tvg-name="SimpleFlips" group-title="Mario & Romhacks",SimpleFlips (SM64 Romhacks)
-https://kiefte.eu/iptv/twitch/simpleflips
-
-#EXTINF:-1 tvg-id="Failstream.tv" tvg-name="Failstream" group-title="Mario & Romhacks",Failstream (Mario Maker Builds)
-https://kiefte.eu/iptv/twitch/failstream
-
-#EXTINF:-1 tvg-id="ClassicTetris.tv" tvg-name="ClassicTetris" group-title="Tetris",Classic Tetris (CTWC Main)
-https://kiefte.eu/iptv/twitch/classictetris
-
-#EXTINF:-1 tvg-id="ClassicTetris2.tv" tvg-name="ClassicTetris 2" group-title="Tetris",Classic Tetris 2 (CTWC)
-https://kiefte.eu/iptv/twitch/classictetris2
-
-#EXTINF:-1 tvg-id="ClassicTetris3.tv" tvg-name="ClassicTetris 3" group-title="Tetris",Classic Tetris 3 (CTWC)
-https://kiefte.eu/iptv/twitch/classictetris3
-
-#EXTINF:-1 tvg-id="ClassicTetris4.tv" tvg-name="ClassicTetris 4" group-title="Tetris",Classic Tetris 4 (CTWC)
-https://kiefte.eu/iptv/twitch/classictetris4
-
-#EXTINF:-1 tvg-id="NESTetris.tv" tvg-name="NES Tetris Live" group-title="Tetris",NES Tetris (Top Live Streamer)
-https://kiefte.eu/iptv/twitch/game/Tetris?bias=nes
-
-#EXTINF:-1 tvg-id="ModernTetris.tv" tvg-name="Modern Tetris Live" group-title="Tetris",Modern Tetris (Top Live Streamer)
-https://kiefte.eu/iptv/twitch/group/modern-tetris
-
-#EXTINF:-1 tvg-id="Wumbotize.tv" tvg-name="Wumbotize" group-title="Tetris",Wumbotize (Modern Tetris Master)
-https://kiefte.eu/iptv/twitch/wumbotize
-
-#EXTINF:-1 tvg-id="Doremy.tv" tvg-name="Doremy" group-title="Tetris",Doremy (Modern Tetris & TETR.IO)
-https://kiefte.eu/iptv/twitch/doremy
-
-#EXTINF:-1 tvg-id="HardDrop.tv" tvg-name="Hard Drop" group-title="Tetris",Hard Drop (Tetris Community & Tourneys)
-https://kiefte.eu/iptv/twitch/harddrop
-
-#EXTINF:-1 tvg-id="DogPlayingTetris.tv" tvg-name="DogPlayingTetris" group-title="Tetris",DogPlayingTetris (3x CTWC World Champion)
-https://kiefte.eu/iptv/twitch/dogplayingtetris
-
-#EXTINF:-1 tvg-id="EricICX.tv" tvg-name="EricICX" group-title="Tetris",EricICX (CTWC World Champion)
-https://kiefte.eu/iptv/twitch/ericicx
-
-#EXTINF:-1 tvg-id="FractalTetris.tv" tvg-name="Fractal" group-title="Tetris",Fractal (CTWC World Champion)
-https://kiefte.eu/iptv/twitch/fractal
-
-#EXTINF:-1 tvg-id="AlexT.tv" tvg-name="Alex T" group-title="Tetris",Alex_T (CTWC Champion)
-https://kiefte.eu/iptv/twitch/alex_t
-
-#EXTINF:-1 tvg-id="BlueScuti.tv" tvg-name="BlueScuti" group-title="Tetris",BlueScuti (NES Tetris Crash Record)
-https://kiefte.eu/iptv/twitch/bluescuti
-
-#EXTINF:-1 tvg-id="AnnaD.tv" tvg-name="Anna D." group-title="Tetris",Anna D. (Tetris)
-https://kiefte.eu/iptv/twitch/vinesandwillows
-
-#EXTINF:-1 tvg-id="GamingAutoLive.tv" tvg-name="Gaming 24/7 Auto-Live" group-title="Indie & Variety Gaming",Gaming 24/7 (Auto-Live Streamer)
-https://kiefte.eu/iptv/gaming/live
-
-#EXTINF:-1 tvg-id="BluePrince.tv" tvg-name="Blue Prince Live" group-title="Indie & Variety Gaming",Blue Prince (Top Live Streamer)
-https://kiefte.eu/iptv/twitch/game/Blue%20Prince
-
-#EXTINF:-1 tvg-id="Celeste.tv" tvg-name="Celeste Live" group-title="Indie & Variety Gaming",Celeste (Top Live Streamer)
-https://kiefte.eu/iptv/twitch/game/Celeste
-
-#EXTINF:-1 tvg-id="Portal.tv" tvg-name="Portal Live" group-title="Indie & Variety Gaming",Portal (Top Live Streamer)
-https://kiefte.eu/iptv/twitch/game/Portal
-
-#EXTINF:-1 tvg-id="Portal2.tv" tvg-name="Portal 2 Live" group-title="Indie & Variety Gaming",Portal 2 (Top Live Streamer)
-https://kiefte.eu/iptv/twitch/game/Portal%202
-
-#EXTINF:-1 tvg-id="TamTheGamer.tv" tvg-name="TamTheGamer" group-title="Indie & Variety Gaming",TamTheGamer (Tammy)
-https://kiefte.eu/iptv/twitch/tamthegamer
-
-#EXTINF:-1 tvg-id="ElanaOrama.tv" tvg-name="ElanaOrama" group-title="Indie & Variety Gaming",ElanaOrama (Colony Sim & Variety)
-https://kiefte.eu/iptv/twitch/elanaorama
-
-#EXTINF:-1 tvg-id="DGR.tv" tvg-name="DGR" group-title="Indie & Variety Gaming",DGR (Mario Maker & Super Mario)
-https://kiefte.eu/iptv/twitch/dgr_dave
-
-#EXTINF:-1 tvg-id="Chess.tv" tvg-name="Chess Live" group-title="Indie & Variety Gaming",Chess (Top Live Grandmaster)
-https://kiefte.eu/iptv/twitch/game/Chess
-
-#EXTINF:-1 tvg-id="GeoGuessr.tv" tvg-name="GeoGuessr Live" group-title="Indie & Variety Gaming",GeoGuessr (World Exploration)
-https://kiefte.eu/iptv/twitch/game/GeoGuessr
-
-#EXTINF:-1 tvg-id="Trackmania.tv" tvg-name="Trackmania Live" group-title="Indie & Variety Gaming",Trackmania (Precision Racing Live)
-https://kiefte.eu/iptv/twitch/game/Trackmania
-
-#EXTINF:-1 tvg-id="TVGEuropa.es" tvg-name="Galicia TV Europa" group-title="Galiza",Galicia TV Europa (TVG)
-https://crtvg-europa.flumotion.cloud/playlist.m3u8
-
-#EXTINF:-1 tvg-id="TeleVigo.es" tvg-name="TeleVigo" group-title="Galiza",TeleVigo (Galicia)
-https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=12687
-
-#EXTINF:-1 tvg-id="TVGMiraRadioGalega.es" tvg-name="TVG Mira Radio Galega" group-title="Galiza",TVG Mira Radio Galega (Visual)
-https://crtvg-mirarg-schlive.flumotion.cloud/crtvglive/smil:channel1PRG.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-id="RadioGalega.es" tvg-name="Radio Galega" group-title="Galiza",Radio Galega (Galego)
-https://crtvg-radiogalega-hls.flumotion.cloud/playlist.m3u8
-
-#EXTINF:-1 tvg-id="RadioGalegaMusica.es" tvg-name="Radio Galega Música" group-title="Galiza",Radio Galega Música
-https://crtvg-rgmusica-hls.flumotion.cloud/playlist.m3u8
-
-#EXTINF:-1 tvg-id="La1.es" tvg-name="La 1" group-title="ES Geral & TDT",RTVE La 1
-https://ztnr.rtve.es/ztnr/1688877.m3u8
-
-#EXTINF:-1 tvg-id="La2.es" tvg-name="La 2" group-title="ES Geral & TDT",RTVE La 2
-https://ztnr.rtve.es/ztnr/1688885.m3u8
-
-#EXTINF:-1 tvg-id="Canal24Horas.es" tvg-name="24 Horas" group-title="ES Geral & TDT",RTVE Canal 24 Horas
-https://ztnr.rtve.es/ztnr/1694255.m3u8
-
-#EXTINF:-1 tvg-id="Teledeporte.es" tvg-name="Teledeporte" group-title="ES Geral & TDT",RTVE Teledeporte (TDP)
-https://ztnr.rtve.es/ztnr/1688926.m3u8
-
-#EXTINF:-1 tvg-id="ClanTVE.es" tvg-name="Clan" group-title="ES Geral & TDT",RTVE Clan TV
-https://ztnr.rtve.es/ztnr/5466990.m3u8
-
-#EXTINF:-1 tvg-id="CanalSur.es" tvg-name="Canal Sur" group-title="ES Geral & TDT",Canal Sur Andalucía
-https://dfk2a268yviz9.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ddiii1m6jt6of/CanalSurAndaluciaES.m3u8
-
-#EXTINF:-1 tvg-id="RealMadridTV.es" tvg-name="Real Madrid TV" group-title="ES Geral & TDT",Real Madrid TV
-https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
-
-#EXTINF:-1 tvg-id="CadenaSER.es" tvg-name="Cadena SER" group-title="ES Rádio" radio="true",Cadena SER España
-https://playerservices.streamtheworld.com/api/livestream-redirect/CADENASER.mp3

@@ -109,6 +109,97 @@
     "url": "https://stmv1.srvif.com/tvvitoriamz/tvvitoriamz/playlist.m3u8"
   },
   {
+    "name": "RTVE La 1",
+    "group": "ES Geral & TDT",
+    "tvg_id": "La1.es",
+    "tvg_name": "La 1",
+    "url": "https://ztnr.rtve.es/ztnr/1688877.m3u8"
+  },
+  {
+    "name": "RTVE La 2",
+    "group": "ES Geral & TDT",
+    "tvg_id": "La2.es",
+    "tvg_name": "La 2",
+    "url": "https://ztnr.rtve.es/ztnr/1688885.m3u8"
+  },
+  {
+    "name": "RTVE Canal 24 Horas",
+    "group": "ES Geral & TDT",
+    "tvg_id": "Canal24Horas.es",
+    "tvg_name": "24 Horas",
+    "url": "https://ztnr.rtve.es/ztnr/1694255.m3u8"
+  },
+  {
+    "name": "RTVE Teledeporte (TDP)",
+    "group": "ES Geral & TDT",
+    "tvg_id": "Teledeporte.es",
+    "tvg_name": "Teledeporte",
+    "url": "https://ztnr.rtve.es/ztnr/1688926.m3u8"
+  },
+  {
+    "name": "RTVE Clan TV",
+    "group": "ES Geral & TDT",
+    "tvg_id": "ClanTVE.es",
+    "tvg_name": "Clan",
+    "url": "https://ztnr.rtve.es/ztnr/5466990.m3u8"
+  },
+  {
+    "name": "Canal Sur Andalucía",
+    "group": "ES Geral & TDT",
+    "tvg_id": "CanalSur.es",
+    "tvg_name": "Canal Sur",
+    "url": "https://dfk2a268yviz9.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ddiii1m6jt6of/CanalSurAndaluciaES.m3u8"
+  },
+  {
+    "name": "Real Madrid TV",
+    "group": "ES Geral & TDT",
+    "tvg_id": "RealMadridTV.es",
+    "tvg_name": "Real Madrid TV",
+    "url": "https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8"
+  },
+  {
+    "name": "Cadena SER España",
+    "group": "ES Rádio",
+    "tvg_id": "CadenaSER.es",
+    "tvg_name": "Cadena SER",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CADENASER.mp3"
+  },
+  {
+    "name": "Galicia TV Europa (TVG)",
+    "group": "Galiza",
+    "tvg_id": "TVGEuropa.es",
+    "tvg_name": "Galicia TV Europa",
+    "url": "https://crtvg-europa.flumotion.cloud/playlist.m3u8"
+  },
+  {
+    "name": "TeleVigo (Galicia)",
+    "group": "Galiza",
+    "tvg_id": "TeleVigo.es",
+    "tvg_name": "TeleVigo",
+    "url": "https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=12687"
+  },
+  {
+    "name": "TVG Mira Radio Galega (Visual)",
+    "group": "Galiza",
+    "tvg_id": "TVGMiraRadioGalega.es",
+    "tvg_name": "TVG Mira Radio Galega",
+    "url": "https://crtvg-mirarg-schlive.flumotion.cloud/crtvglive/smil:channel1PRG.smil/playlist.m3u8"
+  },
+  {
+    "name": "Radio Galega (Galego)",
+    "group": "Galiza",
+    "tvg_id": "RadioGalega.es",
+    "tvg_name": "Radio Galega",
+    "url": "https://crtvg-radiogalega-hls.flumotion.cloud/playlist.m3u8"
+  },
+  {
+    "name": "Radio Galega Música",
+    "group": "Galiza",
+    "tvg_id": "RadioGalegaMusica.es",
+    "tvg_name": "Radio Galega Música",
+    "url": "https://crtvg-rgmusica-hls.flumotion.cloud/playlist.m3u8"
+  },
+  {
     "name": "RTP 3",
     "group": "Notícias",
     "tvg_id": "RTP3.pt",
@@ -516,6 +607,78 @@
     "url": "https://kiefte.eu/iptv/youtube/@npo3fm"
   },
   {
+    "name": "ARTE (Français / Deutsch)",
+    "group": "Filmes & Docs",
+    "tvg_id": "Arte.fr",
+    "tvg_name": "ARTE",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/arte.png",
+    "url": "https://artesimulcast.akamaized.net/hls/live/2031003/artelive_fr/index.m3u8"
+  },
+  {
+    "name": "Das Erste (ARD Germany)",
+    "group": "Filmes & Docs",
+    "tvg_id": "DasErste.de",
+    "tvg_name": "Das Erste",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Das-Erste.png",
+    "url": "https://daserste-live.ard-mcdn.de/daserste/live/hls/de/master.m3u8"
+  },
+  {
+    "name": "ZDF (Germany)",
+    "group": "Filmes & Docs",
+    "tvg_id": "ZDF.de",
+    "tvg_name": "ZDF",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/zdf.png",
+    "url": "https://zdf-hls-15.akamaized.net/hls/live/2016498/de/veryhigh/master.m3u8"
+  },
+  {
+    "name": "3sat (DACH Cultural)",
+    "group": "Filmes & Docs",
+    "tvg_id": "3sat.de",
+    "tvg_name": "3sat",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/3sat.png",
+    "url": "https://zdf-hls-18.akamaized.net/hls/live/2016501/dach/veryhigh/master.m3u8"
+  },
+  {
+    "name": "Phoenix (Dokumentationen)",
+    "group": "Filmes & Docs",
+    "tvg_id": "Phoenix.de",
+    "tvg_name": "Phoenix",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/phoenix.png",
+    "url": "https://zdf-hls-19.akamaized.net/hls/live/2016502/de/veryhigh/master.m3u8"
+  },
+  {
+    "name": "TV5Monde Info (Francophonie)",
+    "group": "Filmes & Docs",
+    "tvg_id": "TV5Monde.fr",
+    "tvg_name": "TV5Monde",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tv5monde.png",
+    "url": "https://ott.tv5monde.com/Content/HLS/Live/channel(info)/index.m3u8"
+  },
+  {
+    "name": "Kuriakos Cine",
+    "group": "Filmes & Docs",
+    "tvg_id": "KuriakosCine.pt",
+    "tvg_name": "Kuriakos Cine",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Kuriakos-Cine.png",
+    "url": "https://w2.manasat.com/kcine/kcine.smil/playlist.m3u8"
+  },
+  {
+    "name": "NASA TV HD (Space & Science)",
+    "group": "Filmes & Docs",
+    "tvg_id": "NASATV.us@HD",
+    "tvg_name": "NASA TV",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nasatv.png",
+    "url": "https://kiefte.eu/iptv/youtube/@NASA"
+  },
+  {
+    "name": "TV5Monde Europe (1080p)",
+    "group": "Filmes & Docs",
+    "tvg_id": "TV5MondeEurope.fr",
+    "tvg_name": "TV5Monde Europe",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tv5monde.png",
+    "url": "https://ott.tv5monde.com/Content/HLS/Live/channel(europe)/index.m3u8"
+  },
+  {
     "name": "XON (Ede TV)",
     "group": "Regional & Local",
     "tvg_id": "XON.nl",
@@ -643,78 +806,6 @@
     "url": "https://stream.bruzz.be/live/tv/playlist.m3u8"
   },
   {
-    "name": "ARTE (Français / Deutsch)",
-    "group": "Filmes & Docs",
-    "tvg_id": "Arte.fr",
-    "tvg_name": "ARTE",
-    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/arte.png",
-    "url": "https://artesimulcast.akamaized.net/hls/live/2031003/artelive_fr/index.m3u8"
-  },
-  {
-    "name": "Das Erste (ARD Germany)",
-    "group": "Filmes & Docs",
-    "tvg_id": "DasErste.de",
-    "tvg_name": "Das Erste",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Das-Erste.png",
-    "url": "https://daserste-live.ard-mcdn.de/daserste/live/hls/de/master.m3u8"
-  },
-  {
-    "name": "ZDF (Germany)",
-    "group": "Filmes & Docs",
-    "tvg_id": "ZDF.de",
-    "tvg_name": "ZDF",
-    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/zdf.png",
-    "url": "https://zdf-hls-15.akamaized.net/hls/live/2016498/de/veryhigh/master.m3u8"
-  },
-  {
-    "name": "3sat (DACH Cultural)",
-    "group": "Filmes & Docs",
-    "tvg_id": "3sat.de",
-    "tvg_name": "3sat",
-    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/3sat.png",
-    "url": "https://zdf-hls-18.akamaized.net/hls/live/2016501/dach/veryhigh/master.m3u8"
-  },
-  {
-    "name": "Phoenix (Dokumentationen)",
-    "group": "Filmes & Docs",
-    "tvg_id": "Phoenix.de",
-    "tvg_name": "Phoenix",
-    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/phoenix.png",
-    "url": "https://zdf-hls-19.akamaized.net/hls/live/2016502/de/veryhigh/master.m3u8"
-  },
-  {
-    "name": "TV5Monde Info (Francophonie)",
-    "group": "Filmes & Docs",
-    "tvg_id": "TV5Monde.fr",
-    "tvg_name": "TV5Monde",
-    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tv5monde.png",
-    "url": "https://ott.tv5monde.com/Content/HLS/Live/channel(info)/index.m3u8"
-  },
-  {
-    "name": "Kuriakos Cine",
-    "group": "Filmes & Docs",
-    "tvg_id": "KuriakosCine.pt",
-    "tvg_name": "Kuriakos Cine",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Kuriakos-Cine.png",
-    "url": "https://w2.manasat.com/kcine/kcine.smil/playlist.m3u8"
-  },
-  {
-    "name": "NASA TV HD (Space & Science)",
-    "group": "Filmes & Docs",
-    "tvg_id": "NASATV.us@HD",
-    "tvg_name": "NASA TV",
-    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nasatv.png",
-    "url": "https://kiefte.eu/iptv/youtube/@NASA"
-  },
-  {
-    "name": "TV5Monde Europe (1080p)",
-    "group": "Filmes & Docs",
-    "tvg_id": "TV5MondeEurope.fr",
-    "tvg_name": "TV5Monde Europe",
-    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tv5monde.png",
-    "url": "https://ott.tv5monde.com/Content/HLS/Live/channel(europe)/index.m3u8"
-  },
-  {
     "name": "ARTV (Canal Parlamento PT)",
     "group": "Cívico & Parlamento",
     "tvg_id": "ARTV.pt",
@@ -754,6 +845,328 @@
     "tvg_name": "Tweede Kamer Groen van Prinstererzaal",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png",
     "url": "https://livestreaming.b67buv2.tweedekamer.nl/live/groenvanprinstererzaal/index.m3u8?hd=1&keyframes=1&subtitles=live"
+  },
+  {
+    "name": "Speedrun (24/7 Speedrun.com)",
+    "group": "Speedrunning & Marathons",
+    "tvg_id": "Speedrun.tv",
+    "tvg_name": "Speedrun",
+    "url": "https://kiefte.eu/iptv/twitch/speedrun"
+  },
+  {
+    "name": "GamesDoneQuick (GDQ)",
+    "group": "Speedrunning & Marathons",
+    "tvg_id": "GamesDoneQuick.tv",
+    "tvg_name": "GamesDoneQuick",
+    "url": "https://kiefte.eu/iptv/twitch/gamesdonequick"
+  },
+  {
+    "name": "ESAMarathon (European Speedrunner Assembly)",
+    "group": "Speedrunning & Marathons",
+    "tvg_id": "ESAMarathon.tv",
+    "tvg_name": "ESAMarathon",
+    "url": "https://kiefte.eu/iptv/twitch/esamarathon"
+  },
+  {
+    "name": "TASVideos (Tool-Assisted Speedruns)",
+    "group": "Speedrunning & Marathons",
+    "tvg_id": "TASVideos.tv",
+    "tvg_name": "TASVideos",
+    "url": "https://kiefte.eu/iptv/twitch/tasvideos"
+  },
+  {
+    "name": "MitchFlowerPower (SMB3 Speedruns)",
+    "group": "Speedrunning & Marathons",
+    "tvg_id": "MitchFlowerPower.tv",
+    "tvg_name": "MitchFlowerPower",
+    "url": "https://kiefte.eu/iptv/twitch/mitchflowerpower"
+  },
+  {
+    "name": "SmallAnt (Challenges & Speedruns)",
+    "group": "Speedrunning & Marathons",
+    "tvg_id": "SmallAnt.tv",
+    "tvg_name": "SmallAnt",
+    "url": "https://kiefte.eu/iptv/twitch/smallant"
+  },
+  {
+    "name": "Carrarium (Celeste & GDQ)",
+    "group": "Speedrunning & Marathons",
+    "tvg_id": "Carrarium.tv",
+    "tvg_name": "Carrarium",
+    "url": "https://kiefte.eu/iptv/twitch/carrarium"
+  },
+  {
+    "name": "TGH (Celeste & Retro Speedruns)",
+    "group": "Speedrunning & Marathons",
+    "tvg_id": "TGH.tv",
+    "tvg_name": "TGH",
+    "url": "https://kiefte.eu/iptv/twitch/tgh_sr"
+  },
+  {
+    "name": "AmberCyprian (Speedruns & Retro)",
+    "group": "Speedrunning & Marathons",
+    "tvg_id": "AmberCyprian.tv",
+    "tvg_name": "AmberCyprian",
+    "url": "https://kiefte.eu/iptv/twitch/ambercyprian"
+  },
+  {
+    "name": "Msushi (Celeste & Portal Speedruns)",
+    "group": "Speedrunning & Marathons",
+    "tvg_id": "Msushi.tv",
+    "tvg_name": "Msushi",
+    "url": "https://kiefte.eu/iptv/twitch/msushi"
+  },
+  {
+    "name": "Super Mario World (Romhacks & Kaizo Live)",
+    "group": "Mario & Romhacks",
+    "tvg_id": "SMWRomhacks.tv",
+    "tvg_name": "SMW Romhacks Live",
+    "url": "https://kiefte.eu/iptv/twitch/game/Super%20Mario%20World?bias=romhack"
+  },
+  {
+    "name": "Ryukahr",
+    "group": "Mario & Romhacks",
+    "tvg_id": "Ryukahr.tv",
+    "tvg_name": "Ryukahr",
+    "url": "https://kiefte.eu/iptv/twitch/ryukahr"
+  },
+  {
+    "name": "GrandPooBear",
+    "group": "Mario & Romhacks",
+    "tvg_id": "GrandPooBear.tv",
+    "tvg_name": "GrandPooBear",
+    "url": "https://kiefte.eu/iptv/twitch/grandpoobear"
+  },
+  {
+    "name": "ThaBeast721 (Kaizo & Mario 64)",
+    "group": "Mario & Romhacks",
+    "tvg_id": "ThaBeast721.tv",
+    "tvg_name": "ThaBeast721",
+    "url": "https://kiefte.eu/iptv/twitch/thabeast721"
+  },
+  {
+    "name": "CarlSagan42 (Kaizo & Troll Maker)",
+    "group": "Mario & Romhacks",
+    "tvg_id": "CarlSagan42.tv",
+    "tvg_name": "CarlSagan42",
+    "url": "https://kiefte.eu/iptv/twitch/carlsagan42"
+  },
+  {
+    "name": "Juzcook (Kaizo & Mario Maker)",
+    "group": "Mario & Romhacks",
+    "tvg_id": "Juzcook.tv",
+    "tvg_name": "Juzcook",
+    "url": "https://kiefte.eu/iptv/twitch/juzcook"
+  },
+  {
+    "name": "Aurateur (Endless Mario Maker)",
+    "group": "Mario & Romhacks",
+    "tvg_id": "Aurateur.tv",
+    "tvg_name": "Aurateur",
+    "url": "https://kiefte.eu/iptv/twitch/aurateur"
+  },
+  {
+    "name": "PangaeaPanga (Kaizo SMW)",
+    "group": "Mario & Romhacks",
+    "tvg_id": "PangaeaPanga.tv",
+    "tvg_name": "PangaeaPanga",
+    "url": "https://kiefte.eu/iptv/twitch/pangaeapanga"
+  },
+  {
+    "name": "SimpleFlips (SM64 Romhacks)",
+    "group": "Mario & Romhacks",
+    "tvg_id": "SimpleFlips.tv",
+    "tvg_name": "SimpleFlips",
+    "url": "https://kiefte.eu/iptv/twitch/simpleflips"
+  },
+  {
+    "name": "Failstream (Mario Maker Builds)",
+    "group": "Mario & Romhacks",
+    "tvg_id": "Failstream.tv",
+    "tvg_name": "Failstream",
+    "url": "https://kiefte.eu/iptv/twitch/failstream"
+  },
+  {
+    "name": "Classic Tetris (CTWC Main)",
+    "group": "Tetris",
+    "tvg_id": "ClassicTetris.tv",
+    "tvg_name": "ClassicTetris",
+    "url": "https://kiefte.eu/iptv/twitch/classictetris"
+  },
+  {
+    "name": "Classic Tetris 2 (CTWC)",
+    "group": "Tetris",
+    "tvg_id": "ClassicTetris2.tv",
+    "tvg_name": "ClassicTetris 2",
+    "url": "https://kiefte.eu/iptv/twitch/classictetris2"
+  },
+  {
+    "name": "Classic Tetris 3 (CTWC)",
+    "group": "Tetris",
+    "tvg_id": "ClassicTetris3.tv",
+    "tvg_name": "ClassicTetris 3",
+    "url": "https://kiefte.eu/iptv/twitch/classictetris3"
+  },
+  {
+    "name": "Classic Tetris 4 (CTWC)",
+    "group": "Tetris",
+    "tvg_id": "ClassicTetris4.tv",
+    "tvg_name": "ClassicTetris 4",
+    "url": "https://kiefte.eu/iptv/twitch/classictetris4"
+  },
+  {
+    "name": "NES Tetris (Top Live Streamer)",
+    "group": "Tetris",
+    "tvg_id": "NESTetris.tv",
+    "tvg_name": "NES Tetris Live",
+    "url": "https://kiefte.eu/iptv/twitch/game/Tetris?bias=nes"
+  },
+  {
+    "name": "Modern Tetris (Top Live Streamer)",
+    "group": "Tetris",
+    "tvg_id": "ModernTetris.tv",
+    "tvg_name": "Modern Tetris Live",
+    "url": "https://kiefte.eu/iptv/twitch/group/modern-tetris"
+  },
+  {
+    "name": "Wumbotize (Modern Tetris Master)",
+    "group": "Tetris",
+    "tvg_id": "Wumbotize.tv",
+    "tvg_name": "Wumbotize",
+    "url": "https://kiefte.eu/iptv/twitch/wumbotize"
+  },
+  {
+    "name": "Doremy (Modern Tetris & TETR.IO)",
+    "group": "Tetris",
+    "tvg_id": "Doremy.tv",
+    "tvg_name": "Doremy",
+    "url": "https://kiefte.eu/iptv/twitch/doremy"
+  },
+  {
+    "name": "Hard Drop (Tetris Community & Tourneys)",
+    "group": "Tetris",
+    "tvg_id": "HardDrop.tv",
+    "tvg_name": "Hard Drop",
+    "url": "https://kiefte.eu/iptv/twitch/harddrop"
+  },
+  {
+    "name": "DogPlayingTetris (3x CTWC World Champion)",
+    "group": "Tetris",
+    "tvg_id": "DogPlayingTetris.tv",
+    "tvg_name": "DogPlayingTetris",
+    "url": "https://kiefte.eu/iptv/twitch/dogplayingtetris"
+  },
+  {
+    "name": "EricICX (CTWC World Champion)",
+    "group": "Tetris",
+    "tvg_id": "EricICX.tv",
+    "tvg_name": "EricICX",
+    "url": "https://kiefte.eu/iptv/twitch/ericicx"
+  },
+  {
+    "name": "Fractal (CTWC World Champion)",
+    "group": "Tetris",
+    "tvg_id": "FractalTetris.tv",
+    "tvg_name": "Fractal",
+    "url": "https://kiefte.eu/iptv/twitch/fractal"
+  },
+  {
+    "name": "Alex_T (CTWC Champion)",
+    "group": "Tetris",
+    "tvg_id": "AlexT.tv",
+    "tvg_name": "Alex T",
+    "url": "https://kiefte.eu/iptv/twitch/alex_t"
+  },
+  {
+    "name": "BlueScuti (NES Tetris Crash Record)",
+    "group": "Tetris",
+    "tvg_id": "BlueScuti.tv",
+    "tvg_name": "BlueScuti",
+    "url": "https://kiefte.eu/iptv/twitch/bluescuti"
+  },
+  {
+    "name": "Anna D. (Tetris)",
+    "group": "Tetris",
+    "tvg_id": "AnnaD.tv",
+    "tvg_name": "Anna D.",
+    "url": "https://kiefte.eu/iptv/twitch/vinesandwillows"
+  },
+  {
+    "name": "Gaming 24/7 (Auto-Live Streamer)",
+    "group": "Indie & Variety Gaming",
+    "tvg_id": "GamingAutoLive.tv",
+    "tvg_name": "Gaming 24/7 Auto-Live",
+    "url": "https://kiefte.eu/iptv/gaming/live"
+  },
+  {
+    "name": "Blue Prince (Top Live Streamer)",
+    "group": "Indie & Variety Gaming",
+    "tvg_id": "BluePrince.tv",
+    "tvg_name": "Blue Prince Live",
+    "url": "https://kiefte.eu/iptv/twitch/game/Blue%20Prince"
+  },
+  {
+    "name": "Celeste (Top Live Streamer)",
+    "group": "Indie & Variety Gaming",
+    "tvg_id": "Celeste.tv",
+    "tvg_name": "Celeste Live",
+    "url": "https://kiefte.eu/iptv/twitch/game/Celeste"
+  },
+  {
+    "name": "Portal (Top Live Streamer)",
+    "group": "Indie & Variety Gaming",
+    "tvg_id": "Portal.tv",
+    "tvg_name": "Portal Live",
+    "url": "https://kiefte.eu/iptv/twitch/game/Portal"
+  },
+  {
+    "name": "Portal 2 (Top Live Streamer)",
+    "group": "Indie & Variety Gaming",
+    "tvg_id": "Portal2.tv",
+    "tvg_name": "Portal 2 Live",
+    "url": "https://kiefte.eu/iptv/twitch/game/Portal%202"
+  },
+  {
+    "name": "TamTheGamer (Tammy)",
+    "group": "Indie & Variety Gaming",
+    "tvg_id": "TamTheGamer.tv",
+    "tvg_name": "TamTheGamer",
+    "url": "https://kiefte.eu/iptv/twitch/tamthegamer"
+  },
+  {
+    "name": "ElanaOrama (Colony Sim & Variety)",
+    "group": "Indie & Variety Gaming",
+    "tvg_id": "ElanaOrama.tv",
+    "tvg_name": "ElanaOrama",
+    "url": "https://kiefte.eu/iptv/twitch/elanaorama"
+  },
+  {
+    "name": "DGR (Mario Maker & Super Mario)",
+    "group": "Indie & Variety Gaming",
+    "tvg_id": "DGR.tv",
+    "tvg_name": "DGR",
+    "url": "https://kiefte.eu/iptv/twitch/dgr_dave"
+  },
+  {
+    "name": "Chess (Top Live Grandmaster)",
+    "group": "Indie & Variety Gaming",
+    "tvg_id": "Chess.tv",
+    "tvg_name": "Chess Live",
+    "url": "https://kiefte.eu/iptv/twitch/game/Chess"
+  },
+  {
+    "name": "GeoGuessr (World Exploration)",
+    "group": "Indie & Variety Gaming",
+    "tvg_id": "GeoGuessr.tv",
+    "tvg_name": "GeoGuessr Live",
+    "url": "https://kiefte.eu/iptv/twitch/game/GeoGuessr"
+  },
+  {
+    "name": "Trackmania (Precision Racing Live)",
+    "group": "Indie & Variety Gaming",
+    "tvg_id": "Trackmania.tv",
+    "tvg_name": "Trackmania Live",
+    "url": "https://kiefte.eu/iptv/twitch/game/Trackmania"
   },
   {
     "name": "TV Maná Moçambique",
@@ -1213,6 +1626,102 @@
     "url": "https://stream.studio040.nl/studio040"
   },
   {
+    "name": "Studio Brussel",
+    "group": "BE Rádio",
+    "tvg_id": "StudioBrussel.be",
+    "tvg_name": "Studio Brussel",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png",
+    "url": "https://icecast.vrtcdn.be/stubru-high.mp3"
+  },
+  {
+    "name": "StuBru De Tijdloze",
+    "group": "BE Rádio",
+    "tvg_id": "StuBruDeTijdloze.be",
+    "tvg_name": "StuBru De Tijdloze",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png",
+    "url": "https://icecast.vrtcdn.be/stubru_tijdloze-high.mp3"
+  },
+  {
+    "name": "Radio 1 (VRT Belgium)",
+    "group": "BE Rádio",
+    "tvg_id": "Radio1.be",
+    "tvg_name": "Radio 1 VRT",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-1-BE.png",
+    "url": "https://icecast.vrtcdn.be/ra1-high.mp3"
+  },
+  {
+    "name": "Radio 2 (VRT Antwerpen)",
+    "group": "BE Rádio",
+    "tvg_id": "Radio2Antwerpen.be",
+    "tvg_name": "Radio 2 Antwerpen",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-2-BE.png",
+    "url": "https://icecast.vrtcdn.be/ra2ant-high.mp3"
+  },
+  {
+    "name": "MNM (VRT)",
+    "group": "BE Rádio",
+    "tvg_id": "MNM.be",
+    "tvg_name": "MNM",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/MNM.png",
+    "url": "https://icecast.vrtcdn.be/mnm-high.mp3"
+  },
+  {
+    "name": "Klara (VRT Classical)",
+    "group": "BE Rádio",
+    "tvg_id": "Klara.be",
+    "tvg_name": "Klara",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Klara.png",
+    "url": "https://icecast.vrtcdn.be/klara-high.mp3"
+  },
+  {
+    "name": "Klara Continuo",
+    "group": "BE Rádio",
+    "tvg_id": "KlaraContinuo.be",
+    "tvg_name": "Klara Continuo",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Klara.png",
+    "url": "https://icecast.vrtcdn.be/klaracontinuo-high.mp3"
+  },
+  {
+    "name": "Classic 21 (RTBF Rock)",
+    "group": "BE Rádio",
+    "tvg_id": "Classic21.be",
+    "tvg_name": "Classic 21",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Classic-21.png",
+    "url": "https://radios.rtbf.be/classic21-128.mp3"
+  },
+  {
+    "name": "RTBF La Première",
+    "group": "BE Rádio",
+    "tvg_id": "LaPremiere.be",
+    "tvg_name": "RTBF La Première",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/La-Premiere.png",
+    "url": "https://radios.rtbf.be/laprem1ere-128.mp3"
+  },
+  {
+    "name": "RTBF Musiq3",
+    "group": "BE Rádio",
+    "tvg_id": "Musiq3.be",
+    "tvg_name": "RTBF Musiq3",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Musiq3.png",
+    "url": "https://radios.rtbf.be/musiq3-128.mp3"
+  },
+  {
+    "name": "BRF 1 (Ostbelgien Deutsch)",
+    "group": "BE Rádio",
+    "tvg_id": "BRF1.be",
+    "tvg_name": "BRF 1",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/brf1.png",
+    "url": "http://mp3.stream.brf.be/brf1.mp3"
+  },
+  {
+    "name": "BRF 2 (Ostbelgien Deutsch Schlager)",
+    "group": "BE Rádio",
+    "tvg_id": "BRF2.be",
+    "tvg_name": "BRF 2",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/brf2.png",
+    "url": "http://mp3.stream.brf.be/brf2.mp3"
+  },
+  {
     "name": "Rádio Moçambique - Antena Nacional",
     "group": "MZ Rádio",
     "tvg_id": "RMAntenaNacional.mz",
@@ -1323,102 +1832,6 @@
     "tvg_id": "MaputoCorridor.mz",
     "tvg_name": "Maputo Corridor Radio",
     "url": "http://node.stream-africa.com:8000/MaputoCorridor"
-  },
-  {
-    "name": "Studio Brussel",
-    "group": "BE Rádio",
-    "tvg_id": "StudioBrussel.be",
-    "tvg_name": "Studio Brussel",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png",
-    "url": "https://icecast.vrtcdn.be/stubru-high.mp3"
-  },
-  {
-    "name": "StuBru De Tijdloze",
-    "group": "BE Rádio",
-    "tvg_id": "StuBruDeTijdloze.be",
-    "tvg_name": "StuBru De Tijdloze",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png",
-    "url": "https://icecast.vrtcdn.be/stubru_tijdloze-high.mp3"
-  },
-  {
-    "name": "Radio 1 (VRT Belgium)",
-    "group": "BE Rádio",
-    "tvg_id": "Radio1.be",
-    "tvg_name": "Radio 1 VRT",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-1-BE.png",
-    "url": "https://icecast.vrtcdn.be/ra1-high.mp3"
-  },
-  {
-    "name": "Radio 2 (VRT Antwerpen)",
-    "group": "BE Rádio",
-    "tvg_id": "Radio2Antwerpen.be",
-    "tvg_name": "Radio 2 Antwerpen",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-2-BE.png",
-    "url": "https://icecast.vrtcdn.be/ra2ant-high.mp3"
-  },
-  {
-    "name": "MNM (VRT)",
-    "group": "BE Rádio",
-    "tvg_id": "MNM.be",
-    "tvg_name": "MNM",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/MNM.png",
-    "url": "https://icecast.vrtcdn.be/mnm-high.mp3"
-  },
-  {
-    "name": "Klara (VRT Classical)",
-    "group": "BE Rádio",
-    "tvg_id": "Klara.be",
-    "tvg_name": "Klara",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Klara.png",
-    "url": "https://icecast.vrtcdn.be/klara-high.mp3"
-  },
-  {
-    "name": "Klara Continuo",
-    "group": "BE Rádio",
-    "tvg_id": "KlaraContinuo.be",
-    "tvg_name": "Klara Continuo",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Klara.png",
-    "url": "https://icecast.vrtcdn.be/klaracontinuo-high.mp3"
-  },
-  {
-    "name": "Classic 21 (RTBF Rock)",
-    "group": "BE Rádio",
-    "tvg_id": "Classic21.be",
-    "tvg_name": "Classic 21",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Classic-21.png",
-    "url": "https://radios.rtbf.be/classic21-128.mp3"
-  },
-  {
-    "name": "RTBF La Première",
-    "group": "BE Rádio",
-    "tvg_id": "LaPremiere.be",
-    "tvg_name": "RTBF La Première",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/La-Premiere.png",
-    "url": "https://radios.rtbf.be/laprem1ere-128.mp3"
-  },
-  {
-    "name": "RTBF Musiq3",
-    "group": "BE Rádio",
-    "tvg_id": "Musiq3.be",
-    "tvg_name": "RTBF Musiq3",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Musiq3.png",
-    "url": "https://radios.rtbf.be/musiq3-128.mp3"
-  },
-  {
-    "name": "BRF 1 (Ostbelgien Deutsch)",
-    "group": "BE Rádio",
-    "tvg_id": "BRF1.be",
-    "tvg_name": "BRF 1",
-    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/brf1.png",
-    "url": "http://mp3.stream.brf.be/brf1.mp3"
-  },
-  {
-    "name": "BRF 2 (Ostbelgien Deutsch Schlager)",
-    "group": "BE Rádio",
-    "tvg_id": "BRF2.be",
-    "tvg_name": "BRF 2",
-    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/brf2.png",
-    "url": "http://mp3.stream.brf.be/brf2.mp3"
   },
   {
     "name": "Radio Paradise - Main Mix (FLAC)",
@@ -1596,418 +2009,5 @@
     "tvg_id": "FineMusicRadio.za",
     "tvg_name": "Fine Music Radio",
     "url": "https://edge.iono.fm/xhls/fmr_live_high.m3u8"
-  },
-  {
-    "name": "Speedrun (24/7 Speedrun.com)",
-    "group": "Speedrunning & Marathons",
-    "tvg_id": "Speedrun.tv",
-    "tvg_name": "Speedrun",
-    "url": "https://kiefte.eu/iptv/twitch/speedrun"
-  },
-  {
-    "name": "GamesDoneQuick (GDQ)",
-    "group": "Speedrunning & Marathons",
-    "tvg_id": "GamesDoneQuick.tv",
-    "tvg_name": "GamesDoneQuick",
-    "url": "https://kiefte.eu/iptv/twitch/gamesdonequick"
-  },
-  {
-    "name": "ESAMarathon (European Speedrunner Assembly)",
-    "group": "Speedrunning & Marathons",
-    "tvg_id": "ESAMarathon.tv",
-    "tvg_name": "ESAMarathon",
-    "url": "https://kiefte.eu/iptv/twitch/esamarathon"
-  },
-  {
-    "name": "TASVideos (Tool-Assisted Speedruns)",
-    "group": "Speedrunning & Marathons",
-    "tvg_id": "TASVideos.tv",
-    "tvg_name": "TASVideos",
-    "url": "https://kiefte.eu/iptv/twitch/tasvideos"
-  },
-  {
-    "name": "MitchFlowerPower (SMB3 Speedruns)",
-    "group": "Speedrunning & Marathons",
-    "tvg_id": "MitchFlowerPower.tv",
-    "tvg_name": "MitchFlowerPower",
-    "url": "https://kiefte.eu/iptv/twitch/mitchflowerpower"
-  },
-  {
-    "name": "SmallAnt (Challenges & Speedruns)",
-    "group": "Speedrunning & Marathons",
-    "tvg_id": "SmallAnt.tv",
-    "tvg_name": "SmallAnt",
-    "url": "https://kiefte.eu/iptv/twitch/smallant"
-  },
-  {
-    "name": "Carrarium (Celeste & GDQ)",
-    "group": "Speedrunning & Marathons",
-    "tvg_id": "Carrarium.tv",
-    "tvg_name": "Carrarium",
-    "url": "https://kiefte.eu/iptv/twitch/carrarium"
-  },
-  {
-    "name": "TGH (Celeste & Retro Speedruns)",
-    "group": "Speedrunning & Marathons",
-    "tvg_id": "TGH.tv",
-    "tvg_name": "TGH",
-    "url": "https://kiefte.eu/iptv/twitch/tgh_sr"
-  },
-  {
-    "name": "AmberCyprian (Speedruns & Retro)",
-    "group": "Speedrunning & Marathons",
-    "tvg_id": "AmberCyprian.tv",
-    "tvg_name": "AmberCyprian",
-    "url": "https://kiefte.eu/iptv/twitch/ambercyprian"
-  },
-  {
-    "name": "Msushi (Celeste & Portal Speedruns)",
-    "group": "Speedrunning & Marathons",
-    "tvg_id": "Msushi.tv",
-    "tvg_name": "Msushi",
-    "url": "https://kiefte.eu/iptv/twitch/msushi"
-  },
-  {
-    "name": "Super Mario World (Romhacks & Kaizo Live)",
-    "group": "Mario & Romhacks",
-    "tvg_id": "SMWRomhacks.tv",
-    "tvg_name": "SMW Romhacks Live",
-    "url": "https://kiefte.eu/iptv/twitch/game/Super%20Mario%20World?bias=romhack"
-  },
-  {
-    "name": "Ryukahr",
-    "group": "Mario & Romhacks",
-    "tvg_id": "Ryukahr.tv",
-    "tvg_name": "Ryukahr",
-    "url": "https://kiefte.eu/iptv/twitch/ryukahr"
-  },
-  {
-    "name": "GrandPooBear",
-    "group": "Mario & Romhacks",
-    "tvg_id": "GrandPooBear.tv",
-    "tvg_name": "GrandPooBear",
-    "url": "https://kiefte.eu/iptv/twitch/grandpoobear"
-  },
-  {
-    "name": "ThaBeast721 (Kaizo & Mario 64)",
-    "group": "Mario & Romhacks",
-    "tvg_id": "ThaBeast721.tv",
-    "tvg_name": "ThaBeast721",
-    "url": "https://kiefte.eu/iptv/twitch/thabeast721"
-  },
-  {
-    "name": "CarlSagan42 (Kaizo & Troll Maker)",
-    "group": "Mario & Romhacks",
-    "tvg_id": "CarlSagan42.tv",
-    "tvg_name": "CarlSagan42",
-    "url": "https://kiefte.eu/iptv/twitch/carlsagan42"
-  },
-  {
-    "name": "Juzcook (Kaizo & Mario Maker)",
-    "group": "Mario & Romhacks",
-    "tvg_id": "Juzcook.tv",
-    "tvg_name": "Juzcook",
-    "url": "https://kiefte.eu/iptv/twitch/juzcook"
-  },
-  {
-    "name": "Aurateur (Endless Mario Maker)",
-    "group": "Mario & Romhacks",
-    "tvg_id": "Aurateur.tv",
-    "tvg_name": "Aurateur",
-    "url": "https://kiefte.eu/iptv/twitch/aurateur"
-  },
-  {
-    "name": "PangaeaPanga (Kaizo SMW)",
-    "group": "Mario & Romhacks",
-    "tvg_id": "PangaeaPanga.tv",
-    "tvg_name": "PangaeaPanga",
-    "url": "https://kiefte.eu/iptv/twitch/pangaeapanga"
-  },
-  {
-    "name": "SimpleFlips (SM64 Romhacks)",
-    "group": "Mario & Romhacks",
-    "tvg_id": "SimpleFlips.tv",
-    "tvg_name": "SimpleFlips",
-    "url": "https://kiefte.eu/iptv/twitch/simpleflips"
-  },
-  {
-    "name": "Failstream (Mario Maker Builds)",
-    "group": "Mario & Romhacks",
-    "tvg_id": "Failstream.tv",
-    "tvg_name": "Failstream",
-    "url": "https://kiefte.eu/iptv/twitch/failstream"
-  },
-  {
-    "name": "Classic Tetris (CTWC Main)",
-    "group": "Tetris",
-    "tvg_id": "ClassicTetris.tv",
-    "tvg_name": "ClassicTetris",
-    "url": "https://kiefte.eu/iptv/twitch/classictetris"
-  },
-  {
-    "name": "Classic Tetris 2 (CTWC)",
-    "group": "Tetris",
-    "tvg_id": "ClassicTetris2.tv",
-    "tvg_name": "ClassicTetris 2",
-    "url": "https://kiefte.eu/iptv/twitch/classictetris2"
-  },
-  {
-    "name": "Classic Tetris 3 (CTWC)",
-    "group": "Tetris",
-    "tvg_id": "ClassicTetris3.tv",
-    "tvg_name": "ClassicTetris 3",
-    "url": "https://kiefte.eu/iptv/twitch/classictetris3"
-  },
-  {
-    "name": "Classic Tetris 4 (CTWC)",
-    "group": "Tetris",
-    "tvg_id": "ClassicTetris4.tv",
-    "tvg_name": "ClassicTetris 4",
-    "url": "https://kiefte.eu/iptv/twitch/classictetris4"
-  },
-  {
-    "name": "NES Tetris (Top Live Streamer)",
-    "group": "Tetris",
-    "tvg_id": "NESTetris.tv",
-    "tvg_name": "NES Tetris Live",
-    "url": "https://kiefte.eu/iptv/twitch/game/Tetris?bias=nes"
-  },
-  {
-    "name": "Modern Tetris (Top Live Streamer)",
-    "group": "Tetris",
-    "tvg_id": "ModernTetris.tv",
-    "tvg_name": "Modern Tetris Live",
-    "url": "https://kiefte.eu/iptv/twitch/group/modern-tetris"
-  },
-  {
-    "name": "Wumbotize (Modern Tetris Master)",
-    "group": "Tetris",
-    "tvg_id": "Wumbotize.tv",
-    "tvg_name": "Wumbotize",
-    "url": "https://kiefte.eu/iptv/twitch/wumbotize"
-  },
-  {
-    "name": "Doremy (Modern Tetris & TETR.IO)",
-    "group": "Tetris",
-    "tvg_id": "Doremy.tv",
-    "tvg_name": "Doremy",
-    "url": "https://kiefte.eu/iptv/twitch/doremy"
-  },
-  {
-    "name": "Hard Drop (Tetris Community & Tourneys)",
-    "group": "Tetris",
-    "tvg_id": "HardDrop.tv",
-    "tvg_name": "Hard Drop",
-    "url": "https://kiefte.eu/iptv/twitch/harddrop"
-  },
-  {
-    "name": "DogPlayingTetris (3x CTWC World Champion)",
-    "group": "Tetris",
-    "tvg_id": "DogPlayingTetris.tv",
-    "tvg_name": "DogPlayingTetris",
-    "url": "https://kiefte.eu/iptv/twitch/dogplayingtetris"
-  },
-  {
-    "name": "EricICX (CTWC World Champion)",
-    "group": "Tetris",
-    "tvg_id": "EricICX.tv",
-    "tvg_name": "EricICX",
-    "url": "https://kiefte.eu/iptv/twitch/ericicx"
-  },
-  {
-    "name": "Fractal (CTWC World Champion)",
-    "group": "Tetris",
-    "tvg_id": "FractalTetris.tv",
-    "tvg_name": "Fractal",
-    "url": "https://kiefte.eu/iptv/twitch/fractal"
-  },
-  {
-    "name": "Alex_T (CTWC Champion)",
-    "group": "Tetris",
-    "tvg_id": "AlexT.tv",
-    "tvg_name": "Alex T",
-    "url": "https://kiefte.eu/iptv/twitch/alex_t"
-  },
-  {
-    "name": "BlueScuti (NES Tetris Crash Record)",
-    "group": "Tetris",
-    "tvg_id": "BlueScuti.tv",
-    "tvg_name": "BlueScuti",
-    "url": "https://kiefte.eu/iptv/twitch/bluescuti"
-  },
-  {
-    "name": "Anna D. (Tetris)",
-    "group": "Tetris",
-    "tvg_id": "AnnaD.tv",
-    "tvg_name": "Anna D.",
-    "url": "https://kiefte.eu/iptv/twitch/vinesandwillows"
-  },
-  {
-    "name": "Gaming 24/7 (Auto-Live Streamer)",
-    "group": "Indie & Variety Gaming",
-    "tvg_id": "GamingAutoLive.tv",
-    "tvg_name": "Gaming 24/7 Auto-Live",
-    "url": "https://kiefte.eu/iptv/gaming/live"
-  },
-  {
-    "name": "Blue Prince (Top Live Streamer)",
-    "group": "Indie & Variety Gaming",
-    "tvg_id": "BluePrince.tv",
-    "tvg_name": "Blue Prince Live",
-    "url": "https://kiefte.eu/iptv/twitch/game/Blue%20Prince"
-  },
-  {
-    "name": "Celeste (Top Live Streamer)",
-    "group": "Indie & Variety Gaming",
-    "tvg_id": "Celeste.tv",
-    "tvg_name": "Celeste Live",
-    "url": "https://kiefte.eu/iptv/twitch/game/Celeste"
-  },
-  {
-    "name": "Portal (Top Live Streamer)",
-    "group": "Indie & Variety Gaming",
-    "tvg_id": "Portal.tv",
-    "tvg_name": "Portal Live",
-    "url": "https://kiefte.eu/iptv/twitch/game/Portal"
-  },
-  {
-    "name": "Portal 2 (Top Live Streamer)",
-    "group": "Indie & Variety Gaming",
-    "tvg_id": "Portal2.tv",
-    "tvg_name": "Portal 2 Live",
-    "url": "https://kiefte.eu/iptv/twitch/game/Portal%202"
-  },
-  {
-    "name": "TamTheGamer (Tammy)",
-    "group": "Indie & Variety Gaming",
-    "tvg_id": "TamTheGamer.tv",
-    "tvg_name": "TamTheGamer",
-    "url": "https://kiefte.eu/iptv/twitch/tamthegamer"
-  },
-  {
-    "name": "ElanaOrama (Colony Sim & Variety)",
-    "group": "Indie & Variety Gaming",
-    "tvg_id": "ElanaOrama.tv",
-    "tvg_name": "ElanaOrama",
-    "url": "https://kiefte.eu/iptv/twitch/elanaorama"
-  },
-  {
-    "name": "DGR (Mario Maker & Super Mario)",
-    "group": "Indie & Variety Gaming",
-    "tvg_id": "DGR.tv",
-    "tvg_name": "DGR",
-    "url": "https://kiefte.eu/iptv/twitch/dgr_dave"
-  },
-  {
-    "name": "Chess (Top Live Grandmaster)",
-    "group": "Indie & Variety Gaming",
-    "tvg_id": "Chess.tv",
-    "tvg_name": "Chess Live",
-    "url": "https://kiefte.eu/iptv/twitch/game/Chess"
-  },
-  {
-    "name": "GeoGuessr (World Exploration)",
-    "group": "Indie & Variety Gaming",
-    "tvg_id": "GeoGuessr.tv",
-    "tvg_name": "GeoGuessr Live",
-    "url": "https://kiefte.eu/iptv/twitch/game/GeoGuessr"
-  },
-  {
-    "name": "Trackmania (Precision Racing Live)",
-    "group": "Indie & Variety Gaming",
-    "tvg_id": "Trackmania.tv",
-    "tvg_name": "Trackmania Live",
-    "url": "https://kiefte.eu/iptv/twitch/game/Trackmania"
-  },
-  {
-    "name": "Galicia TV Europa (TVG)",
-    "group": "Galiza",
-    "tvg_id": "TVGEuropa.es",
-    "tvg_name": "Galicia TV Europa",
-    "url": "https://crtvg-europa.flumotion.cloud/playlist.m3u8"
-  },
-  {
-    "name": "TeleVigo (Galicia)",
-    "group": "Galiza",
-    "tvg_id": "TeleVigo.es",
-    "tvg_name": "TeleVigo",
-    "url": "https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=12687"
-  },
-  {
-    "name": "TVG Mira Radio Galega (Visual)",
-    "group": "Galiza",
-    "tvg_id": "TVGMiraRadioGalega.es",
-    "tvg_name": "TVG Mira Radio Galega",
-    "url": "https://crtvg-mirarg-schlive.flumotion.cloud/crtvglive/smil:channel1PRG.smil/playlist.m3u8"
-  },
-  {
-    "name": "Radio Galega (Galego)",
-    "group": "Galiza",
-    "tvg_id": "RadioGalega.es",
-    "tvg_name": "Radio Galega",
-    "url": "https://crtvg-radiogalega-hls.flumotion.cloud/playlist.m3u8"
-  },
-  {
-    "name": "Radio Galega Música",
-    "group": "Galiza",
-    "tvg_id": "RadioGalegaMusica.es",
-    "tvg_name": "Radio Galega Música",
-    "url": "https://crtvg-rgmusica-hls.flumotion.cloud/playlist.m3u8"
-  },
-  {
-    "name": "RTVE La 1",
-    "group": "ES Geral & TDT",
-    "tvg_id": "La1.es",
-    "tvg_name": "La 1",
-    "url": "https://ztnr.rtve.es/ztnr/1688877.m3u8"
-  },
-  {
-    "name": "RTVE La 2",
-    "group": "ES Geral & TDT",
-    "tvg_id": "La2.es",
-    "tvg_name": "La 2",
-    "url": "https://ztnr.rtve.es/ztnr/1688885.m3u8"
-  },
-  {
-    "name": "RTVE Canal 24 Horas",
-    "group": "ES Geral & TDT",
-    "tvg_id": "Canal24Horas.es",
-    "tvg_name": "24 Horas",
-    "url": "https://ztnr.rtve.es/ztnr/1694255.m3u8"
-  },
-  {
-    "name": "RTVE Teledeporte (TDP)",
-    "group": "ES Geral & TDT",
-    "tvg_id": "Teledeporte.es",
-    "tvg_name": "Teledeporte",
-    "url": "https://ztnr.rtve.es/ztnr/1688926.m3u8"
-  },
-  {
-    "name": "RTVE Clan TV",
-    "group": "ES Geral & TDT",
-    "tvg_id": "ClanTVE.es",
-    "tvg_name": "Clan",
-    "url": "https://ztnr.rtve.es/ztnr/5466990.m3u8"
-  },
-  {
-    "name": "Canal Sur Andalucía",
-    "group": "ES Geral & TDT",
-    "tvg_id": "CanalSur.es",
-    "tvg_name": "Canal Sur",
-    "url": "https://dfk2a268yviz9.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ddiii1m6jt6of/CanalSurAndaluciaES.m3u8"
-  },
-  {
-    "name": "Real Madrid TV",
-    "group": "ES Geral & TDT",
-    "tvg_id": "RealMadridTV.es",
-    "tvg_name": "Real Madrid TV",
-    "url": "https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8"
-  },
-  {
-    "name": "Cadena SER España",
-    "group": "ES Rádio",
-    "tvg_id": "CadenaSER.es",
-    "tvg_name": "Cadena SER",
-    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CADENASER.mp3"
   }
 ]
