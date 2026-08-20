@@ -1,0 +1,21 @@
+[Unit]
+Description=IPTV Live Bridge (Twitch, YouTube Live, etc. to M3U HLS redirector)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+EnvironmentFile=-/etc/iptv-live-bridge.conf
+ExecStart=/usr/bin/iptv-live-bridge
+Restart=always
+RestartSec=5
+DynamicUser=yes
+
+# Hardening
+ProtectSystem=strict
+ProtectHome=yes
+NoNewPrivileges=yes
+PrivateTmp=yes
+
+[Install]
+WantedBy=multi-user.target

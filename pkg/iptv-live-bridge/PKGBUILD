@@ -1,0 +1,22 @@
+# Maintainer: Joop Kiefte <ikojba@gmail.com>
+pkgname=iptv-live-bridge
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="Dynamic IPTV Streamlink Bridge for Twitch and YouTube Live"
+arch=('any')
+url="https://github.com/LaPingvino/iptv"
+license=('MIT')
+depends=('python' 'streamlink')
+backup=('etc/iptv-live-bridge.conf')
+source=(
+    'iptv-live-bridge.py'
+    'iptv-live-bridge.service'
+    'iptv-live-bridge.conf'
+)
+sha256sums=('SKIP' 'SKIP' 'SKIP')
+
+package() {
+    install -Dm755 "${srcdir}/iptv-live-bridge.py" "${pkgdir}/usr/bin/iptv-live-bridge"
+    install -Dm644 "${srcdir}/iptv-live-bridge.service" "${pkgdir}/usr/lib/systemd/system/iptv-live-bridge.service"
+    install -Dm644 "${srcdir}/iptv-live-bridge.conf" "${pkgdir}/etc/iptv-live-bridge.conf"
+}
