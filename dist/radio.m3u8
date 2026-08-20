@@ -173,7 +173,7 @@ https://icecast.vrtcdn.be/stubru-high.mp3
 https://icecast.vrtcdn.be/stubru_tijdloze-high.mp3
 
 #EXTINF:-1 tvg-id="Radio1.be" tvg-name="Radio 1 VRT" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-1-BE.png" group-title="BE Rádio" radio="true",Radio 1 (VRT Belgium)
-https://icecast.vrtcdn.be/ra1-high.mp3
+https://icecast.vrtcdn.be/radio1-high.mp3
 
 #EXTINF:-1 tvg-id="Radio2Antwerpen.be" tvg-name="Radio 2 Antwerpen" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-2-BE.png" group-title="BE Rádio" radio="true",Radio 2 (VRT Antwerpen)
 https://icecast.vrtcdn.be/ra2ant-high.mp3
@@ -284,16 +284,16 @@ https://stream-relay-geo.ntslive.net/stream
 https://stream-relay-geo.ntslive.net/stream2
 
 #EXTINF:-1 tvg-id="SomaFMGrooveSalad.us" tvg-name="SomaFM Groove Salad" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png" group-title="Rádio Global" radio="true",SomaFM: Groove Salad
-https://ice6.somafm.com/groovesalad-256-mp3
+https://ice2.somafm.com/groovesalad-256-mp3
 
 #EXTINF:-1 tvg-id="SomaFMSecretAgent.us" tvg-name="SomaFM Secret Agent" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png" group-title="Rádio Global" radio="true",SomaFM: Secret Agent
-https://ice6.somafm.com/secretagent-128-mp3
+https://ice2.somafm.com/secretagent-128-mp3
 
 #EXTINF:-1 tvg-id="SomaFMDroneZone.us" tvg-name="SomaFM Drone Zone" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png" group-title="Rádio Global" radio="true",SomaFM: Drone Zone
-https://ice6.somafm.com/dronezone-256-mp3
+https://ice2.somafm.com/dronezone-256-mp3
 
 #EXTINF:-1 tvg-id="SomaFMIndiePop.us" tvg-name="SomaFM Indie Pop Rocks" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png" group-title="Rádio Global" radio="true",SomaFM: Indie Pop Rocks!
-https://ice6.somafm.com/indiepop-128-mp3
+https://ice2.somafm.com/indiepop-128-mp3
 
 #EXTINF:-1 tvg-id="BBCWorldService.uk" tvg-name="BBC World Service" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/bbcworldservice.png" group-title="Rádio Global" radio="true",BBC World Service
 https://stream.live.vc.bbcmedia.co.uk/bbc_world_service

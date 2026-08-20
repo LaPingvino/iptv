@@ -15,7 +15,7 @@
   tvg_id: Radio1.be
   tvg_name: Radio 1 VRT
   logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-1-BE.png
-  url: https://icecast.vrtcdn.be/ra1-high.mp3
+  url: https://icecast.vrtcdn.be/radio1-high.mp3
 - name: Radio 2 (VRT Antwerpen)
   group: BE Rádio
   tvg_id: Radio2Antwerpen.be

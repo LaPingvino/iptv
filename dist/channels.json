@@ -1689,7 +1689,7 @@
     "tvg_id": "Radio1.be",
     "tvg_name": "Radio 1 VRT",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-1-BE.png",
-    "url": "https://icecast.vrtcdn.be/ra1-high.mp3"
+    "url": "https://icecast.vrtcdn.be/radio1-high.mp3"
   },
   {
     "name": "Radio 2 (VRT Antwerpen)",
@@ -1967,7 +1967,7 @@
     "tvg_id": "SomaFMGrooveSalad.us",
     "tvg_name": "SomaFM Groove Salad",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png",
-    "url": "https://ice6.somafm.com/groovesalad-256-mp3"
+    "url": "https://ice2.somafm.com/groovesalad-256-mp3"
   },
   {
     "name": "SomaFM: Secret Agent",
@@ -1975,7 +1975,7 @@
     "tvg_id": "SomaFMSecretAgent.us",
     "tvg_name": "SomaFM Secret Agent",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png",
-    "url": "https://ice6.somafm.com/secretagent-128-mp3"
+    "url": "https://ice2.somafm.com/secretagent-128-mp3"
   },
   {
     "name": "SomaFM: Drone Zone",
@@ -1983,7 +1983,7 @@
     "tvg_id": "SomaFMDroneZone.us",
     "tvg_name": "SomaFM Drone Zone",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png",
-    "url": "https://ice6.somafm.com/dronezone-256-mp3"
+    "url": "https://ice2.somafm.com/dronezone-256-mp3"
   },
   {
     "name": "SomaFM: Indie Pop Rocks!",
@@ -1991,7 +1991,7 @@
     "tvg_id": "SomaFMIndiePop.us",
     "tvg_name": "SomaFM Indie Pop Rocks",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png",
-    "url": "https://ice6.somafm.com/indiepop-128-mp3"
+    "url": "https://ice2.somafm.com/indiepop-128-mp3"
   },
   {
     "name": "BBC World Service",

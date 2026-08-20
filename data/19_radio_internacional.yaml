@@ -67,25 +67,25 @@
   tvg_id: SomaFMGrooveSalad.us
   tvg_name: SomaFM Groove Salad
   logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png
-  url: https://ice6.somafm.com/groovesalad-256-mp3
+  url: https://ice2.somafm.com/groovesalad-256-mp3
 - name: 'SomaFM: Secret Agent'
   group: Rádio Global
   tvg_id: SomaFMSecretAgent.us
   tvg_name: SomaFM Secret Agent
   logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png
-  url: https://ice6.somafm.com/secretagent-128-mp3
+  url: https://ice2.somafm.com/secretagent-128-mp3
 - name: 'SomaFM: Drone Zone'
   group: Rádio Global
   tvg_id: SomaFMDroneZone.us
   tvg_name: SomaFM Drone Zone
   logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png
-  url: https://ice6.somafm.com/dronezone-256-mp3
+  url: https://ice2.somafm.com/dronezone-256-mp3
 - name: 'SomaFM: Indie Pop Rocks!'
   group: Rádio Global
   tvg_id: SomaFMIndiePop.us
   tvg_name: SomaFM Indie Pop Rocks
   logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png
-  url: https://ice6.somafm.com/indiepop-128-mp3
+  url: https://ice2.somafm.com/indiepop-128-mp3
 - name: BBC World Service
   group: Rádio Global
   tvg_id: BBCWorldService.uk
