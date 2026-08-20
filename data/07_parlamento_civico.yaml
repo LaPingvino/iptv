@@ -1,10 +1,10 @@
 - name: ARTV (Canal Parlamento PT)
   group: Cívico & Parlamento
-  tvg_id: ARTV.pt@HD
+  tvg_id: ARTV.pt
   tvg_name: ARTV
   logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/AR-TV.png
   http_user_agent: Mozilla/5.0
-  url: https://canalparlamentolivestream.video.ar.parlamento.pt/artv/live/playlist.m3u8
+  url: https://playout175.livextend.cloud/livenlin4/_definst_/2liveartvpub2/playlist.m3u8
 - name: 'Tweede Kamer: Plenaire zaal (NL)'
   group: Cívico & Parlamento
   tvg_id: TweedeKamerPlenair.nl

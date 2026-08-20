@@ -19,7 +19,7 @@
     "http_user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0",
     "http_origin": "https://www.rtp.pt",
     "http_referrer": "https://www.rtp.pt/play/direto/rtp2",
-    "url": "https://streaming-live.rtp.pt/liverepeater/smil:rtp2HD.smil/playlist.m3u8"
+    "url": "https://streaming-live.rtp.pt/liverepeater/smil:rtpClean2HD.smil/playlist.m3u8"
   },
   {
     "name": "SIC",
@@ -52,7 +52,7 @@
     "http_user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0",
     "http_origin": "https://www.rtp.pt",
     "http_referrer": "https://www.rtp.pt/play/direto/rtpmemoria",
-    "url": "https://streaming-live.rtp.pt/liverepeater/smil:rtpmemoriaHD.smil/playlist.m3u8"
+    "url": "https://streaming-live.rtp.pt/liverepeater/rtpmemoriaHD.smil/playlist.m3u8"
   },
   {
     "name": "RTP Madeira",
@@ -63,7 +63,7 @@
     "http_user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0",
     "http_origin": "https://www.rtp.pt",
     "http_referrer": "https://www.rtp.pt/play/direto/rtpmadeira",
-    "url": "https://streaming-live.rtp.pt/liverepeater/smil:rtpmadeiraHD.smil/playlist.m3u8"
+    "url": "https://streaming-live.rtp.pt/liverepeater/smil:rtpmadeira.smil/playlist.m3u8"
   },
   {
     "name": "RTP Açores",
@@ -74,7 +74,7 @@
     "http_user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0",
     "http_origin": "https://www.rtp.pt",
     "http_referrer": "https://www.rtp.pt/play/direto/rtpacores",
-    "url": "https://streaming-live.rtp.pt/liverepeater/smil:rtpacoresHD.smil/playlist.m3u8"
+    "url": "https://streaming-live.rtp.pt/liverepeater/rtpacoresHD.smil/playlist.m3u8"
   },
   {
     "name": "RTP África",
@@ -85,7 +85,7 @@
     "http_user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0",
     "http_origin": "https://www.rtp.pt",
     "http_referrer": "https://www.rtp.pt/play/direto/rtpafrica",
-    "url": "https://streaming-live.rtp.pt/liverepeater/smil:rtpafricaHD.smil/playlist.m3u8"
+    "url": "https://streaming-live.rtp.pt/liverepeater/rtpafricaHD.smil/playlist.m3u8"
   },
   {
     "name": "TVM (Televisão de Moçambique)",
@@ -117,7 +117,7 @@
     "http_user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0",
     "http_origin": "https://www.rtp.pt",
     "http_referrer": "https://www.rtp.pt/play/direto/rtp3",
-    "url": "https://streaming-live.rtp.pt/liverepeater/smil:rtp3HD.smil/playlist.m3u8"
+    "url": "https://streaming-live.rtp.pt/livetvhlsDVR/rtpnHDdvr.smil/playlist.m3u8"
   },
   {
     "name": "SIC Notícias",
@@ -289,9 +289,10 @@
     "tvg_id": "PortoCanal.pt@HD",
     "tvg_name": "Porto Canal",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Porto-Canal.png",
-    "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3",
+    "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     "http_referrer": "https://portocanal.sapo.pt/",
-    "url": "https://video-auth6.iol.pt/live_portocanal/live_portocanal/playlist.m3u8"
+    "url": "https://pull-live-156-1.global.ssl.fastly.net/pc5865dc25400thmb-ea6bf03b14fa318f7133/pc1-jhrgyuoqe5865db-68tkgb14fa318f7133f03.smil/playlist.m3u8",
+    "http_origin": "https://portocanal.sapo.pt"
   },
   {
     "name": "LiveMode TV",
@@ -705,11 +706,11 @@
   {
     "name": "ARTV (Canal Parlamento PT)",
     "group": "Cívico & Parlamento",
-    "tvg_id": "ARTV.pt@HD",
+    "tvg_id": "ARTV.pt",
     "tvg_name": "ARTV",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/AR-TV.png",
     "http_user_agent": "Mozilla/5.0",
-    "url": "https://canalparlamentolivestream.video.ar.parlamento.pt/artv/live/playlist.m3u8"
+    "url": "https://playout175.livextend.cloud/livenlin4/_definst_/2liveartvpub2/playlist.m3u8"
   },
   {
     "name": "Tweede Kamer: Plenaire zaal (NL)",
