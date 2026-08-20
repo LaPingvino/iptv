@@ -325,9 +325,6 @@ https://takeoff.jetstre.am/?account=atvijf&file=live&output=playlist.m3u8&protoc
 #EXTINF:-1 tvg-id="NHNieuws.nl@HD" tvg-name="NH Nieuws" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nhnieuws.png" group-title="Regional & Local",NH Nieuws (Noord-Holland)
 https://takeoff.jetstre.am/?account=nhnieuws&file=live&output=playlist.m3u8&protocol=https&service=wowza&type=live
 
-#EXTINF:-1 tvg-id="BruzzTV.be" tvg-name="BRUZZ TV" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/bruzz.png" group-title="Regional & Local",BRUZZ TV (Brussel)
-https://stream.bruzz.be/live/tv/playlist.m3u8
-
 #EXTINF:-1 tvg-id="RTLTeleLetzebuerg.lu@HD" tvg-name="RTL Tele Letzebuerg" group-title="Regional & Local",RTL Télé Lëtzebuerg (1080p)
 https://stream.rtl.lu/live/hls/channel1/playlist.m3u8
 
