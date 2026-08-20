@@ -127,6 +127,21 @@ https://stream.radiocontinu.nl/radiocontinu
 #EXTINF:-1 tvg-id="GigantFM.nl" tvg-name="Gigant FM" group-title="NL Rádio" radio="true",Gigant FM (Piratenmuziek)
 https://stream.gigantfm.nl/gigantfm
 
+#EXTINF:-1 tvg-id="RadioGelderland.nl" tvg-name="Radio Gelderland" group-title="NL Rádio" radio="true",Radio Gelderland
+https://d2od87akyl46nm.cloudfront.net/icecast/omroepgelderland/radiogelderland
+
+#EXTINF:-1 tvg-id="RadioNoord.nl" tvg-name="Radio Noord" group-title="NL Rádio" radio="true",Radio Noord (Groningen)
+https://d2od87akyl46nm.cloudfront.net/icecast/rtvnoord/radio
+
+#EXTINF:-1 tvg-id="100pNL.nl" tvg-name="100% NL" group-title="NL Rádio" radio="true",100% NL
+https://stream.100p.nl/100pctnl.mp3
+
+#EXTINF:-1 tvg-id="100pNLNederpop.nl" tvg-name="100% NL Nederpop" group-title="NL Rádio" radio="true",100% NL Nederpop
+https://stream.100p.nl/web02_mp3
+
+#EXTINF:-1 tvg-id="100pNLFeest.nl" tvg-name="100% NL Feest" group-title="NL Rádio" radio="true",100% NL Feest
+https://stream.100p.nl/web03_mp3
+
 #EXTINF:-1 tvg-id="RMAntenaNacional.mz" tvg-name="RM Antena Nacional" group-title="MZ Rádio" radio="true",Rádio Moçambique - Antena Nacional
 http://node.stream-africa.com:8000/AntenaNacional
 

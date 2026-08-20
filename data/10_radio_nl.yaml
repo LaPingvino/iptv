@@ -145,3 +145,28 @@
   tvg_id: GigantFM.nl
   tvg_name: Gigant FM
   url: https://stream.gigantfm.nl/gigantfm
+- name: Radio Gelderland
+  group: NL Rádio
+  tvg_id: RadioGelderland.nl
+  tvg_name: Radio Gelderland
+  url: https://d2od87akyl46nm.cloudfront.net/icecast/omroepgelderland/radiogelderland
+- name: Radio Noord (Groningen)
+  group: NL Rádio
+  tvg_id: RadioNoord.nl
+  tvg_name: Radio Noord
+  url: https://d2od87akyl46nm.cloudfront.net/icecast/rtvnoord/radio
+- name: 100% NL
+  group: NL Rádio
+  tvg_id: 100pNL.nl
+  tvg_name: 100% NL
+  url: https://stream.100p.nl/100pctnl.mp3
+- name: 100% NL Nederpop
+  group: NL Rádio
+  tvg_id: 100pNLNederpop.nl
+  tvg_name: 100% NL Nederpop
+  url: https://stream.100p.nl/web02_mp3
+- name: 100% NL Feest
+  group: NL Rádio
+  tvg_id: 100pNLFeest.nl
+  tvg_name: 100% NL Feest
+  url: https://stream.100p.nl/web03_mp3
