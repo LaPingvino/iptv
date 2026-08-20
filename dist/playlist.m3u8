@@ -674,5 +674,26 @@ https://kiefte.eu/iptv/twitch/carrarium
 #EXTINF:-1 tvg-id="TGH.tv" tvg-name="TGH" group-title="Gaming",TGH (Celeste & Retro Speedruns)
 https://kiefte.eu/iptv/twitch/tgh_sr
 
-#EXTINF:-1 tvg-id="Amber.tv" tvg-name="Amber" group-title="Gaming",Amber
-https://kiefte.eu/iptv/twitch/amber
+#EXTINF:-1 tvg-id="AmberCyprian.tv" tvg-name="AmberCyprian" group-title="Gaming",AmberCyprian (Speedruns & Retro)
+https://kiefte.eu/iptv/twitch/ambercyprian
+
+#EXTINF:-1 tvg-id="Msushi.tv" tvg-name="Msushi" group-title="Gaming",Msushi (Celeste & Portal Speedruns)
+https://kiefte.eu/iptv/twitch/msushi
+
+#EXTINF:-1 tvg-id="ClassicTetris.tv" tvg-name="ClassicTetris" group-title="Gaming",Classic Tetris (CTWC Main)
+https://kiefte.eu/iptv/twitch/classictetris
+
+#EXTINF:-1 tvg-id="ClassicTetris2.tv" tvg-name="ClassicTetris 2" group-title="Gaming",Classic Tetris 2 (CTWC)
+https://kiefte.eu/iptv/twitch/classictetris2
+
+#EXTINF:-1 tvg-id="ClassicTetris3.tv" tvg-name="ClassicTetris 3" group-title="Gaming",Classic Tetris 3 (CTWC)
+https://kiefte.eu/iptv/twitch/classictetris3
+
+#EXTINF:-1 tvg-id="ClassicTetris4.tv" tvg-name="ClassicTetris 4" group-title="Gaming",Classic Tetris 4 (CTWC)
+https://kiefte.eu/iptv/twitch/classictetris4
+
+#EXTINF:-1 tvg-id="NESTetris.tv" tvg-name="NES Tetris Live" group-title="Gaming",NES Tetris (Top Live Streamer)
+https://kiefte.eu/iptv/twitch/game/Tetris?bias=nes
+
+#EXTINF:-1 tvg-id="ModernTetris.tv" tvg-name="Modern Tetris Live" group-title="Gaming",Modern Tetris (Top Live Streamer)
+https://kiefte.eu/iptv/twitch/group/modern-tetris

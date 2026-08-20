@@ -128,8 +128,43 @@
   tvg_id: TGH.tv
   tvg_name: TGH
   url: https://kiefte.eu/iptv/twitch/tgh_sr
-- name: Amber
+- name: AmberCyprian (Speedruns & Retro)
   group: Gaming
-  tvg_id: Amber.tv
-  tvg_name: Amber
-  url: https://kiefte.eu/iptv/twitch/amber
+  tvg_id: AmberCyprian.tv
+  tvg_name: AmberCyprian
+  url: https://kiefte.eu/iptv/twitch/ambercyprian
+- name: Msushi (Celeste & Portal Speedruns)
+  group: Gaming
+  tvg_id: Msushi.tv
+  tvg_name: Msushi
+  url: https://kiefte.eu/iptv/twitch/msushi
+- name: Classic Tetris (CTWC Main)
+  group: Gaming
+  tvg_id: ClassicTetris.tv
+  tvg_name: ClassicTetris
+  url: https://kiefte.eu/iptv/twitch/classictetris
+- name: Classic Tetris 2 (CTWC)
+  group: Gaming
+  tvg_id: ClassicTetris2.tv
+  tvg_name: ClassicTetris 2
+  url: https://kiefte.eu/iptv/twitch/classictetris2
+- name: Classic Tetris 3 (CTWC)
+  group: Gaming
+  tvg_id: ClassicTetris3.tv
+  tvg_name: ClassicTetris 3
+  url: https://kiefte.eu/iptv/twitch/classictetris3
+- name: Classic Tetris 4 (CTWC)
+  group: Gaming
+  tvg_id: ClassicTetris4.tv
+  tvg_name: ClassicTetris 4
+  url: https://kiefte.eu/iptv/twitch/classictetris4
+- name: NES Tetris (Top Live Streamer)
+  group: Gaming
+  tvg_id: NESTetris.tv
+  tvg_name: NES Tetris Live
+  url: https://kiefte.eu/iptv/twitch/game/Tetris?bias=nes
+- name: Modern Tetris (Top Live Streamer)
+  group: Gaming
+  tvg_id: ModernTetris.tv
+  tvg_name: Modern Tetris Live
+  url: https://kiefte.eu/iptv/twitch/group/modern-tetris
