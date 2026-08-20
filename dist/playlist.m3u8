@@ -509,8 +509,8 @@ https://kiefte.eu/iptv/youtube/@NASA
 #EXTINF:-1 tvg-id="LiveModeTV.pt" tvg-name="LiveMode TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/LiveMode.png" group-title="Eventos ao Vivo",LiveMode TV (Desporto em Direto)
 https://kiefte.eu/iptv/youtube/@LiveModeTV
 
-#EXTINF:-1 tvg-id="HLG4KTest.ref@UHD" tvg-name="HLG 4K Reference" group-title="Diag",4K UHD • HLG Reference (BT.2100)
-https://devstreaming-cdn.apple.com/videos/streaming/examples/adv_dv_atmos/hlg/main.m3u8
+#EXTINF:-1 tvg-id="HEVC10Bit.ref@HD" tvg-name="HEVC 10-Bit Reference" group-title="Diag",HEVC / H.265 10-Bit Reference Ladder
+https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_adv_example_hevc/master.m3u8
 
 #EXTINF:-1 tvg-id="HDR10Atmos4K.ref@UHD" tvg-name="HDR10 Dolby Atmos 4K" group-title="Diag",4K UHD • HDR10 & Dolby Vision / Atmos
 https://devstreaming-cdn.apple.com/videos/streaming/examples/adv_dv_atmos/main.m3u8

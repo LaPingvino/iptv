@@ -1,8 +1,8 @@
-- name: 4K UHD • HLG Reference (BT.2100)
+- name: HEVC / H.265 10-Bit Reference Ladder
   group: Diag
-  tvg_id: HLG4KTest.ref@UHD
-  tvg_name: HLG 4K Reference
-  url: https://devstreaming-cdn.apple.com/videos/streaming/examples/adv_dv_atmos/hlg/main.m3u8
+  tvg_id: HEVC10Bit.ref@HD
+  tvg_name: HEVC 10-Bit Reference
+  url: https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_adv_example_hevc/master.m3u8
 - name: 4K UHD • HDR10 & Dolby Vision / Atmos
   group: Diag
   tvg_id: HDR10Atmos4K.ref@UHD
