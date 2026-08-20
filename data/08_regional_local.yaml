@@ -97,9 +97,9 @@
   group: Regional & Local
   tvg_id: RTLTeleLetzebuerg.lu@HD
   tvg_name: RTL Tele Letzebuerg
-  url: https://cdn.rtl.lu/live/tele/playlist.m3u8
+  url: https://stream.rtl.lu/live/hls/channel1/playlist.m3u8
 - name: RTL Zwee (Lëtzebuerg)
   group: Regional & Local
   tvg_id: RTLZwee.lu@HD
   tvg_name: RTL Zwee
-  url: https://cdn.rtl.lu/live/zwee/playlist.m3u8
+  url: https://stream.rtl.lu/live/hls/channel2/playlist.m3u8

@@ -344,10 +344,10 @@ https://takeoff.jetstre.am/?account=nhnieuws&file=live&output=playlist.m3u8&prot
 https://stream.bruzz.be/live/tv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="RTLTeleLetzebuerg.lu@HD" tvg-name="RTL Tele Letzebuerg" group-title="Regional & Local",RTL Télé Lëtzebuerg (1080p)
-https://cdn.rtl.lu/live/tele/playlist.m3u8
+https://stream.rtl.lu/live/hls/channel1/playlist.m3u8
 
 #EXTINF:-1 tvg-id="RTLZwee.lu@HD" tvg-name="RTL Zwee" group-title="Regional & Local",RTL Zwee (Lëtzebuerg)
-https://cdn.rtl.lu/live/zwee/playlist.m3u8
+https://stream.rtl.lu/live/hls/channel2/playlist.m3u8
 
 #EXTINF:-1 tvg-id="ARTV.pt" tvg-name="ARTV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/AR-TV.png" group-title="Cívico & Parlamento",ARTV (Canal Parlamento PT)
 #EXTVLCOPT:http-user-agent="Mozilla/5.0"
