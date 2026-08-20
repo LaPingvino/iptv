@@ -1,36 +1,72 @@
 - name: Studio Brussel
   group: BE Rádio
-  tvg_id: StudioBrusselAudio.be
+  tvg_id: StudioBrussel.be
   tvg_name: Studio Brussel
   logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png
-  url: http://icecast.vrtcdn.be/stubru-high.mp3
+  url: https://icecast.vrtcdn.be/stubru-high.mp3
 - name: StuBru De Tijdloze
   group: BE Rádio
-  tvg_id: StuBruTijdloze.be
+  tvg_id: StuBruDeTijdloze.be
   tvg_name: StuBru De Tijdloze
   logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png
-  url: http://icecast.vrtcdn.be/stubru_tijdloze-high.mp3
+  url: https://icecast.vrtcdn.be/stubru_tijdloze-high.mp3
+- name: Radio 1 (VRT Belgium)
+  group: BE Rádio
+  tvg_id: Radio1.be
+  tvg_name: Radio 1 VRT
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-1-BE.png
+  url: https://icecast.vrtcdn.be/ra1-high.mp3
+- name: Radio 2 (VRT Antwerpen)
+  group: BE Rádio
+  tvg_id: Radio2Antwerpen.be
+  tvg_name: Radio 2 Antwerpen
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-2-BE.png
+  url: https://icecast.vrtcdn.be/ra2ant-high.mp3
 - name: MNM (VRT)
   group: BE Rádio
   tvg_id: MNM.be
   tvg_name: MNM
-  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/mnm.png
-  url: http://icecast.vrtcdn.be/mnm-high.mp3
-- name: Radio 1 (VRT Belgium)
-  group: BE Rádio
-  tvg_id: Radio1VRT.be
-  tvg_name: Radio 1 VRT
-  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radio1vrt.png
-  url: http://icecast.vrtcdn.be/radio1-high.mp3
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/MNM.png
+  url: https://icecast.vrtcdn.be/mnm-high.mp3
 - name: Klara (VRT Classical)
   group: BE Rádio
   tvg_id: Klara.be
   tvg_name: Klara
-  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/klara.png
-  url: http://icecast.vrtcdn.be/klara-high.mp3
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Klara.png
+  url: https://icecast.vrtcdn.be/klara-high.mp3
+- name: Klara Continuo
+  group: BE Rádio
+  tvg_id: KlaraContinuo.be
+  tvg_name: Klara Continuo
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Klara.png
+  url: https://icecast.vrtcdn.be/klaracontinuo-high.mp3
 - name: Classic 21 (RTBF Rock)
   group: BE Rádio
   tvg_id: Classic21.be
   tvg_name: Classic 21
-  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/classic21.png
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Classic-21.png
   url: https://radios.rtbf.be/classic21-128.mp3
+- name: RTBF La Première
+  group: BE Rádio
+  tvg_id: LaPremiere.be
+  tvg_name: RTBF La Première
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/La-Premiere.png
+  url: https://radios.rtbf.be/laprem1ere-128.mp3
+- name: RTBF Musiq3
+  group: BE Rádio
+  tvg_id: Musiq3.be
+  tvg_name: RTBF Musiq3
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Musiq3.png
+  url: https://radios.rtbf.be/musiq3-128.mp3
+- name: BRF 1 (Ostbelgien Deutsch)
+  group: BE Rádio
+  tvg_id: BRF1.be
+  tvg_name: BRF 1
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/brf1.png
+  url: http://mp3.stream.brf.be/brf1.mp3
+- name: BRF 2 (Ostbelgien Deutsch Schlager)
+  group: BE Rádio
+  tvg_id: BRF2.be
+  tvg_name: BRF 2
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/brf2.png
+  url: http://mp3.stream.brf.be/brf2.mp3
