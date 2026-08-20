@@ -1,12 +1,3 @@
-- name: Canal 11
-  group: Desporto
-  tvg_id: Canal11.pt@HD
-  tvg_name: Canal 11
-  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Canal11.png
-  http_user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-    like Gecko) Chrome/149.0.0.0 Safari/537.3
-  http_referrer: https://canal11.pt/
-  url: https://d10r248w3452pe.cloudfront.net/live/eds/canal11_clean/live.m3u8
 - name: Sporting TV
   group: Desporto
   tvg_id: SportingTV.pt@HD

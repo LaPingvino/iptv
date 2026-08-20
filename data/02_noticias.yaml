@@ -36,25 +36,25 @@
   tvg_id: France24.fr
   tvg_name: France 24 Français
   logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png
-  url: https://static.france24.com/live/F24_FR_HI_HLS/live_tv.m3u8
+  url: https://live.france24.com/hls/live/2037179/F24_FR_HI_HLS/master_5000.m3u8
 - name: France 24 (English)
   group: Notícias
   tvg_id: France24English.fr
   tvg_name: France 24 English
   logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png
-  url: https://static.france24.com/live/F24_EN_HI_HLS/live_tv.m3u8
+  url: https://live.france24.com/hls/live/2037218/F24_EN_HI_HLS/master_5000.m3u8
 - name: France 24 (Español)
   group: Notícias
   tvg_id: France24Spanish.fr
   tvg_name: France 24 Español
   logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png
-  url: https://static.france24.com/live/F24_ES_HI_HLS/live_tv.m3u8
+  url: https://live.france24.com/hls/live/2037220/F24_ES_HI_HLS/master_5000.m3u8
 - name: DW Deutsch
   group: Notícias
   tvg_id: DWDeutsch.de
   tvg_name: DW Deutsch
   logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png
-  url: https://dwamdstream101.akamaized.net/hls/live/2015524/dwstream101/index.m3u8
+  url: https://dwamdstream106.akamaized.net/hls/live/2017965/dwstream106/index.m3u8
 - name: DW Español
   group: Notícias
   tvg_id: DWEspanol.de

@@ -155,7 +155,7 @@
     "tvg_id": "France24.fr",
     "tvg_name": "France 24 Français",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png",
-    "url": "https://static.france24.com/live/F24_FR_HI_HLS/live_tv.m3u8"
+    "url": "https://live.france24.com/hls/live/2037179/F24_FR_HI_HLS/master_5000.m3u8"
   },
   {
     "name": "France 24 (English)",
@@ -163,7 +163,7 @@
     "tvg_id": "France24English.fr",
     "tvg_name": "France 24 English",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png",
-    "url": "https://static.france24.com/live/F24_EN_HI_HLS/live_tv.m3u8"
+    "url": "https://live.france24.com/hls/live/2037218/F24_EN_HI_HLS/master_5000.m3u8"
   },
   {
     "name": "France 24 (Español)",
@@ -171,7 +171,7 @@
     "tvg_id": "France24Spanish.fr",
     "tvg_name": "France 24 Español",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png",
-    "url": "https://static.france24.com/live/F24_ES_HI_HLS/live_tv.m3u8"
+    "url": "https://live.france24.com/hls/live/2037220/F24_ES_HI_HLS/master_5000.m3u8"
   },
   {
     "name": "DW Deutsch",
@@ -179,7 +179,7 @@
     "tvg_id": "DWDeutsch.de",
     "tvg_name": "DW Deutsch",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png",
-    "url": "https://dwamdstream101.akamaized.net/hls/live/2015524/dwstream101/index.m3u8"
+    "url": "https://dwamdstream106.akamaized.net/hls/live/2017965/dwstream106/index.m3u8"
   },
   {
     "name": "DW Español",
@@ -236,16 +236,6 @@
     "tvg_name": "NOS Jeugdjournaal",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nos.png",
     "url": "https://kiefte.eu/iptv/youtube/@jeugdjournaal"
-  },
-  {
-    "name": "Canal 11",
-    "group": "Desporto",
-    "tvg_id": "Canal11.pt@HD",
-    "tvg_name": "Canal 11",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Canal11.png",
-    "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3",
-    "http_referrer": "https://canal11.pt/",
-    "url": "https://d10r248w3452pe.cloudfront.net/live/eds/canal11_clean/live.m3u8"
   },
   {
     "name": "Sporting TV",

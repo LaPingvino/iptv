@@ -80,16 +80,16 @@ https://github.com/LITUATUI/M3UPT/raw/main/M3U/CNN_Portugal.m3u8
 https://videos01.fabricahost.com.br/cnn/cnn.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-id="France24.fr" tvg-name="France 24 Français" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png" group-title="Notícias",France 24 (Français)
-https://static.france24.com/live/F24_FR_HI_HLS/live_tv.m3u8
+https://live.france24.com/hls/live/2037179/F24_FR_HI_HLS/master_5000.m3u8
 
 #EXTINF:-1 tvg-id="France24English.fr" tvg-name="France 24 English" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png" group-title="Notícias",France 24 (English)
-https://static.france24.com/live/F24_EN_HI_HLS/live_tv.m3u8
+https://live.france24.com/hls/live/2037218/F24_EN_HI_HLS/master_5000.m3u8
 
 #EXTINF:-1 tvg-id="France24Spanish.fr" tvg-name="France 24 Español" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png" group-title="Notícias",France 24 (Español)
-https://static.france24.com/live/F24_ES_HI_HLS/live_tv.m3u8
+https://live.france24.com/hls/live/2037220/F24_ES_HI_HLS/master_5000.m3u8
 
 #EXTINF:-1 tvg-id="DWDeutsch.de" tvg-name="DW Deutsch" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png" group-title="Notícias",DW Deutsch
-https://dwamdstream101.akamaized.net/hls/live/2015524/dwstream101/index.m3u8
+https://dwamdstream106.akamaized.net/hls/live/2017965/dwstream106/index.m3u8
 
 #EXTINF:-1 tvg-id="DWEspanol.de" tvg-name="DW Español" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png" group-title="Notícias",DW Español
 https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8
@@ -111,11 +111,6 @@ https://kiefte.eu/iptv/youtube/@NOS
 
 #EXTINF:-1 tvg-id="NOSJeugdjournaal.nl" tvg-name="NOS Jeugdjournaal" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nos.png" group-title="Notícias",NOS Jeugdjournaal (Live)
 https://kiefte.eu/iptv/youtube/@jeugdjournaal
-
-#EXTINF:-1 tvg-id="Canal11.pt@HD" tvg-name="Canal 11" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Canal11.png" group-title="Desporto",Canal 11
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3"
-#EXTVLCOPT:http-referrer=https://canal11.pt/
-https://d10r248w3452pe.cloudfront.net/live/eds/canal11_clean/live.m3u8
 
 #EXTINF:-1 tvg-id="SportingTV.pt@HD" tvg-name="Sporting TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Sporting-TV.png" group-title="Desporto",Sporting TV
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3"
