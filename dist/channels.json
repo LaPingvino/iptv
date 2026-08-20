@@ -298,7 +298,7 @@
     "group": "Desporto",
     "tvg_id": "LiveModeTV.pt",
     "tvg_name": "LiveMode TV",
-    "url": "http://vps2.kiefte.eu:7555/youtube/@LiveModeTV"
+    "url": "https://vps2.kiefte.eu/youtube/@LiveModeTV"
   },
   {
     "name": "Studio Brussel (Visual Radio)",
@@ -1506,20 +1506,20 @@
     "group": "Gaming",
     "tvg_id": "GrandPooBear.tv",
     "tvg_name": "GrandPooBear",
-    "url": "http://vps2.kiefte.eu:7555/twitch/grandpoobear"
+    "url": "https://vps2.kiefte.eu/twitch/grandpoobear"
   },
   {
     "name": "Speedrun (Twitch)",
     "group": "Gaming",
     "tvg_id": "Speedrun.tv",
     "tvg_name": "Speedrun",
-    "url": "http://vps2.kiefte.eu:7555/twitch/speedrun"
+    "url": "https://vps2.kiefte.eu/twitch/speedrun"
   },
   {
     "name": "GamesDoneQuick (Twitch)",
     "group": "Gaming",
     "tvg_id": "GamesDoneQuick.tv",
     "tvg_name": "GamesDoneQuick",
-    "url": "http://vps2.kiefte.eu:7555/twitch/gamesdonequick"
+    "url": "https://vps2.kiefte.eu/twitch/gamesdonequick"
   }
 ]

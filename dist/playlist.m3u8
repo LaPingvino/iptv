@@ -139,7 +139,7 @@ https://streams2.sofast.tv/vglive-sk-231198/index.m3u8
 https://video-auth6.iol.pt/live_portocanal/live_portocanal/playlist.m3u8
 
 #EXTINF:-1 tvg-id="LiveModeTV.pt" tvg-name="LiveMode TV" group-title="Desporto",LiveMode TV
-http://vps2.kiefte.eu:7555/youtube/@LiveModeTV
+https://vps2.kiefte.eu/youtube/@LiveModeTV
 
 #EXTINF:-1 tvg-id="StudioBrussel.be" tvg-name="Studio Brussel Visual" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="Música & Video",Studio Brussel (Visual Radio)
 https://live.vrtcdn.be/groupb/live/450aa9d1-7173-47f3-aaaa-9701426f8ddd/live.isml/live.m3u8
@@ -605,10 +605,10 @@ http://capeant.antfarm.co.za:8000/Bosveld
 https://edge.iono.fm/xhls/fmr_live_high.m3u8
 
 #EXTINF:-1 tvg-id="GrandPooBear.tv" tvg-name="GrandPooBear" group-title="Gaming",GrandPooBear (Twitch)
-http://vps2.kiefte.eu:7555/twitch/grandpoobear
+https://vps2.kiefte.eu/twitch/grandpoobear
 
 #EXTINF:-1 tvg-id="Speedrun.tv" tvg-name="Speedrun" group-title="Gaming",Speedrun (Twitch)
-http://vps2.kiefte.eu:7555/twitch/speedrun
+https://vps2.kiefte.eu/twitch/speedrun
 
 #EXTINF:-1 tvg-id="GamesDoneQuick.tv" tvg-name="GamesDoneQuick" group-title="Gaming",GamesDoneQuick (Twitch)
-http://vps2.kiefte.eu:7555/twitch/gamesdonequick
+https://vps2.kiefte.eu/twitch/gamesdonequick
