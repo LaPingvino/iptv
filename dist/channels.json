@@ -628,6 +628,14 @@
     "url": "https://kiefte.eu/iptv/youtube/@npo3fm"
   },
   {
+    "name": "Eurovision Song Contest (Live)",
+    "group": "Música & Video",
+    "tvg_id": "Eurovision.tv",
+    "tvg_name": "Eurovision Song Contest",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/eurovision.png",
+    "url": "https://kiefte.eu/iptv/youtube/@EurovisionSongContest"
+  },
+  {
     "name": "ARTE (Français / Deutsch)",
     "group": "Filmes & Docs",
     "tvg_id": "Arte.fr",
@@ -1209,6 +1217,13 @@
     "tvg_id": "Trackmania.tv",
     "tvg_name": "Trackmania Live",
     "url": "https://kiefte.eu/iptv/twitch/game/Trackmania"
+  },
+  {
+    "name": "Zeepkist (Soapbox Physics Racing Live)",
+    "group": "Indie & Variety Gaming",
+    "tvg_id": "Zeepkist.tv",
+    "tvg_name": "Zeepkist Live",
+    "url": "https://kiefte.eu/iptv/twitch/game/Zeepkist"
   },
   {
     "name": "TV Maná Moçambique",
@@ -2044,6 +2059,14 @@
     "tvg_id": "RSIReteUno.ch",
     "tvg_name": "RSI Rete Uno",
     "url": "https://stream.srg-ssr.ch/m/reteuno/mp3_128"
+  },
+  {
+    "name": "ESC Radio (Eurovision 24/7 Non-Stop)",
+    "group": "Rádio Global",
+    "tvg_id": "ESCRadio.eu",
+    "tvg_name": "ESC Radio Eurovision",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/escradio.png",
+    "url": "http://stream.escradio.com:8000/esc128.mp3"
   },
   {
     "name": "Muzaiko (24/7 Esperanto Radio)",

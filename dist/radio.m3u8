@@ -316,6 +316,9 @@ http://stream.srg-ssr.ch/m/rr/mp3_128
 #EXTINF:-1 tvg-id="RSIReteUno.ch" tvg-name="RSI Rete Uno" group-title="Rádio Global" radio="true",RSI Rete Uno (Svizzera Italiana / Ticino)
 https://stream.srg-ssr.ch/m/reteuno/mp3_128
 
+#EXTINF:-1 tvg-id="ESCRadio.eu" tvg-name="ESC Radio Eurovision" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/escradio.png" group-title="Rádio Global" radio="true",ESC Radio (Eurovision 24/7 Non-Stop)
+http://stream.escradio.com:8000/esc128.mp3
+
 #EXTINF:-1 tvg-id="Muzaiko.eo" tvg-name="Muzaiko Esperanto" group-title="Rádio Global" radio="true",Muzaiko (24/7 Esperanto Radio)
 http://fluo.muzaiko.saluton.dk:8000/radio.mp3
 

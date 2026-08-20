@@ -150,3 +150,9 @@
   tvg_id: NPO3FMVisual.nl
   tvg_name: NPO 3FM Visual
   url: https://kiefte.eu/iptv/youtube/@npo3fm
+- name: Eurovision Song Contest (Live)
+  group: Música & Video
+  tvg_id: Eurovision.tv
+  tvg_name: Eurovision Song Contest
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/eurovision.png
+  url: https://kiefte.eu/iptv/youtube/@EurovisionSongContest

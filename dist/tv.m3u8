@@ -265,6 +265,9 @@ https://kiefte.eu/iptv/youtube/@NPORadio2
 #EXTINF:-1 tvg-id="NPO3FMVisual.nl" tvg-name="NPO 3FM Visual" group-title="Música & Video",NPO 3FM (Visual & Serious Request)
 https://kiefte.eu/iptv/youtube/@npo3fm
 
+#EXTINF:-1 tvg-id="Eurovision.tv" tvg-name="Eurovision Song Contest" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/eurovision.png" group-title="Música & Video",Eurovision Song Contest (Live)
+https://kiefte.eu/iptv/youtube/@EurovisionSongContest
+
 #EXTINF:-1 tvg-id="Arte.fr" tvg-name="ARTE" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/arte.png" group-title="Filmes & Docs",ARTE (Français / Deutsch)
 https://artesimulcast.akamaized.net/hls/live/2031003/artelive_fr/index.m3u8
 
@@ -502,6 +505,9 @@ https://kiefte.eu/iptv/twitch/game/GeoGuessr
 
 #EXTINF:-1 tvg-id="Trackmania.tv" tvg-name="Trackmania Live" group-title="Indie & Variety Gaming",Trackmania (Precision Racing Live)
 https://kiefte.eu/iptv/twitch/game/Trackmania
+
+#EXTINF:-1 tvg-id="Zeepkist.tv" tvg-name="Zeepkist Live" group-title="Indie & Variety Gaming",Zeepkist (Soapbox Physics Racing Live)
+https://kiefte.eu/iptv/twitch/game/Zeepkist
 
 #EXTINF:-1 tvg-id="TVManaMZ.mz" tvg-name="TV Maná Moçambique" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-Mocambique.png" group-title="Religião",TV Maná Moçambique
 https://w2.manasat.com/tvmana-mz/smil:tvmana-mz.smil/playlist.m3u8

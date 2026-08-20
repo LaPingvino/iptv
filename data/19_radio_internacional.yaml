@@ -124,3 +124,9 @@
   tvg_id: RSIReteUno.ch
   tvg_name: RSI Rete Uno
   url: https://stream.srg-ssr.ch/m/reteuno/mp3_128
+- name: ESC Radio (Eurovision 24/7 Non-Stop)
+  group: Rádio Global
+  tvg_id: ESCRadio.eu
+  tvg_name: ESC Radio Eurovision
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/escradio.png
+  url: http://stream.escradio.com:8000/esc128.mp3
