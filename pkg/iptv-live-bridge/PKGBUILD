@@ -1,6 +1,6 @@
 # Maintainer: Joop Kiefte <ikojba@gmail.com>
 pkgname=iptv-live-bridge
-pkgver=3.4.1
+pkgver=3.5.0
 pkgrel=1
 pkgdesc="Dynamic IPTV Streamlink Bridge with 24/7 Gaming Auto-Fallback & Offline Video Slate"
 arch=('any')
@@ -23,5 +23,10 @@ package() {
     install -d "${pkgdir}/usr/share/iptv-live-bridge/offline"
     if [ -d "${startdir}/offline" ]; then
         cp -r "${startdir}/offline/"* "${pkgdir}/usr/share/iptv-live-bridge/offline/"
+    fi
+    
+    install -d "${pkgdir}/usr/share/iptv-live-bridge/testcard"
+    if [ -d "${startdir}/testcard" ]; then
+        cp -r "${startdir}/testcard/"* "${pkgdir}/usr/share/iptv-live-bridge/testcard/"
     fi
 }

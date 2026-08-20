@@ -117,6 +117,7 @@ session.set_option("stream-timeout", 8)
 session.set_option("hls-live-edge", 3)
 
 OFFLINE_DIR = "/usr/share/iptv-live-bridge/offline" if os.path.exists("/usr/share/iptv-live-bridge/offline") else os.path.join(os.path.dirname(os.path.abspath(__file__)), "offline")
+TESTCARD_DIR = "/usr/share/iptv-live-bridge/testcard" if os.path.exists("/usr/share/iptv-live-bridge/testcard") else os.path.join(os.path.dirname(os.path.abspath(__file__)), "testcard")
 
 def resolve_stream(target_url, quality=QUALITY):
     now = time.time()
@@ -401,6 +402,25 @@ class BridgeHandler(BaseHTTPRequestHandler):
         if path.startswith("offline/"):
             seg_name = path.split("/", 1)[1]
             seg_path = os.path.join(OFFLINE_DIR, seg_name)
+            if os.path.exists(seg_path):
+                self.send_response(200)
+                if seg_name.endswith(".m3u8"):
+                    self.send_header("Content-Type", "application/vnd.apple.mpegurl")
+                else:
+                    self.send_header("Content-Type", "video/MP2T")
+                self.send_header("Access-Control-Allow-Origin", "*")
+                self.end_headers()
+                if not is_head:
+                    with open(seg_path, "rb") as f:
+                        self.wfile.write(f.read())
+                return
+            
+        # Serve diagnostic testcard segments if requested
+        if path.startswith("testcard/") or path.startswith("test/"):
+            seg_name = path.split("/", 1)[1] if "/" in path else "testcard.m3u8"
+            if seg_name in ["", "avsync", "pattern", "ipv6"]:
+                seg_name = "testcard.m3u8"
+            seg_path = os.path.join(TESTCARD_DIR, seg_name)
             if os.path.exists(seg_path):
                 self.send_response(200)
                 if seg_name.endswith(".m3u8"):
