@@ -33,6 +33,24 @@
   tvg_id: RealMadridTV.es
   tvg_name: Real Madrid TV
   url: https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
+- name: Canal Extremadura (1080p)
+  group: ES Geral & TDT
+  tvg_id: CanalExtremadura.es@HD
+  tvg_name: Canal Extremadura
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/canalextremadura.png
+  url: https://d2ymuyhevki1a1.cloudfront.net/wct-ddd2992e-86fc-4611-a491-7f392259e9ba/continuous/9be76611-d2cd-474d-bf19-ef702ba31b02/index.m3u8
+- name: ETB 1 (Euskadi / Euskara)
+  group: ES Geral & TDT
+  tvg_id: ETB1.es@HD
+  tvg_name: ETB 1
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/etb1.png
+  url: https://cdn1.etbon.eus/etb1/index.m3u8
+- name: ETB 2 (Euskadi / Castellano)
+  group: ES Geral & TDT
+  tvg_id: ETB2.es@HD
+  tvg_name: ETB 2
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/etb2.png
+  url: https://cdn1.etbon.eus/etb2/index.m3u8
 - name: Cadena SER España
   group: ES Rádio
   tvg_id: CadenaSER.es

@@ -85,6 +85,15 @@ https://dfk2a268yviz9.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a
 #EXTINF:-1 tvg-id="RealMadridTV.es" tvg-name="Real Madrid TV" group-title="ES Geral & TDT",Real Madrid TV
 https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
 
+#EXTINF:-1 tvg-id="CanalExtremadura.es@HD" tvg-name="Canal Extremadura" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/canalextremadura.png" group-title="ES Geral & TDT",Canal Extremadura (1080p)
+https://d2ymuyhevki1a1.cloudfront.net/wct-ddd2992e-86fc-4611-a491-7f392259e9ba/continuous/9be76611-d2cd-474d-bf19-ef702ba31b02/index.m3u8
+
+#EXTINF:-1 tvg-id="ETB1.es@HD" tvg-name="ETB 1" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/etb1.png" group-title="ES Geral & TDT",ETB 1 (Euskadi / Euskara)
+https://cdn1.etbon.eus/etb1/index.m3u8
+
+#EXTINF:-1 tvg-id="ETB2.es@HD" tvg-name="ETB 2" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/etb2.png" group-title="ES Geral & TDT",ETB 2 (Euskadi / Castellano)
+https://cdn1.etbon.eus/etb2/index.m3u8
+
 #EXTINF:-1 tvg-id="TVGEuropa.es" tvg-name="Galicia TV Europa" group-title="Galiza",Galicia TV Europa (TVG)
 https://crtvg-europa.flumotion.cloud/playlist.m3u8
 
@@ -129,6 +138,9 @@ https://live.france24.com/hls/live/2037218/F24_EN_HI_HLS/master_5000.m3u8
 
 #EXTINF:-1 tvg-id="France24Spanish.fr" tvg-name="France 24 Español" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png" group-title="Notícias",France 24 (Español)
 https://live.france24.com/hls/live/2037220/F24_ES_HI_HLS/master_5000.m3u8
+
+#EXTINF:-1 tvg-id="BFMTV.fr@HD" tvg-name="BFM TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/BFM-TV.png" group-title="Notícias",BFM TV (France 24/7 HD)
+https://live-cdn-stream-euw1.bfmtv.bct.nextradiotv.com/master.m3u8
 
 #EXTINF:-1 tvg-id="DWEspanol.de" tvg-name="DW Español" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png" group-title="Notícias",DW Español
 https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8
@@ -338,6 +350,12 @@ https://livestreaming.b67buv2.tweedekamer.nl/live/thorbeckezaal/index.m3u8?hd=1&
 #EXTINF:-1 tvg-id="TweedeKamerGroen.nl" tvg-name="Tweede Kamer Groen van Prinstererzaal" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png" group-title="Cívico & Parlamento",Tweede Kamer: Groen van Prinstererzaal (NL)
 https://livestreaming.b67buv2.tweedekamer.nl/live/groenvanprinstererzaal/index.m3u8?hd=1&keyframes=1&subtitles=live
 
+#EXTINF:-1 tvg-id="EbS1.eu@HD" tvg-name="Europe by Satellite" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/ebs.png" group-title="Cívico & Parlamento",Europe by Satellite (EbS 1)
+https://webcast.ec.europa.eu/live/ebs1.m3u8
+
+#EXTINF:-1 tvg-id="EbS2.eu@HD" tvg-name="Europe by Satellite Plus" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/ebs_plus.png" group-title="Cívico & Parlamento",Europe by Satellite+ (EbS+)
+https://webcast.ec.europa.eu/live/ebs2.m3u8
+
 #EXTINF:-1 tvg-id="Speedrun.tv" tvg-name="Speedrun" group-title="Speedrunning & Marathons",Speedrun (24/7 Speedrun.com)
 https://kiefte.eu/iptv/twitch/speedrun
 
@@ -400,6 +418,9 @@ https://kiefte.eu/iptv/twitch/simpleflips
 
 #EXTINF:-1 tvg-id="Failstream.tv" tvg-name="Failstream" group-title="Mario & Romhacks",Failstream (Mario Maker Builds)
 https://kiefte.eu/iptv/twitch/failstream
+
+#EXTINF:-1 tvg-id="GlitchCat7.tv" tvg-name="GlitchCat7" group-title="Mario & Romhacks",GlitchCat7 (SMW Kaizo & Speedruns)
+https://kiefte.eu/iptv/twitch/glitchcat7
 
 #EXTINF:-1 tvg-id="ClassicTetris.tv" tvg-name="ClassicTetris" group-title="Tetris",Classic Tetris (CTWC Main)
 https://kiefte.eu/iptv/twitch/classictetris

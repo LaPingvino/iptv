@@ -53,3 +53,8 @@
   tvg_id: Failstream.tv
   tvg_name: Failstream
   url: https://kiefte.eu/iptv/twitch/failstream
+- name: GlitchCat7 (SMW Kaizo & Speedruns)
+  group: Mario & Romhacks
+  tvg_id: GlitchCat7.tv
+  tvg_name: GlitchCat7
+  url: https://kiefte.eu/iptv/twitch/glitchcat7

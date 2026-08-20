@@ -49,6 +49,12 @@
   tvg_name: France 24 Español
   logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png
   url: https://live.france24.com/hls/live/2037220/F24_ES_HI_HLS/master_5000.m3u8
+- name: BFM TV (France 24/7 HD)
+  group: Notícias
+  tvg_id: BFMTV.fr@HD
+  tvg_name: BFM TV
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/BFM-TV.png
+  url: https://live-cdn-stream-euw1.bfmtv.bct.nextradiotv.com/master.m3u8
 - name: DW Español
   group: Notícias
   tvg_id: DWEspanol.de
