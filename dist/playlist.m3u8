@@ -95,7 +95,7 @@ https://crtvg-mirarg-schlive.flumotion.cloud/crtvglive/smil:channel1PRG.smil/pla
 https://crtvg-radiogalega-hls.flumotion.cloud/playlist.m3u8
 
 #EXTINF:-1 tvg-id="RadioGalegaMusica.es" tvg-name="Radio Galega Música" group-title="Galiza",Radio Galega Música
-https://crtvg-rgmusica-hls.flumotion.cloud/playlist.m3u8
+https://crtvg-radiogalega-musica-hls.flumotion.cloud/playlist.m3u8
 
 #EXTINF:-1 tvg-id="RTP3.pt" tvg-name="RTP 3" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP3.png" group-title="Notícias",RTP 3
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
