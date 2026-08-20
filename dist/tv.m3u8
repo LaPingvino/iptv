@@ -386,6 +386,9 @@ https://kiefte.eu/iptv/twitch/msushi
 #EXTINF:-1 tvg-id="SMWRomhacks.tv" tvg-name="SMW Romhacks Live" group-title="Mario & Romhacks",Super Mario World (Romhacks & Kaizo Live)
 https://kiefte.eu/iptv/twitch/game/Super%20Mario%20World?bias=romhack
 
+#EXTINF:-1 tvg-id="MarioMaker2.tv" tvg-name="Mario Maker 2 Live" group-title="Mario & Romhacks",Super Mario Maker 2 (Top Live Streamer)
+https://kiefte.eu/iptv/twitch/game/Super%20Mario%20Maker%202
+
 #EXTINF:-1 tvg-id="Ryukahr.tv" tvg-name="Ryukahr" group-title="Mario & Romhacks",Ryukahr
 https://kiefte.eu/iptv/twitch/ryukahr
 

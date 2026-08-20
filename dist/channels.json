@@ -937,6 +937,13 @@
     "url": "https://kiefte.eu/iptv/twitch/game/Super%20Mario%20World?bias=romhack"
   },
   {
+    "name": "Super Mario Maker 2 (Top Live Streamer)",
+    "group": "Mario & Romhacks",
+    "tvg_id": "MarioMaker2.tv",
+    "tvg_name": "Mario Maker 2 Live",
+    "url": "https://kiefte.eu/iptv/twitch/game/Super%20Mario%20Maker%202"
+  },
+  {
     "name": "Ryukahr",
     "group": "Mario & Romhacks",
     "tvg_id": "Ryukahr.tv",
