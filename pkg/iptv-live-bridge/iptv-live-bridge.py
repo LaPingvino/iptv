@@ -1,22 +1,24 @@
 #!/usr/bin/env python3
 """
-IPTV Live Bridge for Streamlink (Twitch, YouTube Live, Kick, etc.)
+IPTV Live Bridge for Streamlink (Twitch, YouTube Live, Kick, etc.) - v3.0.0
+Fully Autonomous, Generic & Independent IPTV Live Stream Gateway.
+
 Features:
 - Transparent HLS proxying (200 OK)
-- Dynamic Game Directory: /twitch/game/<game_name>
-- Smart Community Affinity & Distributed Fallback:
-  - Groups streamers into affinity circles (Ryukahr+Tammy, CarlSagan+Juzcook, GDQ+ESA+TAS, Kaizo/SMW)
-  - Uses deterministic channel hashing so different offline channels map to different live streamers instead of all cloning one!
-- Dedicated /gaming/live (Auto-Zapper) channel
-- Custom offline video slate for sports / YouTube
+- Dynamic Game Directory: /twitch/game/<name> (e.g. /twitch/game/Blue%20Prince, Celeste, Portal)
+- Autonomous Same-Game / Genre Fallback:
+  When ANY requested Twitch channel is offline, queries Twitch's live directory for the streamer's
+  last played game/category and automatically serves the #1 most-watched live streamer in that exact category!
+- Romhack / Keyword Biasing for Mario & Retro categories
+- Custom offline video slate for sports & non-gaming YouTube
 - Full GET, HEAD, and OPTIONS support
+- Zero hardcoded channels or playlists required.
 """
 
 import os
 import sys
 import time
 import json
-import hashlib
 import logging
 import urllib.parse
 import urllib.request
@@ -37,37 +39,6 @@ CACHE_TTL = int(os.environ.get("BRIDGE_CACHE_TTL", "15"))
 
 # In-memory cache: url -> (resolved_url, timestamp)
 stream_cache = {}
-
-# Affinity circles: related streamers to check first when a specific channel is offline
-AFFINITY_CIRCLES = {
-    "ryukahr": ["tamthegamer", "dgr_dave", "smallant", "thabeast721", "aurateur", "grandpoobear"],
-    "tamthegamer": ["ryukahr", "elanaorama", "smallant", "dgr_dave"],
-    "carlsagan42": ["juzcook", "dgr_dave", "grandpoobear", "thabeast721", "aurateur"],
-    "juzcook": ["carlsagan42", "dgr_dave", "grandpoobear", "thabeast721", "pangaeapanga"],
-    "dgr_dave": ["smallant", "carlsagan42", "juzcook", "ryukahr", "thabeast721"],
-    "smallant": ["dgr_dave", "ryukahr", "speedrun", "thabeast721", "grandpoobear"],
-    "elanaorama": ["smallant", "tamthegamer", "ryukahr", "speedrun"],
-    "thabeast721": ["grandpoobear", "aurateur", "pangaeapanga", "simpleflips", "carlsagan42"],
-    "grandpoobear": ["thabeast721", "aurateur", "carlsagan42", "juzcook", "pangaeapanga"],
-    "aurateur": ["thabeast721", "grandpoobear", "carlsagan42", "pangaeapanga", "speedrun"],
-    "pangaeapanga": ["thabeast721", "grandpoobear", "aurateur", "juzcook", "simpleflips"],
-    "simpleflips": ["thabeast721", "grandpoobear", "smallant", "carlsagan42"],
-    "mitchflowerpower": ["thabeast721", "grandpoobear", "speedrun", "aurateur"],
-    "failstream": ["carlsagan42", "juzcook", "aurateur", "grandpoobear"],
-    "gamesdonequick": ["esamarathon", "speedrun", "tasvideos"],
-    "esamarathon": ["speedrun", "gamesdonequick", "tasvideos"],
-    "speedrun": ["esamarathon", "gamesdonequick", "tasvideos"],
-    "tasvideos": ["speedrun", "esamarathon", "gamesdonequick"]
-}
-
-# Complete global gaming pool
-ALL_GAMING_CHANNELS = [
-    "thabeast721", "grandpoobear", "smallant", "dgr_dave",
-    "carlsagan42", "juzcook", "ryukahr", "aurateur",
-    "tamthegamer", "elanaorama", "pangaeapanga", "simpleflips",
-    "mitchflowerpower", "failstream", "speedrun", "esamarathon",
-    "gamesdonequick", "tasvideos"
-]
 
 ROMHACK_KEYWORDS = [
     "romhack", "hack", "kaizo", "smwc", "smwcentral", "lunar magic",
@@ -109,7 +80,7 @@ def resolve_stream(target_url, quality=QUALITY):
         logger.error(f"Error resolving {target_url}: {e}")
         return None
 
-def get_top_streamer_for_game(game_name, bias=None):
+def get_top_streamer_for_game(game_name, bias=None, exclude_login=None):
     """Queries Twitch GraphQL for the top active broadcaster playing a specific game."""
     raw_query = """
     query GetGameStreams($name: String!) {
@@ -158,62 +129,90 @@ def get_top_streamer_for_game(game_name, bias=None):
             if preferred_keywords and edges:
                 for edge in edges:
                     node = edge.get("node", {})
+                    b_login = node.get("broadcaster", {}).get("login")
+                    if exclude_login and b_login and b_login.lower() == exclude_login.lower():
+                        continue
                     title = node.get("title", "").lower()
                     tags = [t.get("name", "").lower() for t in node.get("freeformTags", [])]
                     all_text = title + " " + " ".join(tags)
                     if any(kw in all_text for kw in preferred_keywords):
-                        top_broadcaster = node["broadcaster"]["login"]
-                        viewers = node["viewersCount"]
-                        logger.info(f"Top BIAS stream for game '{cleaned_name}' ({bias}): {top_broadcaster} ({viewers} viewers) - {node['title']}")
+                        top_broadcaster = b_login
+                        viewers = node.get("viewersCount")
+                        logger.info(f"Top BIAS stream for game '{cleaned_name}' ({bias}): {top_broadcaster} ({viewers} viewers) - {node.get('title')}")
                         return top_broadcaster
             
-            if edges:
-                top_node = edges[0]["node"]
-                top_broadcaster = top_node["broadcaster"]["login"]
-                viewers = top_node["viewersCount"]
-                logger.info(f"Top stream for game '{cleaned_name}': {top_broadcaster} ({viewers} viewers) - {top_node['title']}")
-                return top_broadcaster
+            # Default to #1 highest viewer count
+            for edge in edges:
+                top_node = edge.get("node", {})
+                b_login = top_node.get("broadcaster", {}).get("login")
+                if exclude_login and b_login and b_login.lower() == exclude_login.lower():
+                    continue
+                viewers = top_node.get("viewersCount")
+                logger.info(f"Top stream for game '{cleaned_name}': {b_login} ({viewers} viewers) - {top_node.get('title')}")
+                return b_login
     except Exception as e:
         logger.error(f"Error querying top stream for game '{cleaned_name}': {e}")
     return None
 
-def find_contextual_fallback(requested_channel):
+def find_autonomous_fallback_for_channel(channel_login):
     """
-    Finds a smart, diverse fallback for an offline streamer:
-    1. Checks direct affinity circle (circle of friends/genre).
-    2. Uses deterministic hashing to distribute across remaining live streamers.
+    Dynamically finds a live fallback for ANY offline channel on Twitch by:
+    1. Querying the streamer's last played game category.
+    2. Finding the #1 most watched live streamer currently playing that exact game.
+    3. Falling back to speedrun.com 24/7 or general live stream if the game category is inactive.
     """
-    req_clean = requested_channel.lower() if requested_channel else ""
-    
-    # 1. Try affinity circle first
-    if req_clean in AFFINITY_CIRCLES:
-        for candidate in AFFINITY_CIRCLES[req_clean]:
-            url = f"https://www.twitch.tv/{candidate}"
-            resolved = resolve_stream(url)
-            if resolved:
-                logger.info(f"Affinity fallback for {req_clean} -> {candidate}")
-                return candidate, resolved
-
-    # 2. Collect all currently live channels from global pool
-    live_pool = []
-    for ch in ALL_GAMING_CHANNELS:
-        if ch == req_clean:
-            continue
-        url = f"https://www.twitch.tv/{ch}"
-        resolved = resolve_stream(url)
-        if resolved:
-            live_pool.append((ch, resolved))
+    raw_query = """
+    query GetUserBroadcast($login: String!) {
+      user(login: $login) {
+        id
+        login
+        displayName
+        broadcastSettings {
+          title
+          game {
+            id
+            name
+          }
+        }
+      }
+    }
+    """
+    req = urllib.request.Request(
+        "https://gql.twitch.tv/gql",
+        data=json.dumps({"query": raw_query, "variables": {"login": channel_login}}).encode("utf-8"),
+        headers={
+            "Client-Id": "kimne78kx3ncx6brgo4mv6wki5h1ko",
+            "Content-Type": "application/json"
+        }
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=5) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+        user = data.get("data", {}).get("user")
+        if user:
+            bs = user.get("broadcastSettings", {})
+            game = bs.get("game")
+            game_name = game.get("name") if game else None
             
-    if not live_pool:
-        return None, None
+            if game_name:
+                logger.info(f"Offline channel '{channel_login}' normally broadcasts: '{game_name}'. Searching live streams in that category...")
+                top_live_in_game = get_top_streamer_for_game(game_name, exclude_login=channel_login)
+                if top_live_in_game:
+                    url = f"https://www.twitch.tv/{top_live_in_game}"
+                    resolved = resolve_stream(url)
+                    if resolved:
+                        logger.info(f"Found dynamic same-game fallback for {channel_login} -> {top_live_in_game} (playing {game_name})")
+                        return top_live_in_game, resolved
+
+        # If no specific game active, fall back to speedrun.com 24/7 restream
+        fallback_url = "https://www.twitch.tv/speedrun"
+        resolved = resolve_stream(fallback_url)
+        if resolved:
+            return "speedrun", resolved
+    except Exception as e:
+        logger.error(f"Error in autonomous fallback lookup for {channel_login}: {e}")
         
-    # 3. Deterministically pick from live pool based on channel name hash
-    # This guarantees offline channel A consistently maps to live streamer X, and offline B maps to Y!
-    hash_val = int(hashlib.md5(req_clean.encode("utf-8")).hexdigest(), 16)
-    picked_index = hash_val % len(live_pool)
-    picked_channel, picked_url = live_pool[picked_index]
-    logger.info(f"Distributed fallback for {req_clean} -> {picked_channel} (out of {len(live_pool)} live streamers)")
-    return picked_channel, picked_url
+    return None, None
 
 def fetch_and_make_absolute_m3u8(m3u8_url):
     """Fetches m3u8 playlist and turns any relative segment paths into absolute URLs."""
@@ -263,7 +262,7 @@ class BridgeHandler(BaseHTTPRequestHandler):
             self.send_header("Access-Control-Allow-Origin", "*")
             self.end_headers()
             if not is_head:
-                self.wfile.write(b'{"status":"ok","service":"iptv-live-bridge","version":"2.3.0"}\n')
+                self.wfile.write(b'{"status":"ok","service":"iptv-live-bridge","version":"3.0.0"}\n')
             return
             
         # Serve local offline video segments if requested
@@ -302,7 +301,7 @@ class BridgeHandler(BaseHTTPRequestHandler):
             else:
                 logger.info(f"No active streams for game '{game_name}'. Falling back...")
                 if allow_fallback:
-                    fb_ch, fb_url = find_contextual_fallback(game_name)
+                    fb_ch, fb_url = find_autonomous_fallback_for_channel(game_name)
                     if fb_url:
                         self.serve_hls(fb_url, is_head=is_head)
                         return
@@ -312,10 +311,9 @@ class BridgeHandler(BaseHTTPRequestHandler):
         # 2. General auto-live
         elif path in ["gaming/live", "twitch/auto-live", "twitch/live"]:
             is_gaming = True
-            fallback_channel, resolved_url = find_contextual_fallback("gaming_general")
-            if resolved_url:
-                logger.info(f"Auto-live channel tuned into active streamer: {fallback_channel}")
-                self.serve_hls(resolved_url, is_head=is_head)
+            top_speedrun = resolve_stream("https://www.twitch.tv/speedrun")
+            if top_speedrun:
+                self.serve_hls(top_speedrun, is_head=is_head)
                 return
             else:
                 self.serve_offline_slate(is_head=is_head)
@@ -352,11 +350,11 @@ class BridgeHandler(BaseHTTPRequestHandler):
         
         # If offline:
         if not resolved_url:
-            if is_gaming and allow_fallback:
-                logger.info(f"Stream '{requested_channel}' is OFFLINE. Resolving smart contextual fallback...")
-                fallback_channel, fallback_url = find_contextual_fallback(requested_channel)
+            if is_gaming and allow_fallback and requested_channel:
+                logger.info(f"Stream '{requested_channel}' is OFFLINE. Querying Twitch for same-game/category live stream...")
+                fallback_channel, fallback_url = find_autonomous_fallback_for_channel(requested_channel)
                 if fallback_url:
-                    logger.info(f"Routing offline {requested_channel} -> Contextual fallback: {fallback_channel}")
+                    logger.info(f"Routing offline {requested_channel} -> Autonomous Same-Game fallback: {fallback_channel}")
                     self.serve_hls(fallback_url, is_head=is_head)
                     return
             
@@ -419,7 +417,7 @@ class BridgeHandler(BaseHTTPRequestHandler):
 def run():
     server_address = (HOST, PORT)
     httpd = HTTPServer(server_address, BridgeHandler)
-    logger.info(f"Starting IPTV Live Bridge v2.3 on http://{HOST}:{PORT}")
+    logger.info(f"Starting Autonomous IPTV Live Bridge v3.0 on http://{HOST}:{PORT}")
     try:
         httpd.serve_forever()
     except KeyboardInterrupt:

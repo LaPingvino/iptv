@@ -1,6 +1,6 @@
 # Maintainer: Joop Kiefte <ikojba@gmail.com>
 pkgname=iptv-live-bridge
-pkgver=2.3.0
+pkgver=3.0.0
 pkgrel=1
 pkgdesc="Dynamic IPTV Streamlink Bridge with 24/7 Gaming Auto-Fallback & Offline Video Slate"
 arch=('any')
