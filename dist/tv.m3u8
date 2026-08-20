@@ -262,6 +262,9 @@ https://kiefte.eu/iptv/youtube/@npo3fm
 #EXTINF:-1 tvg-id="Arte.fr" tvg-name="ARTE" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/arte.png" group-title="Filmes & Docs",ARTE (Français / Deutsch)
 https://artesimulcast.akamaized.net/hls/live/2031003/artelive_fr/index.m3u8
 
+#EXTINF:-1 tvg-id="DasErste.de" tvg-name="Das Erste" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Das-Erste.png" group-title="Filmes & Docs",Das Erste (ARD Germany)
+https://daserste-live.ard-mcdn.de/daserste/live/hls/int/master.m3u8
+
 #EXTINF:-1 tvg-id="KuriakosCine.pt" tvg-name="Kuriakos Cine" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Kuriakos-Cine.png" group-title="Filmes & Docs",Kuriakos Cine
 https://w2.manasat.com/kcine/kcine.smil/playlist.m3u8
 
