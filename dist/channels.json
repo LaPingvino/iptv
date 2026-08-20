@@ -281,14 +281,6 @@
     "url": "https://live.france24.com/hls/live/2037220/F24_ES_HI_HLS/master_5000.m3u8"
   },
   {
-    "name": "DW Deutsch",
-    "group": "Notícias",
-    "tvg_id": "DWDeutsch.de",
-    "tvg_name": "DW Deutsch",
-    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png",
-    "url": "https://kiefte.eu/iptv/youtube/@dwdeutsch"
-  },
-  {
     "name": "DW Español",
     "group": "Notícias",
     "tvg_id": "DWEspanol.de",

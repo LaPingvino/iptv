@@ -133,9 +133,6 @@ https://live.france24.com/hls/live/2037218/F24_EN_HI_HLS/master_5000.m3u8
 #EXTINF:-1 tvg-id="France24Spanish.fr" tvg-name="France 24 Español" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png" group-title="Notícias",France 24 (Español)
 https://live.france24.com/hls/live/2037220/F24_ES_HI_HLS/master_5000.m3u8
 
-#EXTINF:-1 tvg-id="DWDeutsch.de" tvg-name="DW Deutsch" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png" group-title="Notícias",DW Deutsch
-https://kiefte.eu/iptv/youtube/@dwdeutsch
-
 #EXTINF:-1 tvg-id="DWEspanol.de" tvg-name="DW Español" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png" group-title="Notícias",DW Español
 https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8
 
