@@ -1718,5 +1718,68 @@
     "tvg_id": "ModernTetris.tv",
     "tvg_name": "Modern Tetris Live",
     "url": "https://kiefte.eu/iptv/twitch/group/modern-tetris"
+  },
+  {
+    "name": "Wumbotize (Modern Tetris Master)",
+    "group": "Gaming",
+    "tvg_id": "Wumbotize.tv",
+    "tvg_name": "Wumbotize",
+    "url": "https://kiefte.eu/iptv/twitch/wumbotize"
+  },
+  {
+    "name": "Doremy (Modern Tetris & TETR.IO)",
+    "group": "Gaming",
+    "tvg_id": "Doremy.tv",
+    "tvg_name": "Doremy",
+    "url": "https://kiefte.eu/iptv/twitch/doremy"
+  },
+  {
+    "name": "Hard Drop (Tetris Community & Tourneys)",
+    "group": "Gaming",
+    "tvg_id": "HardDrop.tv",
+    "tvg_name": "Hard Drop",
+    "url": "https://kiefte.eu/iptv/twitch/harddrop"
+  },
+  {
+    "name": "DogPlayingTetris (3x CTWC World Champion)",
+    "group": "Gaming",
+    "tvg_id": "DogPlayingTetris.tv",
+    "tvg_name": "DogPlayingTetris",
+    "url": "https://kiefte.eu/iptv/twitch/dogplayingtetris"
+  },
+  {
+    "name": "EricICX (CTWC World Champion)",
+    "group": "Gaming",
+    "tvg_id": "EricICX.tv",
+    "tvg_name": "EricICX",
+    "url": "https://kiefte.eu/iptv/twitch/ericicx"
+  },
+  {
+    "name": "Fractal (CTWC World Champion)",
+    "group": "Gaming",
+    "tvg_id": "FractalTetris.tv",
+    "tvg_name": "Fractal",
+    "url": "https://kiefte.eu/iptv/twitch/fractal"
+  },
+  {
+    "name": "Alex_T (CTWC Champion)",
+    "group": "Gaming",
+    "tvg_id": "AlexT.tv",
+    "tvg_name": "Alex T",
+    "url": "https://kiefte.eu/iptv/twitch/alex_t"
+  },
+  {
+    "name": "BlueScuti (NES Tetris Crash Record)",
+    "group": "Gaming",
+    "tvg_id": "BlueScuti.tv",
+    "tvg_name": "BlueScuti",
+    "url": "https://kiefte.eu/iptv/twitch/bluescuti"
+  },
+  {
+    "name": "VinesandWillows",
+    "group": "Gaming",
+    "tvg_id": "VinesandWillows.tv",
+    "tvg_name": "VinesandWillows",
+    "url": "https://kiefte.eu/iptv/twitch/vinesandwillows"
   }
 ]

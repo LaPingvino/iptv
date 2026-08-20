@@ -697,3 +697,30 @@ https://kiefte.eu/iptv/twitch/game/Tetris?bias=nes
 
 #EXTINF:-1 tvg-id="ModernTetris.tv" tvg-name="Modern Tetris Live" group-title="Gaming",Modern Tetris (Top Live Streamer)
 https://kiefte.eu/iptv/twitch/group/modern-tetris
+
+#EXTINF:-1 tvg-id="Wumbotize.tv" tvg-name="Wumbotize" group-title="Gaming",Wumbotize (Modern Tetris Master)
+https://kiefte.eu/iptv/twitch/wumbotize
+
+#EXTINF:-1 tvg-id="Doremy.tv" tvg-name="Doremy" group-title="Gaming",Doremy (Modern Tetris & TETR.IO)
+https://kiefte.eu/iptv/twitch/doremy
+
+#EXTINF:-1 tvg-id="HardDrop.tv" tvg-name="Hard Drop" group-title="Gaming",Hard Drop (Tetris Community & Tourneys)
+https://kiefte.eu/iptv/twitch/harddrop
+
+#EXTINF:-1 tvg-id="DogPlayingTetris.tv" tvg-name="DogPlayingTetris" group-title="Gaming",DogPlayingTetris (3x CTWC World Champion)
+https://kiefte.eu/iptv/twitch/dogplayingtetris
+
+#EXTINF:-1 tvg-id="EricICX.tv" tvg-name="EricICX" group-title="Gaming",EricICX (CTWC World Champion)
+https://kiefte.eu/iptv/twitch/ericicx
+
+#EXTINF:-1 tvg-id="FractalTetris.tv" tvg-name="Fractal" group-title="Gaming",Fractal (CTWC World Champion)
+https://kiefte.eu/iptv/twitch/fractal
+
+#EXTINF:-1 tvg-id="AlexT.tv" tvg-name="Alex T" group-title="Gaming",Alex_T (CTWC Champion)
+https://kiefte.eu/iptv/twitch/alex_t
+
+#EXTINF:-1 tvg-id="BlueScuti.tv" tvg-name="BlueScuti" group-title="Gaming",BlueScuti (NES Tetris Crash Record)
+https://kiefte.eu/iptv/twitch/bluescuti
+
+#EXTINF:-1 tvg-id="VinesandWillows.tv" tvg-name="VinesandWillows" group-title="Gaming",VinesandWillows
+https://kiefte.eu/iptv/twitch/vinesandwillows
