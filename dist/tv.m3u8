@@ -58,6 +58,12 @@ https://www.khuwemultimedia.com/hls/mntv/mntv.m3u8
 #EXTINF:-1 tvg-id="TVVitoria.mz" tvg-name="TV Vitória" group-title="MZ Geral",TV Vitória Moçambique
 https://stmv1.srvif.com/tvvitoriamz/tvvitoriamz/playlist.m3u8
 
+#EXTINF:-1 tvg-id="TVMiramar.mz" tvg-name="TV Miramar" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/miramar.png" group-title="MZ Geral",TV Miramar (Moçambique)
+https://kiefte.eu/iptv/youtube/@tvmiramar
+
+#EXTINF:-1 tvg-id="TPA.ao" tvg-name="TPA Angola" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tpa.png" group-title="MZ Geral",TPA (Televisão Pública de Angola)
+https://kiefte.eu/iptv/youtube/@TPAOnline
+
 #EXTINF:-1 tvg-id="La1.es" tvg-name="La 1" group-title="ES Geral & TDT",RTVE La 1
 https://ztnr.rtve.es/ztnr/1688877.m3u8
 

@@ -109,6 +109,22 @@
     "url": "https://stmv1.srvif.com/tvvitoriamz/tvvitoriamz/playlist.m3u8"
   },
   {
+    "name": "TV Miramar (Moçambique)",
+    "group": "MZ Geral",
+    "tvg_id": "TVMiramar.mz",
+    "tvg_name": "TV Miramar",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/miramar.png",
+    "url": "https://kiefte.eu/iptv/youtube/@tvmiramar"
+  },
+  {
+    "name": "TPA (Televisão Pública de Angola)",
+    "group": "MZ Geral",
+    "tvg_id": "TPA.ao",
+    "tvg_name": "TPA Angola",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tpa.png",
+    "url": "https://kiefte.eu/iptv/youtube/@TPAOnline"
+  },
+  {
     "name": "RTVE La 1",
     "group": "ES Geral & TDT",
     "tvg_id": "La1.es",
