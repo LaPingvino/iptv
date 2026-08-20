@@ -70,3 +70,8 @@
     like Gecko) Chrome/149.0.0.0 Safari/537.3
   http_referrer: https://portocanal.sapo.pt/
   url: https://video-auth6.iol.pt/live_portocanal/live_portocanal/playlist.m3u8
+- name: LiveMode TV
+  group: Desporto
+  tvg_id: LiveModeTV.pt
+  tvg_name: LiveMode TV
+  url: http://vmi2997656.contaboserver.net:7555/youtube/@LiveModeTV

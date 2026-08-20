@@ -1,0 +1,15 @@
+- name: GrandPooBear (Twitch)
+  group: Gaming
+  tvg_id: GrandPooBear.tv
+  tvg_name: GrandPooBear
+  url: http://vmi2997656.contaboserver.net:7555/twitch/grandpoobear
+- name: Speedrun (Twitch)
+  group: Gaming
+  tvg_id: Speedrun.tv
+  tvg_name: Speedrun
+  url: http://vmi2997656.contaboserver.net:7555/twitch/speedrun
+- name: GamesDoneQuick (Twitch)
+  group: Gaming
+  tvg_id: GamesDoneQuick.tv
+  tvg_name: GamesDoneQuick
+  url: http://vmi2997656.contaboserver.net:7555/twitch/gamesdonequick
