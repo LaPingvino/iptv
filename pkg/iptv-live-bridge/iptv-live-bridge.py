@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
 """
-IPTV Live Bridge for Streamlink (Twitch, YouTube Live, Kick, etc.) - v3.0.0
-Fully Autonomous, Generic & Independent IPTV Live Stream Gateway.
+IPTV Live Bridge for Streamlink (Twitch, YouTube Live, Kick, etc.) - v3.1.0
+Fully Autonomous, Community-Adjacent IPTV Live Gateway.
 
 Features:
 - Transparent HLS proxying (200 OK)
-- Dynamic Game Directory: /twitch/game/<name> (e.g. /twitch/game/Blue%20Prince, Celeste, Portal)
-- Autonomous Same-Game / Genre Fallback:
-  When ANY requested Twitch channel is offline, queries Twitch's live directory for the streamer's
-  last played game/category and automatically serves the #1 most-watched live streamer in that exact category!
-- Romhack / Keyword Biasing for Mario & Retro categories
-- Custom offline video slate for sports & non-gaming YouTube
+- Dynamic Game Directory: /twitch/game/<name>
+- Autonomous Multi-Tier Community Fallback:
+  Tier 1: Queries streamer's last played game/category for top active streams (with Romhack/Keyword bias)
+  Tier 2: Queries community-adjacent games/genres (e.g. SMM2 -> SMW/SM64/Retro, Portal 2 -> Portal/Talos, Blue Prince -> Outer Wilds/Witness, Celeste -> Hollow Knight/Super Meat Boy)
+  Tier 3: 24/7 Speedrun.com global restream
+- Custom offline video slate for sports & YouTube
 - Full GET, HEAD, and OPTIONS support
-- Zero hardcoded channels or playlists required.
+- Zero hardcoded channel playlists required.
 """
 
 import os
@@ -39,6 +39,20 @@ CACHE_TTL = int(os.environ.get("BRIDGE_CACHE_TTL", "15"))
 
 # In-memory cache: url -> (resolved_url, timestamp)
 stream_cache = {}
+
+# Community-Adjacent Game Graph
+COMMUNITY_ADJACENT_GAMES = {
+    "super mario maker 2": ["super mario world", "super mario 64", "super mario bros. 3", "retro"],
+    "super mario world": ["super mario maker 2", "super mario 64", "super mario bros. 3", "retro"],
+    "super mario 64": ["super mario sunshine", "super mario galaxy", "super mario world", "retro"],
+    "blue prince": ["outer wilds", "the witness", "animal well", "myst", "puzzle"],
+    "celeste": ["super meat boy", "hollow knight", "pizza tower", "retro"],
+    "portal": ["portal 2", "the talos principle", "half-life 2"],
+    "portal 2": ["portal", "the talos principle", "half-life 2"],
+    "planet coaster 2": ["planet coaster", "rollercoaster tycoon 2", "cities: skylines ii", "colony survival"],
+    "darkest dungeon": ["darkest dungeon ii", "slay the spire", "hades ii", "roguelike"],
+    "metroid prime origins": ["metroid prime", "super metroid", "metroid dread"]
+}
 
 ROMHACK_KEYWORDS = [
     "romhack", "hack", "kaizo", "smwc", "smwcentral", "lunar magic",
@@ -156,10 +170,10 @@ def get_top_streamer_for_game(game_name, bias=None, exclude_login=None):
 
 def find_autonomous_fallback_for_channel(channel_login):
     """
-    Dynamically finds a live fallback for ANY offline channel on Twitch by:
-    1. Querying the streamer's last played game category.
-    2. Finding the #1 most watched live streamer currently playing that exact game.
-    3. Falling back to speedrun.com 24/7 or general live stream if the game category is inactive.
+    Multi-tier community discovery for ANY offline channel on Twitch:
+    1. Tier 1: Query streamer's last played game category (with Romhack bias).
+    2. Tier 2: Query community-adjacent game categories.
+    3. Tier 3: Speedrun.com 24/7 restream.
     """
     raw_query = """
     query GetUserBroadcast($login: String!) {
@@ -195,16 +209,29 @@ def find_autonomous_fallback_for_channel(channel_login):
             game_name = game.get("name") if game else None
             
             if game_name:
-                logger.info(f"Offline channel '{channel_login}' normally broadcasts: '{game_name}'. Searching live streams in that category...")
+                # Tier 1: Direct same game
+                logger.info(f"Offline channel '{channel_login}' normally broadcasts: '{game_name}'. Searching live streams...")
                 top_live_in_game = get_top_streamer_for_game(game_name, exclude_login=channel_login)
                 if top_live_in_game:
                     url = f"https://www.twitch.tv/{top_live_in_game}"
                     resolved = resolve_stream(url)
                     if resolved:
-                        logger.info(f"Found dynamic same-game fallback for {channel_login} -> {top_live_in_game} (playing {game_name})")
+                        logger.info(f"Tier 1 (Same Game) fallback for {channel_login} -> {top_live_in_game} ({game_name})")
                         return top_live_in_game, resolved
+                        
+                # Tier 2: Community-adjacent games
+                g_clean = game_name.lower().strip()
+                adjacent_list = COMMUNITY_ADJACENT_GAMES.get(g_clean, [])
+                for adj_game in adjacent_list:
+                    top_adj = get_top_streamer_for_game(adj_game, exclude_login=channel_login)
+                    if top_adj:
+                        url = f"https://www.twitch.tv/{top_adj}"
+                        resolved = resolve_stream(url)
+                        if resolved:
+                            logger.info(f"Tier 2 (Community-Adjacent Game) fallback for {channel_login} -> {top_adj} ({adj_game})")
+                            return top_adj, resolved
 
-        # If no specific game active, fall back to speedrun.com 24/7 restream
+        # Tier 3: Speedrun.com 24/7 restream
         fallback_url = "https://www.twitch.tv/speedrun"
         resolved = resolve_stream(fallback_url)
         if resolved:
@@ -262,7 +289,7 @@ class BridgeHandler(BaseHTTPRequestHandler):
             self.send_header("Access-Control-Allow-Origin", "*")
             self.end_headers()
             if not is_head:
-                self.wfile.write(b'{"status":"ok","service":"iptv-live-bridge","version":"3.0.0"}\n')
+                self.wfile.write(b'{"status":"ok","service":"iptv-live-bridge","version":"3.1.0"}\n')
             return
             
         # Serve local offline video segments if requested
@@ -351,10 +378,10 @@ class BridgeHandler(BaseHTTPRequestHandler):
         # If offline:
         if not resolved_url:
             if is_gaming and allow_fallback and requested_channel:
-                logger.info(f"Stream '{requested_channel}' is OFFLINE. Querying Twitch for same-game/category live stream...")
+                logger.info(f"Stream '{requested_channel}' is OFFLINE. Discovering community-adjacent live streams...")
                 fallback_channel, fallback_url = find_autonomous_fallback_for_channel(requested_channel)
                 if fallback_url:
-                    logger.info(f"Routing offline {requested_channel} -> Autonomous Same-Game fallback: {fallback_channel}")
+                    logger.info(f"Routing offline {requested_channel} -> Community-Adjacent fallback: {fallback_channel}")
                     self.serve_hls(fallback_url, is_head=is_head)
                     return
             
@@ -417,7 +444,7 @@ class BridgeHandler(BaseHTTPRequestHandler):
 def run():
     server_address = (HOST, PORT)
     httpd = HTTPServer(server_address, BridgeHandler)
-    logger.info(f"Starting Autonomous IPTV Live Bridge v3.0 on http://{HOST}:{PORT}")
+    logger.info(f"Starting Autonomous Community Bridge v3.1 on http://{HOST}:{PORT}")
     try:
         httpd.serve_forever()
     except KeyboardInterrupt:
