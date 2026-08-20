@@ -125,20 +125,6 @@
     "url": "https://kiefte.eu/iptv/youtube/@TPAOnline"
   },
   {
-    "name": "RTVE La 1",
-    "group": "ES Geral & TDT",
-    "tvg_id": "La1.es",
-    "tvg_name": "La 1",
-    "url": "https://ztnr.rtve.es/ztnr/1688877.m3u8"
-  },
-  {
-    "name": "RTVE La 2",
-    "group": "ES Geral & TDT",
-    "tvg_id": "La2.es",
-    "tvg_name": "La 2",
-    "url": "https://ztnr.rtve.es/ztnr/1688885.m3u8"
-  },
-  {
     "name": "RTVE Canal 24 Horas",
     "group": "ES Geral & TDT",
     "tvg_id": "Canal24Horas.es",
@@ -151,13 +137,6 @@
     "tvg_id": "Teledeporte.es",
     "tvg_name": "Teledeporte",
     "url": "https://ztnr.rtve.es/ztnr/1688926.m3u8"
-  },
-  {
-    "name": "RTVE Clan TV",
-    "group": "ES Geral & TDT",
-    "tvg_id": "ClanTVE.es",
-    "tvg_name": "Clan",
-    "url": "https://ztnr.rtve.es/ztnr/5466990.m3u8"
   },
   {
     "name": "Canal Sur Andalucía",
