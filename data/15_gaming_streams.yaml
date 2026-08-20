@@ -2,14 +2,14 @@
   group: Gaming
   tvg_id: GrandPooBear.tv
   tvg_name: GrandPooBear
-  url: https://vps2.kiefte.eu/twitch/grandpoobear
+  url: https://kiefte.eu/iptv/twitch/grandpoobear
 - name: Speedrun (Twitch)
   group: Gaming
   tvg_id: Speedrun.tv
   tvg_name: Speedrun
-  url: https://vps2.kiefte.eu/twitch/speedrun
+  url: https://kiefte.eu/iptv/twitch/speedrun
 - name: GamesDoneQuick (Twitch)
   group: Gaming
   tvg_id: GamesDoneQuick.tv
   tvg_name: GamesDoneQuick
-  url: https://vps2.kiefte.eu/twitch/gamesdonequick
+  url: https://kiefte.eu/iptv/twitch/gamesdonequick
