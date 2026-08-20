@@ -10,10 +10,10 @@ Load these raw URLs directly into **TiviMate**, **OTT Navigator**, **Kodi**, **V
 
 | Playlist | Raw URL |
 | :--- | :--- |
-| **All-in-One (TV + Radio)** | `https://raw.githubusercontent.com/<username>/<repo>/main/dist/playlist.m3u8` |
-| **TV Channels Only** | `https://raw.githubusercontent.com/<username>/<repo>/main/dist/tv.m3u8` |
-| **Radio Channels Only** | `https://raw.githubusercontent.com/<username>/<repo>/main/dist/radio.m3u8` |
-| **JSON Channel Database** | `https://raw.githubusercontent.com/<username>/<repo>/main/dist/channels.json` |
+| **All-in-One (TV + Radio)** | `https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/playlist.m3u8` |
+| **TV Channels Only** | `https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/tv.m3u8` |
+| **Radio Channels Only** | `https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/radio.m3u8` |
+| **JSON Channel Database** | `https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/channels.json` |
 | **EPG / TV Guide (XMLTV)** | `https://raw.githubusercontent.com/LITUATUI/M3UPT/main/EPG/m3upt.xml.xz` |
 
 ---
