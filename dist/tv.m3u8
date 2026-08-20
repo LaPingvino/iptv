@@ -388,3 +388,12 @@ https://kiefte.eu/iptv/twitch/smallant
 
 #EXTINF:-1 tvg-id="DGR.tv" tvg-name="DGR" group-title="Gaming",DGR (Mario Maker & Super Mario)
 https://kiefte.eu/iptv/twitch/dgr_dave
+
+#EXTINF:-1 tvg-id="Carrarium.tv" tvg-name="Carrarium" group-title="Gaming",Carrarium (Celeste & GDQ)
+https://kiefte.eu/iptv/twitch/carrarium
+
+#EXTINF:-1 tvg-id="TGH.tv" tvg-name="TGH" group-title="Gaming",TGH (Celeste & Retro Speedruns)
+https://kiefte.eu/iptv/twitch/tgh_sr
+
+#EXTINF:-1 tvg-id="Amber.tv" tvg-name="Amber" group-title="Gaming",Amber
+https://kiefte.eu/iptv/twitch/amber

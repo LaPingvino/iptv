@@ -1648,5 +1648,26 @@
     "tvg_id": "DGR.tv",
     "tvg_name": "DGR",
     "url": "https://kiefte.eu/iptv/twitch/dgr_dave"
+  },
+  {
+    "name": "Carrarium (Celeste & GDQ)",
+    "group": "Gaming",
+    "tvg_id": "Carrarium.tv",
+    "tvg_name": "Carrarium",
+    "url": "https://kiefte.eu/iptv/twitch/carrarium"
+  },
+  {
+    "name": "TGH (Celeste & Retro Speedruns)",
+    "group": "Gaming",
+    "tvg_id": "TGH.tv",
+    "tvg_name": "TGH",
+    "url": "https://kiefte.eu/iptv/twitch/tgh_sr"
+  },
+  {
+    "name": "Amber",
+    "group": "Gaming",
+    "tvg_id": "Amber.tv",
+    "tvg_name": "Amber",
+    "url": "https://kiefte.eu/iptv/twitch/amber"
   }
 ]
