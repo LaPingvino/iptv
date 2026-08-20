@@ -602,6 +602,18 @@ https://kiefte.eu/iptv/gaming/live
 #EXTINF:-1 tvg-id="BluePrince.tv" tvg-name="Blue Prince Live" group-title="Gaming",Blue Prince (Top Live Streamer)
 https://kiefte.eu/iptv/twitch/game/Blue%20Prince
 
+#EXTINF:-1 tvg-id="SMWRomhacks.tv" tvg-name="SMW Romhacks Live" group-title="Gaming",Super Mario World (Romhacks & Kaizo Live)
+https://kiefte.eu/iptv/twitch/game/Super%20Mario%20World?bias=romhack
+
+#EXTINF:-1 tvg-id="Celeste.tv" tvg-name="Celeste Live" group-title="Gaming",Celeste (Top Live Streamer)
+https://kiefte.eu/iptv/twitch/game/Celeste
+
+#EXTINF:-1 tvg-id="Portal.tv" tvg-name="Portal Live" group-title="Gaming",Portal (Top Live Streamer)
+https://kiefte.eu/iptv/twitch/game/Portal
+
+#EXTINF:-1 tvg-id="Portal2.tv" tvg-name="Portal 2 Live" group-title="Gaming",Portal 2 (Top Live Streamer)
+https://kiefte.eu/iptv/twitch/game/Portal%202
+
 #EXTINF:-1 tvg-id="Speedrun.tv" tvg-name="Speedrun" group-title="Gaming",Speedrun (24/7 Speedrun.com)
 https://kiefte.eu/iptv/twitch/speedrun
 

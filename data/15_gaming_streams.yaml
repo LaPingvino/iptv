@@ -8,6 +8,26 @@
   tvg_id: BluePrince.tv
   tvg_name: Blue Prince Live
   url: https://kiefte.eu/iptv/twitch/game/Blue%20Prince
+- name: Super Mario World (Romhacks & Kaizo Live)
+  group: Gaming
+  tvg_id: SMWRomhacks.tv
+  tvg_name: SMW Romhacks Live
+  url: https://kiefte.eu/iptv/twitch/game/Super%20Mario%20World?bias=romhack
+- name: Celeste (Top Live Streamer)
+  group: Gaming
+  tvg_id: Celeste.tv
+  tvg_name: Celeste Live
+  url: https://kiefte.eu/iptv/twitch/game/Celeste
+- name: Portal (Top Live Streamer)
+  group: Gaming
+  tvg_id: Portal.tv
+  tvg_name: Portal Live
+  url: https://kiefte.eu/iptv/twitch/game/Portal
+- name: Portal 2 (Top Live Streamer)
+  group: Gaming
+  tvg_id: Portal2.tv
+  tvg_name: Portal 2 Live
+  url: https://kiefte.eu/iptv/twitch/game/Portal%202
 - name: Speedrun (24/7 Speedrun.com)
   group: Gaming
   tvg_id: Speedrun.tv

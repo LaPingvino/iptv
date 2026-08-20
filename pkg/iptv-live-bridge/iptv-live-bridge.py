@@ -3,7 +3,8 @@
 IPTV Live Bridge for Streamlink (Twitch, YouTube Live, Kick, etc.)
 Features:
 - Transparent HLS proxying (200 OK)
-- Dynamic Game Directory: /twitch/game/<game_name> (e.g. /twitch/game/Blue%20Prince) automatically streams the #1 most watched live streamer for that game!
+- Dynamic Game Directory: /twitch/game/<game_name> (e.g. /twitch/game/Blue%20Prince, Celeste, Portal, Portal%202)
+- Smart Romhack / Keyword Bias: automatically prioritizes Kaizo/Romhacks for Super Mario World
 - Dynamic Live Fallback: Automatically rolls over to any active Mario/Speedrun streamer when a requested channel is offline
 - Dedicated /gaming/live (Auto-Zapper) channel
 - Custom offline video slate for sports / YouTube
@@ -54,6 +55,12 @@ GAMING_FALLBACK_POOL = [
     "tasvideos"        # Tool-assisted speedruns
 ]
 
+ROMHACK_KEYWORDS = [
+    "romhack", "hack", "kaizo", "smwc", "smwcentral", "lunar magic",
+    "dram", "gauntlet", "precision", "item abuse", "shell", "blind",
+    "practice", "casual romhack", "mod", "custom"
+]
+
 session = streamlink.Streamlink()
 session.set_option("stream-timeout", 8)
 session.set_option("hls-live-edge", 3)
@@ -88,17 +95,20 @@ def resolve_stream(target_url, quality=QUALITY):
         logger.error(f"Error resolving {target_url}: {e}")
         return None
 
-def get_top_streamer_for_game(game_name):
-    """Queries Twitch GraphQL for the top active broadcaster playing a specific game."""
+def get_top_streamer_for_game(game_name, bias=None):
+    """Queries Twitch GraphQL for the top active broadcaster playing a specific game, with optional keyword bias."""
     raw_query = """
     query GetGameStreams($name: String!) {
       game(name: $name) {
         name
-        streams(first: 5) {
+        streams(first: 25) {
           edges {
             node {
               viewersCount
               title
+              freeformTags {
+                name
+              }
               broadcaster {
                 login
                 displayName
@@ -124,11 +134,32 @@ def get_top_streamer_for_game(game_name):
         game = data.get("data", {}).get("game")
         if game and game.get("streams"):
             edges = game["streams"].get("edges", [])
+            
+            # Check for keyword bias (e.g. romhack / kaizo for SMW)
+            preferred_keywords = []
+            if bias == "romhack" or ("mario" in cleaned_name.lower() and bias != "none"):
+                preferred_keywords = ROMHACK_KEYWORDS
+            elif bias:
+                preferred_keywords = [k.strip().lower() for k in bias.split(",")]
+                
+            if preferred_keywords and edges:
+                for edge in edges:
+                    node = edge.get("node", {})
+                    title = node.get("title", "").lower()
+                    tags = [t.get("name", "").lower() for t in node.get("freeformTags", [])]
+                    all_text = title + " " + " ".join(tags)
+                    if any(kw in all_text for kw in preferred_keywords):
+                        top_broadcaster = node["broadcaster"]["login"]
+                        viewers = node["viewersCount"]
+                        logger.info(f"Top BIAS stream for game '{cleaned_name}' ({bias}): {top_broadcaster} ({viewers} viewers) - {node['title']}")
+                        return top_broadcaster
+            
+            # Default to #1 highest viewer count
             if edges:
-                top_broadcaster = edges[0]["node"]["broadcaster"]["login"]
-                viewers = edges[0]["node"]["viewersCount"]
-                title = edges[0]["node"]["title"]
-                logger.info(f"Top stream for game '{cleaned_name}': {top_broadcaster} ({viewers} viewers) - {title}")
+                top_node = edges[0]["node"]
+                top_broadcaster = top_node["broadcaster"]["login"]
+                viewers = top_node["viewersCount"]
+                logger.info(f"Top stream for game '{cleaned_name}': {top_broadcaster} ({viewers} viewers) - {top_node['title']}")
                 return top_broadcaster
     except Exception as e:
         logger.error(f"Error querying top stream for game '{cleaned_name}': {e}")
@@ -194,7 +225,7 @@ class BridgeHandler(BaseHTTPRequestHandler):
             self.send_header("Access-Control-Allow-Origin", "*")
             self.end_headers()
             if not is_head:
-                self.wfile.write(b'{"status":"ok","service":"iptv-live-bridge","version":"2.1.0"}\n')
+                self.wfile.write(b'{"status":"ok","service":"iptv-live-bridge","version":"2.2.0"}\n')
             return
             
         # Serve local offline video segments if requested
@@ -216,6 +247,7 @@ class BridgeHandler(BaseHTTPRequestHandler):
             
         quality = params.get("quality", [QUALITY])[0]
         allow_fallback = params.get("fallback", ["1"])[0] in ["1", "true", "yes"]
+        bias = params.get("bias", [None])[0]
         
         target_url = None
         is_gaming = False
@@ -224,7 +256,7 @@ class BridgeHandler(BaseHTTPRequestHandler):
         # 1. Game directory auto-resolver: /twitch/game/<name> or /game/<name>
         if path.startswith("twitch/game/") or path.startswith("game/"):
             game_name = path.split("/", 2)[-1]
-            top_streamer = get_top_streamer_for_game(game_name)
+            top_streamer = get_top_streamer_for_game(game_name, bias=bias)
             if top_streamer:
                 target_url = f"https://www.twitch.tv/{top_streamer}"
                 is_gaming = True
@@ -264,7 +296,7 @@ class BridgeHandler(BaseHTTPRequestHandler):
                 target_url = f"https://www.youtube.com/{identifier}/live"
             else:
                 target_url = f"https://www.youtube.com/@{identifier}/live"
-            is_gaming = False  # Sports/other YouTube channels don't fallback to gaming
+            is_gaming = False
 
         # 5. Generic URL
         elif path == "live" and "url" in params:
@@ -349,7 +381,7 @@ class BridgeHandler(BaseHTTPRequestHandler):
 def run():
     server_address = (HOST, PORT)
     httpd = HTTPServer(server_address, BridgeHandler)
-    logger.info(f"Starting IPTV Live Bridge v2.1 on http://{HOST}:{PORT}")
+    logger.info(f"Starting IPTV Live Bridge v2.2 on http://{HOST}:{PORT}")
     try:
         httpd.serve_forever()
     except KeyboardInterrupt:
