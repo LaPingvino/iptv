@@ -724,3 +724,33 @@ https://kiefte.eu/iptv/twitch/elanaorama
 
 #EXTINF:-1 tvg-id="DGR.tv" tvg-name="DGR" group-title="Indie & Variety Gaming",DGR (Mario Maker & Super Mario)
 https://kiefte.eu/iptv/twitch/dgr_dave
+
+#EXTINF:-1 tvg-id="TVGEuropa.es" tvg-name="Galicia TV Europa" group-title="Galiza",Galicia TV Europa (TVG)
+https://crtvg-europa.flumotion.cloud/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TeleVigo.es" tvg-name="TeleVigo" group-title="Galiza",TeleVigo (Galicia)
+https://cloud.fastchannel.es/mic/manifiest/hls/televigo/televigo.m3u8
+
+#EXTINF:-1 tvg-id="La1.es" tvg-name="La 1" group-title="ES Geral & TDT",RTVE La 1
+https://ztnr.rtve.es/ztnr/1688877.m3u8
+
+#EXTINF:-1 tvg-id="La2.es" tvg-name="La 2" group-title="ES Geral & TDT",RTVE La 2
+https://ztnr.rtve.es/ztnr/1688884.m3u8
+
+#EXTINF:-1 tvg-id="Canal24Horas.es" tvg-name="24 Horas" group-title="ES Geral & TDT",RTVE Canal 24 Horas
+https://ztnr.rtve.es/ztnr/1694255.m3u8
+
+#EXTINF:-1 tvg-id="Teledeporte.es" tvg-name="Teledeporte" group-title="ES Geral & TDT",RTVE Teledeporte (TDP)
+https://ztnr.rtve.es/ztnr/1688926.m3u8
+
+#EXTINF:-1 tvg-id="ClanTVE.es" tvg-name="Clan" group-title="ES Geral & TDT",RTVE Clan TV
+https://ztnr.rtve.es/ztnr/5466990.m3u8
+
+#EXTINF:-1 tvg-id="CanalSur.es" tvg-name="Canal Sur" group-title="ES Geral & TDT",Canal Sur Andalucía
+https://dfk2a268yviz9.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ddiii1m6jt6of/CanalSurAndaluciaES.m3u8
+
+#EXTINF:-1 tvg-id="RealMadridTV.es" tvg-name="Real Madrid TV" group-title="ES Geral & TDT",Real Madrid TV
+https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
+
+#EXTINF:-1 tvg-id="CadenaSER.es" tvg-name="Cadena SER" group-title="ES Rádio" radio="true",Cadena SER España
+https://playerservices.streamtheworld.com/api/livestream-redirect/CADENASER.mp3

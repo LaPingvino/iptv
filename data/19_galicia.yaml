@@ -1,0 +1,10 @@
+- name: Galicia TV Europa (TVG)
+  group: Galiza
+  tvg_id: TVGEuropa.es
+  tvg_name: Galicia TV Europa
+  url: https://crtvg-europa.flumotion.cloud/playlist.m3u8
+- name: TeleVigo (Galicia)
+  group: Galiza
+  tvg_id: TeleVigo.es
+  tvg_name: TeleVigo
+  url: https://cloud.fastchannel.es/mic/manifiest/hls/televigo/televigo.m3u8

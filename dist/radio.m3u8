@@ -279,3 +279,6 @@ http://capeant.antfarm.co.za:8000/Bosveld
 
 #EXTINF:-1 tvg-id="FineMusicRadio.za" tvg-name="Fine Music Radio" group-title="Rádio Global" radio="true",Fine Music Radio (Cape Town Classical)
 https://edge.iono.fm/xhls/fmr_live_high.m3u8
+
+#EXTINF:-1 tvg-id="CadenaSER.es" tvg-name="Cadena SER" group-title="ES Rádio" radio="true",Cadena SER España
+https://playerservices.streamtheworld.com/api/livestream-redirect/CADENASER.mp3

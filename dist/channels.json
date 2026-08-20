@@ -1781,5 +1781,75 @@
     "tvg_id": "DGR.tv",
     "tvg_name": "DGR",
     "url": "https://kiefte.eu/iptv/twitch/dgr_dave"
+  },
+  {
+    "name": "Galicia TV Europa (TVG)",
+    "group": "Galiza",
+    "tvg_id": "TVGEuropa.es",
+    "tvg_name": "Galicia TV Europa",
+    "url": "https://crtvg-europa.flumotion.cloud/playlist.m3u8"
+  },
+  {
+    "name": "TeleVigo (Galicia)",
+    "group": "Galiza",
+    "tvg_id": "TeleVigo.es",
+    "tvg_name": "TeleVigo",
+    "url": "https://cloud.fastchannel.es/mic/manifiest/hls/televigo/televigo.m3u8"
+  },
+  {
+    "name": "RTVE La 1",
+    "group": "ES Geral & TDT",
+    "tvg_id": "La1.es",
+    "tvg_name": "La 1",
+    "url": "https://ztnr.rtve.es/ztnr/1688877.m3u8"
+  },
+  {
+    "name": "RTVE La 2",
+    "group": "ES Geral & TDT",
+    "tvg_id": "La2.es",
+    "tvg_name": "La 2",
+    "url": "https://ztnr.rtve.es/ztnr/1688884.m3u8"
+  },
+  {
+    "name": "RTVE Canal 24 Horas",
+    "group": "ES Geral & TDT",
+    "tvg_id": "Canal24Horas.es",
+    "tvg_name": "24 Horas",
+    "url": "https://ztnr.rtve.es/ztnr/1694255.m3u8"
+  },
+  {
+    "name": "RTVE Teledeporte (TDP)",
+    "group": "ES Geral & TDT",
+    "tvg_id": "Teledeporte.es",
+    "tvg_name": "Teledeporte",
+    "url": "https://ztnr.rtve.es/ztnr/1688926.m3u8"
+  },
+  {
+    "name": "RTVE Clan TV",
+    "group": "ES Geral & TDT",
+    "tvg_id": "ClanTVE.es",
+    "tvg_name": "Clan",
+    "url": "https://ztnr.rtve.es/ztnr/5466990.m3u8"
+  },
+  {
+    "name": "Canal Sur Andalucía",
+    "group": "ES Geral & TDT",
+    "tvg_id": "CanalSur.es",
+    "tvg_name": "Canal Sur",
+    "url": "https://dfk2a268yviz9.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ddiii1m6jt6of/CanalSurAndaluciaES.m3u8"
+  },
+  {
+    "name": "Real Madrid TV",
+    "group": "ES Geral & TDT",
+    "tvg_id": "RealMadridTV.es",
+    "tvg_name": "Real Madrid TV",
+    "url": "https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8"
+  },
+  {
+    "name": "Cadena SER España",
+    "group": "ES Rádio",
+    "tvg_id": "CadenaSER.es",
+    "tvg_name": "Cadena SER",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CADENASER.mp3"
   }
 ]
