@@ -103,6 +103,9 @@ https://6e52fb8b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheH
 #EXTINF:-1 tvg-id="EuronewsEnglish.fr" tvg-name="Euronews (English)" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png" group-title="Notícias",Euronews English
 https://a-cdn.klowdtv.com/live3/euronews_720p/playlist.m3u8
 
+#EXTINF:-1 tvg-id="EuronewsFrench.fr" tvg-name="Euronews (Français)" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png" group-title="Notícias",Euronews Français
+https://2f6c5bf4.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheHhUVi1ldV9FdXJvbmV3c0ZyYW5jYWlzX0hMUw/playlist.m3u8
+
 #EXTINF:-1 tvg-id="Canal11.pt@HD" tvg-name="Canal 11" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Canal11.png" group-title="Desporto",Canal 11
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3"
 #EXTVLCOPT:http-referrer=https://canal11.pt/
@@ -181,9 +184,6 @@ https://channels.trace.plus/Traceprod/KITOKO_hd/index.m3u8
 #EXTINF:-1 tvg-id="TraceMziki.ke@HD" tvg-name="Trace Miziki" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Miziki.png" group-title="Música & Video",Trace Miziki (East Africa)
 https://channels.trace.plus/Traceprod/MZIKI_hd/index.m3u8
 
-#EXTINF:-1 tvg-id="TraceUrban.fr@HD" tvg-name="Trace Urban" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Urban.png" group-title="Música & Video",Trace Urban
-https://lightning-traceurban-samsungau.amagi.tv/playlist.m3u8
-
 #EXTINF:-1 tvg-id="TraceLatina.fr@HD" tvg-name="Trace Latina" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Latina.png" group-title="Música & Video",Trace Latina
 https://channels.trace.plus/Traceprod/LATINA_hd/index.m3u8
 
@@ -196,20 +196,8 @@ https://channels.trace.plus/Traceprod/GOSPEL_FR/.m3u8
 #EXTINF:-1 tvg-id="XITE.nl@HD" tvg-name="XITE" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.png" group-title="Música & Video",XITE
 https://xite-rakuten.amagi.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="XITEHitsUK.uk@HD" tvg-name="XITE Hits UK" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.png" group-title="Música & Video",XITE Hits UK
-https://amg01243-xitenetworksint-hitsuk-samsunguk-mvovq.amagi.tv/playlist/amg01243-xitenetworksint-hitsuk-samsunguk/playlist.m3u8
-
 #EXTINF:-1 tvg-id="XITEHitsDE.de@HD" tvg-name="XITE Hits Germany" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.png" group-title="Música & Video",XITE Hits Germany
 https://d726x48n2pd5h.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-skxr1pazhltvp/XITE_Hits.m3u8
-
-#EXTINF:-1 tvg-id="Now70s.uk" tvg-name="Now 70s" group-title="Música & Video",Now 70s
-https://lightning-now70s-samsungnz.amagi.tv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Now80s.uk" tvg-name="Now 80s" group-title="Música & Video",Now 80s
-https://lightning-now80s-samsungnz.amagi.tv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="NowRock.uk" tvg-name="Now Rock" group-title="Música & Video",Now Rock
-https://lightning-now90s-samsungnz.amagi.tv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="RetroMusicTV.cz" tvg-name="Retro Music TV" group-title="Música & Video",Retro Music TV
 https://stream.mediawork.cz/retrotv/smil:retrotv2.smil/playlist.m3u8

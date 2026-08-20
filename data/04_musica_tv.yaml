@@ -69,12 +69,6 @@
   tvg_name: Trace Miziki
   logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Miziki.png
   url: https://channels.trace.plus/Traceprod/MZIKI_hd/index.m3u8
-- name: Trace Urban
-  group: Música & Video
-  tvg_id: TraceUrban.fr@HD
-  tvg_name: Trace Urban
-  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Urban.png
-  url: https://lightning-traceurban-samsungau.amagi.tv/playlist.m3u8
 - name: Trace Latina
   group: Música & Video
   tvg_id: TraceLatina.fr@HD
@@ -99,33 +93,12 @@
   tvg_name: XITE
   logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.png
   url: https://xite-rakuten.amagi.tv/playlist.m3u8
-- name: XITE Hits UK
-  group: Música & Video
-  tvg_id: XITEHitsUK.uk@HD
-  tvg_name: XITE Hits UK
-  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.png
-  url: https://amg01243-xitenetworksint-hitsuk-samsunguk-mvovq.amagi.tv/playlist/amg01243-xitenetworksint-hitsuk-samsunguk/playlist.m3u8
 - name: XITE Hits Germany
   group: Música & Video
   tvg_id: XITEHitsDE.de@HD
   tvg_name: XITE Hits Germany
   logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.png
   url: https://d726x48n2pd5h.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-skxr1pazhltvp/XITE_Hits.m3u8
-- name: Now 70s
-  group: Música & Video
-  tvg_id: Now70s.uk
-  tvg_name: Now 70s
-  url: https://lightning-now70s-samsungnz.amagi.tv/playlist.m3u8
-- name: Now 80s
-  group: Música & Video
-  tvg_id: Now80s.uk
-  tvg_name: Now 80s
-  url: https://lightning-now80s-samsungnz.amagi.tv/playlist.m3u8
-- name: Now Rock
-  group: Música & Video
-  tvg_id: NowRock.uk
-  tvg_name: Now Rock
-  url: https://lightning-now90s-samsungnz.amagi.tv/playlist.m3u8
 - name: Retro Music TV
   group: Música & Video
   tvg_id: RetroMusicTV.cz
