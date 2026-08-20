@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/EPG/m3upt.xml.xz" url-tvg="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/EPG/m3upt.xml.xz"
+#EXTM3U url-tvg="https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/epg.xml.gz,https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-m3upt.xml.xz,https://raw.githubusercontent.com/Free-TV/IPTV/master/epg.xml.gz" x-tvg-url="https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/epg.xml.gz,https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-m3upt.xml.xz,https://raw.githubusercontent.com/Free-TV/IPTV/master/epg.xml.gz"
 
 
 #EXTINF:-1 tvg-id="Antena1.pt" tvg-name="RDP Antena 1" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-1.png" group-title="PT Rádio" radio="true",RDP Antena 1
@@ -243,3 +243,18 @@ https://stream.live.vc.bbcmedia.co.uk/bbc_6music
 
 #EXTINF:-1 tvg-id="KEXP.us" tvg-name="KEXP" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/kexp.png" group-title="Rádio Global" radio="true",KEXP 90.3 FM (Seattle)
 https://kexp.streamguys1.com/kexp160.aac
+
+#EXTINF:-1 tvg-id="Muzaiko.eo" tvg-name="Muzaiko Esperanto" tvg-logo="https://i.imgur.com/G5v92yG.png" group-title="Rádio Global" radio="true",Muzaiko (24/7 Esperanto Radio)
+http://fluo.muzaiko.saluton.dk:8000/radio.mp3
+
+#EXTINF:-1 tvg-id="RadioHabanaCuba.eo" tvg-name="Radio Habana Cuba Esperanto" tvg-logo="https://i.imgur.com/G5v92yG.png" group-title="Rádio Global" radio="true",Radio Habana Cuba (Esperanto)
+https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/McW3fLhs
+
+#EXTINF:-1 tvg-id="BokRadio.za" tvg-name="Bok Radio Afrikaans" tvg-logo="https://i.imgur.com/k7F8Q4s.png" group-title="Rádio Global" radio="true",Bok Radio 98.9 FM (Afrikaans)
+http://bokradio.highquality.radiostream.co.za/
+
+#EXTINF:-1 tvg-id="BosveldStereo.za" tvg-name="Bosveld Stereo Afrikaans" tvg-logo="https://i.imgur.com/k7F8Q4s.png" group-title="Rádio Global" radio="true",Bosveld Stereo 107.5 FM (Afrikaans)
+http://capeant.antfarm.co.za:8000/Bosveld
+
+#EXTINF:-1 tvg-id="FineMusicRadio.za" tvg-name="Fine Music Radio" tvg-logo="https://i.imgur.com/k7F8Q4s.png" group-title="Rádio Global" radio="true",Fine Music Radio (Cape Town Classical)
+https://edge.iono.fm/xhls/fmr_live_high.m3u8

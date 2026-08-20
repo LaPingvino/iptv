@@ -1,19 +1,29 @@
 #!/usr/bin/env python3
 """
-IPTV & Radio Playlist Generator
+IPTV & Radio Playlist Generator + EPG Fetcher
 Reads structured channel definitions from data/*.yaml and compiles:
 - dist/playlist.m3u8 (Master playlist)
 - dist/tv.m3u8 (TV-only playlist)
 - dist/radio.m3u8 (Radio-only playlist)
 - dist/channels.json (JSON dump)
+- dist/epg.xml & dist/epg.xml.gz (Directly compatible with Sparkle TV & TiviMate)
 """
 
 import os
 import glob
 import json
 import yaml
+import gzip
+import lzma
+import urllib.request
 
-EPG_URL = "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/EPG/m3upt.xml.xz"
+EPG_SOURCES = [
+    "https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/epg.xml.gz",
+    "https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-m3upt.xml.xz",
+    "https://raw.githubusercontent.com/Free-TV/IPTV/master/epg.xml.gz"
+]
+
+UPSTREAM_M3UPT_EPG = "https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-m3upt.xml.xz"
 
 def is_radio_channel(ch):
     grp = ch.get("group", "").lower()
@@ -59,11 +69,14 @@ def format_channel_m3u(ch):
     
     # Headers / EXTVLCOPT
     if "http_user_agent" in ch and ch["http_user_agent"]:
-        lines.append(f'#EXTVLCOPT:http-user-agent={ch["http_user_agent"]}')
-    if "http_referrer" in ch and ch["http_referrer"]:
-        lines.append(f'#EXTVLCOPT:http-referrer={ch["http_referrer"]}')
+        ua = ch["http_user_agent"]
+        if not ua.startswith('"'):
+            ua = f'"{ua}"'
+        lines.append(f'#EXTVLCOPT:http-user-agent={ua}')
     if "http_origin" in ch and ch["http_origin"]:
         lines.append(f'#EXTVLCOPT:http-origin={ch["http_origin"]}')
+    if "http_referrer" in ch and ch["http_referrer"]:
+        lines.append(f'#EXTVLCOPT:http-referrer={ch["http_referrer"]}')
         
     # Kodi Props
     if "kodi_props" in ch and isinstance(ch["kodi_props"], list):
@@ -74,6 +87,27 @@ def format_channel_m3u(ch):
     lines.append(ch.get("url", "").strip())
     
     return "\n".join(lines)
+
+def fetch_and_build_epg(dist_dir):
+    xml_path = os.path.join(dist_dir, "epg.xml")
+    gz_path = os.path.join(dist_dir, "epg.xml.gz")
+    
+    print("\nFetching upstream M3UPT EPG guide data...")
+    try:
+        req = urllib.request.Request(UPSTREAM_M3UPT_EPG, headers={"User-Agent": "Mozilla/5.0"})
+        data_xz = urllib.request.urlopen(req, timeout=15).read()
+        data_xml = lzma.decompress(data_xz)
+        
+        with open(xml_path, "wb") as f:
+            f.write(data_xml)
+            
+        with gzip.open(gz_path, "wb") as f:
+            f.write(data_xml)
+            
+        print(f"  ✓ {xml_path} ({os.path.getsize(xml_path)} bytes)")
+        print(f"  ✓ {gz_path} ({os.path.getsize(gz_path)} bytes)")
+    except Exception as e:
+        print(f"  ✗ Warning: Could not download upstream EPG: {e}")
 
 def build_playlists():
     root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -101,10 +135,11 @@ def build_playlists():
         
     print(f"\nSummary: {tv_count} TV channels, {radio_count} Radio channels (Total: {len(channels)})")
         
-    # 1. Master Playlist
-    master_lines = [f'#EXTM3U x-tvg-url="{EPG_URL}" url-tvg="{EPG_URL}"\n']
-    tv_lines = [f'#EXTM3U x-tvg-url="{EPG_URL}" url-tvg="{EPG_URL}"\n']
-    radio_lines = [f'#EXTM3U x-tvg-url="{EPG_URL}" url-tvg="{EPG_URL}"\n']
+    epg_header = f'#EXTM3U url-tvg="{",".join(EPG_SOURCES)}" x-tvg-url="{",".join(EPG_SOURCES)}"\n'
+    
+    master_lines = [epg_header]
+    tv_lines = [epg_header]
+    radio_lines = [epg_header]
     
     for ch in channels:
         entry = format_channel_m3u(ch)
@@ -137,6 +172,8 @@ def build_playlists():
     print(f"  ✓ {tv_path} ({os.path.getsize(tv_path)} bytes)")
     print(f"  ✓ {radio_path} ({os.path.getsize(radio_path)} bytes)")
     print(f"  ✓ {json_path} ({os.path.getsize(json_path)} bytes)")
+    
+    fetch_and_build_epg(dist_dir)
 
 if __name__ == "__main__":
     build_playlists()

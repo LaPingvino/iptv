@@ -2,84 +2,90 @@
   {
     "name": "RTP 1",
     "group": "PT Geral",
-    "tvg_id": "RTP1.pt@HD",
+    "tvg_id": "RTP1.pt",
     "tvg_name": "RTP 1",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP1.png",
-    "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3",
-    "http_referrer": "https://www.rtp.pt/",
-    "url": "https://streaming-live.rtp.pt/livertp1/rtp1.smil/playlist.m3u8"
+    "http_user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0",
+    "http_origin": "https://www.rtp.pt",
+    "http_referrer": "https://www.rtp.pt/play/direto/rtp1",
+    "url": "https://streaming-live.rtp.pt/liverepeater/smil:rtp1HD.smil/playlist.m3u8"
   },
   {
     "name": "RTP 2",
     "group": "PT Geral",
-    "tvg_id": "RTP2.pt@HD",
+    "tvg_id": "RTP2.pt",
     "tvg_name": "RTP 2",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP2.png",
-    "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3",
-    "http_referrer": "https://www.rtp.pt/",
-    "url": "https://streaming-live.rtp.pt/livertp2/rtp2.smil/playlist.m3u8"
+    "http_user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0",
+    "http_origin": "https://www.rtp.pt",
+    "http_referrer": "https://www.rtp.pt/play/direto/rtp2",
+    "url": "https://streaming-live.rtp.pt/liverepeater/smil:rtp2HD.smil/playlist.m3u8"
   },
   {
     "name": "SIC",
     "group": "PT Geral",
-    "tvg_id": "SIC.pt@HD",
+    "tvg_id": "SIC.pt",
     "tvg_name": "SIC",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SIC.png",
-    "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3",
-    "http_origin": "https://optotv.sic.pt",
-    "http_referrer": "https://optotv.sic.pt/",
-    "url": "https://live-opto.impresa.pt/live/sic/sic.m3u8"
+    "http_user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0",
+    "http_origin": "https://sic.pt",
+    "http_referrer": "https://opto.sic.pt/",
+    "url": "https://production-fast-sic.content.okast.tv/fa2e8c4385712f9ad2ea37aa47087612/channels/d9070446-8448-455e-8075-773b1ba12562/3421255e-5683-4927-99f5-ff8cb339462c/media_.m3u8"
   },
   {
     "name": "TVI",
     "group": "PT Geral",
-    "tvg_id": "TVI.pt@HD",
+    "tvg_id": "TVI.pt",
     "tvg_name": "TVI",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TVI.png",
-    "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3",
+    "http_user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0",
     "http_origin": "https://tviplayer.iol.pt",
-    "http_referrer": "https://tviplayer.iol.pt/",
-    "url": "https://video-auth1.iol.pt/live_tvi/live_tvi/playlist.m3u8"
+    "http_referrer": "https://tviplayer.iol.pt",
+    "url": "https://github.com/LITUATUI/M3UPT/raw/main/M3U/TVI.m3u8"
   },
   {
     "name": "RTP Memória",
     "group": "PT Geral",
-    "tvg_id": "RTPMemoria.pt@HD",
+    "tvg_id": "RTPMemoria.pt",
     "tvg_name": "RTP Memória",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Memoria.png",
-    "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3",
-    "http_referrer": "https://www.rtp.pt/",
-    "url": "https://streaming-live.rtp.pt/livertpmemoria/rtpmemoria.smil/playlist.m3u8"
+    "http_user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0",
+    "http_origin": "https://www.rtp.pt",
+    "http_referrer": "https://www.rtp.pt/play/direto/rtpmemoria",
+    "url": "https://streaming-live.rtp.pt/liverepeater/smil:rtpmemoriaHD.smil/playlist.m3u8"
   },
   {
     "name": "RTP Madeira",
     "group": "PT Geral",
-    "tvg_id": "RTPMadeira.pt@HD",
+    "tvg_id": "RTPMadeira.pt",
     "tvg_name": "RTP Madeira",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Madeira.png",
-    "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3",
-    "http_referrer": "https://www.rtp.pt/",
-    "url": "https://streaming-live.rtp.pt/livertpmadeira/rtpmadeira.smil/playlist.m3u8"
+    "http_user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0",
+    "http_origin": "https://www.rtp.pt",
+    "http_referrer": "https://www.rtp.pt/play/direto/rtpmadeira",
+    "url": "https://streaming-live.rtp.pt/liverepeater/smil:rtpmadeiraHD.smil/playlist.m3u8"
   },
   {
     "name": "RTP Açores",
     "group": "PT Geral",
-    "tvg_id": "RTPAcores.pt@HD",
+    "tvg_id": "RTPAcores.pt",
     "tvg_name": "RTP Açores",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Acores.png",
-    "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3",
-    "http_referrer": "https://www.rtp.pt/",
-    "url": "https://streaming-live.rtp.pt/livertpacores/rtpacores.smil/playlist.m3u8"
+    "http_user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0",
+    "http_origin": "https://www.rtp.pt",
+    "http_referrer": "https://www.rtp.pt/play/direto/rtpacores",
+    "url": "https://streaming-live.rtp.pt/liverepeater/smil:rtpacoresHD.smil/playlist.m3u8"
   },
   {
     "name": "RTP África",
     "group": "PT Geral",
-    "tvg_id": "RTPAfrica.pt@HD",
+    "tvg_id": "RTPAfrica.pt",
     "tvg_name": "RTP África",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Africa.png",
-    "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3",
-    "http_referrer": "https://www.rtp.pt/",
-    "url": "https://streaming-live.rtp.pt/livertpafrica/rtpafrica.smil/playlist.m3u8"
+    "http_user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0",
+    "http_origin": "https://www.rtp.pt",
+    "http_referrer": "https://www.rtp.pt/play/direto/rtpafrica",
+    "url": "https://streaming-live.rtp.pt/liverepeater/smil:rtpafricaHD.smil/playlist.m3u8"
   },
   {
     "name": "TVM (Televisão de Moçambique)",
@@ -108,34 +114,35 @@
   {
     "name": "RTP 3",
     "group": "Notícias",
-    "tvg_id": "RTP3.pt@HD",
+    "tvg_id": "RTP3.pt",
     "tvg_name": "RTP 3",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP3.png",
-    "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3",
-    "http_referrer": "https://www.rtp.pt/",
-    "url": "https://streaming-live.rtp.pt/livertp3/rtp3.smil/playlist.m3u8"
+    "http_user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0",
+    "http_origin": "https://www.rtp.pt",
+    "http_referrer": "https://www.rtp.pt/play/direto/rtp3",
+    "url": "https://streaming-live.rtp.pt/liverepeater/smil:rtp3HD.smil/playlist.m3u8"
   },
   {
     "name": "SIC Notícias",
     "group": "Notícias",
-    "tvg_id": "SICNoticias.pt@HD",
+    "tvg_id": "SICNoticias.pt",
     "tvg_name": "SIC Notícias",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SIC-Noticias.png",
-    "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3",
-    "http_origin": "https://optotv.sic.pt",
-    "http_referrer": "https://optotv.sic.pt/",
-    "url": "https://live-opto.impresa.pt/live/sicn/sicn.m3u8"
+    "http_user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0",
+    "http_origin": "https://sic.pt",
+    "http_referrer": "https://opto.sic.pt/",
+    "url": "https://production-fast-sic.content.okast.tv/fa2e8c4385712f9ad2ea37aa47087612/channels/d9070446-8448-455e-8075-773b1ba12562/3421255e-5683-4927-99f5-ff8cb339462c/media_.m3u8"
   },
   {
     "name": "CNN Portugal",
     "group": "Notícias",
-    "tvg_id": "CNNPortugal.pt@HD",
+    "tvg_id": "CNNPortugal.pt",
     "tvg_name": "CNN Portugal",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CNN-Portugal.png",
-    "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3",
+    "http_user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0",
     "http_origin": "https://tviplayer.iol.pt",
-    "http_referrer": "https://tviplayer.iol.pt/",
-    "url": "https://video-auth1.iol.pt/live_cnn/live_cnn/playlist.m3u8"
+    "http_referrer": "https://tviplayer.iol.pt",
+    "url": "https://github.com/LITUATUI/M3UPT/raw/main/M3U/CNN_Portugal.m3u8"
   },
   {
     "name": "CNN Brasil",
@@ -146,9 +153,49 @@
     "url": "https://videos01.fabricahost.com.br/cnn/cnn.smil/playlist.m3u8"
   },
   {
+    "name": "France 24 (Français)",
+    "group": "Notícias",
+    "tvg_id": "France24.fr",
+    "tvg_name": "France 24 Français",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png",
+    "url": "https://static.france24.com/live/F24_FR_HI_HLS/live_tv.m3u8"
+  },
+  {
+    "name": "France 24 (English)",
+    "group": "Notícias",
+    "tvg_id": "France24English.fr",
+    "tvg_name": "France 24 English",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png",
+    "url": "https://static.france24.com/live/F24_EN_HI_HLS/live_tv.m3u8"
+  },
+  {
+    "name": "France 24 (Español)",
+    "group": "Notícias",
+    "tvg_id": "France24Spanish.fr",
+    "tvg_name": "France 24 Español",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png",
+    "url": "https://static.france24.com/live/F24_ES_HI_HLS/live_tv.m3u8"
+  },
+  {
+    "name": "DW Deutsch",
+    "group": "Notícias",
+    "tvg_id": "DWDeutsch.de",
+    "tvg_name": "DW Deutsch",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png",
+    "url": "https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8"
+  },
+  {
+    "name": "DW English",
+    "group": "Notícias",
+    "tvg_id": "DWEnglish.de",
+    "tvg_name": "DW English",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png",
+    "url": "https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8"
+  },
+  {
     "name": "Euronews Português",
     "group": "Notícias",
-    "tvg_id": "EuronewsPortuguese.fr@HD",
+    "tvg_id": "EuronewsPortuguese.fr",
     "tvg_name": "Euronews (Português)",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png",
     "url": "https://euronews-euronews-portuguese-1-pt.samsung.wurl.com/manifest/playlist.m3u8"
@@ -156,7 +203,7 @@
   {
     "name": "Euronews English",
     "group": "Notícias",
-    "tvg_id": "EuronewsEnglish.fr@HD",
+    "tvg_id": "EuronewsEnglish.fr",
     "tvg_name": "Euronews (English)",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png",
     "url": "https://euronews-euronews-world-1-eu.rakuten.wurl.com/manifest/playlist.m3u8"
@@ -602,9 +649,57 @@
     "url": "https://video-auth6.iol.pt/live_portocanal/live_portocanal/playlist.m3u8"
   },
   {
+    "name": "ARTE (Français / Deutsch)",
+    "group": "Filmes & Docs",
+    "tvg_id": "Arte.fr",
+    "tvg_name": "ARTE",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/arte.png",
+    "url": "https://artesimulcast.akamaized.net/hls/live/2031003/artelive_fr/index.m3u8"
+  },
+  {
+    "name": "Das Erste (ARD Germany)",
+    "group": "Filmes & Docs",
+    "tvg_id": "DasErste.de",
+    "tvg_name": "Das Erste",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Das-Erste.png",
+    "url": "https://daserste-live.ard-mcdn.de/daserste/live/hls/de/master.m3u8"
+  },
+  {
+    "name": "ZDF (Germany)",
+    "group": "Filmes & Docs",
+    "tvg_id": "ZDF.de",
+    "tvg_name": "ZDF",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/zdf.png",
+    "url": "https://zdf-hls-15.akamaized.net/hls/live/2016498/de/veryhigh/master.m3u8"
+  },
+  {
+    "name": "3sat (DACH Cultural)",
+    "group": "Filmes & Docs",
+    "tvg_id": "3sat.de",
+    "tvg_name": "3sat",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/3sat.png",
+    "url": "https://zdf-hls-18.akamaized.net/hls/live/2016501/dach/veryhigh/master.m3u8"
+  },
+  {
+    "name": "Phoenix (Dokumentationen)",
+    "group": "Filmes & Docs",
+    "tvg_id": "Phoenix.de",
+    "tvg_name": "Phoenix",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/phoenix.png",
+    "url": "https://zdf-hls-19.akamaized.net/hls/live/2016502/de/veryhigh/master.m3u8"
+  },
+  {
+    "name": "TV5Monde Info (Francophonie)",
+    "group": "Filmes & Docs",
+    "tvg_id": "TV5Monde.fr",
+    "tvg_name": "TV5Monde",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tv5monde.png",
+    "url": "https://ott.tv5monde.com/Content/HLS/Live/channel(info)/index.m3u8"
+  },
+  {
     "name": "Kuriakos Cine",
     "group": "Filmes & Docs",
-    "tvg_id": "KuriakosCine.pt@HD",
+    "tvg_id": "KuriakosCine.pt",
     "tvg_name": "Kuriakos Cine",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Kuriakos-Cine.png",
     "url": "https://w2.manasat.com/kcine/kcine.smil/playlist.m3u8"
@@ -1337,5 +1432,45 @@
     "tvg_name": "KEXP",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/kexp.png",
     "url": "https://kexp.streamguys1.com/kexp160.aac"
+  },
+  {
+    "name": "Muzaiko (24/7 Esperanto Radio)",
+    "group": "Rádio Global",
+    "tvg_id": "Muzaiko.eo",
+    "tvg_name": "Muzaiko Esperanto",
+    "logo": "https://i.imgur.com/G5v92yG.png",
+    "url": "http://fluo.muzaiko.saluton.dk:8000/radio.mp3"
+  },
+  {
+    "name": "Radio Habana Cuba (Esperanto)",
+    "group": "Rádio Global",
+    "tvg_id": "RadioHabanaCuba.eo",
+    "tvg_name": "Radio Habana Cuba Esperanto",
+    "logo": "https://i.imgur.com/G5v92yG.png",
+    "url": "https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/McW3fLhs"
+  },
+  {
+    "name": "Bok Radio 98.9 FM (Afrikaans)",
+    "group": "Rádio Global",
+    "tvg_id": "BokRadio.za",
+    "tvg_name": "Bok Radio Afrikaans",
+    "logo": "https://i.imgur.com/k7F8Q4s.png",
+    "url": "http://bokradio.highquality.radiostream.co.za/"
+  },
+  {
+    "name": "Bosveld Stereo 107.5 FM (Afrikaans)",
+    "group": "Rádio Global",
+    "tvg_id": "BosveldStereo.za",
+    "tvg_name": "Bosveld Stereo Afrikaans",
+    "logo": "https://i.imgur.com/k7F8Q4s.png",
+    "url": "http://capeant.antfarm.co.za:8000/Bosveld"
+  },
+  {
+    "name": "Fine Music Radio (Cape Town Classical)",
+    "group": "Rádio Global",
+    "tvg_id": "FineMusicRadio.za",
+    "tvg_name": "Fine Music Radio",
+    "logo": "https://i.imgur.com/k7F8Q4s.png",
+    "url": "https://edge.iono.fm/xhls/fmr_live_high.m3u8"
   }
 ]

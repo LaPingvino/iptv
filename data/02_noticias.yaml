@@ -1,47 +1,75 @@
 - name: RTP 3
   group: Notícias
-  tvg_id: RTP3.pt@HD
+  tvg_id: RTP3.pt
   tvg_name: RTP 3
   logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP3.png
-  http_user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-    like Gecko) Chrome/149.0.0.0 Safari/537.3
-  http_referrer: https://www.rtp.pt/
-  url: https://streaming-live.rtp.pt/livertp3/rtp3.smil/playlist.m3u8
+  http_user_agent: Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
+  http_origin: https://www.rtp.pt
+  http_referrer: https://www.rtp.pt/play/direto/rtp3
+  url: https://streaming-live.rtp.pt/liverepeater/smil:rtp3HD.smil/playlist.m3u8
 - name: SIC Notícias
   group: Notícias
-  tvg_id: SICNoticias.pt@HD
+  tvg_id: SICNoticias.pt
   tvg_name: SIC Notícias
   logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SIC-Noticias.png
-  http_user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-    like Gecko) Chrome/149.0.0.0 Safari/537.3
-  http_origin: https://optotv.sic.pt
-  http_referrer: https://optotv.sic.pt/
-  url: https://live-opto.impresa.pt/live/sicn/sicn.m3u8
+  http_user_agent: Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
+  http_origin: https://sic.pt
+  http_referrer: https://opto.sic.pt/
+  url: https://production-fast-sic.content.okast.tv/fa2e8c4385712f9ad2ea37aa47087612/channels/d9070446-8448-455e-8075-773b1ba12562/3421255e-5683-4927-99f5-ff8cb339462c/media_.m3u8
 - name: CNN Portugal
   group: Notícias
-  tvg_id: CNNPortugal.pt@HD
+  tvg_id: CNNPortugal.pt
   tvg_name: CNN Portugal
   logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CNN-Portugal.png
-  http_user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-    like Gecko) Chrome/149.0.0.0 Safari/537.3
+  http_user_agent: Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
   http_origin: https://tviplayer.iol.pt
-  http_referrer: https://tviplayer.iol.pt/
-  url: https://video-auth1.iol.pt/live_cnn/live_cnn/playlist.m3u8
+  http_referrer: https://tviplayer.iol.pt
+  url: https://github.com/LITUATUI/M3UPT/raw/main/M3U/CNN_Portugal.m3u8
 - name: CNN Brasil
   group: Notícias
   tvg_id: CNNBrasil.br@HD
   tvg_name: CNN Brasil
   logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CNN-Brasil.png
   url: https://videos01.fabricahost.com.br/cnn/cnn.smil/playlist.m3u8
+- name: France 24 (Français)
+  group: Notícias
+  tvg_id: France24.fr
+  tvg_name: France 24 Français
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png
+  url: https://static.france24.com/live/F24_FR_HI_HLS/live_tv.m3u8
+- name: France 24 (English)
+  group: Notícias
+  tvg_id: France24English.fr
+  tvg_name: France 24 English
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png
+  url: https://static.france24.com/live/F24_EN_HI_HLS/live_tv.m3u8
+- name: France 24 (Español)
+  group: Notícias
+  tvg_id: France24Spanish.fr
+  tvg_name: France 24 Español
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png
+  url: https://static.france24.com/live/F24_ES_HI_HLS/live_tv.m3u8
+- name: DW Deutsch
+  group: Notícias
+  tvg_id: DWDeutsch.de
+  tvg_name: DW Deutsch
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png
+  url: https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8
+- name: DW English
+  group: Notícias
+  tvg_id: DWEnglish.de
+  tvg_name: DW English
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png
+  url: https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
 - name: Euronews Português
   group: Notícias
-  tvg_id: EuronewsPortuguese.fr@HD
+  tvg_id: EuronewsPortuguese.fr
   tvg_name: Euronews (Português)
   logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png
   url: https://euronews-euronews-portuguese-1-pt.samsung.wurl.com/manifest/playlist.m3u8
 - name: Euronews English
   group: Notícias
-  tvg_id: EuronewsEnglish.fr@HD
+  tvg_id: EuronewsEnglish.fr
   tvg_name: Euronews (English)
   logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png
   url: https://euronews-euronews-world-1-eu.rakuten.wurl.com/manifest/playlist.m3u8

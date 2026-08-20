@@ -1,47 +1,53 @@
-#EXTM3U x-tvg-url="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/EPG/m3upt.xml.xz" url-tvg="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/EPG/m3upt.xml.xz"
+#EXTM3U url-tvg="https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/epg.xml.gz,https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-m3upt.xml.xz,https://raw.githubusercontent.com/Free-TV/IPTV/master/epg.xml.gz" x-tvg-url="https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/epg.xml.gz,https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-m3upt.xml.xz,https://raw.githubusercontent.com/Free-TV/IPTV/master/epg.xml.gz"
 
 
-#EXTINF:-1 tvg-id="RTP1.pt@HD" tvg-name="RTP 1" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP1.png" group-title="PT Geral",RTP 1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-#EXTVLCOPT:http-referrer=https://www.rtp.pt/
-https://streaming-live.rtp.pt/livertp1/rtp1.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="RTP1.pt" tvg-name="RTP 1" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP1.png" group-title="PT Geral",RTP 1
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
+#EXTVLCOPT:http-origin=https://www.rtp.pt
+#EXTVLCOPT:http-referrer=https://www.rtp.pt/play/direto/rtp1
+https://streaming-live.rtp.pt/liverepeater/smil:rtp1HD.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="RTP2.pt@HD" tvg-name="RTP 2" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP2.png" group-title="PT Geral",RTP 2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-#EXTVLCOPT:http-referrer=https://www.rtp.pt/
-https://streaming-live.rtp.pt/livertp2/rtp2.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="RTP2.pt" tvg-name="RTP 2" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP2.png" group-title="PT Geral",RTP 2
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
+#EXTVLCOPT:http-origin=https://www.rtp.pt
+#EXTVLCOPT:http-referrer=https://www.rtp.pt/play/direto/rtp2
+https://streaming-live.rtp.pt/liverepeater/smil:rtp2HD.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="SIC.pt@HD" tvg-name="SIC" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SIC.png" group-title="PT Geral",SIC
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-#EXTVLCOPT:http-referrer=https://optotv.sic.pt/
-#EXTVLCOPT:http-origin=https://optotv.sic.pt
-https://live-opto.impresa.pt/live/sic/sic.m3u8
+#EXTINF:-1 tvg-id="SIC.pt" tvg-name="SIC" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SIC.png" group-title="PT Geral",SIC
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
+#EXTVLCOPT:http-origin=https://sic.pt
+#EXTVLCOPT:http-referrer=https://opto.sic.pt/
+https://production-fast-sic.content.okast.tv/fa2e8c4385712f9ad2ea37aa47087612/channels/d9070446-8448-455e-8075-773b1ba12562/3421255e-5683-4927-99f5-ff8cb339462c/media_.m3u8
 
-#EXTINF:-1 tvg-id="TVI.pt@HD" tvg-name="TVI" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TVI.png" group-title="PT Geral",TVI
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-#EXTVLCOPT:http-referrer=https://tviplayer.iol.pt/
+#EXTINF:-1 tvg-id="TVI.pt" tvg-name="TVI" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TVI.png" group-title="PT Geral",TVI
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
 #EXTVLCOPT:http-origin=https://tviplayer.iol.pt
-https://video-auth1.iol.pt/live_tvi/live_tvi/playlist.m3u8
+#EXTVLCOPT:http-referrer=https://tviplayer.iol.pt
+https://github.com/LITUATUI/M3UPT/raw/main/M3U/TVI.m3u8
 
-#EXTINF:-1 tvg-id="RTPMemoria.pt@HD" tvg-name="RTP Memória" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Memoria.png" group-title="PT Geral",RTP Memória
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-#EXTVLCOPT:http-referrer=https://www.rtp.pt/
-https://streaming-live.rtp.pt/livertpmemoria/rtpmemoria.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="RTPMemoria.pt" tvg-name="RTP Memória" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Memoria.png" group-title="PT Geral",RTP Memória
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
+#EXTVLCOPT:http-origin=https://www.rtp.pt
+#EXTVLCOPT:http-referrer=https://www.rtp.pt/play/direto/rtpmemoria
+https://streaming-live.rtp.pt/liverepeater/smil:rtpmemoriaHD.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="RTPMadeira.pt@HD" tvg-name="RTP Madeira" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Madeira.png" group-title="PT Geral",RTP Madeira
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-#EXTVLCOPT:http-referrer=https://www.rtp.pt/
-https://streaming-live.rtp.pt/livertpmadeira/rtpmadeira.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="RTPMadeira.pt" tvg-name="RTP Madeira" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Madeira.png" group-title="PT Geral",RTP Madeira
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
+#EXTVLCOPT:http-origin=https://www.rtp.pt
+#EXTVLCOPT:http-referrer=https://www.rtp.pt/play/direto/rtpmadeira
+https://streaming-live.rtp.pt/liverepeater/smil:rtpmadeiraHD.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="RTPAcores.pt@HD" tvg-name="RTP Açores" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Acores.png" group-title="PT Geral",RTP Açores
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-#EXTVLCOPT:http-referrer=https://www.rtp.pt/
-https://streaming-live.rtp.pt/livertpacores/rtpacores.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="RTPAcores.pt" tvg-name="RTP Açores" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Acores.png" group-title="PT Geral",RTP Açores
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
+#EXTVLCOPT:http-origin=https://www.rtp.pt
+#EXTVLCOPT:http-referrer=https://www.rtp.pt/play/direto/rtpacores
+https://streaming-live.rtp.pt/liverepeater/smil:rtpacoresHD.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="RTPAfrica.pt@HD" tvg-name="RTP África" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Africa.png" group-title="PT Geral",RTP África
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-#EXTVLCOPT:http-referrer=https://www.rtp.pt/
-https://streaming-live.rtp.pt/livertpafrica/rtpafrica.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="RTPAfrica.pt" tvg-name="RTP África" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Africa.png" group-title="PT Geral",RTP África
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
+#EXTVLCOPT:http-origin=https://www.rtp.pt
+#EXTVLCOPT:http-referrer=https://www.rtp.pt/play/direto/rtpafrica
+https://streaming-live.rtp.pt/liverepeater/smil:rtpafricaHD.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-id="TVM.mz" tvg-name="TVM" tvg-logo="https://i.imgur.com/gKjW2tA.png" group-title="MZ Geral",TVM (Televisão de Moçambique)
 https://stream.tvm.co.mz/hls/tvm/playlist.m3u8
@@ -52,44 +58,60 @@ https://www.khuwemultimedia.com/hls/mntv/mntv.m3u8
 #EXTINF:-1 tvg-id="TVVitoria.mz" tvg-name="TV Vitória" tvg-logo="https://i.imgur.com/Qh1sQo1.png" group-title="MZ Geral",TV Vitória Moçambique
 https://stmv1.srvif.com/tvvitoriamz/tvvitoriamz/playlist.m3u8
 
-#EXTINF:-1 tvg-id="RTP3.pt@HD" tvg-name="RTP 3" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP3.png" group-title="Notícias",RTP 3
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-#EXTVLCOPT:http-referrer=https://www.rtp.pt/
-https://streaming-live.rtp.pt/livertp3/rtp3.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="RTP3.pt" tvg-name="RTP 3" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP3.png" group-title="Notícias",RTP 3
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
+#EXTVLCOPT:http-origin=https://www.rtp.pt
+#EXTVLCOPT:http-referrer=https://www.rtp.pt/play/direto/rtp3
+https://streaming-live.rtp.pt/liverepeater/smil:rtp3HD.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="SICNoticias.pt@HD" tvg-name="SIC Notícias" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SIC-Noticias.png" group-title="Notícias",SIC Notícias
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-#EXTVLCOPT:http-referrer=https://optotv.sic.pt/
-#EXTVLCOPT:http-origin=https://optotv.sic.pt
-https://live-opto.impresa.pt/live/sicn/sicn.m3u8
+#EXTINF:-1 tvg-id="SICNoticias.pt" tvg-name="SIC Notícias" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SIC-Noticias.png" group-title="Notícias",SIC Notícias
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
+#EXTVLCOPT:http-origin=https://sic.pt
+#EXTVLCOPT:http-referrer=https://opto.sic.pt/
+https://production-fast-sic.content.okast.tv/fa2e8c4385712f9ad2ea37aa47087612/channels/d9070446-8448-455e-8075-773b1ba12562/3421255e-5683-4927-99f5-ff8cb339462c/media_.m3u8
 
-#EXTINF:-1 tvg-id="CNNPortugal.pt@HD" tvg-name="CNN Portugal" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CNN-Portugal.png" group-title="Notícias",CNN Portugal
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-#EXTVLCOPT:http-referrer=https://tviplayer.iol.pt/
+#EXTINF:-1 tvg-id="CNNPortugal.pt" tvg-name="CNN Portugal" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CNN-Portugal.png" group-title="Notícias",CNN Portugal
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
 #EXTVLCOPT:http-origin=https://tviplayer.iol.pt
-https://video-auth1.iol.pt/live_cnn/live_cnn/playlist.m3u8
+#EXTVLCOPT:http-referrer=https://tviplayer.iol.pt
+https://github.com/LITUATUI/M3UPT/raw/main/M3U/CNN_Portugal.m3u8
 
 #EXTINF:-1 tvg-id="CNNBrasil.br@HD" tvg-name="CNN Brasil" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CNN-Brasil.png" group-title="Notícias",CNN Brasil
 https://videos01.fabricahost.com.br/cnn/cnn.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="EuronewsPortuguese.fr@HD" tvg-name="Euronews (Português)" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png" group-title="Notícias",Euronews Português
+#EXTINF:-1 tvg-id="France24.fr" tvg-name="France 24 Français" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png" group-title="Notícias",France 24 (Français)
+https://static.france24.com/live/F24_FR_HI_HLS/live_tv.m3u8
+
+#EXTINF:-1 tvg-id="France24English.fr" tvg-name="France 24 English" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png" group-title="Notícias",France 24 (English)
+https://static.france24.com/live/F24_EN_HI_HLS/live_tv.m3u8
+
+#EXTINF:-1 tvg-id="France24Spanish.fr" tvg-name="France 24 Español" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png" group-title="Notícias",France 24 (Español)
+https://static.france24.com/live/F24_ES_HI_HLS/live_tv.m3u8
+
+#EXTINF:-1 tvg-id="DWDeutsch.de" tvg-name="DW Deutsch" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png" group-title="Notícias",DW Deutsch
+https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8
+
+#EXTINF:-1 tvg-id="DWEnglish.de" tvg-name="DW English" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png" group-title="Notícias",DW English
+https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
+
+#EXTINF:-1 tvg-id="EuronewsPortuguese.fr" tvg-name="Euronews (Português)" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png" group-title="Notícias",Euronews Português
 https://euronews-euronews-portuguese-1-pt.samsung.wurl.com/manifest/playlist.m3u8
 
-#EXTINF:-1 tvg-id="EuronewsEnglish.fr@HD" tvg-name="Euronews (English)" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png" group-title="Notícias",Euronews English
+#EXTINF:-1 tvg-id="EuronewsEnglish.fr" tvg-name="Euronews (English)" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png" group-title="Notícias",Euronews English
 https://euronews-euronews-world-1-eu.rakuten.wurl.com/manifest/playlist.m3u8
 
 #EXTINF:-1 tvg-id="Canal11.pt@HD" tvg-name="Canal 11" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Canal11.png" group-title="Desporto",Canal 11
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3"
 #EXTVLCOPT:http-referrer=https://canal11.pt/
 https://d10r248w3452pe.cloudfront.net/live/eds/canal11_clean/live.m3u8
 
 #EXTINF:-1 tvg-id="SportingTV.pt@HD" tvg-name="Sporting TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Sporting-TV.png" group-title="Desporto",Sporting TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3"
 #EXTVLCOPT:http-referrer=https://www.sporting.pt/
 https://video-auth1.iol.pt/live_sporting/live_sporting/playlist.m3u8
 
 #EXTINF:-1 tvg-id="ABolaTV.pt@HD" tvg-name="A Bola TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/A-Bola-TV.png" group-title="Desporto",A Bola TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3"
 #EXTVLCOPT:http-referrer=https://www.abola.pt/
 https://video-auth1.iol.pt/live_abolatv/live_abolatv/playlist.m3u8
 
@@ -244,15 +266,33 @@ https://takeoff.jetstre.am/?account=atvijf&file=live&output=playlist.m3u8&protoc
 https://takeoff.jetstre.am/?account=nhnieuws&file=live&output=playlist.m3u8&protocol=https&service=wowza&type=live
 
 #EXTINF:-1 tvg-id="PortoCanal.pt@HD" tvg-name="Porto Canal" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Porto-Canal.png" group-title="Regional & Local",Porto Canal
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3"
 #EXTVLCOPT:http-referrer=https://portocanal.sapo.pt/
 https://video-auth6.iol.pt/live_portocanal/live_portocanal/playlist.m3u8
 
-#EXTINF:-1 tvg-id="KuriakosCine.pt@HD" tvg-name="Kuriakos Cine" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Kuriakos-Cine.png" group-title="Filmes & Docs",Kuriakos Cine
+#EXTINF:-1 tvg-id="Arte.fr" tvg-name="ARTE" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/arte.png" group-title="Filmes & Docs",ARTE (Français / Deutsch)
+https://artesimulcast.akamaized.net/hls/live/2031003/artelive_fr/index.m3u8
+
+#EXTINF:-1 tvg-id="DasErste.de" tvg-name="Das Erste" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Das-Erste.png" group-title="Filmes & Docs",Das Erste (ARD Germany)
+https://daserste-live.ard-mcdn.de/daserste/live/hls/de/master.m3u8
+
+#EXTINF:-1 tvg-id="ZDF.de" tvg-name="ZDF" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/zdf.png" group-title="Filmes & Docs",ZDF (Germany)
+https://zdf-hls-15.akamaized.net/hls/live/2016498/de/veryhigh/master.m3u8
+
+#EXTINF:-1 tvg-id="3sat.de" tvg-name="3sat" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/3sat.png" group-title="Filmes & Docs",3sat (DACH Cultural)
+https://zdf-hls-18.akamaized.net/hls/live/2016501/dach/veryhigh/master.m3u8
+
+#EXTINF:-1 tvg-id="Phoenix.de" tvg-name="Phoenix" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/phoenix.png" group-title="Filmes & Docs",Phoenix (Dokumentationen)
+https://zdf-hls-19.akamaized.net/hls/live/2016502/de/veryhigh/master.m3u8
+
+#EXTINF:-1 tvg-id="TV5Monde.fr" tvg-name="TV5Monde" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tv5monde.png" group-title="Filmes & Docs",TV5Monde Info (Francophonie)
+https://ott.tv5monde.com/Content/HLS/Live/channel(info)/index.m3u8
+
+#EXTINF:-1 tvg-id="KuriakosCine.pt" tvg-name="Kuriakos Cine" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Kuriakos-Cine.png" group-title="Filmes & Docs",Kuriakos Cine
 https://w2.manasat.com/kcine/kcine.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-id="ARTV.pt@HD" tvg-name="ARTV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/AR-TV.png" group-title="Cívico & Parlamento",ARTV (Canal Parlamento PT)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-user-agent="Mozilla/5.0"
 https://canalparlamentolivestream.video.ar.parlamento.pt/artv/live/playlist.m3u8
 
 #EXTINF:-1 tvg-id="TweedeKamerPlenair.nl" tvg-name="Tweede Kamer Plenair" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png" group-title="Cívico & Parlamento",Tweede Kamer: Plenaire zaal (NL)
@@ -524,3 +564,18 @@ https://stream.live.vc.bbcmedia.co.uk/bbc_6music
 
 #EXTINF:-1 tvg-id="KEXP.us" tvg-name="KEXP" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/kexp.png" group-title="Rádio Global" radio="true",KEXP 90.3 FM (Seattle)
 https://kexp.streamguys1.com/kexp160.aac
+
+#EXTINF:-1 tvg-id="Muzaiko.eo" tvg-name="Muzaiko Esperanto" tvg-logo="https://i.imgur.com/G5v92yG.png" group-title="Rádio Global" radio="true",Muzaiko (24/7 Esperanto Radio)
+http://fluo.muzaiko.saluton.dk:8000/radio.mp3
+
+#EXTINF:-1 tvg-id="RadioHabanaCuba.eo" tvg-name="Radio Habana Cuba Esperanto" tvg-logo="https://i.imgur.com/G5v92yG.png" group-title="Rádio Global" radio="true",Radio Habana Cuba (Esperanto)
+https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/McW3fLhs
+
+#EXTINF:-1 tvg-id="BokRadio.za" tvg-name="Bok Radio Afrikaans" tvg-logo="https://i.imgur.com/k7F8Q4s.png" group-title="Rádio Global" radio="true",Bok Radio 98.9 FM (Afrikaans)
+http://bokradio.highquality.radiostream.co.za/
+
+#EXTINF:-1 tvg-id="BosveldStereo.za" tvg-name="Bosveld Stereo Afrikaans" tvg-logo="https://i.imgur.com/k7F8Q4s.png" group-title="Rádio Global" radio="true",Bosveld Stereo 107.5 FM (Afrikaans)
+http://capeant.antfarm.co.za:8000/Bosveld
+
+#EXTINF:-1 tvg-id="FineMusicRadio.za" tvg-name="Fine Music Radio" tvg-logo="https://i.imgur.com/k7F8Q4s.png" group-title="Rádio Global" radio="true",Fine Music Radio (Cape Town Classical)
+https://edge.iono.fm/xhls/fmr_live_high.m3u8
