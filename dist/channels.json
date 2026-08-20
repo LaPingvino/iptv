@@ -623,38 +623,6 @@
     "url": "https://artesimulcast.akamaized.net/hls/live/2031003/artelive_fr/index.m3u8"
   },
   {
-    "name": "Das Erste (ARD Germany)",
-    "group": "Filmes & Docs",
-    "tvg_id": "DasErste.de",
-    "tvg_name": "Das Erste",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Das-Erste.png",
-    "url": "https://daserste-live.ard-mcdn.de/daserste/live/hls/int/master.m3u8"
-  },
-  {
-    "name": "ZDF (Germany)",
-    "group": "Filmes & Docs",
-    "tvg_id": "ZDF.de",
-    "tvg_name": "ZDF",
-    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/zdf.png",
-    "url": "https://zdf-hls-15.akamaized.net/hls/live/2016498/de/veryhigh/master.m3u8"
-  },
-  {
-    "name": "3sat (DACH Cultural)",
-    "group": "Filmes & Docs",
-    "tvg_id": "3sat.de",
-    "tvg_name": "3sat",
-    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/3sat.png",
-    "url": "https://zdf-hls-18.akamaized.net/hls/live/2016501/dach/veryhigh/master.m3u8"
-  },
-  {
-    "name": "Phoenix (Dokumentationen)",
-    "group": "Filmes & Docs",
-    "tvg_id": "Phoenix.de",
-    "tvg_name": "Phoenix",
-    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/phoenix.png",
-    "url": "https://zdf-hls-19.akamaized.net/hls/live/2016502/de/veryhigh/master.m3u8"
-  },
-  {
     "name": "Kuriakos Cine",
     "group": "Filmes & Docs",
     "tvg_id": "KuriakosCine.pt",
