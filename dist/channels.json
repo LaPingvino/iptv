@@ -615,14 +615,6 @@
     "url": "https://kiefte.eu/iptv/youtube/@npo3fm"
   },
   {
-    "name": "ARTE (Français / Europe)",
-    "group": "Filmes & Docs",
-    "tvg_id": "Arte.fr",
-    "tvg_name": "ARTE",
-    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/arte.png",
-    "url": "https://artesimulcast.akamaized.net/hls/live/2031003/artelive_fr/index.m3u8"
-  },
-  {
     "name": "Das Erste (ARD Germany)",
     "group": "Filmes & Docs",
     "tvg_id": "DasErste.de",
