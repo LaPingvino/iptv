@@ -19,7 +19,7 @@
     "http_user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0",
     "http_origin": "https://www.rtp.pt",
     "http_referrer": "https://www.rtp.pt/play/direto/rtp2",
-    "url": "https://streaming-live.rtp.pt/liverepeater/smil:rtpClean2HD.smil/playlist.m3u8"
+    "url": "https://streaming-live.rtp.pt/liverepeater/rtp2HD.smil/playlist.m3u8"
   },
   {
     "name": "SIC",
@@ -52,7 +52,7 @@
     "http_user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0",
     "http_origin": "https://www.rtp.pt",
     "http_referrer": "https://www.rtp.pt/play/direto/rtpmemoria",
-    "url": "https://streaming-live.rtp.pt/liverepeater/rtpmemoriaHD.smil/playlist.m3u8"
+    "url": "https://streaming-live.rtp.pt/liverepeater/rtpmem.smil/playlist.m3u8"
   },
   {
     "name": "RTP Madeira",
@@ -62,8 +62,8 @@
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Madeira.png",
     "http_user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0",
     "http_origin": "https://www.rtp.pt",
-    "http_referrer": "https://www.rtp.pt/play/direto/rtpmadeira",
-    "url": "https://streaming-live.rtp.pt/liverepeater/smil:rtpmadeira.smil/playlist.m3u8"
+    "http_referrer": "https://www.rtp.pt/play/direto/rtmadeira",
+    "url": "https://streaming-live.rtp.pt/liverepeater/rtpmadeira.smil/playlist.m3u8"
   },
   {
     "name": "RTP Açores",
@@ -85,7 +85,7 @@
     "http_user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0",
     "http_origin": "https://www.rtp.pt",
     "http_referrer": "https://www.rtp.pt/play/direto/rtpafrica",
-    "url": "https://streaming-live.rtp.pt/liverepeater/rtpafricaHD.smil/playlist.m3u8"
+    "url": "https://streaming-live.rtp.pt/liverepeater/rtpafrica.smil/playlist.m3u8"
   },
   {
     "name": "TVM (Televisão de Moçambique)",
@@ -178,6 +178,14 @@
     "group": "Notícias",
     "tvg_id": "DWDeutsch.de",
     "tvg_name": "DW Deutsch",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png",
+    "url": "https://dwamdstream101.akamaized.net/hls/live/2015524/dwstream101/index.m3u8"
+  },
+  {
+    "name": "DW Español",
+    "group": "Notícias",
+    "tvg_id": "DWEspanol.de",
+    "tvg_name": "DW Español",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png",
     "url": "https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8"
   },

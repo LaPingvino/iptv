@@ -11,7 +11,7 @@ https://streaming-live.rtp.pt/liverepeater/smil:rtp1HD.smil/playlist.m3u8
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
 #EXTVLCOPT:http-origin=https://www.rtp.pt
 #EXTVLCOPT:http-referrer=https://www.rtp.pt/play/direto/rtp2
-https://streaming-live.rtp.pt/liverepeater/smil:rtpClean2HD.smil/playlist.m3u8
+https://streaming-live.rtp.pt/liverepeater/rtp2HD.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-id="SIC.pt" tvg-name="SIC" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SIC.png" group-title="PT Geral",SIC
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
@@ -29,13 +29,13 @@ https://github.com/LITUATUI/M3UPT/raw/main/M3U/TVI.m3u8
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
 #EXTVLCOPT:http-origin=https://www.rtp.pt
 #EXTVLCOPT:http-referrer=https://www.rtp.pt/play/direto/rtpmemoria
-https://streaming-live.rtp.pt/liverepeater/rtpmemoriaHD.smil/playlist.m3u8
+https://streaming-live.rtp.pt/liverepeater/rtpmem.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-id="RTPMadeira.pt" tvg-name="RTP Madeira" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Madeira.png" group-title="PT Geral",RTP Madeira
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
 #EXTVLCOPT:http-origin=https://www.rtp.pt
-#EXTVLCOPT:http-referrer=https://www.rtp.pt/play/direto/rtpmadeira
-https://streaming-live.rtp.pt/liverepeater/smil:rtpmadeira.smil/playlist.m3u8
+#EXTVLCOPT:http-referrer=https://www.rtp.pt/play/direto/rtmadeira
+https://streaming-live.rtp.pt/liverepeater/rtpmadeira.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-id="RTPAcores.pt" tvg-name="RTP Açores" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Acores.png" group-title="PT Geral",RTP Açores
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
@@ -47,7 +47,7 @@ https://streaming-live.rtp.pt/liverepeater/rtpacoresHD.smil/playlist.m3u8
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
 #EXTVLCOPT:http-origin=https://www.rtp.pt
 #EXTVLCOPT:http-referrer=https://www.rtp.pt/play/direto/rtpafrica
-https://streaming-live.rtp.pt/liverepeater/rtpafricaHD.smil/playlist.m3u8
+https://streaming-live.rtp.pt/liverepeater/rtpafrica.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-id="TVM.mz" tvg-name="TVM" group-title="MZ Geral",TVM (Televisão de Moçambique)
 https://stream.tvm.co.mz/hls/tvm/playlist.m3u8
@@ -89,6 +89,9 @@ https://static.france24.com/live/F24_EN_HI_HLS/live_tv.m3u8
 https://static.france24.com/live/F24_ES_HI_HLS/live_tv.m3u8
 
 #EXTINF:-1 tvg-id="DWDeutsch.de" tvg-name="DW Deutsch" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png" group-title="Notícias",DW Deutsch
+https://dwamdstream101.akamaized.net/hls/live/2015524/dwstream101/index.m3u8
+
+#EXTINF:-1 tvg-id="DWEspanol.de" tvg-name="DW Español" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png" group-title="Notícias",DW Español
 https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8
 
 #EXTINF:-1 tvg-id="DWEnglish.de" tvg-name="DW English" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png" group-title="Notícias",DW English

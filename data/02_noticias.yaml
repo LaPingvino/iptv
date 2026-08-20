@@ -54,6 +54,12 @@
   tvg_id: DWDeutsch.de
   tvg_name: DW Deutsch
   logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png
+  url: https://dwamdstream101.akamaized.net/hls/live/2015524/dwstream101/index.m3u8
+- name: DW Español
+  group: Notícias
+  tvg_id: DWEspanol.de
+  tvg_name: DW Español
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png
   url: https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8
 - name: DW English
   group: Notícias

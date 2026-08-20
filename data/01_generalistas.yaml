@@ -15,7 +15,7 @@
   http_user_agent: Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
   http_origin: https://www.rtp.pt
   http_referrer: https://www.rtp.pt/play/direto/rtp2
-  url: https://streaming-live.rtp.pt/liverepeater/smil:rtpClean2HD.smil/playlist.m3u8
+  url: https://streaming-live.rtp.pt/liverepeater/rtp2HD.smil/playlist.m3u8
 - name: SIC
   group: PT Geral
   tvg_id: SIC.pt
@@ -42,7 +42,7 @@
   http_user_agent: Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
   http_origin: https://www.rtp.pt
   http_referrer: https://www.rtp.pt/play/direto/rtpmemoria
-  url: https://streaming-live.rtp.pt/liverepeater/rtpmemoriaHD.smil/playlist.m3u8
+  url: https://streaming-live.rtp.pt/liverepeater/rtpmem.smil/playlist.m3u8
 - name: RTP Madeira
   group: PT Geral
   tvg_id: RTPMadeira.pt
@@ -50,8 +50,8 @@
   logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Madeira.png
   http_user_agent: Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
   http_origin: https://www.rtp.pt
-  http_referrer: https://www.rtp.pt/play/direto/rtpmadeira
-  url: https://streaming-live.rtp.pt/liverepeater/smil:rtpmadeira.smil/playlist.m3u8
+  http_referrer: https://www.rtp.pt/play/direto/rtmadeira
+  url: https://streaming-live.rtp.pt/liverepeater/rtpmadeira.smil/playlist.m3u8
 - name: RTP Açores
   group: PT Geral
   tvg_id: RTPAcores.pt
@@ -69,7 +69,7 @@
   http_user_agent: Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
   http_origin: https://www.rtp.pt
   http_referrer: https://www.rtp.pt/play/direto/rtpafrica
-  url: https://streaming-live.rtp.pt/liverepeater/rtpafricaHD.smil/playlist.m3u8
+  url: https://streaming-live.rtp.pt/liverepeater/rtpafrica.smil/playlist.m3u8
 - name: TVM (Televisão de Moçambique)
   group: MZ Geral
   tvg_id: TVM.mz
