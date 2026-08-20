@@ -1162,6 +1162,55 @@
     "url": "https://stream.100p.nl/web03_mp3"
   },
   {
+    "name": "Keizerstad Classics (Nijmegen/Arnhem)",
+    "group": "NL Rádio",
+    "tvg_id": "KeizerstadClassics.nl",
+    "tvg_name": "Keizerstad Classics",
+    "url": "http://server-06.stream-server.nl:8800/;stream.mp3"
+  },
+  {
+    "name": "Radio Decibel (Randstad)",
+    "group": "NL Rádio",
+    "tvg_id": "RadioDecibel.nl",
+    "tvg_name": "Radio Decibel",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIODECIBEL.mp3"
+  },
+  {
+    "name": "RadioNL",
+    "group": "NL Rádio",
+    "tvg_id": "RadioNL.nl",
+    "tvg_name": "RadioNL",
+    "url": "https://stream.radionl.fm/radionl"
+  },
+  {
+    "name": "Waterstad FM (Friesland)",
+    "group": "NL Rádio",
+    "tvg_id": "WaterstadFM.nl",
+    "tvg_name": "Waterstad FM",
+    "url": "https://stream.waterstadfm.nl/waterstadfm"
+  },
+  {
+    "name": "Freez FM (Noord-NL)",
+    "group": "NL Rádio",
+    "tvg_id": "FreezFM.nl",
+    "tvg_name": "Freez FM",
+    "url": "https://stream.freezfm.nl/freezfm"
+  },
+  {
+    "name": "Delta FM (Twente)",
+    "group": "NL Rádio",
+    "tvg_id": "DeltaFM.nl",
+    "tvg_name": "Delta FM",
+    "url": "https://stream.deltafm.nl/deltafm"
+  },
+  {
+    "name": "Studio 040 (Eindhoven)",
+    "group": "NL Rádio",
+    "tvg_id": "Studio040.nl",
+    "tvg_name": "Studio 040",
+    "url": "https://stream.studio040.nl/studio040"
+  },
+  {
     "name": "Rádio Moçambique - Antena Nacional",
     "group": "MZ Rádio",
     "tvg_id": "RMAntenaNacional.mz",

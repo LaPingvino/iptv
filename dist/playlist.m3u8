@@ -470,6 +470,27 @@ https://stream.100p.nl/web02_mp3
 #EXTINF:-1 tvg-id="100pNLFeest.nl" tvg-name="100% NL Feest" group-title="NL Rádio" radio="true",100% NL Feest
 https://stream.100p.nl/web03_mp3
 
+#EXTINF:-1 tvg-id="KeizerstadClassics.nl" tvg-name="Keizerstad Classics" group-title="NL Rádio" radio="true",Keizerstad Classics (Nijmegen/Arnhem)
+http://server-06.stream-server.nl:8800/;stream.mp3
+
+#EXTINF:-1 tvg-id="RadioDecibel.nl" tvg-name="Radio Decibel" group-title="NL Rádio" radio="true",Radio Decibel (Randstad)
+https://playerservices.streamtheworld.com/api/livestream-redirect/RADIODECIBEL.mp3
+
+#EXTINF:-1 tvg-id="RadioNL.nl" tvg-name="RadioNL" group-title="NL Rádio" radio="true",RadioNL
+https://stream.radionl.fm/radionl
+
+#EXTINF:-1 tvg-id="WaterstadFM.nl" tvg-name="Waterstad FM" group-title="NL Rádio" radio="true",Waterstad FM (Friesland)
+https://stream.waterstadfm.nl/waterstadfm
+
+#EXTINF:-1 tvg-id="FreezFM.nl" tvg-name="Freez FM" group-title="NL Rádio" radio="true",Freez FM (Noord-NL)
+https://stream.freezfm.nl/freezfm
+
+#EXTINF:-1 tvg-id="DeltaFM.nl" tvg-name="Delta FM" group-title="NL Rádio" radio="true",Delta FM (Twente)
+https://stream.deltafm.nl/deltafm
+
+#EXTINF:-1 tvg-id="Studio040.nl" tvg-name="Studio 040" group-title="NL Rádio" radio="true",Studio 040 (Eindhoven)
+https://stream.studio040.nl/studio040
+
 #EXTINF:-1 tvg-id="RMAntenaNacional.mz" tvg-name="RM Antena Nacional" group-title="MZ Rádio" radio="true",Rádio Moçambique - Antena Nacional
 http://node.stream-africa.com:8000/AntenaNacional
 
