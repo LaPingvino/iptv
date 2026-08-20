@@ -160,12 +160,6 @@ https://a-cdn.klowdtv.com/live3/euronews_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="EuronewsFrench.fr" tvg-name="Euronews (Français)" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png" group-title="Notícias",Euronews Français
 https://2f6c5bf4.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheHhUVi1ldV9FdXJvbmV3c0ZyYW5jYWlzX0hMUw/playlist.m3u8
 
-#EXTINF:-1 tvg-id="NOSNieuws.nl" tvg-name="NOS Nieuws" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nos.png" group-title="Notícias",NOS Nieuws (Live)
-https://kiefte.eu/iptv/youtube/@NOS
-
-#EXTINF:-1 tvg-id="NOSJeugdjournaal.nl" tvg-name="NOS Jeugdjournaal" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nos.png" group-title="Notícias",NOS Jeugdjournaal (Live)
-https://kiefte.eu/iptv/youtube/@jeugdjournaal
-
 #EXTINF:-1 tvg-id="NHKWorldJapan.jp@HD" tvg-name="NHK World Japan" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nhkworld.png" group-title="Notícias",NHK World-Japan (English 1080p)
 https://media-tyo.hls.nhkworld.jp/hls/w/live/master.m3u8
 

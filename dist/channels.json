@@ -353,22 +353,6 @@
     "url": "https://2f6c5bf4.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheHhUVi1ldV9FdXJvbmV3c0ZyYW5jYWlzX0hMUw/playlist.m3u8"
   },
   {
-    "name": "NOS Nieuws (Live)",
-    "group": "Notícias",
-    "tvg_id": "NOSNieuws.nl",
-    "tvg_name": "NOS Nieuws",
-    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nos.png",
-    "url": "https://kiefte.eu/iptv/youtube/@NOS"
-  },
-  {
-    "name": "NOS Jeugdjournaal (Live)",
-    "group": "Notícias",
-    "tvg_id": "NOSJeugdjournaal.nl",
-    "tvg_name": "NOS Jeugdjournaal",
-    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nos.png",
-    "url": "https://kiefte.eu/iptv/youtube/@jeugdjournaal"
-  },
-  {
     "name": "NHK World-Japan (English 1080p)",
     "group": "Notícias",
     "tvg_id": "NHKWorldJapan.jp@HD",
