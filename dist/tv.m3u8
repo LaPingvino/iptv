@@ -157,12 +157,6 @@ https://media-tyo.hls.nhkworld.jp/hls/w/live/master.m3u8
 #EXTINF:-1 tvg-id="TVBrasil.br@HD" tvg-name="TV Brasil" group-title="Notícias",TV Brasil (EBC)
 https://tvbrasilinternacional-stream.ebc.com.br/index.m3u8
 
-#EXTINF:-1 tvg-id="ABCNews.au@HD" tvg-name="ABC News Australia" group-title="Notícias",ABC News Australia
-https://kiefte.eu/iptv/youtube/@abcnews
-
-#EXTINF:-1 tvg-id="PBSNewsHour.us@HD" tvg-name="PBS NewsHour" group-title="Notícias",PBS NewsHour (US)
-https://kiefte.eu/iptv/youtube/@PBSNewsHour
-
 #EXTINF:-1 tvg-id="RealMadridTV.es@HD" tvg-name="Real Madrid TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Real-Madrid-TV.png" group-title="Desporto",Real Madrid TV
 https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
 
@@ -268,9 +262,6 @@ https://kiefte.eu/iptv/youtube/@NPORadio2
 #EXTINF:-1 tvg-id="NPO3FMVisual.nl" tvg-name="NPO 3FM Visual" group-title="Música & Video",NPO 3FM (Visual & Serious Request)
 https://kiefte.eu/iptv/youtube/@npo3fm
 
-#EXTINF:-1 tvg-id="Eurovision.tv" tvg-name="Eurovision Song Contest" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/eurovision.png" group-title="Música & Video",Eurovision Song Contest (Live)
-https://kiefte.eu/iptv/youtube/@EurovisionSongContest
-
 #EXTINF:-1 tvg-id="Arte.fr" tvg-name="ARTE" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/arte.png" group-title="Filmes & Docs",ARTE (Français / Deutsch)
 https://artesimulcast.akamaized.net/hls/live/2031003/artelive_fr/index.m3u8
 
@@ -291,9 +282,6 @@ https://ott.tv5monde.com/Content/HLS/Live/channel(info)/index.m3u8
 
 #EXTINF:-1 tvg-id="KuriakosCine.pt" tvg-name="Kuriakos Cine" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Kuriakos-Cine.png" group-title="Filmes & Docs",Kuriakos Cine
 https://w2.manasat.com/kcine/kcine.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-id="NASATV.us@HD" tvg-name="NASA TV" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nasatv.png" group-title="Filmes & Docs",NASA TV HD (Space & Science)
-https://kiefte.eu/iptv/youtube/@NASA
 
 #EXTINF:-1 tvg-id="TV5MondeEurope.fr" tvg-name="TV5Monde Europe" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tv5monde.png" group-title="Filmes & Docs",TV5Monde Europe (1080p)
 https://ott.tv5monde.com/Content/HLS/Live/channel(europe)/index.m3u8
@@ -511,6 +499,24 @@ https://kiefte.eu/iptv/twitch/game/Trackmania
 
 #EXTINF:-1 tvg-id="Zeepkist.tv" tvg-name="Zeepkist Live" group-title="Indie & Variety Gaming",Zeepkist (Soapbox Physics Racing Live)
 https://kiefte.eu/iptv/twitch/game/Zeepkist
+
+#EXTINF:-1 tvg-id="NOSNieuws.nl@Live" tvg-name="NOS Nieuws Live" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/NOS-Journaal.png" group-title="Eventos ao Vivo",NOS Nieuws (Em Direto)
+https://kiefte.eu/iptv/youtube/@NOS
+
+#EXTINF:-1 tvg-id="NOSJeugdjournaal.nl@Live" tvg-name="NOS Jeugdjournaal Live" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/NOS-Jeugdjournaal.png" group-title="Eventos ao Vivo",NOS Jeugdjournaal (Em Direto)
+https://kiefte.eu/iptv/youtube/@jeugdjournaal
+
+#EXTINF:-1 tvg-id="PBSNewsHour.us@HD" tvg-name="PBS NewsHour" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/pbs.png" group-title="Eventos ao Vivo",PBS NewsHour (US / Em Direto)
+https://kiefte.eu/iptv/youtube/@PBSNewsHour
+
+#EXTINF:-1 tvg-id="ABCNews.au@HD" tvg-name="ABC News Australia" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/abcnews_au.png" group-title="Eventos ao Vivo",ABC News Australia (Em Direto)
+https://kiefte.eu/iptv/youtube/@abcnews
+
+#EXTINF:-1 tvg-id="Eurovision.tv" tvg-name="Eurovision Song Contest" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/eurovision.png" group-title="Eventos ao Vivo",Eurovision Song Contest (Em Direto)
+https://kiefte.eu/iptv/youtube/@EurovisionSongContest
+
+#EXTINF:-1 tvg-id="NASATV.us@HD" tvg-name="NASA TV HD" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/NASA.png" group-title="Eventos ao Vivo",NASA TV HD (Lançamentos & Espaço)
+https://kiefte.eu/iptv/youtube/@NASA
 
 #EXTINF:-1 tvg-id="TVManaMZ.mz" tvg-name="TV Maná Moçambique" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-Mocambique.png" group-title="Religião",TV Maná Moçambique
 https://w2.manasat.com/tvmana-mz/smil:tvmana-mz.smil/playlist.m3u8

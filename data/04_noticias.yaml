@@ -102,13 +102,3 @@
   tvg_id: TVBrasil.br@HD
   tvg_name: TV Brasil
   url: https://tvbrasilinternacional-stream.ebc.com.br/index.m3u8
-- name: ABC News Australia
-  group: Notícias
-  tvg_id: ABCNews.au@HD
-  tvg_name: ABC News Australia
-  url: https://kiefte.eu/iptv/youtube/@abcnews
-- name: PBS NewsHour (US)
-  group: Notícias
-  tvg_id: PBSNewsHour.us@HD
-  tvg_name: PBS NewsHour
-  url: https://kiefte.eu/iptv/youtube/@PBSNewsHour

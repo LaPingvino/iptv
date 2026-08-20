@@ -352,20 +352,6 @@
     "url": "https://tvbrasilinternacional-stream.ebc.com.br/index.m3u8"
   },
   {
-    "name": "ABC News Australia",
-    "group": "Notícias",
-    "tvg_id": "ABCNews.au@HD",
-    "tvg_name": "ABC News Australia",
-    "url": "https://kiefte.eu/iptv/youtube/@abcnews"
-  },
-  {
-    "name": "PBS NewsHour (US)",
-    "group": "Notícias",
-    "tvg_id": "PBSNewsHour.us@HD",
-    "tvg_name": "PBS NewsHour",
-    "url": "https://kiefte.eu/iptv/youtube/@PBSNewsHour"
-  },
-  {
     "name": "Real Madrid TV",
     "group": "Desporto",
     "tvg_id": "RealMadridTV.es@HD",
@@ -636,14 +622,6 @@
     "url": "https://kiefte.eu/iptv/youtube/@npo3fm"
   },
   {
-    "name": "Eurovision Song Contest (Live)",
-    "group": "Música & Video",
-    "tvg_id": "Eurovision.tv",
-    "tvg_name": "Eurovision Song Contest",
-    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/eurovision.png",
-    "url": "https://kiefte.eu/iptv/youtube/@EurovisionSongContest"
-  },
-  {
     "name": "ARTE (Français / Deutsch)",
     "group": "Filmes & Docs",
     "tvg_id": "Arte.fr",
@@ -698,14 +676,6 @@
     "tvg_name": "Kuriakos Cine",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Kuriakos-Cine.png",
     "url": "https://w2.manasat.com/kcine/kcine.smil/playlist.m3u8"
-  },
-  {
-    "name": "NASA TV HD (Space & Science)",
-    "group": "Filmes & Docs",
-    "tvg_id": "NASATV.us@HD",
-    "tvg_name": "NASA TV",
-    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nasatv.png",
-    "url": "https://kiefte.eu/iptv/youtube/@NASA"
   },
   {
     "name": "TV5Monde Europe (1080p)",
@@ -1232,6 +1202,54 @@
     "tvg_id": "Zeepkist.tv",
     "tvg_name": "Zeepkist Live",
     "url": "https://kiefte.eu/iptv/twitch/game/Zeepkist"
+  },
+  {
+    "name": "NOS Nieuws (Em Direto)",
+    "group": "Eventos ao Vivo",
+    "tvg_id": "NOSNieuws.nl@Live",
+    "tvg_name": "NOS Nieuws Live",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/NOS-Journaal.png",
+    "url": "https://kiefte.eu/iptv/youtube/@NOS"
+  },
+  {
+    "name": "NOS Jeugdjournaal (Em Direto)",
+    "group": "Eventos ao Vivo",
+    "tvg_id": "NOSJeugdjournaal.nl@Live",
+    "tvg_name": "NOS Jeugdjournaal Live",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/NOS-Jeugdjournaal.png",
+    "url": "https://kiefte.eu/iptv/youtube/@jeugdjournaal"
+  },
+  {
+    "name": "PBS NewsHour (US / Em Direto)",
+    "group": "Eventos ao Vivo",
+    "tvg_id": "PBSNewsHour.us@HD",
+    "tvg_name": "PBS NewsHour",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/pbs.png",
+    "url": "https://kiefte.eu/iptv/youtube/@PBSNewsHour"
+  },
+  {
+    "name": "ABC News Australia (Em Direto)",
+    "group": "Eventos ao Vivo",
+    "tvg_id": "ABCNews.au@HD",
+    "tvg_name": "ABC News Australia",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/abcnews_au.png",
+    "url": "https://kiefte.eu/iptv/youtube/@abcnews"
+  },
+  {
+    "name": "Eurovision Song Contest (Em Direto)",
+    "group": "Eventos ao Vivo",
+    "tvg_id": "Eurovision.tv",
+    "tvg_name": "Eurovision Song Contest",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/eurovision.png",
+    "url": "https://kiefte.eu/iptv/youtube/@EurovisionSongContest"
+  },
+  {
+    "name": "NASA TV HD (Lançamentos & Espaço)",
+    "group": "Eventos ao Vivo",
+    "tvg_id": "NASATV.us@HD",
+    "tvg_name": "NASA TV HD",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/NASA.png",
+    "url": "https://kiefte.eu/iptv/youtube/@NASA"
   },
   {
     "name": "TV Maná Moçambique",
