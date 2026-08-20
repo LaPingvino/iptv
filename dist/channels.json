@@ -337,6 +337,27 @@
     "url": "https://media-tyo.hls.nhkworld.jp/hls/w/live/master.m3u8"
   },
   {
+    "name": "TV Brasil (EBC)",
+    "group": "Notícias",
+    "tvg_id": "TVBrasil.br@HD",
+    "tvg_name": "TV Brasil",
+    "url": "https://kiefte.eu/iptv/youtube/@TVBrasil"
+  },
+  {
+    "name": "ABC News Australia",
+    "group": "Notícias",
+    "tvg_id": "ABCNews.au@HD",
+    "tvg_name": "ABC News Australia",
+    "url": "https://kiefte.eu/iptv/youtube/@abcnews"
+  },
+  {
+    "name": "PBS NewsHour (US)",
+    "group": "Notícias",
+    "tvg_id": "PBSNewsHour.us@HD",
+    "tvg_name": "PBS NewsHour",
+    "url": "https://kiefte.eu/iptv/youtube/@PBSNewsHour"
+  },
+  {
     "name": "Real Madrid TV",
     "group": "Desporto",
     "tvg_id": "RealMadridTV.es@HD",
@@ -679,6 +700,13 @@
     "url": "https://ott.tv5monde.com/Content/HLS/Live/channel(europe)/index.m3u8"
   },
   {
+    "name": "TV Cultura (São Paulo)",
+    "group": "Filmes & Docs",
+    "tvg_id": "TVCultura.br@HD",
+    "tvg_name": "TV Cultura",
+    "url": "https://kiefte.eu/iptv/youtube/@tvcultura"
+  },
+  {
     "name": "XON (Ede TV)",
     "group": "Regional & Local",
     "tvg_id": "XON.nl",
@@ -804,6 +832,20 @@
     "tvg_name": "BRUZZ TV",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/bruzz.png",
     "url": "https://stream.bruzz.be/live/tv/playlist.m3u8"
+  },
+  {
+    "name": "RTL Télé Lëtzebuerg (1080p)",
+    "group": "Regional & Local",
+    "tvg_id": "RTLTeleLetzebuerg.lu@HD",
+    "tvg_name": "RTL Tele Letzebuerg",
+    "url": "https://cdn.rtl.lu/live/tele/playlist.m3u8"
+  },
+  {
+    "name": "RTL Zwee (Lëtzebuerg)",
+    "group": "Regional & Local",
+    "tvg_id": "RTLZwee.lu@HD",
+    "tvg_name": "RTL Zwee",
+    "url": "https://cdn.rtl.lu/live/zwee/playlist.m3u8"
   },
   {
     "name": "ARTV (Canal Parlamento PT)",
@@ -1976,6 +2018,20 @@
     "url": "https://kexp.streamguys1.com/kexp160.aac"
   },
   {
+    "name": "Rai Radio 2 (Italia)",
+    "group": "Rádio Global",
+    "tvg_id": "RaiRadio2.it",
+    "tvg_name": "Rai Radio 2",
+    "url": "http://icestreaming.rai.it/2.mp3"
+  },
+  {
+    "name": "Rai Radio 3 (Cultura & Classica)",
+    "group": "Rádio Global",
+    "tvg_id": "RaiRadio3.it",
+    "tvg_name": "Rai Radio 3",
+    "url": "http://icestreaming.rai.it/3.mp3"
+  },
+  {
     "name": "Muzaiko (24/7 Esperanto Radio)",
     "group": "Rádio Global",
     "tvg_id": "Muzaiko.eo",
@@ -2009,5 +2065,12 @@
     "tvg_id": "FineMusicRadio.za",
     "tvg_name": "Fine Music Radio",
     "url": "https://edge.iono.fm/xhls/fmr_live_high.m3u8"
+  },
+  {
+    "name": "Radio 3ZZZ 92.3 FM (Melbourne / Esperanto)",
+    "group": "Rádio Global",
+    "tvg_id": "Radio3ZZZ.au",
+    "tvg_name": "Radio 3ZZZ Esperanto",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/3ZZZ.mp3"
   }
 ]

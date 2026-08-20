@@ -23,3 +23,8 @@
   tvg_id: FineMusicRadio.za
   tvg_name: Fine Music Radio
   url: https://edge.iono.fm/xhls/fmr_live_high.m3u8
+- name: Radio 3ZZZ 92.3 FM (Melbourne / Esperanto)
+  group: Rádio Global
+  tvg_id: Radio3ZZZ.au
+  tvg_name: Radio 3ZZZ Esperanto
+  url: https://playerservices.streamtheworld.com/api/livestream-redirect/3ZZZ.mp3

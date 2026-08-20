@@ -93,3 +93,13 @@
   tvg_name: BRUZZ TV
   logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/bruzz.png
   url: https://stream.bruzz.be/live/tv/playlist.m3u8
+- name: RTL Télé Lëtzebuerg (1080p)
+  group: Regional & Local
+  tvg_id: RTLTeleLetzebuerg.lu@HD
+  tvg_name: RTL Tele Letzebuerg
+  url: https://cdn.rtl.lu/live/tele/playlist.m3u8
+- name: RTL Zwee (Lëtzebuerg)
+  group: Regional & Local
+  tvg_id: RTLZwee.lu@HD
+  tvg_name: RTL Zwee
+  url: https://cdn.rtl.lu/live/zwee/playlist.m3u8

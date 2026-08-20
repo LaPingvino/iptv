@@ -154,6 +154,15 @@ https://kiefte.eu/iptv/youtube/@jeugdjournaal
 #EXTINF:-1 tvg-id="NHKWorldJapan.jp@HD" tvg-name="NHK World Japan" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nhkworld.png" group-title="Notícias",NHK World-Japan (English 1080p)
 https://media-tyo.hls.nhkworld.jp/hls/w/live/master.m3u8
 
+#EXTINF:-1 tvg-id="TVBrasil.br@HD" tvg-name="TV Brasil" group-title="Notícias",TV Brasil (EBC)
+https://kiefte.eu/iptv/youtube/@TVBrasil
+
+#EXTINF:-1 tvg-id="ABCNews.au@HD" tvg-name="ABC News Australia" group-title="Notícias",ABC News Australia
+https://kiefte.eu/iptv/youtube/@abcnews
+
+#EXTINF:-1 tvg-id="PBSNewsHour.us@HD" tvg-name="PBS NewsHour" group-title="Notícias",PBS NewsHour (US)
+https://kiefte.eu/iptv/youtube/@PBSNewsHour
+
 #EXTINF:-1 tvg-id="RealMadridTV.es@HD" tvg-name="Real Madrid TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Real-Madrid-TV.png" group-title="Desporto",Real Madrid TV
 https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
 
@@ -286,6 +295,9 @@ https://kiefte.eu/iptv/youtube/@NASA
 #EXTINF:-1 tvg-id="TV5MondeEurope.fr" tvg-name="TV5Monde Europe" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tv5monde.png" group-title="Filmes & Docs",TV5Monde Europe (1080p)
 https://ott.tv5monde.com/Content/HLS/Live/channel(europe)/index.m3u8
 
+#EXTINF:-1 tvg-id="TVCultura.br@HD" tvg-name="TV Cultura" group-title="Filmes & Docs",TV Cultura (São Paulo)
+https://kiefte.eu/iptv/youtube/@tvcultura
+
 #EXTINF:-1 tvg-id="XON.nl" tvg-name="XON Ede" group-title="Regional & Local",XON (Ede TV)
 https://ms7.mx-cd.net/tv/113-474263/EdeTV.smil/playlist.m3u8
 
@@ -333,6 +345,12 @@ https://takeoff.jetstre.am/?account=nhnieuws&file=live&output=playlist.m3u8&prot
 
 #EXTINF:-1 tvg-id="BruzzTV.be" tvg-name="BRUZZ TV" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/bruzz.png" group-title="Regional & Local",BRUZZ TV (Brussel)
 https://stream.bruzz.be/live/tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="RTLTeleLetzebuerg.lu@HD" tvg-name="RTL Tele Letzebuerg" group-title="Regional & Local",RTL Télé Lëtzebuerg (1080p)
+https://cdn.rtl.lu/live/tele/playlist.m3u8
+
+#EXTINF:-1 tvg-id="RTLZwee.lu@HD" tvg-name="RTL Zwee" group-title="Regional & Local",RTL Zwee (Lëtzebuerg)
+https://cdn.rtl.lu/live/zwee/playlist.m3u8
 
 #EXTINF:-1 tvg-id="ARTV.pt" tvg-name="ARTV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/AR-TV.png" group-title="Cívico & Parlamento",ARTV (Canal Parlamento PT)
 #EXTVLCOPT:http-user-agent="Mozilla/5.0"
@@ -803,6 +821,12 @@ https://stream.live.vc.bbcmedia.co.uk/bbc_6music
 #EXTINF:-1 tvg-id="KEXP.us" tvg-name="KEXP" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/kexp.png" group-title="Rádio Global" radio="true",KEXP 90.3 FM (Seattle)
 https://kexp.streamguys1.com/kexp160.aac
 
+#EXTINF:-1 tvg-id="RaiRadio2.it" tvg-name="Rai Radio 2" group-title="Rádio Global" radio="true",Rai Radio 2 (Italia)
+http://icestreaming.rai.it/2.mp3
+
+#EXTINF:-1 tvg-id="RaiRadio3.it" tvg-name="Rai Radio 3" group-title="Rádio Global" radio="true",Rai Radio 3 (Cultura & Classica)
+http://icestreaming.rai.it/3.mp3
+
 #EXTINF:-1 tvg-id="Muzaiko.eo" tvg-name="Muzaiko Esperanto" group-title="Rádio Global" radio="true",Muzaiko (24/7 Esperanto Radio)
 http://fluo.muzaiko.saluton.dk:8000/radio.mp3
 
@@ -817,3 +841,6 @@ http://capeant.antfarm.co.za:8000/Bosveld
 
 #EXTINF:-1 tvg-id="FineMusicRadio.za" tvg-name="Fine Music Radio" group-title="Rádio Global" radio="true",Fine Music Radio (Cape Town Classical)
 https://edge.iono.fm/xhls/fmr_live_high.m3u8
+
+#EXTINF:-1 tvg-id="Radio3ZZZ.au" tvg-name="Radio 3ZZZ Esperanto" group-title="Rádio Global" radio="true",Radio 3ZZZ 92.3 FM (Melbourne / Esperanto)
+https://playerservices.streamtheworld.com/api/livestream-redirect/3ZZZ.mp3

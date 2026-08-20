@@ -304,6 +304,12 @@ https://stream.live.vc.bbcmedia.co.uk/bbc_6music
 #EXTINF:-1 tvg-id="KEXP.us" tvg-name="KEXP" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/kexp.png" group-title="Rádio Global" radio="true",KEXP 90.3 FM (Seattle)
 https://kexp.streamguys1.com/kexp160.aac
 
+#EXTINF:-1 tvg-id="RaiRadio2.it" tvg-name="Rai Radio 2" group-title="Rádio Global" radio="true",Rai Radio 2 (Italia)
+http://icestreaming.rai.it/2.mp3
+
+#EXTINF:-1 tvg-id="RaiRadio3.it" tvg-name="Rai Radio 3" group-title="Rádio Global" radio="true",Rai Radio 3 (Cultura & Classica)
+http://icestreaming.rai.it/3.mp3
+
 #EXTINF:-1 tvg-id="Muzaiko.eo" tvg-name="Muzaiko Esperanto" group-title="Rádio Global" radio="true",Muzaiko (24/7 Esperanto Radio)
 http://fluo.muzaiko.saluton.dk:8000/radio.mp3
 
@@ -318,3 +324,6 @@ http://capeant.antfarm.co.za:8000/Bosveld
 
 #EXTINF:-1 tvg-id="FineMusicRadio.za" tvg-name="Fine Music Radio" group-title="Rádio Global" radio="true",Fine Music Radio (Cape Town Classical)
 https://edge.iono.fm/xhls/fmr_live_high.m3u8
+
+#EXTINF:-1 tvg-id="Radio3ZZZ.au" tvg-name="Radio 3ZZZ Esperanto" group-title="Rádio Global" radio="true",Radio 3ZZZ 92.3 FM (Melbourne / Esperanto)
+https://playerservices.streamtheworld.com/api/livestream-redirect/3ZZZ.mp3

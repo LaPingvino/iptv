@@ -103,3 +103,18 @@
   tvg_name: NHK World Japan
   logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nhkworld.png
   url: https://media-tyo.hls.nhkworld.jp/hls/w/live/master.m3u8
+- name: TV Brasil (EBC)
+  group: Notícias
+  tvg_id: TVBrasil.br@HD
+  tvg_name: TV Brasil
+  url: https://kiefte.eu/iptv/youtube/@TVBrasil
+- name: ABC News Australia
+  group: Notícias
+  tvg_id: ABCNews.au@HD
+  tvg_name: ABC News Australia
+  url: https://kiefte.eu/iptv/youtube/@abcnews
+- name: PBS NewsHour (US)
+  group: Notícias
+  tvg_id: PBSNewsHour.us@HD
+  tvg_name: PBS NewsHour
+  url: https://kiefte.eu/iptv/youtube/@PBSNewsHour

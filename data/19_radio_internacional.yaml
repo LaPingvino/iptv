@@ -104,3 +104,13 @@
   tvg_name: KEXP
   logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/kexp.png
   url: https://kexp.streamguys1.com/kexp160.aac
+- name: Rai Radio 2 (Italia)
+  group: Rádio Global
+  tvg_id: RaiRadio2.it
+  tvg_name: Rai Radio 2
+  url: http://icestreaming.rai.it/2.mp3
+- name: Rai Radio 3 (Cultura & Classica)
+  group: Rádio Global
+  tvg_id: RaiRadio3.it
+  tvg_name: Rai Radio 3
+  url: http://icestreaming.rai.it/3.mp3
