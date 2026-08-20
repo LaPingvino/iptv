@@ -644,6 +644,9 @@ https://kiefte.eu/iptv/twitch/thabeast721
 #EXTINF:-1 tvg-id="CarlSagan42.tv" tvg-name="CarlSagan42" group-title="Gaming",CarlSagan42 (Kaizo & Troll Maker)
 https://kiefte.eu/iptv/twitch/carlsagan42
 
+#EXTINF:-1 tvg-id="Juzcook.tv" tvg-name="Juzcook" group-title="Gaming",Juzcook (Kaizo & Mario Maker)
+https://kiefte.eu/iptv/twitch/juzcook
+
 #EXTINF:-1 tvg-id="Aurateur.tv" tvg-name="Aurateur" group-title="Gaming",Aurateur (Endless Mario Maker)
 https://kiefte.eu/iptv/twitch/aurateur
 
