@@ -1,18 +1,14 @@
 #!/usr/bin/env python3
 """
-IPTV Live Bridge for Streamlink (Twitch, YouTube Live, Kick, etc.) - v3.1.0
-Fully Autonomous, Community-Adjacent IPTV Live Gateway.
+IPTV Live Bridge for Streamlink (Twitch, YouTube Live, Kick, etc.) - v3.2.0
+Social Circle & Community-First IPTV Live Gateway.
 
-Features:
-- Transparent HLS proxying (200 OK)
-- Dynamic Game Directory: /twitch/game/<name>
-- Autonomous Multi-Tier Community Fallback:
-  Tier 1: Queries streamer's last played game/category for top active streams (with Romhack/Keyword bias)
-  Tier 2: Queries community-adjacent games/genres (e.g. SMM2 -> SMW/SM64/Retro, Portal 2 -> Portal/Talos, Blue Prince -> Outer Wilds/Witness, Celeste -> Hollow Knight/Super Meat Boy)
-  Tier 3: 24/7 Speedrun.com global restream
-- Custom offline video slate for sports & YouTube
-- Full GET, HEAD, and OPTIONS support
-- Zero hardcoded channel playlists required.
+Hierarchy of Fallbacks when a Channel is Offline:
+1. Tier 1A: Official Twitch Team Roster (e.g. Team Kaizoholics, Ant Colony, ESA, Loaded)
+2. Tier 1B: Creator Social & Friend Circle (e.g. Ryukahr <-> Tammy, CarlSagan <-> Juzcook)
+3. Tier 2: Same Game / Sub-Genre Category (with Romhack/Keyword bias)
+4. Tier 3: Community-Adjacent Genres (SMM2 -> SMW/SM64/Retro, Portal -> Talos/Half-Life, Blue Prince -> Outer Wilds)
+5. Tier 4: Global 24/7 Speedrun Restream
 """
 
 import os
@@ -40,7 +36,29 @@ CACHE_TTL = int(os.environ.get("BRIDGE_CACHE_TTL", "15"))
 # In-memory cache: url -> (resolved_url, timestamp)
 stream_cache = {}
 
-# Community-Adjacent Game Graph
+# Well-known Creator Affinity & Collaborator Circles (Tier 1B)
+CREATOR_CIRCLES = {
+    "ryukahr": ["tamthegamer", "dgr_dave", "smallant", "thabeast721", "aurateur", "grandpoobear"],
+    "tamthegamer": ["ryukahr", "elanaorama", "smallant", "dgr_dave"],
+    "carlsagan42": ["juzcook", "dgr_dave", "grandpoobear", "thabeast721", "aurateur"],
+    "juzcook": ["carlsagan42", "dgr_dave", "grandpoobear", "thabeast721", "pangaeapanga"],
+    "dgr_dave": ["smallant", "carlsagan42", "juzcook", "ryukahr", "thabeast721"],
+    "smallant": ["dgr_dave", "ryukahr", "speedrun", "thabeast721", "grandpoobear"],
+    "elanaorama": ["smallant", "tamthegamer", "ryukahr", "speedrun"],
+    "thabeast721": ["grandpoobear", "aurateur", "pangaeapanga", "simpleflips", "carlsagan42"],
+    "grandpoobear": ["thabeast721", "aurateur", "carlsagan42", "juzcook", "pangaeapanga"],
+    "aurateur": ["thabeast721", "grandpoobear", "carlsagan42", "pangaeapanga", "speedrun"],
+    "pangaeapanga": ["thabeast721", "grandpoobear", "aurateur", "juzcook", "simpleflips"],
+    "simpleflips": ["thabeast721", "grandpoobear", "smallant", "carlsagan42"],
+    "mitchflowerpower": ["thabeast721", "grandpoobear", "speedrun", "aurateur"],
+    "failstream": ["carlsagan42", "juzcook", "aurateur", "grandpoobear"],
+    "gamesdonequick": ["esamarathon", "speedrun", "tasvideos"],
+    "esamarathon": ["speedrun", "gamesdonequick", "tasvideos"],
+    "speedrun": ["esamarathon", "gamesdonequick", "tasvideos"],
+    "tasvideos": ["speedrun", "esamarathon", "gamesdonequick"]
+}
+
+# Community-Adjacent Game Graph (Tier 3)
 COMMUNITY_ADJACENT_GAMES = {
     "super mario maker 2": ["super mario world", "super mario 64", "super mario bros. 3", "retro"],
     "super mario world": ["super mario maker 2", "super mario 64", "super mario bros. 3", "retro"],
@@ -170,13 +188,18 @@ def get_top_streamer_for_game(game_name, bias=None, exclude_login=None):
 
 def find_autonomous_fallback_for_channel(channel_login):
     """
-    Multi-tier community discovery for ANY offline channel on Twitch:
-    1. Tier 1: Query streamer's last played game category (with Romhack bias).
-    2. Tier 2: Query community-adjacent game categories.
-    3. Tier 3: Speedrun.com 24/7 restream.
+    Tiered social & community discovery for ANY offline channel on Twitch:
+    1. Tier 1A: Check Official Twitch Team live members
+    2. Tier 1B: Check Creator Social/Friend Circles
+    3. Tier 2: Query streamer's last played game category (with Romhack bias)
+    4. Tier 3: Query community-adjacent game categories
+    5. Tier 4: Speedrun.com 24/7 restream
     """
+    req_clean = channel_login.lower().strip()
+    
+    # GraphQL Query for User context & primaryTeam
     raw_query = """
-    query GetUserBroadcast($login: String!) {
+    query GetUserContext($login: String!) {
       user(login: $login) {
         id
         login
@@ -188,56 +211,93 @@ def find_autonomous_fallback_for_channel(channel_login):
             name
           }
         }
+        primaryTeam {
+          name
+          displayName
+          members {
+            edges {
+              node {
+                login
+                displayName
+                stream {
+                  id
+                  viewersCount
+                }
+              }
+            }
+          }
+        }
       }
     }
     """
-    req = urllib.request.Request(
-        "https://gql.twitch.tv/gql",
-        data=json.dumps({"query": raw_query, "variables": {"login": channel_login}}).encode("utf-8"),
-        headers={
-            "Client-Id": "kimne78kx3ncx6brgo4mv6wki5h1ko",
-            "Content-Type": "application/json"
-        }
-    )
     try:
+        req = urllib.request.Request(
+            "https://gql.twitch.tv/gql",
+            data=json.dumps({"query": raw_query, "variables": {"login": req_clean}}).encode("utf-8"),
+            headers={"Client-Id": "kimne78kx3ncx6brgo4mv6wki5h1ko", "Content-Type": "application/json"}
+        )
         with urllib.request.urlopen(req, timeout=5) as resp:
             data = json.loads(resp.read().decode("utf-8"))
         user = data.get("data", {}).get("user")
-        if user:
-            bs = user.get("broadcastSettings", {})
-            game = bs.get("game")
-            game_name = game.get("name") if game else None
-            
-            if game_name:
-                # Tier 1: Direct same game
-                logger.info(f"Offline channel '{channel_login}' normally broadcasts: '{game_name}'. Searching live streams...")
-                top_live_in_game = get_top_streamer_for_game(game_name, exclude_login=channel_login)
-                if top_live_in_game:
-                    url = f"https://www.twitch.tv/{top_live_in_game}"
+    except Exception as e:
+        logger.error(f"Error querying Twitch GQL context for {channel_login}: {e}")
+        user = None
+
+    # Tier 1A: Official Twitch Team live members
+    if user and user.get("primaryTeam"):
+        team = user["primaryTeam"]
+        members = team.get("members", {}).get("edges", [])
+        for m in members:
+            node = m.get("node", {})
+            m_login = node.get("login", "")
+            if m_login and m_login.lower() != req_clean and node.get("stream"):
+                url = f"https://www.twitch.tv/{m_login}"
+                resolved = resolve_stream(url)
+                if resolved:
+                    logger.info(f"Tier 1A (Twitch Team '{team.get('displayName')}') fallback for {req_clean} -> {m_login}")
+                    return m_login, resolved
+
+    # Tier 1B: Creator Social & Friend Circle
+    if req_clean in CREATOR_CIRCLES:
+        for friend in CREATOR_CIRCLES[req_clean]:
+            url = f"https://www.twitch.tv/{friend}"
+            resolved = resolve_stream(url)
+            if resolved:
+                logger.info(f"Tier 1B (Social Circle) fallback for {req_clean} -> {friend}")
+                return friend, resolved
+
+    # Tier 2: Same Game Category (with Romhack bias)
+    if user:
+        bs = user.get("broadcastSettings", {})
+        game = bs.get("game")
+        game_name = game.get("name") if game else None
+        if game_name:
+            logger.info(f"Tier 2 search: {channel_login} normally broadcasts '{game_name}'. Searching live streams...")
+            top_live_in_game = get_top_streamer_for_game(game_name, exclude_login=req_clean)
+            if top_live_in_game:
+                url = f"https://www.twitch.tv/{top_live_in_game}"
+                resolved = resolve_stream(url)
+                if resolved:
+                    logger.info(f"Tier 2 (Same Game) fallback for {req_clean} -> {top_live_in_game} ({game_name})")
+                    return top_live_in_game, resolved
+                    
+            # Tier 3: Community-adjacent games
+            g_clean = game_name.lower().strip()
+            adjacent_list = COMMUNITY_ADJACENT_GAMES.get(g_clean, [])
+            for adj_game in adjacent_list:
+                top_adj = get_top_streamer_for_game(adj_game, exclude_login=req_clean)
+                if top_adj:
+                    url = f"https://www.twitch.tv/{top_adj}"
                     resolved = resolve_stream(url)
                     if resolved:
-                        logger.info(f"Tier 1 (Same Game) fallback for {channel_login} -> {top_live_in_game} ({game_name})")
-                        return top_live_in_game, resolved
-                        
-                # Tier 2: Community-adjacent games
-                g_clean = game_name.lower().strip()
-                adjacent_list = COMMUNITY_ADJACENT_GAMES.get(g_clean, [])
-                for adj_game in adjacent_list:
-                    top_adj = get_top_streamer_for_game(adj_game, exclude_login=channel_login)
-                    if top_adj:
-                        url = f"https://www.twitch.tv/{top_adj}"
-                        resolved = resolve_stream(url)
-                        if resolved:
-                            logger.info(f"Tier 2 (Community-Adjacent Game) fallback for {channel_login} -> {top_adj} ({adj_game})")
-                            return top_adj, resolved
+                        logger.info(f"Tier 3 (Community-Adjacent Game) fallback for {req_clean} -> {top_adj} ({adj_game})")
+                        return top_adj, resolved
 
-        # Tier 3: Speedrun.com 24/7 restream
-        fallback_url = "https://www.twitch.tv/speedrun"
-        resolved = resolve_stream(fallback_url)
-        if resolved:
-            return "speedrun", resolved
-    except Exception as e:
-        logger.error(f"Error in autonomous fallback lookup for {channel_login}: {e}")
+    # Tier 4: Speedrun.com 24/7 restream
+    fallback_url = "https://www.twitch.tv/speedrun"
+    resolved = resolve_stream(fallback_url)
+    if resolved:
+        return "speedrun", resolved
         
     return None, None
 
@@ -289,7 +349,7 @@ class BridgeHandler(BaseHTTPRequestHandler):
             self.send_header("Access-Control-Allow-Origin", "*")
             self.end_headers()
             if not is_head:
-                self.wfile.write(b'{"status":"ok","service":"iptv-live-bridge","version":"3.1.0"}\n')
+                self.wfile.write(b'{"status":"ok","service":"iptv-live-bridge","version":"3.2.0"}\n')
             return
             
         # Serve local offline video segments if requested
@@ -378,10 +438,10 @@ class BridgeHandler(BaseHTTPRequestHandler):
         # If offline:
         if not resolved_url:
             if is_gaming and allow_fallback and requested_channel:
-                logger.info(f"Stream '{requested_channel}' is OFFLINE. Discovering community-adjacent live streams...")
+                logger.info(f"Stream '{requested_channel}' is OFFLINE. Discovering team/friend/community live streams...")
                 fallback_channel, fallback_url = find_autonomous_fallback_for_channel(requested_channel)
                 if fallback_url:
-                    logger.info(f"Routing offline {requested_channel} -> Community-Adjacent fallback: {fallback_channel}")
+                    logger.info(f"Routing offline {requested_channel} -> Social/Community fallback: {fallback_channel}")
                     self.serve_hls(fallback_url, is_head=is_head)
                     return
             
@@ -444,7 +504,7 @@ class BridgeHandler(BaseHTTPRequestHandler):
 def run():
     server_address = (HOST, PORT)
     httpd = HTTPServer(server_address, BridgeHandler)
-    logger.info(f"Starting Autonomous Community Bridge v3.1 on http://{HOST}:{PORT}")
+    logger.info(f"Starting Social-First IPTV Live Bridge v3.2 on http://{HOST}:{PORT}")
     try:
         httpd.serve_forever()
     except KeyboardInterrupt:
