@@ -1,21 +1,3 @@
-- name: Sporting TV
-  group: Desporto
-  tvg_id: SportingTV.pt@HD
-  tvg_name: Sporting TV
-  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Sporting-TV.png
-  http_user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-    like Gecko) Chrome/149.0.0.0 Safari/537.3
-  http_referrer: https://www.sporting.pt/
-  url: https://video-auth1.iol.pt/live_sporting/live_sporting/playlist.m3u8
-- name: A Bola TV
-  group: Desporto
-  tvg_id: ABolaTV.pt@HD
-  tvg_name: A Bola TV
-  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/A-Bola-TV.png
-  http_user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-    like Gecko) Chrome/149.0.0.0 Safari/537.3
-  http_referrer: https://www.abola.pt/
-  url: https://video-auth1.iol.pt/live_abolatv/live_abolatv/playlist.m3u8
 - name: Real Madrid TV
   group: Desporto
   tvg_id: RealMadridTV.es@HD

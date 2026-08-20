@@ -246,26 +246,6 @@
     "url": "https://media-tyo.hls.nhkworld.jp/hls/w/live/master.m3u8"
   },
   {
-    "name": "Sporting TV",
-    "group": "Desporto",
-    "tvg_id": "SportingTV.pt@HD",
-    "tvg_name": "Sporting TV",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Sporting-TV.png",
-    "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3",
-    "http_referrer": "https://www.sporting.pt/",
-    "url": "https://video-auth1.iol.pt/live_sporting/live_sporting/playlist.m3u8"
-  },
-  {
-    "name": "A Bola TV",
-    "group": "Desporto",
-    "tvg_id": "ABolaTV.pt@HD",
-    "tvg_name": "A Bola TV",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/A-Bola-TV.png",
-    "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3",
-    "http_referrer": "https://www.abola.pt/",
-    "url": "https://video-auth1.iol.pt/live_abolatv/live_abolatv/playlist.m3u8"
-  },
-  {
     "name": "Real Madrid TV",
     "group": "Desporto",
     "tvg_id": "RealMadridTV.es@HD",
@@ -724,7 +704,7 @@
     "tvg_id": "NASATV.us@HD",
     "tvg_name": "NASA TV",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nasatv.png",
-    "url": "https://ntv1.akamaized.net/hls/live/2014075/NASA-NTV1-HLS/master.m3u8"
+    "url": "https://kiefte.eu/iptv/youtube/@NASA"
   },
   {
     "name": "TV5Monde Europe (1080p)",

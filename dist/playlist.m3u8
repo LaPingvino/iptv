@@ -115,16 +115,6 @@ https://kiefte.eu/iptv/youtube/@jeugdjournaal
 #EXTINF:-1 tvg-id="NHKWorldJapan.jp@HD" tvg-name="NHK World Japan" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nhkworld.png" group-title="Notícias",NHK World-Japan (English 1080p)
 https://media-tyo.hls.nhkworld.jp/hls/w/live/master.m3u8
 
-#EXTINF:-1 tvg-id="SportingTV.pt@HD" tvg-name="Sporting TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Sporting-TV.png" group-title="Desporto",Sporting TV
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3"
-#EXTVLCOPT:http-referrer=https://www.sporting.pt/
-https://video-auth1.iol.pt/live_sporting/live_sporting/playlist.m3u8
-
-#EXTINF:-1 tvg-id="ABolaTV.pt@HD" tvg-name="A Bola TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/A-Bola-TV.png" group-title="Desporto",A Bola TV
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3"
-#EXTVLCOPT:http-referrer=https://www.abola.pt/
-https://video-auth1.iol.pt/live_abolatv/live_abolatv/playlist.m3u8
-
 #EXTINF:-1 tvg-id="RealMadridTV.es@HD" tvg-name="Real Madrid TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Real-Madrid-TV.png" group-title="Desporto",Real Madrid TV
 https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
 
@@ -300,7 +290,7 @@ https://ott.tv5monde.com/Content/HLS/Live/channel(info)/index.m3u8
 https://w2.manasat.com/kcine/kcine.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-id="NASATV.us@HD" tvg-name="NASA TV" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nasatv.png" group-title="Filmes & Docs",NASA TV HD (Space & Science)
-https://ntv1.akamaized.net/hls/live/2014075/NASA-NTV1-HLS/master.m3u8
+https://kiefte.eu/iptv/youtube/@NASA
 
 #EXTINF:-1 tvg-id="TV5MondeEurope.fr" tvg-name="TV5Monde Europe" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tv5monde.png" group-title="Filmes & Docs",TV5Monde Europe (1080p)
 https://ott.tv5monde.com/Content/HLS/Live/channel(europe)/index.m3u8
