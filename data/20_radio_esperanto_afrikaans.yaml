@@ -28,3 +28,13 @@
   tvg_id: Radio3ZZZ.au
   tvg_name: Radio 3ZZZ Esperanto
   url: https://playerservices.streamtheworld.com/api/livestream-redirect/3ZZZ.mp3
+- name: Hitradio Namibia (Windhoek / Deutsch)
+  group: Rádio Global
+  tvg_id: HitradioNamibia.na
+  tvg_name: Hitradio Namibia
+  url: https://s37.derstream.net/hitradio-namibia.mp3
+- name: Kosmos 94.1 (Namibië / Afrikaans)
+  group: Rádio Global
+  tvg_id: Kosmos941.na
+  tvg_name: Kosmos 94.1 Afrikaans
+  url: https://edge.iono.fm/xice/88_high.mp3

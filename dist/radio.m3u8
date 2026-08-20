@@ -310,6 +310,12 @@ http://icestreaming.rai.it/2.mp3
 #EXTINF:-1 tvg-id="RaiRadio3.it" tvg-name="Rai Radio 3" group-title="Rádio Global" radio="true",Rai Radio 3 (Cultura & Classica)
 http://icestreaming.rai.it/3.mp3
 
+#EXTINF:-1 tvg-id="RadioRumantsch.ch" tvg-name="Radio Rumantsch" group-title="Rádio Global" radio="true",RTR Radio Rumantsch (Suisse / Rumantsch)
+http://stream.srg-ssr.ch/m/rr/mp3_128
+
+#EXTINF:-1 tvg-id="RSIReteUno.ch" tvg-name="RSI Rete Uno" group-title="Rádio Global" radio="true",RSI Rete Uno (Svizzera Italiana / Ticino)
+https://stream.srg-ssr.ch/m/reteuno/mp3_128
+
 #EXTINF:-1 tvg-id="Muzaiko.eo" tvg-name="Muzaiko Esperanto" group-title="Rádio Global" radio="true",Muzaiko (24/7 Esperanto Radio)
 http://fluo.muzaiko.saluton.dk:8000/radio.mp3
 
@@ -327,3 +333,9 @@ https://edge.iono.fm/xhls/fmr_live_high.m3u8
 
 #EXTINF:-1 tvg-id="Radio3ZZZ.au" tvg-name="Radio 3ZZZ Esperanto" group-title="Rádio Global" radio="true",Radio 3ZZZ 92.3 FM (Melbourne / Esperanto)
 https://playerservices.streamtheworld.com/api/livestream-redirect/3ZZZ.mp3
+
+#EXTINF:-1 tvg-id="HitradioNamibia.na" tvg-name="Hitradio Namibia" group-title="Rádio Global" radio="true",Hitradio Namibia (Windhoek / Deutsch)
+https://s37.derstream.net/hitradio-namibia.mp3
+
+#EXTINF:-1 tvg-id="Kosmos941.na" tvg-name="Kosmos 94.1 Afrikaans" group-title="Rádio Global" radio="true",Kosmos 94.1 (Namibië / Afrikaans)
+https://edge.iono.fm/xice/88_high.mp3

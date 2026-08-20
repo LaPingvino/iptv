@@ -114,3 +114,13 @@
   tvg_id: RaiRadio3.it
   tvg_name: Rai Radio 3
   url: http://icestreaming.rai.it/3.mp3
+- name: RTR Radio Rumantsch (Suisse / Rumantsch)
+  group: Rádio Global
+  tvg_id: RadioRumantsch.ch
+  tvg_name: Radio Rumantsch
+  url: http://stream.srg-ssr.ch/m/rr/mp3_128
+- name: RSI Rete Uno (Svizzera Italiana / Ticino)
+  group: Rádio Global
+  tvg_id: RSIReteUno.ch
+  tvg_name: RSI Rete Uno
+  url: https://stream.srg-ssr.ch/m/reteuno/mp3_128
