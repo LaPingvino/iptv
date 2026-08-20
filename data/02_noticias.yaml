@@ -72,10 +72,10 @@
   tvg_id: EuronewsPortuguese.fr
   tvg_name: Euronews (Português)
   logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png
-  url: https://euronews-euronews-portuguese-1-pt.samsung.wurl.com/manifest/playlist.m3u8
+  url: https://6e52fb8b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheHhUVi1ldV9FdXJvbmV3c1BvcnR1Z3Vlc19ITFM/playlist.m3u8
 - name: Euronews English
   group: Notícias
   tvg_id: EuronewsEnglish.fr
   tvg_name: Euronews (English)
   logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png
-  url: https://euronews-euronews-world-1-eu.rakuten.wurl.com/manifest/playlist.m3u8
+  url: https://a-cdn.klowdtv.com/live3/euronews_720p/playlist.m3u8

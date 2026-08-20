@@ -80,7 +80,7 @@
   tvg_id: TraceLatina.fr@HD
   tvg_name: Trace Latina
   logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Latina.png
-  url: https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01131-tracetv-tracelatinaes-samsungspain/playlist.m3u8
+  url: https://channels.trace.plus/Traceprod/LATINA_hd/index.m3u8
 - name: Trace UK
   group: Música & Video
   tvg_id: TraceUK.uk@HD

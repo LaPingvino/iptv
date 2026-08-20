@@ -98,10 +98,10 @@ https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8
 https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
 
 #EXTINF:-1 tvg-id="EuronewsPortuguese.fr" tvg-name="Euronews (Português)" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png" group-title="Notícias",Euronews Português
-https://euronews-euronews-portuguese-1-pt.samsung.wurl.com/manifest/playlist.m3u8
+https://6e52fb8b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheHhUVi1ldV9FdXJvbmV3c1BvcnR1Z3Vlc19ITFM/playlist.m3u8
 
 #EXTINF:-1 tvg-id="EuronewsEnglish.fr" tvg-name="Euronews (English)" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png" group-title="Notícias",Euronews English
-https://euronews-euronews-world-1-eu.rakuten.wurl.com/manifest/playlist.m3u8
+https://a-cdn.klowdtv.com/live3/euronews_720p/playlist.m3u8
 
 #EXTINF:-1 tvg-id="Canal11.pt@HD" tvg-name="Canal 11" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Canal11.png" group-title="Desporto",Canal 11
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3"
@@ -185,7 +185,7 @@ https://channels.trace.plus/Traceprod/MZIKI_hd/index.m3u8
 https://lightning-traceurban-samsungau.amagi.tv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="TraceLatina.fr@HD" tvg-name="Trace Latina" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Latina.png" group-title="Música & Video",Trace Latina
-https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01131-tracetv-tracelatinaes-samsungspain/playlist.m3u8
+https://channels.trace.plus/Traceprod/LATINA_hd/index.m3u8
 
 #EXTINF:-1 tvg-id="TraceUK.uk@HD" tvg-name="Trace UK" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-UK.png" group-title="Música & Video",Trace UK
 https://channels.trace.plus/Traceprod/UK_FAST_hd/index.m3u8
