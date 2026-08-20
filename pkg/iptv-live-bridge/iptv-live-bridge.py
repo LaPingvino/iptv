@@ -98,7 +98,11 @@ COMMUNITY_ADJACENT_GAMES = {
     "tetr.io": ["tetris effect: connected", "tetris", "puyo puyo tetris 2"],
     "planet coaster 2": ["planet coaster", "rollercoaster tycoon 2", "cities: skylines ii", "colony survival"],
     "darkest dungeon": ["darkest dungeon ii", "slay the spire", "hades ii", "roguelike"],
-    "metroid prime origins": ["metroid prime", "super metroid", "metroid dread"]
+    "metroid prime origins": ["metroid prime", "super metroid", "metroid dread"],
+    "zeepkist": ["trackmania", "marble it up!", "trials rising", "retro"],
+    "trackmania": ["zeepkist", "trials rising", "retro"],
+    "chess": ["tabletop simulator", "retro"],
+    "geoguessr": ["retro"]
 }
 
 ROMHACK_KEYWORDS = [
