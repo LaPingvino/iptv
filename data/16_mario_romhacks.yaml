@@ -1,0 +1,50 @@
+- name: Super Mario World (Romhacks & Kaizo Live)
+  group: Mario & Romhacks
+  tvg_id: SMWRomhacks.tv
+  tvg_name: SMW Romhacks Live
+  url: https://kiefte.eu/iptv/twitch/game/Super%20Mario%20World?bias=romhack
+- name: Ryukahr
+  group: Mario & Romhacks
+  tvg_id: Ryukahr.tv
+  tvg_name: Ryukahr
+  url: https://kiefte.eu/iptv/twitch/ryukahr
+- name: GrandPooBear
+  group: Mario & Romhacks
+  tvg_id: GrandPooBear.tv
+  tvg_name: GrandPooBear
+  url: https://kiefte.eu/iptv/twitch/grandpoobear
+- name: ThaBeast721 (Kaizo & Mario 64)
+  group: Mario & Romhacks
+  tvg_id: ThaBeast721.tv
+  tvg_name: ThaBeast721
+  url: https://kiefte.eu/iptv/twitch/thabeast721
+- name: CarlSagan42 (Kaizo & Troll Maker)
+  group: Mario & Romhacks
+  tvg_id: CarlSagan42.tv
+  tvg_name: CarlSagan42
+  url: https://kiefte.eu/iptv/twitch/carlsagan42
+- name: Juzcook (Kaizo & Mario Maker)
+  group: Mario & Romhacks
+  tvg_id: Juzcook.tv
+  tvg_name: Juzcook
+  url: https://kiefte.eu/iptv/twitch/juzcook
+- name: Aurateur (Endless Mario Maker)
+  group: Mario & Romhacks
+  tvg_id: Aurateur.tv
+  tvg_name: Aurateur
+  url: https://kiefte.eu/iptv/twitch/aurateur
+- name: PangaeaPanga (Kaizo SMW)
+  group: Mario & Romhacks
+  tvg_id: PangaeaPanga.tv
+  tvg_name: PangaeaPanga
+  url: https://kiefte.eu/iptv/twitch/pangaeapanga
+- name: SimpleFlips (SM64 Romhacks)
+  group: Mario & Romhacks
+  tvg_id: SimpleFlips.tv
+  tvg_name: SimpleFlips
+  url: https://kiefte.eu/iptv/twitch/simpleflips
+- name: Failstream (Mario Maker Builds)
+  group: Mario & Romhacks
+  tvg_id: Failstream.tv
+  tvg_name: Failstream
+  url: https://kiefte.eu/iptv/twitch/failstream

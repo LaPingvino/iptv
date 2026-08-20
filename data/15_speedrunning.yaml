@@ -1,0 +1,50 @@
+- name: Speedrun (24/7 Speedrun.com)
+  group: Speedrunning & Marathons
+  tvg_id: Speedrun.tv
+  tvg_name: Speedrun
+  url: https://kiefte.eu/iptv/twitch/speedrun
+- name: GamesDoneQuick (GDQ)
+  group: Speedrunning & Marathons
+  tvg_id: GamesDoneQuick.tv
+  tvg_name: GamesDoneQuick
+  url: https://kiefte.eu/iptv/twitch/gamesdonequick
+- name: ESAMarathon (European Speedrunner Assembly)
+  group: Speedrunning & Marathons
+  tvg_id: ESAMarathon.tv
+  tvg_name: ESAMarathon
+  url: https://kiefte.eu/iptv/twitch/esamarathon
+- name: TASVideos (Tool-Assisted Speedruns)
+  group: Speedrunning & Marathons
+  tvg_id: TASVideos.tv
+  tvg_name: TASVideos
+  url: https://kiefte.eu/iptv/twitch/tasvideos
+- name: MitchFlowerPower (SMB3 Speedruns)
+  group: Speedrunning & Marathons
+  tvg_id: MitchFlowerPower.tv
+  tvg_name: MitchFlowerPower
+  url: https://kiefte.eu/iptv/twitch/mitchflowerpower
+- name: SmallAnt (Challenges & Speedruns)
+  group: Speedrunning & Marathons
+  tvg_id: SmallAnt.tv
+  tvg_name: SmallAnt
+  url: https://kiefte.eu/iptv/twitch/smallant
+- name: Carrarium (Celeste & GDQ)
+  group: Speedrunning & Marathons
+  tvg_id: Carrarium.tv
+  tvg_name: Carrarium
+  url: https://kiefte.eu/iptv/twitch/carrarium
+- name: TGH (Celeste & Retro Speedruns)
+  group: Speedrunning & Marathons
+  tvg_id: TGH.tv
+  tvg_name: TGH
+  url: https://kiefte.eu/iptv/twitch/tgh_sr
+- name: AmberCyprian (Speedruns & Retro)
+  group: Speedrunning & Marathons
+  tvg_id: AmberCyprian.tv
+  tvg_name: AmberCyprian
+  url: https://kiefte.eu/iptv/twitch/ambercyprian
+- name: Msushi (Celeste & Portal Speedruns)
+  group: Speedrunning & Marathons
+  tvg_id: Msushi.tv
+  tvg_name: Msushi
+  url: https://kiefte.eu/iptv/twitch/msushi

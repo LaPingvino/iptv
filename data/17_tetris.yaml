@@ -1,0 +1,70 @@
+- name: Classic Tetris (CTWC Main)
+  group: Tetris
+  tvg_id: ClassicTetris.tv
+  tvg_name: ClassicTetris
+  url: https://kiefte.eu/iptv/twitch/classictetris
+- name: Classic Tetris 2 (CTWC)
+  group: Tetris
+  tvg_id: ClassicTetris2.tv
+  tvg_name: ClassicTetris 2
+  url: https://kiefte.eu/iptv/twitch/classictetris2
+- name: Classic Tetris 3 (CTWC)
+  group: Tetris
+  tvg_id: ClassicTetris3.tv
+  tvg_name: ClassicTetris 3
+  url: https://kiefte.eu/iptv/twitch/classictetris3
+- name: Classic Tetris 4 (CTWC)
+  group: Tetris
+  tvg_id: ClassicTetris4.tv
+  tvg_name: ClassicTetris 4
+  url: https://kiefte.eu/iptv/twitch/classictetris4
+- name: NES Tetris (Top Live Streamer)
+  group: Tetris
+  tvg_id: NESTetris.tv
+  tvg_name: NES Tetris Live
+  url: https://kiefte.eu/iptv/twitch/game/Tetris?bias=nes
+- name: Modern Tetris (Top Live Streamer)
+  group: Tetris
+  tvg_id: ModernTetris.tv
+  tvg_name: Modern Tetris Live
+  url: https://kiefte.eu/iptv/twitch/group/modern-tetris
+- name: Wumbotize (Modern Tetris Master)
+  group: Tetris
+  tvg_id: Wumbotize.tv
+  tvg_name: Wumbotize
+  url: https://kiefte.eu/iptv/twitch/wumbotize
+- name: Doremy (Modern Tetris & TETR.IO)
+  group: Tetris
+  tvg_id: Doremy.tv
+  tvg_name: Doremy
+  url: https://kiefte.eu/iptv/twitch/doremy
+- name: Hard Drop (Tetris Community & Tourneys)
+  group: Tetris
+  tvg_id: HardDrop.tv
+  tvg_name: Hard Drop
+  url: https://kiefte.eu/iptv/twitch/harddrop
+- name: DogPlayingTetris (3x CTWC World Champion)
+  group: Tetris
+  tvg_id: DogPlayingTetris.tv
+  tvg_name: DogPlayingTetris
+  url: https://kiefte.eu/iptv/twitch/dogplayingtetris
+- name: EricICX (CTWC World Champion)
+  group: Tetris
+  tvg_id: EricICX.tv
+  tvg_name: EricICX
+  url: https://kiefte.eu/iptv/twitch/ericicx
+- name: Fractal (CTWC World Champion)
+  group: Tetris
+  tvg_id: FractalTetris.tv
+  tvg_name: Fractal
+  url: https://kiefte.eu/iptv/twitch/fractal
+- name: Alex_T (CTWC Champion)
+  group: Tetris
+  tvg_id: AlexT.tv
+  tvg_name: Alex T
+  url: https://kiefte.eu/iptv/twitch/alex_t
+- name: BlueScuti (NES Tetris Crash Record)
+  group: Tetris
+  tvg_id: BlueScuti.tv
+  tvg_name: BlueScuti
+  url: https://kiefte.eu/iptv/twitch/bluescuti
