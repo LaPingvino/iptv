@@ -116,7 +116,7 @@ https://sicnot.live.impresa.pt/sicnot.m3u8
 https://github.com/LITUATUI/M3UPT/raw/main/M3U/CNN_Portugal.m3u8
 
 #EXTINF:-1 tvg-id="CNNBrasil.br@HD" tvg-name="CNN Brasil" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CNN-Brasil.png" group-title="Notícias",CNN Brasil
-https://videos01.fabricahost.com.br/cnn/cnn.smil/playlist.m3u8
+https://kiefte.eu/iptv/youtube/@CNNBrasil
 
 #EXTINF:-1 tvg-id="France24.fr" tvg-name="France 24 Français" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png" group-title="Notícias",France 24 (Français)
 https://live.france24.com/hls/live/2037179/F24_FR_HI_HLS/master_5000.m3u8
@@ -128,7 +128,7 @@ https://live.france24.com/hls/live/2037218/F24_EN_HI_HLS/master_5000.m3u8
 https://live.france24.com/hls/live/2037220/F24_ES_HI_HLS/master_5000.m3u8
 
 #EXTINF:-1 tvg-id="DWDeutsch.de" tvg-name="DW Deutsch" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png" group-title="Notícias",DW Deutsch
-https://dwamdstream106.akamaized.net/hls/live/2017965/dwstream106/index.m3u8
+https://kiefte.eu/iptv/youtube/@dwdeutsch
 
 #EXTINF:-1 tvg-id="DWEspanol.de" tvg-name="DW Español" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png" group-title="Notícias",DW Español
 https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8

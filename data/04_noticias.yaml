@@ -30,7 +30,7 @@
   tvg_id: CNNBrasil.br@HD
   tvg_name: CNN Brasil
   logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CNN-Brasil.png
-  url: https://videos01.fabricahost.com.br/cnn/cnn.smil/playlist.m3u8
+  url: https://kiefte.eu/iptv/youtube/@CNNBrasil
 - name: France 24 (Français)
   group: Notícias
   tvg_id: France24.fr
@@ -54,7 +54,7 @@
   tvg_id: DWDeutsch.de
   tvg_name: DW Deutsch
   logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png
-  url: https://dwamdstream106.akamaized.net/hls/live/2017965/dwstream106/index.m3u8
+  url: https://kiefte.eu/iptv/youtube/@dwdeutsch
 - name: DW Español
   group: Notícias
   tvg_id: DWEspanol.de
