@@ -268,9 +268,6 @@ https://daserste-live.ard-mcdn.de/daserste/live/hls/int/master.m3u8
 #EXTINF:-1 tvg-id="KuriakosCine.pt" tvg-name="Kuriakos Cine" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Kuriakos-Cine.png" group-title="Filmes & Docs",Kuriakos Cine
 https://w2.manasat.com/kcine/kcine.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="TV5MondeEurope.fr" tvg-name="TV5Monde Europe" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tv5monde.png" group-title="Filmes & Docs",TV5Monde Europe (1080p)
-https://ott.tv5monde.com/Content/HLS/Live/channel(europe)/index.m3u8
-
 #EXTINF:-1 tvg-id="TVCultura.br@HD" tvg-name="TV Cultura" group-title="Filmes & Docs",TV Cultura (São Paulo)
 https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8
 
