@@ -524,6 +524,9 @@ https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_
 #EXTINF:-1 tvg-id="BridgeDiag.ref@HD" tvg-name="Bridge Diag Testcard" group-title="Diag",Bridge • IPv6 & AV-Sync Dynamic Testcard
 https://kiefte.eu/iptv/test/avsync
 
+#EXTINF:-1 tvg-id="HDRSwitch.ref@HD" tvg-name="HDR Dynamic Switch" group-title="Diag",HDR Dynamic Switch (SDR ➔ HLG ➔ HDR10)
+https://kiefte.eu/iptv/test/hdr
+
 #EXTINF:-1 tvg-id="TVManaMZ.mz" tvg-name="TV Maná Moçambique" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-Mocambique.png" group-title="Religião",TV Maná Moçambique
 https://w2.manasat.com/tvmana-mz/smil:tvmana-mz.smil/playlist.m3u8
 

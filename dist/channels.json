@@ -1264,6 +1264,13 @@
     "url": "https://kiefte.eu/iptv/test/avsync"
   },
   {
+    "name": "HDR Dynamic Switch (SDR ➔ HLG ➔ HDR10)",
+    "group": "Diag",
+    "tvg_id": "HDRSwitch.ref@HD",
+    "tvg_name": "HDR Dynamic Switch",
+    "url": "https://kiefte.eu/iptv/test/hdr"
+  },
+  {
     "name": "TV Maná Moçambique",
     "group": "Religião",
     "tvg_id": "TVManaMZ.mz",
