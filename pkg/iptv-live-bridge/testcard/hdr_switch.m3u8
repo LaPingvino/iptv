@@ -16,6 +16,6 @@ seg_hdr10.ts
 
 #EXT-X-DISCONTINUITY
 #EXTINF:6.000000,
-seg_sdr.ts
+seg_sdr2.ts
 
 #EXT-X-ENDLIST
