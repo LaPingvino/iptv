@@ -10,9 +10,7 @@ ExecStart=/usr/bin/iptv-live-bridge
 Restart=always
 RestartSec=5
 DynamicUser=yes
-StateDirectory=iptv-live-bridge
-ReadOnlyPaths=/usr/share/iptv-live-bridge
-ReadWritePaths=/var/lib/iptv-live-bridge
+ReadOnlyPaths=/var/lib/iptv-live-bridge /usr/share/iptv-live-bridge
 
 # Hardening
 ProtectSystem=strict
