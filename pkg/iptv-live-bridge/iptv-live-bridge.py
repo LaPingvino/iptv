@@ -420,6 +420,8 @@ class BridgeHandler(BaseHTTPRequestHandler):
     def handle_request(self, is_head=False):
         parsed = urllib.parse.urlparse(self.path)
         path = parsed.path.strip("/")
+        if path.startswith("iptv/"):
+            path = path[5:].strip("/")
         params = urllib.parse.parse_qs(parsed.query)
         
         if path == "" or path == "health":
@@ -428,7 +430,7 @@ class BridgeHandler(BaseHTTPRequestHandler):
             self.send_header("Access-Control-Allow-Origin", "*")
             self.end_headers()
             if not is_head:
-                self.wfile.write(b'{"status":"ok","service":"iptv-live-bridge","version":"3.4.0"}\n')
+                self.wfile.write(b'{"status":"ok","service":"iptv-live-bridge","version":"3.6.0"}\n')
             return
             
         # Serve local offline video segments if requested
@@ -465,6 +467,7 @@ class BridgeHandler(BaseHTTPRequestHandler):
                     self.send_header("Content-Type", "video/MP2T")
                 self.send_header("Access-Control-Allow-Origin", "*")
                 self.end_headers()
+                if not is_head:
                     with open(seg_path, "rb") as f:
                         self.wfile.write(f.read())
                 return
