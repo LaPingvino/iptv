@@ -17,41 +17,42 @@ echo "=================================================="
 PROJECT_DIR="/home/joop/iptv"
 PKG_DIR="${PROJECT_DIR}/pkg/iptv-live-bridge"
 
-echo "1. Creating live target directories..."
-mkdir -p /var/lib/iptv-live-bridge/esperantotv
-mkdir -p /var/lib/iptv-live-bridge/bahaitv
-mkdir -p /usr/share/iptv-live-bridge/testcard
-mkdir -p /usr/share/iptv-live-bridge/offline
+echo "1. Building & Installing Arch Linux package (pacman)..."
+cd "${PKG_DIR}"
+if [ -n "$SUDO_USER" ]; then
+  sudo -u "$SUDO_USER" makepkg -f --nodeps
+else
+  makepkg -f --nodeps
+fi
 
-echo "2. Updating bridge binary..."
-if [ -f "${PKG_DIR}/iptv-live-bridge.py" ]; then
+PKG_FILE=$(ls -1t iptv-live-bridge-*.pkg.tar.zst 2>/dev/null | head -n 1)
+if [ -n "$PKG_FILE" ]; then
+  pacman -U --noconfirm "$PKG_FILE"
+else
+  echo "⚠️ Warning: Package file not found, copying binary directly."
   cp -f "${PKG_DIR}/iptv-live-bridge.py" /usr/bin/iptv-live-bridge
   chmod 755 /usr/bin/iptv-live-bridge
 fi
+cd "${PROJECT_DIR}"
 
-echo "3. Syncing testcards & station idents..."
-if [ -d "${PKG_DIR}/testcard" ]; then
-  rsync -a "${PKG_DIR}/testcard/" /usr/share/iptv-live-bridge/testcard/
-fi
+echo "2. Ensuring media directories exist..."
+mkdir -p /var/lib/iptv-live-bridge/esperantotv
+mkdir -p /var/lib/iptv-live-bridge/bahaitv
 
-if [ -d "${PKG_DIR}/offline" ]; then
-  rsync -a "${PKG_DIR}/offline/" /usr/share/iptv-live-bridge/offline/
-fi
-
-echo "4. Syncing Esperanto TV media library..."
+echo "3. Syncing Esperanto TV media library..."
 if [ -d "${PKG_DIR}/esperantotv" ]; then
   rsync -a --delete "${PKG_DIR}/esperantotv/" /var/lib/iptv-live-bridge/esperantotv/
 fi
 
-echo "5. Syncing Bahá'í Studio Sessions media library..."
+echo "4. Syncing Bahá'í Studio Sessions media library..."
 if [ -d "${PKG_DIR}/bahaitv" ]; then
   rsync -a --delete "${PKG_DIR}/bahaitv/" /var/lib/iptv-live-bridge/bahaitv/
 fi
 
-echo "6. Applying strict permissions..."
+echo "5. Applying strict permissions..."
 chmod -R 755 /var/lib/iptv-live-bridge /usr/share/iptv-live-bridge
 
-echo "7. Reloading systemd & restarting iptv-live-bridge.service..."
+echo "6. Reloading systemd & restarting iptv-live-bridge.service..."
 systemctl daemon-reload
 systemctl restart iptv-live-bridge
 
