@@ -32,12 +32,6 @@
   group: Indie & Variety Gaming
   tvg_id: ElanaOrama.tv
   tvg_name: ElanaOrama
-  url: https://kiefte.eu/iptv/twitch/elanaorama
-- name: DGR (Mario Maker & Super Mario)
-  group: Indie & Variety Gaming
-  tvg_id: DGR.tv
-  tvg_name: DGR
-  url: https://kiefte.eu/iptv/twitch/dgr_dave
 - name: Chess (Top Live Grandmaster)
   group: Indie & Variety Gaming
   tvg_id: Chess.tv

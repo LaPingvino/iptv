@@ -58,3 +58,8 @@
   tvg_id: GlitchCat7.tv
   tvg_name: GlitchCat7
   url: https://kiefte.eu/iptv/twitch/glitchcat7
+- name: DGR (Mario Maker & Super Mario)
+  group: Mario & Romhacks
+  tvg_id: DGR.tv
+  tvg_name: DGR
+  url: https://kiefte.eu/iptv/twitch/dgr_dave

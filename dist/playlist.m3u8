@@ -157,9 +157,6 @@ https://media-tyo.hls.nhkworld.jp/hls/w/live/master.m3u8
 #EXTINF:-1 tvg-id="TVBrasil.br@HD" tvg-name="TV Brasil" group-title="Notícias",TV Brasil (EBC)
 https://tvbrasilinternacional-stream.ebc.com.br/index.m3u8
 
-#EXTINF:-1 tvg-id="RealMadridTV.es@HD" tvg-name="Real Madrid TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Real-Madrid-TV.png" group-title="Desporto",Real Madrid TV
-https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
-
 #EXTINF:-1 tvg-id="FIFAPlus.ch" tvg-name="FIFA+" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/FIFA-Plus.png" group-title="Desporto",FIFA+
 https://f7ccf7fc.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLXB0X0ZJRkFQbHVzUG9ydHVndWVzZV9ITFM/playlist.m3u8
 
@@ -410,6 +407,9 @@ https://kiefte.eu/iptv/twitch/failstream
 #EXTINF:-1 tvg-id="GlitchCat7.tv" tvg-name="GlitchCat7" group-title="Mario & Romhacks",GlitchCat7 (SMW Kaizo & Speedruns)
 https://kiefte.eu/iptv/twitch/glitchcat7
 
+#EXTINF:-1 tvg-id="DGR.tv" tvg-name="DGR" group-title="Mario & Romhacks",DGR (Mario Maker & Super Mario)
+https://kiefte.eu/iptv/twitch/dgr_dave
+
 #EXTINF:-1 tvg-id="ClassicTetris.tv" tvg-name="ClassicTetris" group-title="Tetris",Classic Tetris (CTWC Main)
 https://kiefte.eu/iptv/twitch/classictetris
 
@@ -474,10 +474,7 @@ https://kiefte.eu/iptv/twitch/game/Portal%202
 https://kiefte.eu/iptv/twitch/tamthegamer
 
 #EXTINF:-1 tvg-id="ElanaOrama.tv" tvg-name="ElanaOrama" group-title="Indie & Variety Gaming",ElanaOrama (Colony Sim & Variety)
-https://kiefte.eu/iptv/twitch/elanaorama
 
-#EXTINF:-1 tvg-id="DGR.tv" tvg-name="DGR" group-title="Indie & Variety Gaming",DGR (Mario Maker & Super Mario)
-https://kiefte.eu/iptv/twitch/dgr_dave
 
 #EXTINF:-1 tvg-id="Chess.tv" tvg-name="Chess Live" group-title="Indie & Variety Gaming",Chess (Top Live Grandmaster)
 https://kiefte.eu/iptv/twitch/game/Chess
