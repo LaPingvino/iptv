@@ -127,7 +127,7 @@
   {
     "name": "RTVE Canal 24 Horas",
     "group": "ES Geral & TDT",
-    "tvg_id": "Canal24Horas.es",
+    "tvg_id": "Canal.24.horas.es",
     "tvg_name": "24 Horas",
     "url": "https://ztnr.rtve.es/ztnr/1694255.m3u8"
   },
@@ -148,7 +148,7 @@
   {
     "name": "Real Madrid TV",
     "group": "ES Geral & TDT",
-    "tvg_id": "RealMadridTV.es",
+    "tvg_id": "Real.Madrid.TV.es",
     "tvg_name": "Real Madrid TV",
     "url": "https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8"
   },
@@ -163,7 +163,7 @@
   {
     "name": "ETB 1 (Euskadi / Euskara)",
     "group": "ES Geral & TDT",
-    "tvg_id": "ETB1.es@HD",
+    "tvg_id": "ETB.1.es",
     "tvg_name": "ETB 1",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/etb1.png",
     "url": "https://cdn1.etbon.eus/etb1/index.m3u8"
@@ -171,7 +171,7 @@
   {
     "name": "ETB 2 (Euskadi / Castellano)",
     "group": "ES Geral & TDT",
-    "tvg_id": "ETB2.es@HD",
+    "tvg_id": "ETB.2.es",
     "tvg_name": "ETB 2",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/etb2.png",
     "url": "https://cdn1.etbon.eus/etb2/index.m3u8"
@@ -186,7 +186,7 @@
   {
     "name": "Galicia TV Europa (TVG)",
     "group": "Galiza",
-    "tvg_id": "TVGEuropa.es",
+    "tvg_id": "TVG.Europa.es",
     "tvg_name": "Galicia TV Europa",
     "url": "https://crtvg-europa.flumotion.cloud/playlist.m3u8"
   },
@@ -650,7 +650,7 @@
   {
     "name": "Omroep Gelderland",
     "group": "Regional & Local",
-    "tvg_id": "OmroepGelderland.nl@HD",
+    "tvg_id": "Omroep.Gelderland.nl",
     "tvg_name": "Omroep Gelderland",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepgelderland.png",
     "url": "https://d2od87akyl46nm.cloudfront.net/live/omroepgelderland/tvgelderland-hls/index.m3u8"
@@ -658,7 +658,7 @@
   {
     "name": "Omroep Brabant",
     "group": "Regional & Local",
-    "tvg_id": "OmroepBrabant.nl@HD",
+    "tvg_id": "Omroep.Brabant.nl",
     "tvg_name": "Omroep Brabant",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepbrabant.png",
     "url": "https://d3slqp9xhts6qb.cloudfront.net/live/omroepbrabant/tv/index.m3u8"
@@ -666,7 +666,7 @@
   {
     "name": "Omroep West",
     "group": "Regional & Local",
-    "tvg_id": "OmroepWest.nl@HD",
+    "tvg_id": "RTV.West.nl",
     "tvg_name": "Omroep West",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepwest.png",
     "url": "https://d1axml5ozykh3g.cloudfront.net/live/omroepwest/tv/index.m3u8"
@@ -674,7 +674,7 @@
   {
     "name": "Omroep Zeeland",
     "group": "Regional & Local",
-    "tvg_id": "OmroepZeeland.nl@HD",
+    "tvg_id": "Omroep.Zeeland.nl",
     "tvg_name": "Omroep Zeeland",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepzeeland.png",
     "url": "https://d3isaxd2t6q8zm.cloudfront.net/live/omroepzeeland/tv/index.m3u8"
@@ -682,7 +682,7 @@
   {
     "name": "Omroep Flevoland",
     "group": "Regional & Local",
-    "tvg_id": "OmroepFlevoland.nl@HD",
+    "tvg_id": "Omroep.Flevoland.nl",
     "tvg_name": "Omroep Flevoland",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepflevoland.png",
     "url": "https://d5ms27yy6exnf.cloudfront.net/live/omroepflevoland/tv/index.m3u8"
@@ -690,7 +690,7 @@
   {
     "name": "RTV Oost",
     "group": "Regional & Local",
-    "tvg_id": "RTVOost.nl@HD",
+    "tvg_id": "Oost.nl",
     "tvg_name": "RTV Oost",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvoost.png",
     "url": "https://d34cg2bnc08ruf.cloudfront.net/live/rtvoost/tv/index.m3u8"
@@ -698,7 +698,7 @@
   {
     "name": "RTV Rijnmond (Rotterdam)",
     "group": "Regional & Local",
-    "tvg_id": "Rijnmond.nl@HD",
+    "tvg_id": "RTV.Rijnmond.nl",
     "tvg_name": "RTV Rijnmond",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rijnmond.png",
     "url": "https://dcur8bjarl5c2.cloudfront.net/live/rijnmond/tv/index.m3u8"
@@ -706,7 +706,7 @@
   {
     "name": "RTV Utrecht",
     "group": "Regional & Local",
-    "tvg_id": "RTVUtrecht.nl@HD",
+    "tvg_id": "RTV.Utrecht.nl",
     "tvg_name": "RTV Utrecht",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvutrecht.png",
     "url": "https://d18rwjdhpr8dcw.cloudfront.net/live/rtvutrecht/rtvutrecht/index.m3u8"
@@ -714,7 +714,7 @@
   {
     "name": "RTV Drenthe",
     "group": "Regional & Local",
-    "tvg_id": "RTVDrenthe.nl@HD",
+    "tvg_id": "RTV.Drenthe.nl",
     "tvg_name": "RTV Drenthe",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvdrenthe.png",
     "url": "https://cdn.rtvdrenthe.nl/live/rtvdrenthe/tv/index.m3u8"
@@ -722,7 +722,7 @@
   {
     "name": "RTV Noord",
     "group": "Regional & Local",
-    "tvg_id": "RTVNoord.nl@HD",
+    "tvg_id": "RTV.Noord.nl",
     "tvg_name": "RTV Noord",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvnoord.png",
     "url": "https://media.rtvnoord.nl/live/rtvnoord/tv/index.m3u8"
@@ -738,7 +738,7 @@
   {
     "name": "Omrop Fryslân TV (Frysk)",
     "group": "Regional & Local",
-    "tvg_id": "OmropFryslan.nl@HD",
+    "tvg_id": "Omrop.Fryslân.nl",
     "tvg_name": "Omrop Fryslân",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omropfryslan.png",
     "url": "https://s-d15f8b0b.b.cdn.bluebillywig.com/live/omropfryslan/f8f68bd5/index.m3u8"
@@ -746,7 +746,7 @@
   {
     "name": "AT5 (Amsterdam)",
     "group": "Regional & Local",
-    "tvg_id": "AT5.nl@HD",
+    "tvg_id": "AT5.nl",
     "tvg_name": "AT5",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/at5.png",
     "url": "https://takeoff.jetstre.am/?account=atvijf&file=live&output=playlist.m3u8&protocol=https&service=wowza&type=live"
@@ -754,7 +754,7 @@
   {
     "name": "NH Nieuws (Noord-Holland)",
     "group": "Regional & Local",
-    "tvg_id": "NHNieuws.nl@HD",
+    "tvg_id": "NH.nl",
     "tvg_name": "NH Nieuws",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nhnieuws.png",
     "url": "https://takeoff.jetstre.am/?account=nhnieuws&file=live&output=playlist.m3u8&protocol=https&service=wowza&type=live"

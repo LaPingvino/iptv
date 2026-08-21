@@ -1,6 +1,6 @@
 - name: RTVE Canal 24 Horas
   group: ES Geral & TDT
-  tvg_id: Canal24Horas.es
+  tvg_id: Canal.24.horas.es
   tvg_name: 24 Horas
   url: https://ztnr.rtve.es/ztnr/1694255.m3u8
 - name: RTVE Teledeporte (TDP)
@@ -15,7 +15,7 @@
   url: https://dfk2a268yviz9.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ddiii1m6jt6of/CanalSurAndaluciaES.m3u8
 - name: Real Madrid TV
   group: ES Geral & TDT
-  tvg_id: RealMadridTV.es
+  tvg_id: Real.Madrid.TV.es
   tvg_name: Real Madrid TV
   url: https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
 - name: Canal Extremadura (1080p)
@@ -26,13 +26,13 @@
   url: https://d2ymuyhevki1a1.cloudfront.net/wct-ddd2992e-86fc-4611-a491-7f392259e9ba/continuous/9be76611-d2cd-474d-bf19-ef702ba31b02/index.m3u8
 - name: ETB 1 (Euskadi / Euskara)
   group: ES Geral & TDT
-  tvg_id: ETB1.es@HD
+  tvg_id: ETB.1.es
   tvg_name: ETB 1
   logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/etb1.png
   url: https://cdn1.etbon.eus/etb1/index.m3u8
 - name: ETB 2 (Euskadi / Castellano)
   group: ES Geral & TDT
-  tvg_id: ETB2.es@HD
+  tvg_id: ETB.2.es
   tvg_name: ETB 2
   logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/etb2.png
   url: https://cdn1.etbon.eus/etb2/index.m3u8

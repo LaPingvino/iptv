@@ -16,6 +16,7 @@ import yaml
 import gzip
 import lzma
 import urllib.request
+import re
 
 EPG_SOURCES = [
     "https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/epg.xml.gz",
@@ -88,67 +89,90 @@ def format_channel_m3u(ch):
     
     return "\n".join(lines)
 
+UPSTREAM_EPG_SOURCES = [
+    ("M3UPT MEO (PT)", "https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-meo-pt.xml.xz", "xz"),
+    ("M3UPT NOS (PT)", "https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-nos-pt.xml.xz", "xz"),
+    ("EPGShare Spain", "https://epgshare01.online/epgshare01/epg_ripper_ES1.xml.gz", "gz"),
+    ("EPGShare Netherlands", "https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz", "gz"),
+]
+
 def fetch_and_build_epg(dist_dir):
     xml_path = os.path.join(dist_dir, "epg.xml")
     gz_path = os.path.join(dist_dir, "epg.xml.gz")
     
-    print("\nFetching upstream M3UPT EPG guide data & generating custom channel schedules...")
-    try:
-        req = urllib.request.Request(UPSTREAM_M3UPT_EPG, headers={"User-Agent": "Mozilla/5.0"})
-        data_xz = urllib.request.urlopen(req, timeout=15).read()
-        raw_xml = lzma.decompress(data_xz).decode("utf-8", errors="replace")
-    except Exception as e:
-        print(f"  ✗ Warning: Could not download upstream EPG ({e}). Initializing clean XMLTV container.")
-        raw_xml = '<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE tv SYSTEM "xmltv.dtd">\n<tv source-info-url="https://kiefte.eu/iptv">\n</tv>'
-
-    # Generate custom schedules via epg_generator
+    print("\nFetching official upstream EPG guide data & generating custom channel schedules...")
+    
+    # 1. Collect target channel IDs from our database
+    data_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
+    all_channels = load_channels(data_dir)
+    target_ids = set()
+    for ch in all_channels:
+        tid = ch.get("tvg_id", "").strip()
+        if tid:
+            target_ids.add(tid)
+            clean = tid.split("@")[0]
+            target_ids.add(clean)
+            
+    extracted_channels = {}
+    extracted_programmes = []
+    
+    # 2. Fetch and filter genuine upstream feeds
+    for label, url, comp in UPSTREAM_EPG_SOURCES:
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+            data = urllib.request.urlopen(req, timeout=15).read()
+            if comp == "xz":
+                xml_str = lzma.decompress(data).decode("utf-8", errors="replace")
+            else:
+                xml_str = gzip.decompress(data).decode("utf-8", errors="replace")
+                
+            # Extract channel tags
+            ch_matches = re.findall(r'(<channel id="([^"]+)">.*?</channel>)', xml_str, re.DOTALL)
+            for full_ch, ch_id in ch_matches:
+                clean_id = ch_id.split("@")[0]
+                if (ch_id in target_ids or clean_id in target_ids) and ch_id not in extracted_channels:
+                    extracted_channels[ch_id] = full_ch
+                    
+            # Extract programme tags
+            prog_matches = re.findall(r'(<programme [^>]*channel="([^"]+)"[^>]*>.*?</programme>)', xml_str, re.DOTALL)
+            for full_prog, ch_id in prog_matches:
+                clean_id = ch_id.split("@")[0]
+                if ch_id in target_ids or clean_id in target_ids:
+                    extracted_programmes.append(full_prog)
+                    
+            print(f"  ✓ [{label}] successfully processed")
+        except Exception as e:
+            print(f"  ✗ Warning: Could not fetch {label} ({e})")
+            
+    # 3. Generate deterministic schedules for local channels via epg_generator
     try:
         from epg_generator import (
             ESPERANTO_METADATA,
             get_channel_schedule_blocks,
             generate_xmltv_programmes,
-            generate_standalone_epg_xml,
-            generate_twitch_epg_programmes
+            generate_standalone_epg_xml
         )
         
         esp_media_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "pkg", "iptv-live-bridge", "esperantotv")
         bah_media_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "pkg", "iptv-live-bridge", "bahaitv")
         
+        # Esperanto TV
+        extracted_channels["EsperantoTV.eo@SD"] = '  <channel id="EsperantoTV.eo@SD">\n    <display-name>Esperanto TV</display-name>\n  </channel>'
         esp_blocks = get_channel_schedule_blocks(esp_media_dir, ESPERANTO_METADATA)
-        esp_prog_xml = generate_xmltv_programmes("EsperantoTV.eo@SD", "Esperanto TV", esp_blocks)
+        extracted_programmes.append(generate_xmltv_programmes("EsperantoTV.eo@SD", "Esperanto TV", esp_blocks))
         
+        # Bahá'í TV
+        extracted_channels["BahaiStudioSessions.tv@HD"] = '  <channel id="BahaiStudioSessions.tv@HD">\n    <display-name>Bahá\'í Studio Sessions TV</display-name>\n  </channel>'
         bah_blocks = get_channel_schedule_blocks(bah_media_dir)
-        bah_prog_xml = generate_xmltv_programmes("BahaiStudioSessions.tv@HD", "Bahá'í Studio Sessions TV", bah_blocks)
+        extracted_programmes.append(generate_xmltv_programmes("BahaiStudioSessions.tv@HD", "Bahá'í Studio Sessions TV", bah_blocks))
         
-        custom_channels_list = [
-            '  <channel id="EsperantoTV.eo@SD">\n    <display-name>Esperanto TV</display-name>\n  </channel>',
-            '  <channel id="BahaiStudioSessions.tv@HD">\n    <display-name>Bahá\'í Studio Sessions TV</display-name>\n  </channel>'
-        ]
+        # 4. Assemble clean XMLTV output
+        xml_header = '<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE tv SYSTEM "xmltv.dtd">\n<tv source-info-url="https://kiefte.eu/iptv" generator-info-name="IPTV Master Curated EPG Engine">\n'
+        channels_block = "\n".join(extracted_channels.values())
+        programmes_block = "\n".join(extracted_programmes)
+        full_xml = f"{xml_header}{channels_block}\n{programmes_block}\n</tv>\n"
         
-        twitch_progs_list = []
-        # Add all Twitch gaming channels
-        channels = load_channels(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data"))
-        for ch in channels:
-            if "twitch" in ch.get("url", "") and ch.get("tvg_id"):
-                ch_id = ch.get("tvg_id")
-                ch_name = ch.get("tvg_name") or ch.get("name")
-                ch_group = ch.get("group", "Gaming")
-                custom_channels_list.append(f'  <channel id="{ch_id}">\n    <display-name>{ch_name}</display-name>\n  </channel>')
-                tw_prog = generate_twitch_epg_programmes(ch_id, ch_name, ch_group)
-                if tw_prog:
-                    twitch_progs_list.append(tw_prog)
-                    
-        custom_channels = "\n".join(custom_channels_list) + "\n"
-        all_twitch_progs = "\n".join(twitch_progs_list)
-        
-        # Inject custom channels and programmes before </tv>
-        if "</tv>" in raw_xml:
-            parts = raw_xml.rsplit("</tv>", 1)
-            merged_xml = parts[0] + "\n" + custom_channels + esp_prog_xml + "\n" + bah_prog_xml + "\n" + all_twitch_progs + "\n</tv>"
-        else:
-            merged_xml = raw_xml + "\n" + custom_channels + esp_prog_xml + "\n" + bah_prog_xml + "\n" + all_twitch_progs + "\n</tv>"
-            
-        data_xml = merged_xml.encode("utf-8")
+        data_xml = full_xml.encode("utf-8")
         
         with open(xml_path, "wb") as f:
             f.write(data_xml)
@@ -156,8 +180,16 @@ def fetch_and_build_epg(dist_dir):
         with gzip.open(gz_path, "wb") as f:
             f.write(data_xml)
             
-        # Also write standalone EPG files
+        # Also write standalone Esperanto EPG file
         esp_standalone = generate_standalone_epg_xml("EsperantoTV.eo@SD", "Esperanto TV", esp_media_dir, ESPERANTO_METADATA)
+        with open(os.path.join(dist_dir, "esperanto_epg.xml"), "w", encoding="utf-8") as f:
+            f.write(esp_standalone)
+            
+        print(f"  ✓ {xml_path} ({os.path.getsize(xml_path)} bytes, {len(extracted_channels)} channels)")
+        print(f"  ✓ {gz_path} ({os.path.getsize(gz_path)} bytes)")
+        print(f"  ✓ {os.path.join(dist_dir, 'esperanto_epg.xml')} ({len(esp_standalone)} bytes)")
+    except Exception as e:
+        print(f"  ✗ Error building master EPG: {e}")
         with open(os.path.join(dist_dir, "esperanto_epg.xml"), "w", encoding="utf-8") as f:
             f.write(esp_standalone)
             
