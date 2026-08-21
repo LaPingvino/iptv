@@ -1,11 +1,7 @@
 #!/usr/bin/env python3
 """
-IPTV EPG Generator - Comprehensive XMLTV Program Guide Engine
-Generates deterministic, timeline-accurate XMLTV <programme> schedules for:
-1. Esperanto TV & Bahá'í Studio Sessions TV
-2. 48 Twitch Gaming & Speedrunning channels
-3. 114 Radio channels across Portugal, Netherlands, Belgium, Mozambique, and Global
-4. 24/7 Music streams, Webcams, and Diagnostic channels
+IPTV EPG Generator - Deterministic XMLTV Program Guide for 24/7 Linear Channels
+Generates XMLTV <programme> blocks synchronized with the wall-clock epoch modulo broadcast scheduler.
 """
 
 import os
@@ -125,6 +121,7 @@ def get_channel_schedule_blocks(media_dir, default_meta=None):
         if default_meta and prefix in default_meta:
             meta = default_meta[prefix]
         else:
+            # Fallback humanized title
             clean_title = prefix.replace("_", " ").title()
             meta = {
                 "title": clean_title,
@@ -154,6 +151,7 @@ def generate_xmltv_programmes(channel_id, channel_name, blocks, days_back=1, day
     start_window = now - (days_back * 86400)
     end_window = now + (days_ahead * 86400)
     
+    # Calculate initial offset at start_window
     offset = start_window % total_loop_dur
     cur_pos = 0
     cur_prog_idx = 0
@@ -193,13 +191,39 @@ def generate_xmltv_programmes(channel_id, channel_name, blocks, days_back=1, day
         
     return "\n".join(xml_lines)
 
+def generate_standalone_epg_xml(channel_id, channel_name, media_dir, metadata_dict):
+    """Generates complete standalone XMLTV document."""
+    blocks = get_channel_schedule_blocks(media_dir, metadata_dict)
+    programmes_xml = generate_xmltv_programmes(channel_id, channel_name, blocks)
+    
+    return f"""<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv SYSTEM "xmltv.dtd">
+<tv source-info-url="https://kiefte.eu/iptv" generator-info-name="IPTV Live Bridge Deterministic EPG Engine">
+  <channel id="{channel_id}">
+    <display-name>{channel_name}</display-name>
+  </channel>
+{programmes_xml}
+</tv>
+"""
+
+if __name__ == "__main__":
+    esp_dir = "/home/joop/iptv/pkg/iptv-live-bridge/esperantotv"
+    xml_out = generate_standalone_epg_xml("EsperantoTV.eo@SD", "Esperanto TV", esp_dir, ESPERANTO_METADATA)
+    print(f"Generated XMLTV EPG ({len(xml_out)} bytes)")
+    lines = xml_out.strip().split("\n")
+    print(f"Total Lines: {len(lines)}")
+    print("\n--- Preview first 20 lines ---")
+    print("\n".join(lines[:20]))
+
+
 def generate_twitch_epg_programmes(channel_id, channel_name, category_name="Gaming", days_back=1, days_ahead=7):
     """Generates synthetic 2h-4h program blocks for Twitch channels with fallback/live info."""
     now = time.time()
     start_window = now - (days_back * 86400)
     end_window = now + (days_ahead * 86400)
     
-    block_dur = 3 * 3600
+    # Align to clean hours
+    block_dur = 3 * 3600 # 3 hours per block
     curr_time = start_window - (start_window % block_dur)
     
     templates = [
@@ -234,112 +258,3 @@ def generate_twitch_epg_programmes(channel_id, channel_name, category_name="Gami
         idx = (idx + 1) % len(templates)
         
     return "\n".join(xml_lines)
-
-def generate_radio_epg_programmes(channel_id, channel_name, language="pt", days_back=1, days_ahead=7):
-    """Generates daily 4-hour structured radio schedule blocks."""
-    now = time.time()
-    start_window = now - (days_back * 86400)
-    end_window = now + (days_ahead * 86400)
-    
-    block_dur = 4 * 3600
-    curr_time = start_window - (start_window % block_dur)
-    
-    # Language specific radio blocks
-    if language in ["nl", "nl-BE", "vrt"]:
-        blocks_info = [
-            ("Ochtendshow & Nieuws", "Het beste begin van de dag met actueel nieuws, weer en muziek.", "Nieuws / Muziek"),
-            ("Muziek & Actualiteit", "Non-stop muziekmix, interviews en achtergronden bij het nieuws.", "Muziek"),
-            ("Middagprogramma", "Populaire hits, verzoeknummers en ontspannen verhalen voor de middag.", "Muziek / Amusement"),
-            ("Avondspits & Muziek", "Muziek voor onderweg naar huis en het overzicht van de dag.", "Informatie / Muziek"),
-            ("De Avondmix", "Diepgaande themamuziek, klassiekers en akoestische sessies.", "Muziek"),
-            ("Nachtradio & Relax", "Ontspannen nachtmuziek zonder onderbrekingen voor de late uurtjes.", "Nachtmuziek")
-        ]
-    elif language in ["es", "gl"]:
-        blocks_info = [
-            ("Mañás de Radio & Novas", "Información actualizada, novas destacadas e a mellor selección musical.", "Novas / Música"),
-            ("Música e Actualidade", "Selección musical variada e entrevistas de actualidade.", "Música"),
-            ("Magazine de Tarde", "Espazo de entretemento, cultura e música en directo.", "Magazine"),
-            ("Informativo do Solpor", "Resumo das novas da xornada e música de serán.", "Información"),
-            ("Noite Musical", "Grandes éxitos, música clásica e temas seleccionados.", "Música"),
-            ("Madrugadas de Música", "Emisión continua de música para acompañar a noite.", "Música")
-        ]
-    else: # Portuguese default
-        blocks_info = [
-            ("Manhã Informativa & Música", "As principais notícias do dia com a melhor seleção musical da manhã.", "Notícias / Música"),
-            ("Música & Atualidade", "Música variada, entrevistas e temas da atualidade.", "Música"),
-            ("Tarde de Entretenimento", "Acompanhamento da tarde com grandes sucessos musicais.", "Entretenimento"),
-            ("Fim de Tarde & Notícias", "Resumo dos acontecimentos do dia e música para o regresso a casa.", "Informação"),
-            ("Noite Musical", "Grandes clássicos e música selecionada para o serão.", "Música"),
-            ("Madrugada Sem Parar", "Música contínua sem interrupções durante toda a madrugada.", "Música")
-        ]
-        
-    xml_lines = []
-    idx = int((curr_time // block_dur) % len(blocks_info))
-    
-    while curr_time < end_window:
-        p_start = curr_time
-        p_stop = curr_time + block_dur
-        
-        start_str = format_xmltv_time(p_start)
-        stop_str = format_xmltv_time(p_stop)
-        
-        title, desc, cat = blocks_info[idx]
-        title_full = f"{channel_name} - {title}".replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-        desc_escaped = desc.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-        cat_escaped = cat.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-        
-        xml_lines.append(f'  <programme start="{start_str}" stop="{stop_str}" channel="{channel_id}">')
-        xml_lines.append(f'    <title lang="{language}">{title_full}</title>')
-        xml_lines.append(f'    <desc lang="{language}">{desc_escaped}</desc>')
-        xml_lines.append(f'    <category lang="{language}">{cat_escaped}</category>')
-        xml_lines.append('  </programme>')
-        
-        curr_time = p_stop
-        idx = (idx + 1) % len(blocks_info)
-        
-    return "\n".join(xml_lines)
-
-def generate_diag_epg_programmes(channel_id, channel_name, days_back=1, days_ahead=7):
-    """Generates continuous technical diagnostic EPG blocks."""
-    now = time.time()
-    start_window = now - (days_back * 86400)
-    end_window = now + (days_ahead * 86400)
-    
-    block_dur = 6 * 3600
-    curr_time = start_window - (start_window % block_dur)
-    
-    xml_lines = []
-    while curr_time < end_window:
-        p_start = curr_time
-        p_stop = curr_time + block_dur
-        
-        start_str = format_xmltv_time(p_start)
-        stop_str = format_xmltv_time(p_stop)
-        
-        title = f"{channel_name}: 24/7 Technical Test Stream"
-        desc = "Continuous test broadcast for video decoder validation, HDR switching, and audio clock synchronization."
-        
-        xml_lines.append(f'  <programme start="{start_str}" stop="{stop_str}" channel="{channel_id}">')
-        xml_lines.append(f'    <title lang="en">{title}</title>')
-        xml_lines.append(f'    <desc lang="en">{desc}</desc>')
-        xml_lines.append(f'    <category lang="en">Test / Diagnostic</category>')
-        xml_lines.append('  </programme>')
-        
-        curr_time = p_stop
-        
-    return "\n".join(xml_lines)
-
-def generate_standalone_epg_xml(channel_id, channel_name, media_dir, metadata_dict):
-    """Generates complete standalone XMLTV document."""
-    blocks = get_channel_schedule_blocks(media_dir, metadata_dict)
-    programmes_xml = generate_xmltv_programmes(channel_id, channel_name, blocks)
-    
-    return f"""<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE tv SYSTEM "xmltv.dtd">
-<tv source-info-url="https://kiefte.eu/iptv" generator-info-name="IPTV Live Bridge Deterministic EPG Engine">
-  <channel id="{channel_id}">
-    <display-name>{channel_name}</display-name>
-  </channel>
-{programmes_xml}
-</tv>
-"""
