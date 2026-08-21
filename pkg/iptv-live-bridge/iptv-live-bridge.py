@@ -406,127 +406,159 @@ def fetch_and_make_absolute_m3u8(m3u8_url):
         logger.error(f"Error proxying m3u8 content from {m3u8_url}: {e}")
         return None
 
-def generate_live_twitch_epg_xml():
-    """Dynamically queries Twitch GraphQL for live streamer names, titles, games, and viewers."""
-    now = time.time()
-    start_str = datetime.datetime.fromtimestamp(now - 3600, datetime.timezone.utc).strftime("%Y%m%d%H%M%S +0000")
-    stop_str = datetime.datetime.fromtimestamp(now + 3 * 3600, datetime.timezone.utc).strftime("%Y%m%d%H%M%S +0000")
-    
-    twitch_channels = [
-        ("Speedrun.tv", "speedrun", "Speedrun.com 24/7"),
-        ("GamesDoneQuick.tv", "gamesdonequick", "Games Done Quick"),
-        ("ESAMarathon.tv", "esamarathon", "European Speedrunner Assembly"),
-        ("TASVideos.tv", "tasvideos", "TASVideos"),
-        ("MitchFlowerPower.tv", "mitchflowerpower", "MitchFlowerPower"),
-        ("SmallAnt.tv", "smallant", "SmallAnt"),
-        ("GrandPOOBear.tv", "grandpoobear", "GrandPOOBear"),
-        ("SimpleFlips.tv", "simpleflips", "SimpleFlips"),
-        ("Puncayshun.tv", "puncayshun", "Puncayshun"),
-        ("Ryukahr.tv", "ryukahr", "Ryukahr"),
-        ("PangaeaPanga.tv", "pangaeapanga", "PangaeaPanga"),
-        ("CarlSagan42.tv", "carlsagan42", "CarlSagan42"),
-        ("Aurateur.tv", "aurateur", "Aurateur"),
-        ("HardDrop.tv", "harddrop", "Hard Drop Tetris"),
-        ("ClassicTetris.tv", "classictetris", "Classic Tetris World Championship"),
-    ]
-    
-    xml_lines = [
-        '<?xml version="1.0" encoding="UTF-8"?>',
-        '<!DOCTYPE tv SYSTEM "xmltv.dtd">',
-        '<tv source-info-url="https://kiefte.eu/iptv" generator-info-name="IPTV Live Twitch Real-Time EPG Engine">'
-    ]
-    
-    for ch_id, login, default_name in twitch_channels:
-        xml_lines.append(f'  <channel id="{ch_id}"><display-name>{default_name}</display-name></channel>')
-        
-        query = """
-        query GetStream($login: String!) {
-          user(login: $login) {
-            displayName
-            stream {
-              title
-              viewersCount
-              game { name }
-            }
-          }
-        }
-        """
-        is_live = False
-        display_name = default_name
-        stream_title = ""
-        game_name = "Gaming"
-        viewers = 0
-        
+import threading
+
+PRECHECKED_TWITCH_EPG_XML = ""
+
+TWITCH_CHANNELS = [
+    ("Speedrun.tv", "speedrun", "Speedrun.com 24/7"),
+    ("GamesDoneQuick.tv", "gamesdonequick", "Games Done Quick"),
+    ("ESAMarathon.tv", "esamarathon", "European Speedrunner Assembly"),
+    ("TASVideos.tv", "tasvideos", "TASVideos"),
+    ("MitchFlowerPower.tv", "mitchflowerpower", "MitchFlowerPower"),
+    ("SmallAnt.tv", "smallant", "SmallAnt"),
+    ("GrandPOOBear.tv", "grandpoobear", "GrandPOOBear"),
+    ("SimpleFlips.tv", "simpleflips", "SimpleFlips"),
+    ("Puncayshun.tv", "puncayshun", "Puncayshun"),
+    ("Ryukahr.tv", "ryukahr", "Ryukahr"),
+    ("PangaeaPanga.tv", "pangaeapanga", "PangaeaPanga"),
+    ("CarlSagan42.tv", "carlsagan42", "CarlSagan42"),
+    ("Aurateur.tv", "aurateur", "Aurateur"),
+    ("HardDrop.tv", "harddrop", "Hard Drop Tetris"),
+    ("ClassicTetris.tv", "classictetris", "Classic Tetris World Championship"),
+    ("DGR.tv", "dgr_dave", "DGR"),
+]
+
+def twitch_background_prechecker_loop():
+    """Background worker daemon that pre-checks all Twitch channels every 60s and builds static EPG."""
+    global PRECHECKED_TWITCH_EPG_XML
+    logger.info("Starting Twitch background prechecker daemon...")
+    while True:
         try:
+            now = time.time()
+            start_str = datetime.datetime.fromtimestamp(now - 3600, datetime.timezone.utc).strftime("%Y%m%d%H%M%S +0000")
+            stop_str = datetime.datetime.fromtimestamp(now + 3 * 3600, datetime.timezone.utc).strftime("%Y%m%d%H%M%S +0000")
+            
+            # Single batch GraphQL query
+            queries = []
+            for ch_id, login, name in TWITCH_CHANNELS:
+                clean_alias = f"u_{login.lower().replace('-', '_')}"
+                queries.append(f"""
+                {clean_alias}: user(login: "{login.lower()}") {{
+                    displayName
+                    stream {{
+                        title
+                        viewersCount
+                        game {{ name }}
+                    }}
+                }}
+                """)
+            full_query = "query BatchStreamCheck {\n" + "\n".join(queries) + "\n}"
+            
             req = urllib.request.Request(
                 "https://gql.twitch.tv/gql",
-                data=json.dumps({"query": query, "variables": {"login": login.lower()}}).encode("utf-8"),
+                data=json.dumps({"query": full_query}).encode("utf-8"),
                 headers={"Client-Id": "kimne78kx3ncx6brgo4mv6wki5h1ko", "Content-Type": "application/json"}
             )
-            with urllib.request.urlopen(req, timeout=2) as resp:
+            with urllib.request.urlopen(req, timeout=5) as resp:
                 data = json.loads(resp.read().decode("utf-8"))
-                user = data.get("data", {}).get("user")
-                if user:
-                    display_name = user.get("displayName") or default_name
-                    stream = user.get("stream")
-                    if stream:
-                        is_live = True
-                        stream_title = stream.get("title", "")
-                        game_name = stream.get("game", {}).get("name", "Gaming")
-                        viewers = stream.get("viewersCount", 0)
-        except Exception:
-            pass
+                results = data.get("data", {})
+                
+            xml_lines = [
+                '<?xml version="1.0" encoding="UTF-8"?>',
+                '<!DOCTYPE tv SYSTEM "xmltv.dtd">',
+                '<tv source-info-url="https://kiefte.eu/iptv" generator-info-name="IPTV Live Twitch Real-Time EPG Engine">'
+            ]
             
-        if is_live:
-            title = f"{display_name} - {game_name}"
-            desc = f"{stream_title} (👥 {viewers:,d} viewers)"
-        else:
-            # Check if autonomous fallback runner is currently live
-            fb_ch, _ = find_autonomous_fallback_for_channel(login)
-            if fb_ch and fb_ch.lower() != login.lower():
-                fb_name = fb_ch
-                fb_game = game_name
-                fb_title = ""
-                fb_viewers = 0
-                try:
-                    req_fb = urllib.request.Request(
-                        "https://gql.twitch.tv/gql",
-                        data=json.dumps({"query": query, "variables": {"login": fb_ch.lower()}}).encode("utf-8"),
-                        headers={"Client-Id": "kimne78kx3ncx6brgo4mv6wki5h1ko", "Content-Type": "application/json"}
-                    )
-                    with urllib.request.urlopen(req_fb, timeout=2) as resp:
-                        data_fb = json.loads(resp.read().decode("utf-8"))
-                        u_fb = data_fb.get("data", {}).get("user")
-                        if u_fb and u_fb.get("stream"):
-                            s_fb = u_fb["stream"]
-                            fb_name = u_fb.get("displayName") or fb_ch
-                            fb_title = s_fb.get("title", "")
-                            fb_game = s_fb.get("game", {}).get("name", "Gaming")
-                            fb_viewers = s_fb.get("viewersCount", 0)
-                            title = f"{fb_name} - {fb_game}"
-                            desc = f"{fb_title} (👥 {fb_viewers:,d} viewers)"
-                        else:
+            for ch_id, login, default_name in TWITCH_CHANNELS:
+                xml_lines.append(f'  <channel id="{ch_id}"><display-name>{default_name}</display-name></channel>')
+                clean_alias = f"u_{login.lower().replace('-', '_')}"
+                user = results.get(clean_alias)
+                
+                is_live = False
+                display_name = default_name
+                stream_title = ""
+                game_name = "Gaming"
+                viewers = 0
+                
+                if user and user.get("stream"):
+                    s = user["stream"]
+                    is_live = True
+                    display_name = user.get("displayName") or default_name
+                    stream_title = s.get("title", "")
+                    game_name = s.get("game", {}).get("name", "Gaming")
+                    viewers = s.get("viewersCount", 0)
+                    
+                if is_live:
+                    title = f"{display_name} - {game_name}"
+                    desc = f"{stream_title} (👥 {viewers:,d} viewers)"
+                else:
+                    # Check fallback runner in background
+                    fb_ch, _ = find_autonomous_fallback_for_channel(login)
+                    if fb_ch and fb_ch.lower() != login.lower():
+                        fb_name = fb_ch
+                        fb_game = game_name
+                        fb_title = ""
+                        fb_viewers = 0
+                        try:
+                            req_fb = urllib.request.Request(
+                                "https://gql.twitch.tv/gql",
+                                data=json.dumps({"query": f'query {{ user(login: "{fb_ch.lower()}") {{ displayName stream {{ title viewersCount game {{ name }} }} }} }}'}).encode("utf-8"),
+                                headers={"Client-Id": "kimne78kx3ncx6brgo4mv6wki5h1ko", "Content-Type": "application/json"}
+                            )
+                            with urllib.request.urlopen(req_fb, timeout=2) as r_fb:
+                                d_fb = json.loads(r_fb.read().decode("utf-8"))
+                                u_fb = d_fb.get("data", {}).get("user")
+                                if u_fb and u_fb.get("stream"):
+                                    s_fb = u_fb["stream"]
+                                    fb_name = u_fb.get("displayName") or fb_ch
+                                    fb_title = s_fb.get("title", "")
+                                    fb_game = s_fb.get("game", {}).get("name", "Gaming")
+                                    fb_viewers = s_fb.get("viewersCount", 0)
+                                    title = f"{fb_name} - {fb_game}"
+                                    desc = f"{fb_title} (👥 {fb_viewers:,d} viewers)"
+                                else:
+                                    title = f"{default_name}"
+                                    desc = f"Broadcast stream for {default_name}."
+                        except Exception:
                             title = f"{default_name}"
                             desc = f"Broadcast stream for {default_name}."
-                except Exception:
-                    title = f"{default_name}"
-                    desc = f"Broadcast stream for {default_name}."
-            else:
-                title = f"{default_name}"
-                desc = f"Broadcast stream for {default_name}."
+                    else:
+                        title = f"{default_name}"
+                        desc = f"Broadcast stream for {default_name}."
+                        
+                title_esc = title.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+                desc_esc = desc.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+                cat_esc = game_name.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+                
+                xml_lines.append(f'  <programme start="{start_str}" stop="{stop_str}" channel="{ch_id}">')
+                xml_lines.append(f'    <title lang="en">{title_esc}</title>')
+                xml_lines.append(f'    <desc lang="en">{desc_esc}</desc>')
+                xml_lines.append(f'    <category lang="en">{cat_esc}</category>')
+                xml_lines.append('  </programme>')
+                
+            xml_lines.append('</tv>')
+            PRECHECKED_TWITCH_EPG_XML = "\n".join(xml_lines)
             
-        title_esc = title.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-        desc_esc = desc.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-        cat_esc = game_name.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-        
-        xml_lines.append(f'  <programme start="{start_str}" stop="{stop_str}" channel="{ch_id}">')
-        xml_lines.append(f'    <title lang="en">{title_esc}</title>')
-        xml_lines.append(f'    <desc lang="en">{desc_esc}</desc>')
-        xml_lines.append(f'    <category lang="en">{cat_esc}</category>')
-        xml_lines.append('  </programme>')
-        
-    xml_lines.append('</tv>')
-    return "\n".join(xml_lines)
+            # Save prechecked static EPG file to /var/lib/iptv-live-bridge/dist/twitch_epg.xml
+            try:
+                os.makedirs("/var/lib/iptv-live-bridge/dist", exist_ok=True)
+                with open("/var/lib/iptv-live-bridge/dist/twitch_epg.xml", "w", encoding="utf-8") as f:
+                    f.write(PRECHECKED_TWITCH_EPG_XML)
+            except Exception:
+                pass
+                
+        except Exception as e:
+            logger.error(f"Error in Twitch background prechecker loop: {e}")
+            
+        time.sleep(60)
+
+def generate_live_twitch_epg_xml():
+    """Returns the pre-checked static Twitch EPG XML (instant response)."""
+    global PRECHECKED_TWITCH_EPG_XML
+    if PRECHECKED_TWITCH_EPG_XML:
+        return PRECHECKED_TWITCH_EPG_XML
+    return '<?xml version="1.0" encoding="UTF-8"?><tv><channel id="Speedrun.tv"><display-name>Speedrun.com 24/7</display-name></channel></tv>'
 
 class BridgeHandler(BaseHTTPRequestHandler):
     def do_OPTIONS(self):
@@ -895,9 +927,13 @@ class BridgeHandler(BaseHTTPRequestHandler):
         logger.debug("%s - - [%s] %s" % (self.address_string(), self.log_date_time_string(), format % args))
 
 def run():
+    # Start background Twitch precheck daemon
+    precheck_thread = threading.Thread(target=twitch_background_prechecker_loop, daemon=True)
+    precheck_thread.start()
+    
     server_address = (HOST, PORT)
     httpd = HTTPServer(server_address, BridgeHandler)
-    logger.info(f"Starting Quality Multi-Game Bridge v3.4 on http://{HOST}:{PORT}")
+    logger.info(f"Starting Quality Multi-Game Bridge v3.7.1 on http://{HOST}:{PORT}")
     try:
         httpd.serve_forever()
     except KeyboardInterrupt:
