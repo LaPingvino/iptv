@@ -1279,6 +1279,13 @@
     "url": "https://kiefte.eu/iptv/test/hdr"
   },
   {
+    "name": "HDR Dynamic Switch Smooth (30s Cadence)",
+    "group": "Diag",
+    "tvg_id": "HDRSwitchSmooth.ref@HD",
+    "tvg_name": "HDR Smooth Switch (30s)",
+    "url": "https://kiefte.eu/iptv/test/hdr-smooth"
+  },
+  {
     "name": "TV Maná Moçambique",
     "group": "Religião",
     "tvg_id": "TVManaMZ.mz",

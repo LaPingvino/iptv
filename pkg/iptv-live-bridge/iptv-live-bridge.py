@@ -456,8 +456,10 @@ class BridgeHandler(BaseHTTPRequestHandler):
             seg_name = path.split("/", 1)[1] if "/" in path else ""
             if seg_name in ["", "avsync", "pattern", "ipv6"]:
                 seg_name = "testcard.m3u8"
-            elif seg_name in ["hdr", "hlg", "hdr10", "hdr_switch"]:
+            elif seg_name in ["hdr", "hlg", "hdr10", "hdr_switch", "hdr12"]:
                 seg_name = "hdr_switch.m3u8"
+            elif seg_name in ["hdr-smooth", "smooth", "hdr30", "hdr_smooth", "relaxed"]:
+                seg_name = "hdr_smooth.m3u8"
                 
             seg_path = os.path.join(TESTCARD_DIR, seg_name)
             if os.path.exists(seg_path):

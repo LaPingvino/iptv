@@ -533,6 +533,9 @@ https://kiefte.eu/iptv/test/avsync
 #EXTINF:-1 tvg-id="HDRSwitch.ref@HD" tvg-name="HDR Dynamic Switch" group-title="Diag",HDR Dynamic Switch (SDR ➔ HLG ➔ HDR10)
 https://kiefte.eu/iptv/test/hdr
 
+#EXTINF:-1 tvg-id="HDRSwitchSmooth.ref@HD" tvg-name="HDR Smooth Switch (30s)" group-title="Diag",HDR Dynamic Switch Smooth (30s Cadence)
+https://kiefte.eu/iptv/test/hdr-smooth
+
 #EXTINF:-1 tvg-id="TVManaMZ.mz" tvg-name="TV Maná Moçambique" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-Mocambique.png" group-title="Religião",TV Maná Moçambique
 https://w2.manasat.com/tvmana-mz/smil:tvmana-mz.smil/playlist.m3u8
 
