@@ -515,17 +515,17 @@ def twitch_background_prechecker_loop():
                                     fb_title = s_fb.get("title", "")
                                     fb_game = s_fb.get("game", {}).get("name", "Gaming")
                                     fb_viewers = s_fb.get("viewersCount", 0)
-                                    title = f"{fb_name} - {fb_game}"
-                                    desc = f"{fb_title} (👥 {fb_viewers:,d} viewers)"
+                                    title = f"Off-air, now streaming {fb_name}"
+                                    desc = f"{fb_title} - {fb_game} (👥 {fb_viewers:,d} viewers)"
                                 else:
-                                    title = f"{default_name}"
-                                    desc = f"Broadcast stream for {default_name}."
+                                    title = default_name
+                                    desc = "Off-air"
                         except Exception:
-                            title = f"{default_name}"
-                            desc = f"Broadcast stream for {default_name}."
+                            title = default_name
+                            desc = "Off-air"
                     else:
-                        title = f"{default_name}"
-                        desc = f"Broadcast stream for {default_name}."
+                        title = default_name
+                        desc = "Off-air"
                         
                 title_esc = title.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
                 desc_esc = desc.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")

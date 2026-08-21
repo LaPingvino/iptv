@@ -206,6 +206,43 @@ def fetch_and_build_epg(dist_dir):
                                 title = f"{dname} - {gname}"
                                 desc = f"{stitle} (👥 {vw:,d} viewers)"
                                 game_name = gname
+                            else:
+                                # Check creator circles for live fallback
+                                circle_map = {
+                                    "gamesdonequick": ["esamarathon", "speedrun", "tasvideos"],
+                                    "esamarathon": ["speedrun", "gamesdonequick", "tasvideos"],
+                                    "tasvideos": ["speedrun", "esamarathon", "gamesdonequick"],
+                                    "ryukahr": ["tamthegamer", "dgr_dave", "smallant", "thabeast721", "aurateur", "grandpoobear"],
+                                    "carlsagan42": ["juzcook", "dgr_dave", "grandpoobear", "thabeast721", "aurateur"],
+                                    "dgr_dave": ["smallant", "carlsagan42", "juzcook", "ryukahr", "thabeast721"],
+                                    "mitchflowerpower": ["thabeast721", "grandpoobear", "speedrun", "aurateur"],
+                                    "classictetris": ["dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti"],
+                                    "wumbotize": ["doremy", "harddrop", "dogplayingtetris", "fractal"],
+                                    "doremy": ["wumbotize", "harddrop", "dogplayingtetris", "fractal"],
+                                    "harddrop": ["wumbotize", "doremy", "dogplayingtetris", "fractal"],
+                                }
+                                for cand in circle_map.get(login, []):
+                                    try:
+                                        q_fb = f'query {{ user(login: "{cand}") {{ displayName stream {{ title viewersCount game {{ name }} }} }} }}'
+                                        req_fb = urllib.request.Request(
+                                            "https://gql.twitch.tv/gql",
+                                            data=json.dumps({"query": q_fb}).encode("utf-8"),
+                                            headers={"Client-Id": "kimne78kx3ncx6brgo4mv6wki5h1ko", "Content-Type": "application/json"}
+                                        )
+                                        with urllib.request.urlopen(req_fb, timeout=2) as r_fb:
+                                            u_fb = json.loads(r_fb.read().decode("utf-8")).get("data", {}).get("user")
+                                            if u_fb and u_fb.get("stream"):
+                                                s_fb = u_fb["stream"]
+                                                fb_name = u_fb.get("displayName") or cand
+                                                fb_game = s_fb.get("game", {}).get("name", "Gaming")
+                                                fb_title = s_fb.get("title", "")
+                                                fb_vw = s_fb.get("viewersCount", 0)
+                                                title = f"Off-air, now streaming {fb_name}"
+                                                desc = f"{fb_title} - {fb_game} (👥 {fb_vw:,d} viewers)"
+                                                game_name = fb_game
+                                                break
+                                    except Exception:
+                                        pass
                     except Exception:
                         pass
                         
