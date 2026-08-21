@@ -35,9 +35,9 @@ def import_video(input_path, prefix="video"):
     cmd = [
         "ffmpeg", "-y",
         "-i", input_path,
-        "-vf", "scale=1280:720:force_original_aspect_ratio=decrease,pad=1280:720:(ow-iw)/2:(oh-ih)/2",
-        "-c:v", "libx264", "-preset", "ultrafast", "-crf", "23",
-        "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
+        "-vf", "scale=1024:576:force_original_aspect_ratio=decrease,pad=1024:576:(ow-iw)/2:(oh-ih)/2,fps=25",
+        "-c:v", "libx264", "-preset", "ultrafast", "-crf", "23", "-pix_fmt", "yuv420p",
+        "-c:a", "aac", "-b:a", "128k", "-ar", "48000",
         "-f", "segment", "-segment_time", "6", "-segment_list", out_m3u8,
         out_pattern
     ]
