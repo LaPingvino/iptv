@@ -25,7 +25,7 @@ mkdir -p /usr/share/iptv-live-bridge/offline
 
 echo "2. Updating bridge binary..."
 if [ -f "${PKG_DIR}/iptv-live-bridge.py" ]; then
-  cp -u "${PKG_DIR}/iptv-live-bridge.py" /usr/bin/iptv-live-bridge
+  cp -f "${PKG_DIR}/iptv-live-bridge.py" /usr/bin/iptv-live-bridge
   chmod 755 /usr/bin/iptv-live-bridge
 fi
 
@@ -51,7 +51,8 @@ fi
 echo "6. Applying strict permissions..."
 chmod -R 755 /var/lib/iptv-live-bridge /usr/share/iptv-live-bridge
 
-echo "7. Restarting iptv-live-bridge.service..."
+echo "7. Reloading systemd & restarting iptv-live-bridge.service..."
+systemctl daemon-reload
 systemctl restart iptv-live-bridge
 
 echo ""
