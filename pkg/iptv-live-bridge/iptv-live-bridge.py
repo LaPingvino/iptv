@@ -15,6 +15,7 @@ Features:
 import os
 import sys
 import time
+import datetime
 import json
 import logging
 import urllib.parse
@@ -405,6 +406,97 @@ def fetch_and_make_absolute_m3u8(m3u8_url):
         logger.error(f"Error proxying m3u8 content from {m3u8_url}: {e}")
         return None
 
+def generate_live_twitch_epg_xml():
+    """Dynamically queries Twitch GraphQL for live streamer names, titles, games, and viewers."""
+    now = time.time()
+    start_str = datetime.datetime.fromtimestamp(now - 3600, datetime.timezone.utc).strftime("%Y%m%d%H%M%S +0000")
+    stop_str = datetime.datetime.fromtimestamp(now + 3 * 3600, datetime.timezone.utc).strftime("%Y%m%d%H%M%S +0000")
+    
+    twitch_channels = [
+        ("Speedrun.tv", "speedrun", "Speedrun.com 24/7"),
+        ("GamesDoneQuick.tv", "gamesdonequick", "Games Done Quick"),
+        ("ESAMarathon.tv", "esamarathon", "European Speedrunner Assembly"),
+        ("TASVideos.tv", "tasvideos", "TASVideos"),
+        ("MitchFlowerPower.tv", "mitchflowerpower", "MitchFlowerPower"),
+        ("SmallAnt.tv", "smallant", "SmallAnt"),
+        ("GrandPOOBear.tv", "grandpoobear", "GrandPOOBear"),
+        ("SimpleFlips.tv", "simpleflips", "SimpleFlips"),
+        ("Puncayshun.tv", "puncayshun", "Puncayshun"),
+        ("Ryukahr.tv", "ryukahr", "Ryukahr"),
+        ("PangaeaPanga.tv", "pangaeapanga", "PangaeaPanga"),
+        ("CarlSagan42.tv", "carlsagan42", "CarlSagan42"),
+        ("Aurateur.tv", "aurateur", "Aurateur"),
+        ("HardDrop.tv", "harddrop", "Hard Drop Tetris"),
+        ("ClassicTetris.tv", "classictetris", "Classic Tetris World Championship"),
+    ]
+    
+    xml_lines = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<!DOCTYPE tv SYSTEM "xmltv.dtd">',
+        '<tv source-info-url="https://kiefte.eu/iptv" generator-info-name="IPTV Live Twitch Real-Time EPG Engine">'
+    ]
+    
+    for ch_id, login, default_name in twitch_channels:
+        xml_lines.append(f'  <channel id="{ch_id}"><display-name>{default_name}</display-name></channel>')
+        
+        query = """
+        query GetStream($login: String!) {
+          user(login: $login) {
+            displayName
+            stream {
+              title
+              viewersCount
+              game { name }
+            }
+          }
+        }
+        """
+        is_live = False
+        display_name = default_name
+        stream_title = ""
+        game_name = "Gaming"
+        viewers = 0
+        
+        try:
+            req = urllib.request.Request(
+                "https://gql.twitch.tv/gql",
+                data=json.dumps({"query": query, "variables": {"login": login.lower()}}).encode("utf-8"),
+                headers={"Client-Id": "kimne78kx3ncx6brgo4mv6wki5h1ko", "Content-Type": "application/json"}
+            )
+            with urllib.request.urlopen(req, timeout=2) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+                user = data.get("data", {}).get("user")
+                if user:
+                    display_name = user.get("displayName") or default_name
+                    stream = user.get("stream")
+                    if stream:
+                        is_live = True
+                        stream_title = stream.get("title", "")
+                        game_name = stream.get("game", {}).get("name", "Gaming")
+                        viewers = stream.get("viewersCount", 0)
+        except Exception:
+            pass
+            
+        if is_live:
+            title = f"🔴 LIVE: {display_name} - {game_name}"
+            desc = f"{stream_title} (👥 {viewers:,d} viewers)"
+        else:
+            title = f"⚪ {default_name} (24/7 Failover & Community Highlights)"
+            desc = f"Main channel is currently offline. Stream is actively routing through featured speedrunners and community hosts."
+            
+        title_esc = title.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        desc_esc = desc.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        cat_esc = game_name.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        
+        xml_lines.append(f'  <programme start="{start_str}" stop="{stop_str}" channel="{ch_id}">')
+        xml_lines.append(f'    <title lang="en">{title_esc}</title>')
+        xml_lines.append(f'    <desc lang="en">{desc_esc}</desc>')
+        xml_lines.append(f'    <category lang="en">{cat_esc}</category>')
+        xml_lines.append('  </programme>')
+        
+    xml_lines.append('</tv>')
+    return "\n".join(xml_lines)
+
 class BridgeHandler(BaseHTTPRequestHandler):
     def do_OPTIONS(self):
         self.send_response(200)
@@ -563,6 +655,18 @@ class BridgeHandler(BaseHTTPRequestHandler):
                         with open(seg_path, "rb") as f:
                             self.wfile.write(f.read())
                     return
+            
+        # Serve Real-Time Twitch Live EPG with actual streamer & failover metadata
+        if path in ["twitch/epg", "twitch/epg.xml", "epg/twitch.xml"]:
+            xml_content = generate_live_twitch_epg_xml()
+            self.send_response(200)
+            self.send_header("Content-Type", "application/xml; charset=utf-8")
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.send_header("Cache-Control", "max-age=60, must-revalidate")
+            self.end_headers()
+            if not is_head:
+                self.wfile.write(xml_content.encode("utf-8"))
+            return
             
         quality = params.get("quality", [QUALITY])[0]
         allow_fallback = params.get("fallback", ["1"])[0] in ["1", "true", "yes"]
