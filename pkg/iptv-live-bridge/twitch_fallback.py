@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
 Authoritative Shared Twitch Fallback & Live Metadata Engine for IPTV.
-Used identically by:
-- src/builder.py (Static Master EPG Generator)
-- pkg/iptv-live-bridge/iptv-live-bridge.py (Live Stream Bridge & Dynamic Prechecker Daemon)
+Handles:
+1. Specific Individual Streamers (with Creator Circles fallback & 'Off-air, now streaming' tag)
+2. Subject / Game / Multi-Game Channels (directly resolves top live streamer with zero 'off-air')
 """
 
 import json
@@ -142,6 +142,62 @@ def batch_check_streamers(logins):
                 }
     return out
 
+def query_top_streamer_for_game(game_name, bias=None):
+    """Queries Twitch for the top live broadcaster under a specific game title."""
+    raw_query = """
+    query GetGameStreams($name: String!) {
+      game(name: $name) {
+        name
+        streams(first: 10) {
+          edges {
+            node {
+              viewersCount
+              title
+              freeformTags { name }
+              broadcaster { login displayName }
+            }
+          }
+        }
+      }
+    }
+    """
+    res = query_twitch_gql(raw_query, variables={"name": game_name}, timeout=4)
+    if not res or "data" not in res or not res["data"] or not res["data"].get("game"):
+        return None
+        
+    game_obj = res["data"]["game"]
+    edges = game_obj.get("streams", {}).get("edges", [])
+    if not edges:
+        return None
+        
+    candidates = []
+    preferred_keywords = ROMHACK_KEYWORDS if bias in ["romhack", "nes"] else []
+    for e in edges:
+        node = e.get("node", {})
+        b = node.get("broadcaster", {})
+        title = node.get("title", "")
+        vw = node.get("viewersCount", 0)
+        tags = [t.get("name", "").lower() for t in node.get("freeformTags", [])]
+        all_text = (title + " " + " ".join(tags)).lower()
+        has_bias = any(kw in all_text for kw in preferred_keywords) if preferred_keywords else False
+        candidates.append({
+            "login": b.get("login"),
+            "display_name": b.get("displayName"),
+            "title": title,
+            "game": game_obj.get("name"),
+            "viewers": vw,
+            "has_bias": has_bias
+        })
+        
+    if preferred_keywords:
+        biased = [c for c in candidates if c["has_bias"]]
+        if biased:
+            biased.sort(key=lambda x: x["viewers"], reverse=True)
+            return biased[0]
+            
+    candidates.sort(key=lambda x: x["viewers"], reverse=True)
+    return candidates[0]
+
 def resolve_fallback_streamer(login):
     """Derives active fallback runner using Creator Circles graph."""
     clean = login.lower().strip()
@@ -149,7 +205,6 @@ def resolve_fallback_streamer(login):
     if not circle:
         return None
         
-    # Check all candidates in circle in batch
     candidates_data = batch_check_streamers(circle)
     for cand in circle:
         cand_info = candidates_data.get(cand)
@@ -157,18 +212,75 @@ def resolve_fallback_streamer(login):
             return cand_info
     return None
 
-def resolve_channel_metadata(login, default_name, category_name="Gaming"):
+def resolve_channel_metadata(target, default_name, category_name="Gaming", url=""):
     """
     Authoritative function to resolve complete channel metadata.
-    Returns: dict with epg_title, epg_desc, is_live, active_streamer, viewers, game, stream_url.
+    Handles both:
+    1. Subject / Game / Group Channels
+    2. Specific Individual Streamer Channels
     """
-    clean = login.lower().strip()
-    direct_check = batch_check_streamers([clean]).get(clean)
+    raw_target = url or target
+    parsed = urllib.parse.urlparse(raw_target)
+    path = parsed.path.rstrip("/")
+    query_params = urllib.parse.parse_qs(parsed.query)
+    bias = query_params.get("bias", [None])[0]
+
+    # --- 1. Subject / Game / Multi-Game Channels ---
+    if "/game/" in path or "/group/" in path or raw_target.startswith("game:") or raw_target.startswith("group:"):
+        game_names = []
+        if "/game/" in path:
+            game_name = urllib.parse.unquote(path.split("/game/")[-1])
+            game_names = [game_name]
+        elif "/group/" in path:
+            group_key = path.split("/group/")[-1]
+            game_names = GAME_GROUPS.get(group_key, [group_key])
+            
+        top_streamer = None
+        for g in game_names:
+            top_streamer = query_top_streamer_for_game(g, bias=bias)
+            if top_streamer:
+                break
+                
+        if top_streamer:
+            dname = top_streamer["display_name"]
+            gname = top_streamer["game"]
+            stitle = top_streamer["title"]
+            vw = top_streamer["viewers"]
+            return {
+                "channel_name": default_name,
+                "is_live": True,
+                "is_subject_channel": True,
+                "active_streamer": dname,
+                "game": gname,
+                "title": stitle,
+                "viewers": vw,
+                "epg_title": f"{dname} - {gname}",
+                "epg_desc": f"{stitle} (👥 {vw:,d} viewers)",
+                "stream_url": f"https://www.twitch.tv/{top_streamer['login']}"
+            }
+        else:
+            return {
+                "channel_name": default_name,
+                "is_live": False,
+                "is_subject_channel": True,
+                "active_streamer": None,
+                "game": category_name,
+                "title": "",
+                "viewers": 0,
+                "epg_title": default_name,
+                "epg_desc": "Live community broadcasts when active",
+                "stream_url": None
+            }
+
+    # --- 2. Specific Individual Streamer Channels ---
+    login = path.split("/")[-1].split("?")[0].lower() if "/" in path else target.lower().strip()
+    direct_check = batch_check_streamers([login]).get(login)
     
     if direct_check and direct_check.get("is_live"):
         return {
             "channel_name": default_name,
             "is_live": True,
+            "is_subject_channel": False,
             "is_fallback": False,
             "active_streamer": direct_check["display_name"],
             "game": direct_check["game"],
@@ -176,11 +288,11 @@ def resolve_channel_metadata(login, default_name, category_name="Gaming"):
             "viewers": direct_check["viewers"],
             "epg_title": f"{direct_check['display_name']} - {direct_check['game']}",
             "epg_desc": f"{direct_check['title']} (👥 {direct_check['viewers']:,d} viewers)",
-            "stream_url": f"https://www.twitch.tv/{clean}"
+            "stream_url": f"https://www.twitch.tv/{login}"
         }
         
     # Channel is offline -> run fallback algorithm
-    fallback_info = resolve_fallback_streamer(clean)
+    fallback_info = resolve_fallback_streamer(login)
     if fallback_info:
         fb_name = fallback_info["display_name"]
         fb_game = fallback_info["game"]
@@ -189,6 +301,7 @@ def resolve_channel_metadata(login, default_name, category_name="Gaming"):
         return {
             "channel_name": default_name,
             "is_live": True,
+            "is_subject_channel": False,
             "is_fallback": True,
             "active_streamer": fb_name,
             "game": fb_game,
@@ -203,6 +316,7 @@ def resolve_channel_metadata(login, default_name, category_name="Gaming"):
     return {
         "channel_name": default_name,
         "is_live": False,
+        "is_subject_channel": False,
         "is_fallback": False,
         "active_streamer": None,
         "game": category_name,

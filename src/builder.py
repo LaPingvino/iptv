@@ -187,7 +187,7 @@ def fetch_and_build_epg(dist_dir):
                 extracted_channels[ch_id] = f'  <channel id="{ch_id}">\n    <display-name>{ch_name}</display-name>\n  </channel>'
                 
                 login = url.rstrip("/").split("/")[-1].split("?")[0].lower()
-                meta = resolve_channel_metadata(login, ch_name, ch.get("group", "Gaming"))
+                meta = resolve_channel_metadata(login, ch_name, ch.get("group", "Gaming"), url=url)
                 
                 t_esc = meta["epg_title"].replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
                 d_esc = meta["epg_desc"].replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
