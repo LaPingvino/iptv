@@ -17,6 +17,8 @@ import gzip
 import lzma
 import urllib.request
 import re
+import time
+import datetime
 
 EPG_SOURCES = [
     "https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/epg.xml.gz",
@@ -166,7 +168,60 @@ def fetch_and_build_epg(dist_dir):
         bah_blocks = get_channel_schedule_blocks(bah_media_dir)
         extracted_programmes.append(generate_xmltv_programmes("BahaiStudioSessions.tv@HD", "Bahá'í Studio Sessions TV", bah_blocks))
         
-        # 4. Assemble clean XMLTV output
+        # 4. Add Twitch Channels with genuine live streamer info
+        now = time.time()
+        start_str = datetime.datetime.fromtimestamp(now - 1800, datetime.timezone.utc).strftime("%Y%m%d%H%M%S +0000")
+        stop_str = datetime.datetime.fromtimestamp(now + 4 * 3600, datetime.timezone.utc).strftime("%Y%m%d%H%M%S +0000")
+        
+        for ch in all_channels:
+            url = ch.get("url", "")
+            if "twitch" in url and ch.get("tvg_id"):
+                ch_id = ch.get("tvg_id")
+                ch_name = ch.get("tvg_name") or ch.get("name")
+                extracted_channels[ch_id] = f'  <channel id="{ch_id}">\n    <display-name>{ch_name}</display-name>\n  </channel>'
+                
+                login = url.rstrip("/").split("/")[-1].split("?")[0].lower()
+                is_live = False
+                title = ch_name
+                desc = "Off-air"
+                game_name = ch.get("group", "Gaming")
+                
+                if not url.endswith("/game/") and "/group/" not in url and "/games/" not in url:
+                    try:
+                        q = f'query {{ user(login: "{login}") {{ displayName stream {{ title viewersCount game {{ name }} }} }} }}'
+                        req_tw = urllib.request.Request(
+                            "https://gql.twitch.tv/gql",
+                            data=json.dumps({"query": q}).encode("utf-8"),
+                            headers={"Client-Id": "kimne78kx3ncx6brgo4mv6wki5h1ko", "Content-Type": "application/json"}
+                        )
+                        with urllib.request.urlopen(req_tw, timeout=2) as r_tw:
+                            u_data = json.loads(r_tw.read().decode("utf-8")).get("data", {}).get("user")
+                            if u_data and u_data.get("stream"):
+                                is_live = True
+                                s = u_data["stream"]
+                                dname = u_data.get("displayName") or ch_name
+                                gname = s.get("game", {}).get("name", "Gaming")
+                                stitle = s.get("title", "")
+                                vw = s.get("viewersCount", 0)
+                                title = f"{dname} - {gname}"
+                                desc = f"{stitle} (👥 {vw:,d} viewers)"
+                                game_name = gname
+                    except Exception:
+                        pass
+                        
+                t_esc = title.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+                d_esc = desc.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+                g_esc = game_name.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+                
+                extracted_programmes.append(
+                    f'  <programme start="{start_str}" stop="{stop_str}" channel="{ch_id}">\n'
+                    f'    <title lang="en">{t_esc}</title>\n'
+                    f'    <desc lang="en">{d_esc}</desc>\n'
+                    f'    <category lang="en">{g_esc}</category>\n'
+                    f'  </programme>'
+                )
+        
+        # 5. Assemble clean XMLTV output
         xml_header = '<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE tv SYSTEM "xmltv.dtd">\n<tv source-info-url="https://kiefte.eu/iptv" generator-info-name="IPTV Master Curated EPG Engine">\n'
         channels_block = "\n".join(extracted_channels.values())
         programmes_block = "\n".join(extracted_programmes)
