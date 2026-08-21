@@ -35,11 +35,17 @@ else
 fi
 cd "${PROJECT_DIR}"
 
-echo "2. Ensuring media directories exist..."
+echo "2. Ensuring media & distribution directories exist..."
+mkdir -p /var/lib/iptv-live-bridge/dist
 mkdir -p /var/lib/iptv-live-bridge/esperantotv
 mkdir -p /var/lib/iptv-live-bridge/bahaitv
 
-echo "3. Syncing Esperanto TV media library..."
+echo "3. Syncing master playlists & EPG distribution files..."
+if [ -d "${PROJECT_DIR}/dist" ]; then
+  rsync -a "${PROJECT_DIR}/dist/" /var/lib/iptv-live-bridge/dist/
+fi
+
+echo "4. Syncing Esperanto TV media library..."
 if [ -d "${PKG_DIR}/esperantotv" ]; then
   rsync -a --delete "${PKG_DIR}/esperantotv/" /var/lib/iptv-live-bridge/esperantotv/
 fi

@@ -559,10 +559,14 @@ class BridgeHandler(BaseHTTPRequestHandler):
             return
             
         # Serve static distribution files (playlist.m3u8, epg.xml.gz, epg.xml, etc.)
-        dist_dir = "/home/joop/iptv/dist"
         dist_file = path.split("/", 1)[1] if path.startswith("dist/") else path
-        dist_path = os.path.join(dist_dir, dist_file)
-        if os.path.exists(dist_path) and os.path.isfile(dist_path):
+        dist_paths = [
+            os.path.join("/var/lib/iptv-live-bridge/dist", dist_file),
+            os.path.join("/usr/share/iptv-live-bridge/dist", dist_file),
+            os.path.join("/home/joop/iptv/dist", dist_file),
+        ]
+        dist_path = next((p for p in dist_paths if os.path.exists(p) and os.path.isfile(p)), None)
+        if dist_path:
             self.send_response(200)
             if dist_file.endswith(".m3u8"):
                 self.send_header("Content-Type", "application/vnd.apple.mpegurl")
