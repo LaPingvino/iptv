@@ -119,16 +119,17 @@ session.set_option("hls-live-edge", 3)
 OFFLINE_DIR = os.environ.get("BRIDGE_OFFLINE_DIR", "/usr/share/iptv-live-bridge/offline" if os.path.exists("/usr/share/iptv-live-bridge/offline") else os.path.join(os.path.dirname(os.path.abspath(__file__)), "offline"))
 TESTCARD_DIR = os.environ.get("BRIDGE_TESTCARD_DIR", "/usr/share/iptv-live-bridge/testcard" if os.path.exists("/usr/share/iptv-live-bridge/testcard") else os.path.join(os.path.dirname(os.path.abspath(__file__)), "testcard"))
 ESPERANTO_DIR = os.environ.get("BRIDGE_ESPERANTO_DIR", "/var/lib/iptv-live-bridge/esperantotv" if os.path.exists("/var/lib/iptv-live-bridge/esperantotv") else ("/usr/share/iptv-live-bridge/esperantotv" if os.path.exists("/usr/share/iptv-live-bridge/esperantotv") else os.path.join(os.path.dirname(os.path.abspath(__file__)), "esperantotv")))
+BAHAI_DIR = os.environ.get("BRIDGE_BAHAI_DIR", "/var/lib/iptv-live-bridge/bahaitv" if os.path.exists("/var/lib/iptv-live-bridge/bahaitv") else ("/usr/share/iptv-live-bridge/bahaitv" if os.path.exists("/usr/share/iptv-live-bridge/bahaitv") else os.path.join(os.path.dirname(os.path.abspath(__file__)), "bahaitv")))
 
-def generate_live_linear_m3u8(directory, prefix="esperanto/"):
+def generate_live_linear_m3u8(directory, prefix="esperanto/", standby_ts="/iptv/test/esperanto_standby0.ts"):
     """Generates a synchronized real-time sliding-window live HLS playlist cycling 24/7 through media segments."""
     clean_prefix = prefix.strip("/")
     if not os.path.exists(directory):
-        return f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:6\n#EXT-X-MEDIA-SEQUENCE:0\n#EXTINF:6.000000,\n/iptv/test/esperanto_standby0.ts\n#EXT-X-ENDLIST\n"
+        return f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:6\n#EXT-X-MEDIA-SEQUENCE:0\n#EXTINF:6.000000,\n{standby_ts}\n#EXT-X-ENDLIST\n"
     
     segs = sorted([f for f in os.listdir(directory) if f.endswith(".ts")])
     if not segs:
-        return f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:6\n#EXT-X-MEDIA-SEQUENCE:0\n#EXTINF:6.000000,\n/iptv/test/esperanto_standby0.ts\n#EXT-X-ENDLIST\n"
+        return f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:6\n#EXT-X-MEDIA-SEQUENCE:0\n#EXTINF:6.000000,\n{standby_ts}\n#EXT-X-ENDLIST\n"
     
     seg_duration = 6.0
     total_segs = len(segs)
@@ -498,6 +499,31 @@ class BridgeHandler(BaseHTTPRequestHandler):
                 return
             else:
                 seg_path = os.path.join(ESPERANTO_DIR, seg_name)
+                if os.path.exists(seg_path):
+                    self.send_response(200)
+                    self.send_header("Content-Type", "video/MP2T")
+                    self.send_header("Access-Control-Allow-Origin", "*")
+                    self.end_headers()
+                    if not is_head:
+                        with open(seg_path, "rb") as f:
+                            self.wfile.write(f.read())
+                    return
+
+        # Serve Bahá'í Studio Sessions 24/7 Linear Broadcast stream
+        if path.startswith("bahai/") or path.startswith("bahaitv/") or path == "bahai":
+            seg_name = path.split("/", 1)[1] if "/" in path else ""
+            if seg_name in ["", "tv", "live", "live.m3u8", "tv.m3u8", "index.m3u8"]:
+                m3u8_content = generate_live_linear_m3u8(BAHAI_DIR, prefix="bahai/", standby_ts="/iptv/test/bahai_standby0.ts")
+                self.send_response(200)
+                self.send_header("Content-Type", "application/vnd.apple.mpegurl")
+                self.send_header("Access-Control-Allow-Origin", "*")
+                self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
+                self.end_headers()
+                if not is_head:
+                    self.wfile.write(m3u8_content.encode("utf-8"))
+                return
+            else:
+                seg_path = os.path.join(BAHAI_DIR, seg_name)
                 if os.path.exists(seg_path):
                     self.send_response(200)
                     self.send_header("Content-Type", "video/MP2T")
