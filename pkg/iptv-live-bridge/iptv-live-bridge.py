@@ -555,7 +555,31 @@ class BridgeHandler(BaseHTTPRequestHandler):
             self.send_header("Access-Control-Allow-Origin", "*")
             self.end_headers()
             if not is_head:
-                self.wfile.write(b'{"status":"ok","service":"iptv-live-bridge","version":"3.6.0"}\n')
+                self.wfile.write(b'{"status":"ok","service":"iptv-live-bridge","version":"3.7.1"}\n')
+            return
+            
+        # Serve static distribution files (playlist.m3u8, epg.xml.gz, epg.xml, etc.)
+        dist_dir = "/home/joop/iptv/dist"
+        dist_file = path.split("/", 1)[1] if path.startswith("dist/") else path
+        dist_path = os.path.join(dist_dir, dist_file)
+        if os.path.exists(dist_path) and os.path.isfile(dist_path):
+            self.send_response(200)
+            if dist_file.endswith(".m3u8"):
+                self.send_header("Content-Type", "application/vnd.apple.mpegurl")
+            elif dist_file.endswith(".xml"):
+                self.send_header("Content-Type", "application/xml; charset=utf-8")
+            elif dist_file.endswith(".gz"):
+                self.send_header("Content-Type", "application/gzip")
+            elif dist_file.endswith(".json"):
+                self.send_header("Content-Type", "application/json")
+            else:
+                self.send_header("Content-Type", "application/octet-stream")
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.send_header("Cache-Control", "no-cache, must-revalidate")
+            self.end_headers()
+            if not is_head:
+                with open(dist_path, "rb") as f:
+                    self.wfile.write(f.read())
             return
             
         # Serve local offline video segments if requested
