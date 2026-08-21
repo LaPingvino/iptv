@@ -116,8 +116,41 @@ session = streamlink.Streamlink()
 session.set_option("stream-timeout", 8)
 session.set_option("hls-live-edge", 3)
 
-OFFLINE_DIR = "/usr/share/iptv-live-bridge/offline" if os.path.exists("/usr/share/iptv-live-bridge/offline") else os.path.join(os.path.dirname(os.path.abspath(__file__)), "offline")
-TESTCARD_DIR = "/usr/share/iptv-live-bridge/testcard" if os.path.exists("/usr/share/iptv-live-bridge/testcard") else os.path.join(os.path.dirname(os.path.abspath(__file__)), "testcard")
+OFFLINE_DIR = os.environ.get("BRIDGE_OFFLINE_DIR", "/usr/share/iptv-live-bridge/offline" if os.path.exists("/usr/share/iptv-live-bridge/offline") else os.path.join(os.path.dirname(os.path.abspath(__file__)), "offline"))
+TESTCARD_DIR = os.environ.get("BRIDGE_TESTCARD_DIR", "/usr/share/iptv-live-bridge/testcard" if os.path.exists("/usr/share/iptv-live-bridge/testcard") else os.path.join(os.path.dirname(os.path.abspath(__file__)), "testcard"))
+ESPERANTO_DIR = os.environ.get("BRIDGE_ESPERANTO_DIR", "/var/lib/iptv-live-bridge/esperantotv" if os.path.exists("/var/lib/iptv-live-bridge/esperantotv") else ("/usr/share/iptv-live-bridge/esperantotv" if os.path.exists("/usr/share/iptv-live-bridge/esperantotv") else os.path.join(os.path.dirname(os.path.abspath(__file__)), "esperantotv")))
+
+def generate_live_linear_m3u8(directory, prefix="esperanto/"):
+    """Generates a synchronized real-time sliding-window live HLS playlist cycling 24/7 through media segments."""
+    if not os.path.exists(directory):
+        return "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:6\n#EXTINF:6.0,\n/testcard/testcard0.ts\n"
+    
+    segs = sorted([f for f in os.listdir(directory) if f.endswith(".ts")])
+    if not segs:
+        return "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:6\n#EXTINF:6.0,\n/testcard/testcard0.ts\n"
+    
+    seg_duration = 6.0
+    total_segs = len(segs)
+    total_cycle_time = total_segs * seg_duration
+    
+    current_time = time.time()
+    current_offset = current_time % total_cycle_time
+    current_idx = int(current_offset // seg_duration)
+    media_sequence = int(current_time // seg_duration)
+    
+    lines = [
+        "#EXTM3U",
+        "#EXT-X-VERSION:3",
+        f"#EXT-X-TARGETDURATION:{int(seg_duration)}",
+        f"#EXT-X-MEDIA-SEQUENCE:{media_sequence}"
+    ]
+    
+    for k in range(5):
+        seg_i = (current_idx + k) % total_segs
+        lines.append(f"#EXTINF:{seg_duration:.6f},")
+        lines.append(f"/{prefix}{segs[seg_i]}")
+        
+    return "\n".join(lines) + "\n"
 
 def resolve_stream(target_url, quality=QUALITY):
     now = time.time()
@@ -432,10 +465,34 @@ class BridgeHandler(BaseHTTPRequestHandler):
                     self.send_header("Content-Type", "video/MP2T")
                 self.send_header("Access-Control-Allow-Origin", "*")
                 self.end_headers()
-                if not is_head:
                     with open(seg_path, "rb") as f:
                         self.wfile.write(f.read())
                 return
+            
+        # Serve Esperanto TV 24/7 Linear Broadcast stream
+        if path.startswith("esperanto/") or path.startswith("esperantotv/") or path == "esperanto":
+            seg_name = path.split("/", 1)[1] if "/" in path else ""
+            if seg_name in ["", "tv", "live", "live.m3u8", "tv.m3u8", "index.m3u8"]:
+                m3u8_content = generate_live_linear_m3u8(ESPERANTO_DIR, prefix="esperanto/")
+                self.send_response(200)
+                self.send_header("Content-Type", "application/vnd.apple.mpegurl")
+                self.send_header("Access-Control-Allow-Origin", "*")
+                self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
+                self.end_headers()
+                if not is_head:
+                    self.wfile.write(m3u8_content.encode("utf-8"))
+                return
+            else:
+                seg_path = os.path.join(ESPERANTO_DIR, seg_name)
+                if os.path.exists(seg_path):
+                    self.send_response(200)
+                    self.send_header("Content-Type", "video/MP2T")
+                    self.send_header("Access-Control-Allow-Origin", "*")
+                    self.end_headers()
+                    if not is_head:
+                        with open(seg_path, "rb") as f:
+                            self.wfile.write(f.read())
+                    return
             
         quality = params.get("quality", [QUALITY])[0]
         allow_fallback = params.get("fallback", ["1"])[0] in ["1", "true", "yes"]

@@ -265,6 +265,9 @@ https://w2.manasat.com/kcine/kcine.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TVCultura.br@HD" tvg-name="TV Cultura" group-title="Filmes & Docs",TV Cultura (São Paulo)
 https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8
 
+#EXTINF:-1 tvg-id="EsperantoTV.eo" tvg-name="Esperanto TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_Esperanto.svg/512px-Flag_of_Esperanto.svg.png" group-title="Filmes & Docs",Esperanto TV (24/7 Kulturo, Muziko & Filmoj)
+https://kiefte.eu/iptv/esperanto/tv
+
 #EXTINF:-1 tvg-id="XON.nl" tvg-name="XON Ede" group-title="Regional & Local",XON (Ede TV)
 https://ms7.mx-cd.net/tv/113-474263/EdeTV.smil/playlist.m3u8
 

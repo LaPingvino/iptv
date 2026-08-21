@@ -5,3 +5,5 @@ __pycache__/
 *.pkg.tar.zst
 pkg/iptv-live-bridge/pkg/
 pkg/iptv-live-bridge/src/
+pkg/iptv-live-bridge/esperantotv/
+
