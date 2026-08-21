@@ -168,10 +168,16 @@ def fetch_and_build_epg(dist_dir):
         bah_blocks = get_channel_schedule_blocks(bah_media_dir)
         extracted_programmes.append(generate_xmltv_programmes("BahaiStudioSessions.tv@HD", "Bahá'í Studio Sessions TV", bah_blocks))
         
-        # 4. Add Twitch Channels with genuine live streamer info
+        # 4. Add Twitch Channels with genuine live streamer info via shared library
         now = time.time()
         start_str = datetime.datetime.fromtimestamp(now - 1800, datetime.timezone.utc).strftime("%Y%m%d%H%M%S +0000")
         stop_str = datetime.datetime.fromtimestamp(now + 4 * 3600, datetime.timezone.utc).strftime("%Y%m%d%H%M%S +0000")
+        
+        try:
+            from twitch_fallback import resolve_channel_metadata
+        except ImportError:
+            sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+            from twitch_fallback import resolve_channel_metadata
         
         for ch in all_channels:
             url = ch.get("url", "")
@@ -181,74 +187,11 @@ def fetch_and_build_epg(dist_dir):
                 extracted_channels[ch_id] = f'  <channel id="{ch_id}">\n    <display-name>{ch_name}</display-name>\n  </channel>'
                 
                 login = url.rstrip("/").split("/")[-1].split("?")[0].lower()
-                is_live = False
-                title = ch_name
-                desc = "Off-air"
-                game_name = ch.get("group", "Gaming")
+                meta = resolve_channel_metadata(login, ch_name, ch.get("group", "Gaming"))
                 
-                if not url.endswith("/game/") and "/group/" not in url and "/games/" not in url:
-                    try:
-                        q = f'query {{ user(login: "{login}") {{ displayName stream {{ title viewersCount game {{ name }} }} }} }}'
-                        req_tw = urllib.request.Request(
-                            "https://gql.twitch.tv/gql",
-                            data=json.dumps({"query": q}).encode("utf-8"),
-                            headers={"Client-Id": "kimne78kx3ncx6brgo4mv6wki5h1ko", "Content-Type": "application/json"}
-                        )
-                        with urllib.request.urlopen(req_tw, timeout=2) as r_tw:
-                            u_data = json.loads(r_tw.read().decode("utf-8")).get("data", {}).get("user")
-                            if u_data and u_data.get("stream"):
-                                is_live = True
-                                s = u_data["stream"]
-                                dname = u_data.get("displayName") or ch_name
-                                gname = s.get("game", {}).get("name", "Gaming")
-                                stitle = s.get("title", "")
-                                vw = s.get("viewersCount", 0)
-                                title = f"{dname} - {gname}"
-                                desc = f"{stitle} (👥 {vw:,d} viewers)"
-                                game_name = gname
-                            else:
-                                # Check creator circles for live fallback
-                                circle_map = {
-                                    "gamesdonequick": ["esamarathon", "speedrun", "tasvideos"],
-                                    "esamarathon": ["speedrun", "gamesdonequick", "tasvideos"],
-                                    "tasvideos": ["speedrun", "esamarathon", "gamesdonequick"],
-                                    "ryukahr": ["tamthegamer", "dgr_dave", "smallant", "thabeast721", "aurateur", "grandpoobear"],
-                                    "carlsagan42": ["juzcook", "dgr_dave", "grandpoobear", "thabeast721", "aurateur"],
-                                    "dgr_dave": ["smallant", "carlsagan42", "juzcook", "ryukahr", "thabeast721"],
-                                    "mitchflowerpower": ["thabeast721", "grandpoobear", "speedrun", "aurateur"],
-                                    "classictetris": ["dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti"],
-                                    "wumbotize": ["doremy", "harddrop", "dogplayingtetris", "fractal"],
-                                    "doremy": ["wumbotize", "harddrop", "dogplayingtetris", "fractal"],
-                                    "harddrop": ["wumbotize", "doremy", "dogplayingtetris", "fractal"],
-                                }
-                                for cand in circle_map.get(login, []):
-                                    try:
-                                        q_fb = f'query {{ user(login: "{cand}") {{ displayName stream {{ title viewersCount game {{ name }} }} }} }}'
-                                        req_fb = urllib.request.Request(
-                                            "https://gql.twitch.tv/gql",
-                                            data=json.dumps({"query": q_fb}).encode("utf-8"),
-                                            headers={"Client-Id": "kimne78kx3ncx6brgo4mv6wki5h1ko", "Content-Type": "application/json"}
-                                        )
-                                        with urllib.request.urlopen(req_fb, timeout=2) as r_fb:
-                                            u_fb = json.loads(r_fb.read().decode("utf-8")).get("data", {}).get("user")
-                                            if u_fb and u_fb.get("stream"):
-                                                s_fb = u_fb["stream"]
-                                                fb_name = u_fb.get("displayName") or cand
-                                                fb_game = s_fb.get("game", {}).get("name", "Gaming")
-                                                fb_title = s_fb.get("title", "")
-                                                fb_vw = s_fb.get("viewersCount", 0)
-                                                title = f"Off-air, now streaming {fb_name}"
-                                                desc = f"{fb_title} - {fb_game} (👥 {fb_vw:,d} viewers)"
-                                                game_name = fb_game
-                                                break
-                                    except Exception:
-                                        pass
-                    except Exception:
-                        pass
-                        
-                t_esc = title.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-                d_esc = desc.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-                g_esc = game_name.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+                t_esc = meta["epg_title"].replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+                d_esc = meta["epg_desc"].replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+                g_esc = meta["game"].replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
                 
                 extracted_programmes.append(
                     f'  <programme start="{start_str}" stop="{stop_str}" channel="{ch_id}">\n'
@@ -257,7 +200,6 @@ def fetch_and_build_epg(dist_dir):
                     f'    <category lang="en">{g_esc}</category>\n'
                     f'  </programme>'
                 )
-        
         # 5. Assemble clean XMLTV output
         xml_header = '<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE tv SYSTEM "xmltv.dtd">\n<tv source-info-url="https://kiefte.eu/iptv" generator-info-name="IPTV Master Curated EPG Engine">\n'
         channels_block = "\n".join(extracted_channels.values())

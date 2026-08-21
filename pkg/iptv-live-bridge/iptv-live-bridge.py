@@ -39,79 +39,17 @@ MIN_VIEWER_THRESHOLD = int(os.environ.get("BRIDGE_MIN_VIEWERS", "3"))
 # In-memory cache: url -> (resolved_url, timestamp)
 stream_cache = {}
 
-# Predefined Multi-Game Groups
-GAME_GROUPS = {
-    "modern-tetris": ["TETR.IO", "Tetris Effect: Connected", "Tetris Effect", "TETRIS 99", "Puyo Puyo Tetris 2", "Puyo Puyo Tetris"],
-    "nes-tetris": ["Tetris"],
-    "mario-speedruns": ["Super Mario 64", "Super Mario World", "Super Mario Sunshine", "Super Mario Bros. 3", "Super Mario Odyssey"],
-    "retro-rpg": ["Chrono Trigger", "Final Fantasy VI", "EarthBound", "Secret of Mana"]
-}
-
-# Well-known Creator Affinity & Collaborator Circles (Tier 1B)
-CREATOR_CIRCLES = {
-    "classictetris": ["dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "classictetris2", "classictetris3", "classictetris4", "harddrop", "wumbotize", "doremy"],
-    "classictetris2": ["classictetris", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "classictetris3", "classictetris4"],
-    "classictetris3": ["classictetris", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "classictetris2", "classictetris4"],
-    "classictetris4": ["classictetris", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "classictetris2", "classictetris3"],
-    "vinesandwillows": ["wumbotize", "doremy", "harddrop", "dogplayingtetris", "fractal", "carrarium", "ambercyprian", "smallant", "speedrun"],
-    "wumbotize": ["doremy", "harddrop", "dogplayingtetris", "fractal", "speedrun"],
-    "doremy": ["wumbotize", "harddrop", "dogplayingtetris", "fractal", "speedrun"],
-    "harddrop": ["wumbotize", "doremy", "dogplayingtetris", "fractal", "classictetris", "speedrun"],
-    "dogplayingtetris": ["fractal", "ericicx", "alex_t", "bluescuti", "classictetris", "wumbotize"],
-    "ericicx": ["dogplayingtetris", "fractal", "alex_t", "bluescuti", "classictetris"],
-    "fractal": ["dogplayingtetris", "ericicx", "alex_t", "bluescuti", "classictetris"],
-    "alex_t": ["dogplayingtetris", "fractal", "ericicx", "bluescuti", "classictetris"],
-    "bluescuti": ["dogplayingtetris", "fractal", "ericicx", "alex_t", "classictetris"],
-    "ryukahr": ["tamthegamer", "dgr_dave", "smallant", "thabeast721", "aurateur", "grandpoobear"],
-    "tamthegamer": ["ryukahr", "elanaorama", "smallant", "dgr_dave"],
-    "carlsagan42": ["juzcook", "dgr_dave", "grandpoobear", "thabeast721", "aurateur"],
-    "juzcook": ["carlsagan42", "dgr_dave", "grandpoobear", "thabeast721", "pangaeapanga"],
-    "dgr_dave": ["smallant", "carlsagan42", "juzcook", "ryukahr", "thabeast721"],
-    "smallant": ["dgr_dave", "ryukahr", "speedrun", "thabeast721", "grandpoobear"],
-    "elanaorama": ["smallant", "tamthegamer", "ryukahr", "speedrun"],
-    "thabeast721": ["grandpoobear", "aurateur", "pangaeapanga", "simpleflips", "carlsagan42", "glitchcat7"],
-    "grandpoobear": ["thabeast721", "aurateur", "carlsagan42", "juzcook", "pangaeapanga", "glitchcat7"],
-    "glitchcat7": ["thabeast721", "grandpoobear", "carlsagan42", "juzcook", "aurateur", "pangaeapanga", "speedrun"],
-    "aurateur": ["thabeast721", "grandpoobear", "carlsagan42", "pangaeapanga", "speedrun"],
-    "pangaeapanga": ["thabeast721", "grandpoobear", "aurateur", "juzcook", "simpleflips"],
-    "simpleflips": ["thabeast721", "grandpoobear", "smallant", "carlsagan42"],
-    "mitchflowerpower": ["thabeast721", "grandpoobear", "speedrun", "aurateur"],
-    "failstream": ["carlsagan42", "juzcook", "aurateur", "grandpoobear"],
-    "carrarium": ["tgh_sr", "ambercyprian", "msushi", "speedrun", "gamesdonequick", "esamarathon"],
-    "tgh_sr": ["carrarium", "ambercyprian", "msushi", "speedrun", "gamesdonequick", "esamarathon"],
-    "ambercyprian": ["tgh_sr", "carrarium", "msushi", "speedrun"],
-    "msushi": ["carrarium", "tgh_sr", "ambercyprian", "speedrun"],
-    "gamesdonequick": ["esamarathon", "speedrun", "tasvideos"],
-    "esamarathon": ["speedrun", "gamesdonequick", "tasvideos"],
-    "speedrun": ["esamarathon", "gamesdonequick", "tasvideos"],
-    "tasvideos": ["speedrun", "esamarathon", "gamesdonequick"]
-}
-
-# Community-Adjacent Game Graph (Tier 3)
-COMMUNITY_ADJACENT_GAMES = {
-    "super mario maker 2": ["super mario world", "super mario 64", "super mario bros. 3", "retro"],
-    "super mario world": ["super mario maker 2", "super mario 64", "super mario bros. 3", "retro"],
-    "super mario 64": ["super mario sunshine", "super mario galaxy", "super mario world", "retro"],
-    "blue prince": ["outer wilds", "the witness", "animal well", "myst", "puzzle"],
-    "celeste": ["super meat boy", "hollow knight", "pizza tower", "retro"],
-    "portal": ["portal 2", "the talos principle", "half-life 2"],
-    "portal 2": ["portal", "the talos principle", "half-life 2"],
-    "tetris": ["tetr.io", "tetris effect: connected", "tetris effect", "tetris 99", "retro"],
-    "tetr.io": ["tetris effect: connected", "tetris", "puyo puyo tetris 2"],
-    "planet coaster 2": ["planet coaster", "rollercoaster tycoon 2", "cities: skylines ii", "colony survival"],
-    "darkest dungeon": ["darkest dungeon ii", "slay the spire", "hades ii", "roguelike"],
-    "metroid prime origins": ["metroid prime", "super metroid", "metroid dread"],
-    "zeepkist": ["trackmania", "marble it up!", "trials rising", "retro"],
-    "trackmania": ["zeepkist", "trials rising", "retro"],
-    "chess": ["tabletop simulator", "retro"],
-    "geoguessr": ["retro"]
-}
-
-ROMHACK_KEYWORDS = [
-    "romhack", "hack", "kaizo", "smwc", "smwcentral", "lunar magic",
-    "dram", "gauntlet", "precision", "item abuse", "shell", "blind",
-    "practice", "casual romhack", "mod", "custom", "nes", "rolling", "hypertap", "ctwc"
-]
+sys.path.insert(0, "/usr/share/iptv-live-bridge")
+sys.path.insert(0, "/home/joop/iptv/src")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from twitch_fallback import (
+    GAME_GROUPS,
+    CREATOR_CIRCLES,
+    COMMUNITY_ADJACENT_GAMES,
+    ROMHACK_KEYWORDS,
+    resolve_channel_metadata,
+    batch_check_streamers,
+)
 
 session = streamlink.Streamlink()
 session.set_option("stream-timeout", 8)
@@ -472,64 +410,11 @@ def twitch_background_prechecker_loop():
             
             for ch_id, login, default_name in TWITCH_CHANNELS:
                 xml_lines.append(f'  <channel id="{ch_id}"><display-name>{default_name}</display-name></channel>')
-                clean_alias = f"u_{login.lower().replace('-', '_')}"
-                user = results.get(clean_alias)
+                meta = resolve_channel_metadata(login, default_name)
                 
-                is_live = False
-                display_name = default_name
-                stream_title = ""
-                game_name = "Gaming"
-                viewers = 0
-                
-                if user and user.get("stream"):
-                    s = user["stream"]
-                    is_live = True
-                    display_name = user.get("displayName") or default_name
-                    stream_title = s.get("title", "")
-                    game_name = s.get("game", {}).get("name", "Gaming")
-                    viewers = s.get("viewersCount", 0)
-                    
-                if is_live:
-                    title = f"{display_name} - {game_name}"
-                    desc = f"{stream_title} (👥 {viewers:,d} viewers)"
-                else:
-                    # Check fallback runner in background
-                    fb_ch, _ = find_autonomous_fallback_for_channel(login)
-                    if fb_ch and fb_ch.lower() != login.lower():
-                        fb_name = fb_ch
-                        fb_game = game_name
-                        fb_title = ""
-                        fb_viewers = 0
-                        try:
-                            req_fb = urllib.request.Request(
-                                "https://gql.twitch.tv/gql",
-                                data=json.dumps({"query": f'query {{ user(login: "{fb_ch.lower()}") {{ displayName stream {{ title viewersCount game {{ name }} }} }} }}'}).encode("utf-8"),
-                                headers={"Client-Id": "kimne78kx3ncx6brgo4mv6wki5h1ko", "Content-Type": "application/json"}
-                            )
-                            with urllib.request.urlopen(req_fb, timeout=2) as r_fb:
-                                d_fb = json.loads(r_fb.read().decode("utf-8"))
-                                u_fb = d_fb.get("data", {}).get("user")
-                                if u_fb and u_fb.get("stream"):
-                                    s_fb = u_fb["stream"]
-                                    fb_name = u_fb.get("displayName") or fb_ch
-                                    fb_title = s_fb.get("title", "")
-                                    fb_game = s_fb.get("game", {}).get("name", "Gaming")
-                                    fb_viewers = s_fb.get("viewersCount", 0)
-                                    title = f"Off-air, now streaming {fb_name}"
-                                    desc = f"{fb_title} - {fb_game} (👥 {fb_viewers:,d} viewers)"
-                                else:
-                                    title = default_name
-                                    desc = "Off-air"
-                        except Exception:
-                            title = default_name
-                            desc = "Off-air"
-                    else:
-                        title = default_name
-                        desc = "Off-air"
-                        
-                title_esc = title.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-                desc_esc = desc.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-                cat_esc = game_name.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+                title_esc = meta["epg_title"].replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+                desc_esc = meta["epg_desc"].replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+                cat_esc = meta["game"].replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
                 
                 xml_lines.append(f'  <programme start="{start_str}" stop="{stop_str}" channel="{ch_id}">')
                 xml_lines.append(f'    <title lang="en">{title_esc}</title>')
