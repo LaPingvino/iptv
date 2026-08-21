@@ -1,8 +1,8 @@
 # Maintainer: Joop Kiefte <ikojba@gmail.com>
 pkgname=iptv-live-bridge
-pkgver=3.6.0
+pkgver=3.7.0
 pkgrel=1
-pkgdesc="Dynamic IPTV Streamlink Bridge with 24/7 Gaming Auto-Fallback, Offline Slate & Esperanto TV Broadcast Engine"
+pkgdesc="Dynamic IPTV Streamlink Bridge with 24/7 Gaming Auto-Fallback, Offline Slate, Esperanto TV & Bahá'í Studio Sessions Engine"
 arch=('any')
 url="https://github.com/LaPingvino/iptv"
 license=('MIT')
@@ -34,5 +34,11 @@ package() {
     install -d "${pkgdir}/usr/share/iptv-live-bridge/esperantotv"
     if [ -d "${startdir}/esperantotv" ]; then
         cp -r "${startdir}/esperantotv/"* "${pkgdir}/usr/share/iptv-live-bridge/esperantotv/" 2>/dev/null || true
+    fi
+
+    install -d "${pkgdir}/var/lib/iptv-live-bridge/bahaitv"
+    install -d "${pkgdir}/usr/share/iptv-live-bridge/bahaitv"
+    if [ -d "${startdir}/bahaitv" ]; then
+        cp -r "${startdir}/bahaitv/"* "${pkgdir}/usr/share/iptv-live-bridge/bahaitv/" 2>/dev/null || true
     fi
 }
