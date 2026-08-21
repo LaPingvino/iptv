@@ -474,6 +474,14 @@ class BridgeHandler(BaseHTTPRequestHandler):
                     with open(seg_path, "rb") as f:
                         self.wfile.write(f.read())
                 return
+            else:
+                self.send_response(404)
+                self.send_header("Content-Type", "text/plain")
+                self.send_header("Access-Control-Allow-Origin", "*")
+                self.end_headers()
+                if not is_head:
+                    self.wfile.write(b"Test asset not found\n")
+                return
             
         # Serve Esperanto TV 24/7 Linear Broadcast stream
         if path.startswith("esperanto/") or path.startswith("esperantotv/") or path == "esperanto":

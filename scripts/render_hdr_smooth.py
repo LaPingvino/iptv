@@ -144,20 +144,23 @@ def render_smooth_suite():
                 "range=limited:repeat-headers=1:info=1:no-open-gop=1:keyint=60:min-keyint=60"
             )
             
-        print(f"[{i+1}/{total_segs}] Encoding {seg_file} ({start_time}s - {start_time+SEG_DURATION}s) ➔ {mode_name}...")
-        cmd = [
-            "ffmpeg", "-y",
-            "-ss", str(start_time),
-            "-i", SOURCE_VIDEO,
-            "-t", str(SEG_DURATION),
-            "-vf", vf_filters,
-            "-c:v", "libx265", "-preset", "ultrafast", "-crf", "22", "-pix_fmt", "yuv420p10le",
-            "-x265-params", x265_opts,
-            "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
-            "-muxdelay", "0", "-muxpreload", "0",
-            out_path
-        ]
-        subprocess.run(cmd, check=True)
+        if os.path.exists(out_path) and os.path.getsize(out_path) > 100000:
+            print(f"[{i+1}/{total_segs}] Segment {seg_file} already exists. Skipping transcode.")
+        else:
+            print(f"[{i+1}/{total_segs}] Encoding {seg_file} ({start_time}s - {start_time+SEG_DURATION}s) ➔ {mode_name}...")
+            cmd = [
+                "ffmpeg", "-y",
+                "-ss", str(start_time),
+                "-i", SOURCE_VIDEO,
+                "-t", str(SEG_DURATION),
+                "-vf", vf_filters,
+                "-c:v", "libx265", "-preset", "ultrafast", "-crf", "22", "-pix_fmt", "yuv420p10le",
+                "-x265-params", x265_opts,
+                "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
+                "-muxdelay", "0", "-muxpreload", "0",
+                out_path
+            ]
+            subprocess.run(cmd, check=True)
         
         if i > 0:
             m3u8_lines.append("#EXT-X-DISCONTINUITY")
