@@ -113,7 +113,7 @@ def render_smooth_suite():
                 f"drawbox=x=1440:y=50:w=420:h=70:color={badge_color}:t=2,"
                 f"drawtext=fontfile={font_bold}:text='SWITCH IN %{{eif\\:ceil(30-t)\\:d}}s':fontcolor=#facc15:fontsize=28:x=1460:y=72,"
                 f"drawbox=x=40:y=970:w=1840:h=70:color=black@0.65:t=fill,"
-                f"drawtext=fontfile={font_mono}:text='HDR10 Dynamic Range • SMPTE ST 2084 PQ • Mastering Luminance: 1000/0.0001 nits':fontcolor=#fecdd3:fontsize=22:x=60:y=992"
+                f"drawtext=fontfile={font_mono}:text='HDR10 Dynamic Range • SMPTE ST 2084 PQ • Mastering Luminance\\: 1000/0.0001 nits':fontcolor=#fecdd3:fontsize=22:x=60:y=992"
             )
             x265_opts = (
                 "colorprim=bt2020:transfer=smpte2084:colormatrix=bt2020nc:"
