@@ -122,12 +122,13 @@ ESPERANTO_DIR = os.environ.get("BRIDGE_ESPERANTO_DIR", "/var/lib/iptv-live-bridg
 
 def generate_live_linear_m3u8(directory, prefix="esperanto/"):
     """Generates a synchronized real-time sliding-window live HLS playlist cycling 24/7 through media segments."""
+    clean_prefix = prefix.strip("/")
     if not os.path.exists(directory):
-        return "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:6\n#EXTINF:6.0,\n/testcard/testcard0.ts\n"
+        return f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:6\n#EXT-X-MEDIA-SEQUENCE:0\n#EXTINF:6.000000,\n/iptv/test/testcard0.ts\n#EXT-X-ENDLIST\n"
     
     segs = sorted([f for f in os.listdir(directory) if f.endswith(".ts")])
     if not segs:
-        return "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:6\n#EXTINF:6.0,\n/testcard/testcard0.ts\n"
+        return f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:6\n#EXT-X-MEDIA-SEQUENCE:0\n#EXTINF:6.000000,\n/iptv/test/testcard0.ts\n#EXT-X-ENDLIST\n"
     
     seg_duration = 6.0
     total_segs = len(segs)
@@ -148,7 +149,7 @@ def generate_live_linear_m3u8(directory, prefix="esperanto/"):
     for k in range(5):
         seg_i = (current_idx + k) % total_segs
         lines.append(f"#EXTINF:{seg_duration:.6f},")
-        lines.append(f"/{prefix}{segs[seg_i]}")
+        lines.append(f"/iptv/{clean_prefix}/{segs[seg_i]}")
         
     return "\n".join(lines) + "\n"
 
