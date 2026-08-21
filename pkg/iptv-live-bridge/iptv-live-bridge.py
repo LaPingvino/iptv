@@ -124,11 +124,11 @@ def generate_live_linear_m3u8(directory, prefix="esperanto/"):
     """Generates a synchronized real-time sliding-window live HLS playlist cycling 24/7 through media segments."""
     clean_prefix = prefix.strip("/")
     if not os.path.exists(directory):
-        return f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:6\n#EXT-X-MEDIA-SEQUENCE:0\n#EXTINF:6.000000,\n/iptv/test/testcard0.ts\n#EXT-X-ENDLIST\n"
+        return f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:6\n#EXT-X-MEDIA-SEQUENCE:0\n#EXTINF:6.000000,\n/iptv/test/esperanto_standby0.ts\n#EXT-X-ENDLIST\n"
     
     segs = sorted([f for f in os.listdir(directory) if f.endswith(".ts")])
     if not segs:
-        return f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:6\n#EXT-X-MEDIA-SEQUENCE:0\n#EXTINF:6.000000,\n/iptv/test/testcard0.ts\n#EXT-X-ENDLIST\n"
+        return f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:6\n#EXT-X-MEDIA-SEQUENCE:0\n#EXTINF:6.000000,\n/iptv/test/esperanto_standby0.ts\n#EXT-X-ENDLIST\n"
     
     seg_duration = 6.0
     total_segs = len(segs)
