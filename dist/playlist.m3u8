@@ -272,7 +272,7 @@ https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8
 https://kiefte.eu/iptv/esperanto/tv
 
 #EXTINF:-1 tvg-id="XON.nl" tvg-name="XON Ede" group-title="Regional & Local",XON (Ede TV)
-https://ms7.mx-cd.net/tv/113-474263/EdeTV.smil/playlist.m3u8
+https://live.omroepnet.nl/hls/stream.m3u8
 
 #EXTINF:-1 tvg-id="OmroepGelderland.nl@HD" tvg-name="Omroep Gelderland" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepgelderland.png" group-title="Regional & Local",Omroep Gelderland
 https://d2od87akyl46nm.cloudfront.net/live/omroepgelderland/tvgelderland-hls/index.m3u8
