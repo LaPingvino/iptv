@@ -415,11 +415,14 @@ class BridgeHandler(BaseHTTPRequestHandler):
                         self.wfile.write(f.read())
                 return
             
-        # Serve diagnostic testcard segments if requested
+        # Serve diagnostic testcard & HDR switching segments if requested
         if path.startswith("testcard/") or path.startswith("test/"):
-            seg_name = path.split("/", 1)[1] if "/" in path else "testcard.m3u8"
+            seg_name = path.split("/", 1)[1] if "/" in path else ""
             if seg_name in ["", "avsync", "pattern", "ipv6"]:
                 seg_name = "testcard.m3u8"
+            elif seg_name in ["hdr", "hlg", "hdr10", "hdr_switch"]:
+                seg_name = "hdr_switch.m3u8"
+                
             seg_path = os.path.join(TESTCARD_DIR, seg_name)
             if os.path.exists(seg_path):
                 self.send_response(200)
