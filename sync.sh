@@ -1,0 +1,1 @@
+scripts/sync_live_bridge.sh
