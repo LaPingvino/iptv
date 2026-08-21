@@ -130,24 +130,24 @@ def process_muzikvideoj():
             print(f"  ⚠️ No file found for keyword '{kw}'")
 
 def process_senlime():
-    print("\n=== 5. Processing 'Esperanto Senlime' Reality Show ===")
-    for root, dirs, files in os.walk(DOWNLOADS_DIR):
-        for f in sorted(files):
-            if f.endswith(".part") or f.endswith(".tmp") or f.startswith("."):
-                continue
-            if "senlime" in f.lower() or "unlimited" in f.lower():
-                m = re.search(r'S(\d+)Ĉ?(\d+)', f, re.IGNORECASE)
-                if m:
-                    season = int(m.group(1))
-                    ep = int(m.group(2))
-                    tag = f"senlime_s{season:02d}e{ep:02d}"
-                elif "anonco" in f.lower():
-                    tag = "senlime_anonco"
-                else:
-                    tag = "senlime_special"
-                
-                full_path = os.path.join(root, f)
-                transcode_file(full_path, tag)
+    print("\n=== 5. Processing 'Esperanto Senlime' Reality Show Episodes ===")
+    senlime_dir = os.path.join(DOWNLOADS_DIR, "esperantosenlime")
+    if not os.path.exists(senlime_dir):
+        return
+        
+    for f in sorted(os.listdir(senlime_dir)):
+        if f.endswith(".part") or f.endswith(".tmp") or f.startswith("."):
+            continue
+        # Strictly require season + episode pattern (e.g. S1Ĉ07 or S01E07), skipping non-episodes
+        m = re.search(r'S(\d+)Ĉ?(\d+)', f, re.IGNORECASE)
+        if m:
+            season = int(m.group(1))
+            ep = int(m.group(2))
+            tag = f"senlime_s{season:02d}e{ep:02d}"
+            full_path = os.path.join(senlime_dir, f)
+            transcode_file(full_path, tag)
+        else:
+            print(f"  ℹ️ Skipping non-episode asset: '{f}'")
 
 def main():
     print(f"==================================================")
