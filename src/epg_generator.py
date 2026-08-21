@@ -228,9 +228,9 @@ def generate_twitch_epg_programmes(channel_id, channel_name, category_name="Gami
     
     templates = [
         ("Live Stream & Community Broadcasts", f"24/7 live stream featuring {channel_name}, community challenges, and world-record attempts."),
-        ("Top Speedruns & Highlights", f"High-level gameplay and marathon runs with automatic fallback to top category streamers."),
-        ("Community Failover & Late Night Grinds", f"Continuous live gaming rotation across top active community runners and tournament broadcasts."),
-        ("World Record Attempts & Practice", f"Live speedruns, practice routing, and challenge marathons with 24/7 automatic failover.")
+        ("Top Speedruns & Highlights", f"High-level gameplay and marathon runs with featured speedrun showcases."),
+        ("Speedrun Practice & Leaderboard Races", f"Continuous live gaming rotation across top active community runners and tournament broadcasts."),
+        ("World Record Attempts & Practice", f"Live speedruns, practice routing, and challenge marathons with daily speedrun rotation.")
     ]
     
     xml_lines = []

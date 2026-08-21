@@ -478,11 +478,42 @@ def generate_live_twitch_epg_xml():
             pass
             
         if is_live:
-            title = f"🔴 LIVE: {display_name} - {game_name}"
+            title = f"{display_name} - {game_name}"
             desc = f"{stream_title} (👥 {viewers:,d} viewers)"
         else:
-            title = f"⚪ {default_name} (24/7 Failover & Community Highlights)"
-            desc = f"Main channel is currently offline. Stream is actively routing through featured speedrunners and community hosts."
+            # Check if autonomous fallback runner is currently live
+            fb_ch, _ = find_autonomous_fallback_for_channel(login)
+            if fb_ch and fb_ch.lower() != login.lower():
+                fb_name = fb_ch
+                fb_game = game_name
+                fb_title = ""
+                fb_viewers = 0
+                try:
+                    req_fb = urllib.request.Request(
+                        "https://gql.twitch.tv/gql",
+                        data=json.dumps({"query": query, "variables": {"login": fb_ch.lower()}}).encode("utf-8"),
+                        headers={"Client-Id": "kimne78kx3ncx6brgo4mv6wki5h1ko", "Content-Type": "application/json"}
+                    )
+                    with urllib.request.urlopen(req_fb, timeout=2) as resp:
+                        data_fb = json.loads(resp.read().decode("utf-8"))
+                        u_fb = data_fb.get("data", {}).get("user")
+                        if u_fb and u_fb.get("stream"):
+                            s_fb = u_fb["stream"]
+                            fb_name = u_fb.get("displayName") or fb_ch
+                            fb_title = s_fb.get("title", "")
+                            fb_game = s_fb.get("game", {}).get("name", "Gaming")
+                            fb_viewers = s_fb.get("viewersCount", 0)
+                            title = f"{fb_name} - {fb_game}"
+                            desc = f"{fb_title} (👥 {fb_viewers:,d} viewers)"
+                        else:
+                            title = f"{default_name}"
+                            desc = f"Broadcast stream for {default_name}."
+                except Exception:
+                    title = f"{default_name}"
+                    desc = f"Broadcast stream for {default_name}."
+            else:
+                title = f"{default_name}"
+                desc = f"Broadcast stream for {default_name}."
             
         title_esc = title.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
         desc_esc = desc.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
