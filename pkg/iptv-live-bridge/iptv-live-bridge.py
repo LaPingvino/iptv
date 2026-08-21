@@ -497,6 +497,21 @@ class BridgeHandler(BaseHTTPRequestHandler):
                 if not is_head:
                     self.wfile.write(m3u8_content.encode("utf-8"))
                 return
+            elif seg_name in ["epg", "epg.xml"]:
+                try:
+                    sys.path.insert(0, "/home/joop/iptv/src")
+                    from epg_generator import generate_standalone_epg_xml, ESPERANTO_METADATA
+                    xml_content = generate_standalone_epg_xml("EsperantoTV.eo@SD", "Esperanto TV", ESPERANTO_DIR, ESPERANTO_METADATA)
+                except Exception as e:
+                    xml_content = f'<?xml version="1.0" encoding="UTF-8"?><tv><channel id="EsperantoTV.eo@SD"><display-name>Esperanto TV</display-name></channel></tv>'
+                self.send_response(200)
+                self.send_header("Content-Type", "application/xml; charset=utf-8")
+                self.send_header("Access-Control-Allow-Origin", "*")
+                self.send_header("Cache-Control", "max-age=300, must-revalidate")
+                self.end_headers()
+                if not is_head:
+                    self.wfile.write(xml_content.encode("utf-8"))
+                return
             else:
                 seg_path = os.path.join(ESPERANTO_DIR, seg_name)
                 if os.path.exists(seg_path):
@@ -521,6 +536,21 @@ class BridgeHandler(BaseHTTPRequestHandler):
                 self.end_headers()
                 if not is_head:
                     self.wfile.write(m3u8_content.encode("utf-8"))
+                return
+            elif seg_name in ["epg", "epg.xml"]:
+                try:
+                    sys.path.insert(0, "/home/joop/iptv/src")
+                    from epg_generator import generate_standalone_epg_xml
+                    xml_content = generate_standalone_epg_xml("BahaiStudioSessions.tv@HD", "Bahá'í Studio Sessions TV", BAHAI_DIR, {})
+                except Exception as e:
+                    xml_content = f'<?xml version="1.0" encoding="UTF-8"?><tv><channel id="BahaiStudioSessions.tv@HD"><display-name>Bahá\'í Studio Sessions TV</display-name></channel></tv>'
+                self.send_response(200)
+                self.send_header("Content-Type", "application/xml; charset=utf-8")
+                self.send_header("Access-Control-Allow-Origin", "*")
+                self.send_header("Cache-Control", "max-age=300, must-revalidate")
+                self.end_headers()
+                if not is_head:
+                    self.wfile.write(xml_content.encode("utf-8"))
                 return
             else:
                 seg_path = os.path.join(BAHAI_DIR, seg_name)

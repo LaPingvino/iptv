@@ -92,11 +92,46 @@ def fetch_and_build_epg(dist_dir):
     xml_path = os.path.join(dist_dir, "epg.xml")
     gz_path = os.path.join(dist_dir, "epg.xml.gz")
     
-    print("\nFetching upstream M3UPT EPG guide data...")
+    print("\nFetching upstream M3UPT EPG guide data & generating custom channel schedules...")
     try:
         req = urllib.request.Request(UPSTREAM_M3UPT_EPG, headers={"User-Agent": "Mozilla/5.0"})
         data_xz = urllib.request.urlopen(req, timeout=15).read()
-        data_xml = lzma.decompress(data_xz)
+        raw_xml = lzma.decompress(data_xz).decode("utf-8", errors="replace")
+    except Exception as e:
+        print(f"  ✗ Warning: Could not download upstream EPG ({e}). Initializing clean XMLTV container.")
+        raw_xml = '<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE tv SYSTEM "xmltv.dtd">\n<tv source-info-url="https://kiefte.eu/iptv">\n</tv>'
+
+    # Generate custom schedules via epg_generator
+    try:
+        from epg_generator import (
+            ESPERANTO_METADATA,
+            get_channel_schedule_blocks,
+            generate_xmltv_programmes,
+            generate_standalone_epg_xml
+        )
+        
+        esp_media_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "pkg", "iptv-live-bridge", "esperantotv")
+        bah_media_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "pkg", "iptv-live-bridge", "bahaitv")
+        
+        esp_blocks = get_channel_schedule_blocks(esp_media_dir, ESPERANTO_METADATA)
+        esp_prog_xml = generate_xmltv_programmes("EsperantoTV.eo@SD", "Esperanto TV", esp_blocks)
+        
+        bah_blocks = get_channel_schedule_blocks(bah_media_dir)
+        bah_prog_xml = generate_xmltv_programmes("BahaiStudioSessions.tv@HD", "Bahá'í Studio Sessions TV", bah_blocks)
+        
+        custom_channels = (
+            '  <channel id="EsperantoTV.eo@SD">\n    <display-name>Esperanto TV</display-name>\n  </channel>\n'
+            '  <channel id="BahaiStudioSessions.tv@HD">\n    <display-name>Bahá\'í Studio Sessions TV</display-name>\n  </channel>\n'
+        )
+        
+        # Inject custom channels and programmes before </tv>
+        if "</tv>" in raw_xml:
+            parts = raw_xml.rsplit("</tv>", 1)
+            merged_xml = parts[0] + "\n" + custom_channels + esp_prog_xml + "\n" + bah_prog_xml + "\n</tv>"
+        else:
+            merged_xml = raw_xml + "\n" + custom_channels + esp_prog_xml + "\n" + bah_prog_xml + "\n</tv>"
+            
+        data_xml = merged_xml.encode("utf-8")
         
         with open(xml_path, "wb") as f:
             f.write(data_xml)
@@ -104,10 +139,16 @@ def fetch_and_build_epg(dist_dir):
         with gzip.open(gz_path, "wb") as f:
             f.write(data_xml)
             
+        # Also write standalone EPG files
+        esp_standalone = generate_standalone_epg_xml("EsperantoTV.eo@SD", "Esperanto TV", esp_media_dir, ESPERANTO_METADATA)
+        with open(os.path.join(dist_dir, "esperanto_epg.xml"), "w", encoding="utf-8") as f:
+            f.write(esp_standalone)
+            
         print(f"  ✓ {xml_path} ({os.path.getsize(xml_path)} bytes)")
         print(f"  ✓ {gz_path} ({os.path.getsize(gz_path)} bytes)")
+        print(f"  ✓ {os.path.join(dist_dir, 'esperanto_epg.xml')} ({len(esp_standalone)} bytes)")
     except Exception as e:
-        print(f"  ✗ Warning: Could not download upstream EPG: {e}")
+        print(f"  ✗ Error generating custom channel EPG: {e}")
 
 def build_playlists():
     root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

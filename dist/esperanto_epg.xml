@@ -1,0 +1,2567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv SYSTEM "xmltv.dtd">
+<tv source-info-url="https://kiefte.eu/iptv" generator-info-name="IPTV Live Bridge Deterministic EPG Engine">
+  <channel id="EsperantoTV.eo@SD">
+    <display-name>Esperanto TV</display-name>
+  </channel>
+  <programme start="20260820155118 +0000" stop="20260820163718 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260820163718 +0000" stop="20260820165300 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260820165300 +0000" stop="20260820170924 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260820170924 +0000" stop="20260820172136 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260820172136 +0000" stop="20260820180736 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260820180736 +0000" stop="20260820182318 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260820182318 +0000" stop="20260820183942 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260820183942 +0000" stop="20260820185154 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260820185154 +0000" stop="20260820193754 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260820193754 +0000" stop="20260820195336 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260820195336 +0000" stop="20260820201000 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260820201000 +0000" stop="20260820202212 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260820202212 +0000" stop="20260820210812 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260820210812 +0000" stop="20260820212354 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260820212354 +0000" stop="20260820214018 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260820214018 +0000" stop="20260820215230 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260820215230 +0000" stop="20260820223830 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260820223830 +0000" stop="20260820225412 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260820225412 +0000" stop="20260820231036 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260820231036 +0000" stop="20260820232248 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260820232248 +0000" stop="20260821000848 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260821000848 +0000" stop="20260821002430 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821002430 +0000" stop="20260821004054 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821004054 +0000" stop="20260821005306 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821005306 +0000" stop="20260821013906 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260821013906 +0000" stop="20260821015448 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821015448 +0000" stop="20260821021112 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821021112 +0000" stop="20260821022324 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821022324 +0000" stop="20260821030924 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260821030924 +0000" stop="20260821032506 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821032506 +0000" stop="20260821034130 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821034130 +0000" stop="20260821035342 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821035342 +0000" stop="20260821043942 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260821043942 +0000" stop="20260821045524 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821045524 +0000" stop="20260821051148 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821051148 +0000" stop="20260821052400 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821052400 +0000" stop="20260821061000 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260821061000 +0000" stop="20260821062542 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821062542 +0000" stop="20260821064206 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821064206 +0000" stop="20260821065418 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821065418 +0000" stop="20260821074018 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260821074018 +0000" stop="20260821075600 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821075600 +0000" stop="20260821081224 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821081224 +0000" stop="20260821082436 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821082436 +0000" stop="20260821091036 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260821091036 +0000" stop="20260821092618 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821092618 +0000" stop="20260821094242 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821094242 +0000" stop="20260821095454 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821095454 +0000" stop="20260821104054 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260821104054 +0000" stop="20260821105636 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821105636 +0000" stop="20260821111300 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821111300 +0000" stop="20260821112512 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821112512 +0000" stop="20260821121112 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260821121112 +0000" stop="20260821122654 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821122654 +0000" stop="20260821124318 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821124318 +0000" stop="20260821125530 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821125530 +0000" stop="20260821134130 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260821134130 +0000" stop="20260821135712 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821135712 +0000" stop="20260821141336 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821141336 +0000" stop="20260821142548 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821142548 +0000" stop="20260821151148 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260821151148 +0000" stop="20260821152730 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821152730 +0000" stop="20260821154354 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821154354 +0000" stop="20260821155606 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821155606 +0000" stop="20260821164206 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260821164206 +0000" stop="20260821165748 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821165748 +0000" stop="20260821171412 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821171412 +0000" stop="20260821172624 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821172624 +0000" stop="20260821181224 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260821181224 +0000" stop="20260821182806 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821182806 +0000" stop="20260821184430 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821184430 +0000" stop="20260821185642 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821185642 +0000" stop="20260821194242 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260821194242 +0000" stop="20260821195824 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821195824 +0000" stop="20260821201448 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821201448 +0000" stop="20260821202700 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821202700 +0000" stop="20260821211300 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260821211300 +0000" stop="20260821212842 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821212842 +0000" stop="20260821214506 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821214506 +0000" stop="20260821215718 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821215718 +0000" stop="20260821224318 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260821224318 +0000" stop="20260821225900 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821225900 +0000" stop="20260821231524 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821231524 +0000" stop="20260821232736 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260821232736 +0000" stop="20260822001336 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260822001336 +0000" stop="20260822002918 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822002918 +0000" stop="20260822004542 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822004542 +0000" stop="20260822005754 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822005754 +0000" stop="20260822014354 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260822014354 +0000" stop="20260822015936 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822015936 +0000" stop="20260822021600 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822021600 +0000" stop="20260822022812 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822022812 +0000" stop="20260822031412 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260822031412 +0000" stop="20260822032954 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822032954 +0000" stop="20260822034618 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822034618 +0000" stop="20260822035830 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822035830 +0000" stop="20260822044430 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260822044430 +0000" stop="20260822050012 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822050012 +0000" stop="20260822051636 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822051636 +0000" stop="20260822052848 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822052848 +0000" stop="20260822061448 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260822061448 +0000" stop="20260822063030 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822063030 +0000" stop="20260822064654 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822064654 +0000" stop="20260822065906 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822065906 +0000" stop="20260822074506 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260822074506 +0000" stop="20260822080048 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822080048 +0000" stop="20260822081712 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822081712 +0000" stop="20260822082924 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822082924 +0000" stop="20260822091524 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260822091524 +0000" stop="20260822093106 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822093106 +0000" stop="20260822094730 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822094730 +0000" stop="20260822095942 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822095942 +0000" stop="20260822104542 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260822104542 +0000" stop="20260822110124 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822110124 +0000" stop="20260822111748 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822111748 +0000" stop="20260822113000 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822113000 +0000" stop="20260822121600 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260822121600 +0000" stop="20260822123142 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822123142 +0000" stop="20260822124806 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822124806 +0000" stop="20260822130018 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822130018 +0000" stop="20260822134618 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260822134618 +0000" stop="20260822140200 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822140200 +0000" stop="20260822141824 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822141824 +0000" stop="20260822143036 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822143036 +0000" stop="20260822151636 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260822151636 +0000" stop="20260822153218 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822153218 +0000" stop="20260822154842 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822154842 +0000" stop="20260822160054 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822160054 +0000" stop="20260822164654 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260822164654 +0000" stop="20260822170236 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822170236 +0000" stop="20260822171900 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822171900 +0000" stop="20260822173112 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822173112 +0000" stop="20260822181712 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260822181712 +0000" stop="20260822183254 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822183254 +0000" stop="20260822184918 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822184918 +0000" stop="20260822190130 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822190130 +0000" stop="20260822194730 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260822194730 +0000" stop="20260822200312 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822200312 +0000" stop="20260822201936 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822201936 +0000" stop="20260822203148 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822203148 +0000" stop="20260822211748 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260822211748 +0000" stop="20260822213330 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822213330 +0000" stop="20260822214954 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822214954 +0000" stop="20260822220206 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822220206 +0000" stop="20260822224806 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260822224806 +0000" stop="20260822230348 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822230348 +0000" stop="20260822232012 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822232012 +0000" stop="20260822233224 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260822233224 +0000" stop="20260823001824 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260823001824 +0000" stop="20260823003406 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823003406 +0000" stop="20260823005030 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823005030 +0000" stop="20260823010242 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823010242 +0000" stop="20260823014842 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260823014842 +0000" stop="20260823020424 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823020424 +0000" stop="20260823022048 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823022048 +0000" stop="20260823023300 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823023300 +0000" stop="20260823031900 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260823031900 +0000" stop="20260823033442 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823033442 +0000" stop="20260823035106 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823035106 +0000" stop="20260823040318 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823040318 +0000" stop="20260823044918 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260823044918 +0000" stop="20260823050500 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823050500 +0000" stop="20260823052124 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823052124 +0000" stop="20260823053336 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823053336 +0000" stop="20260823061936 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260823061936 +0000" stop="20260823063518 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823063518 +0000" stop="20260823065142 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823065142 +0000" stop="20260823070354 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823070354 +0000" stop="20260823074954 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260823074954 +0000" stop="20260823080536 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823080536 +0000" stop="20260823082200 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823082200 +0000" stop="20260823083412 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823083412 +0000" stop="20260823092012 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260823092012 +0000" stop="20260823093554 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823093554 +0000" stop="20260823095218 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823095218 +0000" stop="20260823100430 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823100430 +0000" stop="20260823105030 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260823105030 +0000" stop="20260823110612 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823110612 +0000" stop="20260823112236 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823112236 +0000" stop="20260823113448 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823113448 +0000" stop="20260823122048 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260823122048 +0000" stop="20260823123630 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823123630 +0000" stop="20260823125254 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823125254 +0000" stop="20260823130506 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823130506 +0000" stop="20260823135106 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260823135106 +0000" stop="20260823140648 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823140648 +0000" stop="20260823142312 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823142312 +0000" stop="20260823143524 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823143524 +0000" stop="20260823152124 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260823152124 +0000" stop="20260823153706 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823153706 +0000" stop="20260823155330 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823155330 +0000" stop="20260823160542 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823160542 +0000" stop="20260823165142 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260823165142 +0000" stop="20260823170724 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823170724 +0000" stop="20260823172348 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823172348 +0000" stop="20260823173600 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823173600 +0000" stop="20260823182200 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260823182200 +0000" stop="20260823183742 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823183742 +0000" stop="20260823185406 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823185406 +0000" stop="20260823190618 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823190618 +0000" stop="20260823195218 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260823195218 +0000" stop="20260823200800 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823200800 +0000" stop="20260823202424 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823202424 +0000" stop="20260823203636 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823203636 +0000" stop="20260823212236 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260823212236 +0000" stop="20260823213818 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823213818 +0000" stop="20260823215442 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823215442 +0000" stop="20260823220654 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823220654 +0000" stop="20260823225254 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260823225254 +0000" stop="20260823230836 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823230836 +0000" stop="20260823232500 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823232500 +0000" stop="20260823233712 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260823233712 +0000" stop="20260824002312 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260824002312 +0000" stop="20260824003854 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824003854 +0000" stop="20260824005518 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824005518 +0000" stop="20260824010730 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824010730 +0000" stop="20260824015330 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260824015330 +0000" stop="20260824020912 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824020912 +0000" stop="20260824022536 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824022536 +0000" stop="20260824023748 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824023748 +0000" stop="20260824032348 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260824032348 +0000" stop="20260824033930 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824033930 +0000" stop="20260824035554 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824035554 +0000" stop="20260824040806 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824040806 +0000" stop="20260824045406 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260824045406 +0000" stop="20260824050948 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824050948 +0000" stop="20260824052612 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824052612 +0000" stop="20260824053824 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824053824 +0000" stop="20260824062424 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260824062424 +0000" stop="20260824064006 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824064006 +0000" stop="20260824065630 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824065630 +0000" stop="20260824070842 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824070842 +0000" stop="20260824075442 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260824075442 +0000" stop="20260824081024 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824081024 +0000" stop="20260824082648 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824082648 +0000" stop="20260824083900 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824083900 +0000" stop="20260824092500 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260824092500 +0000" stop="20260824094042 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824094042 +0000" stop="20260824095706 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824095706 +0000" stop="20260824100918 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824100918 +0000" stop="20260824105518 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260824105518 +0000" stop="20260824111100 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824111100 +0000" stop="20260824112724 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824112724 +0000" stop="20260824113936 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824113936 +0000" stop="20260824122536 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260824122536 +0000" stop="20260824124118 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824124118 +0000" stop="20260824125742 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824125742 +0000" stop="20260824130954 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824130954 +0000" stop="20260824135554 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260824135554 +0000" stop="20260824141136 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824141136 +0000" stop="20260824142800 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824142800 +0000" stop="20260824144012 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824144012 +0000" stop="20260824152612 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260824152612 +0000" stop="20260824154154 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824154154 +0000" stop="20260824155818 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824155818 +0000" stop="20260824161030 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824161030 +0000" stop="20260824165630 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260824165630 +0000" stop="20260824171212 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824171212 +0000" stop="20260824172836 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824172836 +0000" stop="20260824174048 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824174048 +0000" stop="20260824182648 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260824182648 +0000" stop="20260824184230 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824184230 +0000" stop="20260824185854 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824185854 +0000" stop="20260824191106 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824191106 +0000" stop="20260824195706 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260824195706 +0000" stop="20260824201248 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824201248 +0000" stop="20260824202912 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824202912 +0000" stop="20260824204124 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824204124 +0000" stop="20260824212724 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260824212724 +0000" stop="20260824214306 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824214306 +0000" stop="20260824215930 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824215930 +0000" stop="20260824221142 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824221142 +0000" stop="20260824225742 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260824225742 +0000" stop="20260824231324 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824231324 +0000" stop="20260824232948 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824232948 +0000" stop="20260824234200 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260824234200 +0000" stop="20260825002800 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260825002800 +0000" stop="20260825004342 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825004342 +0000" stop="20260825010006 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825010006 +0000" stop="20260825011218 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825011218 +0000" stop="20260825015818 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260825015818 +0000" stop="20260825021400 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825021400 +0000" stop="20260825023024 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825023024 +0000" stop="20260825024236 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825024236 +0000" stop="20260825032836 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260825032836 +0000" stop="20260825034418 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825034418 +0000" stop="20260825040042 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825040042 +0000" stop="20260825041254 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825041254 +0000" stop="20260825045854 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260825045854 +0000" stop="20260825051436 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825051436 +0000" stop="20260825053100 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825053100 +0000" stop="20260825054312 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825054312 +0000" stop="20260825062912 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260825062912 +0000" stop="20260825064454 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825064454 +0000" stop="20260825070118 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825070118 +0000" stop="20260825071330 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825071330 +0000" stop="20260825075930 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260825075930 +0000" stop="20260825081512 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825081512 +0000" stop="20260825083136 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825083136 +0000" stop="20260825084348 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825084348 +0000" stop="20260825092948 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260825092948 +0000" stop="20260825094530 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825094530 +0000" stop="20260825100154 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825100154 +0000" stop="20260825101406 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825101406 +0000" stop="20260825110006 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260825110006 +0000" stop="20260825111548 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825111548 +0000" stop="20260825113212 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825113212 +0000" stop="20260825114424 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825114424 +0000" stop="20260825123024 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260825123024 +0000" stop="20260825124606 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825124606 +0000" stop="20260825130230 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825130230 +0000" stop="20260825131442 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825131442 +0000" stop="20260825140042 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260825140042 +0000" stop="20260825141624 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825141624 +0000" stop="20260825143248 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825143248 +0000" stop="20260825144500 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825144500 +0000" stop="20260825153100 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260825153100 +0000" stop="20260825154642 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825154642 +0000" stop="20260825160306 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825160306 +0000" stop="20260825161518 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825161518 +0000" stop="20260825170118 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260825170118 +0000" stop="20260825171700 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825171700 +0000" stop="20260825173324 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825173324 +0000" stop="20260825174536 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825174536 +0000" stop="20260825183136 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260825183136 +0000" stop="20260825184718 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825184718 +0000" stop="20260825190342 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825190342 +0000" stop="20260825191554 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825191554 +0000" stop="20260825200154 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260825200154 +0000" stop="20260825201736 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825201736 +0000" stop="20260825203400 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825203400 +0000" stop="20260825204612 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825204612 +0000" stop="20260825213212 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260825213212 +0000" stop="20260825214754 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825214754 +0000" stop="20260825220418 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825220418 +0000" stop="20260825221630 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825221630 +0000" stop="20260825230230 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260825230230 +0000" stop="20260825231812 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825231812 +0000" stop="20260825233436 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825233436 +0000" stop="20260825234648 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260825234648 +0000" stop="20260826003248 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260826003248 +0000" stop="20260826004830 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826004830 +0000" stop="20260826010454 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826010454 +0000" stop="20260826011706 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826011706 +0000" stop="20260826020306 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260826020306 +0000" stop="20260826021848 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826021848 +0000" stop="20260826023512 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826023512 +0000" stop="20260826024724 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826024724 +0000" stop="20260826033324 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260826033324 +0000" stop="20260826034906 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826034906 +0000" stop="20260826040530 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826040530 +0000" stop="20260826041742 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826041742 +0000" stop="20260826050342 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260826050342 +0000" stop="20260826051924 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826051924 +0000" stop="20260826053548 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826053548 +0000" stop="20260826054800 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826054800 +0000" stop="20260826063400 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260826063400 +0000" stop="20260826064942 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826064942 +0000" stop="20260826070606 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826070606 +0000" stop="20260826071818 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826071818 +0000" stop="20260826080418 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260826080418 +0000" stop="20260826082000 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826082000 +0000" stop="20260826083624 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826083624 +0000" stop="20260826084836 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826084836 +0000" stop="20260826093436 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260826093436 +0000" stop="20260826095018 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826095018 +0000" stop="20260826100642 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826100642 +0000" stop="20260826101854 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826101854 +0000" stop="20260826110454 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260826110454 +0000" stop="20260826112036 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826112036 +0000" stop="20260826113700 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826113700 +0000" stop="20260826114912 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826114912 +0000" stop="20260826123512 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260826123512 +0000" stop="20260826125054 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826125054 +0000" stop="20260826130718 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826130718 +0000" stop="20260826131930 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826131930 +0000" stop="20260826140530 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260826140530 +0000" stop="20260826142112 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826142112 +0000" stop="20260826143736 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826143736 +0000" stop="20260826144948 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826144948 +0000" stop="20260826153548 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260826153548 +0000" stop="20260826155130 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826155130 +0000" stop="20260826160754 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826160754 +0000" stop="20260826162006 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826162006 +0000" stop="20260826170606 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260826170606 +0000" stop="20260826172148 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826172148 +0000" stop="20260826173812 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826173812 +0000" stop="20260826175024 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826175024 +0000" stop="20260826183624 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260826183624 +0000" stop="20260826185206 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826185206 +0000" stop="20260826190830 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826190830 +0000" stop="20260826192042 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826192042 +0000" stop="20260826200642 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260826200642 +0000" stop="20260826202224 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826202224 +0000" stop="20260826203848 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826203848 +0000" stop="20260826205100 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826205100 +0000" stop="20260826213700 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260826213700 +0000" stop="20260826215242 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826215242 +0000" stop="20260826220906 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826220906 +0000" stop="20260826222118 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826222118 +0000" stop="20260826230718 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260826230718 +0000" stop="20260826232300 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826232300 +0000" stop="20260826233924 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826233924 +0000" stop="20260826235136 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260826235136 +0000" stop="20260827003736 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260827003736 +0000" stop="20260827005318 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827005318 +0000" stop="20260827010942 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827010942 +0000" stop="20260827012154 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827012154 +0000" stop="20260827020754 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260827020754 +0000" stop="20260827022336 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827022336 +0000" stop="20260827024000 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827024000 +0000" stop="20260827025212 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827025212 +0000" stop="20260827033812 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260827033812 +0000" stop="20260827035354 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827035354 +0000" stop="20260827041018 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827041018 +0000" stop="20260827042230 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827042230 +0000" stop="20260827050830 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260827050830 +0000" stop="20260827052412 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827052412 +0000" stop="20260827054036 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827054036 +0000" stop="20260827055248 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827055248 +0000" stop="20260827063848 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260827063848 +0000" stop="20260827065430 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827065430 +0000" stop="20260827071054 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827071054 +0000" stop="20260827072306 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827072306 +0000" stop="20260827080906 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260827080906 +0000" stop="20260827082448 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827082448 +0000" stop="20260827084112 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827084112 +0000" stop="20260827085324 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827085324 +0000" stop="20260827093924 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260827093924 +0000" stop="20260827095506 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827095506 +0000" stop="20260827101130 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827101130 +0000" stop="20260827102342 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827102342 +0000" stop="20260827110942 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260827110942 +0000" stop="20260827112524 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827112524 +0000" stop="20260827114148 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827114148 +0000" stop="20260827115400 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827115400 +0000" stop="20260827124000 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260827124000 +0000" stop="20260827125542 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827125542 +0000" stop="20260827131206 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827131206 +0000" stop="20260827132418 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827132418 +0000" stop="20260827141018 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260827141018 +0000" stop="20260827142600 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827142600 +0000" stop="20260827144224 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827144224 +0000" stop="20260827145436 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827145436 +0000" stop="20260827154036 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260827154036 +0000" stop="20260827155618 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827155618 +0000" stop="20260827161242 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827161242 +0000" stop="20260827162454 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827162454 +0000" stop="20260827171054 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260827171054 +0000" stop="20260827172636 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827172636 +0000" stop="20260827174300 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827174300 +0000" stop="20260827175512 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827175512 +0000" stop="20260827184112 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260827184112 +0000" stop="20260827185654 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827185654 +0000" stop="20260827191318 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827191318 +0000" stop="20260827192530 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827192530 +0000" stop="20260827201130 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260827201130 +0000" stop="20260827202712 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827202712 +0000" stop="20260827204336 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827204336 +0000" stop="20260827205548 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827205548 +0000" stop="20260827214148 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260827214148 +0000" stop="20260827215730 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827215730 +0000" stop="20260827221354 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827221354 +0000" stop="20260827222606 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827222606 +0000" stop="20260827231206 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260827231206 +0000" stop="20260827232748 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827232748 +0000" stop="20260827234412 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827234412 +0000" stop="20260827235624 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260827235624 +0000" stop="20260828004224 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260828004224 +0000" stop="20260828005806 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828005806 +0000" stop="20260828011430 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828011430 +0000" stop="20260828012642 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828012642 +0000" stop="20260828021242 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260828021242 +0000" stop="20260828022824 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828022824 +0000" stop="20260828024448 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828024448 +0000" stop="20260828025700 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828025700 +0000" stop="20260828034300 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260828034300 +0000" stop="20260828035842 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828035842 +0000" stop="20260828041506 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828041506 +0000" stop="20260828042718 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828042718 +0000" stop="20260828051318 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260828051318 +0000" stop="20260828052900 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828052900 +0000" stop="20260828054524 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828054524 +0000" stop="20260828055736 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828055736 +0000" stop="20260828064336 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260828064336 +0000" stop="20260828065918 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828065918 +0000" stop="20260828071542 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828071542 +0000" stop="20260828072754 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828072754 +0000" stop="20260828081354 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260828081354 +0000" stop="20260828082936 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828082936 +0000" stop="20260828084600 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828084600 +0000" stop="20260828085812 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828085812 +0000" stop="20260828094412 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260828094412 +0000" stop="20260828095954 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828095954 +0000" stop="20260828101618 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828101618 +0000" stop="20260828102830 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828102830 +0000" stop="20260828111430 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260828111430 +0000" stop="20260828113012 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828113012 +0000" stop="20260828114636 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828114636 +0000" stop="20260828115848 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828115848 +0000" stop="20260828124448 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260828124448 +0000" stop="20260828130030 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828130030 +0000" stop="20260828131654 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828131654 +0000" stop="20260828132906 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828132906 +0000" stop="20260828141506 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260828141506 +0000" stop="20260828143048 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828143048 +0000" stop="20260828144712 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828144712 +0000" stop="20260828145924 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828145924 +0000" stop="20260828154524 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
+  </programme>
+  <programme start="20260828154524 +0000" stop="20260828160106 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828160106 +0000" stop="20260828161730 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260828161730 +0000" stop="20260828162942 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+</tv>
