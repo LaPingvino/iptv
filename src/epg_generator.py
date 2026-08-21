@@ -214,3 +214,47 @@ if __name__ == "__main__":
     print(f"Total Lines: {len(lines)}")
     print("\n--- Preview first 20 lines ---")
     print("\n".join(lines[:20]))
+
+
+def generate_twitch_epg_programmes(channel_id, channel_name, category_name="Gaming", days_back=1, days_ahead=7):
+    """Generates synthetic 2h-4h program blocks for Twitch channels with fallback/live info."""
+    now = time.time()
+    start_window = now - (days_back * 86400)
+    end_window = now + (days_ahead * 86400)
+    
+    # Align to clean hours
+    block_dur = 3 * 3600 # 3 hours per block
+    curr_time = start_window - (start_window % block_dur)
+    
+    templates = [
+        ("Live Stream & Community Broadcasts", f"24/7 live stream featuring {channel_name}, community challenges, and world-record attempts."),
+        ("Top Speedruns & Highlights", f"High-level gameplay and marathon runs with automatic fallback to top category streamers."),
+        ("Community Failover & Late Night Grinds", f"Continuous live gaming rotation across top active community runners and tournament broadcasts."),
+        ("World Record Attempts & Practice", f"Live speedruns, practice routing, and challenge marathons with 24/7 automatic failover.")
+    ]
+    
+    xml_lines = []
+    idx = int((curr_time // block_dur) % len(templates))
+    
+    while curr_time < end_window:
+        p_start = curr_time
+        p_stop = curr_time + block_dur
+        
+        start_str = format_xmltv_time(p_start)
+        stop_str = format_xmltv_time(p_stop)
+        
+        title, desc = templates[idx]
+        title_full = f"{channel_name}: {title}".replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        desc_escaped = desc.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        cat_escaped = category_name.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        
+        xml_lines.append(f'  <programme start="{start_str}" stop="{stop_str}" channel="{channel_id}">')
+        xml_lines.append(f'    <title lang="en">{title_full}</title>')
+        xml_lines.append(f'    <desc lang="en">{desc_escaped}</desc>')
+        xml_lines.append(f'    <category lang="en">{cat_escaped}</category>')
+        xml_lines.append('  </programme>')
+        
+        curr_time = p_stop
+        idx = (idx + 1) % len(templates)
+        
+    return "\n".join(xml_lines)

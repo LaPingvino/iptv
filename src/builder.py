@@ -107,7 +107,8 @@ def fetch_and_build_epg(dist_dir):
             ESPERANTO_METADATA,
             get_channel_schedule_blocks,
             generate_xmltv_programmes,
-            generate_standalone_epg_xml
+            generate_standalone_epg_xml,
+            generate_twitch_epg_programmes
         )
         
         esp_media_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "pkg", "iptv-live-bridge", "esperantotv")
@@ -119,17 +120,33 @@ def fetch_and_build_epg(dist_dir):
         bah_blocks = get_channel_schedule_blocks(bah_media_dir)
         bah_prog_xml = generate_xmltv_programmes("BahaiStudioSessions.tv@HD", "Bahá'í Studio Sessions TV", bah_blocks)
         
-        custom_channels = (
-            '  <channel id="EsperantoTV.eo@SD">\n    <display-name>Esperanto TV</display-name>\n  </channel>\n'
-            '  <channel id="BahaiStudioSessions.tv@HD">\n    <display-name>Bahá\'í Studio Sessions TV</display-name>\n  </channel>\n'
-        )
+        custom_channels_list = [
+            '  <channel id="EsperantoTV.eo@SD">\n    <display-name>Esperanto TV</display-name>\n  </channel>',
+            '  <channel id="BahaiStudioSessions.tv@HD">\n    <display-name>Bahá\'í Studio Sessions TV</display-name>\n  </channel>'
+        ]
+        
+        twitch_progs_list = []
+        # Add all Twitch gaming channels
+        channels = load_channels(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data"))
+        for ch in channels:
+            if "twitch" in ch.get("url", "") and ch.get("tvg_id"):
+                ch_id = ch.get("tvg_id")
+                ch_name = ch.get("tvg_name") or ch.get("name")
+                ch_group = ch.get("group", "Gaming")
+                custom_channels_list.append(f'  <channel id="{ch_id}">\n    <display-name>{ch_name}</display-name>\n  </channel>')
+                tw_prog = generate_twitch_epg_programmes(ch_id, ch_name, ch_group)
+                if tw_prog:
+                    twitch_progs_list.append(tw_prog)
+                    
+        custom_channels = "\n".join(custom_channels_list) + "\n"
+        all_twitch_progs = "\n".join(twitch_progs_list)
         
         # Inject custom channels and programmes before </tv>
         if "</tv>" in raw_xml:
             parts = raw_xml.rsplit("</tv>", 1)
-            merged_xml = parts[0] + "\n" + custom_channels + esp_prog_xml + "\n" + bah_prog_xml + "\n</tv>"
+            merged_xml = parts[0] + "\n" + custom_channels + esp_prog_xml + "\n" + bah_prog_xml + "\n" + all_twitch_progs + "\n</tv>"
         else:
-            merged_xml = raw_xml + "\n" + custom_channels + esp_prog_xml + "\n" + bah_prog_xml + "\n</tv>"
+            merged_xml = raw_xml + "\n" + custom_channels + esp_prog_xml + "\n" + bah_prog_xml + "\n" + all_twitch_progs + "\n</tv>"
             
         data_xml = merged_xml.encode("utf-8")
         
