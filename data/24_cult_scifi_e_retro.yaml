@@ -1,8 +1,8 @@
 # ==============================================================================
-# Sci-Fi, Cult TV & Retro Gaming (24/7 HD Streams)
+# Sci-Fi, Cult TV & Retro Gaming (24/7 Direct Streams - 0 Bumpers)
 # ==============================================================================
 
-- name: Doctor Who Classic (24/7 HD)
+- name: Doctor Who Classic (24/7 1080p HD)
   group: Sci-Fi, Cult & Retro
   tvg_id: DoctorWhoClassic.uk@HD
   tvg_name: Doctor Who Classic
@@ -15,20 +15,6 @@
   tvg_name: Mystery Science Theater 3000
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Mystery_Science_Theater_3000_logo.svg/512px-Mystery_Science_Theater_3000_logo.svg.png
   url: https://mst3k-roku.amagi.tv/playlist.m3u8
-
-- name: Star Trek (24/7 Sci-Fi Classic)
-  group: Sci-Fi, Cult & Retro
-  tvg_id: StarTrek.us@HD
-  tvg_name: Star Trek
-  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Star_Trek_Official_Logo.png/512px-Star_Trek_Official_Logo.png
-  url: https://jmp2.uk/plu-69776b58036e883f39e5ab8a.m3u8
-
-- name: The Twilight Zone (24/7 Classic)
-  group: Sci-Fi, Cult & Retro
-  tvg_id: TwilightZone.us@HD
-  tvg_name: The Twilight Zone
-  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/The_Twilight_Zone_logo.svg/512px-The_Twilight_Zone_logo.svg.png
-  url: https://jmp2.uk/plu-6512ec9f3a0d700008db4f0c.m3u8
 
 - name: World of Longplays (Retro Gaming 1080p60)
   group: Sci-Fi, Cult & Retro

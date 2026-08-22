@@ -1,16 +1,9 @@
 # ==============================================================================
-# Infantil, Kids & Animação (Free-to-Air / 24/7 Streams)
+# Infantil, Kids & Animação (Direct Pure Streams - 0 Bumpers / 0 DRM)
 # Prioritizing Portuguese (PT), English & Universal Channels
 # ==============================================================================
 
 # --- Kids & Família (Little ones, toddlers & family cartoons) ---
-- name: Disney Junior (English 720p60 HD)
-  group: Infantil & Kids
-  tvg_id: DisneyJunior.us@HD
-  tvg_name: Disney Junior
-  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Disney-Junior.png
-  url: http://23.237.104.106:8080/USA_DISNEY_JUNIOR/tracks-v1a1/mono.m3u8
-
 - name: Disney Channel Portugal (PT)
   group: Infantil & Kids
   tvg_id: DisneyChannel.pt
@@ -18,19 +11,19 @@
   logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Disney-Channel.png
   url: http://151.80.18.177:86/Disney_Channel_HD/index.m3u8
 
-- name: Disney XD (US 720p HD)
+- name: Disney Junior (English 720p60 HD)
+  group: Infantil & Kids
+  tvg_id: DisneyJunior.us@HD
+  tvg_name: Disney Junior
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Disney-Junior.png
+  url: http://23.237.104.106:8080/USA_DISNEY_JUNIOR/tracks-v1a1/mono.m3u8
+
+- name: Disney XD (US 720p60 HD)
   group: Infantil & Kids
   tvg_id: DisneyXD.us@HD
   tvg_name: Disney XD
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Disney_XD_logo_2015.svg/512px-Disney_XD_logo_2015.svg.png
-  url: http://23.237.104.106:8080/USA_DISNEY_XD/index.m3u8
-
-- name: Oggy e as Baratas Tontas (24/7)
-  group: Infantil & Kids
-  tvg_id: Oggy.pt@HD
-  tvg_name: Oggy e as Baratas Tontas
-  logo: https://upload.wikimedia.org/wikipedia/en/thumb/f/f6/Oggy_and_the_Cockroaches_logo.png/512px-Oggy_and_the_Cockroaches_logo.png
-  url: https://jmp2.uk/plu-63221bafdc6e110007b50270.m3u8
+  url: http://23.237.104.106:8080/USA_DISNEY_XD/tracks-v1a1/mono.m3u8
 
 - name: Tom and Jerry (24/7 Classic Cartoons)
   group: Infantil & Kids
@@ -53,13 +46,6 @@
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Mr_Bean_Animated_logo.svg/512px-Mr_Bean_Animated_logo.svg.png
   url: https://amg00627-amg00627c30-rakuten-es-3990.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanescc-rakutenes/playlist.m3u8
 
-- name: Avatar - The Last Airbender (24/7)
-  group: Infantil & Kids
-  tvg_id: AvatarTheLastAirbender.es
-  tvg_name: Avatar The Last Airbender
-  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Avatar_The_Last_Airbender_logo.svg/512px-Avatar_The_Last_Airbender_logo.svg.png
-  url: https://jmp2.uk/plu-656df599c0fc8800089c75ab.m3u8
-
 - name: Toon Goggles Junior (720p HD)
   group: Infantil & Kids
   tvg_id: ToonGogglesJr.us@HD
@@ -68,33 +54,12 @@
 
 
 # --- Animação Adulta & Anime ---
-- name: South Park (24/7 Comedy Central)
-  group: Animação & Anime
-  tvg_id: SouthPark.us@HD
-  tvg_name: South Park
-  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/South_Park_logo.svg/512px-South_Park_logo.svg.png
-  url: https://jmp2.uk/plu-609ae66b359b270007869ff1.m3u8
-
-- name: Daria (24/7 MTV Animation)
-  group: Animação & Anime
-  tvg_id: Daria.us@HD
-  tvg_name: Daria
-  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Daria_logo.svg/512px-Daria_logo.svg.png
-  url: https://jmp2.uk/plu-609ae5cd48d3200007b0a98e.m3u8
-
 - name: Naruto (24/7 Anime 1080p)
   group: Animação & Anime
   tvg_id: Naruto.us@HD
   tvg_name: Naruto
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Naruto_logo.svg/512px-Naruto_logo.svg.png
   url: https://d21vn5eki5qsdi.cloudfront.net/playlist.m3u8
-
-- name: Crunchyroll TV (Anime 24/7 HD)
-  group: Animação & Anime
-  tvg_id: Crunchyroll.es@HD
-  tvg_name: Crunchyroll TV
-  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Crunchyroll_Logo.png/512px-Crunchyroll_Logo.png
-  url: https://jmp2.uk/plu-65652f7fc0fc88000883537a.m3u8
 
 - name: MAX Anime (1080p Full HD)
   group: Animação & Anime

@@ -602,14 +602,6 @@
     "url": "https://kiefte.eu/iptv/youtube/@npo3fm"
   },
   {
-    "name": "Disney Junior (English 720p60 HD)",
-    "group": "Infantil & Kids",
-    "tvg_id": "DisneyJunior.us@HD",
-    "tvg_name": "Disney Junior",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Disney-Junior.png",
-    "url": "http://23.237.104.106:8080/USA_DISNEY_JUNIOR/tracks-v1a1/mono.m3u8"
-  },
-  {
     "name": "Disney Channel Portugal (PT)",
     "group": "Infantil & Kids",
     "tvg_id": "DisneyChannel.pt",
@@ -618,20 +610,20 @@
     "url": "http://151.80.18.177:86/Disney_Channel_HD/index.m3u8"
   },
   {
-    "name": "Disney XD (US 720p HD)",
+    "name": "Disney Junior (English 720p60 HD)",
+    "group": "Infantil & Kids",
+    "tvg_id": "DisneyJunior.us@HD",
+    "tvg_name": "Disney Junior",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Disney-Junior.png",
+    "url": "http://23.237.104.106:8080/USA_DISNEY_JUNIOR/tracks-v1a1/mono.m3u8"
+  },
+  {
+    "name": "Disney XD (US 720p60 HD)",
     "group": "Infantil & Kids",
     "tvg_id": "DisneyXD.us@HD",
     "tvg_name": "Disney XD",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Disney_XD_logo_2015.svg/512px-Disney_XD_logo_2015.svg.png",
-    "url": "http://23.237.104.106:8080/USA_DISNEY_XD/index.m3u8"
-  },
-  {
-    "name": "Oggy e as Baratas Tontas (24/7)",
-    "group": "Infantil & Kids",
-    "tvg_id": "Oggy.pt@HD",
-    "tvg_name": "Oggy e as Baratas Tontas",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f6/Oggy_and_the_Cockroaches_logo.png/512px-Oggy_and_the_Cockroaches_logo.png",
-    "url": "https://jmp2.uk/plu-63221bafdc6e110007b50270.m3u8"
+    "url": "http://23.237.104.106:8080/USA_DISNEY_XD/tracks-v1a1/mono.m3u8"
   },
   {
     "name": "Tom and Jerry (24/7 Classic Cartoons)",
@@ -658,35 +650,11 @@
     "url": "https://amg00627-amg00627c30-rakuten-es-3990.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanescc-rakutenes/playlist.m3u8"
   },
   {
-    "name": "Avatar - The Last Airbender (24/7)",
-    "group": "Infantil & Kids",
-    "tvg_id": "AvatarTheLastAirbender.es",
-    "tvg_name": "Avatar The Last Airbender",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Avatar_The_Last_Airbender_logo.svg/512px-Avatar_The_Last_Airbender_logo.svg.png",
-    "url": "https://jmp2.uk/plu-656df599c0fc8800089c75ab.m3u8"
-  },
-  {
     "name": "Toon Goggles Junior (720p HD)",
     "group": "Infantil & Kids",
     "tvg_id": "ToonGogglesJr.us@HD",
     "tvg_name": "Toon Goggles Junior",
     "url": "https://d3i6upqaqzosi1.cloudfront.net/tg/jr_us/tg_jr_us.m3u8"
-  },
-  {
-    "name": "South Park (24/7 Comedy Central)",
-    "group": "Animação & Anime",
-    "tvg_id": "SouthPark.us@HD",
-    "tvg_name": "South Park",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/South_Park_logo.svg/512px-South_Park_logo.svg.png",
-    "url": "https://jmp2.uk/plu-609ae66b359b270007869ff1.m3u8"
-  },
-  {
-    "name": "Daria (24/7 MTV Animation)",
-    "group": "Animação & Anime",
-    "tvg_id": "Daria.us@HD",
-    "tvg_name": "Daria",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Daria_logo.svg/512px-Daria_logo.svg.png",
-    "url": "https://jmp2.uk/plu-609ae5cd48d3200007b0a98e.m3u8"
   },
   {
     "name": "Naruto (24/7 Anime 1080p)",
@@ -695,14 +663,6 @@
     "tvg_name": "Naruto",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Naruto_logo.svg/512px-Naruto_logo.svg.png",
     "url": "https://d21vn5eki5qsdi.cloudfront.net/playlist.m3u8"
-  },
-  {
-    "name": "Crunchyroll TV (Anime 24/7 HD)",
-    "group": "Animação & Anime",
-    "tvg_id": "Crunchyroll.es@HD",
-    "tvg_name": "Crunchyroll TV",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Crunchyroll_Logo.png/512px-Crunchyroll_Logo.png",
-    "url": "https://jmp2.uk/plu-65652f7fc0fc88000883537a.m3u8"
   },
   {
     "name": "MAX Anime (1080p Full HD)",
@@ -2349,7 +2309,7 @@
     "url": "https://kiefte.eu/iptv/youtube/@LofiGirl"
   },
   {
-    "name": "Doctor Who Classic (24/7 HD)",
+    "name": "Doctor Who Classic (24/7 1080p HD)",
     "group": "Sci-Fi, Cult & Retro",
     "tvg_id": "DoctorWhoClassic.uk@HD",
     "tvg_name": "Doctor Who Classic",
@@ -2363,22 +2323,6 @@
     "tvg_name": "Mystery Science Theater 3000",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Mystery_Science_Theater_3000_logo.svg/512px-Mystery_Science_Theater_3000_logo.svg.png",
     "url": "https://mst3k-roku.amagi.tv/playlist.m3u8"
-  },
-  {
-    "name": "Star Trek (24/7 Sci-Fi Classic)",
-    "group": "Sci-Fi, Cult & Retro",
-    "tvg_id": "StarTrek.us@HD",
-    "tvg_name": "Star Trek",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Star_Trek_Official_Logo.png/512px-Star_Trek_Official_Logo.png",
-    "url": "https://jmp2.uk/plu-69776b58036e883f39e5ab8a.m3u8"
-  },
-  {
-    "name": "The Twilight Zone (24/7 Classic)",
-    "group": "Sci-Fi, Cult & Retro",
-    "tvg_id": "TwilightZone.us@HD",
-    "tvg_name": "The Twilight Zone",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/The_Twilight_Zone_logo.svg/512px-The_Twilight_Zone_logo.svg.png",
-    "url": "https://jmp2.uk/plu-6512ec9f3a0d700008db4f0c.m3u8"
   },
   {
     "name": "World of Longplays (Retro Gaming 1080p60)",

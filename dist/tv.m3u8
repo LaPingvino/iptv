@@ -253,17 +253,14 @@ https://kiefte.eu/iptv/youtube/@NPORadio2
 #EXTINF:-1 tvg-id="NPO3FMVisual.nl" tvg-name="NPO 3FM Visual" group-title="Música & Video",NPO 3FM (Visual & Serious Request)
 https://kiefte.eu/iptv/youtube/@npo3fm
 
-#EXTINF:-1 tvg-id="DisneyJunior.us@HD" tvg-name="Disney Junior" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Disney-Junior.png" group-title="Infantil & Kids",Disney Junior (English 720p60 HD)
-http://23.237.104.106:8080/USA_DISNEY_JUNIOR/tracks-v1a1/mono.m3u8
-
 #EXTINF:-1 tvg-id="DisneyChannel.pt" tvg-name="Disney Channel PT" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Disney-Channel.png" group-title="Infantil & Kids",Disney Channel Portugal (PT)
 http://151.80.18.177:86/Disney_Channel_HD/index.m3u8
 
-#EXTINF:-1 tvg-id="DisneyXD.us@HD" tvg-name="Disney XD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Disney_XD_logo_2015.svg/512px-Disney_XD_logo_2015.svg.png" group-title="Infantil & Kids",Disney XD (US 720p HD)
-http://23.237.104.106:8080/USA_DISNEY_XD/index.m3u8
+#EXTINF:-1 tvg-id="DisneyJunior.us@HD" tvg-name="Disney Junior" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Disney-Junior.png" group-title="Infantil & Kids",Disney Junior (English 720p60 HD)
+http://23.237.104.106:8080/USA_DISNEY_JUNIOR/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-id="Oggy.pt@HD" tvg-name="Oggy e as Baratas Tontas" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/f/f6/Oggy_and_the_Cockroaches_logo.png/512px-Oggy_and_the_Cockroaches_logo.png" group-title="Infantil & Kids",Oggy e as Baratas Tontas (24/7)
-https://jmp2.uk/plu-63221bafdc6e110007b50270.m3u8
+#EXTINF:-1 tvg-id="DisneyXD.us@HD" tvg-name="Disney XD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Disney_XD_logo_2015.svg/512px-Disney_XD_logo_2015.svg.png" group-title="Infantil & Kids",Disney XD (US 720p60 HD)
+http://23.237.104.106:8080/USA_DISNEY_XD/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-id="TomAndJerry.tv" tvg-name="Tom and Jerry" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tom_and_Jerry_logo.svg/512px-Tom_and_Jerry_logo.svg.png" group-title="Infantil & Kids",Tom and Jerry (24/7 Classic Cartoons)
 https://live20.bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8
@@ -274,23 +271,11 @@ https://live20.bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8
 #EXTINF:-1 tvg-id="MrBeanAnimated.es@HD" tvg-name="Mr. Bean Animado" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Mr_Bean_Animated_logo.svg/512px-Mr_Bean_Animated_logo.svg.png" group-title="Infantil & Kids",Mr. Bean Animado (1080p)
 https://amg00627-amg00627c30-rakuten-es-3990.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanescc-rakutenes/playlist.m3u8
 
-#EXTINF:-1 tvg-id="AvatarTheLastAirbender.es" tvg-name="Avatar The Last Airbender" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Avatar_The_Last_Airbender_logo.svg/512px-Avatar_The_Last_Airbender_logo.svg.png" group-title="Infantil & Kids",Avatar - The Last Airbender (24/7)
-https://jmp2.uk/plu-656df599c0fc8800089c75ab.m3u8
-
 #EXTINF:-1 tvg-id="ToonGogglesJr.us@HD" tvg-name="Toon Goggles Junior" group-title="Infantil & Kids",Toon Goggles Junior (720p HD)
 https://d3i6upqaqzosi1.cloudfront.net/tg/jr_us/tg_jr_us.m3u8
 
-#EXTINF:-1 tvg-id="SouthPark.us@HD" tvg-name="South Park" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/South_Park_logo.svg/512px-South_Park_logo.svg.png" group-title="Animação & Anime",South Park (24/7 Comedy Central)
-https://jmp2.uk/plu-609ae66b359b270007869ff1.m3u8
-
-#EXTINF:-1 tvg-id="Daria.us@HD" tvg-name="Daria" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Daria_logo.svg/512px-Daria_logo.svg.png" group-title="Animação & Anime",Daria (24/7 MTV Animation)
-https://jmp2.uk/plu-609ae5cd48d3200007b0a98e.m3u8
-
 #EXTINF:-1 tvg-id="Naruto.us@HD" tvg-name="Naruto" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Naruto_logo.svg/512px-Naruto_logo.svg.png" group-title="Animação & Anime",Naruto (24/7 Anime 1080p)
 https://d21vn5eki5qsdi.cloudfront.net/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Crunchyroll.es@HD" tvg-name="Crunchyroll TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Crunchyroll_Logo.png/512px-Crunchyroll_Logo.png" group-title="Animação & Anime",Crunchyroll TV (Anime 24/7 HD)
-https://jmp2.uk/plu-65652f7fc0fc88000883537a.m3u8
 
 #EXTINF:-1 tvg-id="MAXAnime.es@HD" tvg-name="MAX Anime" tvg-logo="https://cdnlive.klicgo.net/maxanime/maxanime.png" group-title="Animação & Anime",MAX Anime (1080p Full HD)
 https://cdnlive.klicgo.net/maxanime/live/playlist.m3u8
@@ -611,17 +596,11 @@ https://kiefte.eu/iptv/youtube/@tokyo_live_cam
 #EXTINF:-1 tvg-id="LofiGirl.tv@HD" tvg-name="Lofi Girl" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Lofi_girl_logo.jpg/512px-Lofi_girl_logo.jpg" group-title="Natureza & Slow TV",Lofi Girl (Relaxing Beats & Anime Ambience)
 https://kiefte.eu/iptv/youtube/@LofiGirl
 
-#EXTINF:-1 tvg-id="DoctorWhoClassic.uk@HD" tvg-name="Doctor Who Classic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Doctor_Who_logo_2018.svg/512px-Doctor_Who_logo_2018.svg.png" group-title="Sci-Fi, Cult & Retro",Doctor Who Classic (24/7 HD)
+#EXTINF:-1 tvg-id="DoctorWhoClassic.uk@HD" tvg-name="Doctor Who Classic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Doctor_Who_logo_2018.svg/512px-Doctor_Who_logo_2018.svg.png" group-title="Sci-Fi, Cult & Retro",Doctor Who Classic (24/7 1080p HD)
 https://bbc-classicdrwho-1-us.roku.wurl.tv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="MST3K.us@HD" tvg-name="Mystery Science Theater 3000" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Mystery_Science_Theater_3000_logo.svg/512px-Mystery_Science_Theater_3000_logo.svg.png" group-title="Sci-Fi, Cult & Retro",Mystery Science Theater 3000 (MST3K 1080p)
 https://mst3k-roku.amagi.tv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="StarTrek.us@HD" tvg-name="Star Trek" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Star_Trek_Official_Logo.png/512px-Star_Trek_Official_Logo.png" group-title="Sci-Fi, Cult & Retro",Star Trek (24/7 Sci-Fi Classic)
-https://jmp2.uk/plu-69776b58036e883f39e5ab8a.m3u8
-
-#EXTINF:-1 tvg-id="TwilightZone.us@HD" tvg-name="The Twilight Zone" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/The_Twilight_Zone_logo.svg/512px-The_Twilight_Zone_logo.svg.png" group-title="Sci-Fi, Cult & Retro",The Twilight Zone (24/7 Classic)
-https://jmp2.uk/plu-6512ec9f3a0d700008db4f0c.m3u8
 
 #EXTINF:-1 tvg-id="WorldOfLongplays.tv@HD" tvg-name="World of Longplays" tvg-logo="https://static-cdn.jtvnw.net/jtv_user_pictures/worldoflongplays-profile_image-144709d73d6e9dc7-300x300.png" group-title="Sci-Fi, Cult & Retro",World of Longplays (Retro Gaming 1080p60)
 https://kiefte.eu/iptv/twitch/worldoflongplays
