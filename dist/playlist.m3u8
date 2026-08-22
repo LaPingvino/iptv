@@ -295,11 +295,11 @@ https://jmp2.uk/plu-609ae5cd48d3200007b0a98e.m3u8
 #EXTINF:-1 tvg-id="Crunchyroll.es@HD" tvg-name="Crunchyroll TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Crunchyroll_Logo.png/512px-Crunchyroll_Logo.png" group-title="Animação & Anime",Crunchyroll TV (Anime 24/7 HD)
 https://jmp2.uk/plu-65652f7fc0fc88000883537a.m3u8
 
-#EXTINF:-1 tvg-id="DetectiveConan.es" tvg-name="Detective Conan" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Detective_Conan_Logo.svg/512px-Detective_Conan_Logo.svg.png" group-title="Animação & Anime",Detective Conan (24/7 Anime)
-https://jmp2.uk/plu-629a066860ef810008267b70.m3u8
+#EXTINF:-1 tvg-id="Naruto.us@HD" tvg-name="Naruto" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Naruto_logo.svg/512px-Naruto_logo.svg.png" group-title="Animação & Anime",Naruto (24/7 Anime 1080p)
+https://d21vn5eki5qsdi.cloudfront.net/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Naruto.es@HD" tvg-name="Naruto" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Naruto_logo.svg/512px-Naruto_logo.svg.png" group-title="Animação & Anime",Naruto (24/7 Anime HD)
-https://jmp2.uk/plu-65d5fc39a25d5e00082895c4.m3u8
+#EXTINF:-1 tvg-id="Bleach.us@HD" tvg-name="Bleach" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Bleach_logo.svg/512px-Bleach_logo.svg.png" group-title="Animação & Anime",Bleach (24/7 Anime HD)
+https://jmp2.uk/plu-65652f7fc0fc88000883537a.m3u8
 
 #EXTINF:-1 tvg-id="MAXAnime.es@HD" tvg-name="MAX Anime" tvg-logo="https://cdnlive.klicgo.net/maxanime/maxanime.png" group-title="Animação & Anime",MAX Anime (1080p Full HD)
 https://cdnlive.klicgo.net/maxanime/live/playlist.m3u8

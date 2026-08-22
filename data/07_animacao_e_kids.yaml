@@ -96,19 +96,19 @@
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Crunchyroll_Logo.png/512px-Crunchyroll_Logo.png
   url: https://jmp2.uk/plu-65652f7fc0fc88000883537a.m3u8
 
-- name: Detective Conan (24/7 Anime)
+- name: Naruto (24/7 Anime 1080p)
   group: Animação & Anime
-  tvg_id: DetectiveConan.es
-  tvg_name: Detective Conan
-  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Detective_Conan_Logo.svg/512px-Detective_Conan_Logo.svg.png
-  url: https://jmp2.uk/plu-629a066860ef810008267b70.m3u8
-
-- name: Naruto (24/7 Anime HD)
-  group: Animação & Anime
-  tvg_id: Naruto.es@HD
+  tvg_id: Naruto.us@HD
   tvg_name: Naruto
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Naruto_logo.svg/512px-Naruto_logo.svg.png
-  url: https://jmp2.uk/plu-65d5fc39a25d5e00082895c4.m3u8
+  url: https://d21vn5eki5qsdi.cloudfront.net/playlist.m3u8
+
+- name: Bleach (24/7 Anime HD)
+  group: Animação & Anime
+  tvg_id: Bleach.us@HD
+  tvg_name: Bleach
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Bleach_logo.svg/512px-Bleach_logo.svg.png
+  url: https://jmp2.uk/plu-65652f7fc0fc88000883537a.m3u8
 
 - name: MAX Anime (1080p Full HD)
   group: Animação & Anime
