@@ -4,13 +4,6 @@
 # ==============================================================================
 
 # --- Kids & Família (Little ones, toddlers & family cartoons) ---
-- name: Disney Channel Portugal (PT)
-  group: Infantil & Kids
-  tvg_id: DisneyChannel.pt
-  tvg_name: Disney Channel PT
-  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Disney-Channel.png
-  url: https://kiefte.eu/iptv/disney/playlist.m3u8
-
 - name: Classic Toons 24/7 (Tom & Jerry / Looney Tunes)
   group: Infantil & Kids
   tvg_id: ClassicToons.us
@@ -34,8 +27,10 @@
 
 # ==============================================================================
 # Archived / Rate-Limited Streams (Reference Only - Failed Quality Benchmark)
-# Host 23.237.104.106 has a ~0.3 MB/s single-connection limit & drops multi-socket
+# Upstream servers have ~0.3 MB/s connection limits (< 1.0x real-time video)
 # ==============================================================================
+# - name: Disney Channel Portugal (PT)
+#   url: http://151.80.18.177:86/Disney_Channel_HD/tracks-v1a1/mono.m3u8
 # - name: Disney Junior (English 720p60 HD)
 #   url: http://23.237.104.106:8080/USA_DISNEY_JUNIOR/tracks-v1a1/mono.m3u8
 # - name: Disney XD (US 720p60 HD)

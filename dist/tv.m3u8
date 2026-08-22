@@ -247,9 +247,6 @@ https://kiefte.eu/iptv/twitch/monstercat
 #EXTINF:-1 tvg-id="Insomniac.tv@HD" tvg-name="Insomniac Events" group-title="Música & Video",Insomniac (24/7 EDM Festival TV)
 https://kiefte.eu/iptv/twitch/insomniac
 
-#EXTINF:-1 tvg-id="DisneyChannel.pt" tvg-name="Disney Channel PT" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Disney-Channel.png" group-title="Infantil & Kids",Disney Channel Portugal (PT)
-https://kiefte.eu/iptv/disney/playlist.m3u8
-
 #EXTINF:-1 tvg-id="ClassicToons.us" tvg-name="Classic Toons" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tom_and_Jerry_logo.svg/512px-Tom_and_Jerry_logo.svg.png" group-title="Infantil & Kids",Classic Toons 24/7 (Tom & Jerry / Looney Tunes)
 https://live20.bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8
 

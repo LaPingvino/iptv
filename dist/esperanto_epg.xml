@@ -4,21 +4,6 @@
   <channel id="EsperantoTV.eo@SD">
     <display-name>Esperanto TV</display-name>
   </channel>
-  <programme start="20260821194330 +0000" stop="20260821201710 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - S1Ĉ05: La venĝo de la trajnoj</title>
-    <desc lang="eo">Fervojaj misaventuroj kaj horar-defioj. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
-    <category lang="eo">Realspektaklo / Junularo</category>
-  </programme>
-  <programme start="20260821201710 +0000" stop="20260821204900 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - S1Ĉ06: Rilaksado inter bestoj</title>
-    <desc lang="eo">Vizito al bestoj kaj trankvilaj momentoj. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
-    <category lang="eo">Realspektaklo / Junularo</category>
-  </programme>
-  <programme start="20260821204900 +0000" stop="20260821211900 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - S1Ĉ07: ASMR kun arboj</title>
-    <desc lang="eo">Nekutima kaj amuza natura ASMR-defio. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
-    <category lang="eo">Realspektaklo / Junularo</category>
-  </programme>
   <programme start="20260821211900 +0000" stop="20260821215930 +0000" channel="EsperantoTV.eo@SD">
     <title lang="eo">Esperanto Senlime - S1Ĉ08: Pluvo kaj suno</title>
     <desc lang="eo">Veteraj defioj dum la subĉiela vojaĝo. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
@@ -3298,5 +3283,15 @@
     <title lang="eo">KEF 2005: La Plejpleja Festivalo</title>
     <desc lang="eo">Dokumenta filmo pri la kultura Esperanto-festivalo en Helsinki kun koncertoj, arto kaj festivala etoso.</desc>
     <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20260829210130 +0000" stop="20260829210140 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Ident Z Bumper</title>
+    <desc lang="eo">Elsendo de Ident Z Bumper</desc>
+    <category lang="eo">Ĝenerala</category>
+  </programme>
+  <programme start="20260829210140 +0000" stop="20260829221820 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">La legenda animacia kurso de Esperanto. La reĝo de Gondolando, Silvia, Bob kaj la eksterterano Mazi en amuza kaj eduka aventuro.</desc>
+    <category lang="eo">Animacio / Kurso</category>
   </programme>
 </tv>

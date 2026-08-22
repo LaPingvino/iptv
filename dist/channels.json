@@ -587,14 +587,6 @@
     "url": "https://kiefte.eu/iptv/twitch/insomniac"
   },
   {
-    "name": "Disney Channel Portugal (PT)",
-    "group": "Infantil & Kids",
-    "tvg_id": "DisneyChannel.pt",
-    "tvg_name": "Disney Channel PT",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Disney-Channel.png",
-    "url": "https://kiefte.eu/iptv/disney/playlist.m3u8"
-  },
-  {
     "name": "Classic Toons 24/7 (Tom & Jerry / Looney Tunes)",
     "group": "Infantil & Kids",
     "tvg_id": "ClassicToons.us",
