@@ -271,12 +271,6 @@ https://amg00627-amg00627c30-rakuten-es-3990.playouts.now.amagi.tv/playlist/amg0
 #EXTINF:-1 tvg-id="ToonGogglesJr.us@HD" tvg-name="Toon Goggles Junior" group-title="Infantil & Kids",Toon Goggles Junior (720p HD)
 https://d3i6upqaqzosi1.cloudfront.net/tg/jr_us/tg_jr_us.m3u8
 
-#EXTINF:-1 tvg-id="Naruto.us@HD" tvg-name="Naruto" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Naruto_logo.svg/512px-Naruto_logo.svg.png" group-title="Animação & Anime",Naruto (24/7 Anime 1080p)
-https://d21vn5eki5qsdi.cloudfront.net/playlist.m3u8
-
-#EXTINF:-1 tvg-id="MAXAnime.es@HD" tvg-name="MAX Anime" tvg-logo="https://cdnlive.klicgo.net/maxanime/maxanime.png" group-title="Animação & Anime",MAX Anime (1080p Full HD)
-https://cdnlive.klicgo.net/maxanime/live/playlist.m3u8
-
 #EXTINF:-1 tvg-id="DasErste.de" tvg-name="Das Erste" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Das-Erste.png" group-title="Filmes & Docs",Das Erste (ARD Germany)
 https://daserste-live.ard-mcdn.de/daserste/live/hls/int/master.m3u8
 

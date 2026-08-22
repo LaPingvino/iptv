@@ -649,22 +649,6 @@
     "url": "https://d3i6upqaqzosi1.cloudfront.net/tg/jr_us/tg_jr_us.m3u8"
   },
   {
-    "name": "Naruto (24/7 Anime 1080p)",
-    "group": "Animação & Anime",
-    "tvg_id": "Naruto.us@HD",
-    "tvg_name": "Naruto",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Naruto_logo.svg/512px-Naruto_logo.svg.png",
-    "url": "https://d21vn5eki5qsdi.cloudfront.net/playlist.m3u8"
-  },
-  {
-    "name": "MAX Anime (1080p Full HD)",
-    "group": "Animação & Anime",
-    "tvg_id": "MAXAnime.es@HD",
-    "tvg_name": "MAX Anime",
-    "logo": "https://cdnlive.klicgo.net/maxanime/maxanime.png",
-    "url": "https://cdnlive.klicgo.net/maxanime/live/playlist.m3u8"
-  },
-  {
     "name": "Das Erste (ARD Germany)",
     "group": "Filmes & Docs",
     "tvg_id": "DasErste.de",
