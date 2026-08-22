@@ -265,10 +265,7 @@ http://23.237.104.106:8080/USA_DISNEY_JUNIOR/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="DisneyXD.us@HD" tvg-name="Disney XD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Disney_XD_logo_2015.svg/512px-Disney_XD_logo_2015.svg.png" group-title="Infantil & Kids",Disney XD (US 720p60 HD)
 http://23.237.104.106:8080/USA_DISNEY_XD/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-id="TomAndJerry.tv" tvg-name="Tom and Jerry" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tom_and_Jerry_logo.svg/512px-Tom_and_Jerry_logo.svg.png" group-title="Infantil & Kids",Tom and Jerry (24/7 Classic Cartoons)
-https://live20.bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8
-
-#EXTINF:-1 tvg-id="LooneyTunes.us" tvg-name="Looney Tunes" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_1992_logo.svg/512px-Cartoon_Network_1992_logo.svg.png" group-title="Infantil & Kids",Looney Tunes & Bugs Bunny (24/7)
+#EXTINF:-1 tvg-id="ClassicToons.us" tvg-name="Classic Toons" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tom_and_Jerry_logo.svg/512px-Tom_and_Jerry_logo.svg.png" group-title="Infantil & Kids",Classic Toons 24/7 (Tom & Jerry / Looney Tunes)
 https://live20.bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8
 
 #EXTINF:-1 tvg-id="MrBeanAnimated.es@HD" tvg-name="Mr. Bean Animado" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Mr_Bean_Animated_logo.svg/512px-Mr_Bean_Animated_logo.svg.png" group-title="Infantil & Kids",Mr. Bean Animado (1080p)
