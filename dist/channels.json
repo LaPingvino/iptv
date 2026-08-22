@@ -697,14 +697,6 @@
     "url": "https://jmp2.uk/plu-609ae5cd48d3200007b0a98e.m3u8"
   },
   {
-    "name": "Crunchyroll TV (Anime 24/7 HD)",
-    "group": "Animação & Anime",
-    "tvg_id": "Crunchyroll.es@HD",
-    "tvg_name": "Crunchyroll TV",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Crunchyroll_Logo.png/512px-Crunchyroll_Logo.png",
-    "url": "https://jmp2.uk/plu-65652f7fc0fc88000883537a.m3u8"
-  },
-  {
     "name": "Naruto (24/7 Anime 1080p)",
     "group": "Animação & Anime",
     "tvg_id": "Naruto.us@HD",
@@ -713,11 +705,11 @@
     "url": "https://d21vn5eki5qsdi.cloudfront.net/playlist.m3u8"
   },
   {
-    "name": "Bleach (24/7 Anime HD)",
+    "name": "Crunchyroll TV (Anime 24/7 HD)",
     "group": "Animação & Anime",
-    "tvg_id": "Bleach.us@HD",
-    "tvg_name": "Bleach",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Bleach_logo.svg/512px-Bleach_logo.svg.png",
+    "tvg_id": "Crunchyroll.es@HD",
+    "tvg_name": "Crunchyroll TV",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Crunchyroll_Logo.png/512px-Crunchyroll_Logo.png",
     "url": "https://jmp2.uk/plu-65652f7fc0fc88000883537a.m3u8"
   },
   {
@@ -727,20 +719,6 @@
     "tvg_name": "MAX Anime",
     "logo": "https://cdnlive.klicgo.net/maxanime/maxanime.png",
     "url": "https://cdnlive.klicgo.net/maxanime/live/playlist.m3u8"
-  },
-  {
-    "name": "ADN TV+ Anime (720p HD)",
-    "group": "Animação & Anime",
-    "tvg_id": "ADNTV.es@HD",
-    "tvg_name": "ADN TV+",
-    "url": "https://d3b73b34o7cvkq.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-gz2sgqzp076kf/adn.m3u8"
-  },
-  {
-    "name": "FilmRise Anime HD",
-    "group": "Animação & Anime",
-    "tvg_id": "FilmRiseAnime.us@HD",
-    "tvg_name": "FilmRise Anime",
-    "url": "https://dvu7aia8rjlfm.cloudfront.net/master.m3u8"
   },
   {
     "name": "Das Erste (ARD Germany)",

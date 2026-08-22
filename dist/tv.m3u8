@@ -289,23 +289,14 @@ https://jmp2.uk/plu-609ae66b359b270007869ff1.m3u8
 #EXTINF:-1 tvg-id="Daria.us@HD" tvg-name="Daria" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Daria_logo.svg/512px-Daria_logo.svg.png" group-title="Animação & Anime",Daria (24/7 MTV Animation)
 https://jmp2.uk/plu-609ae5cd48d3200007b0a98e.m3u8
 
-#EXTINF:-1 tvg-id="Crunchyroll.es@HD" tvg-name="Crunchyroll TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Crunchyroll_Logo.png/512px-Crunchyroll_Logo.png" group-title="Animação & Anime",Crunchyroll TV (Anime 24/7 HD)
-https://jmp2.uk/plu-65652f7fc0fc88000883537a.m3u8
-
 #EXTINF:-1 tvg-id="Naruto.us@HD" tvg-name="Naruto" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Naruto_logo.svg/512px-Naruto_logo.svg.png" group-title="Animação & Anime",Naruto (24/7 Anime 1080p)
 https://d21vn5eki5qsdi.cloudfront.net/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Bleach.us@HD" tvg-name="Bleach" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Bleach_logo.svg/512px-Bleach_logo.svg.png" group-title="Animação & Anime",Bleach (24/7 Anime HD)
+#EXTINF:-1 tvg-id="Crunchyroll.es@HD" tvg-name="Crunchyroll TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Crunchyroll_Logo.png/512px-Crunchyroll_Logo.png" group-title="Animação & Anime",Crunchyroll TV (Anime 24/7 HD)
 https://jmp2.uk/plu-65652f7fc0fc88000883537a.m3u8
 
 #EXTINF:-1 tvg-id="MAXAnime.es@HD" tvg-name="MAX Anime" tvg-logo="https://cdnlive.klicgo.net/maxanime/maxanime.png" group-title="Animação & Anime",MAX Anime (1080p Full HD)
 https://cdnlive.klicgo.net/maxanime/live/playlist.m3u8
-
-#EXTINF:-1 tvg-id="ADNTV.es@HD" tvg-name="ADN TV+" group-title="Animação & Anime",ADN TV+ Anime (720p HD)
-https://d3b73b34o7cvkq.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-gz2sgqzp076kf/adn.m3u8
-
-#EXTINF:-1 tvg-id="FilmRiseAnime.us@HD" tvg-name="FilmRise Anime" group-title="Animação & Anime",FilmRise Anime HD
-https://dvu7aia8rjlfm.cloudfront.net/master.m3u8
 
 #EXTINF:-1 tvg-id="DasErste.de" tvg-name="Das Erste" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Das-Erste.png" group-title="Filmes & Docs",Das Erste (ARD Germany)
 https://daserste-live.ard-mcdn.de/daserste/live/hls/int/master.m3u8
