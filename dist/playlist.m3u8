@@ -257,22 +257,10 @@ https://kiefte.eu/iptv/youtube/@NPORadio2
 https://kiefte.eu/iptv/youtube/@npo3fm
 
 #EXTINF:-1 tvg-id="DisneyJunior.la@HD" tvg-name="Disney Junior" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/disneyjunior.png" group-title="Infantil & Kids",Disney Junior (1080p)
-http://177.234.249.178:8888/DISNEY-JR/index.m3u8
+http://45.134.141.161:2200/ARG/Disney_Junior/index.m3u8
 
 #EXTINF:-1 tvg-id="DisneyChannel.la@HD" tvg-name="Disney Channel" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/disneychannel.png" group-title="Infantil & Kids",Disney Channel (1080p)
-http://15.204.246.24:8080/DisneyHD/index.m3u8
-
-#EXTINF:-1 tvg-id="MrBeanAnimated.es@HD" tvg-name="Mr. Bean Animado" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Mr_Bean_Animated_logo.svg/512px-Mr_Bean_Animated_logo.svg.png" group-title="Infantil & Kids",Mr. Bean Animado (1080p)
-https://amg00627-amg00627c30-rakuten-es-3990.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanescc-rakutenes/playlist.m3u8
-
-#EXTINF:-1 tvg-id="TMNT.es@HD" tvg-name="Las Tortugas Ninja" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/TMNT_logo.svg/512px-TMNT_logo.svg.png" group-title="Infantil & Kids",Las Tortugas Ninja (TMNT 24/7)
-https://jmp2.uk/plu-63dd5d7a4e83e700088fbca8.m3u8
-
-#EXTINF:-1 tvg-id="AvatarTheLastAirbender.es" tvg-name="Avatar The Last Airbender" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Avatar_The_Last_Airbender_logo.svg/512px-Avatar_The_Last_Airbender_logo.svg.png" group-title="Infantil & Kids",Avatar - The Last Airbender (24/7)
-https://jmp2.uk/plu-656df599c0fc8800089c75ab.m3u8
-
-#EXTINF:-1 tvg-id="CartoonClassics.us" tvg-name="Cartoon Classics" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_1992_logo.svg/512px-Cartoon_Network_1992_logo.svg.png" group-title="Infantil & Kids",Cartoon Classics (Retro Toons)
-http://5.188.159.128:8070/Cartoon_Network/index.m3u8
+http://45.134.141.161:2200/ARG/Disney_Channel/index.m3u8
 
 #EXTINF:-1 tvg-id="TurmaDaMonica.pt@HD" tvg-name="Turma da Monica" tvg-logo="https://upload.wikimedia.org/wikipedia/pt/thumb/a/a2/Logotipo_Turma_da_M%C3%B4nica.png/512px-Logotipo_Turma_da_M%C3%B4nica.png" group-title="Infantil & Kids",Turma da Mônica (24/7 PT)
 https://jmp2.uk/plu-5f997e44949bc70007a6941e.m3u8
@@ -282,6 +270,15 @@ https://jmp2.uk/plu-63221bafdc6e110007b50270.m3u8
 
 #EXTINF:-1 tvg-id="TomAndJerry.tv" tvg-name="Tom and Jerry" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tom_and_Jerry_logo.svg/512px-Tom_and_Jerry_logo.svg.png" group-title="Infantil & Kids",Tom and Jerry (24/7)
 https://live20.bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8
+
+#EXTINF:-1 tvg-id="MrBeanAnimated.es@HD" tvg-name="Mr. Bean Animado" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Mr_Bean_Animated_logo.svg/512px-Mr_Bean_Animated_logo.svg.png" group-title="Infantil & Kids",Mr. Bean Animado (1080p)
+https://amg00627-amg00627c30-rakuten-es-3990.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanescc-rakutenes/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TMNT.es@HD" tvg-name="Las Tortugas Ninja" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/TMNT_logo.svg/512px-TMNT_logo.svg.png" group-title="Infantil & Kids",Las Tortugas Ninja (TMNT 24/7)
+https://jmp2.uk/plu-63dd5d7a4e83e700088fbca8.m3u8
+
+#EXTINF:-1 tvg-id="AvatarTheLastAirbender.es" tvg-name="Avatar The Last Airbender" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Avatar_The_Last_Airbender_logo.svg/512px-Avatar_The_Last_Airbender_logo.svg.png" group-title="Infantil & Kids",Avatar - The Last Airbender (24/7)
+https://jmp2.uk/plu-656df599c0fc8800089c75ab.m3u8
 
 #EXTINF:-1 tvg-id="ToonGogglesJr.us@HD" tvg-name="Toon Goggles Junior" group-title="Infantil & Kids",Toon Goggles Junior (720p HD)
 https://d3i6upqaqzosi1.cloudfront.net/tg/jr_us/tg_jr_us.m3u8
