@@ -84,10 +84,10 @@
 
 - name: Daria (24/7 MTV Animation)
   group: Animação & Anime
-  tvg_id: Daria.es
+  tvg_id: Daria.us@HD
   tvg_name: Daria
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Daria_logo.svg/512px-Daria_logo.svg.png
-  url: https://jmp2.uk/plu-6683b680efa2a10008e8a393.m3u8
+  url: https://jmp2.uk/plu-609ae5cd48d3200007b0a98e.m3u8
 
 - name: Crunchyroll TV (Anime 24/7 HD)
   group: Animação & Anime

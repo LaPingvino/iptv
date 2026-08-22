@@ -289,8 +289,8 @@ https://d3i6upqaqzosi1.cloudfront.net/tg/jr_us/tg_jr_us.m3u8
 #EXTINF:-1 tvg-id="SouthPark.us@HD" tvg-name="South Park" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/South_Park_logo.svg/512px-South_Park_logo.svg.png" group-title="Animação & Anime",South Park (24/7 Comedy Central)
 https://jmp2.uk/plu-609ae66b359b270007869ff1.m3u8
 
-#EXTINF:-1 tvg-id="Daria.es" tvg-name="Daria" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Daria_logo.svg/512px-Daria_logo.svg.png" group-title="Animação & Anime",Daria (24/7 MTV Animation)
-https://jmp2.uk/plu-6683b680efa2a10008e8a393.m3u8
+#EXTINF:-1 tvg-id="Daria.us@HD" tvg-name="Daria" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Daria_logo.svg/512px-Daria_logo.svg.png" group-title="Animação & Anime",Daria (24/7 MTV Animation)
+https://jmp2.uk/plu-609ae5cd48d3200007b0a98e.m3u8
 
 #EXTINF:-1 tvg-id="Crunchyroll.es@HD" tvg-name="Crunchyroll TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Crunchyroll_Logo.png/512px-Crunchyroll_Logo.png" group-title="Animação & Anime",Crunchyroll TV (Anime 24/7 HD)
 https://jmp2.uk/plu-65652f7fc0fc88000883537a.m3u8
