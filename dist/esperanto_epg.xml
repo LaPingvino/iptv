@@ -3294,4 +3294,9 @@
     <desc lang="eo">Elsendo de Dok Estas Parto 06</desc>
     <category lang="eo">Ĝenerala</category>
   </programme>
+  <programme start="20260829195450 +0000" stop="20260829210130 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">KEF 2005: La Plejpleja Festivalo</title>
+    <desc lang="eo">Dokumenta filmo pri la kultura Esperanto-festivalo en Helsinki kun koncertoj, arto kaj festivala etoso.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
 </tv>

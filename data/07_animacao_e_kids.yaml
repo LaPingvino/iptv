@@ -1,6 +1,6 @@
 # ==============================================================================
-# Infantil, Kids & Animação (Direct Pure Streams - 0 Bumpers / 0 DRM)
-# Prioritizing Portuguese (PT), English & Universal Channels
+# Infantil, Kids & Animação (Direct Pure Streams - 0 Bumpers / 0 Stutter)
+# Prioritizing Portuguese (PT), English & Universal High-Bandwidth Channels
 # ==============================================================================
 
 # --- Kids & Família (Little ones, toddlers & family cartoons) ---
@@ -10,20 +10,6 @@
   tvg_name: Disney Channel PT
   logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Disney-Channel.png
   url: https://kiefte.eu/iptv/disney/playlist.m3u8
-
-- name: Disney Junior (English 720p60 HD)
-  group: Infantil & Kids
-  tvg_id: DisneyJunior.us@HD
-  tvg_name: Disney Junior
-  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Disney-Junior.png
-  url: http://23.237.104.106:8080/USA_DISNEY_JUNIOR/tracks-v1a1/mono.m3u8
-
-- name: Disney XD (US 720p60 HD)
-  group: Infantil & Kids
-  tvg_id: DisneyXD.us@HD
-  tvg_name: Disney XD
-  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Disney_XD_logo_2015.svg/512px-Disney_XD_logo_2015.svg.png
-  url: http://23.237.104.106:8080/USA_DISNEY_XD/tracks-v1a1/mono.m3u8
 
 - name: Classic Toons 24/7 (Tom & Jerry / Looney Tunes)
   group: Infantil & Kids
@@ -46,24 +32,18 @@
   url: https://d3i6upqaqzosi1.cloudfront.net/tg/jr_us/tg_jr_us.m3u8
 
 
-# --- Animação Adulta (Direct Pure Streams - English) ---
-- name: Comedy Central (South Park & Futurama 1080p)
-  group: Animação Adulta
-  tvg_id: ComedyCentral.us@HD
-  tvg_name: Comedy Central
-  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Comedy_Central_2018.svg/512px-Comedy_Central_2018.svg.png
-  url: http://23.237.104.106:8080/USA_COMEDY_CENTRAL/tracks-v1a1/mono.m3u8
+# ==============================================================================
+# Archived / Rate-Limited Streams (Reference Only - Failed Quality Benchmark)
+# Host 23.237.104.106 has a ~0.3 MB/s single-connection limit & drops multi-socket
+# ==============================================================================
+# - name: Disney Junior (English 720p60 HD)
+#   url: http://23.237.104.106:8080/USA_DISNEY_JUNIOR/tracks-v1a1/mono.m3u8
+# - name: Disney XD (US 720p60 HD)
+#   url: http://23.237.104.106:8080/USA_DISNEY_XD/tracks-v1a1/mono.m3u8
+# - name: Comedy Central (South Park & Futurama 1080p)
+#   url: http://23.237.104.106:8080/USA_COMEDY_CENTRAL/tracks-v1a1/mono.m3u8
+# - name: Cartoon Network & Adult Swim (Rick and Morty 1080p)
+#   url: http://23.237.104.106:8080/USA_CARTOON_NETWORK/tracks-v1a1/mono.m3u8
+# - name: FXX (The Simpsons & Family Guy 720p60)
+#   url: http://23.237.104.106:8080/USA_FXX/tracks-v1a1/mono.m3u8
 
-- name: Cartoon Network & Adult Swim (Rick and Morty 1080p)
-  group: Animação Adulta
-  tvg_id: AdultSwim.us@HD
-  tvg_name: Adult Swim
-  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Adult_Swim_2003_logo.svg/512px-Adult_Swim_2003_logo.svg.png
-  url: http://23.237.104.106:8080/USA_CARTOON_NETWORK/tracks-v1a1/mono.m3u8
-
-- name: FXX (The Simpsons & Family Guy 720p60)
-  group: Animação Adulta
-  tvg_id: FXX.us@HD
-  tvg_name: FXX
-  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/FXX_logo.svg/512px-FXX_logo.svg.png
-  url: http://23.237.104.106:8080/USA_FXX/tracks-v1a1/mono.m3u8
