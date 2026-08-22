@@ -2291,5 +2291,60 @@
     "tvg_id": "Kosmos941.na",
     "tvg_name": "Kosmos 94.1 Afrikaans",
     "url": "https://edge.iono.fm/xice/88_high.mp3"
+  },
+  {
+    "name": "Bob Ross (24/7 The Joy of Painting)",
+    "group": "Natureza & Slow TV",
+    "tvg_id": "BobRoss.tv@HD",
+    "tvg_name": "Bob Ross",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bob_Ross_The_Joy_of_Painting_logo.svg/512px-Bob_Ross_The_Joy_of_Painting_logo.svg.png",
+    "url": "https://kiefte.eu/iptv/twitch/bobross"
+  },
+  {
+    "name": "NASA TV (Earth from Space ISS HD)",
+    "group": "Natureza & Slow TV",
+    "tvg_id": "NASATV.us@HD",
+    "tvg_name": "NASA TV",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/512px-NASA_logo.svg.png",
+    "url": "https://ntv1.akamaized.net/hls/live/2014075/NASA-NTV1-HLS/master.m3u8"
+  },
+  {
+    "name": "RailCowGirl (Norway Scenic Cabview Train Journeys)",
+    "group": "Natureza & Slow TV",
+    "tvg_id": "RailCowGirl.tv@HD",
+    "tvg_name": "RailCowGirl",
+    "logo": "https://static-cdn.jtvnw.net/jtv_user_pictures/3004f2f9-715b-4395-8b3d-4c3dbdd1be36-profile_image-300x300.png",
+    "url": "https://kiefte.eu/iptv/twitch/railcowgirl"
+  },
+  {
+    "name": "Explore Africa Wildlife (Savanna Waterhole Cam)",
+    "group": "Natureza & Slow TV",
+    "tvg_id": "ExploreAfrica.tv@HD",
+    "tvg_name": "Explore Africa Wildlife",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Explore.org_logo.svg/512px-Explore.org_logo.svg.png",
+    "url": "https://kiefte.eu/iptv/youtube/@ExploreAfrica"
+  },
+  {
+    "name": "Monterey Bay Aquarium (Sea Otters & Kelp Forest)",
+    "group": "Natureza & Slow TV",
+    "tvg_id": "MontereyBayAquarium.tv@HD",
+    "tvg_name": "Monterey Bay Aquarium",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Monterey_Bay_Aquarium_logo.svg/512px-Monterey_Bay_Aquarium_logo.svg.png",
+    "url": "https://kiefte.eu/iptv/youtube/@montereybayaquarium"
+  },
+  {
+    "name": "Tokyo Live Skyline Cam (Shinjuku 1080p)",
+    "group": "Natureza & Slow TV",
+    "tvg_id": "TokyoLiveCam.tv@HD",
+    "tvg_name": "Tokyo Live Cam",
+    "url": "https://kiefte.eu/iptv/youtube/@tokyo_live_cam"
+  },
+  {
+    "name": "Lofi Girl (Relaxing Beats & Anime Ambience)",
+    "group": "Natureza & Slow TV",
+    "tvg_id": "LofiGirl.tv@HD",
+    "tvg_name": "Lofi Girl",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Lofi_girl_logo.jpg/512px-Lofi_girl_logo.jpg",
+    "url": "https://kiefte.eu/iptv/youtube/@LofiGirl"
   }
 ]

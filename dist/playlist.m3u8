@@ -931,3 +931,24 @@ https://s37.derstream.net/hitradio-namibia.mp3
 
 #EXTINF:-1 tvg-id="Kosmos941.na" tvg-name="Kosmos 94.1 Afrikaans" group-title="Rádio Global" radio="true",Kosmos 94.1 (Namibië / Afrikaans)
 https://edge.iono.fm/xice/88_high.mp3
+
+#EXTINF:-1 tvg-id="BobRoss.tv@HD" tvg-name="Bob Ross" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bob_Ross_The_Joy_of_Painting_logo.svg/512px-Bob_Ross_The_Joy_of_Painting_logo.svg.png" group-title="Natureza & Slow TV",Bob Ross (24/7 The Joy of Painting)
+https://kiefte.eu/iptv/twitch/bobross
+
+#EXTINF:-1 tvg-id="NASATV.us@HD" tvg-name="NASA TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/512px-NASA_logo.svg.png" group-title="Natureza & Slow TV",NASA TV (Earth from Space ISS HD)
+https://ntv1.akamaized.net/hls/live/2014075/NASA-NTV1-HLS/master.m3u8
+
+#EXTINF:-1 tvg-id="RailCowGirl.tv@HD" tvg-name="RailCowGirl" tvg-logo="https://static-cdn.jtvnw.net/jtv_user_pictures/3004f2f9-715b-4395-8b3d-4c3dbdd1be36-profile_image-300x300.png" group-title="Natureza & Slow TV",RailCowGirl (Norway Scenic Cabview Train Journeys)
+https://kiefte.eu/iptv/twitch/railcowgirl
+
+#EXTINF:-1 tvg-id="ExploreAfrica.tv@HD" tvg-name="Explore Africa Wildlife" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Explore.org_logo.svg/512px-Explore.org_logo.svg.png" group-title="Natureza & Slow TV",Explore Africa Wildlife (Savanna Waterhole Cam)
+https://kiefte.eu/iptv/youtube/@ExploreAfrica
+
+#EXTINF:-1 tvg-id="MontereyBayAquarium.tv@HD" tvg-name="Monterey Bay Aquarium" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Monterey_Bay_Aquarium_logo.svg/512px-Monterey_Bay_Aquarium_logo.svg.png" group-title="Natureza & Slow TV",Monterey Bay Aquarium (Sea Otters & Kelp Forest)
+https://kiefte.eu/iptv/youtube/@montereybayaquarium
+
+#EXTINF:-1 tvg-id="TokyoLiveCam.tv@HD" tvg-name="Tokyo Live Cam" group-title="Natureza & Slow TV",Tokyo Live Skyline Cam (Shinjuku 1080p)
+https://kiefte.eu/iptv/youtube/@tokyo_live_cam
+
+#EXTINF:-1 tvg-id="LofiGirl.tv@HD" tvg-name="Lofi Girl" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Lofi_girl_logo.jpg/512px-Lofi_girl_logo.jpg" group-title="Natureza & Slow TV",Lofi Girl (Relaxing Beats & Anime Ambience)
+https://kiefte.eu/iptv/youtube/@LofiGirl
