@@ -578,23 +578,17 @@ https://kiefte.eu/iptv/bahai/tv
 #EXTINF:-1 tvg-id="BobRoss.tv@HD" tvg-name="Bob Ross" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bob_Ross_The_Joy_of_Painting_logo.svg/512px-Bob_Ross_The_Joy_of_Painting_logo.svg.png" group-title="Natureza & Slow TV",Bob Ross (24/7 The Joy of Painting)
 https://kiefte.eu/iptv/twitch/bobross
 
+#EXTINF:-1 tvg-id="LofiGirl.tv@HD" tvg-name="Lofi Girl" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Lofi_girl_logo.jpg/512px-Lofi_girl_logo.jpg" group-title="Natureza & Slow TV",Lofi Girl (24/7 Relaxing Beats & Ambience 1080p)
+https://kiefte.eu/iptv/twitch/lofigirl
+
+#EXTINF:-1 tvg-id="RelaxBeats.tv@HD" tvg-name="Relax Beats" group-title="Natureza & Slow TV",Relax Beats & Chill Music (24/7 HD)
+https://kiefte.eu/iptv/twitch/relaxbeats
+
 #EXTINF:-1 tvg-id="NASATV.us@HD" tvg-name="NASA TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/512px-NASA_logo.svg.png" group-title="Natureza & Slow TV",NASA TV (Earth from Space ISS HD)
 https://ntv1.akamaized.net/hls/live/2014075/NASA-NTV1-HLS/master.m3u8
 
 #EXTINF:-1 tvg-id="RailCowGirl.tv@HD" tvg-name="RailCowGirl" tvg-logo="https://static-cdn.jtvnw.net/jtv_user_pictures/3004f2f9-715b-4395-8b3d-4c3dbdd1be36-profile_image-300x300.png" group-title="Natureza & Slow TV",RailCowGirl (Norway Scenic Cabview Train Journeys)
 https://kiefte.eu/iptv/twitch/railcowgirl
-
-#EXTINF:-1 tvg-id="ExploreAfrica.tv@HD" tvg-name="Explore Africa Wildlife" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Explore.org_logo.svg/512px-Explore.org_logo.svg.png" group-title="Natureza & Slow TV",Explore Africa Wildlife (Savanna Waterhole Cam)
-https://kiefte.eu/iptv/youtube/@ExploreAfrica
-
-#EXTINF:-1 tvg-id="MontereyBayAquarium.tv@HD" tvg-name="Monterey Bay Aquarium" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Monterey_Bay_Aquarium_logo.svg/512px-Monterey_Bay_Aquarium_logo.svg.png" group-title="Natureza & Slow TV",Monterey Bay Aquarium (Sea Otters & Kelp Forest)
-https://kiefte.eu/iptv/youtube/@montereybayaquarium
-
-#EXTINF:-1 tvg-id="TokyoLiveCam.tv@HD" tvg-name="Tokyo Live Cam" group-title="Natureza & Slow TV",Tokyo Live Skyline Cam (Shinjuku 1080p)
-https://kiefte.eu/iptv/youtube/@tokyo_live_cam
-
-#EXTINF:-1 tvg-id="LofiGirl.tv@HD" tvg-name="Lofi Girl" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Lofi_girl_logo.jpg/512px-Lofi_girl_logo.jpg" group-title="Natureza & Slow TV",Lofi Girl (Relaxing Beats & Anime Ambience)
-https://kiefte.eu/iptv/youtube/@LofiGirl
 
 #EXTINF:-1 tvg-id="DoctorWhoClassic.uk@HD" tvg-name="Doctor Who Classic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Doctor_Who_logo_2018.svg/512px-Doctor_Who_logo_2018.svg.png" group-title="Sci-Fi, Cult & Retro",Doctor Who Classic (24/7 1080p HD)
 https://bbc-classicdrwho-1-us.roku.wurl.tv/playlist.m3u8
@@ -604,6 +598,3 @@ https://mst3k-roku.amagi.tv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="WorldOfLongplays.tv@HD" tvg-name="World of Longplays" tvg-logo="https://static-cdn.jtvnw.net/jtv_user_pictures/worldoflongplays-profile_image-144709d73d6e9dc7-300x300.png" group-title="Sci-Fi, Cult & Retro",World of Longplays (Retro Gaming 1080p60)
 https://kiefte.eu/iptv/twitch/worldoflongplays
-
-#EXTINF:-1 tvg-id="KEXPStudio.tv@HD" tvg-name="KEXP Live Sessions" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/KEXP-FM_logo.svg/512px-KEXP-FM_logo.svg.png" group-title="Música & Video",KEXP Live Studio Sessions (1080p)
-https://kiefte.eu/iptv/youtube/@kexp

@@ -22,10 +22,3 @@
   tvg_name: World of Longplays
   logo: https://static-cdn.jtvnw.net/jtv_user_pictures/worldoflongplays-profile_image-144709d73d6e9dc7-300x300.png
   url: https://kiefte.eu/iptv/twitch/worldoflongplays
-
-- name: KEXP Live Studio Sessions (1080p)
-  group: Música & Video
-  tvg_id: KEXPStudio.tv@HD
-  tvg_name: KEXP Live Sessions
-  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/KEXP-FM_logo.svg/512px-KEXP-FM_logo.svg.png
-  url: https://kiefte.eu/iptv/youtube/@kexp

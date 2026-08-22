@@ -2262,6 +2262,21 @@
     "url": "https://kiefte.eu/iptv/twitch/bobross"
   },
   {
+    "name": "Lofi Girl (24/7 Relaxing Beats & Ambience 1080p)",
+    "group": "Natureza & Slow TV",
+    "tvg_id": "LofiGirl.tv@HD",
+    "tvg_name": "Lofi Girl",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Lofi_girl_logo.jpg/512px-Lofi_girl_logo.jpg",
+    "url": "https://kiefte.eu/iptv/twitch/lofigirl"
+  },
+  {
+    "name": "Relax Beats & Chill Music (24/7 HD)",
+    "group": "Natureza & Slow TV",
+    "tvg_id": "RelaxBeats.tv@HD",
+    "tvg_name": "Relax Beats",
+    "url": "https://kiefte.eu/iptv/twitch/relaxbeats"
+  },
+  {
     "name": "NASA TV (Earth from Space ISS HD)",
     "group": "Natureza & Slow TV",
     "tvg_id": "NASATV.us@HD",
@@ -2276,37 +2291,6 @@
     "tvg_name": "RailCowGirl",
     "logo": "https://static-cdn.jtvnw.net/jtv_user_pictures/3004f2f9-715b-4395-8b3d-4c3dbdd1be36-profile_image-300x300.png",
     "url": "https://kiefte.eu/iptv/twitch/railcowgirl"
-  },
-  {
-    "name": "Explore Africa Wildlife (Savanna Waterhole Cam)",
-    "group": "Natureza & Slow TV",
-    "tvg_id": "ExploreAfrica.tv@HD",
-    "tvg_name": "Explore Africa Wildlife",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Explore.org_logo.svg/512px-Explore.org_logo.svg.png",
-    "url": "https://kiefte.eu/iptv/youtube/@ExploreAfrica"
-  },
-  {
-    "name": "Monterey Bay Aquarium (Sea Otters & Kelp Forest)",
-    "group": "Natureza & Slow TV",
-    "tvg_id": "MontereyBayAquarium.tv@HD",
-    "tvg_name": "Monterey Bay Aquarium",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Monterey_Bay_Aquarium_logo.svg/512px-Monterey_Bay_Aquarium_logo.svg.png",
-    "url": "https://kiefte.eu/iptv/youtube/@montereybayaquarium"
-  },
-  {
-    "name": "Tokyo Live Skyline Cam (Shinjuku 1080p)",
-    "group": "Natureza & Slow TV",
-    "tvg_id": "TokyoLiveCam.tv@HD",
-    "tvg_name": "Tokyo Live Cam",
-    "url": "https://kiefte.eu/iptv/youtube/@tokyo_live_cam"
-  },
-  {
-    "name": "Lofi Girl (Relaxing Beats & Anime Ambience)",
-    "group": "Natureza & Slow TV",
-    "tvg_id": "LofiGirl.tv@HD",
-    "tvg_name": "Lofi Girl",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Lofi_girl_logo.jpg/512px-Lofi_girl_logo.jpg",
-    "url": "https://kiefte.eu/iptv/youtube/@LofiGirl"
   },
   {
     "name": "Doctor Who Classic (24/7 1080p HD)",
@@ -2331,13 +2315,5 @@
     "tvg_name": "World of Longplays",
     "logo": "https://static-cdn.jtvnw.net/jtv_user_pictures/worldoflongplays-profile_image-144709d73d6e9dc7-300x300.png",
     "url": "https://kiefte.eu/iptv/twitch/worldoflongplays"
-  },
-  {
-    "name": "KEXP Live Studio Sessions (1080p)",
-    "group": "Música & Video",
-    "tvg_id": "KEXPStudio.tv@HD",
-    "tvg_name": "KEXP Live Sessions",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/KEXP-FM_logo.svg/512px-KEXP-FM_logo.svg.png",
-    "url": "https://kiefte.eu/iptv/youtube/@kexp"
   }
 ]
