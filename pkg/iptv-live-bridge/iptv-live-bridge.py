@@ -444,76 +444,126 @@ def generate_live_twitch_epg_xml():
         return PRECHECKED_TWITCH_EPG_XML
     return '<?xml version="1.0" encoding="UTF-8"?><tv><channel id="Speedrun.tv"><display-name>Speedrun.com 24/7</display-name></channel></tv>'
 
-import shutil
+import shutil, concurrent.futures
 
 DISNEY_RAM_DIR = "/run/iptv-live-bridge/disney"
 
 class DisneyBufferEngine:
-    """On-demand real-time audio booster and RAM buffer engine for Disney Channel Portugal."""
+    """Pre-buffers and boosts Disney Channel PT segments using multi-threaded parallel downloads in RAM."""
     def __init__(self):
-        self.stream_url = "http://151.80.18.177:86/Disney_Channel_HD/tracks-v1a1/mono.m3u8"
+        self.mono_url = "http://151.80.18.177:86/Disney_Channel_HD/tracks-v1a1/mono.m3u8"
+        self.base_url = "http://151.80.18.177:86/Disney_Channel_HD/tracks-v1a1/"
         self.last_client_access = 0
-        self.process = None
+        self.running = False
         self.lock = threading.Lock()
-        self.janitor_running = False
+        self.segments = {} # clean_name -> (bytes, timestamp)
+        self.playlist_content = ""
+        self.downloading = set()
+        self.executor = None
         
     def touch(self):
         with self.lock:
             self.last_client_access = time.time()
-            if self.process is None or self.process.poll() is not None:
-                self._start_ffmpeg()
-            if not self.janitor_running:
-                self.janitor_running = True
-                t = threading.Thread(target=self._janitor, daemon=True)
+            if not self.running:
+                self.running = True
+                t = threading.Thread(target=self._worker, daemon=True)
                 t.start()
-                
-    def _start_ffmpeg(self):
-        try:
-            os.makedirs(DISNEY_RAM_DIR, exist_ok=True)
-            for f in os.listdir(DISNEY_RAM_DIR):
+
+    def _worker(self):
+        logger.info("Starting Disney Channel PT parallel pre-buffer worker...")
+        os.makedirs(DISNEY_RAM_DIR, exist_ok=True)
+        self.executor = concurrent.futures.ThreadPoolExecutor(max_workers=6)
+        
+        while self.running:
+            if time.time() - self.last_client_access > 120:
+                logger.info("Disney Channel idle for >2m. Stopping worker.")
+                with self.lock:
+                    self.running = False
+                    self.segments.clear()
+                    self.playlist_content = ""
                 try:
-                    os.remove(os.path.join(DISNEY_RAM_DIR, f))
+                    shutil.rmtree(DISNEY_RAM_DIR, ignore_errors=True)
                 except Exception:
                     pass
-            m3u8_target = os.path.join(DISNEY_RAM_DIR, "live.m3u8")
+                break
+                
+            try:
+                req = urllib.request.Request(self.mono_url, headers={"User-Agent": "Mozilla/5.0"})
+                with urllib.request.urlopen(req, timeout=6) as resp:
+                    raw_m3u8 = resp.read().decode("utf-8", errors="ignore")
+                
+                lines = []
+                new_segs = []
+                for line in raw_m3u8.splitlines():
+                    sline = line.strip()
+                    if sline and not sline.startswith("#"):
+                        clean_name = sline.replace("/", "_")
+                        lines.append(f"/iptv/disney/{clean_name}")
+                        with self.lock:
+                            if clean_name not in self.segments and clean_name not in self.downloading:
+                                self.downloading.add(clean_name)
+                                new_segs.append((sline, clean_name))
+                    else:
+                        lines.append(line)
+                        
+                with self.lock:
+                    self.playlist_content = "\n".join(lines)
+                    
+                for rel_path, clean_name in new_segs:
+                    self.executor.submit(self._fetch_and_boost, rel_path, clean_name)
+                    
+                now = time.time()
+                with self.lock:
+                    self.segments = {k: v for k, v in self.segments.items() if now - v[1] < 180}
+                    
+            except Exception as e:
+                logger.warning(f"Disney playlist update error: {e}")
+                
+            time.sleep(2)
+            
+    def _fetch_and_boost(self, rel_path, clean_name):
+        try:
+            full_url = urllib.parse.urljoin(self.base_url, rel_path)
+            sreq = urllib.request.Request(full_url, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(sreq, timeout=15) as sresp:
+                raw_data = sresp.read()
+                
+            raw_tmp = os.path.join(DISNEY_RAM_DIR, f"raw_{clean_name}")
+            boost_tmp = os.path.join(DISNEY_RAM_DIR, f"boost_{clean_name}")
+            with open(raw_tmp, "wb") as f:
+                f.write(raw_data)
+                
+            # Boost audio (+13 dB volume gain with peak limiter)
             cmd = [
                 "ffmpeg", "-y", "-nostdin",
-                "-reconnect", "1", "-reconnect_streamed", "1", "-reconnect_delay_max", "2",
-                "-i", self.stream_url,
+                "-i", raw_tmp,
                 "-c:v", "copy",
-                "-c:a", "aac", "-b:a", "192k", "-af", "volume=2.5,alimiter=limit=0.95",
-                "-f", "hls",
-                "-hls_time", "3",
-                "-hls_list_size", "6",
-                "-hls_flags", "delete_segments+temp_file",
-                m3u8_target
+                "-c:a", "aac", "-b:a", "192k", "-af", "volume=4.5,alimiter=limit=0.95",
+                boost_tmp
             ]
-            logger.info("Launching on-demand Disney Channel audio boost transcode...")
-            self.process = subprocess.Popen(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        except Exception as e:
-            logger.error(f"Failed to start Disney Channel booster: {e}")
+            subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=10)
             
-    def _janitor(self):
-        while True:
-            time.sleep(5)
+            final_data = None
+            if os.path.exists(boost_tmp) and os.path.getsize(boost_tmp) > 1000:
+                with open(boost_tmp, "rb") as f:
+                    final_data = f.read()
+            else:
+                final_data = raw_data
+                
+            try:
+                os.remove(raw_tmp)
+                os.remove(boost_tmp)
+            except Exception:
+                pass
+                
             with self.lock:
-                if self.process and time.time() - self.last_client_access > 45:
-                    logger.info("Disney Channel idle for >45s. Terminating transcode process.")
-                    try:
-                        self.process.terminate()
-                        self.process.wait(timeout=2)
-                    except Exception:
-                        try:
-                            self.process.kill()
-                        except Exception:
-                            pass
-                    self.process = None
-                    self.janitor_running = False
-                    try:
-                        shutil.rmtree(DISNEY_RAM_DIR, ignore_errors=True)
-                    except Exception:
-                        pass
-                    break
+                self.segments[clean_name] = (final_data, time.time())
+                self.downloading.discard(clean_name)
+            logger.debug(f"Pre-buffered and boosted Disney segment {clean_name} ({len(final_data)} bytes)")
+        except Exception as e:
+            logger.warning(f"Error boosting Disney segment {clean_name}: {e}")
+            with self.lock:
+                self.downloading.discard(clean_name)
 
 disney_buffer_engine = DisneyBufferEngine()
 
@@ -720,62 +770,53 @@ class BridgeHandler(BaseHTTPRequestHandler):
                         self.wfile.write(b"404 Not Found: Segment not found\n")
                     return
 
-        # High-Speed Pre-Buffered Disney Channel (1080p + Boosted Audio)
+        # High-Speed Parallel-Buffered Disney Channel Portugal (1080p + Boosted Audio)
         if path.startswith("disney") or path in ["disney", "disney.m3u8"]:
             disney_buffer_engine.touch()
-            m3u8_file = os.path.join(DISNEY_RAM_DIR, "live.m3u8")
             
             if path in ["disney", "disney.m3u8", "disney/playlist.m3u8"]:
-                # Wait until at least 3 segments are pre-buffered (approx 8-10s of video) for uninterrupted playback
-                for _ in range(25):
-                    if os.path.exists(m3u8_file):
-                        try:
-                            with open(m3u8_file, "r") as f:
-                                raw_check = f.read()
-                            if raw_check.count(".ts") >= 3:
-                                break
-                        except Exception:
-                            pass
+                # Wait until at least 3 boosted segments are ready in memory
+                for _ in range(30):
+                    with disney_buffer_engine.lock:
+                        if len(disney_buffer_engine.segments) >= 3 and disney_buffer_engine.playlist_content:
+                            break
                     time.sleep(0.5)
                     
-                if os.path.exists(m3u8_file):
-                    with open(m3u8_file, "r") as f:
-                        raw_m3u8 = f.read()
-                    lines = []
-                    for line in raw_m3u8.splitlines():
-                        sline = line.strip()
-                        if sline and not sline.startswith("#"):
-                            lines.append(f"/iptv/disney/{sline}")
-                        else:
-                            lines.append(line)
-                    content = "\n".join(lines)
-                    self.send_response(200)
-                    self.send_header("Content-Type", "application/vnd.apple.mpegurl")
-                    self.send_header("Access-Control-Allow-Origin", "*")
-                    self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
-                    self.end_headers()
-                    if not is_head:
-                        self.wfile.write(content.encode("utf-8"))
-                    return
-                else:
-                    self.send_response(302)
-                    self.send_header("Location", disney_buffer_engine.stream_url)
-                    self.send_header("Access-Control-Allow-Origin", "*")
-                    self.end_headers()
-                    return
+                with disney_buffer_engine.lock:
+                    content = disney_buffer_engine.playlist_content
+                if not content:
+                    content = fetch_and_make_absolute_m3u8(disney_buffer_engine.mono_url)
+                    
+                self.send_response(200)
+                self.send_header("Content-Type", "application/vnd.apple.mpegurl")
+                self.send_header("Access-Control-Allow-Origin", "*")
+                self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
+                self.end_headers()
+                if not is_head:
+                    self.wfile.write(content.encode("utf-8") if content else b"")
+                return
                     
             elif path.startswith("disney/"):
                 seg_name = path.split("/", 1)[1]
-                seg_file = os.path.join(DISNEY_RAM_DIR, seg_name)
-                if os.path.exists(seg_file):
+                # Wait up to 10s if segment is currently being fetched
+                for _ in range(20):
+                    with disney_buffer_engine.lock:
+                        cached = disney_buffer_engine.segments.get(seg_name)
+                    if cached:
+                        break
+                    time.sleep(0.5)
+                    
+                with disney_buffer_engine.lock:
+                    cached = disney_buffer_engine.segments.get(seg_name)
+                    
+                if cached:
                     self.send_response(200)
                     self.send_header("Content-Type", "video/MP2T")
                     self.send_header("Access-Control-Allow-Origin", "*")
-                    self.send_header("Cache-Control", "max-age=30, public")
+                    self.send_header("Cache-Control", "max-age=60, public")
                     self.end_headers()
                     if not is_head:
-                        with open(seg_file, "rb") as f:
-                            self.wfile.write(f.read())
+                        self.wfile.write(cached[0])
                     return
                 else:
                     self.send_response(404)

@@ -4,11 +4,6 @@
   <channel id="EsperantoTV.eo@SD">
     <display-name>Esperanto TV</display-name>
   </channel>
-  <programme start="20260821191250 +0000" stop="20260821194330 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - S1Ĉ04: Filmproduktado en trajnoj</title>
-    <desc lang="eo">Kreado de filmetoj dum veturado per trajno. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
-    <category lang="eo">Realspektaklo / Junularo</category>
-  </programme>
   <programme start="20260821194330 +0000" stop="20260821201710 +0000" channel="EsperantoTV.eo@SD">
     <title lang="eo">Esperanto Senlime - S1Ĉ05: La venĝo de la trajnoj</title>
     <desc lang="eo">Fervojaj misaventuroj kaj horar-defioj. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
@@ -3282,6 +3277,21 @@
   <programme start="20260829192640 +0000" stop="20260829193240 +0000" channel="EsperantoTV.eo@SD">
     <title lang="eo">Dok Estas Parto 04A</title>
     <desc lang="eo">Elsendo de Dok Estas Parto 04A</desc>
+    <category lang="eo">Ĝenerala</category>
+  </programme>
+  <programme start="20260829193240 +0000" stop="20260829194030 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Dok Estas Parto 04B</title>
+    <desc lang="eo">Elsendo de Dok Estas Parto 04B</desc>
+    <category lang="eo">Ĝenerala</category>
+  </programme>
+  <programme start="20260829194030 +0000" stop="20260829194500 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Dok Estas Parto 05</title>
+    <desc lang="eo">Elsendo de Dok Estas Parto 05</desc>
+    <category lang="eo">Ĝenerala</category>
+  </programme>
+  <programme start="20260829194500 +0000" stop="20260829195450 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Dok Estas Parto 06</title>
+    <desc lang="eo">Elsendo de Dok Estas Parto 06</desc>
     <category lang="eo">Ĝenerala</category>
   </programme>
 </tv>
