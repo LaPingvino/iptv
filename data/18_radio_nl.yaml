@@ -46,6 +46,12 @@
   tvg_name: Radio 538
   logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/538.png
   url: https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO538.mp3
+- name: SLAM!
+  group: NL Rádio
+  tvg_id: SLAM.nl
+  tvg_name: SLAM!
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/SLAM%21_logo_2020.svg/512px-SLAM%21_logo_2020.svg.png
+  url: https://stream.slam.nl/slam_mp3
 - name: Qmusic NL
   group: NL Rádio
   tvg_id: QmusicRadio.nl

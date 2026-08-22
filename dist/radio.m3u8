@@ -79,6 +79,9 @@ https://icecast.omroep.nl/radio6-bb-mp3
 #EXTINF:-1 tvg-id="Radio538.nl" tvg-name="Radio 538" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/538.png" group-title="NL Rádio" radio="true",Radio 538
 https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO538.mp3
 
+#EXTINF:-1 tvg-id="SLAM.nl" tvg-name="SLAM!" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/SLAM%21_logo_2020.svg/512px-SLAM%21_logo_2020.svg.png" group-title="NL Rádio" radio="true",SLAM!
+https://stream.slam.nl/slam_mp3
+
 #EXTINF:-1 tvg-id="QmusicRadio.nl" tvg-name="Qmusic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Qmusic_logo_2019.svg/512px-Qmusic_logo_2019.svg.png" group-title="NL Rádio" radio="true",Qmusic NL
 https://stream.qmusic.nl/qmusic/mp3
 
