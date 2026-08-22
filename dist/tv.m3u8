@@ -253,29 +253,29 @@ https://kiefte.eu/iptv/youtube/@NPORadio2
 #EXTINF:-1 tvg-id="NPO3FMVisual.nl" tvg-name="NPO 3FM Visual" group-title="Música & Video",NPO 3FM (Visual & Serious Request)
 https://kiefte.eu/iptv/youtube/@npo3fm
 
-#EXTINF:-1 tvg-id="DisneyJunior.la@HD" tvg-name="Disney Junior" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/disneyjunior.png" group-title="Infantil & Kids",Disney Junior (1080p)
-http://45.134.141.161:2200/ARG/Disney_Junior/index.m3u8
-
-#EXTINF:-1 tvg-id="DisneyChannel.la@HD" tvg-name="Disney Channel" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/disneychannel.png" group-title="Infantil & Kids",Disney Channel (1080p)
-http://45.134.141.161:2200/ARG/Disney_Channel/index.m3u8
-
 #EXTINF:-1 tvg-id="TurmaDaMonica.pt@HD" tvg-name="Turma da Monica" tvg-logo="https://upload.wikimedia.org/wikipedia/pt/thumb/a/a2/Logotipo_Turma_da_M%C3%B4nica.png/512px-Logotipo_Turma_da_M%C3%B4nica.png" group-title="Infantil & Kids",Turma da Mônica (24/7 PT)
 https://jmp2.uk/plu-5f997e44949bc70007a6941e.m3u8
 
 #EXTINF:-1 tvg-id="Oggy.pt@HD" tvg-name="Oggy e as Baratas Tontas" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/f/f6/Oggy_and_the_Cockroaches_logo.png/512px-Oggy_and_the_Cockroaches_logo.png" group-title="Infantil & Kids",Oggy e as Baratas Tontas (24/7)
 https://jmp2.uk/plu-63221bafdc6e110007b50270.m3u8
 
-#EXTINF:-1 tvg-id="TomAndJerry.tv" tvg-name="Tom and Jerry" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tom_and_Jerry_logo.svg/512px-Tom_and_Jerry_logo.svg.png" group-title="Infantil & Kids",Tom and Jerry (24/7)
+#EXTINF:-1 tvg-id="TomAndJerry.tv" tvg-name="Tom and Jerry" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tom_and_Jerry_logo.svg/512px-Tom_and_Jerry_logo.svg.png" group-title="Infantil & Kids",Tom and Jerry (24/7 Classic Cartoons)
 https://live20.bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8
 
 #EXTINF:-1 tvg-id="MrBeanAnimated.es@HD" tvg-name="Mr. Bean Animado" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Mr_Bean_Animated_logo.svg/512px-Mr_Bean_Animated_logo.svg.png" group-title="Infantil & Kids",Mr. Bean Animado (1080p)
 https://amg00627-amg00627c30-rakuten-es-3990.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanescc-rakutenes/playlist.m3u8
 
-#EXTINF:-1 tvg-id="TMNT.es@HD" tvg-name="Las Tortugas Ninja" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/TMNT_logo.svg/512px-TMNT_logo.svg.png" group-title="Infantil & Kids",Las Tortugas Ninja (TMNT 24/7)
+#EXTINF:-1 tvg-id="TMNT.es@HD" tvg-name="Tartarugas Ninja TMNT" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/TMNT_logo.svg/512px-TMNT_logo.svg.png" group-title="Infantil & Kids",Tartarugas Ninja / TMNT (24/7)
 https://jmp2.uk/plu-63dd5d7a4e83e700088fbca8.m3u8
 
 #EXTINF:-1 tvg-id="AvatarTheLastAirbender.es" tvg-name="Avatar The Last Airbender" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Avatar_The_Last_Airbender_logo.svg/512px-Avatar_The_Last_Airbender_logo.svg.png" group-title="Infantil & Kids",Avatar - The Last Airbender (24/7)
 https://jmp2.uk/plu-656df599c0fc8800089c75ab.m3u8
+
+#EXTINF:-1 tvg-id="DisneyJunior.la@HD" tvg-name="Disney Junior" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/disneyjunior.png" group-title="Infantil & Kids",Disney Junior (1080p)
+http://45.134.141.161:2200/ARG/Disney_Junior/index.m3u8
+
+#EXTINF:-1 tvg-id="DisneyChannel.la@HD" tvg-name="Disney Channel" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/disneychannel.png" group-title="Infantil & Kids",Disney Channel (1080p)
+http://45.134.141.161:2200/ARG/Disney_Channel/index.m3u8
 
 #EXTINF:-1 tvg-id="ToonGogglesJr.us@HD" tvg-name="Toon Goggles Junior" group-title="Infantil & Kids",Toon Goggles Junior (720p HD)
 https://d3i6upqaqzosi1.cloudfront.net/tg/jr_us/tg_jr_us.m3u8
@@ -289,11 +289,11 @@ https://jmp2.uk/plu-6683b680efa2a10008e8a393.m3u8
 #EXTINF:-1 tvg-id="Crunchyroll.es@HD" tvg-name="Crunchyroll TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Crunchyroll_Logo.png/512px-Crunchyroll_Logo.png" group-title="Animação & Anime",Crunchyroll TV (Anime 24/7 HD)
 https://jmp2.uk/plu-65652f7fc0fc88000883537a.m3u8
 
-#EXTINF:-1 tvg-id="Naruto.es@HD" tvg-name="Naruto" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Naruto_logo.svg/512px-Naruto_logo.svg.png" group-title="Animação & Anime",Naruto (24/7 Anime HD)
-https://jmp2.uk/plu-65d5fc39a25d5e00082895c4.m3u8
-
 #EXTINF:-1 tvg-id="DetectiveConan.es" tvg-name="Detective Conan" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Detective_Conan_Logo.svg/512px-Detective_Conan_Logo.svg.png" group-title="Animação & Anime",Detective Conan (24/7 Anime)
 https://jmp2.uk/plu-629a066860ef810008267b70.m3u8
+
+#EXTINF:-1 tvg-id="Naruto.es@HD" tvg-name="Naruto" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Naruto_logo.svg/512px-Naruto_logo.svg.png" group-title="Animação & Anime",Naruto (24/7 Anime HD)
+https://jmp2.uk/plu-65d5fc39a25d5e00082895c4.m3u8
 
 #EXTINF:-1 tvg-id="MAXAnime.es@HD" tvg-name="MAX Anime" tvg-logo="https://cdnlive.klicgo.net/maxanime/maxanime.png" group-title="Animação & Anime",MAX Anime (1080p Full HD)
 https://cdnlive.klicgo.net/maxanime/live/playlist.m3u8

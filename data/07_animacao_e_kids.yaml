@@ -1,22 +1,9 @@
 # ==============================================================================
 # Infantil, Kids & Animação (Free-to-Air / 24/7 Streams)
+# Prioritizing Portuguese (PT), English & Universal Channels
 # ==============================================================================
 
 # --- Kids & Família (Little ones, toddlers & family cartoons) ---
-- name: Disney Junior (1080p)
-  group: Infantil & Kids
-  tvg_id: DisneyJunior.la@HD
-  tvg_name: Disney Junior
-  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/disneyjunior.png
-  url: http://45.134.141.161:2200/ARG/Disney_Junior/index.m3u8
-
-- name: Disney Channel (1080p)
-  group: Infantil & Kids
-  tvg_id: DisneyChannel.la@HD
-  tvg_name: Disney Channel
-  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/disneychannel.png
-  url: http://45.134.141.161:2200/ARG/Disney_Channel/index.m3u8
-
 - name: Turma da Mônica (24/7 PT)
   group: Infantil & Kids
   tvg_id: TurmaDaMonica.pt@HD
@@ -31,7 +18,7 @@
   logo: https://upload.wikimedia.org/wikipedia/en/thumb/f/f6/Oggy_and_the_Cockroaches_logo.png/512px-Oggy_and_the_Cockroaches_logo.png
   url: https://jmp2.uk/plu-63221bafdc6e110007b50270.m3u8
 
-- name: Tom and Jerry (24/7)
+- name: Tom and Jerry (24/7 Classic Cartoons)
   group: Infantil & Kids
   tvg_id: TomAndJerry.tv
   tvg_name: Tom and Jerry
@@ -45,10 +32,10 @@
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Mr_Bean_Animated_logo.svg/512px-Mr_Bean_Animated_logo.svg.png
   url: https://amg00627-amg00627c30-rakuten-es-3990.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanescc-rakutenes/playlist.m3u8
 
-- name: Las Tortugas Ninja (TMNT 24/7)
+- name: Tartarugas Ninja / TMNT (24/7)
   group: Infantil & Kids
   tvg_id: TMNT.es@HD
-  tvg_name: Las Tortugas Ninja
+  tvg_name: Tartarugas Ninja TMNT
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/TMNT_logo.svg/512px-TMNT_logo.svg.png
   url: https://jmp2.uk/plu-63dd5d7a4e83e700088fbca8.m3u8
 
@@ -58,6 +45,20 @@
   tvg_name: Avatar The Last Airbender
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Avatar_The_Last_Airbender_logo.svg/512px-Avatar_The_Last_Airbender_logo.svg.png
   url: https://jmp2.uk/plu-656df599c0fc8800089c75ab.m3u8
+
+- name: Disney Junior (1080p)
+  group: Infantil & Kids
+  tvg_id: DisneyJunior.la@HD
+  tvg_name: Disney Junior
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/disneyjunior.png
+  url: http://45.134.141.161:2200/ARG/Disney_Junior/index.m3u8
+
+- name: Disney Channel (1080p)
+  group: Infantil & Kids
+  tvg_id: DisneyChannel.la@HD
+  tvg_name: Disney Channel
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/disneychannel.png
+  url: http://45.134.141.161:2200/ARG/Disney_Channel/index.m3u8
 
 - name: Toon Goggles Junior (720p HD)
   group: Infantil & Kids
@@ -88,19 +89,19 @@
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Crunchyroll_Logo.png/512px-Crunchyroll_Logo.png
   url: https://jmp2.uk/plu-65652f7fc0fc88000883537a.m3u8
 
-- name: Naruto (24/7 Anime HD)
-  group: Animação & Anime
-  tvg_id: Naruto.es@HD
-  tvg_name: Naruto
-  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Naruto_logo.svg/512px-Naruto_logo.svg.png
-  url: https://jmp2.uk/plu-65d5fc39a25d5e00082895c4.m3u8
-
 - name: Detective Conan (24/7 Anime)
   group: Animação & Anime
   tvg_id: DetectiveConan.es
   tvg_name: Detective Conan
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Detective_Conan_Logo.svg/512px-Detective_Conan_Logo.svg.png
   url: https://jmp2.uk/plu-629a066860ef810008267b70.m3u8
+
+- name: Naruto (24/7 Anime HD)
+  group: Animação & Anime
+  tvg_id: Naruto.es@HD
+  tvg_name: Naruto
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Naruto_logo.svg/512px-Naruto_logo.svg.png
+  url: https://jmp2.uk/plu-65d5fc39a25d5e00082895c4.m3u8
 
 - name: MAX Anime (1080p Full HD)
   group: Animação & Anime
