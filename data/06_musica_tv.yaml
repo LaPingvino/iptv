@@ -147,3 +147,10 @@
   tvg_id: Insomniac.tv@HD
   tvg_name: Insomniac Events
   url: https://kiefte.eu/iptv/twitch/insomniac
+
+- name: Radio Kiss Kiss TV (Visual Radio 1080p)
+  group: Música & Video
+  tvg_id: KissKissTV.it@HD
+  tvg_name: Radio Kiss Kiss TV
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Radio_Kiss_Kiss_logo.svg/512px-Radio_Kiss_Kiss_logo.svg.png
+  url: https://58f12ffd2447a.streamlock.net/KKMulti/livestream/playlist.m3u8

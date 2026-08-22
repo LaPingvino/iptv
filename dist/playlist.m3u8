@@ -250,6 +250,9 @@ https://kiefte.eu/iptv/twitch/monstercat
 #EXTINF:-1 tvg-id="Insomniac.tv@HD" tvg-name="Insomniac Events" group-title="Música & Video",Insomniac (24/7 EDM Festival TV)
 https://kiefte.eu/iptv/twitch/insomniac
 
+#EXTINF:-1 tvg-id="KissKissTV.it@HD" tvg-name="Radio Kiss Kiss TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Radio_Kiss_Kiss_logo.svg/512px-Radio_Kiss_Kiss_logo.svg.png" group-title="Música & Video",Radio Kiss Kiss TV (Visual Radio 1080p)
+https://58f12ffd2447a.streamlock.net/KKMulti/livestream/playlist.m3u8
+
 #EXTINF:-1 tvg-id="ClassicToons.us" tvg-name="Classic Toons" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tom_and_Jerry_logo.svg/512px-Tom_and_Jerry_logo.svg.png" group-title="Infantil & Kids",Classic Toons 24/7 (Tom & Jerry / Looney Tunes)
 https://live20.bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8
 
@@ -920,26 +923,26 @@ https://kiefte.eu/iptv/twitch/railcowgirl?fallback=0
 #EXTINF:-1 tvg-id="AdventureEarth.de@HD" tvg-name="Adventure Earth" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Earth_symbol_%28bold%29.svg/512px-Earth_symbol_%28bold%29.svg.png" group-title="Natureza & Slow TV",Adventure Earth (1080p Full HD)
 https://autentic-adventure-earth-1-gb.samsung.wurl.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="DoctorWhoClassic.uk@HD" tvg-name="Doctor Who Classic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Doctor_Who_logo_2018.svg/512px-Doctor_Who_logo_2018.svg.png" group-title="Sci-Fi, Cult & Retro",Doctor Who Classic (24/7 1080p HD)
+#EXTINF:-1 tvg-id="DoctorWhoClassic.uk@HD" tvg-name="Doctor Who Classic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Doctor_Who_logo_2018.svg/512px-Doctor_Who_logo_2018.svg.png" group-title="Sci-Fi & Cult Retro",Doctor Who Classic (24/7 1080p HD)
 https://bbc-classicdrwho-1-us.roku.wurl.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="MST3K.us@HD" tvg-name="Mystery Science Theater 3000" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Mystery_Science_Theater_3000_logo.svg/512px-Mystery_Science_Theater_3000_logo.svg.png" group-title="Sci-Fi, Cult & Retro",Mystery Science Theater 3000 (MST3K 1080p)
+#EXTINF:-1 tvg-id="MST3K.us@HD" tvg-name="Mystery Science Theater 3000" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Mystery_Science_Theater_3000_logo.svg/512px-Mystery_Science_Theater_3000_logo.svg.png" group-title="Sci-Fi & Cult Retro",Mystery Science Theater 3000 (MST3K 1080p)
 https://mst3k-roku.amagi.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="WorldOfLongplays.tv@HD" tvg-name="World of Longplays" tvg-logo="https://static-cdn.jtvnw.net/jtv_user_pictures/worldoflongplays-profile_image-144709d73d6e9dc7-300x300.png" group-title="Sci-Fi, Cult & Retro",World of Longplays (Retro Gaming 1080p60)
+#EXTINF:-1 tvg-id="WorldOfLongplays.tv@HD" tvg-name="World of Longplays" tvg-logo="https://static-cdn.jtvnw.net/jtv_user_pictures/worldoflongplays-profile_image-144709d73d6e9dc7-300x300.png" group-title="Sci-Fi & Cult Retro",World of Longplays (Retro Gaming 1080p60)
 https://kiefte.eu/iptv/twitch/worldoflongplays
 
-#EXTINF:-1 tvg-id="FailArmy.us@HD" tvg-name="FailArmy" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/FailArmy_logo.png/512px-FailArmy_logo.png" group-title="Sci-Fi, Cult & Retro",FailArmy (24/7 Comedy HD)
+#EXTINF:-1 tvg-id="FailArmy.us@HD" tvg-name="FailArmy" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/FailArmy_logo.png/512px-FailArmy_logo.png" group-title="Sci-Fi & Cult Retro",FailArmy (24/7 Comedy HD)
 https://failarmy-international-nl.samsung.wurl.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="JustForLaughsGags.ca@HD" tvg-name="Just for Laughs Gags" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/Just_for_Laughs_Gags_logo.svg/512px-Just_for_Laughs_Gags_logo.svg.png" group-title="Sci-Fi, Cult & Retro",Just for Laughs Gags (Slapstick Comedy HD)
+#EXTINF:-1 tvg-id="JustForLaughsGags.ca@HD" tvg-name="Just for Laughs Gags" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/Just_for_Laughs_Gags_logo.svg/512px-Just_for_Laughs_Gags_logo.svg.png" group-title="Sci-Fi & Cult Retro",Just for Laughs Gags (Slapstick Comedy HD)
 https://distributionsjustepourrire-justforlaughsgags-1-nl.samsung.wurl.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="FilmRiseClassicTV.us@HD" tvg-name="FilmRise Classic TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/FilmRise_logo.png/512px-FilmRise_logo.png" group-title="Sci-Fi, Cult & Retro",FilmRise Classic TV (Cult Classics)
+#EXTINF:-1 tvg-id="FilmRiseClassicTV.us@HD" tvg-name="FilmRise Classic TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/FilmRise_logo.png/512px-FilmRise_logo.png" group-title="Sci-Fi & Cult Retro",FilmRise Classic TV (Cult Classics)
 https://d2tv4k5moji5m7.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-lu4pzh9l4b57p/master.m3u8
 
-#EXTINF:-1 tvg-id="FilmRiseAnime.us@HD" tvg-name="FilmRise Anime" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/FilmRise_logo.png/512px-FilmRise_logo.png" group-title="Sci-Fi, Cult & Retro",FilmRise Anime (24/7 Classic Anime HD)
+#EXTINF:-1 tvg-id="FilmRiseAnime.us@HD" tvg-name="FilmRise Anime" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/FilmRise_logo.png/512px-FilmRise_logo.png" group-title="Sci-Fi & Cult Retro",FilmRise Anime (24/7 Classic Anime HD)
 https://dvu7aia8rjlfm.cloudfront.net/master.m3u8
 
-#EXTINF:-1 tvg-id="AutenticHistory.de@HD" tvg-name="Autentic History" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/History_Logo_2021.svg/512px-History_Logo_2021.svg.png" group-title="Sci-Fi, Cult & Retro",Autentic History (1080p Full HD)
+#EXTINF:-1 tvg-id="AutenticHistory.de@HD" tvg-name="Autentic History" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/History_Logo_2021.svg/512px-History_Logo_2021.svg.png" group-title="Sci-Fi & Cult Retro",Autentic History (1080p Full HD)
 https://autentic-autentichistory-1-gb.samsung.wurl.tv/playlist.m3u8

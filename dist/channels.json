@@ -587,6 +587,14 @@
     "url": "https://kiefte.eu/iptv/twitch/insomniac"
   },
   {
+    "name": "Radio Kiss Kiss TV (Visual Radio 1080p)",
+    "group": "Música & Video",
+    "tvg_id": "KissKissTV.it@HD",
+    "tvg_name": "Radio Kiss Kiss TV",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Radio_Kiss_Kiss_logo.svg/512px-Radio_Kiss_Kiss_logo.svg.png",
+    "url": "https://58f12ffd2447a.streamlock.net/KKMulti/livestream/playlist.m3u8"
+  },
+  {
     "name": "Classic Toons 24/7 (Tom & Jerry / Looney Tunes)",
     "group": "Infantil & Kids",
     "tvg_id": "ClassicToons.us",
@@ -2262,7 +2270,7 @@
   },
   {
     "name": "Doctor Who Classic (24/7 1080p HD)",
-    "group": "Sci-Fi, Cult & Retro",
+    "group": "Sci-Fi & Cult Retro",
     "tvg_id": "DoctorWhoClassic.uk@HD",
     "tvg_name": "Doctor Who Classic",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Doctor_Who_logo_2018.svg/512px-Doctor_Who_logo_2018.svg.png",
@@ -2270,7 +2278,7 @@
   },
   {
     "name": "Mystery Science Theater 3000 (MST3K 1080p)",
-    "group": "Sci-Fi, Cult & Retro",
+    "group": "Sci-Fi & Cult Retro",
     "tvg_id": "MST3K.us@HD",
     "tvg_name": "Mystery Science Theater 3000",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Mystery_Science_Theater_3000_logo.svg/512px-Mystery_Science_Theater_3000_logo.svg.png",
@@ -2278,7 +2286,7 @@
   },
   {
     "name": "World of Longplays (Retro Gaming 1080p60)",
-    "group": "Sci-Fi, Cult & Retro",
+    "group": "Sci-Fi & Cult Retro",
     "tvg_id": "WorldOfLongplays.tv@HD",
     "tvg_name": "World of Longplays",
     "logo": "https://static-cdn.jtvnw.net/jtv_user_pictures/worldoflongplays-profile_image-144709d73d6e9dc7-300x300.png",
@@ -2286,7 +2294,7 @@
   },
   {
     "name": "FailArmy (24/7 Comedy HD)",
-    "group": "Sci-Fi, Cult & Retro",
+    "group": "Sci-Fi & Cult Retro",
     "tvg_id": "FailArmy.us@HD",
     "tvg_name": "FailArmy",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/FailArmy_logo.png/512px-FailArmy_logo.png",
@@ -2294,7 +2302,7 @@
   },
   {
     "name": "Just for Laughs Gags (Slapstick Comedy HD)",
-    "group": "Sci-Fi, Cult & Retro",
+    "group": "Sci-Fi & Cult Retro",
     "tvg_id": "JustForLaughsGags.ca@HD",
     "tvg_name": "Just for Laughs Gags",
     "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/Just_for_Laughs_Gags_logo.svg/512px-Just_for_Laughs_Gags_logo.svg.png",
@@ -2302,7 +2310,7 @@
   },
   {
     "name": "FilmRise Classic TV (Cult Classics)",
-    "group": "Sci-Fi, Cult & Retro",
+    "group": "Sci-Fi & Cult Retro",
     "tvg_id": "FilmRiseClassicTV.us@HD",
     "tvg_name": "FilmRise Classic TV",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/FilmRise_logo.png/512px-FilmRise_logo.png",
@@ -2310,7 +2318,7 @@
   },
   {
     "name": "FilmRise Anime (24/7 Classic Anime HD)",
-    "group": "Sci-Fi, Cult & Retro",
+    "group": "Sci-Fi & Cult Retro",
     "tvg_id": "FilmRiseAnime.us@HD",
     "tvg_name": "FilmRise Anime",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/FilmRise_logo.png/512px-FilmRise_logo.png",
@@ -2318,7 +2326,7 @@
   },
   {
     "name": "Autentic History (1080p Full HD)",
-    "group": "Sci-Fi, Cult & Retro",
+    "group": "Sci-Fi & Cult Retro",
     "tvg_id": "AutenticHistory.de@HD",
     "tvg_name": "Autentic History",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/History_Logo_2021.svg/512px-History_Logo_2021.svg.png",

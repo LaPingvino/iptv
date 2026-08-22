@@ -4,11 +4,6 @@
   <channel id="EsperantoTV.eo@SD">
     <display-name>Esperanto TV</display-name>
   </channel>
-  <programme start="20260821211900 +0000" stop="20260821215930 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - S1Ĉ08: Pluvo kaj suno</title>
-    <desc lang="eo">Veteraj defioj dum la subĉiela vojaĝo. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
-    <category lang="eo">Realspektaklo / Junularo</category>
-  </programme>
   <programme start="20260821215930 +0000" stop="20260821223100 +0000" channel="EsperantoTV.eo@SD">
     <title lang="eo">Esperanto Senlime - S1Ĉ09: Vojaĝi sen biletoj</title>
     <desc lang="eo">Strategiaj vojaĝdefioj kaj amuzaj taskoj. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
