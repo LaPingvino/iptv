@@ -257,7 +257,7 @@ https://kiefte.eu/iptv/youtube/@NPORadio2
 https://kiefte.eu/iptv/youtube/@npo3fm
 
 #EXTINF:-1 tvg-id="DisneyChannel.pt" tvg-name="Disney Channel PT" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Disney-Channel.png" group-title="Infantil & Kids",Disney Channel Portugal (PT)
-http://151.80.18.177:86/Disney_Channel_HD/index.m3u8
+https://kiefte.eu/iptv/boost/disney
 
 #EXTINF:-1 tvg-id="DisneyJunior.us@HD" tvg-name="Disney Junior" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Disney-Junior.png" group-title="Infantil & Kids",Disney Junior (English 720p60 HD)
 http://23.237.104.106:8080/USA_DISNEY_JUNIOR/tracks-v1a1/mono.m3u8

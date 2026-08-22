@@ -646,7 +646,53 @@ class BridgeHandler(BaseHTTPRequestHandler):
                     if not is_head:
                         self.wfile.write(b"404 Not Found: Segment not found\n")
                     return
-            
+
+        # Boosted Audio Route (e.g. Disney Channel Portugal with +8dB audio boost)
+        if path.startswith("boost/disney") or path in ["boost/disney", "boost/disney.m3u8", "boost/disney.ts"]:
+            if path in ["boost/disney", "boost/disney.m3u8", "boost/disney/playlist.m3u8"]:
+                m3u8_content = "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:3600\n#EXTINF:3600.0,\nhttps://kiefte.eu/iptv/boost/disney.ts\n"
+                self.send_response(200)
+                self.send_header("Content-Type", "application/vnd.apple.mpegurl")
+                self.send_header("Access-Control-Allow-Origin", "*")
+                self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
+                self.end_headers()
+                if not is_head:
+                    self.wfile.write(m3u8_content.encode("utf-8"))
+                return
+            elif path.endswith(".ts") or path == "boost/disney/stream":
+                cmd = [
+                    "ffmpeg", "-nostdin",
+                    "-reconnect", "1", "-reconnect_streamed", "1", "-reconnect_delay_max", "2",
+                    "-i", "http://151.80.18.177:86/Disney_Channel_HD/index.m3u8",
+                    "-c:v", "copy",
+                    "-c:a", "aac", "-b:a", "192k", "-af", "volume=2.5,alimiter=limit=0.95",
+                    "-f", "mpegts",
+                    "pipe:1"
+                ]
+                self.send_response(200)
+                self.send_header("Content-Type", "video/MP2T")
+                self.send_header("Access-Control-Allow-Origin", "*")
+                self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
+                self.end_headers()
+                if is_head:
+                    return
+                proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL)
+                try:
+                    while True:
+                        chunk = proc.stdout.read(65536)
+                        if not chunk:
+                            break
+                        self.wfile.write(chunk)
+                except (BrokenPipeError, ConnectionResetError):
+                    pass
+                finally:
+                    proc.terminate()
+                    try:
+                        proc.wait(timeout=1)
+                    except Exception:
+                        proc.kill()
+                return
+
         # Serve Real-Time Twitch Live EPG with actual streamer & failover metadata
         if path in ["twitch/epg", "twitch/epg.xml", "epg/twitch.xml"]:
             xml_content = generate_live_twitch_epg_xml()
