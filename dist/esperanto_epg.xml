@@ -4,11 +4,6 @@
   <channel id="EsperantoTV.eo@SD">
     <display-name>Esperanto TV</display-name>
   </channel>
-  <programme start="20260821153150 +0000" stop="20260821155950 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 12: La restoracio</title>
-    <desc lang="eo">Mendo de manĝaĵoj kaj lingvaj defioj. Komedia instrua serio por lernantoj de Esperanto.</desc>
-    <category lang="eo">Serio / Edukado</category>
-  </programme>
   <programme start="20260821155950 +0000" stop="20260821161340 +0000" channel="EsperantoTV.eo@SD">
     <title lang="eo">Pasporto al la Tuta Mondo - Ep. 13: Sur la strando</title>
     <desc lang="eo">Someraj ferioj kaj amuzaj agadoj ĉe la maro. Komedia instrua serio por lernantoj de Esperanto.</desc>

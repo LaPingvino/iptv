@@ -265,20 +265,17 @@ http://151.80.18.177:86/Disney_Channel_HD/index.m3u8
 #EXTINF:-1 tvg-id="DisneyXD.us@HD" tvg-name="Disney XD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Disney_XD_logo_2015.svg/512px-Disney_XD_logo_2015.svg.png" group-title="Infantil & Kids",Disney XD (US 720p HD)
 http://23.237.104.106:8080/USA_DISNEY_XD/index.m3u8
 
-#EXTINF:-1 tvg-id="TurmaDaMonica.pt@HD" tvg-name="Turma da Monica" tvg-logo="https://upload.wikimedia.org/wikipedia/pt/thumb/a/a2/Logotipo_Turma_da_M%C3%B4nica.png/512px-Logotipo_Turma_da_M%C3%B4nica.png" group-title="Infantil & Kids",Turma da Mônica (24/7 PT)
-https://jmp2.uk/plu-5f997e44949bc70007a6941e.m3u8
-
 #EXTINF:-1 tvg-id="Oggy.pt@HD" tvg-name="Oggy e as Baratas Tontas" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/f/f6/Oggy_and_the_Cockroaches_logo.png/512px-Oggy_and_the_Cockroaches_logo.png" group-title="Infantil & Kids",Oggy e as Baratas Tontas (24/7)
 https://jmp2.uk/plu-63221bafdc6e110007b50270.m3u8
 
 #EXTINF:-1 tvg-id="TomAndJerry.tv" tvg-name="Tom and Jerry" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tom_and_Jerry_logo.svg/512px-Tom_and_Jerry_logo.svg.png" group-title="Infantil & Kids",Tom and Jerry (24/7 Classic Cartoons)
 https://live20.bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8
 
+#EXTINF:-1 tvg-id="LooneyTunes.us" tvg-name="Looney Tunes" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_1992_logo.svg/512px-Cartoon_Network_1992_logo.svg.png" group-title="Infantil & Kids",Looney Tunes & Bugs Bunny (24/7)
+https://live20.bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8
+
 #EXTINF:-1 tvg-id="MrBeanAnimated.es@HD" tvg-name="Mr. Bean Animado" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Mr_Bean_Animated_logo.svg/512px-Mr_Bean_Animated_logo.svg.png" group-title="Infantil & Kids",Mr. Bean Animado (1080p)
 https://amg00627-amg00627c30-rakuten-es-3990.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanescc-rakutenes/playlist.m3u8
-
-#EXTINF:-1 tvg-id="TMNT.es@HD" tvg-name="Tartarugas Ninja TMNT" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/TMNT_logo.svg/512px-TMNT_logo.svg.png" group-title="Infantil & Kids",Tartarugas Ninja / TMNT (24/7)
-https://jmp2.uk/plu-63dd5d7a4e83e700088fbca8.m3u8
 
 #EXTINF:-1 tvg-id="AvatarTheLastAirbender.es" tvg-name="Avatar The Last Airbender" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Avatar_The_Last_Airbender_logo.svg/512px-Avatar_The_Last_Airbender_logo.svg.png" group-title="Infantil & Kids",Avatar - The Last Airbender (24/7)
 https://jmp2.uk/plu-656df599c0fc8800089c75ab.m3u8

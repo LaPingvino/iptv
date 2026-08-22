@@ -25,13 +25,6 @@
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Disney_XD_logo_2015.svg/512px-Disney_XD_logo_2015.svg.png
   url: http://23.237.104.106:8080/USA_DISNEY_XD/index.m3u8
 
-- name: Turma da Mônica (24/7 PT)
-  group: Infantil & Kids
-  tvg_id: TurmaDaMonica.pt@HD
-  tvg_name: Turma da Monica
-  logo: https://upload.wikimedia.org/wikipedia/pt/thumb/a/a2/Logotipo_Turma_da_M%C3%B4nica.png/512px-Logotipo_Turma_da_M%C3%B4nica.png
-  url: https://jmp2.uk/plu-5f997e44949bc70007a6941e.m3u8
-
 - name: Oggy e as Baratas Tontas (24/7)
   group: Infantil & Kids
   tvg_id: Oggy.pt@HD
@@ -46,19 +39,19 @@
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tom_and_Jerry_logo.svg/512px-Tom_and_Jerry_logo.svg.png
   url: https://live20.bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8
 
+- name: Looney Tunes & Bugs Bunny (24/7)
+  group: Infantil & Kids
+  tvg_id: LooneyTunes.us
+  tvg_name: Looney Tunes
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_1992_logo.svg/512px-Cartoon_Network_1992_logo.svg.png
+  url: https://live20.bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8
+
 - name: Mr. Bean Animado (1080p)
   group: Infantil & Kids
   tvg_id: MrBeanAnimated.es@HD
   tvg_name: Mr. Bean Animado
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Mr_Bean_Animated_logo.svg/512px-Mr_Bean_Animated_logo.svg.png
   url: https://amg00627-amg00627c30-rakuten-es-3990.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanescc-rakutenes/playlist.m3u8
-
-- name: Tartarugas Ninja / TMNT (24/7)
-  group: Infantil & Kids
-  tvg_id: TMNT.es@HD
-  tvg_name: Tartarugas Ninja TMNT
-  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/TMNT_logo.svg/512px-TMNT_logo.svg.png
-  url: https://jmp2.uk/plu-63dd5d7a4e83e700088fbca8.m3u8
 
 - name: Avatar - The Last Airbender (24/7)
   group: Infantil & Kids
