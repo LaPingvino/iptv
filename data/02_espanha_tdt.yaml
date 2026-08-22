@@ -29,13 +29,13 @@
   tvg_id: ETB.1.es
   tvg_name: ETB 1
   logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/etb1.png
-  url: https://cdn1.etbon.eus/etb1/index.m3u8
+  url: https://cdn1.etbon.eus/etb1on/index.m3u8
 - name: ETB 2 (Euskadi / Castellano)
   group: ES Geral & TDT
   tvg_id: ETB.2.es
   tvg_name: ETB 2
   logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/etb2.png
-  url: https://cdn1.etbon.eus/etb2/index.m3u8
+  url: https://cdn1.etbon.eus/etb2on/index.m3u8
 - name: Cadena SER España
   group: ES Rádio
   tvg_id: CadenaSER.es

@@ -80,10 +80,10 @@ https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
 https://d2ymuyhevki1a1.cloudfront.net/wct-ddd2992e-86fc-4611-a491-7f392259e9ba/continuous/9be76611-d2cd-474d-bf19-ef702ba31b02/index.m3u8
 
 #EXTINF:-1 tvg-id="ETB.1.es" tvg-name="ETB 1" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/etb1.png" group-title="ES Geral & TDT",ETB 1 (Euskadi / Euskara)
-https://cdn1.etbon.eus/etb1/index.m3u8
+https://cdn1.etbon.eus/etb1on/index.m3u8
 
 #EXTINF:-1 tvg-id="ETB.2.es" tvg-name="ETB 2" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/etb2.png" group-title="ES Geral & TDT",ETB 2 (Euskadi / Castellano)
-https://cdn1.etbon.eus/etb2/index.m3u8
+https://cdn1.etbon.eus/etb2on/index.m3u8
 
 #EXTINF:-1 tvg-id="TVG.Europa.es" tvg-name="Galicia TV Europa" group-title="Galiza",Galicia TV Europa (TVG)
 https://crtvg-europa.flumotion.cloud/playlist.m3u8

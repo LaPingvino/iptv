@@ -4,36 +4,6 @@
   <channel id="EsperantoTV.eo@SD">
     <display-name>Esperanto TV</display-name>
   </channel>
-  <programme start="20260821130754 +0000" stop="20260821132700 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - S1Ĉ06: Rilaksado inter bestoj</title>
-    <desc lang="eo">Vizito al bestoj kaj trankvilaj momentoj. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
-    <category lang="eo">Realspektaklo / Junularo</category>
-  </programme>
-  <programme start="20260821132700 +0000" stop="20260821134500 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - S1Ĉ07: ASMR kun arboj</title>
-    <desc lang="eo">Nekutima kaj amuza natura ASMR-defio. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
-    <category lang="eo">Realspektaklo / Junularo</category>
-  </programme>
-  <programme start="20260821134500 +0000" stop="20260821140918 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - S1Ĉ08: Pluvo kaj suno</title>
-    <desc lang="eo">Veteraj defioj dum la subĉiela vojaĝo. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
-    <category lang="eo">Realspektaklo / Junularo</category>
-  </programme>
-  <programme start="20260821140918 +0000" stop="20260821142812 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - S1Ĉ09: Vojaĝi sen biletoj</title>
-    <desc lang="eo">Strategiaj vojaĝdefioj kaj amuzaj taskoj. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
-    <category lang="eo">Realspektaklo / Junularo</category>
-  </programme>
-  <programme start="20260821142812 +0000" stop="20260821144430 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - S1Ĉ10: Mangirdito scias kion vi faris</title>
-    <desc lang="eo">Misteraj ludoj kaj teamaj taktikoj. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
-    <category lang="eo">Realspektaklo / Junularo</category>
-  </programme>
-  <programme start="20260821144430 +0000" stop="20260821150512 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - S1Ĉ11: Supren, suben kaj akven</title>
-    <desc lang="eo">Akvo-defioj kaj sportaj agadoj. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
-    <category lang="eo">Realspektaklo / Junularo</category>
-  </programme>
   <programme start="20260821150512 +0000" stop="20260821153100 +0000" channel="EsperantoTV.eo@SD">
     <title lang="eo">Esperanto Senlime - S1Ĉ12: Plaĝa tago</title>
     <desc lang="eo">Amuzaj ludoj kaj defioj ĉe la marbordo. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
@@ -5587,6 +5557,46 @@
   <programme start="20260829125430 +0000" stop="20260829131054 +0000" channel="EsperantoTV.eo@SD">
     <title lang="eo">Pasporto al la Tuta Mondo - Ep. 2: Kiu estas tiu?</title>
     <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260829131054 +0000" stop="20260829132706 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260829132706 +0000" stop="20260829134406 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 4: Surprizo en la kuirejo</title>
+    <desc lang="eo">Kuirartaj aventuroj kaj nekutimaj petoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260829134406 +0000" stop="20260829140130 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 5: La granda festo</title>
+    <desc lang="eo">Preparado por granda familia festo kun amikoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260829140130 +0000" stop="20260829141854 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 6: Nekonata vizitanto</title>
+    <desc lang="eo">Mistera vizitanto aperas ĉe la pordo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260829141854 +0000" stop="20260829143554 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 7: La sekreto malkaŝita</title>
+    <desc lang="eo">Gravaj sekretoj kaj komediaj klarigoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260829143554 +0000" stop="20260829145312 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 8: Vojaĝaj planoj</title>
+    <desc lang="eo">La familio kaj gastoj planas novajn vojaĝojn tra la mondo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260829145312 +0000" stop="20260829151024 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 9: Trajnoj kaj biletoj</title>
+    <desc lang="eo">Aventuroj ĉe la stacidomo. Komedia instrua serio por lernantoj de Esperanto.</desc>
+    <category lang="eo">Serio / Edukado</category>
+  </programme>
+  <programme start="20260829151024 +0000" stop="20260829152718 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 10: Aventuro en la urbo</title>
+    <desc lang="eo">Esplorado de nova urbo kaj renkontoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
     <category lang="eo">Serio / Edukado</category>
   </programme>
 </tv>
