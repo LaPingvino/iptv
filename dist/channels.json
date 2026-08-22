@@ -650,6 +650,37 @@
     "url": "http://5.188.159.128:8070/Cartoon_Network/index.m3u8"
   },
   {
+    "name": "Turma da Mônica (24/7 PT)",
+    "group": "Infantil & Kids",
+    "tvg_id": "TurmaDaMonica.pt@HD",
+    "tvg_name": "Turma da Monica",
+    "logo": "https://upload.wikimedia.org/wikipedia/pt/thumb/a/a2/Logotipo_Turma_da_M%C3%B4nica.png/512px-Logotipo_Turma_da_M%C3%B4nica.png",
+    "url": "https://jmp2.uk/plu-5f997e44949bc70007a6941e.m3u8"
+  },
+  {
+    "name": "Oggy e as Baratas Tontas (24/7)",
+    "group": "Infantil & Kids",
+    "tvg_id": "Oggy.pt@HD",
+    "tvg_name": "Oggy e as Baratas Tontas",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f6/Oggy_and_the_Cockroaches_logo.png/512px-Oggy_and_the_Cockroaches_logo.png",
+    "url": "https://jmp2.uk/plu-63221bafdc6e110007b50270.m3u8"
+  },
+  {
+    "name": "Tom and Jerry (24/7)",
+    "group": "Infantil & Kids",
+    "tvg_id": "TomAndJerry.tv",
+    "tvg_name": "Tom and Jerry",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tom_and_Jerry_logo.svg/512px-Tom_and_Jerry_logo.svg.png",
+    "url": "https://live20.bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8"
+  },
+  {
+    "name": "Toon Goggles Junior (720p HD)",
+    "group": "Infantil & Kids",
+    "tvg_id": "ToonGogglesJr.us@HD",
+    "tvg_name": "Toon Goggles Junior",
+    "url": "https://d3i6upqaqzosi1.cloudfront.net/tg/jr_us/tg_jr_us.m3u8"
+  },
+  {
     "name": "South Park (24/7 Comedy Central)",
     "group": "Animação & Anime",
     "tvg_id": "SouthPark.es@HD",

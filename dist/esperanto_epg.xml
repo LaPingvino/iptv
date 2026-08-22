@@ -4,11 +4,6 @@
   <channel id="EsperantoTV.eo@SD">
     <display-name>Esperanto TV</display-name>
   </channel>
-  <programme start="20260821150250 +0000" stop="20260821153150 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 11: La hotelo</title>
-    <desc lang="eo">Restado en hotelo kun neatenditaj surprizoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
-    <category lang="eo">Serio / Edukado</category>
-  </programme>
   <programme start="20260821153150 +0000" stop="20260821155950 +0000" channel="EsperantoTV.eo@SD">
     <title lang="eo">Pasporto al la Tuta Mondo - Ep. 12: La restoracio</title>
     <desc lang="eo">Mendo de manĝaĵoj kaj lingvaj defioj. Komedia instrua serio por lernantoj de Esperanto.</desc>
@@ -3272,6 +3267,11 @@
   <programme start="20260829150830 +0000" stop="20260829154000 +0000" channel="EsperantoTV.eo@SD">
     <title lang="eo">Esperanto Senlime - S1Ĉ09: Vojaĝi sen biletoj</title>
     <desc lang="eo">Strategiaj vojaĝdefioj kaj amuzaj taskoj. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20260829154000 +0000" stop="20260829160710 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - S1Ĉ10: Mangirdito scias kion vi faris</title>
+    <desc lang="eo">Misteraj ludoj kaj teamaj taktikoj. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
 </tv>

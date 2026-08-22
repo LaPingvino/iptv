@@ -274,6 +274,18 @@ https://jmp2.uk/plu-656df599c0fc8800089c75ab.m3u8
 #EXTINF:-1 tvg-id="CartoonClassics.us" tvg-name="Cartoon Classics" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_1992_logo.svg/512px-Cartoon_Network_1992_logo.svg.png" group-title="Infantil & Kids",Cartoon Classics (Retro Toons)
 http://5.188.159.128:8070/Cartoon_Network/index.m3u8
 
+#EXTINF:-1 tvg-id="TurmaDaMonica.pt@HD" tvg-name="Turma da Monica" tvg-logo="https://upload.wikimedia.org/wikipedia/pt/thumb/a/a2/Logotipo_Turma_da_M%C3%B4nica.png/512px-Logotipo_Turma_da_M%C3%B4nica.png" group-title="Infantil & Kids",Turma da Mônica (24/7 PT)
+https://jmp2.uk/plu-5f997e44949bc70007a6941e.m3u8
+
+#EXTINF:-1 tvg-id="Oggy.pt@HD" tvg-name="Oggy e as Baratas Tontas" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/f/f6/Oggy_and_the_Cockroaches_logo.png/512px-Oggy_and_the_Cockroaches_logo.png" group-title="Infantil & Kids",Oggy e as Baratas Tontas (24/7)
+https://jmp2.uk/plu-63221bafdc6e110007b50270.m3u8
+
+#EXTINF:-1 tvg-id="TomAndJerry.tv" tvg-name="Tom and Jerry" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tom_and_Jerry_logo.svg/512px-Tom_and_Jerry_logo.svg.png" group-title="Infantil & Kids",Tom and Jerry (24/7)
+https://live20.bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8
+
+#EXTINF:-1 tvg-id="ToonGogglesJr.us@HD" tvg-name="Toon Goggles Junior" group-title="Infantil & Kids",Toon Goggles Junior (720p HD)
+https://d3i6upqaqzosi1.cloudfront.net/tg/jr_us/tg_jr_us.m3u8
+
 #EXTINF:-1 tvg-id="SouthPark.es@HD" tvg-name="South Park" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/South_Park_logo.svg/512px-South_Park_logo.svg.png" group-title="Animação & Anime",South Park (24/7 Comedy Central)
 https://jmp2.uk/plu-60c716084d842c00085f6e64.m3u8
 
