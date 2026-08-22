@@ -45,14 +45,14 @@ if [ -d "${PROJECT_DIR}/dist" ]; then
   rsync -a "${PROJECT_DIR}/dist/" /var/lib/iptv-live-bridge/dist/
 fi
 
-echo "4. Syncing Esperanto TV media library..."
+echo "4. Syncing Esperanto TV media library (with hardlinks to save disk)..."
 if [ -d "${PKG_DIR}/esperantotv" ]; then
-  rsync -a --delete "${PKG_DIR}/esperantotv/" /var/lib/iptv-live-bridge/esperantotv/
+  rsync -a --hard-links --link-dest="${PKG_DIR}/esperantotv" "${PKG_DIR}/esperantotv/" /var/lib/iptv-live-bridge/esperantotv/
 fi
 
-echo "4. Syncing Bahá'í Studio Sessions media library..."
+echo "4. Syncing Bahá'í Studio Sessions media library (with hardlinks to save disk)..."
 if [ -d "${PKG_DIR}/bahaitv" ]; then
-  rsync -a --delete "${PKG_DIR}/bahaitv/" /var/lib/iptv-live-bridge/bahaitv/
+  rsync -a --hard-links --link-dest="${PKG_DIR}/bahaitv" "${PKG_DIR}/bahaitv/" /var/lib/iptv-live-bridge/bahaitv/
 fi
 
 echo "5. Applying strict permissions..."
