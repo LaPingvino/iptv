@@ -4,6 +4,27 @@
 # ==============================================================================
 
 # --- Kids & Família (Little ones, toddlers & family cartoons) ---
+- name: Disney Junior Portugal (PT)
+  group: Infantil & Kids
+  tvg_id: DisneyJunior.pt
+  tvg_name: Disney Junior PT
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Disney-Junior.png
+  url: http://151.80.18.177:86/Disney_Junior_HD/index.m3u8
+
+- name: Disney Channel Portugal (PT)
+  group: Infantil & Kids
+  tvg_id: DisneyChannel.pt
+  tvg_name: Disney Channel PT
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Disney-Channel.png
+  url: http://151.80.18.177:86/Disney_Channel_HD/index.m3u8
+
+- name: Disney XD (US 720p HD)
+  group: Infantil & Kids
+  tvg_id: DisneyXD.us@HD
+  tvg_name: Disney XD
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Disney_XD_logo_2015.svg/512px-Disney_XD_logo_2015.svg.png
+  url: http://23.237.104.106:8080/USA_DISNEY_XD/index.m3u8
+
 - name: Turma da Mônica (24/7 PT)
   group: Infantil & Kids
   tvg_id: TurmaDaMonica.pt@HD
@@ -45,20 +66,6 @@
   tvg_name: Avatar The Last Airbender
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Avatar_The_Last_Airbender_logo.svg/512px-Avatar_The_Last_Airbender_logo.svg.png
   url: https://jmp2.uk/plu-656df599c0fc8800089c75ab.m3u8
-
-- name: Disney Junior (1080p)
-  group: Infantil & Kids
-  tvg_id: DisneyJunior.la@HD
-  tvg_name: Disney Junior
-  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/disneyjunior.png
-  url: http://45.134.141.161:2200/ARG/Disney_Junior/index.m3u8
-
-- name: Disney Channel (1080p)
-  group: Infantil & Kids
-  tvg_id: DisneyChannel.la@HD
-  tvg_name: Disney Channel
-  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/disneychannel.png
-  url: http://45.134.141.161:2200/ARG/Disney_Channel/index.m3u8
 
 - name: Toon Goggles Junior (720p HD)
   group: Infantil & Kids

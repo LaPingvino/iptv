@@ -256,6 +256,15 @@ https://kiefte.eu/iptv/youtube/@NPORadio2
 #EXTINF:-1 tvg-id="NPO3FMVisual.nl" tvg-name="NPO 3FM Visual" group-title="Música & Video",NPO 3FM (Visual & Serious Request)
 https://kiefte.eu/iptv/youtube/@npo3fm
 
+#EXTINF:-1 tvg-id="DisneyJunior.pt" tvg-name="Disney Junior PT" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Disney-Junior.png" group-title="Infantil & Kids",Disney Junior Portugal (PT)
+http://151.80.18.177:86/Disney_Junior_HD/index.m3u8
+
+#EXTINF:-1 tvg-id="DisneyChannel.pt" tvg-name="Disney Channel PT" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Disney-Channel.png" group-title="Infantil & Kids",Disney Channel Portugal (PT)
+http://151.80.18.177:86/Disney_Channel_HD/index.m3u8
+
+#EXTINF:-1 tvg-id="DisneyXD.us@HD" tvg-name="Disney XD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Disney_XD_logo_2015.svg/512px-Disney_XD_logo_2015.svg.png" group-title="Infantil & Kids",Disney XD (US 720p HD)
+http://23.237.104.106:8080/USA_DISNEY_XD/index.m3u8
+
 #EXTINF:-1 tvg-id="TurmaDaMonica.pt@HD" tvg-name="Turma da Monica" tvg-logo="https://upload.wikimedia.org/wikipedia/pt/thumb/a/a2/Logotipo_Turma_da_M%C3%B4nica.png/512px-Logotipo_Turma_da_M%C3%B4nica.png" group-title="Infantil & Kids",Turma da Mônica (24/7 PT)
 https://jmp2.uk/plu-5f997e44949bc70007a6941e.m3u8
 
@@ -273,12 +282,6 @@ https://jmp2.uk/plu-63dd5d7a4e83e700088fbca8.m3u8
 
 #EXTINF:-1 tvg-id="AvatarTheLastAirbender.es" tvg-name="Avatar The Last Airbender" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Avatar_The_Last_Airbender_logo.svg/512px-Avatar_The_Last_Airbender_logo.svg.png" group-title="Infantil & Kids",Avatar - The Last Airbender (24/7)
 https://jmp2.uk/plu-656df599c0fc8800089c75ab.m3u8
-
-#EXTINF:-1 tvg-id="DisneyJunior.la@HD" tvg-name="Disney Junior" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/disneyjunior.png" group-title="Infantil & Kids",Disney Junior (1080p)
-http://45.134.141.161:2200/ARG/Disney_Junior/index.m3u8
-
-#EXTINF:-1 tvg-id="DisneyChannel.la@HD" tvg-name="Disney Channel" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/disneychannel.png" group-title="Infantil & Kids",Disney Channel (1080p)
-http://45.134.141.161:2200/ARG/Disney_Channel/index.m3u8
 
 #EXTINF:-1 tvg-id="ToonGogglesJr.us@HD" tvg-name="Toon Goggles Junior" group-title="Infantil & Kids",Toon Goggles Junior (720p HD)
 https://d3i6upqaqzosi1.cloudfront.net/tg/jr_us/tg_jr_us.m3u8
