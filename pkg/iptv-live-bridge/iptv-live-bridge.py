@@ -449,9 +449,9 @@ import shutil
 DISNEY_RAM_DIR = "/run/iptv-live-bridge/disney"
 
 class DisneyBufferEngine:
-    """On-demand real-time audio booster and RAM buffer engine for Disney Channel 1080p."""
+    """On-demand real-time audio booster and RAM buffer engine for Disney Channel Portugal."""
     def __init__(self):
-        self.stream_url = "http://181.78.8.199:8000/play/a0dn/index.m3u8"
+        self.stream_url = "http://151.80.18.177:86/Disney_Channel_HD/tracks-v1a1/mono.m3u8"
         self.last_client_access = 0
         self.process = None
         self.lock = threading.Lock()

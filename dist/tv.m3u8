@@ -247,7 +247,7 @@ https://kiefte.eu/iptv/twitch/monstercat
 #EXTINF:-1 tvg-id="Insomniac.tv@HD" tvg-name="Insomniac Events" group-title="Música & Video",Insomniac (24/7 EDM Festival TV)
 https://kiefte.eu/iptv/twitch/insomniac
 
-#EXTINF:-1 tvg-id="DisneyChannel.pt" tvg-name="Disney Channel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Disney-Channel.png" group-title="Infantil & Kids",Disney Channel (1080p HD)
+#EXTINF:-1 tvg-id="DisneyChannel.pt" tvg-name="Disney Channel PT" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Disney-Channel.png" group-title="Infantil & Kids",Disney Channel Portugal (PT)
 https://kiefte.eu/iptv/disney/playlist.m3u8
 
 #EXTINF:-1 tvg-id="DisneyJunior.us@HD" tvg-name="Disney Junior" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Disney-Junior.png" group-title="Infantil & Kids",Disney Junior (English 720p60 HD)

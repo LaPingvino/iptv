@@ -587,10 +587,10 @@
     "url": "https://kiefte.eu/iptv/twitch/insomniac"
   },
   {
-    "name": "Disney Channel (1080p HD)",
+    "name": "Disney Channel Portugal (PT)",
     "group": "Infantil & Kids",
     "tvg_id": "DisneyChannel.pt",
-    "tvg_name": "Disney Channel",
+    "tvg_name": "Disney Channel PT",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Disney-Channel.png",
     "url": "https://kiefte.eu/iptv/disney/playlist.m3u8"
   },

@@ -4,21 +4,6 @@
   <channel id="EsperantoTV.eo@SD">
     <display-name>Esperanto TV</display-name>
   </channel>
-  <programme start="20260821173610 +0000" stop="20260821181620 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - S1Ĉ01: La unua serio en Esperanto</title>
-    <desc lang="eo">La teamoj ekas sian grandan vojaĝon tra Eŭropo. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
-    <category lang="eo">Realspektaklo / Junularo</category>
-  </programme>
-  <programme start="20260821181620 +0000" stop="20260821184420 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - S1Ĉ02: Konstruado per dolĉaĵoj kaj spagetoj</title>
-    <desc lang="eo">Krea defio uzanta nur dolĉaĵojn kaj spagetojn. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
-    <category lang="eo">Realspektaklo / Junularo</category>
-  </programme>
-  <programme start="20260821184420 +0000" stop="20260821191250 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - S1Ĉ03: Riskante la vivon sur du radoj</title>
-    <desc lang="eo">Biciklaj defioj kaj rapidaj kuroj tra la urbo. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
-    <category lang="eo">Realspektaklo / Junularo</category>
-  </programme>
   <programme start="20260821191250 +0000" stop="20260821194330 +0000" channel="EsperantoTV.eo@SD">
     <title lang="eo">Esperanto Senlime - S1Ĉ04: Filmproduktado en trajnoj</title>
     <desc lang="eo">Kreado de filmetoj dum veturado per trajno. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
@@ -3263,5 +3248,40 @@
     <title lang="eo">Esperanto Senlime - S1Ĉ13: La voko de Ĥthuluzo</title>
     <desc lang="eo">Mistera vespera defio kun mitologia etoso. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20260829180220 +0000" stop="20260829181700 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - S1Ĉ14: Nia plej granda perdo</title>
+    <desc lang="eo">Dramaj momentoj kaj poentaj ŝanĝoj. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20260829181700 +0000" stop="20260829184550 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - S1Ĉ15: Gajni plej gravas</title>
+    <desc lang="eo">La granda antaŭ-finala konkurso. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20260829184550 +0000" stop="20260829190940 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - S1Ĉ16: Ni nur parolas Esperanton</title>
+    <desc lang="eo">La grandioza finalo de Esperanto Senlime Sezono 1! Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20260829190940 +0000" stop="20260829191140 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Dok Estas Parto 01</title>
+    <desc lang="eo">Elsendo de Dok Estas Parto 01</desc>
+    <category lang="eo">Ĝenerala</category>
+  </programme>
+  <programme start="20260829191140 +0000" stop="20260829192000 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Dok Estas Parto 02</title>
+    <desc lang="eo">Elsendo de Dok Estas Parto 02</desc>
+    <category lang="eo">Ĝenerala</category>
+  </programme>
+  <programme start="20260829192000 +0000" stop="20260829192640 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Dok Estas Parto 03</title>
+    <desc lang="eo">Elsendo de Dok Estas Parto 03</desc>
+    <category lang="eo">Ĝenerala</category>
+  </programme>
+  <programme start="20260829192640 +0000" stop="20260829193240 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Dok Estas Parto 04A</title>
+    <desc lang="eo">Elsendo de Dok Estas Parto 04A</desc>
+    <category lang="eo">Ĝenerala</category>
   </programme>
 </tv>
