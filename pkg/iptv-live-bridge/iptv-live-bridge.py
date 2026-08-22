@@ -484,8 +484,8 @@ class DisneyBufferEngine:
                 "-c:a", "aac", "-b:a", "192k", "-af", "volume=2.5,alimiter=limit=0.95",
                 "-f", "hls",
                 "-hls_time", "3",
-                "-hls_list_size", "5",
-                "-hls_flags", "delete_segments",
+                "-hls_list_size", "6",
+                "-hls_flags", "delete_segments+temp_file",
                 m3u8_target
             ]
             logger.info("Launching on-demand Disney Channel audio boost transcode...")
@@ -726,9 +726,16 @@ class BridgeHandler(BaseHTTPRequestHandler):
             m3u8_file = os.path.join(DISNEY_RAM_DIR, "live.m3u8")
             
             if path in ["disney", "disney.m3u8", "disney/playlist.m3u8"]:
-                for _ in range(6):
-                    if os.path.exists(m3u8_file) and os.path.getsize(m3u8_file) > 50:
-                        break
+                # Wait until at least 3 segments are pre-buffered (approx 8-10s of video) for uninterrupted playback
+                for _ in range(25):
+                    if os.path.exists(m3u8_file):
+                        try:
+                            with open(m3u8_file, "r") as f:
+                                raw_check = f.read()
+                            if raw_check.count(".ts") >= 3:
+                                break
+                        except Exception:
+                            pass
                     time.sleep(0.5)
                     
                 if os.path.exists(m3u8_file):

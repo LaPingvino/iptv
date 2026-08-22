@@ -4,16 +4,6 @@
   <channel id="EsperantoTV.eo@SD">
     <display-name>Esperanto TV</display-name>
   </channel>
-  <programme start="20260821164220 +0000" stop="20260821171240 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 15: La adiaŭa vespero</title>
-    <desc lang="eo">Gaja vespero antaŭ la reveno hejmen. Komedia instrua serio por lernantoj de Esperanto.</desc>
-    <category lang="eo">Serio / Edukado</category>
-  </programme>
-  <programme start="20260821171240 +0000" stop="20260821173610 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 16: Ĝis revido, amikoj!</title>
-    <desc lang="eo">La granda finalo de Pasporto al la Tuta Mondo. Komedia instrua serio por lernantoj de Esperanto.</desc>
-    <category lang="eo">Serio / Edukado</category>
-  </programme>
   <programme start="20260821173610 +0000" stop="20260821181620 +0000" channel="EsperantoTV.eo@SD">
     <title lang="eo">Esperanto Senlime - S1Ĉ01: La unua serio en Esperanto</title>
     <desc lang="eo">La teamoj ekas sian grandan vojaĝon tra Eŭropo. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
@@ -3267,6 +3257,11 @@
   <programme start="20260829164140 +0000" stop="20260829172440 +0000" channel="EsperantoTV.eo@SD">
     <title lang="eo">Esperanto Senlime - S1Ĉ12: Plaĝa tago</title>
     <desc lang="eo">Amuzaj ludoj kaj defioj ĉe la marbordo. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20260829172440 +0000" stop="20260829180220 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - S1Ĉ13: La voko de Ĥthuluzo</title>
+    <desc lang="eo">Mistera vespera defio kun mitologia etoso. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
 </tv>
