@@ -2369,5 +2369,53 @@
     "tvg_name": "Lofi Girl",
     "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Lofi_girl_logo.jpg/512px-Lofi_girl_logo.jpg",
     "url": "https://kiefte.eu/iptv/youtube/@LofiGirl"
+  },
+  {
+    "name": "Doctor Who Classic (24/7 HD)",
+    "group": "Sci-Fi, Cult & Retro",
+    "tvg_id": "DoctorWhoClassic.uk@HD",
+    "tvg_name": "Doctor Who Classic",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Doctor_Who_logo_2018.svg/512px-Doctor_Who_logo_2018.svg.png",
+    "url": "https://bbc-classicdrwho-1-us.roku.wurl.tv/playlist.m3u8"
+  },
+  {
+    "name": "Mystery Science Theater 3000 (MST3K 1080p)",
+    "group": "Sci-Fi, Cult & Retro",
+    "tvg_id": "MST3K.us@HD",
+    "tvg_name": "Mystery Science Theater 3000",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Mystery_Science_Theater_3000_logo.svg/512px-Mystery_Science_Theater_3000_logo.svg.png",
+    "url": "https://mst3k-roku.amagi.tv/playlist.m3u8"
+  },
+  {
+    "name": "Star Trek (24/7 Sci-Fi Classic)",
+    "group": "Sci-Fi, Cult & Retro",
+    "tvg_id": "StarTrek.us@HD",
+    "tvg_name": "Star Trek",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Star_Trek_Official_Logo.png/512px-Star_Trek_Official_Logo.png",
+    "url": "https://jmp2.uk/plu-69776b58036e883f39e5ab8a.m3u8"
+  },
+  {
+    "name": "The Twilight Zone (24/7 Classic)",
+    "group": "Sci-Fi, Cult & Retro",
+    "tvg_id": "TwilightZone.us@HD",
+    "tvg_name": "The Twilight Zone",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/The_Twilight_Zone_logo.svg/512px-The_Twilight_Zone_logo.svg.png",
+    "url": "https://jmp2.uk/plu-6512ec9f3a0d700008db4f0c.m3u8"
+  },
+  {
+    "name": "World of Longplays (Retro Gaming 1080p60)",
+    "group": "Sci-Fi, Cult & Retro",
+    "tvg_id": "WorldOfLongplays.tv@HD",
+    "tvg_name": "World of Longplays",
+    "logo": "https://static-cdn.jtvnw.net/jtv_user_pictures/worldoflongplays-profile_image-144709d73d6e9dc7-300x300.png",
+    "url": "https://kiefte.eu/iptv/twitch/worldoflongplays"
+  },
+  {
+    "name": "KEXP Live Studio Sessions (1080p)",
+    "group": "Música & Video",
+    "tvg_id": "KEXPStudio.tv@HD",
+    "tvg_name": "KEXP Live Sessions",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/KEXP-FM_logo.svg/512px-KEXP-FM_logo.svg.png",
+    "url": "https://kiefte.eu/iptv/youtube/@kexp"
   }
 ]
