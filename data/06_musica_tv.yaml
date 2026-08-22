@@ -140,13 +140,15 @@
   tvg_id: SLAMTV.nl
   tvg_name: SLAM! TV
   url: https://stream.slam.nl/slam-tv/index.m3u8
-- name: NPO Radio 2 (Top 2000 Visual)
+- name: Monstercat (24/7 Electronic Music HD)
   group: Música & Video
-  tvg_id: NPORadio2Visual.nl
-  tvg_name: NPO Radio 2 Visual
-  url: https://kiefte.eu/iptv/youtube/@NPORadio2
-- name: NPO 3FM (Visual & Serious Request)
+  tvg_id: Monstercat.tv@HD
+  tvg_name: Monstercat
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Monstercat_logo.svg/512px-Monstercat_logo.svg.png
+  url: https://kiefte.eu/iptv/twitch/monstercat
+
+- name: Insomniac (24/7 EDM Festival TV)
   group: Música & Video
-  tvg_id: NPO3FMVisual.nl
-  tvg_name: NPO 3FM Visual
-  url: https://kiefte.eu/iptv/youtube/@npo3fm
+  tvg_id: Insomniac.tv@HD
+  tvg_name: Insomniac Events
+  url: https://kiefte.eu/iptv/twitch/insomniac

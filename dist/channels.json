@@ -109,22 +109,6 @@
     "url": "https://stmv1.srvif.com/tvvitoriamz/tvvitoriamz/playlist.m3u8"
   },
   {
-    "name": "TV Miramar (Moçambique)",
-    "group": "MZ Geral",
-    "tvg_id": "TVMiramar.mz",
-    "tvg_name": "TV Miramar",
-    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/miramar.png",
-    "url": "https://kiefte.eu/iptv/youtube/@tvmiramar"
-  },
-  {
-    "name": "TPA (Televisão Pública de Angola)",
-    "group": "MZ Geral",
-    "tvg_id": "TPA.ao",
-    "tvg_name": "TPA Angola",
-    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tpa.png",
-    "url": "https://kiefte.eu/iptv/youtube/@TPAOnline"
-  },
-  {
     "name": "RTVE Canal 24 Horas",
     "group": "ES Geral & TDT",
     "tvg_id": "Canal.24.horas.es",
@@ -588,18 +572,19 @@
     "url": "https://stream.slam.nl/slam-tv/index.m3u8"
   },
   {
-    "name": "NPO Radio 2 (Top 2000 Visual)",
+    "name": "Monstercat (24/7 Electronic Music HD)",
     "group": "Música & Video",
-    "tvg_id": "NPORadio2Visual.nl",
-    "tvg_name": "NPO Radio 2 Visual",
-    "url": "https://kiefte.eu/iptv/youtube/@NPORadio2"
+    "tvg_id": "Monstercat.tv@HD",
+    "tvg_name": "Monstercat",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Monstercat_logo.svg/512px-Monstercat_logo.svg.png",
+    "url": "https://kiefte.eu/iptv/twitch/monstercat"
   },
   {
-    "name": "NPO 3FM (Visual & Serious Request)",
+    "name": "Insomniac (24/7 EDM Festival TV)",
     "group": "Música & Video",
-    "tvg_id": "NPO3FMVisual.nl",
-    "tvg_name": "NPO 3FM Visual",
-    "url": "https://kiefte.eu/iptv/youtube/@npo3fm"
+    "tvg_id": "Insomniac.tv@HD",
+    "tvg_name": "Insomniac Events",
+    "url": "https://kiefte.eu/iptv/twitch/insomniac"
   },
   {
     "name": "Disney Channel Portugal (PT)",
@@ -1234,62 +1219,6 @@
     "tvg_id": "Zeepkist.tv",
     "tvg_name": "Zeepkist Live",
     "url": "https://kiefte.eu/iptv/twitch/game/Zeepkist"
-  },
-  {
-    "name": "NOS Nieuws (Em Direto)",
-    "group": "Eventos ao Vivo",
-    "tvg_id": "NOSNieuws.nl@Live",
-    "tvg_name": "NOS Nieuws Live",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/NOS-Journaal.png",
-    "url": "https://kiefte.eu/iptv/youtube/@NOS"
-  },
-  {
-    "name": "NOS Jeugdjournaal (Em Direto)",
-    "group": "Eventos ao Vivo",
-    "tvg_id": "NOSJeugdjournaal.nl@Live",
-    "tvg_name": "NOS Jeugdjournaal Live",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/NOS-Jeugdjournaal.png",
-    "url": "https://kiefte.eu/iptv/youtube/@jeugdjournaal"
-  },
-  {
-    "name": "PBS NewsHour (US / Em Direto)",
-    "group": "Eventos ao Vivo",
-    "tvg_id": "PBSNewsHour.us@HD",
-    "tvg_name": "PBS NewsHour",
-    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/pbs.png",
-    "url": "https://kiefte.eu/iptv/youtube/@PBSNewsHour"
-  },
-  {
-    "name": "ABC News Australia (Em Direto)",
-    "group": "Eventos ao Vivo",
-    "tvg_id": "ABCNews.au@HD",
-    "tvg_name": "ABC News Australia",
-    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/abcnews_au.png",
-    "url": "https://kiefte.eu/iptv/youtube/@abcnews"
-  },
-  {
-    "name": "Eurovision Song Contest (Em Direto)",
-    "group": "Eventos ao Vivo",
-    "tvg_id": "Eurovision.tv",
-    "tvg_name": "Eurovision Song Contest",
-    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/eurovision.png",
-    "url": "https://kiefte.eu/iptv/youtube/@EurovisionSongContest"
-  },
-  {
-    "name": "NASA TV HD (Lançamentos & Espaço)",
-    "group": "Eventos ao Vivo",
-    "tvg_id": "NASATV.us@HD",
-    "tvg_name": "NASA TV HD",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/NASA.png",
-    "url": "https://kiefte.eu/iptv/youtube/@NASA"
-  },
-  {
-    "name": "LiveMode TV (Desporto em Direto)",
-    "group": "Eventos ao Vivo",
-    "tvg_id": "LiveModeTV.pt",
-    "tvg_name": "LiveMode TV",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/LiveMode.png",
-    "url": "https://kiefte.eu/iptv/youtube/@LiveModeTV"
   },
   {
     "name": "HEVC / H.265 10-Bit Reference Ladder",

@@ -58,12 +58,6 @@ https://www.khuwemultimedia.com/hls/mntv/mntv.m3u8
 #EXTINF:-1 tvg-id="TVVitoria.mz" tvg-name="TV Vitória" group-title="MZ Geral",TV Vitória Moçambique
 https://stmv1.srvif.com/tvvitoriamz/tvvitoriamz/playlist.m3u8
 
-#EXTINF:-1 tvg-id="TVMiramar.mz" tvg-name="TV Miramar" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/miramar.png" group-title="MZ Geral",TV Miramar (Moçambique)
-https://kiefte.eu/iptv/youtube/@tvmiramar
-
-#EXTINF:-1 tvg-id="TPA.ao" tvg-name="TPA Angola" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tpa.png" group-title="MZ Geral",TPA (Televisão Pública de Angola)
-https://kiefte.eu/iptv/youtube/@TPAOnline
-
 #EXTINF:-1 tvg-id="Canal.24.horas.es" tvg-name="24 Horas" group-title="ES Geral & TDT",RTVE Canal 24 Horas
 https://ztnr.rtve.es/ztnr/1694255.m3u8
 
@@ -250,11 +244,11 @@ https://183.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8
 #EXTINF:-1 tvg-id="SLAMTV.nl" tvg-name="SLAM! TV" group-title="Música & Video",SLAM! TV (Visual Radio)
 https://stream.slam.nl/slam-tv/index.m3u8
 
-#EXTINF:-1 tvg-id="NPORadio2Visual.nl" tvg-name="NPO Radio 2 Visual" group-title="Música & Video",NPO Radio 2 (Top 2000 Visual)
-https://kiefte.eu/iptv/youtube/@NPORadio2
+#EXTINF:-1 tvg-id="Monstercat.tv@HD" tvg-name="Monstercat" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Monstercat_logo.svg/512px-Monstercat_logo.svg.png" group-title="Música & Video",Monstercat (24/7 Electronic Music HD)
+https://kiefte.eu/iptv/twitch/monstercat
 
-#EXTINF:-1 tvg-id="NPO3FMVisual.nl" tvg-name="NPO 3FM Visual" group-title="Música & Video",NPO 3FM (Visual & Serious Request)
-https://kiefte.eu/iptv/youtube/@npo3fm
+#EXTINF:-1 tvg-id="Insomniac.tv@HD" tvg-name="Insomniac Events" group-title="Música & Video",Insomniac (24/7 EDM Festival TV)
+https://kiefte.eu/iptv/twitch/insomniac
 
 #EXTINF:-1 tvg-id="DisneyChannel.pt" tvg-name="Disney Channel PT" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Disney-Channel.png" group-title="Infantil & Kids",Disney Channel Portugal (PT)
 http://151.80.18.177:86/Disney_Channel_HD/index.m3u8
@@ -514,27 +508,6 @@ https://kiefte.eu/iptv/twitch/game/Trackmania
 
 #EXTINF:-1 tvg-id="Zeepkist.tv" tvg-name="Zeepkist Live" group-title="Indie & Variety Gaming",Zeepkist (Soapbox Physics Racing Live)
 https://kiefte.eu/iptv/twitch/game/Zeepkist
-
-#EXTINF:-1 tvg-id="NOSNieuws.nl@Live" tvg-name="NOS Nieuws Live" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/NOS-Journaal.png" group-title="Eventos ao Vivo",NOS Nieuws (Em Direto)
-https://kiefte.eu/iptv/youtube/@NOS
-
-#EXTINF:-1 tvg-id="NOSJeugdjournaal.nl@Live" tvg-name="NOS Jeugdjournaal Live" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/NOS-Jeugdjournaal.png" group-title="Eventos ao Vivo",NOS Jeugdjournaal (Em Direto)
-https://kiefte.eu/iptv/youtube/@jeugdjournaal
-
-#EXTINF:-1 tvg-id="PBSNewsHour.us@HD" tvg-name="PBS NewsHour" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/pbs.png" group-title="Eventos ao Vivo",PBS NewsHour (US / Em Direto)
-https://kiefte.eu/iptv/youtube/@PBSNewsHour
-
-#EXTINF:-1 tvg-id="ABCNews.au@HD" tvg-name="ABC News Australia" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/abcnews_au.png" group-title="Eventos ao Vivo",ABC News Australia (Em Direto)
-https://kiefte.eu/iptv/youtube/@abcnews
-
-#EXTINF:-1 tvg-id="Eurovision.tv" tvg-name="Eurovision Song Contest" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/eurovision.png" group-title="Eventos ao Vivo",Eurovision Song Contest (Em Direto)
-https://kiefte.eu/iptv/youtube/@EurovisionSongContest
-
-#EXTINF:-1 tvg-id="NASATV.us@HD" tvg-name="NASA TV HD" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/NASA.png" group-title="Eventos ao Vivo",NASA TV HD (Lançamentos & Espaço)
-https://kiefte.eu/iptv/youtube/@NASA
-
-#EXTINF:-1 tvg-id="LiveModeTV.pt" tvg-name="LiveMode TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/LiveMode.png" group-title="Eventos ao Vivo",LiveMode TV (Desporto em Direto)
-https://kiefte.eu/iptv/youtube/@LiveModeTV
 
 #EXTINF:-1 tvg-id="HEVC10Bit.ref@HD" tvg-name="HEVC 10-Bit Reference" group-title="Diag",HEVC / H.265 10-Bit Reference Ladder
 https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_adv_example_hevc/master.m3u8
