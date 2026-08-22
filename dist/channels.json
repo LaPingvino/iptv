@@ -602,12 +602,12 @@
     "url": "https://kiefte.eu/iptv/youtube/@npo3fm"
   },
   {
-    "name": "Disney Junior Portugal (PT)",
+    "name": "Disney Junior (English 720p60 HD)",
     "group": "Infantil & Kids",
-    "tvg_id": "DisneyJunior.pt",
-    "tvg_name": "Disney Junior PT",
+    "tvg_id": "DisneyJunior.us@HD",
+    "tvg_name": "Disney Junior",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Disney-Junior.png",
-    "url": "http://151.80.18.177:86/Disney_Junior_HD/index.m3u8"
+    "url": "http://23.237.104.106:8080/USA_DISNEY_JUNIOR/tracks-v1a1/mono.m3u8"
   },
   {
     "name": "Disney Channel Portugal (PT)",
