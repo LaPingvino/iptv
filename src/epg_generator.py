@@ -104,7 +104,7 @@ def format_xmltv_time(epoch_sec):
     dt = datetime.datetime.fromtimestamp(epoch_sec, datetime.timezone.utc)
     return dt.strftime("%Y%m%d%H%M%S +0000")
 
-def get_channel_schedule_blocks(media_dir, default_meta=None):
+def get_channel_schedule_blocks(media_dir, default_meta=None, seg_duration=10.0):
     """Calculates ordered schedule blocks from directory TS files."""
     if not os.path.exists(media_dir):
         return []
@@ -115,7 +115,7 @@ def get_channel_schedule_blocks(media_dir, default_meta=None):
     blocks = []
     for prefix, group in groupby(ts_files, key=lambda f: f.rsplit("_", 1)[0]):
         count = len(list(group))
-        dur_sec = count * 6.0
+        dur_sec = count * seg_duration
         
         meta = {}
         if default_meta and prefix in default_meta:
@@ -191,9 +191,9 @@ def generate_xmltv_programmes(channel_id, channel_name, blocks, days_back=1, day
         
     return "\n".join(xml_lines)
 
-def generate_standalone_epg_xml(channel_id, channel_name, media_dir, metadata_dict):
+def generate_standalone_epg_xml(channel_id, channel_name, media_dir, metadata_dict, seg_duration=10.0):
     """Generates complete standalone XMLTV document."""
-    blocks = get_channel_schedule_blocks(media_dir, metadata_dict)
+    blocks = get_channel_schedule_blocks(media_dir, metadata_dict, seg_duration=seg_duration)
     programmes_xml = generate_xmltv_programmes(channel_id, channel_name, blocks)
     
     return f"""<?xml version="1.0" encoding="UTF-8"?>

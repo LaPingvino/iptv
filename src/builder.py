@@ -160,12 +160,12 @@ def fetch_and_build_epg(dist_dir):
         
         # Esperanto TV
         extracted_channels["EsperantoTV.eo@SD"] = '  <channel id="EsperantoTV.eo@SD">\n    <display-name>Esperanto TV</display-name>\n  </channel>'
-        esp_blocks = get_channel_schedule_blocks(esp_media_dir, ESPERANTO_METADATA)
+        esp_blocks = get_channel_schedule_blocks(esp_media_dir, ESPERANTO_METADATA, seg_duration=10.0)
         extracted_programmes.append(generate_xmltv_programmes("EsperantoTV.eo@SD", "Esperanto TV", esp_blocks))
         
         # Bahá'í TV
         extracted_channels["BahaiStudioSessions.tv@HD"] = '  <channel id="BahaiStudioSessions.tv@HD">\n    <display-name>Bahá\'í Studio Sessions TV</display-name>\n  </channel>'
-        bah_blocks = get_channel_schedule_blocks(bah_media_dir)
+        bah_blocks = get_channel_schedule_blocks(bah_media_dir, seg_duration=8.333333)
         extracted_programmes.append(generate_xmltv_programmes("BahaiStudioSessions.tv@HD", "Bahá'í Studio Sessions TV", bah_blocks))
         
         # 4. Add Twitch Channels with genuine live streamer info via shared library

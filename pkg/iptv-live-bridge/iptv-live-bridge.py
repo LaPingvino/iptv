@@ -60,17 +60,16 @@ TESTCARD_DIR = os.environ.get("BRIDGE_TESTCARD_DIR", "/usr/share/iptv-live-bridg
 ESPERANTO_DIR = os.environ.get("BRIDGE_ESPERANTO_DIR", "/var/lib/iptv-live-bridge/esperantotv" if os.path.exists("/var/lib/iptv-live-bridge/esperantotv") else ("/usr/share/iptv-live-bridge/esperantotv" if os.path.exists("/usr/share/iptv-live-bridge/esperantotv") else os.path.join(os.path.dirname(os.path.abspath(__file__)), "esperantotv")))
 BAHAI_DIR = os.environ.get("BRIDGE_BAHAI_DIR", "/var/lib/iptv-live-bridge/bahaitv" if os.path.exists("/var/lib/iptv-live-bridge/bahaitv") else ("/usr/share/iptv-live-bridge/bahaitv" if os.path.exists("/usr/share/iptv-live-bridge/bahaitv") else os.path.join(os.path.dirname(os.path.abspath(__file__)), "bahaitv")))
 
-def generate_live_linear_m3u8(directory, prefix="esperanto/", standby_ts="/iptv/test/esperanto_standby0.ts"):
+def generate_live_linear_m3u8(directory, prefix="esperanto/", standby_ts="/iptv/test/esperanto_standby0.ts", seg_duration=10.0):
     """Generates a synchronized real-time sliding-window live HLS playlist cycling 24/7 through media segments."""
     clean_prefix = prefix.strip("/")
     if not os.path.exists(directory):
-        return f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:6\n#EXT-X-MEDIA-SEQUENCE:0\n#EXTINF:6.000000,\n{standby_ts}\n#EXT-X-ENDLIST\n"
+        return f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:{int(seg_duration) + 1}\n#EXT-X-MEDIA-SEQUENCE:0\n#EXTINF:{seg_duration:.6f},\n{standby_ts}\n#EXT-X-ENDLIST\n"
     
     segs = sorted([f for f in os.listdir(directory) if f.endswith(".ts")])
     if not segs:
-        return f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:6\n#EXT-X-MEDIA-SEQUENCE:0\n#EXTINF:6.000000,\n{standby_ts}\n#EXT-X-ENDLIST\n"
+        return f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:{int(seg_duration) + 1}\n#EXT-X-MEDIA-SEQUENCE:0\n#EXTINF:{seg_duration:.6f},\n{standby_ts}\n#EXT-X-ENDLIST\n"
     
-    seg_duration = 6.0
     total_segs = len(segs)
     total_cycle_time = total_segs * seg_duration
     
@@ -82,7 +81,7 @@ def generate_live_linear_m3u8(directory, prefix="esperanto/", standby_ts="/iptv/
     lines = [
         "#EXTM3U",
         "#EXT-X-VERSION:3",
-        f"#EXT-X-TARGETDURATION:{int(seg_duration)}",
+        f"#EXT-X-TARGETDURATION:{int(seg_duration) + 1}",
         f"#EXT-X-MEDIA-SEQUENCE:{media_sequence}"
     ]
     
@@ -556,7 +555,7 @@ class BridgeHandler(BaseHTTPRequestHandler):
         if path.startswith("esperanto/") or path.startswith("esperantotv/") or path in ["esperanto", "esperantotv", "esperanto.m3u8", "esperantotv.m3u8"]:
             seg_name = path.split("/", 1)[1] if "/" in path else ""
             if seg_name in ["", "tv", "live", "live.m3u8", "tv.m3u8", "index.m3u8", "playlist.m3u8", "stream.m3u8", "master.m3u8"] or path in ["esperanto", "esperantotv", "esperanto.m3u8", "esperantotv.m3u8"]:
-                m3u8_content = generate_live_linear_m3u8(ESPERANTO_DIR, prefix="esperanto/")
+                m3u8_content = generate_live_linear_m3u8(ESPERANTO_DIR, prefix="esperanto/", standby_ts="/iptv/test/esperanto_standby0.ts", seg_duration=10.0)
                 self.send_response(200)
                 self.send_header("Content-Type", "application/vnd.apple.mpegurl")
                 self.send_header("Access-Control-Allow-Origin", "*")
@@ -604,7 +603,7 @@ class BridgeHandler(BaseHTTPRequestHandler):
         if path.startswith("bahai/") or path.startswith("bahaitv/") or path in ["bahai", "bahaitv", "bahai.m3u8", "bahaitv.m3u8"]:
             seg_name = path.split("/", 1)[1] if "/" in path else ""
             if seg_name in ["", "tv", "live", "live.m3u8", "tv.m3u8", "index.m3u8", "playlist.m3u8", "stream.m3u8", "master.m3u8"] or path in ["bahai", "bahaitv", "bahai.m3u8", "bahaitv.m3u8"]:
-                m3u8_content = generate_live_linear_m3u8(BAHAI_DIR, prefix="bahai/", standby_ts="/iptv/test/bahai_standby0.ts")
+                m3u8_content = generate_live_linear_m3u8(BAHAI_DIR, prefix="bahai/", standby_ts="/iptv/test/bahai_standby0.ts", seg_duration=8.333333)
                 self.send_response(200)
                 self.send_header("Content-Type", "application/vnd.apple.mpegurl")
                 self.send_header("Access-Control-Allow-Origin", "*")
