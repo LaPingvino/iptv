@@ -649,6 +649,30 @@
     "url": "https://d3i6upqaqzosi1.cloudfront.net/tg/jr_us/tg_jr_us.m3u8"
   },
   {
+    "name": "Comedy Central (South Park & Futurama 1080p)",
+    "group": "Animação Adulta",
+    "tvg_id": "ComedyCentral.us@HD",
+    "tvg_name": "Comedy Central",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Comedy_Central_2018.svg/512px-Comedy_Central_2018.svg.png",
+    "url": "http://23.237.104.106:8080/USA_COMEDY_CENTRAL/tracks-v1a1/mono.m3u8"
+  },
+  {
+    "name": "Cartoon Network & Adult Swim (Rick and Morty 1080p)",
+    "group": "Animação Adulta",
+    "tvg_id": "AdultSwim.us@HD",
+    "tvg_name": "Adult Swim",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Adult_Swim_2003_logo.svg/512px-Adult_Swim_2003_logo.svg.png",
+    "url": "http://23.237.104.106:8080/USA_CARTOON_NETWORK/tracks-v1a1/mono.m3u8"
+  },
+  {
+    "name": "FXX (The Simpsons & Family Guy 720p60)",
+    "group": "Animação Adulta",
+    "tvg_id": "FXX.us@HD",
+    "tvg_name": "FXX",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/FXX_logo.svg/512px-FXX_logo.svg.png",
+    "url": "http://23.237.104.106:8080/USA_FXX/tracks-v1a1/mono.m3u8"
+  },
+  {
     "name": "Das Erste (ARD Germany)",
     "group": "Filmes & Docs",
     "tvg_id": "DasErste.de",

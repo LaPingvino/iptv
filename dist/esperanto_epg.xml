@@ -4,11 +4,6 @@
   <channel id="EsperantoTV.eo@SD">
     <display-name>Esperanto TV</display-name>
   </channel>
-  <programme start="20260821161340 +0000" stop="20260821164220 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Ep. 14: La muzeo</title>
-    <desc lang="eo">Kultura vizito al muzeo kun historiaj sekretoj. Komedia instrua serio por lernantoj de Esperanto.</desc>
-    <category lang="eo">Serio / Edukado</category>
-  </programme>
   <programme start="20260821164220 +0000" stop="20260821171240 +0000" channel="EsperantoTV.eo@SD">
     <title lang="eo">Pasporto al la Tuta Mondo - Ep. 15: La adiaŭa vespero</title>
     <desc lang="eo">Gaja vespero antaŭ la reveno hejmen. Komedia instrua serio por lernantoj de Esperanto.</desc>
@@ -3267,6 +3262,11 @@
   <programme start="20260829160710 +0000" stop="20260829164140 +0000" channel="EsperantoTV.eo@SD">
     <title lang="eo">Esperanto Senlime - S1Ĉ11: Supren, suben kaj akven</title>
     <desc lang="eo">Akvo-defioj kaj sportaj agadoj. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20260829164140 +0000" stop="20260829172440 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - S1Ĉ12: Plaĝa tago</title>
+    <desc lang="eo">Amuzaj ludoj kaj defioj ĉe la marbordo. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
 </tv>
