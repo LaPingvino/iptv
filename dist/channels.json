@@ -610,6 +610,37 @@
     "url": "https://d3i6upqaqzosi1.cloudfront.net/tg/jr_us/tg_jr_us.m3u8"
   },
   {
+    "name": "Kartoon Channel! (720p HD)",
+    "group": "Infantil & Kids",
+    "tvg_id": "KartoonChannel.us@HD",
+    "tvg_name": "Kartoon Channel!",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Kartoon_Channel%21_logo.png/512px-Kartoon_Channel%21_logo.png",
+    "url": "https://d2z0ysa6dgxhlc.cloudfront.net/kchan.m3u8"
+  },
+  {
+    "name": "DuckTV (Toddlers & Visual Animation HD)",
+    "group": "Infantil & Kids",
+    "tvg_id": "DuckTV.sk@HD",
+    "tvg_name": "DuckTV",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Ducktv_logo.png/512px-Ducktv_logo.png",
+    "url": "https://d6lk10bkdgfae.cloudfront.net/playlist.m3u8"
+  },
+  {
+    "name": "HappyKids (1080p Full HD)",
+    "group": "Infantil & Kids",
+    "tvg_id": "HappyKids.us@HD",
+    "tvg_name": "HappyKids",
+    "url": "https://dil9xdvretp0f.cloudfront.net/index.m3u8"
+  },
+  {
+    "name": "Lego Channel (Animation HD)",
+    "group": "Infantil & Kids",
+    "tvg_id": "LegoChannel.us@HD",
+    "tvg_name": "Lego Channel",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/512px-LEGO_logo.svg.png",
+    "url": "https://dltiqboxjw21d.cloudfront.net/index.m3u8"
+  },
+  {
     "name": "Das Erste (ARD Germany)",
     "group": "Filmes & Docs",
     "tvg_id": "DasErste.de",
@@ -2079,6 +2110,46 @@
     "url": "http://stream.escradio.com:8000/esc128.mp3"
   },
   {
+    "name": "Radio Reloj (Cuba 950 AM - Notícias & Metrónomo)",
+    "group": "Rádio Global",
+    "tvg_id": "RadioReloj.cu",
+    "tvg_name": "Radio Reloj Cuba",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Radio_Reloj_Cuba.png/512px-Radio_Reloj_Cuba.png",
+    "url": "https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/b3jbfThq"
+  },
+  {
+    "name": "SomaFM Mission Control (NASA Comms & Space Ambient)",
+    "group": "Rádio Global",
+    "tvg_id": "SomaFMMissionControl.us",
+    "tvg_name": "SomaFM Mission Control",
+    "logo": "https://somafm.com/img3/missioncontrol-400.jpg",
+    "url": "https://ice6.somafm.com/missioncontrol-128-mp3"
+  },
+  {
+    "name": "SomaFM Secret Agent (1960s Spy Themes & Intercepts)",
+    "group": "Rádio Global",
+    "tvg_id": "SomaFMSecretAgent.us",
+    "tvg_name": "SomaFM Secret Agent",
+    "logo": "https://somafm.com/img3/secretagent-400.jpg",
+    "url": "https://ice6.somafm.com/secretagent-128-mp3"
+  },
+  {
+    "name": "SomaFM SF 10-33 (Police Scanner & Ambient)",
+    "group": "Rádio Global",
+    "tvg_id": "SomaFMSF1033.us",
+    "tvg_name": "SomaFM SF 10-33",
+    "logo": "https://somafm.com/img3/sf1033-400.jpg",
+    "url": "https://ice5.somafm.com/sf1033-128-mp3"
+  },
+  {
+    "name": "LiveATC JFK Tower & Approach (New York)",
+    "group": "Rádio Global",
+    "tvg_id": "LiveATCJFK.us",
+    "tvg_name": "LiveATC JFK Tower",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Air_traffic_controller.svg/512px-Air_traffic_controller.svg.png",
+    "url": "https://s1-fmt2.liveatc.net/kjfk_twr"
+  },
+  {
     "name": "Muzaiko (24/7 Esperanto Radio)",
     "group": "Rádio Global",
     "tvg_id": "Muzaiko.eo",
@@ -2174,6 +2245,14 @@
     "url": "https://kiefte.eu/iptv/twitch/railcowgirl?fallback=0"
   },
   {
+    "name": "Adventure Earth (1080p Full HD)",
+    "group": "Natureza & Slow TV",
+    "tvg_id": "AdventureEarth.de@HD",
+    "tvg_name": "Adventure Earth",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Earth_symbol_%28bold%29.svg/512px-Earth_symbol_%28bold%29.svg.png",
+    "url": "https://autentic-adventure-earth-1-gb.samsung.wurl.tv/playlist.m3u8"
+  },
+  {
     "name": "Doctor Who Classic (24/7 1080p HD)",
     "group": "Sci-Fi, Cult & Retro",
     "tvg_id": "DoctorWhoClassic.uk@HD",
@@ -2196,5 +2275,45 @@
     "tvg_name": "World of Longplays",
     "logo": "https://static-cdn.jtvnw.net/jtv_user_pictures/worldoflongplays-profile_image-144709d73d6e9dc7-300x300.png",
     "url": "https://kiefte.eu/iptv/twitch/worldoflongplays"
+  },
+  {
+    "name": "FailArmy (24/7 Comedy HD)",
+    "group": "Sci-Fi, Cult & Retro",
+    "tvg_id": "FailArmy.us@HD",
+    "tvg_name": "FailArmy",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/FailArmy_logo.png/512px-FailArmy_logo.png",
+    "url": "https://failarmy-international-nl.samsung.wurl.tv/playlist.m3u8"
+  },
+  {
+    "name": "Just for Laughs Gags (Slapstick Comedy HD)",
+    "group": "Sci-Fi, Cult & Retro",
+    "tvg_id": "JustForLaughsGags.ca@HD",
+    "tvg_name": "Just for Laughs Gags",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/Just_for_Laughs_Gags_logo.svg/512px-Just_for_Laughs_Gags_logo.svg.png",
+    "url": "https://distributionsjustepourrire-justforlaughsgags-1-nl.samsung.wurl.tv/playlist.m3u8"
+  },
+  {
+    "name": "FilmRise Classic TV (Cult Classics)",
+    "group": "Sci-Fi, Cult & Retro",
+    "tvg_id": "FilmRiseClassicTV.us@HD",
+    "tvg_name": "FilmRise Classic TV",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/FilmRise_logo.png/512px-FilmRise_logo.png",
+    "url": "https://d2tv4k5moji5m7.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-lu4pzh9l4b57p/master.m3u8"
+  },
+  {
+    "name": "FilmRise Anime (24/7 Classic Anime HD)",
+    "group": "Sci-Fi, Cult & Retro",
+    "tvg_id": "FilmRiseAnime.us@HD",
+    "tvg_name": "FilmRise Anime",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/FilmRise_logo.png/512px-FilmRise_logo.png",
+    "url": "https://dvu7aia8rjlfm.cloudfront.net/master.m3u8"
+  },
+  {
+    "name": "Autentic History (1080p Full HD)",
+    "group": "Sci-Fi, Cult & Retro",
+    "tvg_id": "AutenticHistory.de@HD",
+    "tvg_name": "Autentic History",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/History_Logo_2021.svg/512px-History_Logo_2021.svg.png",
+    "url": "https://autentic-autentichistory-1-gb.samsung.wurl.tv/playlist.m3u8"
   }
 ]

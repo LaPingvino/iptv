@@ -35,3 +35,10 @@
   tvg_name: RailCowGirl
   logo: https://static-cdn.jtvnw.net/jtv_user_pictures/3004f2f9-715b-4395-8b3d-4c3dbdd1be36-profile_image-300x300.png
   url: https://kiefte.eu/iptv/twitch/railcowgirl?fallback=0
+
+- name: Adventure Earth (1080p Full HD)
+  group: Natureza & Slow TV
+  tvg_id: AdventureEarth.de@HD
+  tvg_name: Adventure Earth
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Earth_symbol_%28bold%29.svg/512px-Earth_symbol_%28bold%29.svg.png
+  url: https://autentic-adventure-earth-1-gb.samsung.wurl.tv/playlist.m3u8

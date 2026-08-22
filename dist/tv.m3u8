@@ -256,6 +256,18 @@ https://amg00627-amg00627c30-rakuten-es-3990.playouts.now.amagi.tv/playlist/amg0
 #EXTINF:-1 tvg-id="ToonGogglesJr.us@HD" tvg-name="Toon Goggles Junior" group-title="Infantil & Kids",Toon Goggles Junior (720p HD)
 https://d3i6upqaqzosi1.cloudfront.net/tg/jr_us/tg_jr_us.m3u8
 
+#EXTINF:-1 tvg-id="KartoonChannel.us@HD" tvg-name="Kartoon Channel!" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Kartoon_Channel%21_logo.png/512px-Kartoon_Channel%21_logo.png" group-title="Infantil & Kids",Kartoon Channel! (720p HD)
+https://d2z0ysa6dgxhlc.cloudfront.net/kchan.m3u8
+
+#EXTINF:-1 tvg-id="DuckTV.sk@HD" tvg-name="DuckTV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Ducktv_logo.png/512px-Ducktv_logo.png" group-title="Infantil & Kids",DuckTV (Toddlers & Visual Animation HD)
+https://d6lk10bkdgfae.cloudfront.net/playlist.m3u8
+
+#EXTINF:-1 tvg-id="HappyKids.us@HD" tvg-name="HappyKids" group-title="Infantil & Kids",HappyKids (1080p Full HD)
+https://dil9xdvretp0f.cloudfront.net/index.m3u8
+
+#EXTINF:-1 tvg-id="LegoChannel.us@HD" tvg-name="Lego Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/512px-LEGO_logo.svg.png" group-title="Infantil & Kids",Lego Channel (Animation HD)
+https://dltiqboxjw21d.cloudfront.net/index.m3u8
+
 #EXTINF:-1 tvg-id="DasErste.de" tvg-name="Das Erste" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Das-Erste.png" group-title="Filmes & Docs",Das Erste (ARD Germany)
 https://daserste-live.ard-mcdn.de/daserste/live/hls/int/master.m3u8
 
@@ -545,6 +557,9 @@ https://kiefte.eu/iptv/twitch/nasa
 #EXTINF:-1 tvg-id="RailCowGirl.tv@HD" tvg-name="RailCowGirl" tvg-logo="https://static-cdn.jtvnw.net/jtv_user_pictures/3004f2f9-715b-4395-8b3d-4c3dbdd1be36-profile_image-300x300.png" group-title="Natureza & Slow TV",RailCowGirl (Norway Scenic Cabview Train Journeys)
 https://kiefte.eu/iptv/twitch/railcowgirl?fallback=0
 
+#EXTINF:-1 tvg-id="AdventureEarth.de@HD" tvg-name="Adventure Earth" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Earth_symbol_%28bold%29.svg/512px-Earth_symbol_%28bold%29.svg.png" group-title="Natureza & Slow TV",Adventure Earth (1080p Full HD)
+https://autentic-adventure-earth-1-gb.samsung.wurl.tv/playlist.m3u8
+
 #EXTINF:-1 tvg-id="DoctorWhoClassic.uk@HD" tvg-name="Doctor Who Classic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Doctor_Who_logo_2018.svg/512px-Doctor_Who_logo_2018.svg.png" group-title="Sci-Fi, Cult & Retro",Doctor Who Classic (24/7 1080p HD)
 https://bbc-classicdrwho-1-us.roku.wurl.tv/playlist.m3u8
 
@@ -553,3 +568,18 @@ https://mst3k-roku.amagi.tv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="WorldOfLongplays.tv@HD" tvg-name="World of Longplays" tvg-logo="https://static-cdn.jtvnw.net/jtv_user_pictures/worldoflongplays-profile_image-144709d73d6e9dc7-300x300.png" group-title="Sci-Fi, Cult & Retro",World of Longplays (Retro Gaming 1080p60)
 https://kiefte.eu/iptv/twitch/worldoflongplays
+
+#EXTINF:-1 tvg-id="FailArmy.us@HD" tvg-name="FailArmy" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/FailArmy_logo.png/512px-FailArmy_logo.png" group-title="Sci-Fi, Cult & Retro",FailArmy (24/7 Comedy HD)
+https://failarmy-international-nl.samsung.wurl.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="JustForLaughsGags.ca@HD" tvg-name="Just for Laughs Gags" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/Just_for_Laughs_Gags_logo.svg/512px-Just_for_Laughs_Gags_logo.svg.png" group-title="Sci-Fi, Cult & Retro",Just for Laughs Gags (Slapstick Comedy HD)
+https://distributionsjustepourrire-justforlaughsgags-1-nl.samsung.wurl.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="FilmRiseClassicTV.us@HD" tvg-name="FilmRise Classic TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/FilmRise_logo.png/512px-FilmRise_logo.png" group-title="Sci-Fi, Cult & Retro",FilmRise Classic TV (Cult Classics)
+https://d2tv4k5moji5m7.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-lu4pzh9l4b57p/master.m3u8
+
+#EXTINF:-1 tvg-id="FilmRiseAnime.us@HD" tvg-name="FilmRise Anime" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/FilmRise_logo.png/512px-FilmRise_logo.png" group-title="Sci-Fi, Cult & Retro",FilmRise Anime (24/7 Classic Anime HD)
+https://dvu7aia8rjlfm.cloudfront.net/master.m3u8
+
+#EXTINF:-1 tvg-id="AutenticHistory.de@HD" tvg-name="Autentic History" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/History_Logo_2021.svg/512px-History_Logo_2021.svg.png" group-title="Sci-Fi, Cult & Retro",Autentic History (1080p Full HD)
+https://autentic-autentichistory-1-gb.samsung.wurl.tv/playlist.m3u8

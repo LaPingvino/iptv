@@ -130,3 +130,38 @@
   tvg_name: ESC Radio Eurovision
   logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/escradio.png
   url: http://stream.escradio.com:8000/esc128.mp3
+
+- name: Radio Reloj (Cuba 950 AM - Notícias & Metrónomo)
+  group: Rádio Global
+  tvg_id: RadioReloj.cu
+  tvg_name: Radio Reloj Cuba
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Radio_Reloj_Cuba.png/512px-Radio_Reloj_Cuba.png
+  url: https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/b3jbfThq
+
+- name: SomaFM Mission Control (NASA Comms & Space Ambient)
+  group: Rádio Global
+  tvg_id: SomaFMMissionControl.us
+  tvg_name: SomaFM Mission Control
+  logo: https://somafm.com/img3/missioncontrol-400.jpg
+  url: https://ice6.somafm.com/missioncontrol-128-mp3
+
+- name: SomaFM Secret Agent (1960s Spy Themes & Intercepts)
+  group: Rádio Global
+  tvg_id: SomaFMSecretAgent.us
+  tvg_name: SomaFM Secret Agent
+  logo: https://somafm.com/img3/secretagent-400.jpg
+  url: https://ice6.somafm.com/secretagent-128-mp3
+
+- name: SomaFM SF 10-33 (Police Scanner & Ambient)
+  group: Rádio Global
+  tvg_id: SomaFMSF1033.us
+  tvg_name: SomaFM SF 10-33
+  logo: https://somafm.com/img3/sf1033-400.jpg
+  url: https://ice5.somafm.com/sf1033-128-mp3
+
+- name: LiveATC JFK Tower & Approach (New York)
+  group: Rádio Global
+  tvg_id: LiveATCJFK.us
+  tvg_name: LiveATC JFK Tower
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Air_traffic_controller.svg/512px-Air_traffic_controller.svg.png
+  url: https://s1-fmt2.liveatc.net/kjfk_twr

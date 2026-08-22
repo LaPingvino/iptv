@@ -319,6 +319,21 @@ https://stream.srg-ssr.ch/m/reteuno/mp3_128
 #EXTINF:-1 tvg-id="ESCRadio.eu" tvg-name="ESC Radio Eurovision" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/escradio.png" group-title="Rádio Global" radio="true",ESC Radio (Eurovision 24/7 Non-Stop)
 http://stream.escradio.com:8000/esc128.mp3
 
+#EXTINF:-1 tvg-id="RadioReloj.cu" tvg-name="Radio Reloj Cuba" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Radio_Reloj_Cuba.png/512px-Radio_Reloj_Cuba.png" group-title="Rádio Global" radio="true",Radio Reloj (Cuba 950 AM - Notícias & Metrónomo)
+https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/b3jbfThq
+
+#EXTINF:-1 tvg-id="SomaFMMissionControl.us" tvg-name="SomaFM Mission Control" tvg-logo="https://somafm.com/img3/missioncontrol-400.jpg" group-title="Rádio Global" radio="true",SomaFM Mission Control (NASA Comms & Space Ambient)
+https://ice6.somafm.com/missioncontrol-128-mp3
+
+#EXTINF:-1 tvg-id="SomaFMSecretAgent.us" tvg-name="SomaFM Secret Agent" tvg-logo="https://somafm.com/img3/secretagent-400.jpg" group-title="Rádio Global" radio="true",SomaFM Secret Agent (1960s Spy Themes & Intercepts)
+https://ice6.somafm.com/secretagent-128-mp3
+
+#EXTINF:-1 tvg-id="SomaFMSF1033.us" tvg-name="SomaFM SF 10-33" tvg-logo="https://somafm.com/img3/sf1033-400.jpg" group-title="Rádio Global" radio="true",SomaFM SF 10-33 (Police Scanner & Ambient)
+https://ice5.somafm.com/sf1033-128-mp3
+
+#EXTINF:-1 tvg-id="LiveATCJFK.us" tvg-name="LiveATC JFK Tower" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Air_traffic_controller.svg/512px-Air_traffic_controller.svg.png" group-title="Rádio Global" radio="true",LiveATC JFK Tower & Approach (New York)
+https://s1-fmt2.liveatc.net/kjfk_twr
+
 #EXTINF:-1 tvg-id="Muzaiko.eo" tvg-name="Muzaiko Esperanto" group-title="Rádio Global" radio="true",Muzaiko (24/7 Esperanto Radio)
 http://fluo.muzaiko.saluton.dk:8000/radio.mp3
 
