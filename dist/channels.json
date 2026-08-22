@@ -602,6 +602,116 @@
     "url": "https://kiefte.eu/iptv/youtube/@npo3fm"
   },
   {
+    "name": "Disney Junior (1080p)",
+    "group": "Infantil & Kids",
+    "tvg_id": "DisneyJunior.la@HD",
+    "tvg_name": "Disney Junior",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/disneyjunior.png",
+    "url": "http://177.234.249.178:8888/DISNEY-JR/index.m3u8"
+  },
+  {
+    "name": "Disney Channel (1080p)",
+    "group": "Infantil & Kids",
+    "tvg_id": "DisneyChannel.la@HD",
+    "tvg_name": "Disney Channel",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/disneychannel.png",
+    "url": "http://15.204.246.24:8080/DisneyHD/index.m3u8"
+  },
+  {
+    "name": "Mr. Bean Animado (1080p)",
+    "group": "Infantil & Kids",
+    "tvg_id": "MrBeanAnimated.es@HD",
+    "tvg_name": "Mr. Bean Animado",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Mr_Bean_Animated_logo.svg/512px-Mr_Bean_Animated_logo.svg.png",
+    "url": "https://amg00627-amg00627c30-rakuten-es-3990.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanescc-rakutenes/playlist.m3u8"
+  },
+  {
+    "name": "Las Tortugas Ninja (TMNT 24/7)",
+    "group": "Infantil & Kids",
+    "tvg_id": "TMNT.es@HD",
+    "tvg_name": "Las Tortugas Ninja",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/TMNT_logo.svg/512px-TMNT_logo.svg.png",
+    "url": "https://jmp2.uk/plu-63dd5d7a4e83e700088fbca8.m3u8"
+  },
+  {
+    "name": "Avatar - The Last Airbender (24/7)",
+    "group": "Infantil & Kids",
+    "tvg_id": "AvatarTheLastAirbender.es",
+    "tvg_name": "Avatar The Last Airbender",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Avatar_The_Last_Airbender_logo.svg/512px-Avatar_The_Last_Airbender_logo.svg.png",
+    "url": "https://jmp2.uk/plu-656df599c0fc8800089c75ab.m3u8"
+  },
+  {
+    "name": "Cartoon Classics (Retro Toons)",
+    "group": "Infantil & Kids",
+    "tvg_id": "CartoonClassics.us",
+    "tvg_name": "Cartoon Classics",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_1992_logo.svg/512px-Cartoon_Network_1992_logo.svg.png",
+    "url": "http://5.188.159.128:8070/Cartoon_Network/index.m3u8"
+  },
+  {
+    "name": "South Park (24/7 Comedy Central)",
+    "group": "Animação & Anime",
+    "tvg_id": "SouthPark.es@HD",
+    "tvg_name": "South Park",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/South_Park_logo.svg/512px-South_Park_logo.svg.png",
+    "url": "https://jmp2.uk/plu-60c716084d842c00085f6e64.m3u8"
+  },
+  {
+    "name": "Daria (24/7 MTV Animation)",
+    "group": "Animação & Anime",
+    "tvg_id": "Daria.es",
+    "tvg_name": "Daria",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Daria_logo.svg/512px-Daria_logo.svg.png",
+    "url": "https://jmp2.uk/plu-6683b680efa2a10008e8a393.m3u8"
+  },
+  {
+    "name": "Crunchyroll TV (Anime 24/7 HD)",
+    "group": "Animação & Anime",
+    "tvg_id": "Crunchyroll.es@HD",
+    "tvg_name": "Crunchyroll TV",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Crunchyroll_Logo.png/512px-Crunchyroll_Logo.png",
+    "url": "https://jmp2.uk/plu-65652f7fc0fc88000883537a.m3u8"
+  },
+  {
+    "name": "Naruto (24/7 Anime HD)",
+    "group": "Animação & Anime",
+    "tvg_id": "Naruto.es@HD",
+    "tvg_name": "Naruto",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Naruto_logo.svg/512px-Naruto_logo.svg.png",
+    "url": "https://jmp2.uk/plu-65d5fc39a25d5e00082895c4.m3u8"
+  },
+  {
+    "name": "Detective Conan (24/7 Anime)",
+    "group": "Animação & Anime",
+    "tvg_id": "DetectiveConan.es",
+    "tvg_name": "Detective Conan",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Detective_Conan_Logo.svg/512px-Detective_Conan_Logo.svg.png",
+    "url": "https://jmp2.uk/plu-629a066860ef810008267b70.m3u8"
+  },
+  {
+    "name": "MAX Anime (1080p Full HD)",
+    "group": "Animação & Anime",
+    "tvg_id": "MAXAnime.es@HD",
+    "tvg_name": "MAX Anime",
+    "logo": "https://cdnlive.klicgo.net/maxanime/maxanime.png",
+    "url": "https://cdnlive.klicgo.net/maxanime/live/playlist.m3u8"
+  },
+  {
+    "name": "ADN TV+ Anime (720p HD)",
+    "group": "Animação & Anime",
+    "tvg_id": "ADNTV.es@HD",
+    "tvg_name": "ADN TV+",
+    "url": "https://d3b73b34o7cvkq.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-gz2sgqzp076kf/adn.m3u8"
+  },
+  {
+    "name": "FilmRise Anime HD",
+    "group": "Animação & Anime",
+    "tvg_id": "FilmRiseAnime.us@HD",
+    "tvg_name": "FilmRise Anime",
+    "url": "https://dvu7aia8rjlfm.cloudfront.net/master.m3u8"
+  },
+  {
     "name": "Das Erste (ARD Germany)",
     "group": "Filmes & Docs",
     "tvg_id": "DasErste.de",
