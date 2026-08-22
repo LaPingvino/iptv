@@ -444,6 +444,80 @@ def generate_live_twitch_epg_xml():
         return PRECHECKED_TWITCH_EPG_XML
     return '<?xml version="1.0" encoding="UTF-8"?><tv><channel id="Speedrun.tv"><display-name>Speedrun.com 24/7</display-name></channel></tv>'
 
+class DisneyBufferEngine:
+    """Pre-buffers and caches Disney Channel PT HLS segments into RAM to eliminate playback stutter."""
+    def __init__(self):
+        self.mono_url = "http://151.80.18.177:86/Disney_Channel_HD/tracks-v1a1/mono.m3u8"
+        self.base_url = "http://151.80.18.177:86/Disney_Channel_HD/tracks-v1a1/"
+        self.segments = {} # clean_name -> (bytes, timestamp)
+        self.playlist_content = ""
+        self.lock = threading.Lock()
+        self.last_client_access = 0
+        self.running = False
+        
+    def touch(self):
+        self.last_client_access = time.time()
+        if not self.running:
+            self.running = True
+            t = threading.Thread(target=self._worker, daemon=True)
+            t.start()
+            
+    def _worker(self):
+        logger.info("Starting Disney Channel RAM pre-buffer worker...")
+        while self.running:
+            if time.time() - self.last_client_access > 180:
+                logger.info("Disney Channel worker idle for >3m. Stopping pre-buffer thread.")
+                self.running = False
+                with self.lock:
+                    self.segments.clear()
+                break
+                
+            try:
+                req = urllib.request.Request(self.mono_url, headers={"User-Agent": "Mozilla/5.0"})
+                with urllib.request.urlopen(req, timeout=8) as resp:
+                    raw_m3u8 = resp.read().decode("utf-8", errors="ignore")
+                
+                lines = []
+                current_segs = []
+                for line in raw_m3u8.splitlines():
+                    sline = line.strip()
+                    if sline and not sline.startswith("#"):
+                        clean_name = sline.replace("/", "_")
+                        current_segs.append((sline, clean_name))
+                        lines.append(f"/iptv/disney/{clean_name}")
+                    else:
+                        lines.append(line)
+                        
+                with self.lock:
+                    self.playlist_content = "\n".join(lines)
+                    
+                # Download new segments in background
+                for orig_rel_path, clean_fn in current_segs:
+                    with self.lock:
+                        if clean_fn in self.segments:
+                            continue
+                    full_url = urllib.parse.urljoin(self.base_url, orig_rel_path)
+                    try:
+                        sreq = urllib.request.Request(full_url, headers={"User-Agent": "Mozilla/5.0"})
+                        with urllib.request.urlopen(sreq, timeout=12) as sresp:
+                            data = sresp.read()
+                        with self.lock:
+                            self.segments[clean_fn] = (data, time.time())
+                        logger.debug(f"Pre-buffered Disney segment {clean_fn} ({len(data)} bytes)")
+                    except Exception as e:
+                        logger.warning(f"Error fetching Disney segment {clean_fn}: {e}")
+                        
+                # Keep cache clean
+                now = time.time()
+                with self.lock:
+                    self.segments = {k: v for k, v in self.segments.items() if now - v[1] < 120}
+            except Exception as e:
+                logger.error(f"Error updating Disney Channel buffer: {e}")
+                
+            time.sleep(2)
+
+disney_buffer_engine = DisneyBufferEngine()
+
 class BridgeHandler(BaseHTTPRequestHandler):
     def do_OPTIONS(self):
         self.send_response(200)
@@ -647,51 +721,56 @@ class BridgeHandler(BaseHTTPRequestHandler):
                         self.wfile.write(b"404 Not Found: Segment not found\n")
                     return
 
-        # Boosted Audio Route (e.g. Disney Channel Portugal with +8dB audio boost)
-        if path.startswith("boost/disney") or path in ["boost/disney", "boost/disney.m3u8", "boost/disney.ts"]:
-            if path in ["boost/disney", "boost/disney.m3u8", "boost/disney/playlist.m3u8"]:
-                m3u8_content = "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:3600\n#EXTINF:3600.0,\nhttps://kiefte.eu/iptv/boost/disney.ts\n"
+        # High-Speed Pre-Buffered Disney Channel Portugal Route
+        if path.startswith("disney") or path in ["disney", "disney.m3u8"]:
+            disney_buffer_engine.touch()
+            if path in ["disney", "disney.m3u8", "disney/playlist.m3u8"]:
+                with disney_buffer_engine.lock:
+                    content = disney_buffer_engine.playlist_content
+                if not content:
+                    content = fetch_and_make_absolute_m3u8(disney_buffer_engine.mono_url)
                 self.send_response(200)
                 self.send_header("Content-Type", "application/vnd.apple.mpegurl")
                 self.send_header("Access-Control-Allow-Origin", "*")
                 self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
                 self.end_headers()
                 if not is_head:
-                    self.wfile.write(m3u8_content.encode("utf-8"))
+                    self.wfile.write(content.encode("utf-8") if content else b"")
                 return
-            elif path.endswith(".ts") or path == "boost/disney/stream":
-                cmd = [
-                    "ffmpeg", "-nostdin",
-                    "-reconnect", "1", "-reconnect_streamed", "1", "-reconnect_delay_max", "2",
-                    "-i", "http://151.80.18.177:86/Disney_Channel_HD/index.m3u8",
-                    "-c:v", "copy",
-                    "-c:a", "aac", "-b:a", "192k", "-af", "volume=2.5,alimiter=limit=0.95",
-                    "-f", "mpegts",
-                    "pipe:1"
-                ]
-                self.send_response(200)
-                self.send_header("Content-Type", "video/MP2T")
-                self.send_header("Access-Control-Allow-Origin", "*")
-                self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
-                self.end_headers()
-                if is_head:
+            elif path.startswith("disney/"):
+                seg_name = path.split("/", 1)[1]
+                with disney_buffer_engine.lock:
+                    cached = disney_buffer_engine.segments.get(seg_name)
+                if cached:
+                    self.send_response(200)
+                    self.send_header("Content-Type", "video/MP2T")
+                    self.send_header("Access-Control-Allow-Origin", "*")
+                    self.send_header("Cache-Control", "max-age=60, public")
+                    self.end_headers()
+                    if not is_head:
+                        self.wfile.write(cached[0])
                     return
-                proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL)
-                try:
-                    while True:
-                        chunk = proc.stdout.read(65536)
-                        if not chunk:
-                            break
-                        self.wfile.write(chunk)
-                except (BrokenPipeError, ConnectionResetError):
-                    pass
-                finally:
-                    proc.terminate()
+                else:
+                    orig_path = seg_name.replace("_", "/")
+                    full_url = urllib.parse.urljoin(disney_buffer_engine.base_url, orig_path)
                     try:
-                        proc.wait(timeout=1)
+                        req = urllib.request.Request(full_url, headers={"User-Agent": "Mozilla/5.0"})
+                        with urllib.request.urlopen(req, timeout=12) as resp:
+                            data = resp.read()
+                        with disney_buffer_engine.lock:
+                            disney_buffer_engine.segments[seg_name] = (data, time.time())
+                        self.send_response(200)
+                        self.send_header("Content-Type", "video/MP2T")
+                        self.send_header("Access-Control-Allow-Origin", "*")
+                        self.send_header("Cache-Control", "max-age=60, public")
+                        self.end_headers()
+                        if not is_head:
+                            self.wfile.write(data)
+                        return
                     except Exception:
-                        proc.kill()
-                return
+                        self.send_response(404)
+                        self.end_headers()
+                        return
 
         # Serve Real-Time Twitch Live EPG with actual streamer & failover metadata
         if path in ["twitch/epg", "twitch/epg.xml", "epg/twitch.xml"]:
