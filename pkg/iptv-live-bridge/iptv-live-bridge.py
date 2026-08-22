@@ -553,9 +553,9 @@ class BridgeHandler(BaseHTTPRequestHandler):
                 return
             
         # Serve Esperanto TV 24/7 Linear Broadcast stream
-        if path.startswith("esperanto/") or path.startswith("esperantotv/") or path == "esperanto":
+        if path.startswith("esperanto/") or path.startswith("esperantotv/") or path in ["esperanto", "esperantotv", "esperanto.m3u8", "esperantotv.m3u8"]:
             seg_name = path.split("/", 1)[1] if "/" in path else ""
-            if seg_name in ["", "tv", "live", "live.m3u8", "tv.m3u8", "index.m3u8"]:
+            if seg_name in ["", "tv", "live", "live.m3u8", "tv.m3u8", "index.m3u8", "playlist.m3u8", "stream.m3u8", "master.m3u8"] or path in ["esperanto", "esperantotv", "esperanto.m3u8", "esperantotv.m3u8"]:
                 m3u8_content = generate_live_linear_m3u8(ESPERANTO_DIR, prefix="esperanto/")
                 self.send_response(200)
                 self.send_header("Content-Type", "application/vnd.apple.mpegurl")
@@ -591,11 +591,19 @@ class BridgeHandler(BaseHTTPRequestHandler):
                         with open(seg_path, "rb") as f:
                             self.wfile.write(f.read())
                     return
+                else:
+                    self.send_response(404)
+                    self.send_header("Content-Type", "text/plain")
+                    self.send_header("Access-Control-Allow-Origin", "*")
+                    self.end_headers()
+                    if not is_head:
+                        self.wfile.write(b"404 Not Found: Segment not found\n")
+                    return
 
         # Serve Bahá'í Studio Sessions 24/7 Linear Broadcast stream
-        if path.startswith("bahai/") or path.startswith("bahaitv/") or path == "bahai":
+        if path.startswith("bahai/") or path.startswith("bahaitv/") or path in ["bahai", "bahaitv", "bahai.m3u8", "bahaitv.m3u8"]:
             seg_name = path.split("/", 1)[1] if "/" in path else ""
-            if seg_name in ["", "tv", "live", "live.m3u8", "tv.m3u8", "index.m3u8"]:
+            if seg_name in ["", "tv", "live", "live.m3u8", "tv.m3u8", "index.m3u8", "playlist.m3u8", "stream.m3u8", "master.m3u8"] or path in ["bahai", "bahaitv", "bahai.m3u8", "bahaitv.m3u8"]:
                 m3u8_content = generate_live_linear_m3u8(BAHAI_DIR, prefix="bahai/", standby_ts="/iptv/test/bahai_standby0.ts")
                 self.send_response(200)
                 self.send_header("Content-Type", "application/vnd.apple.mpegurl")
@@ -630,6 +638,14 @@ class BridgeHandler(BaseHTTPRequestHandler):
                     if not is_head:
                         with open(seg_path, "rb") as f:
                             self.wfile.write(f.read())
+                    return
+                else:
+                    self.send_response(404)
+                    self.send_header("Content-Type", "text/plain")
+                    self.send_header("Access-Control-Allow-Origin", "*")
+                    self.end_headers()
+                    if not is_head:
+                        self.wfile.write(b"404 Not Found: Segment not found\n")
                     return
             
         # Serve Real-Time Twitch Live EPG with actual streamer & failover metadata
