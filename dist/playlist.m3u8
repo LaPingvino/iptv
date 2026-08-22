@@ -58,6 +58,9 @@ https://www.khuwemultimedia.com/hls/mntv/mntv.m3u8
 #EXTINF:-1 tvg-id="TVVitoria.mz" tvg-name="TV Vitória" group-title="MZ Geral",TV Vitória Moçambique
 https://stmv1.srvif.com/tvvitoriamz/tvvitoriamz/playlist.m3u8
 
+#EXTINF:-1 tvg-id="ReinoInfantilTV.mz@HD" tvg-name="Reino Infantil TV" group-title="MZ Geral",Reino Infantil TV (Moçambique 1080p)
+https://www.khuwemultimedia.com/hls/reinoinfantiltv/reinoinfantiltv.m3u8
+
 #EXTINF:-1 tvg-id="Canal.24.horas.es" tvg-name="24 Horas" group-title="ES Geral & TDT",RTVE Canal 24 Horas
 https://ztnr.rtve.es/ztnr/1694255.m3u8
 
