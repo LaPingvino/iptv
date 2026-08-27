@@ -1,0 +1,15 @@
+- name: Cadena SER España
+  group: ES Rádio
+  tvg_id: CadenaSER.es
+  tvg_name: Cadena SER
+  url: https://playerservices.streamtheworld.com/api/livestream-redirect/CADENASER.mp3
+- name: Radio Galega (Galego)
+  group: ES Rádio
+  tvg_id: RadioGalega.es
+  tvg_name: Radio Galega
+  url: https://crtvg-radiogalega-hls.flumotion.cloud/playlist.m3u8
+- name: Radio Galega Música
+  group: ES Rádio
+  tvg_id: RadioGalegaMusica.es
+  tvg_name: Radio Galega Música
+  url: https://crtvg-radiogalega-musica-hls.flumotion.cloud/playlist.m3u8

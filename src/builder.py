@@ -46,6 +46,60 @@ def load_channels(data_dir):
                 
     return all_channels
 
+GROUP_BASE_CHNO = {
+    # 📺 Television (1 - 899)
+    "PT Geral": 1,
+    "MZ Geral": 20,
+    "Notícias": 100,
+    "ES Geral & TDT": 200,
+    "Galiza": 230,
+    "Regional & Local": 260,
+    "Filmes & Docs": 300,
+    "Sci-Fi & Cult Retro": 350,
+    "Natureza & Slow TV": 400,
+    "Desporto": 500,
+    "Infantil & Kids": 600,
+    "Música & Video": 700,
+    "Cívico & Parlamento": 800,
+    "Religião": 850,
+    
+    # 🎮 Distant Block: Gaming Streams (1000 - 1999)
+    "Speedrunning & Marathons": 1000,
+    "Mario & Romhacks": 1050,
+    "Tetris": 1100,
+    "Indie & Variety Gaming": 1150,
+    
+    # 🧪 Distant Block: Diagnostics (2000 - 2999)
+    "Diag": 2000,
+    
+    # 📻 Unified Radio Block (5000 - 8999)
+    "PT Rádio": 5000,
+    "MZ Rádio": 5100,
+    "ES Rádio": 6000,
+    "NL Rádio": 7000,
+    "BE Rádio": 7200,
+    "Rádio Global": 8000,
+    "Esperanto & Afrikaans Rádio": 8200,
+}
+
+def assign_channel_numbers(channels):
+    used_numbers = set()
+    for ch in channels:
+        if "chno" in ch and isinstance(ch["chno"], int):
+            used_numbers.add(ch["chno"])
+            
+    group_allocator = {}
+    for ch in channels:
+        if "chno" not in ch or ch["chno"] is None:
+            grp = ch.get("group", "Outros")
+            base = GROUP_BASE_CHNO.get(grp, 9000)
+            cur = max(base, group_allocator.get(grp, base))
+            while cur in used_numbers:
+                cur += 1
+            ch["chno"] = cur
+            used_numbers.add(cur)
+            group_allocator[grp] = cur + 1
+
 def format_channel_m3u(ch):
     name = ch.get("name", "Unknown")
     group = ch.get("group", "Outros")
@@ -63,6 +117,8 @@ def format_channel_m3u(ch):
         inf_parts.append(f'tvg-logo="{logo}"')
     if group:
         inf_parts.append(f'group-title="{group}"')
+    if ch.get("chno") is not None:
+        inf_parts.append(f'tvg-chno="{ch["chno"]}"')
     if is_radio:
         inf_parts.append('radio="true"')
         
@@ -240,6 +296,8 @@ def build_playlists():
     os.makedirs(dist_dir, exist_ok=True)
     
     channels = load_channels(data_dir)
+    assign_channel_numbers(channels)
+    channels.sort(key=lambda c: c.get("chno", 99999))
     print(f"Loaded {len(channels)} total channels from {data_dir}")
     
     groups_count = {}

@@ -1,368 +1,374 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/epg.xml.gz,https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-m3upt.xml.xz,https://raw.githubusercontent.com/Free-TV/IPTV/master/epg.xml.gz" x-tvg-url="https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/epg.xml.gz,https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-m3upt.xml.xz,https://raw.githubusercontent.com/Free-TV/IPTV/master/epg.xml.gz"
 
 
-#EXTINF:-1 tvg-id="CadenaSER.es" tvg-name="Cadena SER" group-title="ES Rádio" radio="true",Cadena SER España
-https://playerservices.streamtheworld.com/api/livestream-redirect/CADENASER.mp3
-
-#EXTINF:-1 tvg-id="WLGI.us" tvg-name="Radio Bahai" group-title="Religião" radio="true",Radio Bahá'í (WLGI 90.9 FM)
+#EXTINF:-1 tvg-id="WLGI.us" tvg-name="Radio Bahai" group-title="Religião" tvg-chno="855" radio="true",Radio Bahá'í (WLGI 90.9 FM)
 https://wlgi.streamguys1.com/live
 
-#EXTINF:-1 tvg-id="Antena1.pt" tvg-name="RDP Antena 1" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-1.png" group-title="PT Rádio" radio="true",RDP Antena 1
+#EXTINF:-1 tvg-id="Antena1.pt" tvg-name="RDP Antena 1" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-1.png" group-title="PT Rádio" tvg-chno="5000" radio="true",RDP Antena 1
 https://streaming-live.rtp.pt/liveradio/antena180a/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Antena2.pt" tvg-name="RDP Antena 2" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-2.png" group-title="PT Rádio" radio="true",RDP Antena 2
+#EXTINF:-1 tvg-id="Antena2.pt" tvg-name="RDP Antena 2" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-2.png" group-title="PT Rádio" tvg-chno="5001" radio="true",RDP Antena 2
 https://streaming-live.rtp.pt/liveradio/antena280a/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Antena3.pt" tvg-name="RDP Antena 3" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-3.png" group-title="PT Rádio" radio="true",RDP Antena 3
+#EXTINF:-1 tvg-id="Antena3.pt" tvg-name="RDP Antena 3" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-3.png" group-title="PT Rádio" tvg-chno="5002" radio="true",RDP Antena 3
 https://streaming-live.rtp.pt/liveradio/antena380a/playlist.m3u8
 
-#EXTINF:-1 tvg-id="RDPAfrica.pt" tvg-name="RDP África" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RDP-Africa.png" group-title="PT Rádio" radio="true",RDP África
+#EXTINF:-1 tvg-id="RDPAfrica.pt" tvg-name="RDP África" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RDP-Africa.png" group-title="PT Rádio" tvg-chno="5003" radio="true",RDP África
 https://streaming-live.rtp.pt/liveradio/rdpafrica80a/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Antena1Acores.pt" tvg-name="Antena 1 Açores" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-1-Acores.png" group-title="PT Rádio" radio="true",Antena 1 Açores
+#EXTINF:-1 tvg-id="Antena1Acores.pt" tvg-name="Antena 1 Açores" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-1-Acores.png" group-title="PT Rádio" tvg-chno="5004" radio="true",Antena 1 Açores
 https://streaming-live.rtp.pt/liveradio/antena1acores80a/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Antena1Madeira.pt" tvg-name="Antena 1 Madeira" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-1-Madeira.png" group-title="PT Rádio" radio="true",Antena 1 Madeira
+#EXTINF:-1 tvg-id="Antena1Madeira.pt" tvg-name="Antena 1 Madeira" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-1-Madeira.png" group-title="PT Rádio" tvg-chno="5005" radio="true",Antena 1 Madeira
 https://streaming-live.rtp.pt/liveradio/antena1madeira80a/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Antena3Madeira.pt" tvg-name="Antena 3 Madeira" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-3-Madeira.png" group-title="PT Rádio" radio="true",Antena 3 Madeira
+#EXTINF:-1 tvg-id="Antena3Madeira.pt" tvg-name="Antena 3 Madeira" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-3-Madeira.png" group-title="PT Rádio" tvg-chno="5006" radio="true",Antena 3 Madeira
 https://streaming-live.rtp.pt/liveradio/antena3madeira80a/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Renascenca.pt" tvg-name="Rádio Renascença" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-Renascenca.png" group-title="PT Rádio" radio="true",Rádio Renascença
+#EXTINF:-1 tvg-id="Renascenca.pt" tvg-name="Rádio Renascença" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-Renascenca.png" group-title="PT Rádio" tvg-chno="5007" radio="true",Rádio Renascença
 https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_RENASCENCA.mp3
 
-#EXTINF:-1 tvg-id="RFM.pt" tvg-name="RFM" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RFM.png" group-title="PT Rádio" radio="true",RFM
+#EXTINF:-1 tvg-id="RFM.pt" tvg-name="RFM" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RFM.png" group-title="PT Rádio" tvg-chno="5008" radio="true",RFM
 https://playerservices.streamtheworld.com/api/livestream-redirect/RFM.mp3
 
-#EXTINF:-1 tvg-id="MegaHits.pt" tvg-name="Mega Hits" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Mega-Hits.png" group-title="PT Rádio" radio="true",Mega Hits
+#EXTINF:-1 tvg-id="MegaHits.pt" tvg-name="Mega Hits" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Mega-Hits.png" group-title="PT Rádio" tvg-chno="5009" radio="true",Mega Hits
 https://playerservices.streamtheworld.com/api/livestream-redirect/MEGA_HITS.mp3
 
-#EXTINF:-1 tvg-id="RadioComercial.pt" tvg-name="Rádio Comercial" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-Comercial.png" group-title="PT Rádio" radio="true",Rádio Comercial
+#EXTINF:-1 tvg-id="RadioComercial.pt" tvg-name="Rádio Comercial" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-Comercial.png" group-title="PT Rádio" tvg-chno="5010" radio="true",Rádio Comercial
 https://stream-icy.bauermedia.pt/comercial.mp3
 
-#EXTINF:-1 tvg-id="M80.pt" tvg-name="M80 Portugal" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/M80-Radio.png" group-title="PT Rádio" radio="true",M80 Portugal
+#EXTINF:-1 tvg-id="M80.pt" tvg-name="M80 Portugal" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/M80-Radio.png" group-title="PT Rádio" tvg-chno="5011" radio="true",M80 Portugal
 https://stream-icy.bauermedia.pt/m80.mp3
 
-#EXTINF:-1 tvg-id="CidadeFM.pt" tvg-name="Cidade FM" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Cidade-FM.png" group-title="PT Rádio" radio="true",Cidade FM
+#EXTINF:-1 tvg-id="CidadeFM.pt" tvg-name="Cidade FM" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Cidade-FM.png" group-title="PT Rádio" tvg-chno="5012" radio="true",Cidade FM
 https://stream-icy.bauermedia.pt/cidade.mp3
 
-#EXTINF:-1 tvg-id="SmoothFM.pt" tvg-name="Smooth FM" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Smooth-FM.png" group-title="PT Rádio" radio="true",Smooth FM
+#EXTINF:-1 tvg-id="SmoothFM.pt" tvg-name="Smooth FM" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Smooth-FM.png" group-title="PT Rádio" tvg-chno="5013" radio="true",Smooth FM
 https://stream-icy.bauermedia.pt/smooth.mp3
 
-#EXTINF:-1 tvg-id="TSF.pt" tvg-name="TSF" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TSF.png" group-title="PT Rádio" radio="true",TSF Rádio Notícias
+#EXTINF:-1 tvg-id="TSF.pt" tvg-name="TSF" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TSF.png" group-title="PT Rádio" tvg-chno="5014" radio="true",TSF Rádio Notícias
 https://tsfdirecto.tsf.pt/tsfdirecto.mp3
 
-#EXTINF:-1 tvg-id="RUC.pt" tvg-name="Rádio Universitária de Coimbra" tvg-logo="https://bucket-backblaze.ruc.pt/file/bucket-ruc-pt/wp-content/uploads/2021/02/15233926/Logo-RUC-2020_assinaturas_Prancheta-1-copia.png" group-title="PT Rádio" radio="true",RUC - Rádio Universidade de Coimbra
+#EXTINF:-1 tvg-id="RUC.pt" tvg-name="Rádio Universitária de Coimbra" tvg-logo="https://bucket-backblaze.ruc.pt/file/bucket-ruc-pt/wp-content/uploads/2021/02/15233926/Logo-RUC-2020_assinaturas_Prancheta-1-copia.png" group-title="PT Rádio" tvg-chno="5015" radio="true",RUC - Rádio Universidade de Coimbra
 https://stream.ruc.pt/high
 
-#EXTINF:-1 tvg-id="NPORadio1.nl" tvg-name="NPO Radio 1" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nporadio1.png" group-title="NL Rádio" radio="true",NPO Radio 1
-https://icecast.omroep.nl/radio1-bb-mp3
-
-#EXTINF:-1 tvg-id="NPORadio2.nl" tvg-name="NPO Radio 2" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nporadio2.png" group-title="NL Rádio" radio="true",NPO Radio 2
-https://icecast.omroep.nl/radio2-bb-mp3
-
-#EXTINF:-1 tvg-id="NPO3FM.nl" tvg-name="NPO 3FM" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/npo3fm.png" group-title="NL Rádio" radio="true",NPO 3FM
-https://icecast.omroep.nl/3fm-bb-mp3
-
-#EXTINF:-1 tvg-id="NPOKlassiek.nl" tvg-name="NPO Klassiek" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/npoklassiek.png" group-title="NL Rádio" radio="true",NPO Klassiek (Radio 4)
-https://icecast.omroep.nl/radio4-bb-mp3
-
-#EXTINF:-1 tvg-id="NPORadio5.nl" tvg-name="NPO Radio 5" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nporadio5.png" group-title="NL Rádio" radio="true",NPO Radio 5
-https://icecast.omroep.nl/radio5-bb-mp3
-
-#EXTINF:-1 tvg-id="FunX.nl" tvg-name="NPO FunX" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/funx.png" group-title="NL Rádio" radio="true",NPO FunX
-https://icecast.omroep.nl/funx-bb-mp3
-
-#EXTINF:-1 tvg-id="NPOBlend.nl" tvg-name="NPO Blend" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/funx.png" group-title="NL Rádio" radio="true",NPO Blend
-https://icecast.omroep.nl/radio6-bb-mp3
-
-#EXTINF:-1 tvg-id="Radio538.nl" tvg-name="Radio 538" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/538.png" group-title="NL Rádio" radio="true",Radio 538
-https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO538.mp3
-
-#EXTINF:-1 tvg-id="SLAM.nl" tvg-name="SLAM!" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/SLAM%21_logo_2020.svg/512px-SLAM%21_logo_2020.svg.png" group-title="NL Rádio" radio="true",SLAM!
-https://stream.slam.nl/slam_mp3
-
-#EXTINF:-1 tvg-id="QmusicRadio.nl" tvg-name="Qmusic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Qmusic_logo_2019.svg/512px-Qmusic_logo_2019.svg.png" group-title="NL Rádio" radio="true",Qmusic NL
-https://stream.qmusic.nl/qmusic/mp3
-
-#EXTINF:-1 tvg-id="RadioVeronica.nl" tvg-name="Radio Veronica" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radioveronica.png" group-title="NL Rádio" radio="true",Radio Veronica
-https://playerservices.streamtheworld.com/api/livestream-redirect/VERONICA.mp3
-
-#EXTINF:-1 tvg-id="SkyRadio.nl" tvg-name="Sky Radio" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/skyradio.png" group-title="NL Rádio" radio="true",Sky Radio
-https://playerservices.streamtheworld.com/api/livestream-redirect/SKYRADIO.mp3
-
-#EXTINF:-1 tvg-id="Radio10.nl" tvg-name="Radio 10" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radio10.png" group-title="NL Rádio" radio="true",Radio 10
-https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO10.mp3
-
-#EXTINF:-1 tvg-id="ArrowClassicRock.nl" tvg-name="Arrow Classic Rock" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/arrowclassicrock.png" group-title="NL Rádio" radio="true",Arrow Classic Rock
-http://stream.gal.io/arrow
-
-#EXTINF:-1 tvg-id="Sublime.nl" tvg-name="Sublime" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/sublime.png" group-title="NL Rádio" radio="true",Sublime
-https://stream.sublime.nl/sublime_mp3
-
-#EXTINF:-1 tvg-id="BNRNieuwsradio.nl" tvg-name="BNR Nieuwsradio" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/bnr.png" group-title="NL Rádio" radio="true",BNR Nieuwsradio
-https://stream.bnr.nl/bnr_mp3_128_01
-
-#EXTINF:-1 tvg-id="KINK.nl" tvg-name="KINK" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/kink.png" group-title="NL Rádio" radio="true",KINK
-https://playerservices.streamtheworld.com/api/livestream-redirect/KINK.mp3
-
-#EXTINF:-1 tvg-id="OmropFryslanRadio.nl" tvg-name="Omrop Fryslân Radio" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omropfryslan.png" group-title="NL Rádio" radio="true",Omrop Fryslân Radio (Frysk)
-https://d3pvma9xb2775h.cloudfront.net/icecast/omropfryslan/radio.mp3
-
-#EXTINF:-1 tvg-id="L1Radio.nl" tvg-name="L1 Radio" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/l1.png" group-title="NL Rádio" radio="true",L1 Radio (Limburgs Dialect)
-http://d34pj260kw1xmk.cloudfront.net/icecast/l1/radio-bb-mp3
-
-#EXTINF:-1 tvg-id="L1Plateweg.nl" tvg-name="L1 Plat-eweg" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/l1.png" group-title="NL Rádio" radio="true",L1 Plat-eweg (Limburgs Dialectmuziek)
-https://d34pj260kw1xmk.cloudfront.net/icecast/l1/plat-eweg-bb-mp3
-
-#EXTINF:-1 tvg-id="OmroepBrabantRadio.nl" tvg-name="Omroep Brabant Radio" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepbrabant.png" group-title="NL Rádio" radio="true",Omroep Brabant Radio
-https://av.omroepbrabant.nl/icecast/omroepbrabant/mp3hq
-
-#EXTINF:-1 tvg-id="OmroepWestRadio.nl" tvg-name="Omroep West Radio" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepwest.png" group-title="NL Rádio" radio="true",Omroep West Radio
-http://icecast.stream.bbvms.com/omroepwest_radio
-
-#EXTINF:-1 tvg-id="OmroepZeelandRadio.nl" tvg-name="Omroep Zeeland Radio" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepzeeland.png" group-title="NL Rádio" radio="true",Omroep Zeeland Radio
-https://d3isaxd2t6q8zm.cloudfront.net/icecast/omroepzeeland/omroepzeeland_radio
-
-#EXTINF:-1 tvg-id="TukkerFM.nl" tvg-name="Tukker FM" group-title="NL Rádio" radio="true",Tukker FM (Twents / Piratenhits)
-https://stream.tukkerfm.nl/tukkerfm
-
-#EXTINF:-1 tvg-id="RadioContinu.nl" tvg-name="Radio Continu" group-title="NL Rádio" radio="true",Radio Continu (Noord & Oost NL)
-https://stream.radiocontinu.nl/radiocontinu
-
-#EXTINF:-1 tvg-id="GigantFM.nl" tvg-name="Gigant FM" group-title="NL Rádio" radio="true",Gigant FM (Piratenmuziek)
-https://stream.gigantfm.nl/gigantfm
-
-#EXTINF:-1 tvg-id="RadioGelderland.nl" tvg-name="Radio Gelderland" group-title="NL Rádio" radio="true",Radio Gelderland
-https://d2od87akyl46nm.cloudfront.net/icecast/omroepgelderland/radiogelderland
-
-#EXTINF:-1 tvg-id="RadioNoord.nl" tvg-name="Radio Noord" group-title="NL Rádio" radio="true",Radio Noord (Groningen)
-https://d2od87akyl46nm.cloudfront.net/icecast/rtvnoord/radio
-
-#EXTINF:-1 tvg-id="100pNL.nl" tvg-name="100% NL" group-title="NL Rádio" radio="true",100% NL
-https://stream.100p.nl/100pctnl.mp3
-
-#EXTINF:-1 tvg-id="100pNLNederpop.nl" tvg-name="100% NL Nederpop" group-title="NL Rádio" radio="true",100% NL Nederpop
-https://stream.100p.nl/web02_mp3
-
-#EXTINF:-1 tvg-id="100pNLFeest.nl" tvg-name="100% NL Feest" group-title="NL Rádio" radio="true",100% NL Feest
-https://stream.100p.nl/web03_mp3
-
-#EXTINF:-1 tvg-id="KeizerstadClassics.nl" tvg-name="Keizerstad Classics" group-title="NL Rádio" radio="true",Keizerstad Classics (Nijmegen/Arnhem)
-http://server-06.stream-server.nl:8800/;stream.mp3
-
-#EXTINF:-1 tvg-id="RadioDecibel.nl" tvg-name="Radio Decibel" group-title="NL Rádio" radio="true",Radio Decibel (Randstad)
-https://playerservices.streamtheworld.com/api/livestream-redirect/RADIODECIBEL.mp3
-
-#EXTINF:-1 tvg-id="RadioNL.nl" tvg-name="RadioNL" group-title="NL Rádio" radio="true",RadioNL
-https://stream.radionl.fm/radionl
-
-#EXTINF:-1 tvg-id="WaterstadFM.nl" tvg-name="Waterstad FM" group-title="NL Rádio" radio="true",Waterstad FM (Friesland)
-https://stream.waterstadfm.nl/waterstadfm
-
-#EXTINF:-1 tvg-id="FreezFM.nl" tvg-name="Freez FM" group-title="NL Rádio" radio="true",Freez FM (Noord-NL)
-https://stream.freezfm.nl/freezfm
-
-#EXTINF:-1 tvg-id="DeltaFM.nl" tvg-name="Delta FM" group-title="NL Rádio" radio="true",Delta FM (Twente)
-https://stream.deltafm.nl/deltafm
-
-#EXTINF:-1 tvg-id="Studio040.nl" tvg-name="Studio 040" group-title="NL Rádio" radio="true",Studio 040 (Eindhoven)
-https://stream.studio040.nl/studio040
-
-#EXTINF:-1 tvg-id="StudioBrussel.be" tvg-name="Studio Brussel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="BE Rádio" radio="true",Studio Brussel
-https://icecast.vrtcdn.be/stubru-high.mp3
-
-#EXTINF:-1 tvg-id="StuBruDeTijdloze.be" tvg-name="StuBru De Tijdloze" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="BE Rádio" radio="true",StuBru De Tijdloze
-https://icecast.vrtcdn.be/stubru_tijdloze-high.mp3
-
-#EXTINF:-1 tvg-id="Radio1.be" tvg-name="Radio 1 VRT" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-1-BE.png" group-title="BE Rádio" radio="true",Radio 1 (VRT Belgium)
-https://icecast.vrtcdn.be/radio1-high.mp3
-
-#EXTINF:-1 tvg-id="Radio2Antwerpen.be" tvg-name="Radio 2 Antwerpen" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-2-BE.png" group-title="BE Rádio" radio="true",Radio 2 (VRT Antwerpen)
-https://icecast.vrtcdn.be/ra2ant-high.mp3
-
-#EXTINF:-1 tvg-id="MNM.be" tvg-name="MNM" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/MNM.png" group-title="BE Rádio" radio="true",MNM (VRT)
-https://icecast.vrtcdn.be/mnm-high.mp3
-
-#EXTINF:-1 tvg-id="Klara.be" tvg-name="Klara" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Klara.png" group-title="BE Rádio" radio="true",Klara (VRT Classical)
-https://icecast.vrtcdn.be/klara-high.mp3
-
-#EXTINF:-1 tvg-id="KlaraContinuo.be" tvg-name="Klara Continuo" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Klara.png" group-title="BE Rádio" radio="true",Klara Continuo
-https://icecast.vrtcdn.be/klaracontinuo-high.mp3
-
-#EXTINF:-1 tvg-id="Classic21.be" tvg-name="Classic 21" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Classic-21.png" group-title="BE Rádio" radio="true",Classic 21 (RTBF Rock)
-https://radios.rtbf.be/classic21-128.mp3
-
-#EXTINF:-1 tvg-id="LaPremiere.be" tvg-name="RTBF La Première" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/La-Premiere.png" group-title="BE Rádio" radio="true",RTBF La Première
-https://radios.rtbf.be/laprem1ere-128.mp3
-
-#EXTINF:-1 tvg-id="Musiq3.be" tvg-name="RTBF Musiq3" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Musiq3.png" group-title="BE Rádio" radio="true",RTBF Musiq3
-https://radios.rtbf.be/musiq3-128.mp3
-
-#EXTINF:-1 tvg-id="BRF1.be" tvg-name="BRF 1" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/brf1.png" group-title="BE Rádio" radio="true",BRF 1 (Ostbelgien Deutsch)
-http://mp3.stream.brf.be/brf1.mp3
-
-#EXTINF:-1 tvg-id="BRF2.be" tvg-name="BRF 2" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/brf2.png" group-title="BE Rádio" radio="true",BRF 2 (Ostbelgien Deutsch Schlager)
-http://mp3.stream.brf.be/brf2.mp3
-
-#EXTINF:-1 tvg-id="RMAntenaNacional.mz" tvg-name="RM Antena Nacional" group-title="MZ Rádio" radio="true",Rádio Moçambique - Antena Nacional
+#EXTINF:-1 tvg-id="RMAntenaNacional.mz" tvg-name="RM Antena Nacional" group-title="MZ Rádio" tvg-chno="5100" radio="true",Rádio Moçambique - Antena Nacional
 http://node.stream-africa.com:8000/AntenaNacional
 
-#EXTINF:-1 tvg-id="RMDesporto.mz" tvg-name="RM Desporto" group-title="MZ Rádio" radio="true",Rádio Moçambique - RM Desporto
+#EXTINF:-1 tvg-id="RMDesporto.mz" tvg-name="RM Desporto" group-title="MZ Rádio" tvg-chno="5101" radio="true",Rádio Moçambique - RM Desporto
 http://node.stream-africa.com:8000/RMDesporto
 
-#EXTINF:-1 tvg-id="RMCidadeMaputo.mz" tvg-name="RM Cidade Maputo" group-title="MZ Rádio" radio="true",Rádio Moçambique - Cidade Maputo
+#EXTINF:-1 tvg-id="RMCidadeMaputo.mz" tvg-name="RM Cidade Maputo" group-title="MZ Rádio" tvg-chno="5102" radio="true",Rádio Moçambique - Cidade Maputo
 http://node.stream-africa.com:8000/RadioCidadeMaputo
 
-#EXTINF:-1 tvg-id="RMCidadeBeira.mz" tvg-name="RM Cidade Beira" group-title="MZ Rádio" radio="true",Rádio Moçambique - Cidade Beira
+#EXTINF:-1 tvg-id="RMCidadeBeira.mz" tvg-name="RM Cidade Beira" group-title="MZ Rádio" tvg-chno="5103" radio="true",Rádio Moçambique - Cidade Beira
 http://node.stream-africa.com:8000/RadioCidadeBeira
 
-#EXTINF:-1 tvg-id="RMProvincialMaputo.mz" tvg-name="RM Maputo Provincial" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Maputo (Changana / Ronga)
+#EXTINF:-1 tvg-id="RMProvincialMaputo.mz" tvg-name="RM Maputo Provincial" group-title="MZ Rádio" tvg-chno="5104" radio="true",RM Emissor Provincial de Maputo (Changana / Ronga)
 http://node.stream-africa.com:8000/MaputoFM
 
-#EXTINF:-1 tvg-id="RMProvincialGaza.mz" tvg-name="RM Gaza Provincial" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Gaza (Changana / Chope)
+#EXTINF:-1 tvg-id="RMProvincialGaza.mz" tvg-name="RM Gaza Provincial" group-title="MZ Rádio" tvg-chno="5105" radio="true",RM Emissor Provincial de Gaza (Changana / Chope)
 http://node.stream-africa.com:8000/Gaza
 
-#EXTINF:-1 tvg-id="RMProvincialInhambane.mz" tvg-name="RM Inhambane Provincial" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Inhambane (Gitonga / Matsua / Bitonga)
+#EXTINF:-1 tvg-id="RMProvincialInhambane.mz" tvg-name="RM Inhambane Provincial" group-title="MZ Rádio" tvg-chno="5106" radio="true",RM Emissor Provincial de Inhambane (Gitonga / Matsua / Bitonga)
 http://node.stream-africa.com:8000/InhambaneFM
 
-#EXTINF:-1 tvg-id="RMProvincialSofala.mz" tvg-name="RM Sofala Provincial" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Sofala (Sena / Ndau)
+#EXTINF:-1 tvg-id="RMProvincialSofala.mz" tvg-name="RM Sofala Provincial" group-title="MZ Rádio" tvg-chno="5107" radio="true",RM Emissor Provincial de Sofala (Sena / Ndau)
 http://node.stream-africa.com:8000/Sofala
 
-#EXTINF:-1 tvg-id="RMProvincialManica.mz" tvg-name="RM Manica Provincial" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Manica (Manyika / Ndau)
+#EXTINF:-1 tvg-id="RMProvincialManica.mz" tvg-name="RM Manica Provincial" group-title="MZ Rádio" tvg-chno="5108" radio="true",RM Emissor Provincial de Manica (Manyika / Ndau)
 http://node.stream-africa.com:8000/ManicaFM
 
-#EXTINF:-1 tvg-id="RMProvincialTete.mz" tvg-name="RM Tete Provincial" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Tete (Nyanja / Nyungwe)
+#EXTINF:-1 tvg-id="RMProvincialTete.mz" tvg-name="RM Tete Provincial" group-title="MZ Rádio" tvg-chno="5109" radio="true",RM Emissor Provincial de Tete (Nyanja / Nyungwe)
 http://node.stream-africa.com:8000/TeteFM
 
-#EXTINF:-1 tvg-id="RMProvincialZambezia.mz" tvg-name="RM Zambézia Provincial" group-title="MZ Rádio" radio="true",RM Emissor Provincial da Zambézia (Elomwe / Echuwabo)
+#EXTINF:-1 tvg-id="RMProvincialZambezia.mz" tvg-name="RM Zambézia Provincial" group-title="MZ Rádio" tvg-chno="5110" radio="true",RM Emissor Provincial da Zambézia (Elomwe / Echuwabo)
 http://node.stream-africa.com:8000/ZambeziaFM
 
-#EXTINF:-1 tvg-id="RMProvincialNampula.mz" tvg-name="RM Nampula Provincial" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Nampula (Emakhuwa)
+#EXTINF:-1 tvg-id="RMProvincialNampula.mz" tvg-name="RM Nampula Provincial" group-title="MZ Rádio" tvg-chno="5111" radio="true",RM Emissor Provincial de Nampula (Emakhuwa)
 http://node.stream-africa.com:8000/Nampula
 
-#EXTINF:-1 tvg-id="RMProvincialCaboDelgado.mz" tvg-name="RM Cabo Delgado Provincial" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Cabo Delgado (Emakhuwa / Shimakonde / Kimwani)
+#EXTINF:-1 tvg-id="RMProvincialCaboDelgado.mz" tvg-name="RM Cabo Delgado Provincial" group-title="MZ Rádio" tvg-chno="5112" radio="true",RM Emissor Provincial de Cabo Delgado (Emakhuwa / Shimakonde / Kimwani)
 http://node.stream-africa.com:8000/CaboDelgadoFM
 
-#EXTINF:-1 tvg-id="RMProvincialNiassa.mz" tvg-name="RM Niassa Provincial" group-title="MZ Rádio" radio="true",RM Emissor Provincial do Niassa (Yao / Emakhuwa / Nyanja)
+#EXTINF:-1 tvg-id="RMProvincialNiassa.mz" tvg-name="RM Niassa Provincial" group-title="MZ Rádio" tvg-chno="5113" radio="true",RM Emissor Provincial do Niassa (Yao / Emakhuwa / Nyanja)
 http://node.stream-africa.com:8000/NiassaFM
 
-#EXTINF:-1 tvg-id="LMRadio.mz" tvg-name="LM Radio" group-title="MZ Rádio" radio="true",LM Radio (Maputo / Southern Africa)
+#EXTINF:-1 tvg-id="LMRadio.mz" tvg-name="LM Radio" group-title="MZ Rádio" tvg-chno="5114" radio="true",LM Radio (Maputo / Southern Africa)
 https://ukwesta.streaming.broadcast.radio/lmradio
 
-#EXTINF:-1 tvg-id="MaputoCorridor.mz" tvg-name="Maputo Corridor Radio" group-title="MZ Rádio" radio="true",Maputo Corridor Radio
+#EXTINF:-1 tvg-id="MaputoCorridor.mz" tvg-name="Maputo Corridor Radio" group-title="MZ Rádio" tvg-chno="5115" radio="true",Maputo Corridor Radio
 http://node.stream-africa.com:8000/MaputoCorridor
 
-#EXTINF:-1 tvg-id="RadioParadiseMain.us" tvg-name="Radio Paradise Main FLAC" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radioparadise.png" group-title="Rádio Global" radio="true",Radio Paradise - Main Mix (FLAC)
+#EXTINF:-1 tvg-id="CadenaSER.es" tvg-name="Cadena SER" group-title="ES Rádio" tvg-chno="6000" radio="true",Cadena SER España
+https://playerservices.streamtheworld.com/api/livestream-redirect/CADENASER.mp3
+
+#EXTINF:-1 tvg-id="RadioGalega.es" tvg-name="Radio Galega" group-title="ES Rádio" tvg-chno="6001" radio="true",Radio Galega (Galego)
+https://crtvg-radiogalega-hls.flumotion.cloud/playlist.m3u8
+
+#EXTINF:-1 tvg-id="RadioGalegaMusica.es" tvg-name="Radio Galega Música" group-title="ES Rádio" tvg-chno="6002" radio="true",Radio Galega Música
+https://crtvg-radiogalega-musica-hls.flumotion.cloud/playlist.m3u8
+
+#EXTINF:-1 tvg-id="NPORadio1.nl" tvg-name="NPO Radio 1" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nporadio1.png" group-title="NL Rádio" tvg-chno="7000" radio="true",NPO Radio 1
+https://icecast.omroep.nl/radio1-bb-mp3
+
+#EXTINF:-1 tvg-id="NPORadio2.nl" tvg-name="NPO Radio 2" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nporadio2.png" group-title="NL Rádio" tvg-chno="7001" radio="true",NPO Radio 2
+https://icecast.omroep.nl/radio2-bb-mp3
+
+#EXTINF:-1 tvg-id="NPO3FM.nl" tvg-name="NPO 3FM" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/npo3fm.png" group-title="NL Rádio" tvg-chno="7002" radio="true",NPO 3FM
+https://icecast.omroep.nl/3fm-bb-mp3
+
+#EXTINF:-1 tvg-id="NPOKlassiek.nl" tvg-name="NPO Klassiek" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/npoklassiek.png" group-title="NL Rádio" tvg-chno="7003" radio="true",NPO Klassiek (Radio 4)
+https://icecast.omroep.nl/radio4-bb-mp3
+
+#EXTINF:-1 tvg-id="NPORadio5.nl" tvg-name="NPO Radio 5" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nporadio5.png" group-title="NL Rádio" tvg-chno="7004" radio="true",NPO Radio 5
+https://icecast.omroep.nl/radio5-bb-mp3
+
+#EXTINF:-1 tvg-id="FunX.nl" tvg-name="NPO FunX" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/funx.png" group-title="NL Rádio" tvg-chno="7005" radio="true",NPO FunX
+https://icecast.omroep.nl/funx-bb-mp3
+
+#EXTINF:-1 tvg-id="NPOBlend.nl" tvg-name="NPO Blend" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/funx.png" group-title="NL Rádio" tvg-chno="7006" radio="true",NPO Blend
+https://icecast.omroep.nl/radio6-bb-mp3
+
+#EXTINF:-1 tvg-id="Radio538.nl" tvg-name="Radio 538" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/538.png" group-title="NL Rádio" tvg-chno="7007" radio="true",Radio 538
+https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO538.mp3
+
+#EXTINF:-1 tvg-id="SLAM.nl" tvg-name="SLAM!" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/SLAM%21_logo_2020.svg/512px-SLAM%21_logo_2020.svg.png" group-title="NL Rádio" tvg-chno="7008" radio="true",SLAM!
+https://stream.slam.nl/slam_mp3
+
+#EXTINF:-1 tvg-id="QmusicRadio.nl" tvg-name="Qmusic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Qmusic_logo_2019.svg/512px-Qmusic_logo_2019.svg.png" group-title="NL Rádio" tvg-chno="7009" radio="true",Qmusic NL
+https://stream.qmusic.nl/qmusic/mp3
+
+#EXTINF:-1 tvg-id="RadioVeronica.nl" tvg-name="Radio Veronica" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radioveronica.png" group-title="NL Rádio" tvg-chno="7010" radio="true",Radio Veronica
+https://playerservices.streamtheworld.com/api/livestream-redirect/VERONICA.mp3
+
+#EXTINF:-1 tvg-id="SkyRadio.nl" tvg-name="Sky Radio" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/skyradio.png" group-title="NL Rádio" tvg-chno="7011" radio="true",Sky Radio
+https://playerservices.streamtheworld.com/api/livestream-redirect/SKYRADIO.mp3
+
+#EXTINF:-1 tvg-id="Radio10.nl" tvg-name="Radio 10" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radio10.png" group-title="NL Rádio" tvg-chno="7012" radio="true",Radio 10
+https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO10.mp3
+
+#EXTINF:-1 tvg-id="ArrowClassicRock.nl" tvg-name="Arrow Classic Rock" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/arrowclassicrock.png" group-title="NL Rádio" tvg-chno="7013" radio="true",Arrow Classic Rock
+http://stream.gal.io/arrow
+
+#EXTINF:-1 tvg-id="Sublime.nl" tvg-name="Sublime" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/sublime.png" group-title="NL Rádio" tvg-chno="7014" radio="true",Sublime
+https://stream.sublime.nl/sublime_mp3
+
+#EXTINF:-1 tvg-id="BNRNieuwsradio.nl" tvg-name="BNR Nieuwsradio" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/bnr.png" group-title="NL Rádio" tvg-chno="7015" radio="true",BNR Nieuwsradio
+https://stream.bnr.nl/bnr_mp3_128_01
+
+#EXTINF:-1 tvg-id="KINK.nl" tvg-name="KINK" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/kink.png" group-title="NL Rádio" tvg-chno="7016" radio="true",KINK
+https://playerservices.streamtheworld.com/api/livestream-redirect/KINK.mp3
+
+#EXTINF:-1 tvg-id="OmropFryslanRadio.nl" tvg-name="Omrop Fryslân Radio" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omropfryslan.png" group-title="NL Rádio" tvg-chno="7017" radio="true",Omrop Fryslân Radio (Frysk)
+https://d3pvma9xb2775h.cloudfront.net/icecast/omropfryslan/radio.mp3
+
+#EXTINF:-1 tvg-id="L1Radio.nl" tvg-name="L1 Radio" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/l1.png" group-title="NL Rádio" tvg-chno="7018" radio="true",L1 Radio (Limburgs Dialect)
+http://d34pj260kw1xmk.cloudfront.net/icecast/l1/radio-bb-mp3
+
+#EXTINF:-1 tvg-id="L1Plateweg.nl" tvg-name="L1 Plat-eweg" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/l1.png" group-title="NL Rádio" tvg-chno="7019" radio="true",L1 Plat-eweg (Limburgs Dialectmuziek)
+https://d34pj260kw1xmk.cloudfront.net/icecast/l1/plat-eweg-bb-mp3
+
+#EXTINF:-1 tvg-id="OmroepBrabantRadio.nl" tvg-name="Omroep Brabant Radio" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepbrabant.png" group-title="NL Rádio" tvg-chno="7020" radio="true",Omroep Brabant Radio
+https://av.omroepbrabant.nl/icecast/omroepbrabant/mp3hq
+
+#EXTINF:-1 tvg-id="OmroepWestRadio.nl" tvg-name="Omroep West Radio" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepwest.png" group-title="NL Rádio" tvg-chno="7021" radio="true",Omroep West Radio
+http://icecast.stream.bbvms.com/omroepwest_radio
+
+#EXTINF:-1 tvg-id="OmroepZeelandRadio.nl" tvg-name="Omroep Zeeland Radio" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepzeeland.png" group-title="NL Rádio" tvg-chno="7022" radio="true",Omroep Zeeland Radio
+https://d3isaxd2t6q8zm.cloudfront.net/icecast/omroepzeeland/omroepzeeland_radio
+
+#EXTINF:-1 tvg-id="TukkerFM.nl" tvg-name="Tukker FM" group-title="NL Rádio" tvg-chno="7023" radio="true",Tukker FM (Twents / Piratenhits)
+https://stream.tukkerfm.nl/tukkerfm
+
+#EXTINF:-1 tvg-id="RadioContinu.nl" tvg-name="Radio Continu" group-title="NL Rádio" tvg-chno="7024" radio="true",Radio Continu (Noord & Oost NL)
+https://stream.radiocontinu.nl/radiocontinu
+
+#EXTINF:-1 tvg-id="GigantFM.nl" tvg-name="Gigant FM" group-title="NL Rádio" tvg-chno="7025" radio="true",Gigant FM (Piratenmuziek)
+https://stream.gigantfm.nl/gigantfm
+
+#EXTINF:-1 tvg-id="RadioGelderland.nl" tvg-name="Radio Gelderland" group-title="NL Rádio" tvg-chno="7026" radio="true",Radio Gelderland
+https://d2od87akyl46nm.cloudfront.net/icecast/omroepgelderland/radiogelderland
+
+#EXTINF:-1 tvg-id="RadioNoord.nl" tvg-name="Radio Noord" group-title="NL Rádio" tvg-chno="7027" radio="true",Radio Noord (Groningen)
+https://d2od87akyl46nm.cloudfront.net/icecast/rtvnoord/radio
+
+#EXTINF:-1 tvg-id="100pNL.nl" tvg-name="100% NL" group-title="NL Rádio" tvg-chno="7028" radio="true",100% NL
+https://stream.100p.nl/100pctnl.mp3
+
+#EXTINF:-1 tvg-id="100pNLNederpop.nl" tvg-name="100% NL Nederpop" group-title="NL Rádio" tvg-chno="7029" radio="true",100% NL Nederpop
+https://stream.100p.nl/web02_mp3
+
+#EXTINF:-1 tvg-id="100pNLFeest.nl" tvg-name="100% NL Feest" group-title="NL Rádio" tvg-chno="7030" radio="true",100% NL Feest
+https://stream.100p.nl/web03_mp3
+
+#EXTINF:-1 tvg-id="KeizerstadClassics.nl" tvg-name="Keizerstad Classics" group-title="NL Rádio" tvg-chno="7031" radio="true",Keizerstad Classics (Nijmegen/Arnhem)
+http://server-06.stream-server.nl:8800/;stream.mp3
+
+#EXTINF:-1 tvg-id="RadioDecibel.nl" tvg-name="Radio Decibel" group-title="NL Rádio" tvg-chno="7032" radio="true",Radio Decibel (Randstad)
+https://playerservices.streamtheworld.com/api/livestream-redirect/RADIODECIBEL.mp3
+
+#EXTINF:-1 tvg-id="RadioNL.nl" tvg-name="RadioNL" group-title="NL Rádio" tvg-chno="7033" radio="true",RadioNL
+https://stream.radionl.fm/radionl
+
+#EXTINF:-1 tvg-id="WaterstadFM.nl" tvg-name="Waterstad FM" group-title="NL Rádio" tvg-chno="7034" radio="true",Waterstad FM (Friesland)
+https://stream.waterstadfm.nl/waterstadfm
+
+#EXTINF:-1 tvg-id="FreezFM.nl" tvg-name="Freez FM" group-title="NL Rádio" tvg-chno="7035" radio="true",Freez FM (Noord-NL)
+https://stream.freezfm.nl/freezfm
+
+#EXTINF:-1 tvg-id="DeltaFM.nl" tvg-name="Delta FM" group-title="NL Rádio" tvg-chno="7036" radio="true",Delta FM (Twente)
+https://stream.deltafm.nl/deltafm
+
+#EXTINF:-1 tvg-id="Studio040.nl" tvg-name="Studio 040" group-title="NL Rádio" tvg-chno="7037" radio="true",Studio 040 (Eindhoven)
+https://stream.studio040.nl/studio040
+
+#EXTINF:-1 tvg-id="StudioBrussel.be" tvg-name="Studio Brussel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="BE Rádio" tvg-chno="7200" radio="true",Studio Brussel
+https://icecast.vrtcdn.be/stubru-high.mp3
+
+#EXTINF:-1 tvg-id="StuBruDeTijdloze.be" tvg-name="StuBru De Tijdloze" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="BE Rádio" tvg-chno="7201" radio="true",StuBru De Tijdloze
+https://icecast.vrtcdn.be/stubru_tijdloze-high.mp3
+
+#EXTINF:-1 tvg-id="Radio1.be" tvg-name="Radio 1 VRT" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-1-BE.png" group-title="BE Rádio" tvg-chno="7202" radio="true",Radio 1 (VRT Belgium)
+https://icecast.vrtcdn.be/radio1-high.mp3
+
+#EXTINF:-1 tvg-id="Radio2Antwerpen.be" tvg-name="Radio 2 Antwerpen" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-2-BE.png" group-title="BE Rádio" tvg-chno="7203" radio="true",Radio 2 (VRT Antwerpen)
+https://icecast.vrtcdn.be/ra2ant-high.mp3
+
+#EXTINF:-1 tvg-id="MNM.be" tvg-name="MNM" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/MNM.png" group-title="BE Rádio" tvg-chno="7204" radio="true",MNM (VRT)
+https://icecast.vrtcdn.be/mnm-high.mp3
+
+#EXTINF:-1 tvg-id="Klara.be" tvg-name="Klara" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Klara.png" group-title="BE Rádio" tvg-chno="7205" radio="true",Klara (VRT Classical)
+https://icecast.vrtcdn.be/klara-high.mp3
+
+#EXTINF:-1 tvg-id="KlaraContinuo.be" tvg-name="Klara Continuo" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Klara.png" group-title="BE Rádio" tvg-chno="7206" radio="true",Klara Continuo
+https://icecast.vrtcdn.be/klaracontinuo-high.mp3
+
+#EXTINF:-1 tvg-id="Classic21.be" tvg-name="Classic 21" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Classic-21.png" group-title="BE Rádio" tvg-chno="7207" radio="true",Classic 21 (RTBF Rock)
+https://radios.rtbf.be/classic21-128.mp3
+
+#EXTINF:-1 tvg-id="LaPremiere.be" tvg-name="RTBF La Première" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/La-Premiere.png" group-title="BE Rádio" tvg-chno="7208" radio="true",RTBF La Première
+https://radios.rtbf.be/laprem1ere-128.mp3
+
+#EXTINF:-1 tvg-id="Musiq3.be" tvg-name="RTBF Musiq3" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Musiq3.png" group-title="BE Rádio" tvg-chno="7209" radio="true",RTBF Musiq3
+https://radios.rtbf.be/musiq3-128.mp3
+
+#EXTINF:-1 tvg-id="BRF1.be" tvg-name="BRF 1" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/brf1.png" group-title="BE Rádio" tvg-chno="7210" radio="true",BRF 1 (Ostbelgien Deutsch)
+http://mp3.stream.brf.be/brf1.mp3
+
+#EXTINF:-1 tvg-id="BRF2.be" tvg-name="BRF 2" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/brf2.png" group-title="BE Rádio" tvg-chno="7211" radio="true",BRF 2 (Ostbelgien Deutsch Schlager)
+http://mp3.stream.brf.be/brf2.mp3
+
+#EXTINF:-1 tvg-id="RadioParadiseMain.us" tvg-name="Radio Paradise Main FLAC" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radioparadise.png" group-title="Rádio Global" tvg-chno="8000" radio="true",Radio Paradise - Main Mix (FLAC)
 https://stream.radioparadise.com/flac
 
-#EXTINF:-1 tvg-id="RadioParadiseMellow.us" tvg-name="Radio Paradise Mellow FLAC" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radioparadise.png" group-title="Rádio Global" radio="true",Radio Paradise - Mellow Mix (FLAC)
+#EXTINF:-1 tvg-id="RadioParadiseMellow.us" tvg-name="Radio Paradise Mellow FLAC" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radioparadise.png" group-title="Rádio Global" tvg-chno="8001" radio="true",Radio Paradise - Mellow Mix (FLAC)
 https://stream.radioparadise.com/mellow-flac
 
-#EXTINF:-1 tvg-id="RadioParadiseRock.us" tvg-name="Radio Paradise Rock FLAC" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radioparadise.png" group-title="Rádio Global" radio="true",Radio Paradise - Rock Mix (FLAC)
+#EXTINF:-1 tvg-id="RadioParadiseRock.us" tvg-name="Radio Paradise Rock FLAC" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radioparadise.png" group-title="Rádio Global" tvg-chno="8002" radio="true",Radio Paradise - Rock Mix (FLAC)
 https://stream.radioparadise.com/rock-flac
 
-#EXTINF:-1 tvg-id="RadioParadiseGlobal.us" tvg-name="Radio Paradise Global FLAC" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radioparadise.png" group-title="Rádio Global" radio="true",Radio Paradise - Global Mix (FLAC)
+#EXTINF:-1 tvg-id="RadioParadiseGlobal.us" tvg-name="Radio Paradise Global FLAC" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radioparadise.png" group-title="Rádio Global" tvg-chno="8003" radio="true",Radio Paradise - Global Mix (FLAC)
 https://stream.radioparadise.com/global-flac
 
-#EXTINF:-1 tvg-id="FIP.fr" tvg-name="FIP" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/fip.png" group-title="Rádio Global" radio="true",FIP (Radio France)
+#EXTINF:-1 tvg-id="FIP.fr" tvg-name="FIP" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/fip.png" group-title="Rádio Global" tvg-chno="8004" radio="true",FIP (Radio France)
 https://icecast.radiofrance.fr/fip-midfi.mp3
 
-#EXTINF:-1 tvg-id="FIPRock.fr" tvg-name="FIP Rock" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/fip.png" group-title="Rádio Global" radio="true",FIP Rock
+#EXTINF:-1 tvg-id="FIPRock.fr" tvg-name="FIP Rock" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/fip.png" group-title="Rádio Global" tvg-chno="8005" radio="true",FIP Rock
 https://icecast.radiofrance.fr/fiprock-midfi.mp3
 
-#EXTINF:-1 tvg-id="FIPJazz.fr" tvg-name="FIP Jazz" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/fip.png" group-title="Rádio Global" radio="true",FIP Jazz
+#EXTINF:-1 tvg-id="FIPJazz.fr" tvg-name="FIP Jazz" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/fip.png" group-title="Rádio Global" tvg-chno="8006" radio="true",FIP Jazz
 https://icecast.radiofrance.fr/fipjazz-midfi.mp3
 
-#EXTINF:-1 tvg-id="FIPElectro.fr" tvg-name="FIP Electro" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/fip.png" group-title="Rádio Global" radio="true",FIP Electro
+#EXTINF:-1 tvg-id="FIPElectro.fr" tvg-name="FIP Electro" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/fip.png" group-title="Rádio Global" tvg-chno="8007" radio="true",FIP Electro
 https://icecast.radiofrance.fr/fipelectro-midfi.mp3
 
-#EXTINF:-1 tvg-id="FIPGroove.fr" tvg-name="FIP Groove" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/fip.png" group-title="Rádio Global" radio="true",FIP Groove
+#EXTINF:-1 tvg-id="FIPGroove.fr" tvg-name="FIP Groove" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/fip.png" group-title="Rádio Global" tvg-chno="8008" radio="true",FIP Groove
 https://icecast.radiofrance.fr/fipgroove-midfi.mp3
 
-#EXTINF:-1 tvg-id="NTSRadio1.uk" tvg-name="NTS Live 1" group-title="Rádio Global" radio="true",NTS Radio 1 (London)
+#EXTINF:-1 tvg-id="NTSRadio1.uk" tvg-name="NTS Live 1" group-title="Rádio Global" tvg-chno="8009" radio="true",NTS Radio 1 (London)
 https://stream-relay-geo.ntslive.net/stream
 
-#EXTINF:-1 tvg-id="NTSRadio2.uk" tvg-name="NTS Live 2" group-title="Rádio Global" radio="true",NTS Radio 2 (London)
+#EXTINF:-1 tvg-id="NTSRadio2.uk" tvg-name="NTS Live 2" group-title="Rádio Global" tvg-chno="8010" radio="true",NTS Radio 2 (London)
 https://stream-relay-geo.ntslive.net/stream2
 
-#EXTINF:-1 tvg-id="SomaFMGrooveSalad.us" tvg-name="SomaFM Groove Salad" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png" group-title="Rádio Global" radio="true",SomaFM: Groove Salad
+#EXTINF:-1 tvg-id="SomaFMGrooveSalad.us" tvg-name="SomaFM Groove Salad" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png" group-title="Rádio Global" tvg-chno="8011" radio="true",SomaFM: Groove Salad
 https://ice2.somafm.com/groovesalad-256-mp3
 
-#EXTINF:-1 tvg-id="SomaFMSecretAgent.us" tvg-name="SomaFM Secret Agent" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png" group-title="Rádio Global" radio="true",SomaFM: Secret Agent
+#EXTINF:-1 tvg-id="SomaFMSecretAgent.us" tvg-name="SomaFM Secret Agent" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png" group-title="Rádio Global" tvg-chno="8012" radio="true",SomaFM: Secret Agent
 https://ice2.somafm.com/secretagent-128-mp3
 
-#EXTINF:-1 tvg-id="SomaFMDroneZone.us" tvg-name="SomaFM Drone Zone" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png" group-title="Rádio Global" radio="true",SomaFM: Drone Zone
+#EXTINF:-1 tvg-id="SomaFMDroneZone.us" tvg-name="SomaFM Drone Zone" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png" group-title="Rádio Global" tvg-chno="8013" radio="true",SomaFM: Drone Zone
 https://ice2.somafm.com/dronezone-256-mp3
 
-#EXTINF:-1 tvg-id="SomaFMIndiePop.us" tvg-name="SomaFM Indie Pop Rocks" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png" group-title="Rádio Global" radio="true",SomaFM: Indie Pop Rocks!
+#EXTINF:-1 tvg-id="SomaFMIndiePop.us" tvg-name="SomaFM Indie Pop Rocks" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png" group-title="Rádio Global" tvg-chno="8014" radio="true",SomaFM: Indie Pop Rocks!
 https://ice2.somafm.com/indiepop-128-mp3
 
-#EXTINF:-1 tvg-id="BBCWorldService.uk" tvg-name="BBC World Service" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/bbcworldservice.png" group-title="Rádio Global" radio="true",BBC World Service
+#EXTINF:-1 tvg-id="BBCWorldService.uk" tvg-name="BBC World Service" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/bbcworldservice.png" group-title="Rádio Global" tvg-chno="8015" radio="true",BBC World Service
 https://stream.live.vc.bbcmedia.co.uk/bbc_world_service
 
-#EXTINF:-1 tvg-id="BBCRadio6Music.uk" tvg-name="BBC Radio 6 Music" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/bbcradio6music.png" group-title="Rádio Global" radio="true",BBC Radio 6 Music
+#EXTINF:-1 tvg-id="BBCRadio6Music.uk" tvg-name="BBC Radio 6 Music" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/bbcradio6music.png" group-title="Rádio Global" tvg-chno="8016" radio="true",BBC Radio 6 Music
 https://stream.live.vc.bbcmedia.co.uk/bbc_6music
 
-#EXTINF:-1 tvg-id="KEXP.us" tvg-name="KEXP" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/kexp.png" group-title="Rádio Global" radio="true",KEXP 90.3 FM (Seattle)
+#EXTINF:-1 tvg-id="KEXP.us" tvg-name="KEXP" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/kexp.png" group-title="Rádio Global" tvg-chno="8017" radio="true",KEXP 90.3 FM (Seattle)
 https://kexp.streamguys1.com/kexp160.aac
 
-#EXTINF:-1 tvg-id="RaiRadio2.it" tvg-name="Rai Radio 2" group-title="Rádio Global" radio="true",Rai Radio 2 (Italia)
+#EXTINF:-1 tvg-id="RaiRadio2.it" tvg-name="Rai Radio 2" group-title="Rádio Global" tvg-chno="8018" radio="true",Rai Radio 2 (Italia)
 http://icestreaming.rai.it/2.mp3
 
-#EXTINF:-1 tvg-id="RaiRadio3.it" tvg-name="Rai Radio 3" group-title="Rádio Global" radio="true",Rai Radio 3 (Cultura & Classica)
+#EXTINF:-1 tvg-id="RaiRadio3.it" tvg-name="Rai Radio 3" group-title="Rádio Global" tvg-chno="8019" radio="true",Rai Radio 3 (Cultura & Classica)
 http://icestreaming.rai.it/3.mp3
 
-#EXTINF:-1 tvg-id="RadioRumantsch.ch" tvg-name="Radio Rumantsch" group-title="Rádio Global" radio="true",RTR Radio Rumantsch (Suisse / Rumantsch)
+#EXTINF:-1 tvg-id="RadioRumantsch.ch" tvg-name="Radio Rumantsch" group-title="Rádio Global" tvg-chno="8020" radio="true",RTR Radio Rumantsch (Suisse / Rumantsch)
 http://stream.srg-ssr.ch/m/rr/mp3_128
 
-#EXTINF:-1 tvg-id="RSIReteUno.ch" tvg-name="RSI Rete Uno" group-title="Rádio Global" radio="true",RSI Rete Uno (Svizzera Italiana / Ticino)
+#EXTINF:-1 tvg-id="RSIReteUno.ch" tvg-name="RSI Rete Uno" group-title="Rádio Global" tvg-chno="8021" radio="true",RSI Rete Uno (Svizzera Italiana / Ticino)
 https://stream.srg-ssr.ch/m/reteuno/mp3_128
 
-#EXTINF:-1 tvg-id="ESCRadio.eu" tvg-name="ESC Radio Eurovision" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/escradio.png" group-title="Rádio Global" radio="true",ESC Radio (Eurovision 24/7 Non-Stop)
+#EXTINF:-1 tvg-id="ESCRadio.eu" tvg-name="ESC Radio Eurovision" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/escradio.png" group-title="Rádio Global" tvg-chno="8022" radio="true",ESC Radio (Eurovision 24/7 Non-Stop)
 http://stream.escradio.com:8000/esc128.mp3
 
-#EXTINF:-1 tvg-id="RadioReloj.cu" tvg-name="Radio Reloj Cuba" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Radio_Reloj_Cuba.png/512px-Radio_Reloj_Cuba.png" group-title="Rádio Global" radio="true",Radio Reloj (Cuba 950 AM - Notícias & Metrónomo)
+#EXTINF:-1 tvg-id="RadioReloj.cu" tvg-name="Radio Reloj Cuba" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Radio_Reloj_Cuba.png/512px-Radio_Reloj_Cuba.png" group-title="Rádio Global" tvg-chno="8023" radio="true",Radio Reloj (Cuba 950 AM - Notícias & Metrónomo)
 https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/b3jbfThq
 
-#EXTINF:-1 tvg-id="SomaFMMissionControl.us" tvg-name="SomaFM Mission Control" tvg-logo="https://somafm.com/img3/missioncontrol-400.jpg" group-title="Rádio Global" radio="true",SomaFM Mission Control (NASA Comms & Space Ambient)
+#EXTINF:-1 tvg-id="SomaFMMissionControl.us" tvg-name="SomaFM Mission Control" tvg-logo="https://somafm.com/img3/missioncontrol-400.jpg" group-title="Rádio Global" tvg-chno="8024" radio="true",SomaFM Mission Control (NASA Comms & Space Ambient)
 https://ice6.somafm.com/missioncontrol-128-mp3
 
-#EXTINF:-1 tvg-id="SomaFMSecretAgent.us" tvg-name="SomaFM Secret Agent" tvg-logo="https://somafm.com/img3/secretagent-400.jpg" group-title="Rádio Global" radio="true",SomaFM Secret Agent (1960s Spy Themes & Intercepts)
+#EXTINF:-1 tvg-id="SomaFMSecretAgent.us" tvg-name="SomaFM Secret Agent" tvg-logo="https://somafm.com/img3/secretagent-400.jpg" group-title="Rádio Global" tvg-chno="8025" radio="true",SomaFM Secret Agent (1960s Spy Themes & Intercepts)
 https://ice6.somafm.com/secretagent-128-mp3
 
-#EXTINF:-1 tvg-id="SomaFMSF1033.us" tvg-name="SomaFM SF 10-33" tvg-logo="https://somafm.com/img3/sf1033-400.jpg" group-title="Rádio Global" radio="true",SomaFM SF 10-33 (Police Scanner & Ambient)
+#EXTINF:-1 tvg-id="SomaFMSF1033.us" tvg-name="SomaFM SF 10-33" tvg-logo="https://somafm.com/img3/sf1033-400.jpg" group-title="Rádio Global" tvg-chno="8026" radio="true",SomaFM SF 10-33 (Police Scanner & Ambient)
 https://ice5.somafm.com/sf1033-128-mp3
 
-#EXTINF:-1 tvg-id="LiveATCJFK.us" tvg-name="LiveATC JFK Tower" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Air_traffic_controller.svg/512px-Air_traffic_controller.svg.png" group-title="Rádio Global" radio="true",LiveATC JFK Tower & Approach (New York)
+#EXTINF:-1 tvg-id="LiveATCJFK.us" tvg-name="LiveATC JFK Tower" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Air_traffic_controller.svg/512px-Air_traffic_controller.svg.png" group-title="Rádio Global" tvg-chno="8027" radio="true",LiveATC JFK Tower & Approach (New York)
 https://s1-fmt2.liveatc.net/kjfk_twr
 
-#EXTINF:-1 tvg-id="SomaFMDEFCON.us" tvg-name="SomaFM DEF CON Radio" tvg-logo="https://somafm.com/img3/defcon-400.jpg" group-title="Rádio Global" radio="true",SomaFM DEF CON Radio (Cyberpunk & Beats)
+#EXTINF:-1 tvg-id="SomaFMDEFCON.us" tvg-name="SomaFM DEF CON Radio" tvg-logo="https://somafm.com/img3/defcon-400.jpg" group-title="Rádio Global" tvg-chno="8028" radio="true",SomaFM DEF CON Radio (Cyberpunk & Beats)
 https://ice5.somafm.com/defcon-128-mp3
 
-#EXTINF:-1 tvg-id="SomaFMSpaceStation.us" tvg-name="SomaFM Space Station Soma" tvg-logo="https://somafm.com/img3/spacestation-400.jpg" group-title="Rádio Global" radio="true",SomaFM Space Station Soma (Deep Space Ambient)
+#EXTINF:-1 tvg-id="SomaFMSpaceStation.us" tvg-name="SomaFM Space Station Soma" tvg-logo="https://somafm.com/img3/spacestation-400.jpg" group-title="Rádio Global" tvg-chno="8029" radio="true",SomaFM Space Station Soma (Deep Space Ambient)
 https://ice6.somafm.com/spacestation-128-mp3
 
-#EXTINF:-1 tvg-id="Muzaiko.eo" tvg-name="Muzaiko Esperanto" group-title="Rádio Global" radio="true",Muzaiko (24/7 Esperanto Radio)
+#EXTINF:-1 tvg-id="Muzaiko.eo" tvg-name="Muzaiko Esperanto" group-title="Rádio Global" tvg-chno="8030" radio="true",Muzaiko (24/7 Esperanto Radio)
 http://fluo.muzaiko.saluton.dk:8000/radio.mp3
 
-#EXTINF:-1 tvg-id="RadioHabanaCuba.eo" tvg-name="Radio Habana Cuba Esperanto" group-title="Rádio Global" radio="true",Radio Habana Cuba (Esperanto)
+#EXTINF:-1 tvg-id="RadioHabanaCuba.eo" tvg-name="Radio Habana Cuba Esperanto" group-title="Rádio Global" tvg-chno="8031" radio="true",Radio Habana Cuba (Esperanto)
 https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/McW3fLhs
 
-#EXTINF:-1 tvg-id="BokRadio.za" tvg-name="Bok Radio Afrikaans" group-title="Rádio Global" radio="true",Bok Radio 98.9 FM (Afrikaans)
+#EXTINF:-1 tvg-id="BokRadio.za" tvg-name="Bok Radio Afrikaans" group-title="Rádio Global" tvg-chno="8032" radio="true",Bok Radio 98.9 FM (Afrikaans)
 http://bokradio.highquality.radiostream.co.za/
 
-#EXTINF:-1 tvg-id="BosveldStereo.za" tvg-name="Bosveld Stereo Afrikaans" group-title="Rádio Global" radio="true",Bosveld Stereo 107.5 FM (Afrikaans)
+#EXTINF:-1 tvg-id="BosveldStereo.za" tvg-name="Bosveld Stereo Afrikaans" group-title="Rádio Global" tvg-chno="8033" radio="true",Bosveld Stereo 107.5 FM (Afrikaans)
 http://capeant.antfarm.co.za:8000/Bosveld
 
-#EXTINF:-1 tvg-id="FineMusicRadio.za" tvg-name="Fine Music Radio" group-title="Rádio Global" radio="true",Fine Music Radio (Cape Town Classical)
+#EXTINF:-1 tvg-id="FineMusicRadio.za" tvg-name="Fine Music Radio" group-title="Rádio Global" tvg-chno="8034" radio="true",Fine Music Radio (Cape Town Classical)
 https://edge.iono.fm/xhls/fmr_live_high.m3u8
 
-#EXTINF:-1 tvg-id="Radio3ZZZ.au" tvg-name="Radio 3ZZZ Esperanto" group-title="Rádio Global" radio="true",Radio 3ZZZ 92.3 FM (Melbourne / Esperanto)
+#EXTINF:-1 tvg-id="Radio3ZZZ.au" tvg-name="Radio 3ZZZ Esperanto" group-title="Rádio Global" tvg-chno="8035" radio="true",Radio 3ZZZ 92.3 FM (Melbourne / Esperanto)
 https://playerservices.streamtheworld.com/api/livestream-redirect/3ZZZ.mp3
 
-#EXTINF:-1 tvg-id="HitradioNamibia.na" tvg-name="Hitradio Namibia" group-title="Rádio Global" radio="true",Hitradio Namibia (Windhoek / Deutsch)
+#EXTINF:-1 tvg-id="HitradioNamibia.na" tvg-name="Hitradio Namibia" group-title="Rádio Global" tvg-chno="8036" radio="true",Hitradio Namibia (Windhoek / Deutsch)
 https://s37.derstream.net/hitradio-namibia.mp3
 
-#EXTINF:-1 tvg-id="Kosmos941.na" tvg-name="Kosmos 94.1 Afrikaans" group-title="Rádio Global" radio="true",Kosmos 94.1 (Namibië / Afrikaans)
+#EXTINF:-1 tvg-id="Kosmos941.na" tvg-name="Kosmos 94.1 Afrikaans" group-title="Rádio Global" tvg-chno="8037" radio="true",Kosmos 94.1 (Namibië / Afrikaans)
 https://edge.iono.fm/xice/88_high.mp3

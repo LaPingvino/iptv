@@ -1,963 +1,963 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/epg.xml.gz,https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-m3upt.xml.xz,https://raw.githubusercontent.com/Free-TV/IPTV/master/epg.xml.gz" x-tvg-url="https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/epg.xml.gz,https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-m3upt.xml.xz,https://raw.githubusercontent.com/Free-TV/IPTV/master/epg.xml.gz"
 
 
-#EXTINF:-1 tvg-id="RTP1.pt" tvg-name="RTP 1" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP1.png" group-title="PT Geral",RTP 1
+#EXTINF:-1 tvg-id="RTP1.pt" tvg-name="RTP 1" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP1.png" group-title="PT Geral" tvg-chno="1",RTP 1
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
 #EXTVLCOPT:http-origin=https://www.rtp.pt
 #EXTVLCOPT:http-referrer=https://www.rtp.pt/play/direto/rtp1
 https://streaming-live.rtp.pt/liverepeater/smil:rtp1HD.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="RTP2.pt" tvg-name="RTP 2" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP2.png" group-title="PT Geral",RTP 2
+#EXTINF:-1 tvg-id="RTP2.pt" tvg-name="RTP 2" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP2.png" group-title="PT Geral" tvg-chno="2",RTP 2
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
 #EXTVLCOPT:http-origin=https://www.rtp.pt
 #EXTVLCOPT:http-referrer=https://www.rtp.pt/play/direto/rtp2
 https://streaming-live.rtp.pt/liverepeater/rtp2HD.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="SIC.pt" tvg-name="SIC" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SIC.png" group-title="PT Geral",SIC
+#EXTINF:-1 tvg-id="SIC.pt" tvg-name="SIC" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SIC.png" group-title="PT Geral" tvg-chno="3",SIC
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
 #EXTVLCOPT:http-origin=https://sic.pt
 #EXTVLCOPT:http-referrer=https://sic.pt/
 https://sic.live.impresa.pt/sic1080p.m3u8
 
-#EXTINF:-1 tvg-id="TVI.pt" tvg-name="TVI" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TVI.png" group-title="PT Geral",TVI
+#EXTINF:-1 tvg-id="TVI.pt" tvg-name="TVI" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TVI.png" group-title="PT Geral" tvg-chno="4",TVI
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
 #EXTVLCOPT:http-origin=https://tviplayer.iol.pt
 #EXTVLCOPT:http-referrer=https://tviplayer.iol.pt
 https://github.com/LITUATUI/M3UPT/raw/main/M3U/TVI.m3u8
 
-#EXTINF:-1 tvg-id="RTPMemoria.pt" tvg-name="RTP Memória" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Memoria.png" group-title="PT Geral",RTP Memória
+#EXTINF:-1 tvg-id="RTPMemoria.pt" tvg-name="RTP Memória" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Memoria.png" group-title="PT Geral" tvg-chno="5",RTP Memória
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
 #EXTVLCOPT:http-origin=https://www.rtp.pt
 #EXTVLCOPT:http-referrer=https://www.rtp.pt/play/direto/rtpmemoria
 https://streaming-live.rtp.pt/liverepeater/rtpmem.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="RTPMadeira.pt" tvg-name="RTP Madeira" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Madeira.png" group-title="PT Geral",RTP Madeira
+#EXTINF:-1 tvg-id="RTPMadeira.pt" tvg-name="RTP Madeira" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Madeira.png" group-title="PT Geral" tvg-chno="6",RTP Madeira
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
 #EXTVLCOPT:http-origin=https://www.rtp.pt
 #EXTVLCOPT:http-referrer=https://www.rtp.pt/play/direto/rtmadeira
 https://streaming-live.rtp.pt/liverepeater/rtpmadeira.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="RTPAcores.pt" tvg-name="RTP Açores" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Acores.png" group-title="PT Geral",RTP Açores
+#EXTINF:-1 tvg-id="RTPAcores.pt" tvg-name="RTP Açores" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Acores.png" group-title="PT Geral" tvg-chno="7",RTP Açores
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
 #EXTVLCOPT:http-origin=https://www.rtp.pt
 #EXTVLCOPT:http-referrer=https://www.rtp.pt/play/direto/rtpacores
 https://streaming-live.rtp.pt/liverepeater/rtpacoresHD.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="RTPAfrica.pt" tvg-name="RTP África" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Africa.png" group-title="PT Geral",RTP África
+#EXTINF:-1 tvg-id="RTPAfrica.pt" tvg-name="RTP África" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Africa.png" group-title="PT Geral" tvg-chno="8",RTP África
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
 #EXTVLCOPT:http-origin=https://www.rtp.pt
 #EXTVLCOPT:http-referrer=https://www.rtp.pt/play/direto/rtpafrica
 https://streaming-live.rtp.pt/liverepeater/rtpafrica.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="TVM.mz" tvg-name="TVM" group-title="MZ Geral",TVM (Televisão de Moçambique)
+#EXTINF:-1 tvg-id="TVM.mz" tvg-name="TVM" group-title="MZ Geral" tvg-chno="20",TVM (Televisão de Moçambique)
 https://stream.tvm.co.mz/hls/tvm/playlist.m3u8
 
-#EXTINF:-1 tvg-id="MNTV.mz" tvg-name="MNTV" group-title="MZ Geral",MNTV Moçambique
+#EXTINF:-1 tvg-id="MNTV.mz" tvg-name="MNTV" group-title="MZ Geral" tvg-chno="21",MNTV Moçambique
 https://www.khuwemultimedia.com/hls/mntv/mntv.m3u8
 
-#EXTINF:-1 tvg-id="TVVitoria.mz" tvg-name="TV Vitória" group-title="MZ Geral",TV Vitória Moçambique
+#EXTINF:-1 tvg-id="TVVitoria.mz" tvg-name="TV Vitória" group-title="MZ Geral" tvg-chno="22",TV Vitória Moçambique
 https://stmv1.srvif.com/tvvitoriamz/tvvitoriamz/playlist.m3u8
 
-#EXTINF:-1 tvg-id="ReinoInfantilTV.mz@HD" tvg-name="Reino Infantil TV" group-title="MZ Geral",Reino Infantil TV (Moçambique 1080p)
+#EXTINF:-1 tvg-id="ReinoInfantilTV.mz@HD" tvg-name="Reino Infantil TV" group-title="MZ Geral" tvg-chno="23",Reino Infantil TV (Moçambique 1080p)
 https://www.khuwemultimedia.com/hls/reinoinfantiltv/reinoinfantiltv.m3u8
 
-#EXTINF:-1 tvg-id="Canal.24.horas.es" tvg-name="24 Horas" group-title="ES Geral & TDT",RTVE Canal 24 Horas
-https://rtvelivestream.rtve.es/rtvesec/24h/24h_main_dvr_720.m3u8
-
-#EXTINF:-1 tvg-id="Teledeporte.es" tvg-name="Teledeporte" group-title="ES Geral & TDT",RTVE Teledeporte (TDP)
-https://rtve01p.origin.c21livecloud.com/live-origin/tdp-hls/bitrate_1.m3u8
-
-#EXTINF:-1 tvg-id="Clan.es@HD" tvg-name="Clan" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Clan_RTVE_logo.svg/512px-Clan_RTVE_logo.svg.png" group-title="ES Geral & TDT",RTVE Clan (1080p)
-https://rtve01p.origin.c21livecloud.com/live-origin/clan-hls/bitrate_1.m3u8
-
-#EXTINF:-1 tvg-id="CanalSur.es" tvg-name="Canal Sur" group-title="ES Geral & TDT",Canal Sur Andalucía
-https://dfk2a268yviz9.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ddiii1m6jt6of/CanalSurAndaluciaES.m3u8
-
-#EXTINF:-1 tvg-id="Real.Madrid.TV.es" tvg-name="Real Madrid TV" group-title="ES Geral & TDT",Real Madrid TV
-https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
-
-#EXTINF:-1 tvg-id="CanalExtremadura.es@HD" tvg-name="Canal Extremadura" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/canalextremadura.png" group-title="ES Geral & TDT",Canal Extremadura (1080p)
-https://d2ymuyhevki1a1.cloudfront.net/wct-ddd2992e-86fc-4611-a491-7f392259e9ba/continuous/9be76611-d2cd-474d-bf19-ef702ba31b02/index.m3u8
-
-#EXTINF:-1 tvg-id="ETB.1.es" tvg-name="ETB 1" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/etb1.png" group-title="ES Geral & TDT",ETB 1 (Euskadi / Euskara)
-https://cdn1.etbon.eus/etb1on/index.m3u8
-
-#EXTINF:-1 tvg-id="ETB.2.es" tvg-name="ETB 2" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/etb2.png" group-title="ES Geral & TDT",ETB 2 (Euskadi / Castellano)
-https://cdn1.etbon.eus/etb2on/index.m3u8
-
-#EXTINF:-1 tvg-id="CadenaSER.es" tvg-name="Cadena SER" group-title="ES Rádio" radio="true",Cadena SER España
-https://playerservices.streamtheworld.com/api/livestream-redirect/CADENASER.mp3
-
-#EXTINF:-1 tvg-id="TVG.Europa.es" tvg-name="Galicia TV Europa" group-title="Galiza",Galicia TV Europa (TVG)
-https://crtvg-europa.flumotion.cloud/playlist.m3u8
-
-#EXTINF:-1 tvg-id="TeleVigo.es" tvg-name="TeleVigo" group-title="Galiza",TeleVigo (Galicia)
-https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=12687
-
-#EXTINF:-1 tvg-id="TVGMiraRadioGalega.es" tvg-name="TVG Mira Radio Galega" group-title="Galiza",TVG Mira Radio Galega (Visual)
-https://crtvg-mirarg-schlive.flumotion.cloud/crtvglive/smil:channel1PRG.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-id="RadioGalega.es" tvg-name="Radio Galega" group-title="Galiza",Radio Galega (Galego)
-https://crtvg-radiogalega-hls.flumotion.cloud/playlist.m3u8
-
-#EXTINF:-1 tvg-id="RadioGalegaMusica.es" tvg-name="Radio Galega Música" group-title="Galiza",Radio Galega Música
-https://crtvg-radiogalega-musica-hls.flumotion.cloud/playlist.m3u8
-
-#EXTINF:-1 tvg-id="RTP3.pt" tvg-name="RTP 3" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP3.png" group-title="Notícias",RTP 3
+#EXTINF:-1 tvg-id="RTP3.pt" tvg-name="RTP 3" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP3.png" group-title="Notícias" tvg-chno="100",RTP 3
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
 #EXTVLCOPT:http-origin=https://www.rtp.pt
 #EXTVLCOPT:http-referrer=https://www.rtp.pt/play/direto/rtp3
 https://streaming-live.rtp.pt/livetvhlsDVR/rtpnHDdvr.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="SICNoticias.pt" tvg-name="SIC Notícias" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SIC-Noticias.png" group-title="Notícias",SIC Notícias
+#EXTINF:-1 tvg-id="SICNoticias.pt" tvg-name="SIC Notícias" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SIC-Noticias.png" group-title="Notícias" tvg-chno="101",SIC Notícias
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
 #EXTVLCOPT:http-origin=https://sicnoticias.pt
 #EXTVLCOPT:http-referrer=https://sicnoticias.pt/
 https://sicnot.live.impresa.pt/sicnot.m3u8
 
-#EXTINF:-1 tvg-id="CNNPortugal.pt" tvg-name="CNN Portugal" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CNN-Portugal.png" group-title="Notícias",CNN Portugal
+#EXTINF:-1 tvg-id="CNNPortugal.pt" tvg-name="CNN Portugal" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CNN-Portugal.png" group-title="Notícias" tvg-chno="102",CNN Portugal
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
 #EXTVLCOPT:http-origin=https://tviplayer.iol.pt
 #EXTVLCOPT:http-referrer=https://tviplayer.iol.pt
 https://github.com/LITUATUI/M3UPT/raw/main/M3U/CNN_Portugal.m3u8
 
-#EXTINF:-1 tvg-id="CNNBrasil.br@HD" tvg-name="CNN Brasil" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CNN-Brasil.png" group-title="Notícias",CNN Brasil
+#EXTINF:-1 tvg-id="CNNBrasil.br@HD" tvg-name="CNN Brasil" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CNN-Brasil.png" group-title="Notícias" tvg-chno="103",CNN Brasil
 https://d25usgadhphvwi.cloudfront.net/hls/main.m3u8
 
-#EXTINF:-1 tvg-id="France24.fr" tvg-name="France 24 Français" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png" group-title="Notícias",France 24 (Français)
+#EXTINF:-1 tvg-id="France24.fr" tvg-name="France 24 Français" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png" group-title="Notícias" tvg-chno="104",France 24 (Français)
 https://live.france24.com/hls/live/2037179/F24_FR_HI_HLS/master_5000.m3u8
 
-#EXTINF:-1 tvg-id="France24English.fr" tvg-name="France 24 English" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png" group-title="Notícias",France 24 (English)
+#EXTINF:-1 tvg-id="France24English.fr" tvg-name="France 24 English" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png" group-title="Notícias" tvg-chno="105",France 24 (English)
 https://live.france24.com/hls/live/2037218/F24_EN_HI_HLS/master_5000.m3u8
 
-#EXTINF:-1 tvg-id="France24Spanish.fr" tvg-name="France 24 Español" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png" group-title="Notícias",France 24 (Español)
+#EXTINF:-1 tvg-id="France24Spanish.fr" tvg-name="France 24 Español" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png" group-title="Notícias" tvg-chno="106",France 24 (Español)
 https://live.france24.com/hls/live/2037220/F24_ES_HI_HLS/master_5000.m3u8
 
-#EXTINF:-1 tvg-id="BFMTV.fr@HD" tvg-name="BFM TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/BFM-TV.png" group-title="Notícias",BFM TV (France 24/7 HD)
+#EXTINF:-1 tvg-id="BFMTV.fr@HD" tvg-name="BFM TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/BFM-TV.png" group-title="Notícias" tvg-chno="107",BFM TV (France 24/7 HD)
 https://live-cdn-stream-euw1.bfmtv.bct.nextradiotv.com/master.m3u8
 
-#EXTINF:-1 tvg-id="DWEspanol.de" tvg-name="DW Español" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png" group-title="Notícias",DW Español
+#EXTINF:-1 tvg-id="DWEspanol.de" tvg-name="DW Español" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png" group-title="Notícias" tvg-chno="108",DW Español
 https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8
 
-#EXTINF:-1 tvg-id="DWEnglish.de" tvg-name="DW English" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png" group-title="Notícias",DW English
+#EXTINF:-1 tvg-id="DWEnglish.de" tvg-name="DW English" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png" group-title="Notícias" tvg-chno="109",DW English
 https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
 
-#EXTINF:-1 tvg-id="EuronewsPortuguese.fr" tvg-name="Euronews (Português)" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png" group-title="Notícias",Euronews Português
+#EXTINF:-1 tvg-id="EuronewsPortuguese.fr" tvg-name="Euronews (Português)" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png" group-title="Notícias" tvg-chno="110",Euronews Português
 https://6e52fb8b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheHhUVi1ldV9FdXJvbmV3c1BvcnR1Z3Vlc19ITFM/playlist.m3u8
 
-#EXTINF:-1 tvg-id="EuronewsEnglish.fr" tvg-name="Euronews (English)" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png" group-title="Notícias",Euronews English
+#EXTINF:-1 tvg-id="EuronewsEnglish.fr" tvg-name="Euronews (English)" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png" group-title="Notícias" tvg-chno="111",Euronews English
 https://a-cdn.klowdtv.com/live3/euronews_720p/playlist.m3u8
 
-#EXTINF:-1 tvg-id="EuronewsFrench.fr" tvg-name="Euronews (Français)" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png" group-title="Notícias",Euronews Français
+#EXTINF:-1 tvg-id="EuronewsFrench.fr" tvg-name="Euronews (Français)" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png" group-title="Notícias" tvg-chno="112",Euronews Français
 https://2f6c5bf4.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheHhUVi1ldV9FdXJvbmV3c0ZyYW5jYWlzX0hMUw/playlist.m3u8
 
-#EXTINF:-1 tvg-id="NHKWorldJapan.jp@HD" tvg-name="NHK World Japan" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nhkworld.png" group-title="Notícias",NHK World-Japan (English 1080p)
+#EXTINF:-1 tvg-id="NHKWorldJapan.jp@HD" tvg-name="NHK World Japan" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nhkworld.png" group-title="Notícias" tvg-chno="113",NHK World-Japan (English 1080p)
 https://media-tyo.hls.nhkworld.jp/hls/w/live/master.m3u8
 
-#EXTINF:-1 tvg-id="TVBrasil.br@HD" tvg-name="TV Brasil" group-title="Notícias",TV Brasil (EBC)
+#EXTINF:-1 tvg-id="TVBrasil.br@HD" tvg-name="TV Brasil" group-title="Notícias" tvg-chno="114",TV Brasil (EBC)
 https://tvbrasilinternacional-stream.ebc.com.br/index.m3u8
 
-#EXTINF:-1 tvg-id="FIFAPlus.ch" tvg-name="FIFA+" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/FIFA-Plus.png" group-title="Desporto",FIFA+
+#EXTINF:-1 tvg-id="Canal.24.horas.es" tvg-name="24 Horas" group-title="ES Geral & TDT" tvg-chno="200",RTVE Canal 24 Horas
+https://rtvelivestream.rtve.es/rtvesec/24h/24h_main_dvr_720.m3u8
+
+#EXTINF:-1 tvg-id="Teledeporte.es" tvg-name="Teledeporte" group-title="ES Geral & TDT" tvg-chno="201",RTVE Teledeporte (TDP)
+https://rtve01p.origin.c21livecloud.com/live-origin/tdp-hls/bitrate_1.m3u8
+
+#EXTINF:-1 tvg-id="Clan.es@HD" tvg-name="Clan" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Clan_RTVE_logo.svg/512px-Clan_RTVE_logo.svg.png" group-title="ES Geral & TDT" tvg-chno="202",RTVE Clan (1080p)
+https://rtve01p.origin.c21livecloud.com/live-origin/clan-hls/bitrate_1.m3u8
+
+#EXTINF:-1 tvg-id="CanalSur.es" tvg-name="Canal Sur" group-title="ES Geral & TDT" tvg-chno="203",Canal Sur Andalucía
+https://dfk2a268yviz9.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ddiii1m6jt6of/CanalSurAndaluciaES.m3u8
+
+#EXTINF:-1 tvg-id="Real.Madrid.TV.es" tvg-name="Real Madrid TV" group-title="ES Geral & TDT" tvg-chno="204",Real Madrid TV
+https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
+
+#EXTINF:-1 tvg-id="CanalExtremadura.es@HD" tvg-name="Canal Extremadura" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/canalextremadura.png" group-title="ES Geral & TDT" tvg-chno="205",Canal Extremadura (1080p)
+https://d2ymuyhevki1a1.cloudfront.net/wct-ddd2992e-86fc-4611-a491-7f392259e9ba/continuous/9be76611-d2cd-474d-bf19-ef702ba31b02/index.m3u8
+
+#EXTINF:-1 tvg-id="ETB.1.es" tvg-name="ETB 1" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/etb1.png" group-title="ES Geral & TDT" tvg-chno="206",ETB 1 (Euskadi / Euskara)
+https://cdn1.etbon.eus/etb1on/index.m3u8
+
+#EXTINF:-1 tvg-id="ETB.2.es" tvg-name="ETB 2" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/etb2.png" group-title="ES Geral & TDT" tvg-chno="207",ETB 2 (Euskadi / Castellano)
+https://cdn1.etbon.eus/etb2on/index.m3u8
+
+#EXTINF:-1 tvg-id="TVG.Europa.es" tvg-name="Galicia TV Europa" group-title="Galiza" tvg-chno="230",Galicia TV Europa (TVG)
+https://crtvg-europa.flumotion.cloud/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TeleVigo.es" tvg-name="TeleVigo" group-title="Galiza" tvg-chno="231",TeleVigo (Galicia)
+https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=12687
+
+#EXTINF:-1 tvg-id="TVGMiraRadioGalega.es" tvg-name="TVG Mira Radio Galega" group-title="Galiza" tvg-chno="232",TVG Mira Radio Galega (Visual)
+https://crtvg-mirarg-schlive.flumotion.cloud/crtvglive/smil:channel1PRG.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="XON.nl" tvg-name="XON Ede" group-title="Regional & Local" tvg-chno="260",XON (Ede TV)
+https://live.omroepnet.nl/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="Omroep.Gelderland.nl" tvg-name="Omroep Gelderland" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepgelderland.png" group-title="Regional & Local" tvg-chno="261",Omroep Gelderland
+https://d2od87akyl46nm.cloudfront.net/live/omroepgelderland/tvgelderland-hls/index.m3u8
+
+#EXTINF:-1 tvg-id="Omroep.Brabant.nl" tvg-name="Omroep Brabant" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepbrabant.png" group-title="Regional & Local" tvg-chno="262",Omroep Brabant
+https://d3slqp9xhts6qb.cloudfront.net/live/omroepbrabant/tv/index.m3u8
+
+#EXTINF:-1 tvg-id="RTV.West.nl" tvg-name="Omroep West" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepwest.png" group-title="Regional & Local" tvg-chno="263",Omroep West
+https://d1axml5ozykh3g.cloudfront.net/live/omroepwest/tv/index.m3u8
+
+#EXTINF:-1 tvg-id="Omroep.Zeeland.nl" tvg-name="Omroep Zeeland" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepzeeland.png" group-title="Regional & Local" tvg-chno="264",Omroep Zeeland
+https://d3isaxd2t6q8zm.cloudfront.net/live/omroepzeeland/tv/index.m3u8
+
+#EXTINF:-1 tvg-id="Omroep.Flevoland.nl" tvg-name="Omroep Flevoland" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepflevoland.png" group-title="Regional & Local" tvg-chno="265",Omroep Flevoland
+https://d5ms27yy6exnf.cloudfront.net/live/omroepflevoland/tv/index.m3u8
+
+#EXTINF:-1 tvg-id="Oost.nl" tvg-name="RTV Oost" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvoost.png" group-title="Regional & Local" tvg-chno="266",RTV Oost
+https://d34cg2bnc08ruf.cloudfront.net/live/rtvoost/tv/index.m3u8
+
+#EXTINF:-1 tvg-id="RTV.Rijnmond.nl" tvg-name="RTV Rijnmond" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rijnmond.png" group-title="Regional & Local" tvg-chno="267",RTV Rijnmond (Rotterdam)
+https://dcur8bjarl5c2.cloudfront.net/live/rijnmond/tv/index.m3u8
+
+#EXTINF:-1 tvg-id="RTV.Utrecht.nl" tvg-name="RTV Utrecht" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvutrecht.png" group-title="Regional & Local" tvg-chno="268",RTV Utrecht
+https://d18rwjdhpr8dcw.cloudfront.net/live/rtvutrecht/rtvutrecht/index.m3u8
+
+#EXTINF:-1 tvg-id="RTV.Drenthe.nl" tvg-name="RTV Drenthe" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvdrenthe.png" group-title="Regional & Local" tvg-chno="269",RTV Drenthe
+https://cdn.rtvdrenthe.nl/live/rtvdrenthe/tv/index.m3u8
+
+#EXTINF:-1 tvg-id="RTV.Noord.nl" tvg-name="RTV Noord" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvnoord.png" group-title="Regional & Local" tvg-chno="270",RTV Noord
+https://media.rtvnoord.nl/live/rtvnoord/tv/index.m3u8
+
+#EXTINF:-1 tvg-id="L1.nl@HD" tvg-name="L1" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/l1.png" group-title="Regional & Local" tvg-chno="271",L1 TV (Limburg)
+https://d34pj260kw1xmk.cloudfront.net/live/l1/tv/index.m3u8
+
+#EXTINF:-1 tvg-id="Omrop.Fryslân.nl" tvg-name="Omrop Fryslân" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omropfryslan.png" group-title="Regional & Local" tvg-chno="272",Omrop Fryslân TV (Frysk)
+https://s-d15f8b0b.b.cdn.bluebillywig.com/live/omropfryslan/f8f68bd5/index.m3u8
+
+#EXTINF:-1 tvg-id="AT5.nl" tvg-name="AT5" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/at5.png" group-title="Regional & Local" tvg-chno="273",AT5 (Amsterdam)
+https://takeoff.jetstre.am/?account=atvijf&file=live&output=playlist.m3u8&protocol=https&service=wowza&type=live
+
+#EXTINF:-1 tvg-id="NH.nl" tvg-name="NH Nieuws" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nhnieuws.png" group-title="Regional & Local" tvg-chno="274",NH Nieuws (Noord-Holland)
+https://takeoff.jetstre.am/?account=nhnieuws&file=live&output=playlist.m3u8&protocol=https&service=wowza&type=live
+
+#EXTINF:-1 tvg-id="RTLTeleLetzebuerg.lu@HD" tvg-name="RTL Tele Letzebuerg" group-title="Regional & Local" tvg-chno="275",RTL Télé Lëtzebuerg (1080p)
+https://stream.rtl.lu/live/hls/channel1/playlist.m3u8
+
+#EXTINF:-1 tvg-id="RTLZwee.lu@HD" tvg-name="RTL Zwee" group-title="Regional & Local" tvg-chno="276",RTL Zwee (Lëtzebuerg)
+https://stream.rtl.lu/live/hls/channel2/playlist.m3u8
+
+#EXTINF:-1 tvg-id="DasErste.de" tvg-name="Das Erste" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Das-Erste.png" group-title="Filmes & Docs" tvg-chno="300",Das Erste (ARD Germany)
+https://daserste-live.ard-mcdn.de/daserste/live/hls/int/master.m3u8
+
+#EXTINF:-1 tvg-id="KuriakosCine.pt" tvg-name="Kuriakos Cine" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Kuriakos-Cine.png" group-title="Filmes & Docs" tvg-chno="301",Kuriakos Cine
+https://w2.manasat.com/kcine/kcine.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TVCultura.br@HD" tvg-name="TV Cultura" group-title="Filmes & Docs" tvg-chno="302",TV Cultura (São Paulo)
+https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8
+
+#EXTINF:-1 tvg-id="EsperantoTV.eo@SD" tvg-name="Esperanto TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_Esperanto.svg/512px-Flag_of_Esperanto.svg.png" group-title="Filmes & Docs" tvg-chno="303",Esperanto TV (24/7 Kulturo, Muziko & Filmoj)
+https://kiefte.eu/iptv/esperanto/tv
+
+#EXTINF:-1 tvg-id="DoctorWhoClassic.uk@HD" tvg-name="Doctor Who Classic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Doctor_Who_logo_2018.svg/512px-Doctor_Who_logo_2018.svg.png" group-title="Sci-Fi & Cult Retro" tvg-chno="350",Doctor Who Classic (24/7 1080p HD)
+https://bbc-classicdrwho-1-us.roku.wurl.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="MST3K.us@HD" tvg-name="Mystery Science Theater 3000" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Mystery_Science_Theater_3000_logo.svg/512px-Mystery_Science_Theater_3000_logo.svg.png" group-title="Sci-Fi & Cult Retro" tvg-chno="351",Mystery Science Theater 3000 (MST3K 1080p)
+https://kiefte.eu/iptv/twitch/mst3k
+
+#EXTINF:-1 tvg-id="ShoutFactoryTV.us@HD" tvg-name="Shout! Factory TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Shout%21_Factory_logo.svg/512px-Shout%21_Factory_logo.svg.png" group-title="Sci-Fi & Cult Retro" tvg-chno="352",Shout! Factory TV (Cult Sci-Fi & Classics)
+https://kiefte.eu/iptv/twitch/shoutfactorytv
+
+#EXTINF:-1 tvg-id="WorldOfLongplays.tv@HD" tvg-name="World of Longplays" tvg-logo="https://static-cdn.jtvnw.net/jtv_user_pictures/worldoflongplays-profile_image-144709d73d6e9dc7-300x300.png" group-title="Sci-Fi & Cult Retro" tvg-chno="353",World of Longplays (Retro Gaming 1080p60)
+https://kiefte.eu/iptv/twitch/worldoflongplays
+
+#EXTINF:-1 tvg-id="FailArmy.us@HD" tvg-name="FailArmy" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/FailArmy_logo.png/512px-FailArmy_logo.png" group-title="Sci-Fi & Cult Retro" tvg-chno="354",FailArmy (24/7 Comedy HD)
+https://failarmy-international-nl.samsung.wurl.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="JustForLaughsGags.ca@HD" tvg-name="Just for Laughs Gags" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/Just_for_Laughs_Gags_logo.svg/512px-Just_for_Laughs_Gags_logo.svg.png" group-title="Sci-Fi & Cult Retro" tvg-chno="355",Just for Laughs Gags (Slapstick Comedy HD)
+https://distributionsjustepourrire-justforlaughsgags-1-nl.samsung.wurl.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="FilmRiseClassicTV.us@HD" tvg-name="FilmRise Classic TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/FilmRise_logo.png/512px-FilmRise_logo.png" group-title="Sci-Fi & Cult Retro" tvg-chno="356",FilmRise Classic TV (Cult Classics)
+https://d2tv4k5moji5m7.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-lu4pzh9l4b57p/master.m3u8
+
+#EXTINF:-1 tvg-id="FilmRiseAnime.us@HD" tvg-name="FilmRise Anime" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/FilmRise_logo.png/512px-FilmRise_logo.png" group-title="Sci-Fi & Cult Retro" tvg-chno="357",FilmRise Anime (24/7 Classic Anime HD)
+https://dvu7aia8rjlfm.cloudfront.net/master.m3u8
+
+#EXTINF:-1 tvg-id="AutenticHistory.de@HD" tvg-name="Autentic History" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/History_Logo_2021.svg/512px-History_Logo_2021.svg.png" group-title="Sci-Fi & Cult Retro" tvg-chno="358",Autentic History (1080p Full HD)
+https://autentic-autentichistory-1-gb.samsung.wurl.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="BobRoss.tv@HD" tvg-name="Bob Ross" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bob_Ross_The_Joy_of_Painting_logo.svg/512px-Bob_Ross_The_Joy_of_Painting_logo.svg.png" group-title="Natureza & Slow TV" tvg-chno="400",Bob Ross (24/7 The Joy of Painting)
+https://kiefte.eu/iptv/twitch/bobross
+
+#EXTINF:-1 tvg-id="LofiGirl.tv@HD" tvg-name="Lofi Girl" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Lofi_girl_logo.jpg/512px-Lofi_girl_logo.jpg" group-title="Natureza & Slow TV" tvg-chno="401",Lofi Girl (24/7 Relaxing Beats & Ambience 1080p)
+https://kiefte.eu/iptv/twitch/lofigirl
+
+#EXTINF:-1 tvg-id="RelaxBeats.tv@HD" tvg-name="Relax Beats" group-title="Natureza & Slow TV" tvg-chno="402",Relax Beats & Chill Music (24/7 HD)
+https://kiefte.eu/iptv/twitch/relaxbeats
+
+#EXTINF:-1 tvg-id="NASATV.us@HD" tvg-name="NASA Live" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/512px-NASA_logo.svg.png" group-title="Natureza & Slow TV" tvg-chno="403",NASA Live (Earth from Space & ISS 1080p)
+https://kiefte.eu/iptv/twitch/nasa
+
+#EXTINF:-1 tvg-id="RailCowGirl.tv@HD" tvg-name="RailCowGirl" tvg-logo="https://static-cdn.jtvnw.net/jtv_user_pictures/3004f2f9-715b-4395-8b3d-4c3dbdd1be36-profile_image-300x300.png" group-title="Natureza & Slow TV" tvg-chno="404",RailCowGirl (Norway Scenic Cabview Train Journeys)
+https://kiefte.eu/iptv/twitch/railcowgirl?fallback=0
+
+#EXTINF:-1 tvg-id="AdventureEarth.de@HD" tvg-name="Adventure Earth" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Earth_symbol_%28bold%29.svg/512px-Earth_symbol_%28bold%29.svg.png" group-title="Natureza & Slow TV" tvg-chno="405",Adventure Earth (1080p Full HD)
+https://autentic-adventure-earth-1-gb.samsung.wurl.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="FIFAPlus.ch" tvg-name="FIFA+" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/FIFA-Plus.png" group-title="Desporto" tvg-chno="500",FIFA+
 https://f7ccf7fc.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLXB0X0ZJRkFQbHVzUG9ydHVndWVzZV9ITFM/playlist.m3u8
 
-#EXTINF:-1 tvg-id="RedBullTV.at@HD" tvg-name="Red Bull TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Red-Bull-TV.png" group-title="Desporto",Red Bull TV
+#EXTINF:-1 tvg-id="RedBullTV.at@HD" tvg-name="Red Bull TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Red-Bull-TV.png" group-title="Desporto" tvg-chno="501",Red Bull TV
 https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
 
-#EXTINF:-1 tvg-id="SuperTennis.it@HD" tvg-name="SuperTennis" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SuperTennis.png" group-title="Desporto",SuperTennis
+#EXTINF:-1 tvg-id="SuperTennis.it@HD" tvg-name="SuperTennis" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SuperTennis.png" group-title="Desporto" tvg-chno="502",SuperTennis
 https://live-embed.supertennix.hiway.media/restreamer/supertennix_client/gpu-a-c0-16/restreamer/outgest/aa3673f1-e178-44a9-a947-ef41db73211a/manifest.m3u8
 
-#EXTINF:-1 tvg-id="Motorvision.de@HD" tvg-name="Motorvision" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Motorvision.png" group-title="Desporto",Motorvision
+#EXTINF:-1 tvg-id="Motorvision.de@HD" tvg-name="Motorvision" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Motorvision.png" group-title="Desporto" tvg-chno="503",Motorvision
 https://mvg-mv-xumo.otteravision.com/mvg/mv/mv.m3u8
 
-#EXTINF:-1 tvg-id="NauticalChannel.fr@HD" tvg-name="Nautical Channel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Nautical-Channel.png" group-title="Desporto",Nautical Channel
+#EXTINF:-1 tvg-id="NauticalChannel.fr@HD" tvg-name="Nautical Channel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Nautical-Channel.png" group-title="Desporto" tvg-chno="504",Nautical Channel
 https://streams2.sofast.tv/vglive-sk-231198/index.m3u8
 
-#EXTINF:-1 tvg-id="PortoCanal.pt@HD" tvg-name="Porto Canal" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Porto-Canal.png" group-title="Desporto",Porto Canal
+#EXTINF:-1 tvg-id="PortoCanal.pt@HD" tvg-name="Porto Canal" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Porto-Canal.png" group-title="Desporto" tvg-chno="505",Porto Canal
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 #EXTVLCOPT:http-origin=https://portocanal.sapo.pt
 #EXTVLCOPT:http-referrer=https://portocanal.sapo.pt/
 https://pull-live-156-1.global.ssl.fastly.net/pc5865dc25400thmb-ea6bf03b14fa318f7133/pc1-jhrgyuoqe5865db-68tkgb14fa318f7133f03.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="StudioBrussel.be" tvg-name="Studio Brussel Visual" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="Música & Video",Studio Brussel (Visual Radio)
-https://live.vrtcdn.be/groupb/live/450aa9d1-7173-47f3-aaaa-9701426f8ddd/live.isml/live.m3u8
-
-#EXTINF:-1 tvg-id="Qmusic.nl" tvg-name="Qmusic NL Visual" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Qmusic_logo_2019.svg/512px-Qmusic_logo_2019.svg.png" group-title="Música & Video",Qmusic NL Kijk Live (Visual Radio)
-https://stream.qmusic.nl/qmusic/videohls.m3u8
-
-#EXTINF:-1 tvg-id="DeluxeMusic.de@HD" tvg-name="DELUXE MUSIC" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Deluxe_Music_2013_Logo.svg/512px-Deluxe_Music_2013_Logo.svg.png" group-title="Música & Video",DELUXE MUSIC
-https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8
-
-#EXTINF:-1 tvg-id="DeluxeDance.de" tvg-name="DELUXE DANCE" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Deluxe_Music_2013_Logo.svg/512px-Deluxe_Music_2013_Logo.svg.png" group-title="Música & Video",DELUXE DANCE by Kontor
-https://sdn-global-live-streaming-packager-cache.3qsdn.com/64733/64733_264_live.m3u8
-
-#EXTINF:-1 tvg-id="DeluxeRap.de" tvg-name="DELUXE RAP" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Deluxe_Music_2013_Logo.svg/512px-Deluxe_Music_2013_Logo.svg.png" group-title="Música & Video",DELUXE RAP
-https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.m3u8
-
-#EXTINF:-1 tvg-id="DanceTV.nl" tvg-name="Dance TV" group-title="Música & Video",Dance TV
-https://m1b2.worldcast.tv/dancetelevisionone/2/dancetelevisionone.m3u8
-
-#EXTINF:-1 tvg-id="TraceToca.fr@HD" tvg-name="Trace Toca" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Toca.png" group-title="Música & Video",Trace Toca (Kizomba / Zouk / PALOP)
-https://channels.trace.plus/Traceprod/TOCA_hd/index.m3u8
-
-#EXTINF:-1 tvg-id="TraceAfrica.fr@HD" tvg-name="Trace Africa" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Africa.png" group-title="Música & Video",Trace Africa
-https://channels.trace.plus/Traceprod/AFRICA_FR_hd/index.m3u8
-
-#EXTINF:-1 tvg-id="TraceBrazuca.br@HD" tvg-name="Trace Brasil" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Brazuca.png" group-title="Música & Video",Trace Brasil
-https://amg01131-tracetv-tracebrazuca-xiaomi-vvr19.amagi.tv/playlist/amg01131-tracetv-tracebrazuca-xiaomi/playlist.m3u8
-
-#EXTINF:-1 tvg-id="TraceNaija.ng@HD" tvg-name="Trace Naija" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Naija.png" group-title="Música & Video",Trace Naija (Afrobeats)
-https://channels.trace.plus/Traceprod/NAIJA_hd/index.m3u8
-
-#EXTINF:-1 tvg-id="TraceKitoko.fr@HD" tvg-name="Trace Kitoko" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Kitoko.png" group-title="Música & Video",Trace Kitoko (Lingala / Central Africa)
-https://channels.trace.plus/Traceprod/KITOKO_hd/index.m3u8
-
-#EXTINF:-1 tvg-id="TraceMziki.ke@HD" tvg-name="Trace Miziki" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Miziki.png" group-title="Música & Video",Trace Miziki (East Africa)
-https://channels.trace.plus/Traceprod/MZIKI_hd/index.m3u8
-
-#EXTINF:-1 tvg-id="TraceLatina.fr@HD" tvg-name="Trace Latina" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Latina.png" group-title="Música & Video",Trace Latina
-https://channels.trace.plus/Traceprod/LATINA_hd/index.m3u8
-
-#EXTINF:-1 tvg-id="TraceUK.uk@HD" tvg-name="Trace UK" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-UK.png" group-title="Música & Video",Trace UK
-https://channels.trace.plus/Traceprod/UK_FAST_hd/index.m3u8
-
-#EXTINF:-1 tvg-id="TraceGospel.fr@HD" tvg-name="Trace Gospel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Gospel.png" group-title="Música & Video",Trace Gospel
-https://channels.trace.plus/Traceprod/GOSPEL_FR/.m3u8
-
-#EXTINF:-1 tvg-id="XITE.nl@HD" tvg-name="XITE" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.png" group-title="Música & Video",XITE
-https://xite-rakuten.amagi.tv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="XITEHitsDE.de@HD" tvg-name="XITE Hits Germany" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.png" group-title="Música & Video",XITE Hits Germany
-https://d726x48n2pd5h.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-skxr1pazhltvp/XITE_Hits.m3u8
-
-#EXTINF:-1 tvg-id="4FunTV.pl@HD" tvg-name="4Fun TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/4Fun-TV.png" group-title="Música & Video",4Fun.TV
-https://stream.4fun.tv:8888/hls/4f_high/index.m3u8
-
-#EXTINF:-1 tvg-id="DeeJayTV.it@HD" tvg-name="DeeJay TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/DeeJay-TV.png" group-title="Música & Video",DeeJay TV
-https://streamcdng5-4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S85984808/sMO0tz9Sr2Rk/playlist.m3u8
-
-#EXTINF:-1 tvg-id="NRG91TV.gr@HD" tvg-name="NRG 91 TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/NRG-91-TV.png" group-title="Música & Video",NRG 91 TV
-http://tv.nrg91.gr:1935/onweb/live/playlist.m3u8
-
-#EXTINF:-1 tvg-id="FMItaliaTV.it@HD" tvg-name="FM Italia TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/FM-Italia-TV.png" group-title="Música & Video",FM Italia TV
-https://stream1.xdevel.com/video0s975817-1182/stream/playlist.m3u8
-
-#EXTINF:-1 tvg-id="CaliforniaMusicChannel.us@HD" tvg-name="California Music Channel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/California-Music-Channel.png" group-title="Música & Video",California Music Channel
-https://cmc-cmctv-cineverse.amagi.tv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="KpopTVPlay.kr@HD" tvg-name="KpopTV Play" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/KpopTV-Play.png" group-title="Música & Video",KpopTV Play
-https://183.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Monstercat.tv@HD" tvg-name="Monstercat" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Monstercat_logo.svg/512px-Monstercat_logo.svg.png" group-title="Música & Video",Monstercat (24/7 Electronic Music HD)
-https://kiefte.eu/iptv/twitch/monstercat
-
-#EXTINF:-1 tvg-id="Insomniac.tv@HD" tvg-name="Insomniac Events" group-title="Música & Video",Insomniac (24/7 EDM Festival TV)
-https://kiefte.eu/iptv/twitch/insomniac
-
-#EXTINF:-1 tvg-id="KissKissTV.it@HD" tvg-name="Radio Kiss Kiss TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Radio_Kiss_Kiss_logo.svg/512px-Radio_Kiss_Kiss_logo.svg.png" group-title="Música & Video",Radio Kiss Kiss TV (Visual Radio 1080p)
-https://58f12ffd2447a.streamlock.net/KKMulti/livestream/playlist.m3u8
-
-#EXTINF:-1 tvg-id="HypeVisualRadio.tv@HD" tvg-name="Hype Visual Radio" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/DJ_mixer_icon.svg/512px-DJ_mixer_icon.svg.png" group-title="Música & Video",Hype Visual Radio (1080p Studio Cam)
-https://streammix.alsolnet.com/hyperadio/live/playlist.m3u8
-
-#EXTINF:-1 tvg-id="ClassicToons.us" tvg-name="Classic Toons" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tom_and_Jerry_logo.svg/512px-Tom_and_Jerry_logo.svg.png" group-title="Infantil & Kids",Classic Toons 24/7 (Tom & Jerry / Looney Tunes)
+#EXTINF:-1 tvg-id="ClassicToons.us" tvg-name="Classic Toons" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tom_and_Jerry_logo.svg/512px-Tom_and_Jerry_logo.svg.png" group-title="Infantil & Kids" tvg-chno="600",Classic Toons 24/7 (Tom & Jerry / Looney Tunes)
 https://live20.bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8
 
-#EXTINF:-1 tvg-id="MrBeanAnimated.es@HD" tvg-name="Mr. Bean Animado" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Mr_Bean_Animated_logo.svg/512px-Mr_Bean_Animated_logo.svg.png" group-title="Infantil & Kids",Mr. Bean Animado (1080p)
+#EXTINF:-1 tvg-id="MrBeanAnimated.es@HD" tvg-name="Mr. Bean Animado" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Mr_Bean_Animated_logo.svg/512px-Mr_Bean_Animated_logo.svg.png" group-title="Infantil & Kids" tvg-chno="601",Mr. Bean Animado (1080p)
 https://amg00627-amg00627c30-rakuten-es-3990.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanescc-rakutenes/playlist.m3u8
 
-#EXTINF:-1 tvg-id="ToonGogglesJr.us@HD" tvg-name="Toon Goggles Junior" group-title="Infantil & Kids",Toon Goggles Junior (720p HD)
+#EXTINF:-1 tvg-id="ToonGogglesJr.us@HD" tvg-name="Toon Goggles Junior" group-title="Infantil & Kids" tvg-chno="602",Toon Goggles Junior (720p HD)
 https://d3i6upqaqzosi1.cloudfront.net/tg/jr_us/tg_jr_us.m3u8
 
-#EXTINF:-1 tvg-id="KartoonChannel.us@HD" tvg-name="Kartoon Channel!" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Kartoon_Channel%21_logo.png/512px-Kartoon_Channel%21_logo.png" group-title="Infantil & Kids",Kartoon Channel! (720p HD)
+#EXTINF:-1 tvg-id="KartoonChannel.us@HD" tvg-name="Kartoon Channel!" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Kartoon_Channel%21_logo.png/512px-Kartoon_Channel%21_logo.png" group-title="Infantil & Kids" tvg-chno="603",Kartoon Channel! (720p HD)
 https://d2z0ysa6dgxhlc.cloudfront.net/kchan.m3u8
 
-#EXTINF:-1 tvg-id="DuckTV.sk@HD" tvg-name="DuckTV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Ducktv_logo.png/512px-Ducktv_logo.png" group-title="Infantil & Kids",DuckTV (Toddlers & Visual Animation HD)
+#EXTINF:-1 tvg-id="DuckTV.sk@HD" tvg-name="DuckTV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Ducktv_logo.png/512px-Ducktv_logo.png" group-title="Infantil & Kids" tvg-chno="604",DuckTV (Toddlers & Visual Animation HD)
 https://d6lk10bkdgfae.cloudfront.net/playlist.m3u8
 
-#EXTINF:-1 tvg-id="HappyKids.us@HD" tvg-name="HappyKids" group-title="Infantil & Kids",HappyKids (1080p Full HD)
+#EXTINF:-1 tvg-id="HappyKids.us@HD" tvg-name="HappyKids" group-title="Infantil & Kids" tvg-chno="605",HappyKids (1080p Full HD)
 https://dil9xdvretp0f.cloudfront.net/index.m3u8
 
-#EXTINF:-1 tvg-id="LegoChannel.us@HD" tvg-name="Lego Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/512px-LEGO_logo.svg.png" group-title="Infantil & Kids",Lego Channel (Animation HD)
+#EXTINF:-1 tvg-id="LegoChannel.us@HD" tvg-name="Lego Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/512px-LEGO_logo.svg.png" group-title="Infantil & Kids" tvg-chno="606",Lego Channel (Animation HD)
 https://dltiqboxjw21d.cloudfront.net/index.m3u8
 
-#EXTINF:-1 tvg-id="DasErste.de" tvg-name="Das Erste" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Das-Erste.png" group-title="Filmes & Docs",Das Erste (ARD Germany)
-https://daserste-live.ard-mcdn.de/daserste/live/hls/int/master.m3u8
+#EXTINF:-1 tvg-id="StudioBrussel.be" tvg-name="Studio Brussel Visual" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="Música & Video" tvg-chno="700",Studio Brussel (Visual Radio)
+https://live.vrtcdn.be/groupb/live/450aa9d1-7173-47f3-aaaa-9701426f8ddd/live.isml/live.m3u8
 
-#EXTINF:-1 tvg-id="KuriakosCine.pt" tvg-name="Kuriakos Cine" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Kuriakos-Cine.png" group-title="Filmes & Docs",Kuriakos Cine
-https://w2.manasat.com/kcine/kcine.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="Qmusic.nl" tvg-name="Qmusic NL Visual" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Qmusic_logo_2019.svg/512px-Qmusic_logo_2019.svg.png" group-title="Música & Video" tvg-chno="701",Qmusic NL Kijk Live (Visual Radio)
+https://stream.qmusic.nl/qmusic/videohls.m3u8
 
-#EXTINF:-1 tvg-id="TVCultura.br@HD" tvg-name="TV Cultura" group-title="Filmes & Docs",TV Cultura (São Paulo)
-https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8
+#EXTINF:-1 tvg-id="DeluxeMusic.de@HD" tvg-name="DELUXE MUSIC" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Deluxe_Music_2013_Logo.svg/512px-Deluxe_Music_2013_Logo.svg.png" group-title="Música & Video" tvg-chno="702",DELUXE MUSIC
+https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8
 
-#EXTINF:-1 tvg-id="EsperantoTV.eo@SD" tvg-name="Esperanto TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_Esperanto.svg/512px-Flag_of_Esperanto.svg.png" group-title="Filmes & Docs",Esperanto TV (24/7 Kulturo, Muziko & Filmoj)
-https://kiefte.eu/iptv/esperanto/tv
+#EXTINF:-1 tvg-id="DeluxeDance.de" tvg-name="DELUXE DANCE" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Deluxe_Music_2013_Logo.svg/512px-Deluxe_Music_2013_Logo.svg.png" group-title="Música & Video" tvg-chno="703",DELUXE DANCE by Kontor
+https://sdn-global-live-streaming-packager-cache.3qsdn.com/64733/64733_264_live.m3u8
 
-#EXTINF:-1 tvg-id="XON.nl" tvg-name="XON Ede" group-title="Regional & Local",XON (Ede TV)
-https://live.omroepnet.nl/hls/stream.m3u8
+#EXTINF:-1 tvg-id="DeluxeRap.de" tvg-name="DELUXE RAP" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Deluxe_Music_2013_Logo.svg/512px-Deluxe_Music_2013_Logo.svg.png" group-title="Música & Video" tvg-chno="704",DELUXE RAP
+https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.m3u8
 
-#EXTINF:-1 tvg-id="Omroep.Gelderland.nl" tvg-name="Omroep Gelderland" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepgelderland.png" group-title="Regional & Local",Omroep Gelderland
-https://d2od87akyl46nm.cloudfront.net/live/omroepgelderland/tvgelderland-hls/index.m3u8
+#EXTINF:-1 tvg-id="DanceTV.nl" tvg-name="Dance TV" group-title="Música & Video" tvg-chno="705",Dance TV
+https://m1b2.worldcast.tv/dancetelevisionone/2/dancetelevisionone.m3u8
 
-#EXTINF:-1 tvg-id="Omroep.Brabant.nl" tvg-name="Omroep Brabant" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepbrabant.png" group-title="Regional & Local",Omroep Brabant
-https://d3slqp9xhts6qb.cloudfront.net/live/omroepbrabant/tv/index.m3u8
+#EXTINF:-1 tvg-id="TraceToca.fr@HD" tvg-name="Trace Toca" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Toca.png" group-title="Música & Video" tvg-chno="706",Trace Toca (Kizomba / Zouk / PALOP)
+https://channels.trace.plus/Traceprod/TOCA_hd/index.m3u8
 
-#EXTINF:-1 tvg-id="RTV.West.nl" tvg-name="Omroep West" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepwest.png" group-title="Regional & Local",Omroep West
-https://d1axml5ozykh3g.cloudfront.net/live/omroepwest/tv/index.m3u8
+#EXTINF:-1 tvg-id="TraceAfrica.fr@HD" tvg-name="Trace Africa" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Africa.png" group-title="Música & Video" tvg-chno="707",Trace Africa
+https://channels.trace.plus/Traceprod/AFRICA_FR_hd/index.m3u8
 
-#EXTINF:-1 tvg-id="Omroep.Zeeland.nl" tvg-name="Omroep Zeeland" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepzeeland.png" group-title="Regional & Local",Omroep Zeeland
-https://d3isaxd2t6q8zm.cloudfront.net/live/omroepzeeland/tv/index.m3u8
+#EXTINF:-1 tvg-id="TraceBrazuca.br@HD" tvg-name="Trace Brasil" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Brazuca.png" group-title="Música & Video" tvg-chno="708",Trace Brasil
+https://amg01131-tracetv-tracebrazuca-xiaomi-vvr19.amagi.tv/playlist/amg01131-tracetv-tracebrazuca-xiaomi/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Omroep.Flevoland.nl" tvg-name="Omroep Flevoland" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepflevoland.png" group-title="Regional & Local",Omroep Flevoland
-https://d5ms27yy6exnf.cloudfront.net/live/omroepflevoland/tv/index.m3u8
+#EXTINF:-1 tvg-id="TraceNaija.ng@HD" tvg-name="Trace Naija" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Naija.png" group-title="Música & Video" tvg-chno="709",Trace Naija (Afrobeats)
+https://channels.trace.plus/Traceprod/NAIJA_hd/index.m3u8
 
-#EXTINF:-1 tvg-id="Oost.nl" tvg-name="RTV Oost" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvoost.png" group-title="Regional & Local",RTV Oost
-https://d34cg2bnc08ruf.cloudfront.net/live/rtvoost/tv/index.m3u8
+#EXTINF:-1 tvg-id="TraceKitoko.fr@HD" tvg-name="Trace Kitoko" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Kitoko.png" group-title="Música & Video" tvg-chno="710",Trace Kitoko (Lingala / Central Africa)
+https://channels.trace.plus/Traceprod/KITOKO_hd/index.m3u8
 
-#EXTINF:-1 tvg-id="RTV.Rijnmond.nl" tvg-name="RTV Rijnmond" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rijnmond.png" group-title="Regional & Local",RTV Rijnmond (Rotterdam)
-https://dcur8bjarl5c2.cloudfront.net/live/rijnmond/tv/index.m3u8
+#EXTINF:-1 tvg-id="TraceMziki.ke@HD" tvg-name="Trace Miziki" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Miziki.png" group-title="Música & Video" tvg-chno="711",Trace Miziki (East Africa)
+https://channels.trace.plus/Traceprod/MZIKI_hd/index.m3u8
 
-#EXTINF:-1 tvg-id="RTV.Utrecht.nl" tvg-name="RTV Utrecht" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvutrecht.png" group-title="Regional & Local",RTV Utrecht
-https://d18rwjdhpr8dcw.cloudfront.net/live/rtvutrecht/rtvutrecht/index.m3u8
+#EXTINF:-1 tvg-id="TraceLatina.fr@HD" tvg-name="Trace Latina" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Latina.png" group-title="Música & Video" tvg-chno="712",Trace Latina
+https://channels.trace.plus/Traceprod/LATINA_hd/index.m3u8
 
-#EXTINF:-1 tvg-id="RTV.Drenthe.nl" tvg-name="RTV Drenthe" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvdrenthe.png" group-title="Regional & Local",RTV Drenthe
-https://cdn.rtvdrenthe.nl/live/rtvdrenthe/tv/index.m3u8
+#EXTINF:-1 tvg-id="TraceUK.uk@HD" tvg-name="Trace UK" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-UK.png" group-title="Música & Video" tvg-chno="713",Trace UK
+https://channels.trace.plus/Traceprod/UK_FAST_hd/index.m3u8
 
-#EXTINF:-1 tvg-id="RTV.Noord.nl" tvg-name="RTV Noord" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvnoord.png" group-title="Regional & Local",RTV Noord
-https://media.rtvnoord.nl/live/rtvnoord/tv/index.m3u8
+#EXTINF:-1 tvg-id="TraceGospel.fr@HD" tvg-name="Trace Gospel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Gospel.png" group-title="Música & Video" tvg-chno="714",Trace Gospel
+https://channels.trace.plus/Traceprod/GOSPEL_FR/.m3u8
 
-#EXTINF:-1 tvg-id="L1.nl@HD" tvg-name="L1" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/l1.png" group-title="Regional & Local",L1 TV (Limburg)
-https://d34pj260kw1xmk.cloudfront.net/live/l1/tv/index.m3u8
+#EXTINF:-1 tvg-id="XITE.nl@HD" tvg-name="XITE" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.png" group-title="Música & Video" tvg-chno="715",XITE
+https://xite-rakuten.amagi.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Omrop.Fryslân.nl" tvg-name="Omrop Fryslân" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omropfryslan.png" group-title="Regional & Local",Omrop Fryslân TV (Frysk)
-https://s-d15f8b0b.b.cdn.bluebillywig.com/live/omropfryslan/f8f68bd5/index.m3u8
+#EXTINF:-1 tvg-id="XITEHitsDE.de@HD" tvg-name="XITE Hits Germany" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.png" group-title="Música & Video" tvg-chno="716",XITE Hits Germany
+https://d726x48n2pd5h.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-skxr1pazhltvp/XITE_Hits.m3u8
 
-#EXTINF:-1 tvg-id="AT5.nl" tvg-name="AT5" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/at5.png" group-title="Regional & Local",AT5 (Amsterdam)
-https://takeoff.jetstre.am/?account=atvijf&file=live&output=playlist.m3u8&protocol=https&service=wowza&type=live
+#EXTINF:-1 tvg-id="4FunTV.pl@HD" tvg-name="4Fun TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/4Fun-TV.png" group-title="Música & Video" tvg-chno="717",4Fun.TV
+https://stream.4fun.tv:8888/hls/4f_high/index.m3u8
 
-#EXTINF:-1 tvg-id="NH.nl" tvg-name="NH Nieuws" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nhnieuws.png" group-title="Regional & Local",NH Nieuws (Noord-Holland)
-https://takeoff.jetstre.am/?account=nhnieuws&file=live&output=playlist.m3u8&protocol=https&service=wowza&type=live
+#EXTINF:-1 tvg-id="DeeJayTV.it@HD" tvg-name="DeeJay TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/DeeJay-TV.png" group-title="Música & Video" tvg-chno="718",DeeJay TV
+https://streamcdng5-4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S85984808/sMO0tz9Sr2Rk/playlist.m3u8
 
-#EXTINF:-1 tvg-id="RTLTeleLetzebuerg.lu@HD" tvg-name="RTL Tele Letzebuerg" group-title="Regional & Local",RTL Télé Lëtzebuerg (1080p)
-https://stream.rtl.lu/live/hls/channel1/playlist.m3u8
+#EXTINF:-1 tvg-id="NRG91TV.gr@HD" tvg-name="NRG 91 TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/NRG-91-TV.png" group-title="Música & Video" tvg-chno="719",NRG 91 TV
+http://tv.nrg91.gr:1935/onweb/live/playlist.m3u8
 
-#EXTINF:-1 tvg-id="RTLZwee.lu@HD" tvg-name="RTL Zwee" group-title="Regional & Local",RTL Zwee (Lëtzebuerg)
-https://stream.rtl.lu/live/hls/channel2/playlist.m3u8
+#EXTINF:-1 tvg-id="FMItaliaTV.it@HD" tvg-name="FM Italia TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/FM-Italia-TV.png" group-title="Música & Video" tvg-chno="720",FM Italia TV
+https://stream1.xdevel.com/video0s975817-1182/stream/playlist.m3u8
 
-#EXTINF:-1 tvg-id="ARTV.pt" tvg-name="ARTV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/AR-TV.png" group-title="Cívico & Parlamento",ARTV (Canal Parlamento PT)
+#EXTINF:-1 tvg-id="CaliforniaMusicChannel.us@HD" tvg-name="California Music Channel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/California-Music-Channel.png" group-title="Música & Video" tvg-chno="721",California Music Channel
+https://cmc-cmctv-cineverse.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="KpopTVPlay.kr@HD" tvg-name="KpopTV Play" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/KpopTV-Play.png" group-title="Música & Video" tvg-chno="722",KpopTV Play
+https://183.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Monstercat.tv@HD" tvg-name="Monstercat" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Monstercat_logo.svg/512px-Monstercat_logo.svg.png" group-title="Música & Video" tvg-chno="723",Monstercat (24/7 Electronic Music HD)
+https://kiefte.eu/iptv/twitch/monstercat
+
+#EXTINF:-1 tvg-id="Insomniac.tv@HD" tvg-name="Insomniac Events" group-title="Música & Video" tvg-chno="724",Insomniac (24/7 EDM Festival TV)
+https://kiefte.eu/iptv/twitch/insomniac
+
+#EXTINF:-1 tvg-id="KissKissTV.it@HD" tvg-name="Radio Kiss Kiss TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Radio_Kiss_Kiss_logo.svg/512px-Radio_Kiss_Kiss_logo.svg.png" group-title="Música & Video" tvg-chno="725",Radio Kiss Kiss TV (Visual Radio 1080p)
+https://58f12ffd2447a.streamlock.net/KKMulti/livestream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="HypeVisualRadio.tv@HD" tvg-name="Hype Visual Radio" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/DJ_mixer_icon.svg/512px-DJ_mixer_icon.svg.png" group-title="Música & Video" tvg-chno="726",Hype Visual Radio (1080p Studio Cam)
+https://streammix.alsolnet.com/hyperadio/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="ARTV.pt" tvg-name="ARTV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/AR-TV.png" group-title="Cívico & Parlamento" tvg-chno="800",ARTV (Canal Parlamento PT)
 #EXTVLCOPT:http-user-agent="Mozilla/5.0"
 https://playout175.livextend.cloud/livenlin4/_definst_/2liveartvpub2/playlist.m3u8
 
-#EXTINF:-1 tvg-id="TweedeKamerPlenair.nl" tvg-name="Tweede Kamer Plenair" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png" group-title="Cívico & Parlamento",Tweede Kamer: Plenaire zaal (NL)
+#EXTINF:-1 tvg-id="TweedeKamerPlenair.nl" tvg-name="Tweede Kamer Plenair" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png" group-title="Cívico & Parlamento" tvg-chno="801",Tweede Kamer: Plenaire zaal (NL)
 https://livestreaming.b67buv2.tweedekamer.nl/live/plenairezaal/index.m3u8?hd=1&keyframes=1&subtitles=live
 
-#EXTINF:-1 tvg-id="TweedeKamerTroelstra.nl" tvg-name="Tweede Kamer Troelstrazaal" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png" group-title="Cívico & Parlamento",Tweede Kamer: Troelstrazaal (NL)
+#EXTINF:-1 tvg-id="TweedeKamerTroelstra.nl" tvg-name="Tweede Kamer Troelstrazaal" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png" group-title="Cívico & Parlamento" tvg-chno="802",Tweede Kamer: Troelstrazaal (NL)
 https://livestreaming.b67buv2.tweedekamer.nl/live/troelstrazaal/index.m3u8?hd=1&keyframes=1&subtitles=live
 
-#EXTINF:-1 tvg-id="TweedeKamerThorbecke.nl" tvg-name="Tweede Kamer Thorbeckezaal" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png" group-title="Cívico & Parlamento",Tweede Kamer: Thorbeckezaal (NL)
+#EXTINF:-1 tvg-id="TweedeKamerThorbecke.nl" tvg-name="Tweede Kamer Thorbeckezaal" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png" group-title="Cívico & Parlamento" tvg-chno="803",Tweede Kamer: Thorbeckezaal (NL)
 https://livestreaming.b67buv2.tweedekamer.nl/live/thorbeckezaal/index.m3u8?hd=1&keyframes=1&subtitles=live
 
-#EXTINF:-1 tvg-id="TweedeKamerGroen.nl" tvg-name="Tweede Kamer Groen van Prinstererzaal" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png" group-title="Cívico & Parlamento",Tweede Kamer: Groen van Prinstererzaal (NL)
+#EXTINF:-1 tvg-id="TweedeKamerGroen.nl" tvg-name="Tweede Kamer Groen van Prinstererzaal" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png" group-title="Cívico & Parlamento" tvg-chno="804",Tweede Kamer: Groen van Prinstererzaal (NL)
 https://livestreaming.b67buv2.tweedekamer.nl/live/groenvanprinstererzaal/index.m3u8?hd=1&keyframes=1&subtitles=live
 
-#EXTINF:-1 tvg-id="EbS1.eu@HD" tvg-name="Europe by Satellite" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/ebs.png" group-title="Cívico & Parlamento",Europe by Satellite (EbS 1)
+#EXTINF:-1 tvg-id="EbS1.eu@HD" tvg-name="Europe by Satellite" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/ebs.png" group-title="Cívico & Parlamento" tvg-chno="805",Europe by Satellite (EbS 1)
 https://streams.prd.commavservices.eu/live/ebs/index.m3u8
 
-#EXTINF:-1 tvg-id="EbS2.eu@HD" tvg-name="Europe by Satellite Plus" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/ebs_plus.png" group-title="Cívico & Parlamento",Europe by Satellite+ (EbS+)
+#EXTINF:-1 tvg-id="EbS2.eu@HD" tvg-name="Europe by Satellite Plus" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/ebs_plus.png" group-title="Cívico & Parlamento" tvg-chno="806",Europe by Satellite+ (EbS+)
 https://streams.prd.commavservices.eu/live/ebsplus/index.m3u8
 
-#EXTINF:-1 tvg-id="Speedrun.tv" tvg-name="Speedrun" group-title="Speedrunning & Marathons",Speedrun (24/7 Speedrun.com)
-https://kiefte.eu/iptv/twitch/speedrun
-
-#EXTINF:-1 tvg-id="GamesDoneQuick.tv" tvg-name="GamesDoneQuick" group-title="Speedrunning & Marathons",GamesDoneQuick (GDQ)
-https://kiefte.eu/iptv/twitch/gamesdonequick
-
-#EXTINF:-1 tvg-id="ESAMarathon.tv" tvg-name="ESAMarathon" group-title="Speedrunning & Marathons",ESAMarathon (European Speedrunner Assembly)
-https://kiefte.eu/iptv/twitch/esamarathon
-
-#EXTINF:-1 tvg-id="TASVideos.tv" tvg-name="TASVideos" group-title="Speedrunning & Marathons",TASVideos (Tool-Assisted Speedruns)
-https://kiefte.eu/iptv/twitch/tasvideos
-
-#EXTINF:-1 tvg-id="MitchFlowerPower.tv" tvg-name="MitchFlowerPower" group-title="Speedrunning & Marathons",MitchFlowerPower (SMB3 Speedruns)
-https://kiefte.eu/iptv/twitch/mitchflowerpower
-
-#EXTINF:-1 tvg-id="SmallAnt.tv" tvg-name="SmallAnt" group-title="Speedrunning & Marathons",SmallAnt (Challenges & Speedruns)
-https://kiefte.eu/iptv/twitch/smallant
-
-#EXTINF:-1 tvg-id="Carrarium.tv" tvg-name="Carrarium" group-title="Speedrunning & Marathons",Carrarium (Celeste & GDQ)
-https://kiefte.eu/iptv/twitch/carrarium
-
-#EXTINF:-1 tvg-id="TGH.tv" tvg-name="TGH" group-title="Speedrunning & Marathons",TGH (Celeste & Retro Speedruns)
-https://kiefte.eu/iptv/twitch/tgh_sr
-
-#EXTINF:-1 tvg-id="AmberCyprian.tv" tvg-name="AmberCyprian" group-title="Speedrunning & Marathons",AmberCyprian (Speedruns & Retro)
-https://kiefte.eu/iptv/twitch/ambercyprian
-
-#EXTINF:-1 tvg-id="Msushi.tv" tvg-name="Msushi" group-title="Speedrunning & Marathons",Msushi (Celeste & Portal Speedruns)
-https://kiefte.eu/iptv/twitch/msushi
-
-#EXTINF:-1 tvg-id="SMWRomhacks.tv" tvg-name="SMW Romhacks Live" group-title="Mario & Romhacks",Super Mario World (Romhacks & Kaizo Live)
-https://kiefte.eu/iptv/twitch/game/Super%20Mario%20World?bias=romhack
-
-#EXTINF:-1 tvg-id="MarioMaker2.tv" tvg-name="Mario Maker 2 Live" group-title="Mario & Romhacks",Super Mario Maker 2 (Top Live Streamer)
-https://kiefte.eu/iptv/twitch/game/Super%20Mario%20Maker%202
-
-#EXTINF:-1 tvg-id="Ryukahr.tv" tvg-name="Ryukahr" group-title="Mario & Romhacks",Ryukahr
-https://kiefte.eu/iptv/twitch/ryukahr
-
-#EXTINF:-1 tvg-id="GrandPooBear.tv" tvg-name="GrandPooBear" group-title="Mario & Romhacks",GrandPooBear
-https://kiefte.eu/iptv/twitch/grandpoobear
-
-#EXTINF:-1 tvg-id="ThaBeast721.tv" tvg-name="ThaBeast721" group-title="Mario & Romhacks",ThaBeast721 (Kaizo & Mario 64)
-https://kiefte.eu/iptv/twitch/thabeast721
-
-#EXTINF:-1 tvg-id="CarlSagan42.tv" tvg-name="CarlSagan42" group-title="Mario & Romhacks",CarlSagan42 (Kaizo & Troll Maker)
-https://kiefte.eu/iptv/twitch/carlsagan42
-
-#EXTINF:-1 tvg-id="Juzcook.tv" tvg-name="Juzcook" group-title="Mario & Romhacks",Juzcook (Kaizo & Mario Maker)
-https://kiefte.eu/iptv/twitch/juzcook
-
-#EXTINF:-1 tvg-id="Aurateur.tv" tvg-name="Aurateur" group-title="Mario & Romhacks",Aurateur (Endless Mario Maker)
-https://kiefte.eu/iptv/twitch/aurateur
-
-#EXTINF:-1 tvg-id="PangaeaPanga.tv" tvg-name="PangaeaPanga" group-title="Mario & Romhacks",PangaeaPanga (Kaizo SMW)
-https://kiefte.eu/iptv/twitch/pangaeapanga
-
-#EXTINF:-1 tvg-id="SimpleFlips.tv" tvg-name="SimpleFlips" group-title="Mario & Romhacks",SimpleFlips (SM64 Romhacks)
-https://kiefte.eu/iptv/twitch/simpleflips
-
-#EXTINF:-1 tvg-id="Failstream.tv" tvg-name="Failstream" group-title="Mario & Romhacks",Failstream (Mario Maker Builds)
-https://kiefte.eu/iptv/twitch/failstream
-
-#EXTINF:-1 tvg-id="GlitchCat7.tv" tvg-name="GlitchCat7" group-title="Mario & Romhacks",GlitchCat7 (SMW Kaizo & Speedruns)
-https://kiefte.eu/iptv/twitch/glitchcat7
-
-#EXTINF:-1 tvg-id="DGR.tv" tvg-name="DGR" group-title="Mario & Romhacks",DGR (Mario Maker & Super Mario)
-https://kiefte.eu/iptv/twitch/dgr_dave
-
-#EXTINF:-1 tvg-id="ClassicTetris.tv" tvg-name="ClassicTetris" group-title="Tetris",Classic Tetris (CTWC Main)
-https://kiefte.eu/iptv/twitch/classictetris
-
-#EXTINF:-1 tvg-id="ClassicTetris2.tv" tvg-name="ClassicTetris 2" group-title="Tetris",Classic Tetris 2 (CTWC)
-https://kiefte.eu/iptv/twitch/classictetris2
-
-#EXTINF:-1 tvg-id="ClassicTetris3.tv" tvg-name="ClassicTetris 3" group-title="Tetris",Classic Tetris 3 (CTWC)
-https://kiefte.eu/iptv/twitch/classictetris3
-
-#EXTINF:-1 tvg-id="ClassicTetris4.tv" tvg-name="ClassicTetris 4" group-title="Tetris",Classic Tetris 4 (CTWC)
-https://kiefte.eu/iptv/twitch/classictetris4
-
-#EXTINF:-1 tvg-id="NESTetris.tv" tvg-name="NES Tetris Live" group-title="Tetris",NES Tetris (Top Live Streamer)
-https://kiefte.eu/iptv/twitch/game/Tetris?bias=nes
-
-#EXTINF:-1 tvg-id="ModernTetris.tv" tvg-name="Modern Tetris Live" group-title="Tetris",Modern Tetris (Top Live Streamer)
-https://kiefte.eu/iptv/twitch/group/modern-tetris
-
-#EXTINF:-1 tvg-id="Wumbotize.tv" tvg-name="Wumbotize" group-title="Tetris",Wumbotize (Modern Tetris Master)
-https://kiefte.eu/iptv/twitch/wumbotize
-
-#EXTINF:-1 tvg-id="Doremy.tv" tvg-name="Doremy" group-title="Tetris",Doremy (Modern Tetris & TETR.IO)
-https://kiefte.eu/iptv/twitch/doremy
-
-#EXTINF:-1 tvg-id="HardDrop.tv" tvg-name="Hard Drop" group-title="Tetris",Hard Drop (Tetris Community & Tourneys)
-https://kiefte.eu/iptv/twitch/harddrop
-
-#EXTINF:-1 tvg-id="DogPlayingTetris.tv" tvg-name="DogPlayingTetris" group-title="Tetris",DogPlayingTetris (3x CTWC World Champion)
-https://kiefte.eu/iptv/twitch/dogplayingtetris
-
-#EXTINF:-1 tvg-id="EricICX.tv" tvg-name="EricICX" group-title="Tetris",EricICX (CTWC World Champion)
-https://kiefte.eu/iptv/twitch/ericicx
-
-#EXTINF:-1 tvg-id="FractalTetris.tv" tvg-name="Fractal" group-title="Tetris",Fractal (CTWC World Champion)
-https://kiefte.eu/iptv/twitch/fractal
-
-#EXTINF:-1 tvg-id="AlexT.tv" tvg-name="Alex T" group-title="Tetris",Alex_T (CTWC Champion)
-https://kiefte.eu/iptv/twitch/alex_t
-
-#EXTINF:-1 tvg-id="BlueScuti.tv" tvg-name="BlueScuti" group-title="Tetris",BlueScuti (NES Tetris Crash Record)
-https://kiefte.eu/iptv/twitch/bluescuti
-
-#EXTINF:-1 tvg-id="AnnaD.tv" tvg-name="Anna D." group-title="Tetris",Anna D. (Tetris)
-https://kiefte.eu/iptv/twitch/vinesandwillows
-
-#EXTINF:-1 tvg-id="GamingAutoLive.tv" tvg-name="Gaming 24/7 Auto-Live" group-title="Indie & Variety Gaming",Gaming 24/7 (Auto-Live Streamer)
-https://kiefte.eu/iptv/gaming/live
-
-#EXTINF:-1 tvg-id="BluePrince.tv" tvg-name="Blue Prince Live" group-title="Indie & Variety Gaming",Blue Prince (Top Live Streamer)
-https://kiefte.eu/iptv/twitch/game/Blue%20Prince
-
-#EXTINF:-1 tvg-id="Celeste.tv" tvg-name="Celeste Live" group-title="Indie & Variety Gaming",Celeste (Top Live Streamer)
-https://kiefte.eu/iptv/twitch/game/Celeste
-
-#EXTINF:-1 tvg-id="Portal.tv" tvg-name="Portal Live" group-title="Indie & Variety Gaming",Portal (Top Live Streamer)
-https://kiefte.eu/iptv/twitch/game/Portal
-
-#EXTINF:-1 tvg-id="Portal2.tv" tvg-name="Portal 2 Live" group-title="Indie & Variety Gaming",Portal 2 (Top Live Streamer)
-https://kiefte.eu/iptv/twitch/game/Portal%202
-
-#EXTINF:-1 tvg-id="TamTheGamer.tv" tvg-name="TamTheGamer" group-title="Indie & Variety Gaming",TamTheGamer (Tammy)
-https://kiefte.eu/iptv/twitch/tamthegamer
-
-#EXTINF:-1 tvg-id="ElanaOrama.tv" tvg-name="ElanaOrama" group-title="Indie & Variety Gaming",ElanaOrama (Colony Sim & Variety)
-
-
-#EXTINF:-1 tvg-id="Chess.tv" tvg-name="Chess Live" group-title="Indie & Variety Gaming",Chess (Top Live Grandmaster)
-https://kiefte.eu/iptv/twitch/game/Chess
-
-#EXTINF:-1 tvg-id="GeoGuessr.tv" tvg-name="GeoGuessr Live" group-title="Indie & Variety Gaming",GeoGuessr (World Exploration)
-https://kiefte.eu/iptv/twitch/game/GeoGuessr
-
-#EXTINF:-1 tvg-id="Trackmania.tv" tvg-name="Trackmania Live" group-title="Indie & Variety Gaming",Trackmania (Precision Racing Live)
-https://kiefte.eu/iptv/twitch/game/Trackmania
-
-#EXTINF:-1 tvg-id="Zeepkist.tv" tvg-name="Zeepkist Live" group-title="Indie & Variety Gaming",Zeepkist (Soapbox Physics Racing Live)
-https://kiefte.eu/iptv/twitch/game/Zeepkist
-
-#EXTINF:-1 tvg-id="HEVC10Bit.ref@HD" tvg-name="HEVC 10-Bit Reference" group-title="Diag",HEVC / H.265 10-Bit Reference Ladder
-https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_adv_example_hevc/master.m3u8
-
-#EXTINF:-1 tvg-id="HDR10Atmos4K.ref@UHD" tvg-name="HDR10 Dolby Atmos 4K" group-title="Diag",4K UHD • HDR10 & Dolby Vision / Atmos
-https://devstreaming-cdn.apple.com/videos/streaming/examples/adv_dv_atmos/main.m3u8
-
-#EXTINF:-1 tvg-id="BitrateLadder1080p60.ref@HD" tvg-name="1080p60 Bitrate Ladder" group-title="Diag",1080p60 Multi-Bitrate Adaptive Ladder
-https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8
-
-#EXTINF:-1 tvg-id="UnifiedTimecode.ref" tvg-name="Unified Timecode Test" group-title="Diag",Unified Streaming • Timecode & SCTE-35
-https://demo.unified-streaming.com/k8s/live/stable/scte35.isml/.m3u8
-
-#EXTINF:-1 tvg-id="BipBopSync.ref" tvg-name="BipBop Sync Reference" group-title="Diag",BipBop • Audio Sweep & Frame Sync
-https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8
-
-#EXTINF:-1 tvg-id="BridgeDiag.ref@HD" tvg-name="Bridge Diag Testcard" group-title="Diag",Bridge • IPv6 & AV-Sync Dynamic Testcard
-https://kiefte.eu/iptv/test/avsync
-
-#EXTINF:-1 tvg-id="HDRSwitch.ref@HD" tvg-name="HDR Dynamic Switch" group-title="Diag",HDR Dynamic Switch (SDR ➔ HLG ➔ HDR10)
-https://kiefte.eu/iptv/test/hdr
-
-#EXTINF:-1 tvg-id="HDRSwitchSmooth.ref@HD" tvg-name="HDR Smooth Switch (30s)" group-title="Diag",HDR Dynamic Switch Smooth (30s Cadence)
-https://kiefte.eu/iptv/test/hdr-smooth
-
-#EXTINF:-1 tvg-id="TVManaMZ.mz" tvg-name="TV Maná Moçambique" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-Mocambique.png" group-title="Religião",TV Maná Moçambique
+#EXTINF:-1 tvg-id="TVManaMZ.mz" tvg-name="TV Maná Moçambique" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-Mocambique.png" group-title="Religião" tvg-chno="850",TV Maná Moçambique
 https://w2.manasat.com/tvmana-mz/smil:tvmana-mz.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="TVMana1.pt@HD" tvg-name="TV Maná 1" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-1.png" group-title="Religião",TV Maná 1 (PT)
+#EXTINF:-1 tvg-id="TVMana1.pt@HD" tvg-name="TV Maná 1" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-1.png" group-title="Religião" tvg-chno="851",TV Maná 1 (PT)
 https://w1.manasat.com/tvmana-1/smil:tvmana-1.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="TVMana2.pt@HD" tvg-name="TV Maná 2" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-2.png" group-title="Religião",TV Maná 2 (PT)
+#EXTINF:-1 tvg-id="TVMana2.pt@HD" tvg-name="TV Maná 2" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-2.png" group-title="Religião" tvg-chno="852",TV Maná 2 (PT)
 https://w1.manasat.com/tvmana-2/smil:tvmana-2.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="KuriakosTV.pt@HD" tvg-name="Kuriakos TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Kuriakos-TV.png" group-title="Religião",Kuriakos TV
+#EXTINF:-1 tvg-id="KuriakosTV.pt@HD" tvg-name="Kuriakos TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Kuriakos-TV.png" group-title="Religião" tvg-chno="853",Kuriakos TV
 https://w1.manasat.com/ktv/ktv.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="CancaoNova.pt@HD" tvg-name="Canção Nova" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Cancao-Nova.png" group-title="Religião",Canção Nova Portugal
+#EXTINF:-1 tvg-id="CancaoNova.pt@HD" tvg-name="Canção Nova" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Cancao-Nova.png" group-title="Religião" tvg-chno="854",Canção Nova Portugal
 https://5c65286fc6ace.streamlock.net/cancaonova/CancaoNova.stream_720p/playlist.m3u8
 
-#EXTINF:-1 tvg-id="WLGI.us" tvg-name="Radio Bahai" group-title="Religião" radio="true",Radio Bahá'í (WLGI 90.9 FM)
+#EXTINF:-1 tvg-id="WLGI.us" tvg-name="Radio Bahai" group-title="Religião" tvg-chno="855" radio="true",Radio Bahá'í (WLGI 90.9 FM)
 https://wlgi.streamguys1.com/live
 
-#EXTINF:-1 tvg-id="BahaiStudioSessions.tv@HD" tvg-name="Bahá'í Studio Sessions TV" group-title="Religião",Bahá'í Studio Sessions TV (24/7 Devotional Music)
+#EXTINF:-1 tvg-id="BahaiStudioSessions.tv@HD" tvg-name="Bahá'í Studio Sessions TV" group-title="Religião" tvg-chno="856",Bahá'í Studio Sessions TV (24/7 Devotional Music)
 https://kiefte.eu/iptv/bahai/tv
 
-#EXTINF:-1 tvg-id="Antena1.pt" tvg-name="RDP Antena 1" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-1.png" group-title="PT Rádio" radio="true",RDP Antena 1
+#EXTINF:-1 tvg-id="Speedrun.tv" tvg-name="Speedrun" group-title="Speedrunning & Marathons" tvg-chno="1000",Speedrun (24/7 Speedrun.com)
+https://kiefte.eu/iptv/twitch/speedrun
+
+#EXTINF:-1 tvg-id="GamesDoneQuick.tv" tvg-name="GamesDoneQuick" group-title="Speedrunning & Marathons" tvg-chno="1001",GamesDoneQuick (GDQ)
+https://kiefte.eu/iptv/twitch/gamesdonequick
+
+#EXTINF:-1 tvg-id="ESAMarathon.tv" tvg-name="ESAMarathon" group-title="Speedrunning & Marathons" tvg-chno="1002",ESAMarathon (European Speedrunner Assembly)
+https://kiefte.eu/iptv/twitch/esamarathon
+
+#EXTINF:-1 tvg-id="TASVideos.tv" tvg-name="TASVideos" group-title="Speedrunning & Marathons" tvg-chno="1003",TASVideos (Tool-Assisted Speedruns)
+https://kiefte.eu/iptv/twitch/tasvideos
+
+#EXTINF:-1 tvg-id="MitchFlowerPower.tv" tvg-name="MitchFlowerPower" group-title="Speedrunning & Marathons" tvg-chno="1004",MitchFlowerPower (SMB3 Speedruns)
+https://kiefte.eu/iptv/twitch/mitchflowerpower
+
+#EXTINF:-1 tvg-id="SmallAnt.tv" tvg-name="SmallAnt" group-title="Speedrunning & Marathons" tvg-chno="1005",SmallAnt (Challenges & Speedruns)
+https://kiefte.eu/iptv/twitch/smallant
+
+#EXTINF:-1 tvg-id="Carrarium.tv" tvg-name="Carrarium" group-title="Speedrunning & Marathons" tvg-chno="1006",Carrarium (Celeste & GDQ)
+https://kiefte.eu/iptv/twitch/carrarium
+
+#EXTINF:-1 tvg-id="TGH.tv" tvg-name="TGH" group-title="Speedrunning & Marathons" tvg-chno="1007",TGH (Celeste & Retro Speedruns)
+https://kiefte.eu/iptv/twitch/tgh_sr
+
+#EXTINF:-1 tvg-id="AmberCyprian.tv" tvg-name="AmberCyprian" group-title="Speedrunning & Marathons" tvg-chno="1008",AmberCyprian (Speedruns & Retro)
+https://kiefte.eu/iptv/twitch/ambercyprian
+
+#EXTINF:-1 tvg-id="Msushi.tv" tvg-name="Msushi" group-title="Speedrunning & Marathons" tvg-chno="1009",Msushi (Celeste & Portal Speedruns)
+https://kiefte.eu/iptv/twitch/msushi
+
+#EXTINF:-1 tvg-id="SMWRomhacks.tv" tvg-name="SMW Romhacks Live" group-title="Mario & Romhacks" tvg-chno="1050",Super Mario World (Romhacks & Kaizo Live)
+https://kiefte.eu/iptv/twitch/game/Super%20Mario%20World?bias=romhack
+
+#EXTINF:-1 tvg-id="MarioMaker2.tv" tvg-name="Mario Maker 2 Live" group-title="Mario & Romhacks" tvg-chno="1051",Super Mario Maker 2 (Top Live Streamer)
+https://kiefte.eu/iptv/twitch/game/Super%20Mario%20Maker%202
+
+#EXTINF:-1 tvg-id="Ryukahr.tv" tvg-name="Ryukahr" group-title="Mario & Romhacks" tvg-chno="1052",Ryukahr
+https://kiefte.eu/iptv/twitch/ryukahr
+
+#EXTINF:-1 tvg-id="GrandPooBear.tv" tvg-name="GrandPooBear" group-title="Mario & Romhacks" tvg-chno="1053",GrandPooBear
+https://kiefte.eu/iptv/twitch/grandpoobear
+
+#EXTINF:-1 tvg-id="ThaBeast721.tv" tvg-name="ThaBeast721" group-title="Mario & Romhacks" tvg-chno="1054",ThaBeast721 (Kaizo & Mario 64)
+https://kiefte.eu/iptv/twitch/thabeast721
+
+#EXTINF:-1 tvg-id="CarlSagan42.tv" tvg-name="CarlSagan42" group-title="Mario & Romhacks" tvg-chno="1055",CarlSagan42 (Kaizo & Troll Maker)
+https://kiefte.eu/iptv/twitch/carlsagan42
+
+#EXTINF:-1 tvg-id="Juzcook.tv" tvg-name="Juzcook" group-title="Mario & Romhacks" tvg-chno="1056",Juzcook (Kaizo & Mario Maker)
+https://kiefte.eu/iptv/twitch/juzcook
+
+#EXTINF:-1 tvg-id="Aurateur.tv" tvg-name="Aurateur" group-title="Mario & Romhacks" tvg-chno="1057",Aurateur (Endless Mario Maker)
+https://kiefte.eu/iptv/twitch/aurateur
+
+#EXTINF:-1 tvg-id="PangaeaPanga.tv" tvg-name="PangaeaPanga" group-title="Mario & Romhacks" tvg-chno="1058",PangaeaPanga (Kaizo SMW)
+https://kiefte.eu/iptv/twitch/pangaeapanga
+
+#EXTINF:-1 tvg-id="SimpleFlips.tv" tvg-name="SimpleFlips" group-title="Mario & Romhacks" tvg-chno="1059",SimpleFlips (SM64 Romhacks)
+https://kiefte.eu/iptv/twitch/simpleflips
+
+#EXTINF:-1 tvg-id="Failstream.tv" tvg-name="Failstream" group-title="Mario & Romhacks" tvg-chno="1060",Failstream (Mario Maker Builds)
+https://kiefte.eu/iptv/twitch/failstream
+
+#EXTINF:-1 tvg-id="GlitchCat7.tv" tvg-name="GlitchCat7" group-title="Mario & Romhacks" tvg-chno="1061",GlitchCat7 (SMW Kaizo & Speedruns)
+https://kiefte.eu/iptv/twitch/glitchcat7
+
+#EXTINF:-1 tvg-id="DGR.tv" tvg-name="DGR" group-title="Mario & Romhacks" tvg-chno="1062",DGR (Mario Maker & Super Mario)
+https://kiefte.eu/iptv/twitch/dgr_dave
+
+#EXTINF:-1 tvg-id="ClassicTetris.tv" tvg-name="ClassicTetris" group-title="Tetris" tvg-chno="1100",Classic Tetris (CTWC Main)
+https://kiefte.eu/iptv/twitch/classictetris
+
+#EXTINF:-1 tvg-id="ClassicTetris2.tv" tvg-name="ClassicTetris 2" group-title="Tetris" tvg-chno="1101",Classic Tetris 2 (CTWC)
+https://kiefte.eu/iptv/twitch/classictetris2
+
+#EXTINF:-1 tvg-id="ClassicTetris3.tv" tvg-name="ClassicTetris 3" group-title="Tetris" tvg-chno="1102",Classic Tetris 3 (CTWC)
+https://kiefte.eu/iptv/twitch/classictetris3
+
+#EXTINF:-1 tvg-id="ClassicTetris4.tv" tvg-name="ClassicTetris 4" group-title="Tetris" tvg-chno="1103",Classic Tetris 4 (CTWC)
+https://kiefte.eu/iptv/twitch/classictetris4
+
+#EXTINF:-1 tvg-id="NESTetris.tv" tvg-name="NES Tetris Live" group-title="Tetris" tvg-chno="1104",NES Tetris (Top Live Streamer)
+https://kiefte.eu/iptv/twitch/game/Tetris?bias=nes
+
+#EXTINF:-1 tvg-id="ModernTetris.tv" tvg-name="Modern Tetris Live" group-title="Tetris" tvg-chno="1105",Modern Tetris (Top Live Streamer)
+https://kiefte.eu/iptv/twitch/group/modern-tetris
+
+#EXTINF:-1 tvg-id="Wumbotize.tv" tvg-name="Wumbotize" group-title="Tetris" tvg-chno="1106",Wumbotize (Modern Tetris Master)
+https://kiefte.eu/iptv/twitch/wumbotize
+
+#EXTINF:-1 tvg-id="Doremy.tv" tvg-name="Doremy" group-title="Tetris" tvg-chno="1107",Doremy (Modern Tetris & TETR.IO)
+https://kiefte.eu/iptv/twitch/doremy
+
+#EXTINF:-1 tvg-id="HardDrop.tv" tvg-name="Hard Drop" group-title="Tetris" tvg-chno="1108",Hard Drop (Tetris Community & Tourneys)
+https://kiefte.eu/iptv/twitch/harddrop
+
+#EXTINF:-1 tvg-id="DogPlayingTetris.tv" tvg-name="DogPlayingTetris" group-title="Tetris" tvg-chno="1109",DogPlayingTetris (3x CTWC World Champion)
+https://kiefte.eu/iptv/twitch/dogplayingtetris
+
+#EXTINF:-1 tvg-id="EricICX.tv" tvg-name="EricICX" group-title="Tetris" tvg-chno="1110",EricICX (CTWC World Champion)
+https://kiefte.eu/iptv/twitch/ericicx
+
+#EXTINF:-1 tvg-id="FractalTetris.tv" tvg-name="Fractal" group-title="Tetris" tvg-chno="1111",Fractal (CTWC World Champion)
+https://kiefte.eu/iptv/twitch/fractal
+
+#EXTINF:-1 tvg-id="AlexT.tv" tvg-name="Alex T" group-title="Tetris" tvg-chno="1112",Alex_T (CTWC Champion)
+https://kiefte.eu/iptv/twitch/alex_t
+
+#EXTINF:-1 tvg-id="BlueScuti.tv" tvg-name="BlueScuti" group-title="Tetris" tvg-chno="1113",BlueScuti (NES Tetris Crash Record)
+https://kiefte.eu/iptv/twitch/bluescuti
+
+#EXTINF:-1 tvg-id="AnnaD.tv" tvg-name="Anna D." group-title="Tetris" tvg-chno="1114",Anna D. (Tetris)
+https://kiefte.eu/iptv/twitch/vinesandwillows
+
+#EXTINF:-1 tvg-id="GamingAutoLive.tv" tvg-name="Gaming 24/7 Auto-Live" group-title="Indie & Variety Gaming" tvg-chno="1150",Gaming 24/7 (Auto-Live Streamer)
+https://kiefte.eu/iptv/gaming/live
+
+#EXTINF:-1 tvg-id="BluePrince.tv" tvg-name="Blue Prince Live" group-title="Indie & Variety Gaming" tvg-chno="1151",Blue Prince (Top Live Streamer)
+https://kiefte.eu/iptv/twitch/game/Blue%20Prince
+
+#EXTINF:-1 tvg-id="Celeste.tv" tvg-name="Celeste Live" group-title="Indie & Variety Gaming" tvg-chno="1152",Celeste (Top Live Streamer)
+https://kiefte.eu/iptv/twitch/game/Celeste
+
+#EXTINF:-1 tvg-id="Portal.tv" tvg-name="Portal Live" group-title="Indie & Variety Gaming" tvg-chno="1153",Portal (Top Live Streamer)
+https://kiefte.eu/iptv/twitch/game/Portal
+
+#EXTINF:-1 tvg-id="Portal2.tv" tvg-name="Portal 2 Live" group-title="Indie & Variety Gaming" tvg-chno="1154",Portal 2 (Top Live Streamer)
+https://kiefte.eu/iptv/twitch/game/Portal%202
+
+#EXTINF:-1 tvg-id="TamTheGamer.tv" tvg-name="TamTheGamer" group-title="Indie & Variety Gaming" tvg-chno="1155",TamTheGamer (Tammy)
+https://kiefte.eu/iptv/twitch/tamthegamer
+
+#EXTINF:-1 tvg-id="ElanaOrama.tv" tvg-name="ElanaOrama" group-title="Indie & Variety Gaming" tvg-chno="1156",ElanaOrama (Colony Sim & Variety)
+
+
+#EXTINF:-1 tvg-id="Chess.tv" tvg-name="Chess Live" group-title="Indie & Variety Gaming" tvg-chno="1157",Chess (Top Live Grandmaster)
+https://kiefte.eu/iptv/twitch/game/Chess
+
+#EXTINF:-1 tvg-id="GeoGuessr.tv" tvg-name="GeoGuessr Live" group-title="Indie & Variety Gaming" tvg-chno="1158",GeoGuessr (World Exploration)
+https://kiefte.eu/iptv/twitch/game/GeoGuessr
+
+#EXTINF:-1 tvg-id="Trackmania.tv" tvg-name="Trackmania Live" group-title="Indie & Variety Gaming" tvg-chno="1159",Trackmania (Precision Racing Live)
+https://kiefte.eu/iptv/twitch/game/Trackmania
+
+#EXTINF:-1 tvg-id="Zeepkist.tv" tvg-name="Zeepkist Live" group-title="Indie & Variety Gaming" tvg-chno="1160",Zeepkist (Soapbox Physics Racing Live)
+https://kiefte.eu/iptv/twitch/game/Zeepkist
+
+#EXTINF:-1 tvg-id="HEVC10Bit.ref@HD" tvg-name="HEVC 10-Bit Reference" group-title="Diag" tvg-chno="2000",HEVC / H.265 10-Bit Reference Ladder
+https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_adv_example_hevc/master.m3u8
+
+#EXTINF:-1 tvg-id="HDR10Atmos4K.ref@UHD" tvg-name="HDR10 Dolby Atmos 4K" group-title="Diag" tvg-chno="2001",4K UHD • HDR10 & Dolby Vision / Atmos
+https://devstreaming-cdn.apple.com/videos/streaming/examples/adv_dv_atmos/main.m3u8
+
+#EXTINF:-1 tvg-id="BitrateLadder1080p60.ref@HD" tvg-name="1080p60 Bitrate Ladder" group-title="Diag" tvg-chno="2002",1080p60 Multi-Bitrate Adaptive Ladder
+https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8
+
+#EXTINF:-1 tvg-id="UnifiedTimecode.ref" tvg-name="Unified Timecode Test" group-title="Diag" tvg-chno="2003",Unified Streaming • Timecode & SCTE-35
+https://demo.unified-streaming.com/k8s/live/stable/scte35.isml/.m3u8
+
+#EXTINF:-1 tvg-id="BipBopSync.ref" tvg-name="BipBop Sync Reference" group-title="Diag" tvg-chno="2004",BipBop • Audio Sweep & Frame Sync
+https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8
+
+#EXTINF:-1 tvg-id="BridgeDiag.ref@HD" tvg-name="Bridge Diag Testcard" group-title="Diag" tvg-chno="2005",Bridge • IPv6 & AV-Sync Dynamic Testcard
+https://kiefte.eu/iptv/test/avsync
+
+#EXTINF:-1 tvg-id="HDRSwitch.ref@HD" tvg-name="HDR Dynamic Switch" group-title="Diag" tvg-chno="2006",HDR Dynamic Switch (SDR ➔ HLG ➔ HDR10)
+https://kiefte.eu/iptv/test/hdr
+
+#EXTINF:-1 tvg-id="HDRSwitchSmooth.ref@HD" tvg-name="HDR Smooth Switch (30s)" group-title="Diag" tvg-chno="2007",HDR Dynamic Switch Smooth (30s Cadence)
+https://kiefte.eu/iptv/test/hdr-smooth
+
+#EXTINF:-1 tvg-id="Antena1.pt" tvg-name="RDP Antena 1" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-1.png" group-title="PT Rádio" tvg-chno="5000" radio="true",RDP Antena 1
 https://streaming-live.rtp.pt/liveradio/antena180a/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Antena2.pt" tvg-name="RDP Antena 2" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-2.png" group-title="PT Rádio" radio="true",RDP Antena 2
+#EXTINF:-1 tvg-id="Antena2.pt" tvg-name="RDP Antena 2" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-2.png" group-title="PT Rádio" tvg-chno="5001" radio="true",RDP Antena 2
 https://streaming-live.rtp.pt/liveradio/antena280a/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Antena3.pt" tvg-name="RDP Antena 3" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-3.png" group-title="PT Rádio" radio="true",RDP Antena 3
+#EXTINF:-1 tvg-id="Antena3.pt" tvg-name="RDP Antena 3" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-3.png" group-title="PT Rádio" tvg-chno="5002" radio="true",RDP Antena 3
 https://streaming-live.rtp.pt/liveradio/antena380a/playlist.m3u8
 
-#EXTINF:-1 tvg-id="RDPAfrica.pt" tvg-name="RDP África" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RDP-Africa.png" group-title="PT Rádio" radio="true",RDP África
+#EXTINF:-1 tvg-id="RDPAfrica.pt" tvg-name="RDP África" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RDP-Africa.png" group-title="PT Rádio" tvg-chno="5003" radio="true",RDP África
 https://streaming-live.rtp.pt/liveradio/rdpafrica80a/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Antena1Acores.pt" tvg-name="Antena 1 Açores" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-1-Acores.png" group-title="PT Rádio" radio="true",Antena 1 Açores
+#EXTINF:-1 tvg-id="Antena1Acores.pt" tvg-name="Antena 1 Açores" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-1-Acores.png" group-title="PT Rádio" tvg-chno="5004" radio="true",Antena 1 Açores
 https://streaming-live.rtp.pt/liveradio/antena1acores80a/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Antena1Madeira.pt" tvg-name="Antena 1 Madeira" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-1-Madeira.png" group-title="PT Rádio" radio="true",Antena 1 Madeira
+#EXTINF:-1 tvg-id="Antena1Madeira.pt" tvg-name="Antena 1 Madeira" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-1-Madeira.png" group-title="PT Rádio" tvg-chno="5005" radio="true",Antena 1 Madeira
 https://streaming-live.rtp.pt/liveradio/antena1madeira80a/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Antena3Madeira.pt" tvg-name="Antena 3 Madeira" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-3-Madeira.png" group-title="PT Rádio" radio="true",Antena 3 Madeira
+#EXTINF:-1 tvg-id="Antena3Madeira.pt" tvg-name="Antena 3 Madeira" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-3-Madeira.png" group-title="PT Rádio" tvg-chno="5006" radio="true",Antena 3 Madeira
 https://streaming-live.rtp.pt/liveradio/antena3madeira80a/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Renascenca.pt" tvg-name="Rádio Renascença" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-Renascenca.png" group-title="PT Rádio" radio="true",Rádio Renascença
+#EXTINF:-1 tvg-id="Renascenca.pt" tvg-name="Rádio Renascença" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-Renascenca.png" group-title="PT Rádio" tvg-chno="5007" radio="true",Rádio Renascença
 https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_RENASCENCA.mp3
 
-#EXTINF:-1 tvg-id="RFM.pt" tvg-name="RFM" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RFM.png" group-title="PT Rádio" radio="true",RFM
+#EXTINF:-1 tvg-id="RFM.pt" tvg-name="RFM" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RFM.png" group-title="PT Rádio" tvg-chno="5008" radio="true",RFM
 https://playerservices.streamtheworld.com/api/livestream-redirect/RFM.mp3
 
-#EXTINF:-1 tvg-id="MegaHits.pt" tvg-name="Mega Hits" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Mega-Hits.png" group-title="PT Rádio" radio="true",Mega Hits
+#EXTINF:-1 tvg-id="MegaHits.pt" tvg-name="Mega Hits" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Mega-Hits.png" group-title="PT Rádio" tvg-chno="5009" radio="true",Mega Hits
 https://playerservices.streamtheworld.com/api/livestream-redirect/MEGA_HITS.mp3
 
-#EXTINF:-1 tvg-id="RadioComercial.pt" tvg-name="Rádio Comercial" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-Comercial.png" group-title="PT Rádio" radio="true",Rádio Comercial
+#EXTINF:-1 tvg-id="RadioComercial.pt" tvg-name="Rádio Comercial" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-Comercial.png" group-title="PT Rádio" tvg-chno="5010" radio="true",Rádio Comercial
 https://stream-icy.bauermedia.pt/comercial.mp3
 
-#EXTINF:-1 tvg-id="M80.pt" tvg-name="M80 Portugal" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/M80-Radio.png" group-title="PT Rádio" radio="true",M80 Portugal
+#EXTINF:-1 tvg-id="M80.pt" tvg-name="M80 Portugal" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/M80-Radio.png" group-title="PT Rádio" tvg-chno="5011" radio="true",M80 Portugal
 https://stream-icy.bauermedia.pt/m80.mp3
 
-#EXTINF:-1 tvg-id="CidadeFM.pt" tvg-name="Cidade FM" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Cidade-FM.png" group-title="PT Rádio" radio="true",Cidade FM
+#EXTINF:-1 tvg-id="CidadeFM.pt" tvg-name="Cidade FM" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Cidade-FM.png" group-title="PT Rádio" tvg-chno="5012" radio="true",Cidade FM
 https://stream-icy.bauermedia.pt/cidade.mp3
 
-#EXTINF:-1 tvg-id="SmoothFM.pt" tvg-name="Smooth FM" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Smooth-FM.png" group-title="PT Rádio" radio="true",Smooth FM
+#EXTINF:-1 tvg-id="SmoothFM.pt" tvg-name="Smooth FM" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Smooth-FM.png" group-title="PT Rádio" tvg-chno="5013" radio="true",Smooth FM
 https://stream-icy.bauermedia.pt/smooth.mp3
 
-#EXTINF:-1 tvg-id="TSF.pt" tvg-name="TSF" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TSF.png" group-title="PT Rádio" radio="true",TSF Rádio Notícias
+#EXTINF:-1 tvg-id="TSF.pt" tvg-name="TSF" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TSF.png" group-title="PT Rádio" tvg-chno="5014" radio="true",TSF Rádio Notícias
 https://tsfdirecto.tsf.pt/tsfdirecto.mp3
 
-#EXTINF:-1 tvg-id="RUC.pt" tvg-name="Rádio Universitária de Coimbra" tvg-logo="https://bucket-backblaze.ruc.pt/file/bucket-ruc-pt/wp-content/uploads/2021/02/15233926/Logo-RUC-2020_assinaturas_Prancheta-1-copia.png" group-title="PT Rádio" radio="true",RUC - Rádio Universidade de Coimbra
+#EXTINF:-1 tvg-id="RUC.pt" tvg-name="Rádio Universitária de Coimbra" tvg-logo="https://bucket-backblaze.ruc.pt/file/bucket-ruc-pt/wp-content/uploads/2021/02/15233926/Logo-RUC-2020_assinaturas_Prancheta-1-copia.png" group-title="PT Rádio" tvg-chno="5015" radio="true",RUC - Rádio Universidade de Coimbra
 https://stream.ruc.pt/high
 
-#EXTINF:-1 tvg-id="NPORadio1.nl" tvg-name="NPO Radio 1" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nporadio1.png" group-title="NL Rádio" radio="true",NPO Radio 1
-https://icecast.omroep.nl/radio1-bb-mp3
-
-#EXTINF:-1 tvg-id="NPORadio2.nl" tvg-name="NPO Radio 2" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nporadio2.png" group-title="NL Rádio" radio="true",NPO Radio 2
-https://icecast.omroep.nl/radio2-bb-mp3
-
-#EXTINF:-1 tvg-id="NPO3FM.nl" tvg-name="NPO 3FM" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/npo3fm.png" group-title="NL Rádio" radio="true",NPO 3FM
-https://icecast.omroep.nl/3fm-bb-mp3
-
-#EXTINF:-1 tvg-id="NPOKlassiek.nl" tvg-name="NPO Klassiek" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/npoklassiek.png" group-title="NL Rádio" radio="true",NPO Klassiek (Radio 4)
-https://icecast.omroep.nl/radio4-bb-mp3
-
-#EXTINF:-1 tvg-id="NPORadio5.nl" tvg-name="NPO Radio 5" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nporadio5.png" group-title="NL Rádio" radio="true",NPO Radio 5
-https://icecast.omroep.nl/radio5-bb-mp3
-
-#EXTINF:-1 tvg-id="FunX.nl" tvg-name="NPO FunX" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/funx.png" group-title="NL Rádio" radio="true",NPO FunX
-https://icecast.omroep.nl/funx-bb-mp3
-
-#EXTINF:-1 tvg-id="NPOBlend.nl" tvg-name="NPO Blend" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/funx.png" group-title="NL Rádio" radio="true",NPO Blend
-https://icecast.omroep.nl/radio6-bb-mp3
-
-#EXTINF:-1 tvg-id="Radio538.nl" tvg-name="Radio 538" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/538.png" group-title="NL Rádio" radio="true",Radio 538
-https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO538.mp3
-
-#EXTINF:-1 tvg-id="SLAM.nl" tvg-name="SLAM!" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/SLAM%21_logo_2020.svg/512px-SLAM%21_logo_2020.svg.png" group-title="NL Rádio" radio="true",SLAM!
-https://stream.slam.nl/slam_mp3
-
-#EXTINF:-1 tvg-id="QmusicRadio.nl" tvg-name="Qmusic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Qmusic_logo_2019.svg/512px-Qmusic_logo_2019.svg.png" group-title="NL Rádio" radio="true",Qmusic NL
-https://stream.qmusic.nl/qmusic/mp3
-
-#EXTINF:-1 tvg-id="RadioVeronica.nl" tvg-name="Radio Veronica" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radioveronica.png" group-title="NL Rádio" radio="true",Radio Veronica
-https://playerservices.streamtheworld.com/api/livestream-redirect/VERONICA.mp3
-
-#EXTINF:-1 tvg-id="SkyRadio.nl" tvg-name="Sky Radio" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/skyradio.png" group-title="NL Rádio" radio="true",Sky Radio
-https://playerservices.streamtheworld.com/api/livestream-redirect/SKYRADIO.mp3
-
-#EXTINF:-1 tvg-id="Radio10.nl" tvg-name="Radio 10" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radio10.png" group-title="NL Rádio" radio="true",Radio 10
-https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO10.mp3
-
-#EXTINF:-1 tvg-id="ArrowClassicRock.nl" tvg-name="Arrow Classic Rock" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/arrowclassicrock.png" group-title="NL Rádio" radio="true",Arrow Classic Rock
-http://stream.gal.io/arrow
-
-#EXTINF:-1 tvg-id="Sublime.nl" tvg-name="Sublime" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/sublime.png" group-title="NL Rádio" radio="true",Sublime
-https://stream.sublime.nl/sublime_mp3
-
-#EXTINF:-1 tvg-id="BNRNieuwsradio.nl" tvg-name="BNR Nieuwsradio" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/bnr.png" group-title="NL Rádio" radio="true",BNR Nieuwsradio
-https://stream.bnr.nl/bnr_mp3_128_01
-
-#EXTINF:-1 tvg-id="KINK.nl" tvg-name="KINK" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/kink.png" group-title="NL Rádio" radio="true",KINK
-https://playerservices.streamtheworld.com/api/livestream-redirect/KINK.mp3
-
-#EXTINF:-1 tvg-id="OmropFryslanRadio.nl" tvg-name="Omrop Fryslân Radio" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omropfryslan.png" group-title="NL Rádio" radio="true",Omrop Fryslân Radio (Frysk)
-https://d3pvma9xb2775h.cloudfront.net/icecast/omropfryslan/radio.mp3
-
-#EXTINF:-1 tvg-id="L1Radio.nl" tvg-name="L1 Radio" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/l1.png" group-title="NL Rádio" radio="true",L1 Radio (Limburgs Dialect)
-http://d34pj260kw1xmk.cloudfront.net/icecast/l1/radio-bb-mp3
-
-#EXTINF:-1 tvg-id="L1Plateweg.nl" tvg-name="L1 Plat-eweg" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/l1.png" group-title="NL Rádio" radio="true",L1 Plat-eweg (Limburgs Dialectmuziek)
-https://d34pj260kw1xmk.cloudfront.net/icecast/l1/plat-eweg-bb-mp3
-
-#EXTINF:-1 tvg-id="OmroepBrabantRadio.nl" tvg-name="Omroep Brabant Radio" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepbrabant.png" group-title="NL Rádio" radio="true",Omroep Brabant Radio
-https://av.omroepbrabant.nl/icecast/omroepbrabant/mp3hq
-
-#EXTINF:-1 tvg-id="OmroepWestRadio.nl" tvg-name="Omroep West Radio" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepwest.png" group-title="NL Rádio" radio="true",Omroep West Radio
-http://icecast.stream.bbvms.com/omroepwest_radio
-
-#EXTINF:-1 tvg-id="OmroepZeelandRadio.nl" tvg-name="Omroep Zeeland Radio" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepzeeland.png" group-title="NL Rádio" radio="true",Omroep Zeeland Radio
-https://d3isaxd2t6q8zm.cloudfront.net/icecast/omroepzeeland/omroepzeeland_radio
-
-#EXTINF:-1 tvg-id="TukkerFM.nl" tvg-name="Tukker FM" group-title="NL Rádio" radio="true",Tukker FM (Twents / Piratenhits)
-https://stream.tukkerfm.nl/tukkerfm
-
-#EXTINF:-1 tvg-id="RadioContinu.nl" tvg-name="Radio Continu" group-title="NL Rádio" radio="true",Radio Continu (Noord & Oost NL)
-https://stream.radiocontinu.nl/radiocontinu
-
-#EXTINF:-1 tvg-id="GigantFM.nl" tvg-name="Gigant FM" group-title="NL Rádio" radio="true",Gigant FM (Piratenmuziek)
-https://stream.gigantfm.nl/gigantfm
-
-#EXTINF:-1 tvg-id="RadioGelderland.nl" tvg-name="Radio Gelderland" group-title="NL Rádio" radio="true",Radio Gelderland
-https://d2od87akyl46nm.cloudfront.net/icecast/omroepgelderland/radiogelderland
-
-#EXTINF:-1 tvg-id="RadioNoord.nl" tvg-name="Radio Noord" group-title="NL Rádio" radio="true",Radio Noord (Groningen)
-https://d2od87akyl46nm.cloudfront.net/icecast/rtvnoord/radio
-
-#EXTINF:-1 tvg-id="100pNL.nl" tvg-name="100% NL" group-title="NL Rádio" radio="true",100% NL
-https://stream.100p.nl/100pctnl.mp3
-
-#EXTINF:-1 tvg-id="100pNLNederpop.nl" tvg-name="100% NL Nederpop" group-title="NL Rádio" radio="true",100% NL Nederpop
-https://stream.100p.nl/web02_mp3
-
-#EXTINF:-1 tvg-id="100pNLFeest.nl" tvg-name="100% NL Feest" group-title="NL Rádio" radio="true",100% NL Feest
-https://stream.100p.nl/web03_mp3
-
-#EXTINF:-1 tvg-id="KeizerstadClassics.nl" tvg-name="Keizerstad Classics" group-title="NL Rádio" radio="true",Keizerstad Classics (Nijmegen/Arnhem)
-http://server-06.stream-server.nl:8800/;stream.mp3
-
-#EXTINF:-1 tvg-id="RadioDecibel.nl" tvg-name="Radio Decibel" group-title="NL Rádio" radio="true",Radio Decibel (Randstad)
-https://playerservices.streamtheworld.com/api/livestream-redirect/RADIODECIBEL.mp3
-
-#EXTINF:-1 tvg-id="RadioNL.nl" tvg-name="RadioNL" group-title="NL Rádio" radio="true",RadioNL
-https://stream.radionl.fm/radionl
-
-#EXTINF:-1 tvg-id="WaterstadFM.nl" tvg-name="Waterstad FM" group-title="NL Rádio" radio="true",Waterstad FM (Friesland)
-https://stream.waterstadfm.nl/waterstadfm
-
-#EXTINF:-1 tvg-id="FreezFM.nl" tvg-name="Freez FM" group-title="NL Rádio" radio="true",Freez FM (Noord-NL)
-https://stream.freezfm.nl/freezfm
-
-#EXTINF:-1 tvg-id="DeltaFM.nl" tvg-name="Delta FM" group-title="NL Rádio" radio="true",Delta FM (Twente)
-https://stream.deltafm.nl/deltafm
-
-#EXTINF:-1 tvg-id="Studio040.nl" tvg-name="Studio 040" group-title="NL Rádio" radio="true",Studio 040 (Eindhoven)
-https://stream.studio040.nl/studio040
-
-#EXTINF:-1 tvg-id="StudioBrussel.be" tvg-name="Studio Brussel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="BE Rádio" radio="true",Studio Brussel
-https://icecast.vrtcdn.be/stubru-high.mp3
-
-#EXTINF:-1 tvg-id="StuBruDeTijdloze.be" tvg-name="StuBru De Tijdloze" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="BE Rádio" radio="true",StuBru De Tijdloze
-https://icecast.vrtcdn.be/stubru_tijdloze-high.mp3
-
-#EXTINF:-1 tvg-id="Radio1.be" tvg-name="Radio 1 VRT" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-1-BE.png" group-title="BE Rádio" radio="true",Radio 1 (VRT Belgium)
-https://icecast.vrtcdn.be/radio1-high.mp3
-
-#EXTINF:-1 tvg-id="Radio2Antwerpen.be" tvg-name="Radio 2 Antwerpen" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-2-BE.png" group-title="BE Rádio" radio="true",Radio 2 (VRT Antwerpen)
-https://icecast.vrtcdn.be/ra2ant-high.mp3
-
-#EXTINF:-1 tvg-id="MNM.be" tvg-name="MNM" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/MNM.png" group-title="BE Rádio" radio="true",MNM (VRT)
-https://icecast.vrtcdn.be/mnm-high.mp3
-
-#EXTINF:-1 tvg-id="Klara.be" tvg-name="Klara" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Klara.png" group-title="BE Rádio" radio="true",Klara (VRT Classical)
-https://icecast.vrtcdn.be/klara-high.mp3
-
-#EXTINF:-1 tvg-id="KlaraContinuo.be" tvg-name="Klara Continuo" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Klara.png" group-title="BE Rádio" radio="true",Klara Continuo
-https://icecast.vrtcdn.be/klaracontinuo-high.mp3
-
-#EXTINF:-1 tvg-id="Classic21.be" tvg-name="Classic 21" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Classic-21.png" group-title="BE Rádio" radio="true",Classic 21 (RTBF Rock)
-https://radios.rtbf.be/classic21-128.mp3
-
-#EXTINF:-1 tvg-id="LaPremiere.be" tvg-name="RTBF La Première" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/La-Premiere.png" group-title="BE Rádio" radio="true",RTBF La Première
-https://radios.rtbf.be/laprem1ere-128.mp3
-
-#EXTINF:-1 tvg-id="Musiq3.be" tvg-name="RTBF Musiq3" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Musiq3.png" group-title="BE Rádio" radio="true",RTBF Musiq3
-https://radios.rtbf.be/musiq3-128.mp3
-
-#EXTINF:-1 tvg-id="BRF1.be" tvg-name="BRF 1" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/brf1.png" group-title="BE Rádio" radio="true",BRF 1 (Ostbelgien Deutsch)
-http://mp3.stream.brf.be/brf1.mp3
-
-#EXTINF:-1 tvg-id="BRF2.be" tvg-name="BRF 2" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/brf2.png" group-title="BE Rádio" radio="true",BRF 2 (Ostbelgien Deutsch Schlager)
-http://mp3.stream.brf.be/brf2.mp3
-
-#EXTINF:-1 tvg-id="RMAntenaNacional.mz" tvg-name="RM Antena Nacional" group-title="MZ Rádio" radio="true",Rádio Moçambique - Antena Nacional
+#EXTINF:-1 tvg-id="RMAntenaNacional.mz" tvg-name="RM Antena Nacional" group-title="MZ Rádio" tvg-chno="5100" radio="true",Rádio Moçambique - Antena Nacional
 http://node.stream-africa.com:8000/AntenaNacional
 
-#EXTINF:-1 tvg-id="RMDesporto.mz" tvg-name="RM Desporto" group-title="MZ Rádio" radio="true",Rádio Moçambique - RM Desporto
+#EXTINF:-1 tvg-id="RMDesporto.mz" tvg-name="RM Desporto" group-title="MZ Rádio" tvg-chno="5101" radio="true",Rádio Moçambique - RM Desporto
 http://node.stream-africa.com:8000/RMDesporto
 
-#EXTINF:-1 tvg-id="RMCidadeMaputo.mz" tvg-name="RM Cidade Maputo" group-title="MZ Rádio" radio="true",Rádio Moçambique - Cidade Maputo
+#EXTINF:-1 tvg-id="RMCidadeMaputo.mz" tvg-name="RM Cidade Maputo" group-title="MZ Rádio" tvg-chno="5102" radio="true",Rádio Moçambique - Cidade Maputo
 http://node.stream-africa.com:8000/RadioCidadeMaputo
 
-#EXTINF:-1 tvg-id="RMCidadeBeira.mz" tvg-name="RM Cidade Beira" group-title="MZ Rádio" radio="true",Rádio Moçambique - Cidade Beira
+#EXTINF:-1 tvg-id="RMCidadeBeira.mz" tvg-name="RM Cidade Beira" group-title="MZ Rádio" tvg-chno="5103" radio="true",Rádio Moçambique - Cidade Beira
 http://node.stream-africa.com:8000/RadioCidadeBeira
 
-#EXTINF:-1 tvg-id="RMProvincialMaputo.mz" tvg-name="RM Maputo Provincial" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Maputo (Changana / Ronga)
+#EXTINF:-1 tvg-id="RMProvincialMaputo.mz" tvg-name="RM Maputo Provincial" group-title="MZ Rádio" tvg-chno="5104" radio="true",RM Emissor Provincial de Maputo (Changana / Ronga)
 http://node.stream-africa.com:8000/MaputoFM
 
-#EXTINF:-1 tvg-id="RMProvincialGaza.mz" tvg-name="RM Gaza Provincial" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Gaza (Changana / Chope)
+#EXTINF:-1 tvg-id="RMProvincialGaza.mz" tvg-name="RM Gaza Provincial" group-title="MZ Rádio" tvg-chno="5105" radio="true",RM Emissor Provincial de Gaza (Changana / Chope)
 http://node.stream-africa.com:8000/Gaza
 
-#EXTINF:-1 tvg-id="RMProvincialInhambane.mz" tvg-name="RM Inhambane Provincial" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Inhambane (Gitonga / Matsua / Bitonga)
+#EXTINF:-1 tvg-id="RMProvincialInhambane.mz" tvg-name="RM Inhambane Provincial" group-title="MZ Rádio" tvg-chno="5106" radio="true",RM Emissor Provincial de Inhambane (Gitonga / Matsua / Bitonga)
 http://node.stream-africa.com:8000/InhambaneFM
 
-#EXTINF:-1 tvg-id="RMProvincialSofala.mz" tvg-name="RM Sofala Provincial" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Sofala (Sena / Ndau)
+#EXTINF:-1 tvg-id="RMProvincialSofala.mz" tvg-name="RM Sofala Provincial" group-title="MZ Rádio" tvg-chno="5107" radio="true",RM Emissor Provincial de Sofala (Sena / Ndau)
 http://node.stream-africa.com:8000/Sofala
 
-#EXTINF:-1 tvg-id="RMProvincialManica.mz" tvg-name="RM Manica Provincial" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Manica (Manyika / Ndau)
+#EXTINF:-1 tvg-id="RMProvincialManica.mz" tvg-name="RM Manica Provincial" group-title="MZ Rádio" tvg-chno="5108" radio="true",RM Emissor Provincial de Manica (Manyika / Ndau)
 http://node.stream-africa.com:8000/ManicaFM
 
-#EXTINF:-1 tvg-id="RMProvincialTete.mz" tvg-name="RM Tete Provincial" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Tete (Nyanja / Nyungwe)
+#EXTINF:-1 tvg-id="RMProvincialTete.mz" tvg-name="RM Tete Provincial" group-title="MZ Rádio" tvg-chno="5109" radio="true",RM Emissor Provincial de Tete (Nyanja / Nyungwe)
 http://node.stream-africa.com:8000/TeteFM
 
-#EXTINF:-1 tvg-id="RMProvincialZambezia.mz" tvg-name="RM Zambézia Provincial" group-title="MZ Rádio" radio="true",RM Emissor Provincial da Zambézia (Elomwe / Echuwabo)
+#EXTINF:-1 tvg-id="RMProvincialZambezia.mz" tvg-name="RM Zambézia Provincial" group-title="MZ Rádio" tvg-chno="5110" radio="true",RM Emissor Provincial da Zambézia (Elomwe / Echuwabo)
 http://node.stream-africa.com:8000/ZambeziaFM
 
-#EXTINF:-1 tvg-id="RMProvincialNampula.mz" tvg-name="RM Nampula Provincial" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Nampula (Emakhuwa)
+#EXTINF:-1 tvg-id="RMProvincialNampula.mz" tvg-name="RM Nampula Provincial" group-title="MZ Rádio" tvg-chno="5111" radio="true",RM Emissor Provincial de Nampula (Emakhuwa)
 http://node.stream-africa.com:8000/Nampula
 
-#EXTINF:-1 tvg-id="RMProvincialCaboDelgado.mz" tvg-name="RM Cabo Delgado Provincial" group-title="MZ Rádio" radio="true",RM Emissor Provincial de Cabo Delgado (Emakhuwa / Shimakonde / Kimwani)
+#EXTINF:-1 tvg-id="RMProvincialCaboDelgado.mz" tvg-name="RM Cabo Delgado Provincial" group-title="MZ Rádio" tvg-chno="5112" radio="true",RM Emissor Provincial de Cabo Delgado (Emakhuwa / Shimakonde / Kimwani)
 http://node.stream-africa.com:8000/CaboDelgadoFM
 
-#EXTINF:-1 tvg-id="RMProvincialNiassa.mz" tvg-name="RM Niassa Provincial" group-title="MZ Rádio" radio="true",RM Emissor Provincial do Niassa (Yao / Emakhuwa / Nyanja)
+#EXTINF:-1 tvg-id="RMProvincialNiassa.mz" tvg-name="RM Niassa Provincial" group-title="MZ Rádio" tvg-chno="5113" radio="true",RM Emissor Provincial do Niassa (Yao / Emakhuwa / Nyanja)
 http://node.stream-africa.com:8000/NiassaFM
 
-#EXTINF:-1 tvg-id="LMRadio.mz" tvg-name="LM Radio" group-title="MZ Rádio" radio="true",LM Radio (Maputo / Southern Africa)
+#EXTINF:-1 tvg-id="LMRadio.mz" tvg-name="LM Radio" group-title="MZ Rádio" tvg-chno="5114" radio="true",LM Radio (Maputo / Southern Africa)
 https://ukwesta.streaming.broadcast.radio/lmradio
 
-#EXTINF:-1 tvg-id="MaputoCorridor.mz" tvg-name="Maputo Corridor Radio" group-title="MZ Rádio" radio="true",Maputo Corridor Radio
+#EXTINF:-1 tvg-id="MaputoCorridor.mz" tvg-name="Maputo Corridor Radio" group-title="MZ Rádio" tvg-chno="5115" radio="true",Maputo Corridor Radio
 http://node.stream-africa.com:8000/MaputoCorridor
 
-#EXTINF:-1 tvg-id="RadioParadiseMain.us" tvg-name="Radio Paradise Main FLAC" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radioparadise.png" group-title="Rádio Global" radio="true",Radio Paradise - Main Mix (FLAC)
+#EXTINF:-1 tvg-id="CadenaSER.es" tvg-name="Cadena SER" group-title="ES Rádio" tvg-chno="6000" radio="true",Cadena SER España
+https://playerservices.streamtheworld.com/api/livestream-redirect/CADENASER.mp3
+
+#EXTINF:-1 tvg-id="RadioGalega.es" tvg-name="Radio Galega" group-title="ES Rádio" tvg-chno="6001" radio="true",Radio Galega (Galego)
+https://crtvg-radiogalega-hls.flumotion.cloud/playlist.m3u8
+
+#EXTINF:-1 tvg-id="RadioGalegaMusica.es" tvg-name="Radio Galega Música" group-title="ES Rádio" tvg-chno="6002" radio="true",Radio Galega Música
+https://crtvg-radiogalega-musica-hls.flumotion.cloud/playlist.m3u8
+
+#EXTINF:-1 tvg-id="NPORadio1.nl" tvg-name="NPO Radio 1" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nporadio1.png" group-title="NL Rádio" tvg-chno="7000" radio="true",NPO Radio 1
+https://icecast.omroep.nl/radio1-bb-mp3
+
+#EXTINF:-1 tvg-id="NPORadio2.nl" tvg-name="NPO Radio 2" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nporadio2.png" group-title="NL Rádio" tvg-chno="7001" radio="true",NPO Radio 2
+https://icecast.omroep.nl/radio2-bb-mp3
+
+#EXTINF:-1 tvg-id="NPO3FM.nl" tvg-name="NPO 3FM" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/npo3fm.png" group-title="NL Rádio" tvg-chno="7002" radio="true",NPO 3FM
+https://icecast.omroep.nl/3fm-bb-mp3
+
+#EXTINF:-1 tvg-id="NPOKlassiek.nl" tvg-name="NPO Klassiek" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/npoklassiek.png" group-title="NL Rádio" tvg-chno="7003" radio="true",NPO Klassiek (Radio 4)
+https://icecast.omroep.nl/radio4-bb-mp3
+
+#EXTINF:-1 tvg-id="NPORadio5.nl" tvg-name="NPO Radio 5" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nporadio5.png" group-title="NL Rádio" tvg-chno="7004" radio="true",NPO Radio 5
+https://icecast.omroep.nl/radio5-bb-mp3
+
+#EXTINF:-1 tvg-id="FunX.nl" tvg-name="NPO FunX" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/funx.png" group-title="NL Rádio" tvg-chno="7005" radio="true",NPO FunX
+https://icecast.omroep.nl/funx-bb-mp3
+
+#EXTINF:-1 tvg-id="NPOBlend.nl" tvg-name="NPO Blend" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/funx.png" group-title="NL Rádio" tvg-chno="7006" radio="true",NPO Blend
+https://icecast.omroep.nl/radio6-bb-mp3
+
+#EXTINF:-1 tvg-id="Radio538.nl" tvg-name="Radio 538" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/538.png" group-title="NL Rádio" tvg-chno="7007" radio="true",Radio 538
+https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO538.mp3
+
+#EXTINF:-1 tvg-id="SLAM.nl" tvg-name="SLAM!" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/SLAM%21_logo_2020.svg/512px-SLAM%21_logo_2020.svg.png" group-title="NL Rádio" tvg-chno="7008" radio="true",SLAM!
+https://stream.slam.nl/slam_mp3
+
+#EXTINF:-1 tvg-id="QmusicRadio.nl" tvg-name="Qmusic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Qmusic_logo_2019.svg/512px-Qmusic_logo_2019.svg.png" group-title="NL Rádio" tvg-chno="7009" radio="true",Qmusic NL
+https://stream.qmusic.nl/qmusic/mp3
+
+#EXTINF:-1 tvg-id="RadioVeronica.nl" tvg-name="Radio Veronica" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radioveronica.png" group-title="NL Rádio" tvg-chno="7010" radio="true",Radio Veronica
+https://playerservices.streamtheworld.com/api/livestream-redirect/VERONICA.mp3
+
+#EXTINF:-1 tvg-id="SkyRadio.nl" tvg-name="Sky Radio" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/skyradio.png" group-title="NL Rádio" tvg-chno="7011" radio="true",Sky Radio
+https://playerservices.streamtheworld.com/api/livestream-redirect/SKYRADIO.mp3
+
+#EXTINF:-1 tvg-id="Radio10.nl" tvg-name="Radio 10" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radio10.png" group-title="NL Rádio" tvg-chno="7012" radio="true",Radio 10
+https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO10.mp3
+
+#EXTINF:-1 tvg-id="ArrowClassicRock.nl" tvg-name="Arrow Classic Rock" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/arrowclassicrock.png" group-title="NL Rádio" tvg-chno="7013" radio="true",Arrow Classic Rock
+http://stream.gal.io/arrow
+
+#EXTINF:-1 tvg-id="Sublime.nl" tvg-name="Sublime" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/sublime.png" group-title="NL Rádio" tvg-chno="7014" radio="true",Sublime
+https://stream.sublime.nl/sublime_mp3
+
+#EXTINF:-1 tvg-id="BNRNieuwsradio.nl" tvg-name="BNR Nieuwsradio" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/bnr.png" group-title="NL Rádio" tvg-chno="7015" radio="true",BNR Nieuwsradio
+https://stream.bnr.nl/bnr_mp3_128_01
+
+#EXTINF:-1 tvg-id="KINK.nl" tvg-name="KINK" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/kink.png" group-title="NL Rádio" tvg-chno="7016" radio="true",KINK
+https://playerservices.streamtheworld.com/api/livestream-redirect/KINK.mp3
+
+#EXTINF:-1 tvg-id="OmropFryslanRadio.nl" tvg-name="Omrop Fryslân Radio" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omropfryslan.png" group-title="NL Rádio" tvg-chno="7017" radio="true",Omrop Fryslân Radio (Frysk)
+https://d3pvma9xb2775h.cloudfront.net/icecast/omropfryslan/radio.mp3
+
+#EXTINF:-1 tvg-id="L1Radio.nl" tvg-name="L1 Radio" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/l1.png" group-title="NL Rádio" tvg-chno="7018" radio="true",L1 Radio (Limburgs Dialect)
+http://d34pj260kw1xmk.cloudfront.net/icecast/l1/radio-bb-mp3
+
+#EXTINF:-1 tvg-id="L1Plateweg.nl" tvg-name="L1 Plat-eweg" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/l1.png" group-title="NL Rádio" tvg-chno="7019" radio="true",L1 Plat-eweg (Limburgs Dialectmuziek)
+https://d34pj260kw1xmk.cloudfront.net/icecast/l1/plat-eweg-bb-mp3
+
+#EXTINF:-1 tvg-id="OmroepBrabantRadio.nl" tvg-name="Omroep Brabant Radio" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepbrabant.png" group-title="NL Rádio" tvg-chno="7020" radio="true",Omroep Brabant Radio
+https://av.omroepbrabant.nl/icecast/omroepbrabant/mp3hq
+
+#EXTINF:-1 tvg-id="OmroepWestRadio.nl" tvg-name="Omroep West Radio" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepwest.png" group-title="NL Rádio" tvg-chno="7021" radio="true",Omroep West Radio
+http://icecast.stream.bbvms.com/omroepwest_radio
+
+#EXTINF:-1 tvg-id="OmroepZeelandRadio.nl" tvg-name="Omroep Zeeland Radio" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepzeeland.png" group-title="NL Rádio" tvg-chno="7022" radio="true",Omroep Zeeland Radio
+https://d3isaxd2t6q8zm.cloudfront.net/icecast/omroepzeeland/omroepzeeland_radio
+
+#EXTINF:-1 tvg-id="TukkerFM.nl" tvg-name="Tukker FM" group-title="NL Rádio" tvg-chno="7023" radio="true",Tukker FM (Twents / Piratenhits)
+https://stream.tukkerfm.nl/tukkerfm
+
+#EXTINF:-1 tvg-id="RadioContinu.nl" tvg-name="Radio Continu" group-title="NL Rádio" tvg-chno="7024" radio="true",Radio Continu (Noord & Oost NL)
+https://stream.radiocontinu.nl/radiocontinu
+
+#EXTINF:-1 tvg-id="GigantFM.nl" tvg-name="Gigant FM" group-title="NL Rádio" tvg-chno="7025" radio="true",Gigant FM (Piratenmuziek)
+https://stream.gigantfm.nl/gigantfm
+
+#EXTINF:-1 tvg-id="RadioGelderland.nl" tvg-name="Radio Gelderland" group-title="NL Rádio" tvg-chno="7026" radio="true",Radio Gelderland
+https://d2od87akyl46nm.cloudfront.net/icecast/omroepgelderland/radiogelderland
+
+#EXTINF:-1 tvg-id="RadioNoord.nl" tvg-name="Radio Noord" group-title="NL Rádio" tvg-chno="7027" radio="true",Radio Noord (Groningen)
+https://d2od87akyl46nm.cloudfront.net/icecast/rtvnoord/radio
+
+#EXTINF:-1 tvg-id="100pNL.nl" tvg-name="100% NL" group-title="NL Rádio" tvg-chno="7028" radio="true",100% NL
+https://stream.100p.nl/100pctnl.mp3
+
+#EXTINF:-1 tvg-id="100pNLNederpop.nl" tvg-name="100% NL Nederpop" group-title="NL Rádio" tvg-chno="7029" radio="true",100% NL Nederpop
+https://stream.100p.nl/web02_mp3
+
+#EXTINF:-1 tvg-id="100pNLFeest.nl" tvg-name="100% NL Feest" group-title="NL Rádio" tvg-chno="7030" radio="true",100% NL Feest
+https://stream.100p.nl/web03_mp3
+
+#EXTINF:-1 tvg-id="KeizerstadClassics.nl" tvg-name="Keizerstad Classics" group-title="NL Rádio" tvg-chno="7031" radio="true",Keizerstad Classics (Nijmegen/Arnhem)
+http://server-06.stream-server.nl:8800/;stream.mp3
+
+#EXTINF:-1 tvg-id="RadioDecibel.nl" tvg-name="Radio Decibel" group-title="NL Rádio" tvg-chno="7032" radio="true",Radio Decibel (Randstad)
+https://playerservices.streamtheworld.com/api/livestream-redirect/RADIODECIBEL.mp3
+
+#EXTINF:-1 tvg-id="RadioNL.nl" tvg-name="RadioNL" group-title="NL Rádio" tvg-chno="7033" radio="true",RadioNL
+https://stream.radionl.fm/radionl
+
+#EXTINF:-1 tvg-id="WaterstadFM.nl" tvg-name="Waterstad FM" group-title="NL Rádio" tvg-chno="7034" radio="true",Waterstad FM (Friesland)
+https://stream.waterstadfm.nl/waterstadfm
+
+#EXTINF:-1 tvg-id="FreezFM.nl" tvg-name="Freez FM" group-title="NL Rádio" tvg-chno="7035" radio="true",Freez FM (Noord-NL)
+https://stream.freezfm.nl/freezfm
+
+#EXTINF:-1 tvg-id="DeltaFM.nl" tvg-name="Delta FM" group-title="NL Rádio" tvg-chno="7036" radio="true",Delta FM (Twente)
+https://stream.deltafm.nl/deltafm
+
+#EXTINF:-1 tvg-id="Studio040.nl" tvg-name="Studio 040" group-title="NL Rádio" tvg-chno="7037" radio="true",Studio 040 (Eindhoven)
+https://stream.studio040.nl/studio040
+
+#EXTINF:-1 tvg-id="StudioBrussel.be" tvg-name="Studio Brussel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="BE Rádio" tvg-chno="7200" radio="true",Studio Brussel
+https://icecast.vrtcdn.be/stubru-high.mp3
+
+#EXTINF:-1 tvg-id="StuBruDeTijdloze.be" tvg-name="StuBru De Tijdloze" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="BE Rádio" tvg-chno="7201" radio="true",StuBru De Tijdloze
+https://icecast.vrtcdn.be/stubru_tijdloze-high.mp3
+
+#EXTINF:-1 tvg-id="Radio1.be" tvg-name="Radio 1 VRT" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-1-BE.png" group-title="BE Rádio" tvg-chno="7202" radio="true",Radio 1 (VRT Belgium)
+https://icecast.vrtcdn.be/radio1-high.mp3
+
+#EXTINF:-1 tvg-id="Radio2Antwerpen.be" tvg-name="Radio 2 Antwerpen" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-2-BE.png" group-title="BE Rádio" tvg-chno="7203" radio="true",Radio 2 (VRT Antwerpen)
+https://icecast.vrtcdn.be/ra2ant-high.mp3
+
+#EXTINF:-1 tvg-id="MNM.be" tvg-name="MNM" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/MNM.png" group-title="BE Rádio" tvg-chno="7204" radio="true",MNM (VRT)
+https://icecast.vrtcdn.be/mnm-high.mp3
+
+#EXTINF:-1 tvg-id="Klara.be" tvg-name="Klara" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Klara.png" group-title="BE Rádio" tvg-chno="7205" radio="true",Klara (VRT Classical)
+https://icecast.vrtcdn.be/klara-high.mp3
+
+#EXTINF:-1 tvg-id="KlaraContinuo.be" tvg-name="Klara Continuo" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Klara.png" group-title="BE Rádio" tvg-chno="7206" radio="true",Klara Continuo
+https://icecast.vrtcdn.be/klaracontinuo-high.mp3
+
+#EXTINF:-1 tvg-id="Classic21.be" tvg-name="Classic 21" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Classic-21.png" group-title="BE Rádio" tvg-chno="7207" radio="true",Classic 21 (RTBF Rock)
+https://radios.rtbf.be/classic21-128.mp3
+
+#EXTINF:-1 tvg-id="LaPremiere.be" tvg-name="RTBF La Première" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/La-Premiere.png" group-title="BE Rádio" tvg-chno="7208" radio="true",RTBF La Première
+https://radios.rtbf.be/laprem1ere-128.mp3
+
+#EXTINF:-1 tvg-id="Musiq3.be" tvg-name="RTBF Musiq3" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Musiq3.png" group-title="BE Rádio" tvg-chno="7209" radio="true",RTBF Musiq3
+https://radios.rtbf.be/musiq3-128.mp3
+
+#EXTINF:-1 tvg-id="BRF1.be" tvg-name="BRF 1" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/brf1.png" group-title="BE Rádio" tvg-chno="7210" radio="true",BRF 1 (Ostbelgien Deutsch)
+http://mp3.stream.brf.be/brf1.mp3
+
+#EXTINF:-1 tvg-id="BRF2.be" tvg-name="BRF 2" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/brf2.png" group-title="BE Rádio" tvg-chno="7211" radio="true",BRF 2 (Ostbelgien Deutsch Schlager)
+http://mp3.stream.brf.be/brf2.mp3
+
+#EXTINF:-1 tvg-id="RadioParadiseMain.us" tvg-name="Radio Paradise Main FLAC" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radioparadise.png" group-title="Rádio Global" tvg-chno="8000" radio="true",Radio Paradise - Main Mix (FLAC)
 https://stream.radioparadise.com/flac
 
-#EXTINF:-1 tvg-id="RadioParadiseMellow.us" tvg-name="Radio Paradise Mellow FLAC" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radioparadise.png" group-title="Rádio Global" radio="true",Radio Paradise - Mellow Mix (FLAC)
+#EXTINF:-1 tvg-id="RadioParadiseMellow.us" tvg-name="Radio Paradise Mellow FLAC" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radioparadise.png" group-title="Rádio Global" tvg-chno="8001" radio="true",Radio Paradise - Mellow Mix (FLAC)
 https://stream.radioparadise.com/mellow-flac
 
-#EXTINF:-1 tvg-id="RadioParadiseRock.us" tvg-name="Radio Paradise Rock FLAC" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radioparadise.png" group-title="Rádio Global" radio="true",Radio Paradise - Rock Mix (FLAC)
+#EXTINF:-1 tvg-id="RadioParadiseRock.us" tvg-name="Radio Paradise Rock FLAC" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radioparadise.png" group-title="Rádio Global" tvg-chno="8002" radio="true",Radio Paradise - Rock Mix (FLAC)
 https://stream.radioparadise.com/rock-flac
 
-#EXTINF:-1 tvg-id="RadioParadiseGlobal.us" tvg-name="Radio Paradise Global FLAC" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radioparadise.png" group-title="Rádio Global" radio="true",Radio Paradise - Global Mix (FLAC)
+#EXTINF:-1 tvg-id="RadioParadiseGlobal.us" tvg-name="Radio Paradise Global FLAC" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radioparadise.png" group-title="Rádio Global" tvg-chno="8003" radio="true",Radio Paradise - Global Mix (FLAC)
 https://stream.radioparadise.com/global-flac
 
-#EXTINF:-1 tvg-id="FIP.fr" tvg-name="FIP" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/fip.png" group-title="Rádio Global" radio="true",FIP (Radio France)
+#EXTINF:-1 tvg-id="FIP.fr" tvg-name="FIP" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/fip.png" group-title="Rádio Global" tvg-chno="8004" radio="true",FIP (Radio France)
 https://icecast.radiofrance.fr/fip-midfi.mp3
 
-#EXTINF:-1 tvg-id="FIPRock.fr" tvg-name="FIP Rock" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/fip.png" group-title="Rádio Global" radio="true",FIP Rock
+#EXTINF:-1 tvg-id="FIPRock.fr" tvg-name="FIP Rock" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/fip.png" group-title="Rádio Global" tvg-chno="8005" radio="true",FIP Rock
 https://icecast.radiofrance.fr/fiprock-midfi.mp3
 
-#EXTINF:-1 tvg-id="FIPJazz.fr" tvg-name="FIP Jazz" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/fip.png" group-title="Rádio Global" radio="true",FIP Jazz
+#EXTINF:-1 tvg-id="FIPJazz.fr" tvg-name="FIP Jazz" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/fip.png" group-title="Rádio Global" tvg-chno="8006" radio="true",FIP Jazz
 https://icecast.radiofrance.fr/fipjazz-midfi.mp3
 
-#EXTINF:-1 tvg-id="FIPElectro.fr" tvg-name="FIP Electro" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/fip.png" group-title="Rádio Global" radio="true",FIP Electro
+#EXTINF:-1 tvg-id="FIPElectro.fr" tvg-name="FIP Electro" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/fip.png" group-title="Rádio Global" tvg-chno="8007" radio="true",FIP Electro
 https://icecast.radiofrance.fr/fipelectro-midfi.mp3
 
-#EXTINF:-1 tvg-id="FIPGroove.fr" tvg-name="FIP Groove" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/fip.png" group-title="Rádio Global" radio="true",FIP Groove
+#EXTINF:-1 tvg-id="FIPGroove.fr" tvg-name="FIP Groove" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/fip.png" group-title="Rádio Global" tvg-chno="8008" radio="true",FIP Groove
 https://icecast.radiofrance.fr/fipgroove-midfi.mp3
 
-#EXTINF:-1 tvg-id="NTSRadio1.uk" tvg-name="NTS Live 1" group-title="Rádio Global" radio="true",NTS Radio 1 (London)
+#EXTINF:-1 tvg-id="NTSRadio1.uk" tvg-name="NTS Live 1" group-title="Rádio Global" tvg-chno="8009" radio="true",NTS Radio 1 (London)
 https://stream-relay-geo.ntslive.net/stream
 
-#EXTINF:-1 tvg-id="NTSRadio2.uk" tvg-name="NTS Live 2" group-title="Rádio Global" radio="true",NTS Radio 2 (London)
+#EXTINF:-1 tvg-id="NTSRadio2.uk" tvg-name="NTS Live 2" group-title="Rádio Global" tvg-chno="8010" radio="true",NTS Radio 2 (London)
 https://stream-relay-geo.ntslive.net/stream2
 
-#EXTINF:-1 tvg-id="SomaFMGrooveSalad.us" tvg-name="SomaFM Groove Salad" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png" group-title="Rádio Global" radio="true",SomaFM: Groove Salad
+#EXTINF:-1 tvg-id="SomaFMGrooveSalad.us" tvg-name="SomaFM Groove Salad" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png" group-title="Rádio Global" tvg-chno="8011" radio="true",SomaFM: Groove Salad
 https://ice2.somafm.com/groovesalad-256-mp3
 
-#EXTINF:-1 tvg-id="SomaFMSecretAgent.us" tvg-name="SomaFM Secret Agent" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png" group-title="Rádio Global" radio="true",SomaFM: Secret Agent
+#EXTINF:-1 tvg-id="SomaFMSecretAgent.us" tvg-name="SomaFM Secret Agent" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png" group-title="Rádio Global" tvg-chno="8012" radio="true",SomaFM: Secret Agent
 https://ice2.somafm.com/secretagent-128-mp3
 
-#EXTINF:-1 tvg-id="SomaFMDroneZone.us" tvg-name="SomaFM Drone Zone" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png" group-title="Rádio Global" radio="true",SomaFM: Drone Zone
+#EXTINF:-1 tvg-id="SomaFMDroneZone.us" tvg-name="SomaFM Drone Zone" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png" group-title="Rádio Global" tvg-chno="8013" radio="true",SomaFM: Drone Zone
 https://ice2.somafm.com/dronezone-256-mp3
 
-#EXTINF:-1 tvg-id="SomaFMIndiePop.us" tvg-name="SomaFM Indie Pop Rocks" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png" group-title="Rádio Global" radio="true",SomaFM: Indie Pop Rocks!
+#EXTINF:-1 tvg-id="SomaFMIndiePop.us" tvg-name="SomaFM Indie Pop Rocks" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/somafm.png" group-title="Rádio Global" tvg-chno="8014" radio="true",SomaFM: Indie Pop Rocks!
 https://ice2.somafm.com/indiepop-128-mp3
 
-#EXTINF:-1 tvg-id="BBCWorldService.uk" tvg-name="BBC World Service" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/bbcworldservice.png" group-title="Rádio Global" radio="true",BBC World Service
+#EXTINF:-1 tvg-id="BBCWorldService.uk" tvg-name="BBC World Service" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/bbcworldservice.png" group-title="Rádio Global" tvg-chno="8015" radio="true",BBC World Service
 https://stream.live.vc.bbcmedia.co.uk/bbc_world_service
 
-#EXTINF:-1 tvg-id="BBCRadio6Music.uk" tvg-name="BBC Radio 6 Music" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/bbcradio6music.png" group-title="Rádio Global" radio="true",BBC Radio 6 Music
+#EXTINF:-1 tvg-id="BBCRadio6Music.uk" tvg-name="BBC Radio 6 Music" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/bbcradio6music.png" group-title="Rádio Global" tvg-chno="8016" radio="true",BBC Radio 6 Music
 https://stream.live.vc.bbcmedia.co.uk/bbc_6music
 
-#EXTINF:-1 tvg-id="KEXP.us" tvg-name="KEXP" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/kexp.png" group-title="Rádio Global" radio="true",KEXP 90.3 FM (Seattle)
+#EXTINF:-1 tvg-id="KEXP.us" tvg-name="KEXP" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/kexp.png" group-title="Rádio Global" tvg-chno="8017" radio="true",KEXP 90.3 FM (Seattle)
 https://kexp.streamguys1.com/kexp160.aac
 
-#EXTINF:-1 tvg-id="RaiRadio2.it" tvg-name="Rai Radio 2" group-title="Rádio Global" radio="true",Rai Radio 2 (Italia)
+#EXTINF:-1 tvg-id="RaiRadio2.it" tvg-name="Rai Radio 2" group-title="Rádio Global" tvg-chno="8018" radio="true",Rai Radio 2 (Italia)
 http://icestreaming.rai.it/2.mp3
 
-#EXTINF:-1 tvg-id="RaiRadio3.it" tvg-name="Rai Radio 3" group-title="Rádio Global" radio="true",Rai Radio 3 (Cultura & Classica)
+#EXTINF:-1 tvg-id="RaiRadio3.it" tvg-name="Rai Radio 3" group-title="Rádio Global" tvg-chno="8019" radio="true",Rai Radio 3 (Cultura & Classica)
 http://icestreaming.rai.it/3.mp3
 
-#EXTINF:-1 tvg-id="RadioRumantsch.ch" tvg-name="Radio Rumantsch" group-title="Rádio Global" radio="true",RTR Radio Rumantsch (Suisse / Rumantsch)
+#EXTINF:-1 tvg-id="RadioRumantsch.ch" tvg-name="Radio Rumantsch" group-title="Rádio Global" tvg-chno="8020" radio="true",RTR Radio Rumantsch (Suisse / Rumantsch)
 http://stream.srg-ssr.ch/m/rr/mp3_128
 
-#EXTINF:-1 tvg-id="RSIReteUno.ch" tvg-name="RSI Rete Uno" group-title="Rádio Global" radio="true",RSI Rete Uno (Svizzera Italiana / Ticino)
+#EXTINF:-1 tvg-id="RSIReteUno.ch" tvg-name="RSI Rete Uno" group-title="Rádio Global" tvg-chno="8021" radio="true",RSI Rete Uno (Svizzera Italiana / Ticino)
 https://stream.srg-ssr.ch/m/reteuno/mp3_128
 
-#EXTINF:-1 tvg-id="ESCRadio.eu" tvg-name="ESC Radio Eurovision" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/escradio.png" group-title="Rádio Global" radio="true",ESC Radio (Eurovision 24/7 Non-Stop)
+#EXTINF:-1 tvg-id="ESCRadio.eu" tvg-name="ESC Radio Eurovision" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/escradio.png" group-title="Rádio Global" tvg-chno="8022" radio="true",ESC Radio (Eurovision 24/7 Non-Stop)
 http://stream.escradio.com:8000/esc128.mp3
 
-#EXTINF:-1 tvg-id="RadioReloj.cu" tvg-name="Radio Reloj Cuba" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Radio_Reloj_Cuba.png/512px-Radio_Reloj_Cuba.png" group-title="Rádio Global" radio="true",Radio Reloj (Cuba 950 AM - Notícias & Metrónomo)
+#EXTINF:-1 tvg-id="RadioReloj.cu" tvg-name="Radio Reloj Cuba" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Radio_Reloj_Cuba.png/512px-Radio_Reloj_Cuba.png" group-title="Rádio Global" tvg-chno="8023" radio="true",Radio Reloj (Cuba 950 AM - Notícias & Metrónomo)
 https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/b3jbfThq
 
-#EXTINF:-1 tvg-id="SomaFMMissionControl.us" tvg-name="SomaFM Mission Control" tvg-logo="https://somafm.com/img3/missioncontrol-400.jpg" group-title="Rádio Global" radio="true",SomaFM Mission Control (NASA Comms & Space Ambient)
+#EXTINF:-1 tvg-id="SomaFMMissionControl.us" tvg-name="SomaFM Mission Control" tvg-logo="https://somafm.com/img3/missioncontrol-400.jpg" group-title="Rádio Global" tvg-chno="8024" radio="true",SomaFM Mission Control (NASA Comms & Space Ambient)
 https://ice6.somafm.com/missioncontrol-128-mp3
 
-#EXTINF:-1 tvg-id="SomaFMSecretAgent.us" tvg-name="SomaFM Secret Agent" tvg-logo="https://somafm.com/img3/secretagent-400.jpg" group-title="Rádio Global" radio="true",SomaFM Secret Agent (1960s Spy Themes & Intercepts)
+#EXTINF:-1 tvg-id="SomaFMSecretAgent.us" tvg-name="SomaFM Secret Agent" tvg-logo="https://somafm.com/img3/secretagent-400.jpg" group-title="Rádio Global" tvg-chno="8025" radio="true",SomaFM Secret Agent (1960s Spy Themes & Intercepts)
 https://ice6.somafm.com/secretagent-128-mp3
 
-#EXTINF:-1 tvg-id="SomaFMSF1033.us" tvg-name="SomaFM SF 10-33" tvg-logo="https://somafm.com/img3/sf1033-400.jpg" group-title="Rádio Global" radio="true",SomaFM SF 10-33 (Police Scanner & Ambient)
+#EXTINF:-1 tvg-id="SomaFMSF1033.us" tvg-name="SomaFM SF 10-33" tvg-logo="https://somafm.com/img3/sf1033-400.jpg" group-title="Rádio Global" tvg-chno="8026" radio="true",SomaFM SF 10-33 (Police Scanner & Ambient)
 https://ice5.somafm.com/sf1033-128-mp3
 
-#EXTINF:-1 tvg-id="LiveATCJFK.us" tvg-name="LiveATC JFK Tower" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Air_traffic_controller.svg/512px-Air_traffic_controller.svg.png" group-title="Rádio Global" radio="true",LiveATC JFK Tower & Approach (New York)
+#EXTINF:-1 tvg-id="LiveATCJFK.us" tvg-name="LiveATC JFK Tower" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Air_traffic_controller.svg/512px-Air_traffic_controller.svg.png" group-title="Rádio Global" tvg-chno="8027" radio="true",LiveATC JFK Tower & Approach (New York)
 https://s1-fmt2.liveatc.net/kjfk_twr
 
-#EXTINF:-1 tvg-id="SomaFMDEFCON.us" tvg-name="SomaFM DEF CON Radio" tvg-logo="https://somafm.com/img3/defcon-400.jpg" group-title="Rádio Global" radio="true",SomaFM DEF CON Radio (Cyberpunk & Beats)
+#EXTINF:-1 tvg-id="SomaFMDEFCON.us" tvg-name="SomaFM DEF CON Radio" tvg-logo="https://somafm.com/img3/defcon-400.jpg" group-title="Rádio Global" tvg-chno="8028" radio="true",SomaFM DEF CON Radio (Cyberpunk & Beats)
 https://ice5.somafm.com/defcon-128-mp3
 
-#EXTINF:-1 tvg-id="SomaFMSpaceStation.us" tvg-name="SomaFM Space Station Soma" tvg-logo="https://somafm.com/img3/spacestation-400.jpg" group-title="Rádio Global" radio="true",SomaFM Space Station Soma (Deep Space Ambient)
+#EXTINF:-1 tvg-id="SomaFMSpaceStation.us" tvg-name="SomaFM Space Station Soma" tvg-logo="https://somafm.com/img3/spacestation-400.jpg" group-title="Rádio Global" tvg-chno="8029" radio="true",SomaFM Space Station Soma (Deep Space Ambient)
 https://ice6.somafm.com/spacestation-128-mp3
 
-#EXTINF:-1 tvg-id="Muzaiko.eo" tvg-name="Muzaiko Esperanto" group-title="Rádio Global" radio="true",Muzaiko (24/7 Esperanto Radio)
+#EXTINF:-1 tvg-id="Muzaiko.eo" tvg-name="Muzaiko Esperanto" group-title="Rádio Global" tvg-chno="8030" radio="true",Muzaiko (24/7 Esperanto Radio)
 http://fluo.muzaiko.saluton.dk:8000/radio.mp3
 
-#EXTINF:-1 tvg-id="RadioHabanaCuba.eo" tvg-name="Radio Habana Cuba Esperanto" group-title="Rádio Global" radio="true",Radio Habana Cuba (Esperanto)
+#EXTINF:-1 tvg-id="RadioHabanaCuba.eo" tvg-name="Radio Habana Cuba Esperanto" group-title="Rádio Global" tvg-chno="8031" radio="true",Radio Habana Cuba (Esperanto)
 https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/McW3fLhs
 
-#EXTINF:-1 tvg-id="BokRadio.za" tvg-name="Bok Radio Afrikaans" group-title="Rádio Global" radio="true",Bok Radio 98.9 FM (Afrikaans)
+#EXTINF:-1 tvg-id="BokRadio.za" tvg-name="Bok Radio Afrikaans" group-title="Rádio Global" tvg-chno="8032" radio="true",Bok Radio 98.9 FM (Afrikaans)
 http://bokradio.highquality.radiostream.co.za/
 
-#EXTINF:-1 tvg-id="BosveldStereo.za" tvg-name="Bosveld Stereo Afrikaans" group-title="Rádio Global" radio="true",Bosveld Stereo 107.5 FM (Afrikaans)
+#EXTINF:-1 tvg-id="BosveldStereo.za" tvg-name="Bosveld Stereo Afrikaans" group-title="Rádio Global" tvg-chno="8033" radio="true",Bosveld Stereo 107.5 FM (Afrikaans)
 http://capeant.antfarm.co.za:8000/Bosveld
 
-#EXTINF:-1 tvg-id="FineMusicRadio.za" tvg-name="Fine Music Radio" group-title="Rádio Global" radio="true",Fine Music Radio (Cape Town Classical)
+#EXTINF:-1 tvg-id="FineMusicRadio.za" tvg-name="Fine Music Radio" group-title="Rádio Global" tvg-chno="8034" radio="true",Fine Music Radio (Cape Town Classical)
 https://edge.iono.fm/xhls/fmr_live_high.m3u8
 
-#EXTINF:-1 tvg-id="Radio3ZZZ.au" tvg-name="Radio 3ZZZ Esperanto" group-title="Rádio Global" radio="true",Radio 3ZZZ 92.3 FM (Melbourne / Esperanto)
+#EXTINF:-1 tvg-id="Radio3ZZZ.au" tvg-name="Radio 3ZZZ Esperanto" group-title="Rádio Global" tvg-chno="8035" radio="true",Radio 3ZZZ 92.3 FM (Melbourne / Esperanto)
 https://playerservices.streamtheworld.com/api/livestream-redirect/3ZZZ.mp3
 
-#EXTINF:-1 tvg-id="HitradioNamibia.na" tvg-name="Hitradio Namibia" group-title="Rádio Global" radio="true",Hitradio Namibia (Windhoek / Deutsch)
+#EXTINF:-1 tvg-id="HitradioNamibia.na" tvg-name="Hitradio Namibia" group-title="Rádio Global" tvg-chno="8036" radio="true",Hitradio Namibia (Windhoek / Deutsch)
 https://s37.derstream.net/hitradio-namibia.mp3
 
-#EXTINF:-1 tvg-id="Kosmos941.na" tvg-name="Kosmos 94.1 Afrikaans" group-title="Rádio Global" radio="true",Kosmos 94.1 (Namibië / Afrikaans)
+#EXTINF:-1 tvg-id="Kosmos941.na" tvg-name="Kosmos 94.1 Afrikaans" group-title="Rádio Global" tvg-chno="8037" radio="true",Kosmos 94.1 (Namibië / Afrikaans)
 https://edge.iono.fm/xice/88_high.mp3
-
-#EXTINF:-1 tvg-id="BobRoss.tv@HD" tvg-name="Bob Ross" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bob_Ross_The_Joy_of_Painting_logo.svg/512px-Bob_Ross_The_Joy_of_Painting_logo.svg.png" group-title="Natureza & Slow TV",Bob Ross (24/7 The Joy of Painting)
-https://kiefte.eu/iptv/twitch/bobross
-
-#EXTINF:-1 tvg-id="LofiGirl.tv@HD" tvg-name="Lofi Girl" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Lofi_girl_logo.jpg/512px-Lofi_girl_logo.jpg" group-title="Natureza & Slow TV",Lofi Girl (24/7 Relaxing Beats & Ambience 1080p)
-https://kiefte.eu/iptv/twitch/lofigirl
-
-#EXTINF:-1 tvg-id="RelaxBeats.tv@HD" tvg-name="Relax Beats" group-title="Natureza & Slow TV",Relax Beats & Chill Music (24/7 HD)
-https://kiefte.eu/iptv/twitch/relaxbeats
-
-#EXTINF:-1 tvg-id="NASATV.us@HD" tvg-name="NASA Live" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/512px-NASA_logo.svg.png" group-title="Natureza & Slow TV",NASA Live (Earth from Space & ISS 1080p)
-https://kiefte.eu/iptv/twitch/nasa
-
-#EXTINF:-1 tvg-id="RailCowGirl.tv@HD" tvg-name="RailCowGirl" tvg-logo="https://static-cdn.jtvnw.net/jtv_user_pictures/3004f2f9-715b-4395-8b3d-4c3dbdd1be36-profile_image-300x300.png" group-title="Natureza & Slow TV",RailCowGirl (Norway Scenic Cabview Train Journeys)
-https://kiefte.eu/iptv/twitch/railcowgirl?fallback=0
-
-#EXTINF:-1 tvg-id="AdventureEarth.de@HD" tvg-name="Adventure Earth" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Earth_symbol_%28bold%29.svg/512px-Earth_symbol_%28bold%29.svg.png" group-title="Natureza & Slow TV",Adventure Earth (1080p Full HD)
-https://autentic-adventure-earth-1-gb.samsung.wurl.tv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="DoctorWhoClassic.uk@HD" tvg-name="Doctor Who Classic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Doctor_Who_logo_2018.svg/512px-Doctor_Who_logo_2018.svg.png" group-title="Sci-Fi & Cult Retro",Doctor Who Classic (24/7 1080p HD)
-https://bbc-classicdrwho-1-us.roku.wurl.tv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="MST3K.us@HD" tvg-name="Mystery Science Theater 3000" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Mystery_Science_Theater_3000_logo.svg/512px-Mystery_Science_Theater_3000_logo.svg.png" group-title="Sci-Fi & Cult Retro",Mystery Science Theater 3000 (MST3K 1080p)
-https://kiefte.eu/iptv/twitch/mst3k
-
-#EXTINF:-1 tvg-id="ShoutFactoryTV.us@HD" tvg-name="Shout! Factory TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Shout%21_Factory_logo.svg/512px-Shout%21_Factory_logo.svg.png" group-title="Sci-Fi & Cult Retro",Shout! Factory TV (Cult Sci-Fi & Classics)
-https://kiefte.eu/iptv/twitch/shoutfactorytv
-
-#EXTINF:-1 tvg-id="WorldOfLongplays.tv@HD" tvg-name="World of Longplays" tvg-logo="https://static-cdn.jtvnw.net/jtv_user_pictures/worldoflongplays-profile_image-144709d73d6e9dc7-300x300.png" group-title="Sci-Fi & Cult Retro",World of Longplays (Retro Gaming 1080p60)
-https://kiefte.eu/iptv/twitch/worldoflongplays
-
-#EXTINF:-1 tvg-id="FailArmy.us@HD" tvg-name="FailArmy" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/FailArmy_logo.png/512px-FailArmy_logo.png" group-title="Sci-Fi & Cult Retro",FailArmy (24/7 Comedy HD)
-https://failarmy-international-nl.samsung.wurl.tv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="JustForLaughsGags.ca@HD" tvg-name="Just for Laughs Gags" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/Just_for_Laughs_Gags_logo.svg/512px-Just_for_Laughs_Gags_logo.svg.png" group-title="Sci-Fi & Cult Retro",Just for Laughs Gags (Slapstick Comedy HD)
-https://distributionsjustepourrire-justforlaughsgags-1-nl.samsung.wurl.tv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="FilmRiseClassicTV.us@HD" tvg-name="FilmRise Classic TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/FilmRise_logo.png/512px-FilmRise_logo.png" group-title="Sci-Fi & Cult Retro",FilmRise Classic TV (Cult Classics)
-https://d2tv4k5moji5m7.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-lu4pzh9l4b57p/master.m3u8
-
-#EXTINF:-1 tvg-id="FilmRiseAnime.us@HD" tvg-name="FilmRise Anime" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/FilmRise_logo.png/512px-FilmRise_logo.png" group-title="Sci-Fi & Cult Retro",FilmRise Anime (24/7 Classic Anime HD)
-https://dvu7aia8rjlfm.cloudfront.net/master.m3u8
-
-#EXTINF:-1 tvg-id="AutenticHistory.de@HD" tvg-name="Autentic History" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/History_Logo_2021.svg/512px-History_Logo_2021.svg.png" group-title="Sci-Fi & Cult Retro",Autentic History (1080p Full HD)
-https://autentic-autentichistory-1-gb.samsung.wurl.tv/playlist.m3u8

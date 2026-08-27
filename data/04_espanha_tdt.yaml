@@ -42,8 +42,3 @@
   tvg_name: ETB 2
   logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/etb2.png
   url: https://cdn1.etbon.eus/etb2on/index.m3u8
-- name: Cadena SER España
-  group: ES Rádio
-  tvg_id: CadenaSER.es
-  tvg_name: Cadena SER
-  url: https://playerservices.streamtheworld.com/api/livestream-redirect/CADENASER.mp3
