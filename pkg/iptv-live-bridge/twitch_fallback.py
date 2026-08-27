@@ -26,6 +26,8 @@ GAME_GROUPS = {
 
 # Curated Creator Affinity & Collaborator Circles (Tier 1B)
 CREATOR_CIRCLES = {
+    "tetris": ["harddrop", "classictetris", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "wumbotize", "doremy", "speedrun"],
+    "nes-tetris": ["classictetris", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "harddrop", "speedrun"],
     "classictetris": ["dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "classictetris2", "classictetris3", "classictetris4", "harddrop", "wumbotize", "doremy"],
     "classictetris2": ["classictetris", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "classictetris3", "classictetris4"],
     "classictetris3": ["classictetris", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "classictetris2", "classictetris4"],

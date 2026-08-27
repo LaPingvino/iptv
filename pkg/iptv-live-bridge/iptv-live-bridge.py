@@ -379,9 +379,17 @@ def get_top_streamer_across_multi_games(game_names, bias=None, exclude_login=Non
     if not candidates:
         return None
 
-    # Filter candidates with >= min_viewers if any exist
-    quality_candidates = [c for c in candidates if c["viewers"] >= min_viewers]
-    active_pool = quality_candidates if quality_candidates else candidates
+    # Filter candidates with >= min_viewers and exclude known AFK desktop streamers
+    quality_candidates = [
+        c for c in candidates 
+        if c["viewers"] >= min_viewers and c["login"].lower() not in ["hercules_lostdays", "desktop"]
+    ]
+    
+    # If no quality stream with >= min_viewers exists, return None to trigger autonomous community fallback
+    if not quality_candidates:
+        return None
+        
+    active_pool = quality_candidates
 
     # If bias given and matching quality streams exist
     if preferred_keywords:
