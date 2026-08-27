@@ -120,14 +120,6 @@
     "chno": 22
   },
   {
-    "name": "Reino Infantil TV (Moçambique 1080p)",
-    "group": "MZ Geral",
-    "tvg_id": "ReinoInfantilTV.mz@HD",
-    "tvg_name": "Reino Infantil TV",
-    "url": "https://www.khuwemultimedia.com/hls/reinoinfantiltv/reinoinfantiltv.m3u8",
-    "chno": 23
-  },
-  {
     "name": "RTP 3",
     "group": "Notícias",
     "tvg_id": "RTP3.pt",
@@ -757,12 +749,20 @@
     "chno": 602
   },
   {
+    "name": "Reino Infantil TV (Moçambique 1080p)",
+    "group": "Infantil & Kids",
+    "tvg_id": "ReinoInfantilTV.mz@HD",
+    "tvg_name": "Reino Infantil TV",
+    "url": "https://www.khuwemultimedia.com/hls/reinoinfantiltv/reinoinfantiltv.m3u8",
+    "chno": 603
+  },
+  {
     "name": "Toon Goggles Junior (720p HD)",
     "group": "Infantil & Kids",
     "tvg_id": "ToonGogglesJr.us@HD",
     "tvg_name": "Toon Goggles Junior",
     "url": "https://d3i6upqaqzosi1.cloudfront.net/tg/jr_us/tg_jr_us.m3u8",
-    "chno": 603
+    "chno": 604
   },
   {
     "name": "Kartoon Channel! (720p HD)",
@@ -771,7 +771,7 @@
     "tvg_name": "Kartoon Channel!",
     "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Kartoon_Channel%21_logo.png/512px-Kartoon_Channel%21_logo.png",
     "url": "https://d2z0ysa6dgxhlc.cloudfront.net/kchan.m3u8",
-    "chno": 604
+    "chno": 605
   },
   {
     "name": "DuckTV (Toddlers & Visual Animation HD)",
@@ -780,7 +780,7 @@
     "tvg_name": "DuckTV",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Ducktv_logo.png/512px-Ducktv_logo.png",
     "url": "https://d6lk10bkdgfae.cloudfront.net/playlist.m3u8",
-    "chno": 605
+    "chno": 606
   },
   {
     "name": "HappyKids (1080p Full HD)",
@@ -788,7 +788,7 @@
     "tvg_id": "HappyKids.us@HD",
     "tvg_name": "HappyKids",
     "url": "https://dil9xdvretp0f.cloudfront.net/index.m3u8",
-    "chno": 606
+    "chno": 607
   },
   {
     "name": "Lego Channel (Animation HD)",
@@ -797,7 +797,7 @@
     "tvg_name": "Lego Channel",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/512px-LEGO_logo.svg.png",
     "url": "https://dltiqboxjw21d.cloudfront.net/index.m3u8",
-    "chno": 607
+    "chno": 608
   },
   {
     "name": "Studio Brussel (Visual Radio)",

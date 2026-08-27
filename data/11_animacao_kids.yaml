@@ -25,6 +25,12 @@
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Clan_RTVE_logo.svg/512px-Clan_RTVE_logo.svg.png
   url: https://rtve01p.origin.c21livecloud.com/live-origin/clan-hls/bitrate_1.m3u8
 
+- name: Reino Infantil TV (Moçambique 1080p)
+  group: Infantil & Kids
+  tvg_id: ReinoInfantilTV.mz@HD
+  tvg_name: Reino Infantil TV
+  url: https://www.khuwemultimedia.com/hls/reinoinfantiltv/reinoinfantiltv.m3u8
+
 - name: Toon Goggles Junior (720p HD)
   group: Infantil & Kids
   tvg_id: ToonGogglesJr.us@HD

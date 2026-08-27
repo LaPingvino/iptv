@@ -58,9 +58,6 @@ https://www.khuwemultimedia.com/hls/mntv/mntv.m3u8
 #EXTINF:-1 tvg-id="TVVitoria.mz" tvg-name="TV Vitória" group-title="MZ Geral" tvg-chno="22",TV Vitória Moçambique
 https://stmv1.srvif.com/tvvitoriamz/tvvitoriamz/playlist.m3u8
 
-#EXTINF:-1 tvg-id="ReinoInfantilTV.mz@HD" tvg-name="Reino Infantil TV" group-title="MZ Geral" tvg-chno="23",Reino Infantil TV (Moçambique 1080p)
-https://www.khuwemultimedia.com/hls/reinoinfantiltv/reinoinfantiltv.m3u8
-
 #EXTINF:-1 tvg-id="RTP3.pt" tvg-name="RTP 3" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP3.png" group-title="Notícias" tvg-chno="100",RTP 3
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
 #EXTVLCOPT:http-origin=https://www.rtp.pt
@@ -283,19 +280,22 @@ https://amg00627-amg00627c30-rakuten-es-3990.playouts.now.amagi.tv/playlist/amg0
 #EXTINF:-1 tvg-id="Clan.es@HD" tvg-name="Clan" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Clan_RTVE_logo.svg/512px-Clan_RTVE_logo.svg.png" group-title="Infantil & Kids" tvg-chno="602",RTVE Clan (1080p)
 https://rtve01p.origin.c21livecloud.com/live-origin/clan-hls/bitrate_1.m3u8
 
-#EXTINF:-1 tvg-id="ToonGogglesJr.us@HD" tvg-name="Toon Goggles Junior" group-title="Infantil & Kids" tvg-chno="603",Toon Goggles Junior (720p HD)
+#EXTINF:-1 tvg-id="ReinoInfantilTV.mz@HD" tvg-name="Reino Infantil TV" group-title="Infantil & Kids" tvg-chno="603",Reino Infantil TV (Moçambique 1080p)
+https://www.khuwemultimedia.com/hls/reinoinfantiltv/reinoinfantiltv.m3u8
+
+#EXTINF:-1 tvg-id="ToonGogglesJr.us@HD" tvg-name="Toon Goggles Junior" group-title="Infantil & Kids" tvg-chno="604",Toon Goggles Junior (720p HD)
 https://d3i6upqaqzosi1.cloudfront.net/tg/jr_us/tg_jr_us.m3u8
 
-#EXTINF:-1 tvg-id="KartoonChannel.us@HD" tvg-name="Kartoon Channel!" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Kartoon_Channel%21_logo.png/512px-Kartoon_Channel%21_logo.png" group-title="Infantil & Kids" tvg-chno="604",Kartoon Channel! (720p HD)
+#EXTINF:-1 tvg-id="KartoonChannel.us@HD" tvg-name="Kartoon Channel!" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Kartoon_Channel%21_logo.png/512px-Kartoon_Channel%21_logo.png" group-title="Infantil & Kids" tvg-chno="605",Kartoon Channel! (720p HD)
 https://d2z0ysa6dgxhlc.cloudfront.net/kchan.m3u8
 
-#EXTINF:-1 tvg-id="DuckTV.sk@HD" tvg-name="DuckTV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Ducktv_logo.png/512px-Ducktv_logo.png" group-title="Infantil & Kids" tvg-chno="605",DuckTV (Toddlers & Visual Animation HD)
+#EXTINF:-1 tvg-id="DuckTV.sk@HD" tvg-name="DuckTV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Ducktv_logo.png/512px-Ducktv_logo.png" group-title="Infantil & Kids" tvg-chno="606",DuckTV (Toddlers & Visual Animation HD)
 https://d6lk10bkdgfae.cloudfront.net/playlist.m3u8
 
-#EXTINF:-1 tvg-id="HappyKids.us@HD" tvg-name="HappyKids" group-title="Infantil & Kids" tvg-chno="606",HappyKids (1080p Full HD)
+#EXTINF:-1 tvg-id="HappyKids.us@HD" tvg-name="HappyKids" group-title="Infantil & Kids" tvg-chno="607",HappyKids (1080p Full HD)
 https://dil9xdvretp0f.cloudfront.net/index.m3u8
 
-#EXTINF:-1 tvg-id="LegoChannel.us@HD" tvg-name="Lego Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/512px-LEGO_logo.svg.png" group-title="Infantil & Kids" tvg-chno="607",Lego Channel (Animation HD)
+#EXTINF:-1 tvg-id="LegoChannel.us@HD" tvg-name="Lego Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/512px-LEGO_logo.svg.png" group-title="Infantil & Kids" tvg-chno="608",Lego Channel (Animation HD)
 https://dltiqboxjw21d.cloudfront.net/index.m3u8
 
 #EXTINF:-1 tvg-id="StudioBrussel.be" tvg-name="Studio Brussel Visual" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="Música & Video" tvg-chno="700",Studio Brussel (Visual Radio)
