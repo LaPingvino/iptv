@@ -9,6 +9,7 @@ EnvironmentFile=-/etc/iptv-live-bridge.conf
 ExecStart=/usr/bin/iptv-live-bridge
 Restart=always
 RestartSec=5
+TimeoutStopSec=10
 DynamicUser=yes
 ReadOnlyPaths=/var/lib/iptv-live-bridge /usr/share/iptv-live-bridge
 

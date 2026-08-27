@@ -22,6 +22,9 @@ import subprocess
 import urllib.parse
 import urllib.request
 from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
+import queue
+import collections
+import signal
 import streamlink
 
 logging.basicConfig(
@@ -156,6 +159,97 @@ def get_bvn_dynamic_mpd():
     bvn_mpd_cache["xml"] = data
     bvn_mpd_cache["mpd_ts"] = now
     return data
+
+class BVNStreamEngine:
+    """Shared single-instance real-time decryption broadcaster for BVN."""
+    def __init__(self):
+        self.proc = None
+        self.lock = threading.Lock()
+        self.clients = set()
+        self.last_access = 0
+        self.thread = None
+        self.running = False
+        self.recent_chunks = collections.deque(maxlen=16) # ~1MB burst buffer
+
+    def _start(self):
+        cmd = [
+            "ffmpeg", "-nostdin", "-v", "warning",
+            "-re",
+            "-cenc_decryption_key", BVN_DEC_KEY,
+            "-i", f"http://127.0.0.1:{PORT}/bvn_internal.mpd",
+            "-map", "0:v:0",
+            "-map", "0:a:0",
+            "-c:v", "copy",
+            "-bsf:v", "h264_mp4toannexb",
+            "-c:a", "copy",
+            "-mpegts_flags", "resend_headers+initial_discontinuity",
+            "-f", "mpegts",
+            "pipe:1"
+        ]
+        self.proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, bufsize=65536)
+        self.running = True
+        self.recent_chunks.clear()
+        self.thread = threading.Thread(target=self._reader_loop, daemon=True)
+        self.thread.start()
+        logger.info("BVNStreamEngine started shared real-time decryption worker")
+
+    def _reader_loop(self):
+        while self.running and self.proc:
+            chunk = self.proc.stdout.read(65536)
+            if not chunk:
+                break
+            with self.lock:
+                self.recent_chunks.append(chunk)
+                for q in list(self.clients):
+                    try:
+                        q.put_nowait(chunk)
+                    except queue.Full:
+                        pass
+                if not self.clients and (time.time() - self.last_access) > 30:
+                    logger.info("No active BVN viewers for 30s, stopping background decryptor")
+                    self.running = False
+                    break
+        with self.lock:
+            if self.proc:
+                try:
+                    self.proc.terminate()
+                    self.proc.wait()
+                except Exception:
+                    pass
+                self.proc = None
+            self.running = False
+
+    def subscribe(self):
+        q = queue.Queue(maxsize=64)
+        with self.lock:
+            self.last_access = time.time()
+            if not self.running or self.proc is None or self.proc.poll() is not None:
+                self._start()
+            for c in list(self.recent_chunks):
+                try:
+                    q.put_nowait(c)
+                except queue.Full:
+                    break
+            self.clients.add(q)
+        return q
+
+    def unsubscribe(self, q):
+        with self.lock:
+            self.clients.discard(q)
+            self.last_access = time.time()
+
+    def stop(self):
+        with self.lock:
+            self.running = False
+            if self.proc:
+                try:
+                    self.proc.terminate()
+                    self.proc.wait()
+                except Exception:
+                    pass
+                self.proc = None
+
+bvn_engine = BVNStreamEngine()
 
 def generate_live_linear_m3u8(directory, prefix="esperanto/", standby_ts="/iptv/test/esperanto_standby0.ts", seg_duration=10.0):
     """Generates a synchronized real-time sliding-window live HLS playlist cycling 24/7 through media segments."""
@@ -885,39 +979,11 @@ class BridgeHandler(BaseHTTPRequestHandler):
                 self.end_headers()
                 return
 
-        # Serve BVN (Beste Van NPO) Live Stream (Decrypted MPEG-TS)
+        # Serve BVN (Beste Van NPO) Live Stream (Decrypted MPEG-TS via BVNStreamEngine)
         if path.startswith("bvn") or path.startswith("nl/bvn"):
             try:
-                cmd = [
-                    "ffmpeg", "-nostdin", "-v", "error",
-                    "-cenc_decryption_key", BVN_DEC_KEY,
-                    "-i", f"http://127.0.0.1:{PORT}/bvn_internal.mpd",
-                    "-map", "0:v:0",
-                    "-map", "0:a:0",
-                    "-c:v", "copy",
-                    "-bsf:v", "h264_mp4toannexb",
-                    "-c:a", "copy",
-                    "-mpegts_flags", "resend_headers+initial_discontinuity",
-                    "-f", "mpegts",
-                    "pipe:1"
-                ]
-                proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, bufsize=131072)
+                q = bvn_engine.subscribe()
                 
-                # Pre-buffer 1 MB (~2.5s of video) to immediately fill player buffer
-                burst_chunks = []
-                burst_total = 0
-                while burst_total < 1048576: # 1 MB
-                    chunk = proc.stdout.read(65536)
-                    if not chunk:
-                        break
-                    burst_chunks.append(chunk)
-                    burst_total += len(chunk)
-                    
-                if not burst_chunks:
-                    proc.terminate()
-                    proc.wait()
-                    raise RuntimeError("ffmpeg decryption produced no output")
-
                 self.send_response(200)
                 self.send_header("Content-Type", "video/MP2T")
                 self.send_header("Access-Control-Allow-Origin", "*")
@@ -925,26 +991,18 @@ class BridgeHandler(BaseHTTPRequestHandler):
                 self.end_headers()
 
                 if is_head:
-                    proc.terminate()
-                    proc.wait()
+                    bvn_engine.unsubscribe(q)
                     return
-
-                for c in burst_chunks:
-                    self.wfile.write(c)
-                self.wfile.flush()
 
                 try:
                     while True:
-                        chunk = proc.stdout.read(65536)
-                        if not chunk:
-                            break
+                        chunk = q.get(timeout=10)
                         self.wfile.write(chunk)
                         self.wfile.flush()
                 except Exception:
                     pass
                 finally:
-                    proc.terminate()
-                    proc.wait()
+                    bvn_engine.unsubscribe(q)
                 return
             except Exception as e:
                 logger.error(f"Error streaming BVN: {e}")
@@ -1194,12 +1252,23 @@ def run():
     
     server_address = (HOST, PORT)
     httpd = ThreadingHTTPServer(server_address, BridgeHandler)
-    logger.info(f"Starting Quality Multi-Game Bridge v3.7.1 on http://{HOST}:{PORT}")
+    logger.info(f"Starting Quality Multi-Game Bridge v3.8.2 on http://{HOST}:{PORT}")
+    
+    def sig_handler(signum, frame):
+        logger.info(f"Received signal {signum}, stopping bvn_engine and exiting cleanly...")
+        bvn_engine.stop()
+        httpd.server_close()
+        sys.exit(0)
+
+    signal.signal(signal.SIGTERM, sig_handler)
+    signal.signal(signal.SIGINT, sig_handler)
+    
     try:
         httpd.serve_forever()
     except KeyboardInterrupt:
         logger.info("Stopping server...")
     finally:
+        bvn_engine.stop()
         httpd.server_close()
 
 if __name__ == "__main__":
