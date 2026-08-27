@@ -60,6 +60,53 @@ TESTCARD_DIR = os.environ.get("BRIDGE_TESTCARD_DIR", "/usr/share/iptv-live-bridg
 ESPERANTO_DIR = os.environ.get("BRIDGE_ESPERANTO_DIR", "/var/lib/iptv-live-bridge/esperantotv" if os.path.exists("/var/lib/iptv-live-bridge/esperantotv") else ("/usr/share/iptv-live-bridge/esperantotv" if os.path.exists("/usr/share/iptv-live-bridge/esperantotv") else os.path.join(os.path.dirname(os.path.abspath(__file__)), "esperantotv")))
 BAHAI_DIR = os.environ.get("BRIDGE_BAHAI_DIR", "/var/lib/iptv-live-bridge/bahaitv" if os.path.exists("/var/lib/iptv-live-bridge/bahaitv") else ("/usr/share/iptv-live-bridge/bahaitv" if os.path.exists("/usr/share/iptv-live-bridge/bahaitv") else os.path.join(os.path.dirname(os.path.abspath(__file__)), "bahaitv")))
 
+# BVN (Beste Van NPO & VRT) Widevine Decryption Engine
+BVN_DEC_KEY = "8fdccd948bb2cc6d99d5305ccffebcb7"
+bvn_mpd_cache = {"url": None, "ts": 0}
+
+def get_bvn_mpd_url():
+    now = time.time()
+    if bvn_mpd_cache["url"] and (now - bvn_mpd_cache["ts"]) < 3600:
+        return bvn_mpd_cache["url"]
+    
+    req = urllib.request.Request(
+        "https://www.bvn.tv/tv-gids/?player=live",
+        headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
+    )
+    html = urllib.request.urlopen(req, timeout=6).read().decode('utf-8')
+    import re
+    m = re.search(r'let jwtnpoplayer[a-zA-Z0-9]+\s*=\s*"([^"]+)"', html)
+    if not m:
+        raise RuntimeError("Could not extract BVN player token from bvn.tv")
+    jwt_token = m.group(1)
+    
+    data = {
+        "profileName": "dash",
+        "drmType": "widevine",
+        "referrerUrl": "https://www.bvn.tv/tv-gids/?player=live",
+        "ster": {"identifier": "npo"}
+    }
+    req2 = urllib.request.Request(
+        "https://prod.npoplayer.nl/stream-link",
+        data=json.dumps(data).encode('utf-8'),
+        headers={
+            "Authorization": jwt_token,
+            "Content-Type": "application/json",
+            "Origin": "https://www.bvn.tv",
+            "Referer": "https://www.bvn.tv/",
+            "User-Agent": "Mozilla/5.0"
+        }
+    )
+    with urllib.request.urlopen(req2, timeout=6) as resp:
+        res = json.loads(resp.read().decode('utf-8'))
+        mpd_url = res.get('stream', {}).get('streamURL')
+        if not mpd_url:
+            raise RuntimeError("No streamURL returned from npoplayer API")
+        bvn_mpd_cache["url"] = mpd_url
+        bvn_mpd_cache["ts"] = now
+        logger.info(f"Resolved fresh BVN MPD URL: {mpd_url[:60]}...")
+        return mpd_url
+
 def generate_live_linear_m3u8(directory, prefix="esperanto/", standby_ts="/iptv/test/esperanto_standby0.ts", seg_duration=10.0):
     """Generates a synchronized real-time sliding-window live HLS playlist cycling 24/7 through media segments."""
     clean_prefix = prefix.strip("/")
@@ -769,6 +816,50 @@ class BridgeHandler(BaseHTTPRequestHandler):
                     if not is_head:
                         self.wfile.write(b"404 Not Found: Segment not found\n")
                     return
+
+        # Serve BVN (Beste Van NPO & VRT) Live Stream (Decrypted MPEG-TS)
+        if path.startswith("bvn") or path.startswith("nl/bvn"):
+            try:
+                mpd_url = get_bvn_mpd_url()
+                self.send_response(200)
+                self.send_header("Content-Type", "video/MP2T")
+                self.send_header("Access-Control-Allow-Origin", "*")
+                self.send_header("Connection", "close")
+                self.end_headers()
+
+                if is_head:
+                    return
+
+                cmd = [
+                    "ffmpeg", "-nostdin", "-v", "error",
+                    "-cenc_decryption_key", BVN_DEC_KEY,
+                    "-i", mpd_url,
+                    "-c", "copy",
+                    "-f", "mpegts",
+                    "pipe:1"
+                ]
+                proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, bufsize=65536)
+                try:
+                    while True:
+                        chunk = proc.stdout.read(65536)
+                        if not chunk:
+                            break
+                        self.wfile.write(chunk)
+                        self.wfile.flush()
+                except Exception:
+                    pass
+                finally:
+                    proc.terminate()
+                    proc.wait()
+                return
+            except Exception as e:
+                logger.error(f"Error streaming BVN: {e}")
+                self.send_response(502)
+                self.send_header("Content-Type", "text/plain")
+                self.end_headers()
+                if not is_head:
+                    self.wfile.write(f"BVN stream error: {e}\n".encode("utf-8"))
+                return
 
         # High-Speed Parallel-Buffered Disney Channel Portugal (1080p + Boosted Audio)
         if path.startswith("disney") or path in ["disney", "disney.m3u8"]:

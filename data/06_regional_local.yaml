@@ -1,3 +1,10 @@
+- name: BVN (Het Beste van NPO & VRT HD)
+  group: Regional & Local
+  tvg_id: BVN.nl
+  tvg_name: BVN
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/BVN_logo_2018.svg/512px-BVN_logo_2018.svg.png
+  url: https://kiefte.eu/iptv/bvn
+
 - name: XON (Ede TV)
   group: Regional & Local
   tvg_id: XON.nl

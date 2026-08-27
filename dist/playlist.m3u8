@@ -142,55 +142,58 @@ https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=12687
 #EXTINF:-1 tvg-id="TVGMiraRadioGalega.es" tvg-name="TVG Mira Radio Galega" group-title="Galiza" tvg-chno="232",TVG Mira Radio Galega (Visual)
 https://crtvg-mirarg-schlive.flumotion.cloud/crtvglive/smil:channel1PRG.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="XON.nl" tvg-name="XON Ede" group-title="Regional & Local" tvg-chno="260",XON (Ede TV)
+#EXTINF:-1 tvg-id="BVN.nl" tvg-name="BVN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/BVN_logo_2018.svg/512px-BVN_logo_2018.svg.png" group-title="Regional & Local" tvg-chno="260",BVN (Het Beste van NPO & VRT HD)
+https://kiefte.eu/iptv/bvn
+
+#EXTINF:-1 tvg-id="XON.nl" tvg-name="XON Ede" group-title="Regional & Local" tvg-chno="261",XON (Ede TV)
 https://live.omroepnet.nl/hls/stream.m3u8
 
-#EXTINF:-1 tvg-id="Omroep.Gelderland.nl" tvg-name="Omroep Gelderland" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepgelderland.png" group-title="Regional & Local" tvg-chno="261",Omroep Gelderland
+#EXTINF:-1 tvg-id="Omroep.Gelderland.nl" tvg-name="Omroep Gelderland" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepgelderland.png" group-title="Regional & Local" tvg-chno="262",Omroep Gelderland
 https://d2od87akyl46nm.cloudfront.net/live/omroepgelderland/tvgelderland-hls/index.m3u8
 
-#EXTINF:-1 tvg-id="Omroep.Brabant.nl" tvg-name="Omroep Brabant" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepbrabant.png" group-title="Regional & Local" tvg-chno="262",Omroep Brabant
+#EXTINF:-1 tvg-id="Omroep.Brabant.nl" tvg-name="Omroep Brabant" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepbrabant.png" group-title="Regional & Local" tvg-chno="263",Omroep Brabant
 https://d3slqp9xhts6qb.cloudfront.net/live/omroepbrabant/tv/index.m3u8
 
-#EXTINF:-1 tvg-id="RTV.West.nl" tvg-name="Omroep West" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepwest.png" group-title="Regional & Local" tvg-chno="263",Omroep West
+#EXTINF:-1 tvg-id="RTV.West.nl" tvg-name="Omroep West" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepwest.png" group-title="Regional & Local" tvg-chno="264",Omroep West
 https://d1axml5ozykh3g.cloudfront.net/live/omroepwest/tv/index.m3u8
 
-#EXTINF:-1 tvg-id="Omroep.Zeeland.nl" tvg-name="Omroep Zeeland" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepzeeland.png" group-title="Regional & Local" tvg-chno="264",Omroep Zeeland
+#EXTINF:-1 tvg-id="Omroep.Zeeland.nl" tvg-name="Omroep Zeeland" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepzeeland.png" group-title="Regional & Local" tvg-chno="265",Omroep Zeeland
 https://d3isaxd2t6q8zm.cloudfront.net/live/omroepzeeland/tv/index.m3u8
 
-#EXTINF:-1 tvg-id="Omroep.Flevoland.nl" tvg-name="Omroep Flevoland" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepflevoland.png" group-title="Regional & Local" tvg-chno="265",Omroep Flevoland
+#EXTINF:-1 tvg-id="Omroep.Flevoland.nl" tvg-name="Omroep Flevoland" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepflevoland.png" group-title="Regional & Local" tvg-chno="266",Omroep Flevoland
 https://d5ms27yy6exnf.cloudfront.net/live/omroepflevoland/tv/index.m3u8
 
-#EXTINF:-1 tvg-id="Oost.nl" tvg-name="RTV Oost" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvoost.png" group-title="Regional & Local" tvg-chno="266",RTV Oost
+#EXTINF:-1 tvg-id="Oost.nl" tvg-name="RTV Oost" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvoost.png" group-title="Regional & Local" tvg-chno="267",RTV Oost
 https://d34cg2bnc08ruf.cloudfront.net/live/rtvoost/tv/index.m3u8
 
-#EXTINF:-1 tvg-id="RTV.Rijnmond.nl" tvg-name="RTV Rijnmond" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rijnmond.png" group-title="Regional & Local" tvg-chno="267",RTV Rijnmond (Rotterdam)
+#EXTINF:-1 tvg-id="RTV.Rijnmond.nl" tvg-name="RTV Rijnmond" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rijnmond.png" group-title="Regional & Local" tvg-chno="268",RTV Rijnmond (Rotterdam)
 https://dcur8bjarl5c2.cloudfront.net/live/rijnmond/tv/index.m3u8
 
-#EXTINF:-1 tvg-id="RTV.Utrecht.nl" tvg-name="RTV Utrecht" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvutrecht.png" group-title="Regional & Local" tvg-chno="268",RTV Utrecht
+#EXTINF:-1 tvg-id="RTV.Utrecht.nl" tvg-name="RTV Utrecht" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvutrecht.png" group-title="Regional & Local" tvg-chno="269",RTV Utrecht
 https://d18rwjdhpr8dcw.cloudfront.net/live/rtvutrecht/rtvutrecht/index.m3u8
 
-#EXTINF:-1 tvg-id="RTV.Drenthe.nl" tvg-name="RTV Drenthe" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvdrenthe.png" group-title="Regional & Local" tvg-chno="269",RTV Drenthe
+#EXTINF:-1 tvg-id="RTV.Drenthe.nl" tvg-name="RTV Drenthe" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvdrenthe.png" group-title="Regional & Local" tvg-chno="270",RTV Drenthe
 https://cdn.rtvdrenthe.nl/live/rtvdrenthe/tv/index.m3u8
 
-#EXTINF:-1 tvg-id="RTV.Noord.nl" tvg-name="RTV Noord" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvnoord.png" group-title="Regional & Local" tvg-chno="270",RTV Noord
+#EXTINF:-1 tvg-id="RTV.Noord.nl" tvg-name="RTV Noord" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvnoord.png" group-title="Regional & Local" tvg-chno="271",RTV Noord
 https://media.rtvnoord.nl/live/rtvnoord/tv/index.m3u8
 
-#EXTINF:-1 tvg-id="L1.nl@HD" tvg-name="L1" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/l1.png" group-title="Regional & Local" tvg-chno="271",L1 TV (Limburg)
+#EXTINF:-1 tvg-id="L1.nl@HD" tvg-name="L1" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/l1.png" group-title="Regional & Local" tvg-chno="272",L1 TV (Limburg)
 https://d34pj260kw1xmk.cloudfront.net/live/l1/tv/index.m3u8
 
-#EXTINF:-1 tvg-id="Omrop.Fryslân.nl" tvg-name="Omrop Fryslân" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omropfryslan.png" group-title="Regional & Local" tvg-chno="272",Omrop Fryslân TV (Frysk)
+#EXTINF:-1 tvg-id="Omrop.Fryslân.nl" tvg-name="Omrop Fryslân" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omropfryslan.png" group-title="Regional & Local" tvg-chno="273",Omrop Fryslân TV (Frysk)
 https://s-d15f8b0b.b.cdn.bluebillywig.com/live/omropfryslan/f8f68bd5/index.m3u8
 
-#EXTINF:-1 tvg-id="AT5.nl" tvg-name="AT5" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/at5.png" group-title="Regional & Local" tvg-chno="273",AT5 (Amsterdam)
+#EXTINF:-1 tvg-id="AT5.nl" tvg-name="AT5" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/at5.png" group-title="Regional & Local" tvg-chno="274",AT5 (Amsterdam)
 https://takeoff.jetstre.am/?account=atvijf&file=live&output=playlist.m3u8&protocol=https&service=wowza&type=live
 
-#EXTINF:-1 tvg-id="NH.nl" tvg-name="NH Nieuws" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nhnieuws.png" group-title="Regional & Local" tvg-chno="274",NH Nieuws (Noord-Holland)
+#EXTINF:-1 tvg-id="NH.nl" tvg-name="NH Nieuws" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nhnieuws.png" group-title="Regional & Local" tvg-chno="275",NH Nieuws (Noord-Holland)
 https://takeoff.jetstre.am/?account=nhnieuws&file=live&output=playlist.m3u8&protocol=https&service=wowza&type=live
 
-#EXTINF:-1 tvg-id="RTLTeleLetzebuerg.lu@HD" tvg-name="RTL Tele Letzebuerg" group-title="Regional & Local" tvg-chno="275",RTL Télé Lëtzebuerg (1080p)
+#EXTINF:-1 tvg-id="RTLTeleLetzebuerg.lu@HD" tvg-name="RTL Tele Letzebuerg" group-title="Regional & Local" tvg-chno="276",RTL Télé Lëtzebuerg (1080p)
 https://stream.rtl.lu/live/hls/channel1/playlist.m3u8
 
-#EXTINF:-1 tvg-id="RTLZwee.lu@HD" tvg-name="RTL Zwee" group-title="Regional & Local" tvg-chno="276",RTL Zwee (Lëtzebuerg)
+#EXTINF:-1 tvg-id="RTLZwee.lu@HD" tvg-name="RTL Zwee" group-title="Regional & Local" tvg-chno="277",RTL Zwee (Lëtzebuerg)
 https://stream.rtl.lu/live/hls/channel2/playlist.m3u8
 
 #EXTINF:-1 tvg-id="DasErste.de" tvg-name="Das Erste" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Das-Erste.png" group-title="Filmes & Docs" tvg-chno="300",Das Erste (ARD Germany)

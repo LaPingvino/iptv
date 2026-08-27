@@ -346,12 +346,21 @@
     "chno": 232
   },
   {
+    "name": "BVN (Het Beste van NPO & VRT HD)",
+    "group": "Regional & Local",
+    "tvg_id": "BVN.nl",
+    "tvg_name": "BVN",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/BVN_logo_2018.svg/512px-BVN_logo_2018.svg.png",
+    "url": "https://kiefte.eu/iptv/bvn",
+    "chno": 260
+  },
+  {
     "name": "XON (Ede TV)",
     "group": "Regional & Local",
     "tvg_id": "XON.nl",
     "tvg_name": "XON Ede",
     "url": "https://live.omroepnet.nl/hls/stream.m3u8",
-    "chno": 260
+    "chno": 261
   },
   {
     "name": "Omroep Gelderland",
@@ -360,7 +369,7 @@
     "tvg_name": "Omroep Gelderland",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepgelderland.png",
     "url": "https://d2od87akyl46nm.cloudfront.net/live/omroepgelderland/tvgelderland-hls/index.m3u8",
-    "chno": 261
+    "chno": 262
   },
   {
     "name": "Omroep Brabant",
@@ -369,7 +378,7 @@
     "tvg_name": "Omroep Brabant",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepbrabant.png",
     "url": "https://d3slqp9xhts6qb.cloudfront.net/live/omroepbrabant/tv/index.m3u8",
-    "chno": 262
+    "chno": 263
   },
   {
     "name": "Omroep West",
@@ -378,7 +387,7 @@
     "tvg_name": "Omroep West",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepwest.png",
     "url": "https://d1axml5ozykh3g.cloudfront.net/live/omroepwest/tv/index.m3u8",
-    "chno": 263
+    "chno": 264
   },
   {
     "name": "Omroep Zeeland",
@@ -387,7 +396,7 @@
     "tvg_name": "Omroep Zeeland",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepzeeland.png",
     "url": "https://d3isaxd2t6q8zm.cloudfront.net/live/omroepzeeland/tv/index.m3u8",
-    "chno": 264
+    "chno": 265
   },
   {
     "name": "Omroep Flevoland",
@@ -396,7 +405,7 @@
     "tvg_name": "Omroep Flevoland",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepflevoland.png",
     "url": "https://d5ms27yy6exnf.cloudfront.net/live/omroepflevoland/tv/index.m3u8",
-    "chno": 265
+    "chno": 266
   },
   {
     "name": "RTV Oost",
@@ -405,7 +414,7 @@
     "tvg_name": "RTV Oost",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvoost.png",
     "url": "https://d34cg2bnc08ruf.cloudfront.net/live/rtvoost/tv/index.m3u8",
-    "chno": 266
+    "chno": 267
   },
   {
     "name": "RTV Rijnmond (Rotterdam)",
@@ -414,7 +423,7 @@
     "tvg_name": "RTV Rijnmond",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rijnmond.png",
     "url": "https://dcur8bjarl5c2.cloudfront.net/live/rijnmond/tv/index.m3u8",
-    "chno": 267
+    "chno": 268
   },
   {
     "name": "RTV Utrecht",
@@ -423,7 +432,7 @@
     "tvg_name": "RTV Utrecht",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvutrecht.png",
     "url": "https://d18rwjdhpr8dcw.cloudfront.net/live/rtvutrecht/rtvutrecht/index.m3u8",
-    "chno": 268
+    "chno": 269
   },
   {
     "name": "RTV Drenthe",
@@ -432,7 +441,7 @@
     "tvg_name": "RTV Drenthe",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvdrenthe.png",
     "url": "https://cdn.rtvdrenthe.nl/live/rtvdrenthe/tv/index.m3u8",
-    "chno": 269
+    "chno": 270
   },
   {
     "name": "RTV Noord",
@@ -441,7 +450,7 @@
     "tvg_name": "RTV Noord",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvnoord.png",
     "url": "https://media.rtvnoord.nl/live/rtvnoord/tv/index.m3u8",
-    "chno": 270
+    "chno": 271
   },
   {
     "name": "L1 TV (Limburg)",
@@ -450,7 +459,7 @@
     "tvg_name": "L1",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/l1.png",
     "url": "https://d34pj260kw1xmk.cloudfront.net/live/l1/tv/index.m3u8",
-    "chno": 271
+    "chno": 272
   },
   {
     "name": "Omrop Fryslân TV (Frysk)",
@@ -459,7 +468,7 @@
     "tvg_name": "Omrop Fryslân",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omropfryslan.png",
     "url": "https://s-d15f8b0b.b.cdn.bluebillywig.com/live/omropfryslan/f8f68bd5/index.m3u8",
-    "chno": 272
+    "chno": 273
   },
   {
     "name": "AT5 (Amsterdam)",
@@ -468,7 +477,7 @@
     "tvg_name": "AT5",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/at5.png",
     "url": "https://takeoff.jetstre.am/?account=atvijf&file=live&output=playlist.m3u8&protocol=https&service=wowza&type=live",
-    "chno": 273
+    "chno": 274
   },
   {
     "name": "NH Nieuws (Noord-Holland)",
@@ -477,7 +486,7 @@
     "tvg_name": "NH Nieuws",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nhnieuws.png",
     "url": "https://takeoff.jetstre.am/?account=nhnieuws&file=live&output=playlist.m3u8&protocol=https&service=wowza&type=live",
-    "chno": 274
+    "chno": 275
   },
   {
     "name": "RTL Télé Lëtzebuerg (1080p)",
@@ -485,7 +494,7 @@
     "tvg_id": "RTLTeleLetzebuerg.lu@HD",
     "tvg_name": "RTL Tele Letzebuerg",
     "url": "https://stream.rtl.lu/live/hls/channel1/playlist.m3u8",
-    "chno": 275
+    "chno": 276
   },
   {
     "name": "RTL Zwee (Lëtzebuerg)",
@@ -493,7 +502,7 @@
     "tvg_id": "RTLZwee.lu@HD",
     "tvg_name": "RTL Zwee",
     "url": "https://stream.rtl.lu/live/hls/channel2/playlist.m3u8",
-    "chno": 276
+    "chno": 277
   },
   {
     "name": "Das Erste (ARD Germany)",
