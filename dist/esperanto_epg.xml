@@ -3274,4 +3274,9 @@
     <desc lang="eo">Elsendo de Dok Estas Parto 02</desc>
     <category lang="eo">Ĝenerala</category>
   </programme>
+  <programme start="20260903224600 +0000" stop="20260903225240 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Dok Estas Parto 03</title>
+    <desc lang="eo">Elsendo de Dok Estas Parto 03</desc>
+    <category lang="eo">Ĝenerala</category>
+  </programme>
 </tv>

@@ -61,52 +61,82 @@ TESTCARD_DIR = os.environ.get("BRIDGE_TESTCARD_DIR", "/usr/share/iptv-live-bridg
 ESPERANTO_DIR = os.environ.get("BRIDGE_ESPERANTO_DIR", "/var/lib/iptv-live-bridge/esperantotv" if os.path.exists("/var/lib/iptv-live-bridge/esperantotv") else ("/usr/share/iptv-live-bridge/esperantotv" if os.path.exists("/usr/share/iptv-live-bridge/esperantotv") else os.path.join(os.path.dirname(os.path.abspath(__file__)), "esperantotv")))
 BAHAI_DIR = os.environ.get("BRIDGE_BAHAI_DIR", "/var/lib/iptv-live-bridge/bahaitv" if os.path.exists("/var/lib/iptv-live-bridge/bahaitv") else ("/usr/share/iptv-live-bridge/bahaitv" if os.path.exists("/usr/share/iptv-live-bridge/bahaitv") else os.path.join(os.path.dirname(os.path.abspath(__file__)), "bahaitv")))
 
-# BVN (Beste Van NPO & VRT) Widevine Decryption Engine
+# BVN (Beste Van NPO) Widevine Decryption Engine with Live Edge Buffering
 BVN_DEC_KEY = "8fdccd948bb2cc6d99d5305ccffebcb7"
-bvn_mpd_cache = {"url": None, "ts": 0}
+bvn_mpd_cache = {"path": None, "ts": 0}
+BVN_SHM_MPD = "/dev/shm/bvn_live.mpd"
 
-def get_bvn_mpd_url():
+def get_bvn_mpd_path():
     now = time.time()
-    if bvn_mpd_cache["url"] and (now - bvn_mpd_cache["ts"]) < 3600:
-        return bvn_mpd_cache["url"]
+    if bvn_mpd_cache["path"] and os.path.exists(BVN_SHM_MPD) and (now - bvn_mpd_cache["ts"]) < 1800:
+        return BVN_SHM_MPD
     
-    req = urllib.request.Request(
-        "https://www.bvn.tv/tv-gids/?player=live",
-        headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
-    )
-    html = urllib.request.urlopen(req, timeout=6).read().decode('utf-8')
-    import re
-    m = re.search(r'let jwtnpoplayer[a-zA-Z0-9]+\s*=\s*"([^"]+)"', html)
-    if not m:
-        raise RuntimeError("Could not extract BVN player token from bvn.tv")
-    jwt_token = m.group(1)
-    
-    data = {
-        "profileName": "dash",
-        "drmType": "widevine",
-        "referrerUrl": "https://www.bvn.tv/tv-gids/?player=live",
-        "ster": {"identifier": "npo"}
-    }
-    req2 = urllib.request.Request(
-        "https://prod.npoplayer.nl/stream-link",
-        data=json.dumps(data).encode('utf-8'),
-        headers={
-            "Authorization": jwt_token,
-            "Content-Type": "application/json",
-            "Origin": "https://www.bvn.tv",
-            "Referer": "https://www.bvn.tv/",
-            "User-Agent": "Mozilla/5.0"
-        }
-    )
-    with urllib.request.urlopen(req2, timeout=6) as resp:
-        res = json.loads(resp.read().decode('utf-8'))
-        mpd_url = res.get('stream', {}).get('streamURL')
-        if not mpd_url:
-            raise RuntimeError("No streamURL returned from npoplayer API")
-        bvn_mpd_cache["url"] = mpd_url
-        bvn_mpd_cache["ts"] = now
-        logger.info(f"Resolved fresh BVN MPD URL: {mpd_url[:60]}...")
-        return mpd_url
+    last_err = None
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                "https://www.bvn.tv/tv-gids/?player=live",
+                headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
+            )
+            html = urllib.request.urlopen(req, timeout=6).read().decode('utf-8')
+            import re
+            m = re.search(r'let jwtnpoplayer[a-zA-Z0-9]+\s*=\s*"([^"]+)"', html)
+            if not m:
+                raise RuntimeError("Could not extract BVN player token from bvn.tv")
+            jwt_token = m.group(1)
+            
+            data = {
+                "profileName": "dash",
+                "drmType": "widevine",
+                "referrerUrl": "https://www.bvn.tv/tv-gids/?player=live",
+                "ster": {"identifier": "npo"}
+            }
+            req2 = urllib.request.Request(
+                "https://prod.npoplayer.nl/stream-link",
+                data=json.dumps(data).encode('utf-8'),
+                headers={
+                    "Authorization": jwt_token,
+                    "Content-Type": "application/json",
+                    "Origin": "https://www.bvn.tv",
+                    "Referer": "https://www.bvn.tv/",
+                    "User-Agent": "Mozilla/5.0"
+                }
+            )
+            with urllib.request.urlopen(req2, timeout=6) as resp:
+                res = json.loads(resp.read().decode('utf-8'))
+                mpd_url = res.get('stream', {}).get('streamURL')
+                if not mpd_url:
+                    raise RuntimeError("No streamURL returned from npoplayer API")
+                
+            # Fetch MPD and add suggestedPresentationDelay="PT15S" so ffmpeg stays 15s behind live edge and avoids 404s
+            mreq = urllib.request.Request(mpd_url, headers={"User-Agent": "Mozilla/5.0"})
+            mpd_xml = urllib.request.urlopen(mreq, timeout=6).read().decode('utf-8')
+            
+            import xml.etree.ElementTree as ET
+            ET.register_namespace('', 'urn:mpeg:dash:schema:mpd:2011')
+            root = ET.fromstring(mpd_xml)
+            root.set('suggestedPresentationDelay', 'PT15S')
+            root.set('minBufferTime', 'PT15S')
+            
+            base_url_elem = ET.Element('{urn:mpeg:dash:schema:mpd:2011}BaseURL')
+            base_url_elem.text = mpd_url.rsplit('/', 1)[0] + '/'
+            root.insert(0, base_url_elem)
+            
+            tree = ET.ElementTree(root)
+            tree.write(BVN_SHM_MPD, xml_declaration=True, encoding="utf-8")
+            
+            bvn_mpd_cache["path"] = BVN_SHM_MPD
+            bvn_mpd_cache["ts"] = now
+            logger.info(f"Prepared buffered BVN live MPD with 15s presentation delay in {BVN_SHM_MPD}")
+            return BVN_SHM_MPD
+        except Exception as e:
+            last_err = e
+            time.sleep(1)
+            
+    if bvn_mpd_cache["path"] and os.path.exists(BVN_SHM_MPD):
+        logger.warning(f"BVN refresh failed ({last_err}), using cached MPD in {BVN_SHM_MPD}")
+        return BVN_SHM_MPD
+    raise RuntimeError(f"Failed to resolve BVN stream after 3 attempts: {last_err}")
 
 def generate_live_linear_m3u8(directory, prefix="esperanto/", standby_ts="/iptv/test/esperanto_standby0.ts", seg_duration=10.0):
     """Generates a synchronized real-time sliding-window live HLS playlist cycling 24/7 through media segments."""
@@ -821,20 +851,37 @@ class BridgeHandler(BaseHTTPRequestHandler):
         # Serve BVN (Beste Van NPO) Live Stream (Decrypted MPEG-TS)
         if path.startswith("bvn") or path.startswith("nl/bvn"):
             try:
-                mpd_url = get_bvn_mpd_url()
+                mpd_path = get_bvn_mpd_path()
                 cmd = [
                     "ffmpeg", "-nostdin", "-v", "error",
+                    "-protocol_whitelist", "file,crypto,data,https,tls,tcp",
+                    "-allowed_extensions", "ALL",
+                    "-reconnect", "1",
+                    "-reconnect_streamed", "1",
+                    "-reconnect_delay_max", "2",
+                    "-reconnect_on_network_error", "1",
+                    "-reconnect_on_http_error", "4xx,5xx",
+                    "-multiple_requests", "1",
                     "-cenc_decryption_key", BVN_DEC_KEY,
-                    "-i", mpd_url,
+                    "-i", mpd_path,
                     "-c", "copy",
+                    "-mpegts_flags", "resend_headers",
                     "-f", "mpegts",
                     "pipe:1"
                 ]
-                proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, bufsize=65536)
+                proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, bufsize=131072)
                 
-                # Verify ffmpeg starts and yields video before sending HTTP 200
-                initial_chunk = proc.stdout.read(65536)
-                if not initial_chunk:
+                # Pre-buffer 1 MB (~2.5s of video) to immediately fill player buffer
+                burst_chunks = []
+                burst_total = 0
+                while burst_total < 1048576: # 1 MB
+                    chunk = proc.stdout.read(65536)
+                    if not chunk:
+                        break
+                    burst_chunks.append(chunk)
+                    burst_total += len(chunk)
+                    
+                if not burst_chunks:
                     proc.terminate()
                     proc.wait()
                     raise RuntimeError("ffmpeg decryption produced no output")
@@ -850,7 +897,8 @@ class BridgeHandler(BaseHTTPRequestHandler):
                     proc.wait()
                     return
 
-                self.wfile.write(initial_chunk)
+                for c in burst_chunks:
+                    self.wfile.write(c)
                 self.wfile.flush()
 
                 try:
