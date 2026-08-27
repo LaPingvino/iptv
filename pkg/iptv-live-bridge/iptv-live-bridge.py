@@ -21,7 +21,7 @@ import logging
 import subprocess
 import urllib.parse
 import urllib.request
-from http.server import HTTPServer, BaseHTTPRequestHandler
+from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
 import streamlink
 
 logging.basicConfig(
@@ -61,15 +61,14 @@ TESTCARD_DIR = os.environ.get("BRIDGE_TESTCARD_DIR", "/usr/share/iptv-live-bridg
 ESPERANTO_DIR = os.environ.get("BRIDGE_ESPERANTO_DIR", "/var/lib/iptv-live-bridge/esperantotv" if os.path.exists("/var/lib/iptv-live-bridge/esperantotv") else ("/usr/share/iptv-live-bridge/esperantotv" if os.path.exists("/usr/share/iptv-live-bridge/esperantotv") else os.path.join(os.path.dirname(os.path.abspath(__file__)), "esperantotv")))
 BAHAI_DIR = os.environ.get("BRIDGE_BAHAI_DIR", "/var/lib/iptv-live-bridge/bahaitv" if os.path.exists("/var/lib/iptv-live-bridge/bahaitv") else ("/usr/share/iptv-live-bridge/bahaitv" if os.path.exists("/usr/share/iptv-live-bridge/bahaitv") else os.path.join(os.path.dirname(os.path.abspath(__file__)), "bahaitv")))
 
-# BVN (Beste Van NPO) Widevine Decryption Engine with Live Edge Buffering
+# BVN (Beste Van NPO) Widevine Decryption Engine with Dynamic Live Edge Buffering
 BVN_DEC_KEY = "8fdccd948bb2cc6d99d5305ccffebcb7"
-bvn_mpd_cache = {"path": None, "ts": 0}
-BVN_SHM_MPD = f"/dev/shm/bvn_live_{os.getuid()}.mpd"
+bvn_mpd_cache = {"url": None, "xml": None, "ts": 0, "mpd_ts": 0}
 
-def get_bvn_mpd_path():
+def get_bvn_stream_url():
     now = time.time()
-    if bvn_mpd_cache["path"] and os.path.exists(BVN_SHM_MPD) and (now - bvn_mpd_cache["ts"]) < 1800:
-        return BVN_SHM_MPD
+    if bvn_mpd_cache["url"] and (now - bvn_mpd_cache["ts"]) < 1800:
+        return bvn_mpd_cache["url"]
     
     last_err = None
     for attempt in range(3):
@@ -107,36 +106,47 @@ def get_bvn_mpd_path():
                 mpd_url = res.get('stream', {}).get('streamURL')
                 if not mpd_url:
                     raise RuntimeError("No streamURL returned from npoplayer API")
-                
-            # Fetch MPD and add suggestedPresentationDelay="PT15S" so ffmpeg stays 15s behind live edge and avoids 404s
-            mreq = urllib.request.Request(mpd_url, headers={"User-Agent": "Mozilla/5.0"})
-            mpd_xml = urllib.request.urlopen(mreq, timeout=6).read().decode('utf-8')
-            
-            import xml.etree.ElementTree as ET
-            ET.register_namespace('', 'urn:mpeg:dash:schema:mpd:2011')
-            root = ET.fromstring(mpd_xml)
-            root.set('suggestedPresentationDelay', 'PT15S')
-            root.set('minBufferTime', 'PT15S')
-            
-            base_url_elem = ET.Element('{urn:mpeg:dash:schema:mpd:2011}BaseURL')
-            base_url_elem.text = mpd_url.rsplit('/', 1)[0] + '/'
-            root.insert(0, base_url_elem)
-            
-            tree = ET.ElementTree(root)
-            tree.write(BVN_SHM_MPD, xml_declaration=True, encoding="utf-8")
-            
-            bvn_mpd_cache["path"] = BVN_SHM_MPD
-            bvn_mpd_cache["ts"] = now
-            logger.info(f"Prepared buffered BVN live MPD with 15s presentation delay in {BVN_SHM_MPD}")
-            return BVN_SHM_MPD
+                bvn_mpd_cache["url"] = mpd_url
+                bvn_mpd_cache["ts"] = now
+                logger.info(f"Resolved fresh BVN CDN URL: {mpd_url[:60]}...")
+                return mpd_url
         except Exception as e:
             last_err = e
             time.sleep(1)
             
-    if bvn_mpd_cache["path"] and os.path.exists(BVN_SHM_MPD):
-        logger.warning(f"BVN refresh failed ({last_err}), using cached MPD in {BVN_SHM_MPD}")
-        return BVN_SHM_MPD
+    if bvn_mpd_cache["url"]:
+        logger.warning(f"BVN stream link refresh failed ({last_err}), using cached URL")
+        return bvn_mpd_cache["url"]
     raise RuntimeError(f"Failed to resolve BVN stream after 3 attempts: {last_err}")
+
+def get_bvn_dynamic_mpd():
+    now = time.time()
+    # Cache dynamic MPD for 1.5s so ffmpeg can poll continuously without CDN rate limits
+    if bvn_mpd_cache["xml"] and (now - bvn_mpd_cache["mpd_ts"]) < 1.5:
+        return bvn_mpd_cache["xml"]
+        
+    mpd_url = get_bvn_stream_url()
+    mreq = urllib.request.Request(mpd_url, headers={"User-Agent": "Mozilla/5.0"})
+    mpd_xml = urllib.request.urlopen(mreq, timeout=6).read().decode('utf-8')
+    
+    import xml.etree.ElementTree as ET
+    ET.register_namespace('', 'urn:mpeg:dash:schema:mpd:2011')
+    root = ET.fromstring(mpd_xml)
+    root.set('suggestedPresentationDelay', 'PT15S')
+    root.set('minBufferTime', 'PT15S')
+    
+    base_url_elem = ET.Element('{urn:mpeg:dash:schema:mpd:2011}BaseURL')
+    base_url_elem.text = mpd_url.rsplit('/', 1)[0] + '/'
+    root.insert(0, base_url_elem)
+    
+    tree = ET.ElementTree(root)
+    import io
+    out = io.BytesIO()
+    tree.write(out, xml_declaration=True, encoding="utf-8")
+    data = out.getvalue()
+    bvn_mpd_cache["xml"] = data
+    bvn_mpd_cache["mpd_ts"] = now
+    return data
 
 def generate_live_linear_m3u8(directory, prefix="esperanto/", standby_ts="/iptv/test/esperanto_standby0.ts", seg_duration=10.0):
     """Generates a synchronized real-time sliding-window live HLS playlist cycling 24/7 through media segments."""
@@ -848,16 +858,31 @@ class BridgeHandler(BaseHTTPRequestHandler):
                         self.wfile.write(b"404 Not Found: Segment not found\n")
                     return
 
+        # Serve dynamically modified live BVN MPD to local ffmpeg worker
+        if path == "bvn_internal.mpd":
+            try:
+                mpd_xml = get_bvn_dynamic_mpd()
+                self.send_response(200)
+                self.send_header("Content-Type", "application/dash+xml")
+                self.send_header("Content-Length", str(len(mpd_xml)))
+                self.send_header("Cache-Control", "no-cache, must-revalidate")
+                self.end_headers()
+                if not is_head:
+                    self.wfile.write(mpd_xml)
+                return
+            except Exception as e:
+                logger.error(f"Error serving bvn_internal.mpd: {e}")
+                self.send_response(500)
+                self.end_headers()
+                return
+
         # Serve BVN (Beste Van NPO) Live Stream (Decrypted MPEG-TS)
         if path.startswith("bvn") or path.startswith("nl/bvn"):
             try:
-                mpd_path = get_bvn_mpd_path()
                 cmd = [
                     "ffmpeg", "-nostdin", "-v", "error",
-                    "-protocol_whitelist", "file,crypto,data,https,tls,tcp",
-                    "-allowed_extensions", "ALL",
                     "-cenc_decryption_key", BVN_DEC_KEY,
-                    "-i", mpd_path,
+                    "-i", f"http://127.0.0.1:{PORT}/bvn_internal.mpd",
                     "-map", "0:v:0",
                     "-map", "0:a:0",
                     "-c", "copy",
@@ -1157,7 +1182,7 @@ def run():
     precheck_thread.start()
     
     server_address = (HOST, PORT)
-    httpd = HTTPServer(server_address, BridgeHandler)
+    httpd = ThreadingHTTPServer(server_address, BridgeHandler)
     logger.info(f"Starting Quality Multi-Game Bridge v3.7.1 on http://{HOST}:{PORT}")
     try:
         httpd.serve_forever()

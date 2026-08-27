@@ -1,6 +1,6 @@
 # Maintainer: Joop Kiefte <ikojba@gmail.com>
 pkgname=iptv-live-bridge
-pkgver=3.8.0
+pkgver=3.8.1
 pkgrel=1
 pkgdesc="Dynamic IPTV Live Bridge with Twitch Fallbacks, Esperanto TV & BVN Live Decryption Gateway"
 arch=('any')
