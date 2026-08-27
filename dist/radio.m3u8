@@ -1,9 +1,6 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/epg.xml.gz,https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-m3upt.xml.xz,https://raw.githubusercontent.com/Free-TV/IPTV/master/epg.xml.gz" x-tvg-url="https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/epg.xml.gz,https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-m3upt.xml.xz,https://raw.githubusercontent.com/Free-TV/IPTV/master/epg.xml.gz"
 
 
-#EXTINF:-1 tvg-id="WLGI.us" tvg-name="Radio Bahai" group-title="Religião" tvg-chno="855" radio="true",Radio Bahá'í (WLGI 90.9 FM)
-https://wlgi.streamguys1.com/live
-
 #EXTINF:-1 tvg-id="Antena1.pt" tvg-name="RDP Antena 1" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-1.png" group-title="PT Rádio" tvg-chno="5000" radio="true",RDP Antena 1
 https://streaming-live.rtp.pt/liveradio/antena180a/playlist.m3u8
 
@@ -349,26 +346,29 @@ https://ice5.somafm.com/defcon-128-mp3
 #EXTINF:-1 tvg-id="SomaFMSpaceStation.us" tvg-name="SomaFM Space Station Soma" tvg-logo="https://somafm.com/img3/spacestation-400.jpg" group-title="Rádio Global" tvg-chno="8029" radio="true",SomaFM Space Station Soma (Deep Space Ambient)
 https://ice6.somafm.com/spacestation-128-mp3
 
-#EXTINF:-1 tvg-id="Muzaiko.eo" tvg-name="Muzaiko Esperanto" group-title="Rádio Global" tvg-chno="8030" radio="true",Muzaiko (24/7 Esperanto Radio)
+#EXTINF:-1 tvg-id="WLGI.us" tvg-name="Radio Bahai" group-title="Rádio Global" tvg-chno="8030" radio="true",Radio Bahá'í (WLGI 90.9 FM)
+https://wlgi.streamguys1.com/live
+
+#EXTINF:-1 tvg-id="Muzaiko.eo" tvg-name="Muzaiko Esperanto" group-title="Rádio Global" tvg-chno="8031" radio="true",Muzaiko (24/7 Esperanto Radio)
 http://fluo.muzaiko.saluton.dk:8000/radio.mp3
 
-#EXTINF:-1 tvg-id="RadioHabanaCuba.eo" tvg-name="Radio Habana Cuba Esperanto" group-title="Rádio Global" tvg-chno="8031" radio="true",Radio Habana Cuba (Esperanto)
+#EXTINF:-1 tvg-id="RadioHabanaCuba.eo" tvg-name="Radio Habana Cuba Esperanto" group-title="Rádio Global" tvg-chno="8032" radio="true",Radio Habana Cuba (Esperanto)
 https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/McW3fLhs
 
-#EXTINF:-1 tvg-id="BokRadio.za" tvg-name="Bok Radio Afrikaans" group-title="Rádio Global" tvg-chno="8032" radio="true",Bok Radio 98.9 FM (Afrikaans)
+#EXTINF:-1 tvg-id="BokRadio.za" tvg-name="Bok Radio Afrikaans" group-title="Rádio Global" tvg-chno="8033" radio="true",Bok Radio 98.9 FM (Afrikaans)
 http://bokradio.highquality.radiostream.co.za/
 
-#EXTINF:-1 tvg-id="BosveldStereo.za" tvg-name="Bosveld Stereo Afrikaans" group-title="Rádio Global" tvg-chno="8033" radio="true",Bosveld Stereo 107.5 FM (Afrikaans)
+#EXTINF:-1 tvg-id="BosveldStereo.za" tvg-name="Bosveld Stereo Afrikaans" group-title="Rádio Global" tvg-chno="8034" radio="true",Bosveld Stereo 107.5 FM (Afrikaans)
 http://capeant.antfarm.co.za:8000/Bosveld
 
-#EXTINF:-1 tvg-id="FineMusicRadio.za" tvg-name="Fine Music Radio" group-title="Rádio Global" tvg-chno="8034" radio="true",Fine Music Radio (Cape Town Classical)
+#EXTINF:-1 tvg-id="FineMusicRadio.za" tvg-name="Fine Music Radio" group-title="Rádio Global" tvg-chno="8035" radio="true",Fine Music Radio (Cape Town Classical)
 https://edge.iono.fm/xhls/fmr_live_high.m3u8
 
-#EXTINF:-1 tvg-id="Radio3ZZZ.au" tvg-name="Radio 3ZZZ Esperanto" group-title="Rádio Global" tvg-chno="8035" radio="true",Radio 3ZZZ 92.3 FM (Melbourne / Esperanto)
+#EXTINF:-1 tvg-id="Radio3ZZZ.au" tvg-name="Radio 3ZZZ Esperanto" group-title="Rádio Global" tvg-chno="8036" radio="true",Radio 3ZZZ 92.3 FM (Melbourne / Esperanto)
 https://playerservices.streamtheworld.com/api/livestream-redirect/3ZZZ.mp3
 
-#EXTINF:-1 tvg-id="HitradioNamibia.na" tvg-name="Hitradio Namibia" group-title="Rádio Global" tvg-chno="8036" radio="true",Hitradio Namibia (Windhoek / Deutsch)
+#EXTINF:-1 tvg-id="HitradioNamibia.na" tvg-name="Hitradio Namibia" group-title="Rádio Global" tvg-chno="8037" radio="true",Hitradio Namibia (Windhoek / Deutsch)
 https://s37.derstream.net/hitradio-namibia.mp3
 
-#EXTINF:-1 tvg-id="Kosmos941.na" tvg-name="Kosmos 94.1 Afrikaans" group-title="Rádio Global" tvg-chno="8037" radio="true",Kosmos 94.1 (Namibië / Afrikaans)
+#EXTINF:-1 tvg-id="Kosmos941.na" tvg-name="Kosmos 94.1 Afrikaans" group-title="Rádio Global" tvg-chno="8038" radio="true",Kosmos 94.1 (Namibië / Afrikaans)
 https://edge.iono.fm/xice/88_high.mp3

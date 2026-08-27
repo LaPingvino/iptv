@@ -4,11 +4,6 @@
   <channel id="EsperantoTV.eo@SD">
     <display-name>Esperanto TV</display-name>
   </channel>
-  <programme start="20260826214220 +0000" stop="20260826221020 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - S1Ĉ02: Konstruado per dolĉaĵoj kaj spagetoj</title>
-    <desc lang="eo">Krea defio uzanta nur dolĉaĵojn kaj spagetojn. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
-    <category lang="eo">Realspektaklo / Junularo</category>
-  </programme>
   <programme start="20260826221020 +0000" stop="20260826223850 +0000" channel="EsperantoTV.eo@SD">
     <title lang="eo">Esperanto Senlime - S1Ĉ03: Riskante la vivon sur du radoj</title>
     <desc lang="eo">Biciklaj defioj kaj rapidaj kuroj tra la urbo. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
@@ -3267,6 +3262,11 @@
   <programme start="20260903214300 +0000" stop="20260903221150 +0000" channel="EsperantoTV.eo@SD">
     <title lang="eo">Esperanto Senlime - S1Ĉ15: Gajni plej gravas</title>
     <desc lang="eo">La granda antaŭ-finala konkurso. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20260903221150 +0000" stop="20260903223540 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - S1Ĉ16: Ni nur parolas Esperanton</title>
+    <desc lang="eo">La grandioza finalo de Esperanto Senlime Sezono 1! Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
 </tv>

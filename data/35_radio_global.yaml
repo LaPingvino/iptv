@@ -179,3 +179,10 @@
   tvg_name: SomaFM Space Station Soma
   logo: https://somafm.com/img3/spacestation-400.jpg
   url: https://ice6.somafm.com/spacestation-128-mp3
+
+- name: "Radio Bahá'í (WLGI 90.9 FM)"
+  group: Rádio Global
+  radio: true
+  tvg_id: WLGI.us
+  tvg_name: "Radio Bahai"
+  url: https://wlgi.streamguys1.com/live

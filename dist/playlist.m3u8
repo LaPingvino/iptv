@@ -121,22 +121,19 @@ https://rtvelivestream.rtve.es/rtvesec/24h/24h_main_dvr_720.m3u8
 #EXTINF:-1 tvg-id="Teledeporte.es" tvg-name="Teledeporte" group-title="ES Geral & TDT" tvg-chno="201",RTVE Teledeporte (TDP)
 https://rtve01p.origin.c21livecloud.com/live-origin/tdp-hls/bitrate_1.m3u8
 
-#EXTINF:-1 tvg-id="Clan.es@HD" tvg-name="Clan" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Clan_RTVE_logo.svg/512px-Clan_RTVE_logo.svg.png" group-title="ES Geral & TDT" tvg-chno="202",RTVE Clan (1080p)
-https://rtve01p.origin.c21livecloud.com/live-origin/clan-hls/bitrate_1.m3u8
-
-#EXTINF:-1 tvg-id="CanalSur.es" tvg-name="Canal Sur" group-title="ES Geral & TDT" tvg-chno="203",Canal Sur Andalucía
+#EXTINF:-1 tvg-id="CanalSur.es" tvg-name="Canal Sur" group-title="ES Geral & TDT" tvg-chno="202",Canal Sur Andalucía
 https://dfk2a268yviz9.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ddiii1m6jt6of/CanalSurAndaluciaES.m3u8
 
-#EXTINF:-1 tvg-id="Real.Madrid.TV.es" tvg-name="Real Madrid TV" group-title="ES Geral & TDT" tvg-chno="204",Real Madrid TV
+#EXTINF:-1 tvg-id="Real.Madrid.TV.es" tvg-name="Real Madrid TV" group-title="ES Geral & TDT" tvg-chno="203",Real Madrid TV
 https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
 
-#EXTINF:-1 tvg-id="CanalExtremadura.es@HD" tvg-name="Canal Extremadura" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/canalextremadura.png" group-title="ES Geral & TDT" tvg-chno="205",Canal Extremadura (1080p)
+#EXTINF:-1 tvg-id="CanalExtremadura.es@HD" tvg-name="Canal Extremadura" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/canalextremadura.png" group-title="ES Geral & TDT" tvg-chno="204",Canal Extremadura (1080p)
 https://d2ymuyhevki1a1.cloudfront.net/wct-ddd2992e-86fc-4611-a491-7f392259e9ba/continuous/9be76611-d2cd-474d-bf19-ef702ba31b02/index.m3u8
 
-#EXTINF:-1 tvg-id="ETB.1.es" tvg-name="ETB 1" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/etb1.png" group-title="ES Geral & TDT" tvg-chno="206",ETB 1 (Euskadi / Euskara)
+#EXTINF:-1 tvg-id="ETB.1.es" tvg-name="ETB 1" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/etb1.png" group-title="ES Geral & TDT" tvg-chno="205",ETB 1 (Euskadi / Euskara)
 https://cdn1.etbon.eus/etb1on/index.m3u8
 
-#EXTINF:-1 tvg-id="ETB.2.es" tvg-name="ETB 2" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/etb2.png" group-title="ES Geral & TDT" tvg-chno="207",ETB 2 (Euskadi / Castellano)
+#EXTINF:-1 tvg-id="ETB.2.es" tvg-name="ETB 2" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/etb2.png" group-title="ES Geral & TDT" tvg-chno="206",ETB 2 (Euskadi / Castellano)
 https://cdn1.etbon.eus/etb2on/index.m3u8
 
 #EXTINF:-1 tvg-id="TVG.Europa.es" tvg-name="Galicia TV Europa" group-title="Galiza" tvg-chno="230",Galicia TV Europa (TVG)
@@ -283,19 +280,22 @@ https://live20.bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8
 #EXTINF:-1 tvg-id="MrBeanAnimated.es@HD" tvg-name="Mr. Bean Animado" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Mr_Bean_Animated_logo.svg/512px-Mr_Bean_Animated_logo.svg.png" group-title="Infantil & Kids" tvg-chno="601",Mr. Bean Animado (1080p)
 https://amg00627-amg00627c30-rakuten-es-3990.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanescc-rakutenes/playlist.m3u8
 
-#EXTINF:-1 tvg-id="ToonGogglesJr.us@HD" tvg-name="Toon Goggles Junior" group-title="Infantil & Kids" tvg-chno="602",Toon Goggles Junior (720p HD)
+#EXTINF:-1 tvg-id="Clan.es@HD" tvg-name="Clan" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Clan_RTVE_logo.svg/512px-Clan_RTVE_logo.svg.png" group-title="Infantil & Kids" tvg-chno="602",RTVE Clan (1080p)
+https://rtve01p.origin.c21livecloud.com/live-origin/clan-hls/bitrate_1.m3u8
+
+#EXTINF:-1 tvg-id="ToonGogglesJr.us@HD" tvg-name="Toon Goggles Junior" group-title="Infantil & Kids" tvg-chno="603",Toon Goggles Junior (720p HD)
 https://d3i6upqaqzosi1.cloudfront.net/tg/jr_us/tg_jr_us.m3u8
 
-#EXTINF:-1 tvg-id="KartoonChannel.us@HD" tvg-name="Kartoon Channel!" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Kartoon_Channel%21_logo.png/512px-Kartoon_Channel%21_logo.png" group-title="Infantil & Kids" tvg-chno="603",Kartoon Channel! (720p HD)
+#EXTINF:-1 tvg-id="KartoonChannel.us@HD" tvg-name="Kartoon Channel!" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Kartoon_Channel%21_logo.png/512px-Kartoon_Channel%21_logo.png" group-title="Infantil & Kids" tvg-chno="604",Kartoon Channel! (720p HD)
 https://d2z0ysa6dgxhlc.cloudfront.net/kchan.m3u8
 
-#EXTINF:-1 tvg-id="DuckTV.sk@HD" tvg-name="DuckTV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Ducktv_logo.png/512px-Ducktv_logo.png" group-title="Infantil & Kids" tvg-chno="604",DuckTV (Toddlers & Visual Animation HD)
+#EXTINF:-1 tvg-id="DuckTV.sk@HD" tvg-name="DuckTV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Ducktv_logo.png/512px-Ducktv_logo.png" group-title="Infantil & Kids" tvg-chno="605",DuckTV (Toddlers & Visual Animation HD)
 https://d6lk10bkdgfae.cloudfront.net/playlist.m3u8
 
-#EXTINF:-1 tvg-id="HappyKids.us@HD" tvg-name="HappyKids" group-title="Infantil & Kids" tvg-chno="605",HappyKids (1080p Full HD)
+#EXTINF:-1 tvg-id="HappyKids.us@HD" tvg-name="HappyKids" group-title="Infantil & Kids" tvg-chno="606",HappyKids (1080p Full HD)
 https://dil9xdvretp0f.cloudfront.net/index.m3u8
 
-#EXTINF:-1 tvg-id="LegoChannel.us@HD" tvg-name="Lego Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/512px-LEGO_logo.svg.png" group-title="Infantil & Kids" tvg-chno="606",Lego Channel (Animation HD)
+#EXTINF:-1 tvg-id="LegoChannel.us@HD" tvg-name="Lego Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/512px-LEGO_logo.svg.png" group-title="Infantil & Kids" tvg-chno="607",Lego Channel (Animation HD)
 https://dltiqboxjw21d.cloudfront.net/index.m3u8
 
 #EXTINF:-1 tvg-id="StudioBrussel.be" tvg-name="Studio Brussel Visual" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="Música & Video" tvg-chno="700",Studio Brussel (Visual Radio)
@@ -416,10 +416,7 @@ https://w1.manasat.com/ktv/ktv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="CancaoNova.pt@HD" tvg-name="Canção Nova" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Cancao-Nova.png" group-title="Religião" tvg-chno="854",Canção Nova Portugal
 https://5c65286fc6ace.streamlock.net/cancaonova/CancaoNova.stream_720p/playlist.m3u8
 
-#EXTINF:-1 tvg-id="WLGI.us" tvg-name="Radio Bahai" group-title="Religião" tvg-chno="855" radio="true",Radio Bahá'í (WLGI 90.9 FM)
-https://wlgi.streamguys1.com/live
-
-#EXTINF:-1 tvg-id="BahaiStudioSessions.tv@HD" tvg-name="Bahá'í Studio Sessions TV" group-title="Religião" tvg-chno="856",Bahá'í Studio Sessions TV (24/7 Devotional Music)
+#EXTINF:-1 tvg-id="BahaiStudioSessions.tv@HD" tvg-name="Bahá'í Studio Sessions TV" group-title="Religião" tvg-chno="855",Bahá'í Studio Sessions TV (24/7 Devotional Music)
 https://kiefte.eu/iptv/bahai/tv
 
 #EXTINF:-1 tvg-id="Speedrun.tv" tvg-name="Speedrun" group-title="Speedrunning & Marathons" tvg-chno="1000",Speedrun (24/7 Speedrun.com)
@@ -938,26 +935,29 @@ https://ice5.somafm.com/defcon-128-mp3
 #EXTINF:-1 tvg-id="SomaFMSpaceStation.us" tvg-name="SomaFM Space Station Soma" tvg-logo="https://somafm.com/img3/spacestation-400.jpg" group-title="Rádio Global" tvg-chno="8029" radio="true",SomaFM Space Station Soma (Deep Space Ambient)
 https://ice6.somafm.com/spacestation-128-mp3
 
-#EXTINF:-1 tvg-id="Muzaiko.eo" tvg-name="Muzaiko Esperanto" group-title="Rádio Global" tvg-chno="8030" radio="true",Muzaiko (24/7 Esperanto Radio)
+#EXTINF:-1 tvg-id="WLGI.us" tvg-name="Radio Bahai" group-title="Rádio Global" tvg-chno="8030" radio="true",Radio Bahá'í (WLGI 90.9 FM)
+https://wlgi.streamguys1.com/live
+
+#EXTINF:-1 tvg-id="Muzaiko.eo" tvg-name="Muzaiko Esperanto" group-title="Rádio Global" tvg-chno="8031" radio="true",Muzaiko (24/7 Esperanto Radio)
 http://fluo.muzaiko.saluton.dk:8000/radio.mp3
 
-#EXTINF:-1 tvg-id="RadioHabanaCuba.eo" tvg-name="Radio Habana Cuba Esperanto" group-title="Rádio Global" tvg-chno="8031" radio="true",Radio Habana Cuba (Esperanto)
+#EXTINF:-1 tvg-id="RadioHabanaCuba.eo" tvg-name="Radio Habana Cuba Esperanto" group-title="Rádio Global" tvg-chno="8032" radio="true",Radio Habana Cuba (Esperanto)
 https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/McW3fLhs
 
-#EXTINF:-1 tvg-id="BokRadio.za" tvg-name="Bok Radio Afrikaans" group-title="Rádio Global" tvg-chno="8032" radio="true",Bok Radio 98.9 FM (Afrikaans)
+#EXTINF:-1 tvg-id="BokRadio.za" tvg-name="Bok Radio Afrikaans" group-title="Rádio Global" tvg-chno="8033" radio="true",Bok Radio 98.9 FM (Afrikaans)
 http://bokradio.highquality.radiostream.co.za/
 
-#EXTINF:-1 tvg-id="BosveldStereo.za" tvg-name="Bosveld Stereo Afrikaans" group-title="Rádio Global" tvg-chno="8033" radio="true",Bosveld Stereo 107.5 FM (Afrikaans)
+#EXTINF:-1 tvg-id="BosveldStereo.za" tvg-name="Bosveld Stereo Afrikaans" group-title="Rádio Global" tvg-chno="8034" radio="true",Bosveld Stereo 107.5 FM (Afrikaans)
 http://capeant.antfarm.co.za:8000/Bosveld
 
-#EXTINF:-1 tvg-id="FineMusicRadio.za" tvg-name="Fine Music Radio" group-title="Rádio Global" tvg-chno="8034" radio="true",Fine Music Radio (Cape Town Classical)
+#EXTINF:-1 tvg-id="FineMusicRadio.za" tvg-name="Fine Music Radio" group-title="Rádio Global" tvg-chno="8035" radio="true",Fine Music Radio (Cape Town Classical)
 https://edge.iono.fm/xhls/fmr_live_high.m3u8
 
-#EXTINF:-1 tvg-id="Radio3ZZZ.au" tvg-name="Radio 3ZZZ Esperanto" group-title="Rádio Global" tvg-chno="8035" radio="true",Radio 3ZZZ 92.3 FM (Melbourne / Esperanto)
+#EXTINF:-1 tvg-id="Radio3ZZZ.au" tvg-name="Radio 3ZZZ Esperanto" group-title="Rádio Global" tvg-chno="8036" radio="true",Radio 3ZZZ 92.3 FM (Melbourne / Esperanto)
 https://playerservices.streamtheworld.com/api/livestream-redirect/3ZZZ.mp3
 
-#EXTINF:-1 tvg-id="HitradioNamibia.na" tvg-name="Hitradio Namibia" group-title="Rádio Global" tvg-chno="8036" radio="true",Hitradio Namibia (Windhoek / Deutsch)
+#EXTINF:-1 tvg-id="HitradioNamibia.na" tvg-name="Hitradio Namibia" group-title="Rádio Global" tvg-chno="8037" radio="true",Hitradio Namibia (Windhoek / Deutsch)
 https://s37.derstream.net/hitradio-namibia.mp3
 
-#EXTINF:-1 tvg-id="Kosmos941.na" tvg-name="Kosmos 94.1 Afrikaans" group-title="Rádio Global" tvg-chno="8037" radio="true",Kosmos 94.1 (Namibië / Afrikaans)
+#EXTINF:-1 tvg-id="Kosmos941.na" tvg-name="Kosmos 94.1 Afrikaans" group-title="Rádio Global" tvg-chno="8038" radio="true",Kosmos 94.1 (Namibië / Afrikaans)
 https://edge.iono.fm/xice/88_high.mp3

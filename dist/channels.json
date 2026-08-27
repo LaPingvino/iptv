@@ -287,21 +287,12 @@
     "chno": 201
   },
   {
-    "name": "RTVE Clan (1080p)",
-    "group": "ES Geral & TDT",
-    "tvg_id": "Clan.es@HD",
-    "tvg_name": "Clan",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Clan_RTVE_logo.svg/512px-Clan_RTVE_logo.svg.png",
-    "url": "https://rtve01p.origin.c21livecloud.com/live-origin/clan-hls/bitrate_1.m3u8",
-    "chno": 202
-  },
-  {
     "name": "Canal Sur Andalucía",
     "group": "ES Geral & TDT",
     "tvg_id": "CanalSur.es",
     "tvg_name": "Canal Sur",
     "url": "https://dfk2a268yviz9.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ddiii1m6jt6of/CanalSurAndaluciaES.m3u8",
-    "chno": 203
+    "chno": 202
   },
   {
     "name": "Real Madrid TV",
@@ -309,7 +300,7 @@
     "tvg_id": "Real.Madrid.TV.es",
     "tvg_name": "Real Madrid TV",
     "url": "https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8",
-    "chno": 204
+    "chno": 203
   },
   {
     "name": "Canal Extremadura (1080p)",
@@ -318,7 +309,7 @@
     "tvg_name": "Canal Extremadura",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/canalextremadura.png",
     "url": "https://d2ymuyhevki1a1.cloudfront.net/wct-ddd2992e-86fc-4611-a491-7f392259e9ba/continuous/9be76611-d2cd-474d-bf19-ef702ba31b02/index.m3u8",
-    "chno": 205
+    "chno": 204
   },
   {
     "name": "ETB 1 (Euskadi / Euskara)",
@@ -327,7 +318,7 @@
     "tvg_name": "ETB 1",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/etb1.png",
     "url": "https://cdn1.etbon.eus/etb1on/index.m3u8",
-    "chno": 206
+    "chno": 205
   },
   {
     "name": "ETB 2 (Euskadi / Castellano)",
@@ -336,7 +327,7 @@
     "tvg_name": "ETB 2",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/etb2.png",
     "url": "https://cdn1.etbon.eus/etb2on/index.m3u8",
-    "chno": 207
+    "chno": 206
   },
   {
     "name": "Galicia TV Europa (TVG)",
@@ -757,12 +748,21 @@
     "chno": 601
   },
   {
+    "name": "RTVE Clan (1080p)",
+    "group": "Infantil & Kids",
+    "tvg_id": "Clan.es@HD",
+    "tvg_name": "Clan",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Clan_RTVE_logo.svg/512px-Clan_RTVE_logo.svg.png",
+    "url": "https://rtve01p.origin.c21livecloud.com/live-origin/clan-hls/bitrate_1.m3u8",
+    "chno": 602
+  },
+  {
     "name": "Toon Goggles Junior (720p HD)",
     "group": "Infantil & Kids",
     "tvg_id": "ToonGogglesJr.us@HD",
     "tvg_name": "Toon Goggles Junior",
     "url": "https://d3i6upqaqzosi1.cloudfront.net/tg/jr_us/tg_jr_us.m3u8",
-    "chno": 602
+    "chno": 603
   },
   {
     "name": "Kartoon Channel! (720p HD)",
@@ -771,7 +771,7 @@
     "tvg_name": "Kartoon Channel!",
     "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Kartoon_Channel%21_logo.png/512px-Kartoon_Channel%21_logo.png",
     "url": "https://d2z0ysa6dgxhlc.cloudfront.net/kchan.m3u8",
-    "chno": 603
+    "chno": 604
   },
   {
     "name": "DuckTV (Toddlers & Visual Animation HD)",
@@ -780,7 +780,7 @@
     "tvg_name": "DuckTV",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Ducktv_logo.png/512px-Ducktv_logo.png",
     "url": "https://d6lk10bkdgfae.cloudfront.net/playlist.m3u8",
-    "chno": 604
+    "chno": 605
   },
   {
     "name": "HappyKids (1080p Full HD)",
@@ -788,7 +788,7 @@
     "tvg_id": "HappyKids.us@HD",
     "tvg_name": "HappyKids",
     "url": "https://dil9xdvretp0f.cloudfront.net/index.m3u8",
-    "chno": 605
+    "chno": 606
   },
   {
     "name": "Lego Channel (Animation HD)",
@@ -797,7 +797,7 @@
     "tvg_name": "Lego Channel",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/512px-LEGO_logo.svg.png",
     "url": "https://dltiqboxjw21d.cloudfront.net/index.m3u8",
-    "chno": 606
+    "chno": 607
   },
   {
     "name": "Studio Brussel (Visual Radio)",
@@ -1150,21 +1150,12 @@
     "chno": 854
   },
   {
-    "name": "Radio Bahá'í (WLGI 90.9 FM)",
-    "group": "Religião",
-    "radio": true,
-    "tvg_id": "WLGI.us",
-    "tvg_name": "Radio Bahai",
-    "url": "https://wlgi.streamguys1.com/live",
-    "chno": 855
-  },
-  {
     "name": "Bahá'í Studio Sessions TV (24/7 Devotional Music)",
     "group": "Religião",
     "tvg_id": "BahaiStudioSessions.tv@HD",
     "tvg_name": "Bahá'í Studio Sessions TV",
     "url": "https://kiefte.eu/iptv/bahai/tv",
-    "chno": 856
+    "chno": 855
   },
   {
     "name": "Speedrun (24/7 Speedrun.com)",
@@ -2617,12 +2608,21 @@
     "chno": 8029
   },
   {
+    "name": "Radio Bahá'í (WLGI 90.9 FM)",
+    "group": "Rádio Global",
+    "radio": true,
+    "tvg_id": "WLGI.us",
+    "tvg_name": "Radio Bahai",
+    "url": "https://wlgi.streamguys1.com/live",
+    "chno": 8030
+  },
+  {
     "name": "Muzaiko (24/7 Esperanto Radio)",
     "group": "Rádio Global",
     "tvg_id": "Muzaiko.eo",
     "tvg_name": "Muzaiko Esperanto",
     "url": "http://fluo.muzaiko.saluton.dk:8000/radio.mp3",
-    "chno": 8030
+    "chno": 8031
   },
   {
     "name": "Radio Habana Cuba (Esperanto)",
@@ -2630,7 +2630,7 @@
     "tvg_id": "RadioHabanaCuba.eo",
     "tvg_name": "Radio Habana Cuba Esperanto",
     "url": "https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/McW3fLhs",
-    "chno": 8031
+    "chno": 8032
   },
   {
     "name": "Bok Radio 98.9 FM (Afrikaans)",
@@ -2638,7 +2638,7 @@
     "tvg_id": "BokRadio.za",
     "tvg_name": "Bok Radio Afrikaans",
     "url": "http://bokradio.highquality.radiostream.co.za/",
-    "chno": 8032
+    "chno": 8033
   },
   {
     "name": "Bosveld Stereo 107.5 FM (Afrikaans)",
@@ -2646,7 +2646,7 @@
     "tvg_id": "BosveldStereo.za",
     "tvg_name": "Bosveld Stereo Afrikaans",
     "url": "http://capeant.antfarm.co.za:8000/Bosveld",
-    "chno": 8033
+    "chno": 8034
   },
   {
     "name": "Fine Music Radio (Cape Town Classical)",
@@ -2654,7 +2654,7 @@
     "tvg_id": "FineMusicRadio.za",
     "tvg_name": "Fine Music Radio",
     "url": "https://edge.iono.fm/xhls/fmr_live_high.m3u8",
-    "chno": 8034
+    "chno": 8035
   },
   {
     "name": "Radio 3ZZZ 92.3 FM (Melbourne / Esperanto)",
@@ -2662,7 +2662,7 @@
     "tvg_id": "Radio3ZZZ.au",
     "tvg_name": "Radio 3ZZZ Esperanto",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/3ZZZ.mp3",
-    "chno": 8035
+    "chno": 8036
   },
   {
     "name": "Hitradio Namibia (Windhoek / Deutsch)",
@@ -2670,7 +2670,7 @@
     "tvg_id": "HitradioNamibia.na",
     "tvg_name": "Hitradio Namibia",
     "url": "https://s37.derstream.net/hitradio-namibia.mp3",
-    "chno": 8036
+    "chno": 8037
   },
   {
     "name": "Kosmos 94.1 (Namibië / Afrikaans)",
@@ -2678,6 +2678,6 @@
     "tvg_id": "Kosmos941.na",
     "tvg_name": "Kosmos 94.1 Afrikaans",
     "url": "https://edge.iono.fm/xice/88_high.mp3",
-    "chno": 8037
+    "chno": 8038
   }
 ]
