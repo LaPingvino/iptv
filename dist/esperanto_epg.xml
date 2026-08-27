@@ -3269,4 +3269,9 @@
     <desc lang="eo">La grandioza finalo de Esperanto Senlime Sezono 1! Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
+  <programme start="20260903223540 +0000" stop="20260903223740 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Dok Estas Parto 01</title>
+    <desc lang="eo">Elsendo de Dok Estas Parto 01</desc>
+    <category lang="eo">Ĝenerala</category>
+  </programme>
 </tv>
