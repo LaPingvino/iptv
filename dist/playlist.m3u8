@@ -62,10 +62,10 @@ https://stmv1.srvif.com/tvvitoriamz/tvvitoriamz/playlist.m3u8
 https://www.khuwemultimedia.com/hls/reinoinfantiltv/reinoinfantiltv.m3u8
 
 #EXTINF:-1 tvg-id="Canal.24.horas.es" tvg-name="24 Horas" group-title="ES Geral & TDT",RTVE Canal 24 Horas
-https://ztnr.rtve.es/ztnr/1694255.m3u8
+https://rtvelivestream.rtve.es/rtvesec/24h/24h_main_dvr_720.m3u8
 
 #EXTINF:-1 tvg-id="Teledeporte.es" tvg-name="Teledeporte" group-title="ES Geral & TDT",RTVE Teledeporte (TDP)
-https://ztnr.rtve.es/ztnr/1688926.m3u8
+https://rtve01p.origin.c21livecloud.com/live-origin/tdp-hls/bitrate_1.m3u8
 
 #EXTINF:-1 tvg-id="CanalSur.es" tvg-name="Canal Sur" group-title="ES Geral & TDT",Canal Sur Andalucía
 https://dfk2a268yviz9.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ddiii1m6jt6of/CanalSurAndaluciaES.m3u8
@@ -927,7 +927,7 @@ https://autentic-adventure-earth-1-gb.samsung.wurl.tv/playlist.m3u8
 https://bbc-classicdrwho-1-us.roku.wurl.tv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="MST3K.us@HD" tvg-name="Mystery Science Theater 3000" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Mystery_Science_Theater_3000_logo.svg/512px-Mystery_Science_Theater_3000_logo.svg.png" group-title="Sci-Fi & Cult Retro",Mystery Science Theater 3000 (MST3K 1080p)
-https://mst3k-roku.amagi.tv/playlist.m3u8
+https://kiefte.eu/iptv/twitch/mst3k
 
 #EXTINF:-1 tvg-id="WorldOfLongplays.tv@HD" tvg-name="World of Longplays" tvg-logo="https://static-cdn.jtvnw.net/jtv_user_pictures/worldoflongplays-profile_image-144709d73d6e9dc7-300x300.png" group-title="Sci-Fi & Cult Retro",World of Longplays (Retro Gaming 1080p60)
 https://kiefte.eu/iptv/twitch/worldoflongplays

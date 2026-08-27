@@ -120,14 +120,14 @@
     "group": "ES Geral & TDT",
     "tvg_id": "Canal.24.horas.es",
     "tvg_name": "24 Horas",
-    "url": "https://ztnr.rtve.es/ztnr/1694255.m3u8"
+    "url": "https://rtvelivestream.rtve.es/rtvesec/24h/24h_main_dvr_720.m3u8"
   },
   {
     "name": "RTVE Teledeporte (TDP)",
     "group": "ES Geral & TDT",
     "tvg_id": "Teledeporte.es",
     "tvg_name": "Teledeporte",
-    "url": "https://ztnr.rtve.es/ztnr/1688926.m3u8"
+    "url": "https://rtve01p.origin.c21livecloud.com/live-origin/tdp-hls/bitrate_1.m3u8"
   },
   {
     "name": "Canal Sur Andalucía",
@@ -2282,7 +2282,7 @@
     "tvg_id": "MST3K.us@HD",
     "tvg_name": "Mystery Science Theater 3000",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Mystery_Science_Theater_3000_logo.svg/512px-Mystery_Science_Theater_3000_logo.svg.png",
-    "url": "https://mst3k-roku.amagi.tv/playlist.m3u8"
+    "url": "https://kiefte.eu/iptv/twitch/mst3k"
   },
   {
     "name": "World of Longplays (Retro Gaming 1080p60)",
