@@ -154,3 +154,10 @@
   tvg_name: Radio Kiss Kiss TV
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Radio_Kiss_Kiss_logo.svg/512px-Radio_Kiss_Kiss_logo.svg.png
   url: https://58f12ffd2447a.streamlock.net/KKMulti/livestream/playlist.m3u8
+
+- name: Hype Visual Radio (1080p Studio Cam)
+  group: Música & Video
+  tvg_id: HypeVisualRadio.tv@HD
+  tvg_name: Hype Visual Radio
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/DJ_mixer_icon.svg/512px-DJ_mixer_icon.svg.png
+  url: https://streammix.alsolnet.com/hyperadio/live/playlist.m3u8

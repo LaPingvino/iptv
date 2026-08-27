@@ -16,6 +16,13 @@
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Mystery_Science_Theater_3000_logo.svg/512px-Mystery_Science_Theater_3000_logo.svg.png
   url: https://kiefte.eu/iptv/twitch/mst3k
 
+- name: Shout! Factory TV (Cult Sci-Fi & Classics)
+  group: Sci-Fi & Cult Retro
+  tvg_id: ShoutFactoryTV.us@HD
+  tvg_name: Shout! Factory TV
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Shout%21_Factory_logo.svg/512px-Shout%21_Factory_logo.svg.png
+  url: https://kiefte.eu/iptv/twitch/shoutfactorytv
+
 - name: World of Longplays (Retro Gaming 1080p60)
   group: Sci-Fi & Cult Retro
   tvg_id: WorldOfLongplays.tv@HD

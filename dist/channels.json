@@ -130,6 +130,14 @@
     "url": "https://rtve01p.origin.c21livecloud.com/live-origin/tdp-hls/bitrate_1.m3u8"
   },
   {
+    "name": "RTVE Clan (1080p)",
+    "group": "ES Geral & TDT",
+    "tvg_id": "Clan.es@HD",
+    "tvg_name": "Clan",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Clan_RTVE_logo.svg/512px-Clan_RTVE_logo.svg.png",
+    "url": "https://rtve01p.origin.c21livecloud.com/live-origin/clan-hls/bitrate_1.m3u8"
+  },
+  {
     "name": "Canal Sur Andalucía",
     "group": "ES Geral & TDT",
     "tvg_id": "CanalSur.es",
@@ -593,6 +601,14 @@
     "tvg_name": "Radio Kiss Kiss TV",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Radio_Kiss_Kiss_logo.svg/512px-Radio_Kiss_Kiss_logo.svg.png",
     "url": "https://58f12ffd2447a.streamlock.net/KKMulti/livestream/playlist.m3u8"
+  },
+  {
+    "name": "Hype Visual Radio (1080p Studio Cam)",
+    "group": "Música & Video",
+    "tvg_id": "HypeVisualRadio.tv@HD",
+    "tvg_name": "Hype Visual Radio",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/DJ_mixer_icon.svg/512px-DJ_mixer_icon.svg.png",
+    "url": "https://streammix.alsolnet.com/hyperadio/live/playlist.m3u8"
   },
   {
     "name": "Classic Toons 24/7 (Tom & Jerry / Looney Tunes)",
@@ -2166,6 +2182,22 @@
     "url": "https://s1-fmt2.liveatc.net/kjfk_twr"
   },
   {
+    "name": "SomaFM DEF CON Radio (Cyberpunk & Beats)",
+    "group": "Rádio Global",
+    "tvg_id": "SomaFMDEFCON.us",
+    "tvg_name": "SomaFM DEF CON Radio",
+    "logo": "https://somafm.com/img3/defcon-400.jpg",
+    "url": "https://ice5.somafm.com/defcon-128-mp3"
+  },
+  {
+    "name": "SomaFM Space Station Soma (Deep Space Ambient)",
+    "group": "Rádio Global",
+    "tvg_id": "SomaFMSpaceStation.us",
+    "tvg_name": "SomaFM Space Station Soma",
+    "logo": "https://somafm.com/img3/spacestation-400.jpg",
+    "url": "https://ice6.somafm.com/spacestation-128-mp3"
+  },
+  {
     "name": "Muzaiko (24/7 Esperanto Radio)",
     "group": "Rádio Global",
     "tvg_id": "Muzaiko.eo",
@@ -2283,6 +2315,14 @@
     "tvg_name": "Mystery Science Theater 3000",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Mystery_Science_Theater_3000_logo.svg/512px-Mystery_Science_Theater_3000_logo.svg.png",
     "url": "https://kiefte.eu/iptv/twitch/mst3k"
+  },
+  {
+    "name": "Shout! Factory TV (Cult Sci-Fi & Classics)",
+    "group": "Sci-Fi & Cult Retro",
+    "tvg_id": "ShoutFactoryTV.us@HD",
+    "tvg_name": "Shout! Factory TV",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Shout%21_Factory_logo.svg/512px-Shout%21_Factory_logo.svg.png",
+    "url": "https://kiefte.eu/iptv/twitch/shoutfactorytv"
   },
   {
     "name": "World of Longplays (Retro Gaming 1080p60)",

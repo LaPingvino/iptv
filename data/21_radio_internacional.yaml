@@ -165,3 +165,17 @@
   tvg_name: LiveATC JFK Tower
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Air_traffic_controller.svg/512px-Air_traffic_controller.svg.png
   url: https://s1-fmt2.liveatc.net/kjfk_twr
+
+- name: SomaFM DEF CON Radio (Cyberpunk & Beats)
+  group: Rádio Global
+  tvg_id: SomaFMDEFCON.us
+  tvg_name: SomaFM DEF CON Radio
+  logo: https://somafm.com/img3/defcon-400.jpg
+  url: https://ice5.somafm.com/defcon-128-mp3
+
+- name: SomaFM Space Station Soma (Deep Space Ambient)
+  group: Rádio Global
+  tvg_id: SomaFMSpaceStation.us
+  tvg_name: SomaFM Space Station Soma
+  logo: https://somafm.com/img3/spacestation-400.jpg
+  url: https://ice6.somafm.com/spacestation-128-mp3
