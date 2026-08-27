@@ -128,7 +128,7 @@ def batch_check_streamers(logins):
                     "display_name": user.get("displayName") or clean_login,
                     "is_live": True,
                     "title": s.get("title", ""),
-                    "game": s.get("game", {}).get("name", "Gaming"),
+                    "game": (s.get("game") or {}).get("name", "Gaming"),
                     "viewers": s.get("viewersCount", 0)
                 }
             else:
