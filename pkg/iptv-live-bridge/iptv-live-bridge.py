@@ -18,6 +18,7 @@ import time
 import datetime
 import json
 import logging
+import subprocess
 import urllib.parse
 import urllib.request
 from http.server import HTTPServer, BaseHTTPRequestHandler
@@ -817,19 +818,10 @@ class BridgeHandler(BaseHTTPRequestHandler):
                         self.wfile.write(b"404 Not Found: Segment not found\n")
                     return
 
-        # Serve BVN (Beste Van NPO & VRT) Live Stream (Decrypted MPEG-TS)
+        # Serve BVN (Beste Van NPO) Live Stream (Decrypted MPEG-TS)
         if path.startswith("bvn") or path.startswith("nl/bvn"):
             try:
                 mpd_url = get_bvn_mpd_url()
-                self.send_response(200)
-                self.send_header("Content-Type", "video/MP2T")
-                self.send_header("Access-Control-Allow-Origin", "*")
-                self.send_header("Connection", "close")
-                self.end_headers()
-
-                if is_head:
-                    return
-
                 cmd = [
                     "ffmpeg", "-nostdin", "-v", "error",
                     "-cenc_decryption_key", BVN_DEC_KEY,
@@ -839,6 +831,28 @@ class BridgeHandler(BaseHTTPRequestHandler):
                     "pipe:1"
                 ]
                 proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, bufsize=65536)
+                
+                # Verify ffmpeg starts and yields video before sending HTTP 200
+                initial_chunk = proc.stdout.read(65536)
+                if not initial_chunk:
+                    proc.terminate()
+                    proc.wait()
+                    raise RuntimeError("ffmpeg decryption produced no output")
+
+                self.send_response(200)
+                self.send_header("Content-Type", "video/MP2T")
+                self.send_header("Access-Control-Allow-Origin", "*")
+                self.send_header("Connection", "close")
+                self.end_headers()
+
+                if is_head:
+                    proc.terminate()
+                    proc.wait()
+                    return
+
+                self.wfile.write(initial_chunk)
+                self.wfile.flush()
+
                 try:
                     while True:
                         chunk = proc.stdout.read(65536)

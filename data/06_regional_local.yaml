@@ -3,7 +3,7 @@
   tvg_id: BVN.nl
   tvg_name: BVN
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/BVN_logo_2018.svg/512px-BVN_logo_2018.svg.png
-  url: https://kiefte.eu/iptv/bvn
+  url: https://kiefte.eu/iptv/bvn.ts
 
 - name: XON (Ede TV)
   group: Regional & Local

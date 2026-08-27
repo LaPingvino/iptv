@@ -4,11 +4,6 @@
   <channel id="EsperantoTV.eo@SD">
     <display-name>Esperanto TV</display-name>
   </channel>
-  <programme start="20260826221020 +0000" stop="20260826223850 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - S1Ĉ03: Riskante la vivon sur du radoj</title>
-    <desc lang="eo">Biciklaj defioj kaj rapidaj kuroj tra la urbo. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
-    <category lang="eo">Realspektaklo / Junularo</category>
-  </programme>
   <programme start="20260826223850 +0000" stop="20260826230930 +0000" channel="EsperantoTV.eo@SD">
     <title lang="eo">Esperanto Senlime - S1Ĉ04: Filmproduktado en trajnoj</title>
     <desc lang="eo">Kreado de filmetoj dum veturado per trajno. Realspektaklo de junaj esperantistoj vojaĝantaj tra Eŭropo.</desc>
@@ -3272,6 +3267,11 @@
   <programme start="20260903223540 +0000" stop="20260903223740 +0000" channel="EsperantoTV.eo@SD">
     <title lang="eo">Dok Estas Parto 01</title>
     <desc lang="eo">Elsendo de Dok Estas Parto 01</desc>
+    <category lang="eo">Ĝenerala</category>
+  </programme>
+  <programme start="20260903223740 +0000" stop="20260903224600 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Dok Estas Parto 02</title>
+    <desc lang="eo">Elsendo de Dok Estas Parto 02</desc>
     <category lang="eo">Ĝenerala</category>
   </programme>
 </tv>
