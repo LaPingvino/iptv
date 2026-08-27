@@ -64,7 +64,7 @@ BAHAI_DIR = os.environ.get("BRIDGE_BAHAI_DIR", "/var/lib/iptv-live-bridge/bahait
 # BVN (Beste Van NPO) Widevine Decryption Engine with Live Edge Buffering
 BVN_DEC_KEY = "8fdccd948bb2cc6d99d5305ccffebcb7"
 bvn_mpd_cache = {"path": None, "ts": 0}
-BVN_SHM_MPD = "/dev/shm/bvn_live.mpd"
+BVN_SHM_MPD = f"/dev/shm/bvn_live_{os.getuid()}.mpd"
 
 def get_bvn_mpd_path():
     now = time.time()
@@ -856,16 +856,12 @@ class BridgeHandler(BaseHTTPRequestHandler):
                     "ffmpeg", "-nostdin", "-v", "error",
                     "-protocol_whitelist", "file,crypto,data,https,tls,tcp",
                     "-allowed_extensions", "ALL",
-                    "-reconnect", "1",
-                    "-reconnect_streamed", "1",
-                    "-reconnect_delay_max", "2",
-                    "-reconnect_on_network_error", "1",
-                    "-reconnect_on_http_error", "4xx,5xx",
-                    "-multiple_requests", "1",
                     "-cenc_decryption_key", BVN_DEC_KEY,
                     "-i", mpd_path,
+                    "-map", "0:v:0",
+                    "-map", "0:a:0",
                     "-c", "copy",
-                    "-mpegts_flags", "resend_headers",
+                    "-mpegts_flags", "resend_headers+initial_discontinuity",
                     "-f", "mpegts",
                     "pipe:1"
                 ]
