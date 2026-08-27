@@ -139,6 +139,15 @@ def get_bvn_dynamic_mpd():
     base_url_elem.text = mpd_url.rsplit('/', 1)[0] + '/'
     root.insert(0, base_url_elem)
     
+    # Filter video representations to keep only highest bitrate HD representation
+    ns = {'d': 'urn:mpeg:dash:schema:mpd:2011'}
+    for aset in root.findall('.//d:AdaptationSet', ns):
+        if aset.get('contentType') == 'video':
+            reps = aset.findall('d:Representation', ns)
+            reps.sort(key=lambda r: int(r.get('bandwidth', 0)), reverse=True)
+            for r in reps[1:]:
+                aset.remove(r)
+    
     tree = ET.ElementTree(root)
     import io
     out = io.BytesIO()
@@ -885,7 +894,9 @@ class BridgeHandler(BaseHTTPRequestHandler):
                     "-i", f"http://127.0.0.1:{PORT}/bvn_internal.mpd",
                     "-map", "0:v:0",
                     "-map", "0:a:0",
-                    "-c", "copy",
+                    "-c:v", "copy",
+                    "-bsf:v", "h264_mp4toannexb",
+                    "-c:a", "copy",
                     "-mpegts_flags", "resend_headers+initial_discontinuity",
                     "-f", "mpegts",
                     "pipe:1"
