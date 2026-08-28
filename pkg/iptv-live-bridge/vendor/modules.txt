@@ -1,0 +1,8 @@
+# github.com/LaPingvino/streamglink v0.0.0 => /home/joop/streamglink
+## explicit; go 1.22
+github.com/LaPingvino/streamglink
+github.com/LaPingvino/streamglink/plugin
+github.com/LaPingvino/streamglink/plugins/generic
+github.com/LaPingvino/streamglink/plugins/twitch
+github.com/LaPingvino/streamglink/stream
+# github.com/LaPingvino/streamglink => /home/joop/streamglink
