@@ -1,8 +1,8 @@
 # Maintainer: Joop Kiefte <ikojba@gmail.com>
 pkgname=iptv-live-bridge
-pkgver=4.0.2
+pkgver=4.0.3
 pkgrel=1
-pkgdesc="High-performance Go-native IPTV Live Bridge with streamglink & BVN Decryption Gateway"
+pkgdesc="High-performance Go-native IPTV Live Bridge with streamglink, BVN & EPG Gateway"
 arch=('x86_64')
 url="https://github.com/LaPingvino/iptv"
 license=('MIT')
@@ -16,9 +16,10 @@ source=(
     'linear.go'
     'twitch.go'
     'bvn.go'
+    'epg.go'
     'go.mod'
 )
-sha256sums=('SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP')
+sha256sums=('SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP')
 
 prepare() {
     cd "${srcdir}"

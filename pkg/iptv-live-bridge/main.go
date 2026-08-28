@@ -78,6 +78,34 @@ func main() {
 			return
 		}
 
+		// 2b. Real-Time EPG Handlers
+		if path == "twitch/epg" || path == "twitch/epg.xml" || path == "epg/twitch.xml" {
+			xml := epgManager.GetTwitchEPG(r.Context())
+			w.Header().Set("Content-Type", "application/xml; charset=utf-8")
+			w.Header().Set("Access-Control-Allow-Origin", "*")
+			w.Header().Set("Cache-Control", "max-age=60, must-revalidate")
+			w.Write([]byte(xml))
+			return
+		}
+
+		if path == "esperanto/epg" || path == "esperanto/epg.xml" || path == "epg/esperanto.xml" {
+			xml := epgManager.GetLinearEPG(esperantoStation, "EsperantoTV.eo@SD", "Esperanto TV", "eo")
+			w.Header().Set("Content-Type", "application/xml; charset=utf-8")
+			w.Header().Set("Access-Control-Allow-Origin", "*")
+			w.Header().Set("Cache-Control", "max-age=300, must-revalidate")
+			w.Write([]byte(xml))
+			return
+		}
+
+		if path == "bahai/epg" || path == "bahai/epg.xml" || path == "epg/bahai.xml" {
+			xml := epgManager.GetLinearEPG(bahaiStation, "BahaiStudioSessions.tv@HD", "Bahá'í Studio Sessions TV", "en")
+			w.Header().Set("Content-Type", "application/xml; charset=utf-8")
+			w.Header().Set("Access-Control-Allow-Origin", "*")
+			w.Header().Set("Cache-Control", "max-age=300, must-revalidate")
+			w.Write([]byte(xml))
+			return
+		}
+
 		// 3. Static distribution files (playlist.m3u8, epg.xml.gz, epg.xml, all.m3u8)
 		distFile := path
 		if strings.HasPrefix(distFile, "dist/") {
