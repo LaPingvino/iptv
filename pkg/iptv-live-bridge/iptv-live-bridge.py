@@ -26,6 +26,7 @@ from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
 import queue
 import collections
 import signal
+import select
 import streamlink
 
 logging.basicConfig(
@@ -195,42 +196,79 @@ class BVNStreamEngine:
         logger.info("BVNStreamEngine started shared real-time decryption worker")
 
     def _reader_loop(self):
+        last_data_time = time.time()
         while self.running and self.proc:
-            chunk = self.proc.stdout.read(65536)
-            if not chunk:
-                break
-            with self.lock:
-                self.recent_chunks.append(chunk)
-                for q in list(self.clients):
-                    try:
-                        q.put_nowait(chunk)
-                    except queue.Full:
-                        pass
-                if not self.clients and (time.time() - self.last_access) > 30:
-                    logger.info("No active BVN viewers for 30s, stopping background decryptor")
-                    self.running = False
+            r, _, _ = select.select([self.proc.stdout], [], [], 1.0)
+            now = time.time()
+            
+            if r:
+                try:
+                    chunk = self.proc.stdout.read(65536)
+                except Exception:
+                    chunk = b""
+                if not chunk:
+                    logger.info("BVN ffmpeg worker reached EOF")
                     break
+                last_data_time = now
+                with self.lock:
+                    self.recent_chunks.append((chunk, now))
+                    for q in list(self.clients):
+                        try:
+                            q.put_nowait(chunk)
+                        except queue.Full:
+                            pass
+            else:
+                if self.proc.poll() is not None:
+                    logger.info(f"BVN ffmpeg worker exited with code {self.proc.poll()}")
+                    break
+                    
+                with self.lock:
+                    has_clients = len(self.clients) > 0
+                if has_clients and (now - last_data_time) > 8:
+                    logger.warning("BVN ffmpeg worker stalled (no data for 8s), killing frozen worker...")
+                    break
+                    
+            with self.lock:
+                has_clients = len(self.clients) > 0
+                idle_time = now - self.last_access
+            if not has_clients and idle_time > 30:
+                logger.info("No active BVN viewers for 30s, stopping background decryptor")
+                break
+                
         with self.lock:
             if self.proc:
                 try:
                     self.proc.terminate()
-                    self.proc.wait()
+                    self.proc.wait(timeout=2)
                 except Exception:
-                    pass
+                    try:
+                        self.proc.kill()
+                    except Exception:
+                        pass
                 self.proc = None
             self.running = False
 
     def subscribe(self):
         q = queue.Queue(maxsize=64)
+        now = time.time()
         with self.lock:
-            self.last_access = time.time()
-            if not self.running or self.proc is None or self.proc.poll() is not None:
+            self.last_access = now
+            is_stale = self.running and self.recent_chunks and (now - self.recent_chunks[-1][1] > 8)
+            if not self.running or self.proc is None or self.proc.poll() is not None or is_stale:
+                if self.proc:
+                    try:
+                        self.proc.kill()
+                    except Exception:
+                        pass
+                    self.proc = None
                 self._start()
-            for c in list(self.recent_chunks):
-                try:
-                    q.put_nowait(c)
-                except queue.Full:
-                    break
+                
+            for c, ts in list(self.recent_chunks):
+                if now - ts < 8:
+                    try:
+                        q.put_nowait(c)
+                    except queue.Full:
+                        break
             self.clients.add(q)
         return q
 
@@ -1027,8 +1065,8 @@ class BridgeHandler(BaseHTTPRequestHandler):
             disney_buffer_engine.touch()
             
             if path in ["disney", "disney.m3u8", "disney/playlist.m3u8"]:
-                # Wait until at least 3 boosted segments are ready in memory
-                for _ in range(30):
+                # Wait up to 2 seconds for boosted segments, then immediately fall back to upstream
+                for _ in range(4):
                     with disney_buffer_engine.lock:
                         if len(disney_buffer_engine.segments) >= 3 and disney_buffer_engine.playlist_content:
                             break
