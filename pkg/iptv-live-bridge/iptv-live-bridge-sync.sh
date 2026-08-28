@@ -23,11 +23,9 @@ mkdir -p /var/lib/iptv-live-bridge/bahaitv
 mkdir -p /usr/share/iptv-live-bridge/testcard
 mkdir -p /usr/share/iptv-live-bridge/offline
 
-echo "2. Updating bridge binary in /usr/bin/..."
-if [ -f "${PKG_DIR}/iptv-live-bridge.py" ]; then
-  cp -f "${PKG_DIR}/iptv-live-bridge.py" /usr/bin/iptv-live-bridge
-  chmod 755 /usr/bin/iptv-live-bridge
-fi
+echo "2. Building & updating bridge binary in /usr/bin/..."
+(cd "${PKG_DIR}" && go build -mod=vendor -ldflags="-s -w" -o /usr/bin/iptv-live-bridge .)
+chmod 755 /usr/bin/iptv-live-bridge
 
 echo "3. Syncing testcards & station idents..."
 if [ -d "${PKG_DIR}/testcard" ]; then
