@@ -38,7 +38,7 @@ logger = logging.getLogger("iptv-live-bridge")
 HOST = os.environ.get("BRIDGE_HOST", "0.0.0.0")
 PORT = int(os.environ.get("BRIDGE_PORT", "7555"))
 QUALITY = os.environ.get("BRIDGE_QUALITY", "best")
-CACHE_TTL = int(os.environ.get("BRIDGE_CACHE_TTL", "15"))
+CACHE_TTL = int(os.environ.get("BRIDGE_CACHE_TTL", "300"))
 MIN_VIEWER_THRESHOLD = int(os.environ.get("BRIDGE_MIN_VIEWERS", "3"))
 
 # In-memory cache: url -> (resolved_url, timestamp)
@@ -57,8 +57,9 @@ from twitch_fallback import (
 )
 
 session = streamlink.Streamlink()
-session.set_option("stream-timeout", 8)
+session.set_option("stream-timeout", 10)
 session.set_option("hls-live-edge", 3)
+session.set_option("twitch-access-token-param", ["player_type=picture-by-picture"])
 
 OFFLINE_DIR = os.environ.get("BRIDGE_OFFLINE_DIR", "/usr/share/iptv-live-bridge/offline" if os.path.exists("/usr/share/iptv-live-bridge/offline") else os.path.join(os.path.dirname(os.path.abspath(__file__)), "offline"))
 TESTCARD_DIR = os.environ.get("BRIDGE_TESTCARD_DIR", "/usr/share/iptv-live-bridge/testcard" if os.path.exists("/usr/share/iptv-live-bridge/testcard") else os.path.join(os.path.dirname(os.path.abspath(__file__)), "testcard"))
@@ -1204,9 +1205,9 @@ class BridgeHandler(BaseHTTPRequestHandler):
             return
 
         # Online: serve live HLS stream
-        self.serve_hls(resolved_url, is_head=is_head)
+        self.serve_hls(resolved_url, is_head=is_head, target_url=target_url)
 
-    def serve_hls(self, resolved_url, is_head=False):
+    def serve_hls(self, resolved_url, is_head=False, target_url=None):
         m3u8_content = fetch_and_make_absolute_m3u8(resolved_url)
         if m3u8_content:
             self.send_response(200)
@@ -1217,6 +1218,8 @@ class BridgeHandler(BaseHTTPRequestHandler):
             if not is_head:
                 self.wfile.write(m3u8_content.encode("utf-8"))
         else:
+            if target_url and target_url in stream_cache:
+                del stream_cache[target_url]
             self.send_response(302)
             self.send_header("Location", resolved_url)
             self.send_header("Access-Control-Allow-Origin", "*")
