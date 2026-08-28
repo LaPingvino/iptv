@@ -59,7 +59,6 @@ from twitch_fallback import (
 session = streamlink.Streamlink()
 session.set_option("stream-timeout", 10)
 session.set_option("hls-live-edge", 3)
-session.set_option("twitch-access-token-param", ["player_type=picture-by-picture"])
 
 OFFLINE_DIR = os.environ.get("BRIDGE_OFFLINE_DIR", "/usr/share/iptv-live-bridge/offline" if os.path.exists("/usr/share/iptv-live-bridge/offline") else os.path.join(os.path.dirname(os.path.abspath(__file__)), "offline"))
 TESTCARD_DIR = os.environ.get("BRIDGE_TESTCARD_DIR", "/usr/share/iptv-live-bridge/testcard" if os.path.exists("/usr/share/iptv-live-bridge/testcard") else os.path.join(os.path.dirname(os.path.abspath(__file__)), "testcard"))
