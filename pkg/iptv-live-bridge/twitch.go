@@ -22,17 +22,17 @@ type CachedStream struct {
 	ExpiresAt time.Time
 }
 
-type TwitchManager struct {
-	mu       sync.RWMutex
-	cache    map[string]CachedStream
-	cacheTTL time.Duration
-	session  *streamglink.Streamlink
+type RaidMemory struct {
+	target    string
+	expiresAt time.Time
 }
 
-var twitchMgr = &TwitchManager{
-	cache:    make(map[string]CachedStream),
-	cacheTTL: 300 * time.Second,
-	session:  streamglink.New(),
+type TwitchManager struct {
+	mu           sync.RWMutex
+	cache        map[string]CachedStream
+	cacheTTL     time.Duration
+	session      *streamglink.Streamlink
+	raidMemories map[string]RaidMemory
 }
 
 // Creator Circles for fallback when primary stream is offline
@@ -49,6 +49,177 @@ var creatorCircles = map[string][]string{
 	"speedrun":         {"gamesdonequick", "esamarathon", "tasvideos"},
 }
 
+var twitchMgr = &TwitchManager{
+	cache:        make(map[string]CachedStream),
+	cacheTTL:     300 * time.Second,
+	session:      streamglink.New(),
+	raidMemories: make(map[string]RaidMemory),
+}
+
+// FallbackInfo holds discovery signals from Twitch GQL
+type FallbackInfo struct {
+	IsLive       bool
+	RaidTarget   string
+	HostTarget   string
+	TeamName     string
+	Teammates    []string
+	LastGameName string
+}
+
+func (tm *TwitchManager) fetchChannelFallbackInfo(ctx context.Context, channel string) (*FallbackInfo, error) {
+	rawQuery := `
+	query AutonomousFallbackProbe($login: String!) {
+	  user(login: $login) {
+	    stream {
+	      id
+	    }
+	    raid {
+	      targetChannel {
+	        login
+	      }
+	    }
+	    hosting {
+	      login
+	      stream { id }
+	    }
+	    primaryTeam {
+	      displayName
+	      members {
+	        edges {
+	          node {
+	            login
+	            stream {
+	              viewersCount
+	            }
+	          }
+	        }
+	      }
+	    }
+	    lastBroadcast {
+	      game {
+	        name
+	      }
+	    }
+	  }
+	}`
+
+	payload := map[string]any{
+		"query": rawQuery,
+		"variables": map[string]string{
+			"login": channel,
+		},
+	}
+	pBytes, _ := json.Marshal(payload)
+
+	req, err := http.NewRequestWithContext(ctx, http.MethodPost, "https://gql.twitch.tv/gql", strings.NewReader(string(pBytes)))
+	if err != nil {
+		return nil, err
+	}
+	req.Header.Set("Client-Id", "kimne78kx3ncx6brgo4mv6wki5h1ko")
+	req.Header.Set("Content-Type", "application/json")
+
+	resp, err := http.DefaultClient.Do(req)
+	if err != nil {
+		return nil, err
+	}
+	defer resp.Body.Close()
+
+	var res struct {
+		Data struct {
+			User *struct {
+				Stream *struct {
+					ID string `json:"id"`
+				} `json:"stream"`
+				Raid *struct {
+					TargetChannel *struct {
+						Login string `json:"login"`
+					} `json:"targetChannel"`
+				} `json:"raid"`
+				Hosting *struct {
+					Login  string `json:"login"`
+					Stream *struct {
+						ID string `json:"id"`
+					} `json:"stream"`
+				} `json:"hosting"`
+				PrimaryTeam *struct {
+					DisplayName string `json:"displayName"`
+					Members     struct {
+						Edges []struct {
+							Node struct {
+								Login  string `json:"login"`
+								Stream *struct {
+									ViewersCount int `json:"viewersCount"`
+								} `json:"stream"`
+							} `json:"node"`
+						} `json:"edges"`
+					} `json:"members"`
+				} `json:"primaryTeam"`
+				LastBroadcast *struct {
+					Game *struct {
+						Name string `json:"name"`
+					} `json:"game"`
+				} `json:"lastBroadcast"`
+			} `json:"user"`
+		} `json:"data"`
+	}
+
+	if err := json.NewDecoder(resp.Body).Decode(&res); err != nil {
+		return nil, err
+	}
+
+	if res.Data.User == nil {
+		return nil, fmt.Errorf("user %s not found on Twitch", channel)
+	}
+
+	u := res.Data.User
+	info := &FallbackInfo{
+		IsLive: u.Stream != nil,
+	}
+
+	if u.Raid != nil && u.Raid.TargetChannel != nil {
+		info.RaidTarget = strings.ToLower(u.Raid.TargetChannel.Login)
+	}
+
+	if u.Hosting != nil && u.Hosting.Stream != nil && u.Hosting.Login != "" {
+		info.HostTarget = strings.ToLower(u.Hosting.Login)
+	}
+
+	if u.PrimaryTeam != nil {
+		info.TeamName = u.PrimaryTeam.DisplayName
+		// Sort teammates by viewer count descending
+		type liveTeammate struct {
+			login   string
+			viewers int
+		}
+		var list []liveTeammate
+		for _, e := range u.PrimaryTeam.Members.Edges {
+			if e.Node.Stream != nil && strings.ToLower(e.Node.Login) != channel {
+				list = append(list, liveTeammate{
+					login:   strings.ToLower(e.Node.Login),
+					viewers: e.Node.Stream.ViewersCount,
+				})
+			}
+		}
+		// Sort descending
+		for i := 0; i < len(list); i++ {
+			for j := i + 1; j < len(list); j++ {
+				if list[j].viewers > list[i].viewers {
+					list[i], list[j] = list[j], list[i]
+				}
+			}
+		}
+		for _, lt := range list {
+			info.Teammates = append(info.Teammates, lt.login)
+		}
+	}
+
+	if u.LastBroadcast != nil && u.LastBroadcast.Game != nil {
+		info.LastGameName = u.LastBroadcast.Game.Name
+	}
+
+	return info, nil
+}
+
 func (tm *TwitchManager) Resolve(ctx context.Context, channel string) (string, error) {
 	channel = strings.ToLower(strings.TrimSpace(channel))
 	tm.mu.RLock()
@@ -59,30 +230,94 @@ func (tm *TwitchManager) Resolve(ctx context.Context, channel string) (string, e
 	}
 	tm.mu.RUnlock()
 
-	// Try primary channel
-	streamURL, err := tm.resolveSingle(ctx, channel)
-	if err == nil {
+	// Query Twitch GQL fallback & live signals in one fast call
+	info, _ := tm.fetchChannelFallbackInfo(ctx, channel)
+
+	if info != nil && info.RaidTarget != "" {
 		tm.mu.Lock()
-		tm.cache[channel] = CachedStream{
-			URL:       streamURL,
-			ExpiresAt: time.Now().Add(tm.cacheTTL),
+		tm.raidMemories[channel] = RaidMemory{
+			target:    info.RaidTarget,
+			expiresAt: time.Now().Add(2 * time.Hour),
 		}
 		tm.mu.Unlock()
-		return streamURL, nil
 	}
 
-	// Try creator circle fallback
+	// 1. Try primary channel if live or if GQL check was inconclusive
+	if info == nil || info.IsLive {
+		streamURL, err := tm.resolveSingle(ctx, channel)
+		if err == nil {
+			tm.mu.Lock()
+			tm.cache[channel] = CachedStream{
+				URL:       streamURL,
+				ExpiresAt: time.Now().Add(tm.cacheTTL),
+			}
+			tm.mu.Unlock()
+			return streamURL, nil
+		}
+	}
+
+	// 2. Channel is offline: Check Recent Raid Target (active or cached within 2 hours)
+	var raidTarget string
+	if info != nil && info.RaidTarget != "" {
+		raidTarget = info.RaidTarget
+	} else {
+		tm.mu.RLock()
+		rm, exists := tm.raidMemories[channel]
+		if exists && time.Now().Before(rm.expiresAt) {
+			raidTarget = rm.target
+		}
+		tm.mu.RUnlock()
+	}
+
+	if raidTarget != "" {
+		log.Printf("[Twitch] %s raided %s -> failing over to raid target", channel, raidTarget)
+		raidURL, err := tm.resolveSingle(ctx, raidTarget)
+		if err == nil {
+			return raidURL, nil
+		}
+	}
+
+	// 3. Check Channel Host Target
+	if info != nil && info.HostTarget != "" {
+		log.Printf("[Twitch] %s is hosting %s -> failing over to host", channel, info.HostTarget)
+		hostURL, err := tm.resolveSingle(ctx, info.HostTarget)
+		if err == nil {
+			return hostURL, nil
+		}
+	}
+
+	// 4. Check Live Teammates (Primary Team)
+	if info != nil && len(info.Teammates) > 0 {
+		for _, teammate := range info.Teammates {
+			teammateURL, err := tm.resolveSingle(ctx, teammate)
+			if err == nil {
+				log.Printf("[Twitch] %s offline -> routed to live teammate %s (%s)", channel, teammate, info.TeamName)
+				return teammateURL, nil
+			}
+		}
+	}
+
+	// 5. Check Contextual Last Broadcast Game Category
+	if info != nil && info.LastGameName != "" {
+		gameURL, err := tm.ResolveGame(ctx, info.LastGameName, "")
+		if err == nil && gameURL != "" {
+			log.Printf("[Twitch] %s offline -> routed to top streamer in last played game '%s'", channel, info.LastGameName)
+			return gameURL, nil
+		}
+	}
+
+	// 6. Check Curated Creator Circles Safety Net
 	if circle, exists := creatorCircles[channel]; exists {
 		for _, fb := range circle {
 			fbURL, fbErr := tm.resolveSingle(ctx, fb)
 			if fbErr == nil {
-				log.Printf("[Twitch] Fallback: %s is offline, routed to %s", channel, fb)
+				log.Printf("[Twitch] %s offline -> routed to creator circle fallback %s", channel, fb)
 				return fbURL, nil
 			}
 		}
 	}
 
-	return "", err
+	return "", fmt.Errorf("channel %s and all fallbacks offline", channel)
 }
 
 func (tm *TwitchManager) resolveSingle(ctx context.Context, channel string) (string, error) {

@@ -1,6 +1,6 @@
 # Maintainer: Joop Kiefte <ikojba@gmail.com>
 pkgname=iptv-live-bridge
-pkgver=4.0.1
+pkgver=4.0.2
 pkgrel=1
 pkgdesc="High-performance Go-native IPTV Live Bridge with streamglink & BVN Decryption Gateway"
 arch=('x86_64')
