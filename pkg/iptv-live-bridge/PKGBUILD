@@ -1,6 +1,6 @@
 # Maintainer: Joop Kiefte <ikojba@gmail.com>
 pkgname=iptv-live-bridge
-pkgver=4.0.0
+pkgver=4.0.1
 pkgrel=1
 pkgdesc="High-performance Go-native IPTV Live Bridge with streamglink & BVN Decryption Gateway"
 arch=('x86_64')
@@ -12,12 +12,25 @@ backup=('etc/iptv-live-bridge.conf')
 source=(
     'iptv-live-bridge.service'
     'iptv-live-bridge.conf'
+    'main.go'
+    'linear.go'
+    'twitch.go'
+    'bvn.go'
+    'go.mod'
 )
-sha256sums=('SKIP' 'SKIP')
+sha256sums=('SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP')
+
+prepare() {
+    cd "${srcdir}"
+    if [ -d "${startdir}/vendor" ]; then
+        cp -r "${startdir}/vendor" "${srcdir}/vendor"
+    fi
+}
 
 build() {
-    cd "${startdir}"
-    go build -mod=vendor -ldflags="-s -w" -o "${srcdir}/iptv-live-bridge" .
+    cd "${srcdir}"
+    export CGO_ENABLED=0
+    go build -mod=vendor -ldflags="-s -w" -o iptv-live-bridge .
 }
 
 package() {
