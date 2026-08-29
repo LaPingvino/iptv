@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"os"
 	"path/filepath"
 	"strings"
@@ -50,5 +51,19 @@ func TestFallbackBaselineEPG(t *testing.T) {
 	}
 	if !strings.Contains(xml, "Live status unknown") {
 		t.Errorf("expected 'Live status unknown' baseline in fallback EPG")
+	}
+}
+
+func TestLiveTwitchEPG(t *testing.T) {
+	if testing.Short() {
+		t.Skip("skipping live network test in short mode")
+	}
+	mgr := &EPGManager{}
+	xml, err := mgr.buildTwitchEPG(context.Background())
+	if err != nil {
+		t.Fatalf("buildTwitchEPG failed: %v", err)
+	}
+	if strings.Contains(xml, "Live status unknown") {
+		t.Errorf("EPG contains 'Live status unknown' indicating missing data")
 	}
 }

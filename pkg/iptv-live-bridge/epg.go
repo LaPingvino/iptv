@@ -268,18 +268,6 @@ func (m *EPGManager) buildTwitchEPG(ctx context.Context) (string, error) {
 					login
 					stream { viewersCount }
 				}
-				primaryTeam {
-					displayName
-					members {
-						edges {
-							node {
-								login
-								displayName
-								stream { viewersCount title game { name } }
-							}
-						}
-					}
-				}
 				lastBroadcast {
 					title
 					game { name }
@@ -309,12 +297,17 @@ func (m *EPGManager) buildTwitchEPG(ctx context.Context) (string, error) {
 	}
 
 	var result struct {
-		Data map[string]json.RawMessage `json:"data"`
+		Data   map[string]json.RawMessage `json:"data"`
+		Errors []any                      `json:"errors"`
 	}
 
 	if err := json.NewDecoder(resp.Body).Decode(&result); err != nil {
 		return "", err
 	}
+	if len(result.Errors) > 0 {
+		log.Printf("[Twitch EPG] GQL returned errors: %v", result.Errors)
+	}
+	log.Printf("[Twitch EPG] GQL response keys in data: %d", len(result.Data))
 
 	now := time.Now().UTC()
 	prevStart := now.Add(-3 * time.Hour).Format("20060102150405 +0000")
@@ -407,24 +400,6 @@ func (m *EPGManager) buildTwitchEPG(ctx context.Context) (string, error) {
 							ViewersCount int `json:"viewersCount"`
 						} `json:"stream"`
 					} `json:"hosting"`
-					PrimaryTeam *struct {
-						DisplayName string `json:"displayName"`
-						Members     struct {
-							Edges []struct {
-								Node struct {
-									Login       string `json:"login"`
-									DisplayName string `json:"displayName"`
-									Stream      *struct {
-										ViewersCount int    `json:"viewersCount"`
-										Title        string `json:"title"`
-										Game         *struct {
-											Name string `json:"name"`
-										} `json:"game"`
-									} `json:"stream"`
-								} `json:"node"`
-							} `json:"edges"`
-						} `json:"members"`
-					} `json:"primaryTeam"`
 					LastBroadcast *struct {
 						Title string `json:"title"`
 						Game  *struct {
@@ -460,24 +435,14 @@ func (m *EPGManager) buildTwitchEPG(ctx context.Context) (string, error) {
 					target := uData.Hosting.Login
 					title = fmt.Sprintf("[Hosting %s] Host Relay", target)
 					desc = fmt.Sprintf("%s is currently hosting %s with %d viewers.", name, target, uData.Hosting.Stream.ViewersCount)
-				} else if uData.PrimaryTeam != nil {
-					var bestTeammate string
-					var bestViewers int
-					var bestGame string
-					for _, e := range uData.PrimaryTeam.Members.Edges {
-						if e.Node.Stream != nil && e.Node.Stream.ViewersCount > bestViewers && strings.ToLower(e.Node.Login) != ch.Login {
-							bestTeammate = e.Node.DisplayName
-							bestViewers = e.Node.Stream.ViewersCount
-							if e.Node.Stream.Game != nil {
-								bestGame = e.Node.Stream.Game.Name
-							}
-						}
-					}
-					if bestTeammate != "" {
-						title = fmt.Sprintf("[Relay: %s] %s", bestTeammate, bestGame)
-						desc = fmt.Sprintf("%s is offline. Auto-relaying %s teammate %s (%d viewers).", name, uData.PrimaryTeam.DisplayName, bestTeammate, bestViewers)
-						if bestGame != "" {
-							category = bestGame
+				} else if uData.LastBroadcast != nil && uData.LastBroadcast.Game != nil {
+					lastGame := uData.LastBroadcast.Game.Name
+					for _, lf := range liveFollows {
+						if lf.Login != ch.Login && strings.EqualFold(lf.Game, lastGame) {
+							title = fmt.Sprintf("[%s Relay] %s - %s", lastGame, lf.DisplayName, lf.Title)
+							desc = fmt.Sprintf("%s is offline. Auto-relaying followed streamer %s playing %s (%d viewers).", name, lf.DisplayName, lf.Game, lf.Viewers)
+							category = lastGame
+							break
 						}
 					}
 				}
