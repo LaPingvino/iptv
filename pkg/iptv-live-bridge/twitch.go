@@ -36,11 +36,8 @@ type TwitchManager struct {
 }
 
 // Creator Circles for fallback when primary stream is offline
-// Creator Circles for fallback when primary stream is offline
 var creatorCircles = map[string][]string{
 	// Tetris Community
-	"tetris":           {"harddrop", "classictetris", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "wumbotize", "doremy", "speedrun"},
-	"nes-tetris":       {"classictetris", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "harddrop", "speedrun"},
 	"classictetris":    {"classictetris2", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "harddrop", "speedrun"},
 	"classictetris2":   {"classictetris", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "classictetris3", "harddrop", "speedrun"},
 	"classictetris3":   {"classictetris", "classictetris2", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "harddrop", "speedrun"},
@@ -91,6 +88,17 @@ var creatorCircles = map[string][]string{
 	"relaxbeats":       {"lofigirl", "monstercat"},
 	"monstercat":       {"insomniac", "lofigirl"},
 	"insomniac":         {"monstercat", "relaxbeats"},
+
+	// Game Categories Fallback Circles
+	"nes-tetris":                {"classictetris", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "classictetris2", "harddrop", "speedrun"},
+	"tetris":                    {"classictetris", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "harddrop", "speedrun"},
+	"modern-tetris":             {"harddrop", "wumbotize", "doremy", "classictetris", "speedrun"},
+	"super mario world":         {"ryukahr", "grandpoobear", "thabeast721", "carlsagan42", "juzcook", "aurateur", "pangaeapanga", "simpleflips", "dgr_dave", "rbpimlico"},
+	"romhack-super mario world": {"ryukahr", "grandpoobear", "thabeast721", "carlsagan42", "juzcook", "aurateur", "pangaeapanga", "simpleflips", "dgr_dave", "rbpimlico"},
+	"super mario maker 2":       {"ryukahr", "dgr_dave", "carlsagan42", "rbpimlico", "aurateur", "juzcook", "grandpoobear", "thabeast721"},
+	"celeste":                   {"carrarium", "tgh_sr", "msushi", "speedrun"},
+	"portal":                    {"msushi", "speedrun"},
+	"portal 2":                  {"msushi", "speedrun"},
 }
 
 // Known AFK / desktop / fake stream traps to strictly filter out
@@ -523,6 +531,25 @@ func (tm *TwitchManager) ResolveGame(ctx context.Context, gameName, bias string)
 
 	edges := res.Data.Game.Streams.Edges
 	if len(edges) == 0 {
+		circleKey := strings.ToLower(cleanName)
+		if bias != "" {
+			if circle, ok := creatorCircles[bias+"-"+circleKey]; ok {
+				for _, fb := range circle {
+					if fbURL, err := tm.resolveSingle(ctx, fb); err == nil {
+						log.Printf("[Twitch] Game '%s' (bias=%s) had 0 streams -> routed to circle fallback '%s'", cleanName, bias, fb)
+						return fbURL, nil
+					}
+				}
+			}
+		}
+		if circle, ok := creatorCircles[circleKey]; ok {
+			for _, fb := range circle {
+				if fbURL, err := tm.resolveSingle(ctx, fb); err == nil {
+					log.Printf("[Twitch] Game '%s' had 0 streams -> routed to circle fallback '%s'", cleanName, fb)
+					return fbURL, nil
+				}
+			}
+		}
 		return "", fmt.Errorf("no live streams found for game %s", cleanName)
 	}
 
@@ -576,6 +603,25 @@ func (tm *TwitchManager) ResolveGame(ctx context.Context, gameName, bias string)
 	}
 
 	if topLogin == "" {
+		circleKey := strings.ToLower(cleanName)
+		if bias != "" {
+			if circle, ok := creatorCircles[bias+"-"+circleKey]; ok {
+				for _, fb := range circle {
+					if fbURL, err := tm.resolveSingle(ctx, fb); err == nil {
+						log.Printf("[Twitch] Game '%s' (bias=%s) had no suitable/unblacklisted streamers -> routed to circle fallback '%s'", cleanName, bias, fb)
+						return fbURL, nil
+					}
+				}
+			}
+		}
+		if circle, ok := creatorCircles[circleKey]; ok {
+			for _, fb := range circle {
+				if fbURL, err := tm.resolveSingle(ctx, fb); err == nil {
+					log.Printf("[Twitch] Game '%s' had no suitable/unblacklisted streamers -> routed to circle fallback '%s'", cleanName, fb)
+					return fbURL, nil
+				}
+			}
+		}
 		return "", fmt.Errorf("no suitable streamer for game %s", cleanName)
 	}
 

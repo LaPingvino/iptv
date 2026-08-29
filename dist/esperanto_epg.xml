@@ -2487,4 +2487,9 @@
     <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
     <category lang="eo">Muziko</category>
   </programme>
+  <programme start="20260901015840 +0000" stop="20260901020040 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Enkonduko</title>
+    <desc lang="eo">Oficiala stacia vineto kaj enkonduko al la internacia lingvo Esperanto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
 </tv>
