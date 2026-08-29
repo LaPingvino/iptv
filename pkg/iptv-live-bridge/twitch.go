@@ -36,21 +36,61 @@ type TwitchManager struct {
 }
 
 // Creator Circles for fallback when primary stream is offline
+// Creator Circles for fallback when primary stream is offline
 var creatorCircles = map[string][]string{
+	// Tetris Community
 	"tetris":           {"harddrop", "classictetris", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "wumbotize", "doremy", "speedrun"},
 	"nes-tetris":       {"classictetris", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "harddrop", "speedrun"},
 	"classictetris":    {"classictetris2", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "harddrop", "speedrun"},
 	"classictetris2":   {"classictetris", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "classictetris3", "harddrop", "speedrun"},
 	"classictetris3":   {"classictetris", "classictetris2", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "harddrop", "speedrun"},
 	"classictetris4":   {"classictetris", "classictetris2", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "harddrop", "speedrun"},
+	"harddrop":         {"classictetris", "classictetris2", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "speedrun"},
+	"dogplayingtetris": {"classictetris", "fractal", "ericicx", "alex_t", "bluescuti", "harddrop"},
+	"fractal":          {"classictetris", "dogplayingtetris", "ericicx", "alex_t", "bluescuti", "harddrop"},
+	"ericicx":          {"classictetris", "dogplayingtetris", "fractal", "alex_t", "bluescuti", "harddrop"},
+	"alex_t":           {"classictetris", "dogplayingtetris", "fractal", "ericicx", "bluescuti", "harddrop"},
+	"bluescuti":        {"classictetris", "dogplayingtetris", "fractal", "ericicx", "alex_t", "harddrop"},
+	"wumbotize":        {"harddrop", "doremy", "classictetris", "speedrun"},
+	"doremy":           {"harddrop", "wumbotize", "classictetris", "speedrun"},
+	"vinesandwillows":  {"classictetris", "harddrop", "dogplayingtetris", "bluescuti"},
+
+	// Speedrunning & Marathons
+	"speedrun":         {"gamesdonequick", "esamarathon", "tasvideos", "mitchflowerpower"},
+	"gamesdonequick":   {"esamarathon", "speedrun", "tasvideos", "mitchflowerpower"},
+	"esamarathon":      {"gamesdonequick", "speedrun", "tasvideos", "mitchflowerpower"},
+	"tasvideos":        {"speedrun", "gamesdonequick", "esamarathon", "mitchflowerpower"},
+	"mitchflowerpower": {"speedrun", "gamesdonequick", "grandpoobear", "thabeast721", "ryukahr", "esamarathon"},
 	"smallant":         {"dgr_dave", "ryukahr", "speedrun", "thabeast721", "grandpoobear"},
+	"carrarium":        {"tgh_sr", "msushi", "speedrun", "gamesdonequick"},
+	"tgh_sr":           {"carrarium", "msushi", "speedrun", "gamesdonequick"},
+	"ambercyprian":     {"speedrun", "gamesdonequick", "esamarathon", "mitchflowerpower"},
+	"msushi":           {"carrarium", "tgh_sr", "speedrun", "gamesdonequick"},
+
+	// Mario & Romhacks
 	"ryukahr":          {"rbpimlico", "tamthegamer", "dgr_dave", "smallant", "thabeast721", "aurateur"},
 	"carlsagan42":      {"rbpimlico", "juzcook", "dgr_dave", "grandpoobear", "thabeast721", "aurateur"},
 	"thabeast721":      {"grandpoobear", "aurateur", "pangaeapanga", "simpleflips", "carlsagan42", "rbpimlico"},
 	"grandpoobear":     {"thabeast721", "aurateur", "carlsagan42", "juzcook", "pangaeapanga", "rbpimlico"},
 	"rbpimlico":        {"dgr_dave", "ryukahr", "carlsagan42", "aurateur", "juzcook", "thabeast721", "grandpoobear"},
-	"gamesdonequick":   {"esamarathon", "speedrun", "tasvideos"},
-	"speedrun":         {"gamesdonequick", "esamarathon", "tasvideos"},
+	"juzcook":          {"carlsagan42", "rbpimlico", "dgr_dave", "grandpoobear", "thabeast721", "aurateur"},
+	"aurateur":         {"ryukahr", "dgr_dave", "rbpimlico", "carlsagan42", "thabeast721", "grandpoobear"},
+	"pangaeapanga":     {"thabeast721", "grandpoobear", "simpleflips", "carlsagan42", "ryukahr"},
+	"simpleflips":      {"thabeast721", "pangaeapanga", "grandpoobear", "carlsagan42"},
+	"failstream":       {"dgr_dave", "ryukahr", "carlsagan42", "grandpoobear", "thabeast721"},
+	"glitchcat7":       {"thabeast721", "pangaeapanga", "grandpoobear", "carlsagan42"},
+	"dgr_dave":         {"ryukahr", "rbpimlico", "carlsagan42", "smallant", "aurateur"},
+	"tamthegamer":      {"ryukahr", "dgr_dave", "carlsagan42", "rbpimlico"},
+
+	// Retro, Culture & Slow TV
+	"mst3k":            {"shoutfactorytv", "worldoflongplays"},
+	"shoutfactorytv":   {"mst3k", "worldoflongplays"},
+	"worldoflongplays": {"tasvideos", "speedrun"},
+	"bobross":          {"lofigirl", "relaxbeats"},
+	"lofigirl":         {"relaxbeats", "monstercat"},
+	"relaxbeats":       {"lofigirl", "monstercat"},
+	"monstercat":       {"insomniac", "lofigirl"},
+	"insomniac":         {"monstercat", "relaxbeats"},
 }
 
 // Known AFK / desktop / fake stream traps to strictly filter out
