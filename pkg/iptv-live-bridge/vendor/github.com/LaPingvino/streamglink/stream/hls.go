@@ -31,8 +31,10 @@ func (s *HLSStream) String() string {
 }
 
 var (
-	nameRegex  = regexp.MustCompile(`NAME="([^"]+)"`)
-	videoRegex = regexp.MustCompile(`VIDEO="([^"]+)"`)
+	nameRegex      = regexp.MustCompile(`NAME="([^"]+)"`)
+	videoRegex     = regexp.MustCompile(`VIDEO="([^"]+)"`)
+	bandwidthRegex = regexp.MustCompile(`BANDWIDTH=(\d+)`)
+	codecsRegex    = regexp.MustCompile(`CODECS="([^"]+)"`)
 )
 
 // ParseMasterPlaylist parses an HLS master playlist body and extracts stream variants.
@@ -41,12 +43,30 @@ func ParseMasterPlaylist(masterBody, masterURL string, headers map[string]string
 	streams := make(map[string]Stream)
 
 	var currentQuality string
-	var firstStream Stream
-	var lastStream Stream
+	var currentBandwidth int
+	var currentIsAudio bool
+
+	type rankedStream struct {
+		stream    Stream
+		bandwidth int
+		isAudio   bool
+	}
+	var allRanked []rankedStream
 
 	for _, line := range lines {
 		line = strings.TrimSpace(line)
 		if strings.HasPrefix(line, "#EXT-X-STREAM-INF:") {
+			currentIsAudio = false
+			if m := bandwidthRegex.FindStringSubmatch(line); len(m) > 1 {
+				fmt.Sscanf(m[1], "%d", &currentBandwidth)
+			}
+			if m := codecsRegex.FindStringSubmatch(line); len(m) > 1 {
+				codecs := strings.ToLower(m[1])
+				// If codecs only declare audio (mp4a), treat as audio
+				if strings.Contains(codecs, "mp4a") && !strings.Contains(codecs, "avc") && !strings.Contains(codecs, "hvc") && !strings.Contains(codecs, "av01") {
+					currentIsAudio = true
+				}
+			}
 			if m := nameRegex.FindStringSubmatch(line); len(m) > 1 {
 				currentQuality = cleanQuality(m[1])
 			} else if m := videoRegex.FindStringSubmatch(line); len(m) > 1 {
@@ -54,10 +74,12 @@ func ParseMasterPlaylist(masterBody, masterURL string, headers map[string]string
 			} else {
 				currentQuality = "video"
 			}
-		} else if strings.HasPrefix(line, "#EXT-X-MEDIA:TYPE=AUDIO") {
-			if m := nameRegex.FindStringSubmatch(line); len(m) > 1 {
-				currentQuality = "audio_only"
+			if strings.Contains(currentQuality, "audio_only") {
+				currentIsAudio = true
 			}
+		} else if strings.HasPrefix(line, "#EXT-X-MEDIA:TYPE=AUDIO") {
+			currentIsAudio = true
+			currentQuality = "audio_only"
 		} else if line != "" && !strings.HasPrefix(line, "#") {
 			variantURL := line
 			quality := currentQuality
@@ -67,12 +89,15 @@ func ParseMasterPlaylist(masterBody, masterURL string, headers map[string]string
 
 			st := NewHLSStream(quality, variantURL, masterURL, headers, client)
 			streams[quality] = st
+			allRanked = append(allRanked, rankedStream{
+				stream:    st,
+				bandwidth: currentBandwidth,
+				isAudio:   currentIsAudio,
+			})
 
-			if firstStream == nil {
-				firstStream = st
-			}
-			lastStream = st
 			currentQuality = ""
+			currentBandwidth = 0
+			currentIsAudio = false
 		}
 	}
 
@@ -80,11 +105,36 @@ func ParseMasterPlaylist(masterBody, masterURL string, headers map[string]string
 		return nil, errors.New("no stream variants found in master playlist")
 	}
 
-	if firstStream != nil {
-		streams["best"] = firstStream
+	// Sort video streams by bandwidth to pick best and worst
+	var bestVideo Stream
+	var worstVideo Stream
+	highestVideoBW := -1
+	lowestVideoBW := 999999999
+
+	for _, r := range allRanked {
+		if !r.isAudio {
+			if r.bandwidth > highestVideoBW {
+				highestVideoBW = r.bandwidth
+				bestVideo = r.stream
+			}
+			if r.bandwidth < lowestVideoBW {
+				lowestVideoBW = r.bandwidth
+				worstVideo = r.stream
+			}
+		}
 	}
-	if lastStream != nil {
-		streams["worst"] = lastStream
+
+	// Fallback to first/last if no video tags were parsed
+	if bestVideo != nil {
+		streams["best"] = bestVideo
+	} else if len(allRanked) > 0 {
+		streams["best"] = allRanked[0].stream
+	}
+
+	if worstVideo != nil {
+		streams["worst"] = worstVideo
+	} else if len(allRanked) > 0 {
+		streams["worst"] = allRanked[len(allRanked)-1].stream
 	}
 
 	return streams, nil

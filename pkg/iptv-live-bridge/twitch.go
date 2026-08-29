@@ -39,7 +39,10 @@ type TwitchManager struct {
 var creatorCircles = map[string][]string{
 	"tetris":           {"harddrop", "classictetris", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "wumbotize", "doremy", "speedrun"},
 	"nes-tetris":       {"classictetris", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "harddrop", "speedrun"},
-	"classictetris":    {"dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "classictetris2", "harddrop", "speedrun"},
+	"classictetris":    {"classictetris2", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "harddrop", "speedrun"},
+	"classictetris2":   {"classictetris", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "classictetris3", "harddrop", "speedrun"},
+	"classictetris3":   {"classictetris", "classictetris2", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "harddrop", "speedrun"},
+	"classictetris4":   {"classictetris", "classictetris2", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "harddrop", "speedrun"},
 	"smallant":         {"dgr_dave", "ryukahr", "speedrun", "thabeast721", "grandpoobear"},
 	"ryukahr":          {"tamthegamer", "dgr_dave", "smallant", "thabeast721", "aurateur"},
 	"carlsagan42":      {"juzcook", "dgr_dave", "grandpoobear", "thabeast721", "aurateur"},
@@ -47,6 +50,20 @@ var creatorCircles = map[string][]string{
 	"grandpoobear":     {"thabeast721", "aurateur", "carlsagan42", "juzcook", "pangaeapanga"},
 	"gamesdonequick":   {"esamarathon", "speedrun", "tasvideos"},
 	"speedrun":         {"gamesdonequick", "esamarathon", "tasvideos"},
+}
+
+// Known AFK / desktop / fake stream traps to strictly filter out
+var blacklistedStreamers = map[string]bool{
+	"hercules_lostdays": true,
+}
+
+// Non-game generic categories that should NOT trigger automatic game category fallback
+var ignoredGameCategories = map[string]bool{
+	"asmr":                          true,
+	"just chatting":                 true,
+	"pools, hot tubs, and beaches": true,
+	"talk shows & podcasts":         true,
+	"special events":                true,
 }
 
 var twitchMgr = &TwitchManager{
@@ -297,22 +314,25 @@ func (tm *TwitchManager) Resolve(ctx context.Context, channel string) (string, e
 		}
 	}
 
-	// 5. Check Contextual Last Broadcast Game Category
-	if info != nil && info.LastGameName != "" {
-		gameURL, err := tm.ResolveGame(ctx, info.LastGameName, "")
-		if err == nil && gameURL != "" {
-			log.Printf("[Twitch] %s offline -> routed to top streamer in last played game '%s'", channel, info.LastGameName)
-			return gameURL, nil
-		}
-	}
-
-	// 6. Check Curated Creator Circles Safety Net
+	// 5. Check Curated Creator Circles Safety Net FIRST (Check teammates & community friends)
 	if circle, exists := creatorCircles[channel]; exists {
 		for _, fb := range circle {
 			fbURL, fbErr := tm.resolveSingle(ctx, fb)
 			if fbErr == nil {
 				log.Printf("[Twitch] %s offline -> routed to creator circle fallback %s", channel, fb)
 				return fbURL, nil
+			}
+		}
+	}
+
+	// 6. Check Contextual Last Broadcast Game Category (if not a generic non-game category)
+	if info != nil && info.LastGameName != "" {
+		cleanGame := strings.ToLower(strings.TrimSpace(info.LastGameName))
+		if !ignoredGameCategories[cleanGame] {
+			gameURL, err := tm.ResolveGame(ctx, info.LastGameName, "")
+			if err == nil && gameURL != "" {
+				log.Printf("[Twitch] %s offline -> routed to top streamer in last played game '%s'", channel, info.LastGameName)
+				return gameURL, nil
 			}
 		}
 	}
@@ -472,6 +492,10 @@ func (tm *TwitchManager) ResolveGame(ctx context.Context, gameName, bias string)
 	if bias == "romhack" || bias == "nes" {
 		for _, e := range edges {
 			n := e.Node
+			login := strings.ToLower(n.Broadcaster.Login)
+			if blacklistedStreamers[login] {
+				continue
+			}
 			lowerTitle := strings.ToLower(n.Title)
 			matches := false
 			for _, kw := range romhackKeywords {
@@ -489,15 +513,25 @@ func (tm *TwitchManager) ResolveGame(ctx context.Context, gameName, bias string)
 
 	if topLogin == "" {
 		for _, e := range edges {
-			if e.Node.ViewersCount >= 2 {
+			login := strings.ToLower(e.Node.Broadcaster.Login)
+			if blacklistedStreamers[login] {
+				continue
+			}
+			if e.Node.ViewersCount >= 3 {
 				topLogin = e.Node.Broadcaster.Login
 				break
 			}
 		}
 	}
 
-	if topLogin == "" && len(edges) > 0 {
-		topLogin = edges[0].Node.Broadcaster.Login
+	if topLogin == "" {
+		for _, e := range edges {
+			login := strings.ToLower(e.Node.Broadcaster.Login)
+			if !blacklistedStreamers[login] {
+				topLogin = e.Node.Broadcaster.Login
+				break
+			}
+		}
 	}
 
 	if topLogin == "" {

@@ -18,10 +18,10 @@ func TestLinearStationInterleaving(t *testing.T) {
 	mockFiles := []string{
 		"dok_estas_parto_01_0001.ts",
 		"dok_estas_parto_01_0002.ts",
-		"mazi_0001.ts",
-		"mazi_0002.ts",
-		"senlime_0001.ts",
-		"senlime_0002.ts",
+		"pasporto_01_0001.ts",
+		"pasporto_01_0002.ts",
+		"senlime_s01e01_0001.ts",
+		"senlime_s01e01_0002.ts",
 	}
 
 	for _, f := range mockFiles {
@@ -43,13 +43,13 @@ func TestLinearStationInterleaving(t *testing.T) {
 
 	// Total expected = 2 (mazi) + 2 (bumper) + 2 (senlime) + 2 (bumper) = 8
 	if len(schedule) != 8 {
-		t.Errorf("expected 8 interleaved segments, got %d: %v", len(schedule), schedule)
+		t.Errorf("expected 8 interleaved segments, got %d", len(schedule))
 	}
 
 	// Verify bumper is interleaved
 	hasBumperInterleaved := false
 	for i, seg := range schedule {
-		if strings.HasPrefix(seg, "dok_estas_parto_01") && i > 0 {
+		if strings.HasPrefix(seg.Name, "dok_estas_parto_01") && i > 0 {
 			hasBumperInterleaved = true
 			break
 		}

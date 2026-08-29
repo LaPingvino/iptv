@@ -288,31 +288,30 @@ func (m *EPGManager) GetLinearEPG(station *LinearStation, chID, chName, lang str
 	type Block struct {
 		title    string
 		desc     string
+		category string
 		duration float64
 	}
 
 	var blocks []Block
-	var currentPrefix string
-	var currentCount int
+	var currentBlock *Block
 
 	for _, seg := range schedule {
-		idx := strings.LastIndex(seg, "_")
-		prefix := seg
-		if idx != -1 {
-			prefix = seg[:idx]
-		}
-		if prefix == currentPrefix {
-			currentCount++
-		} else {
-			if currentCount > 0 {
-				blocks = append(blocks, makeBlock(currentPrefix, float64(currentCount)*segDuration))
+		if currentBlock == nil || seg.IsTransition {
+			if currentBlock != nil {
+				blocks = append(blocks, *currentBlock)
 			}
-			currentPrefix = prefix
-			currentCount = 1
+			currentBlock = &Block{
+				title:    seg.Title,
+				desc:     seg.Desc,
+				category: seg.Category,
+				duration: segDuration,
+			}
+		} else {
+			currentBlock.duration += segDuration
 		}
 	}
-	if currentCount > 0 {
-		blocks = append(blocks, makeBlock(currentPrefix, float64(currentCount)*segDuration))
+	if currentBlock != nil {
+		blocks = append(blocks, *currentBlock)
 	}
 
 	totalLoopDur := 0.0
@@ -355,7 +354,7 @@ func (m *EPGManager) GetLinearEPG(station *LinearStation, chID, chName, lang str
 			pStart, pStop, html.EscapeString(chID)))
 		sb.WriteString(fmt.Sprintf("    <title lang=\"%s\">%s</title>\n", lang, html.EscapeString(prog.title)))
 		sb.WriteString(fmt.Sprintf("    <desc lang=\"%s\">%s</desc>\n", lang, html.EscapeString(prog.desc)))
-		sb.WriteString(fmt.Sprintf("    <category lang=\"%s\">General</category>\n", lang))
+		sb.WriteString(fmt.Sprintf("    <category lang=\"%s\">%s</category>\n", lang, html.EscapeString(prog.category)))
 		sb.WriteString("  </programme>\n")
 
 		currTime += prog.duration
@@ -364,32 +363,6 @@ func (m *EPGManager) GetLinearEPG(station *LinearStation, chID, chName, lang str
 
 	sb.WriteString("</tv>\n")
 	return sb.String()
-}
-
-func makeBlock(prefix string, dur float64) struct{ title, desc string; duration float64 } {
-	title := strings.ReplaceAll(prefix, "_", " ")
-	title = strings.Title(title)
-	desc := fmt.Sprintf("Broadcast of %s", title)
-
-	if strings.HasPrefix(prefix, "dok_estas_parto_01") {
-		title = "Esperanto Estas: Enkonduko"
-		desc = "Oficiala stacia vineto kaj enkonduko al la internacia lingvo Esperanto."
-	} else if strings.HasPrefix(prefix, "mazi") {
-		title = "Mazi en Gondolando"
-		desc = "La legenda animacia kurso de Esperanto kun Mazi, Silvia kaj Bob."
-	} else if strings.HasPrefix(prefix, "senlime") {
-		title = "Senlime: Esperanto-Kurso"
-		desc = "Moderna televida lingvokurso de Esperanto."
-	} else if strings.HasPrefix(prefix, "dok_kef2005") {
-		title = "KEF 2005: La Plejpleja Festivalo"
-		desc = "Kultura Esperanto-Festivalo en Helsinki."
-	}
-
-	return struct{ title, desc string; duration float64 }{
-		title:    title,
-		desc:     desc,
-		duration: dur,
-	}
 }
 
 func fallbackEmptyEPG() string {

@@ -29,12 +29,12 @@
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/512px-NASA_logo.svg.png
   url: https://kiefte.eu/iptv/twitch/nasa
 
-- name: RailCowGirl (Norway Scenic Cabview Train Journeys)
+- name: WildEarth (24/7 Live Safari & Wildlife 1080p)
   group: Natureza & Slow TV
-  tvg_id: RailCowGirl.tv@HD
-  tvg_name: RailCowGirl
-  logo: https://static-cdn.jtvnw.net/jtv_user_pictures/3004f2f9-715b-4395-8b3d-4c3dbdd1be36-profile_image-300x300.png
-  url: https://kiefte.eu/iptv/twitch/railcowgirl?fallback=0
+  tvg_id: WildEarth.tv@HD
+  tvg_name: WildEarth
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/WildEarth_logo.svg/512px-WildEarth_logo.svg.png
+  url: https://wildearth-adsfree-ono.amagi.tv/playlist.m3u8
 
 - name: Adventure Earth (1080p Full HD)
   group: Natureza & Slow TV

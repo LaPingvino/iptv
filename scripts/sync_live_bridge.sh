@@ -28,9 +28,8 @@ fi
 PKG_FILE=$(ls -1t iptv-live-bridge-*.pkg.tar.zst 2>/dev/null | head -n 1)
 if [ -n "$PKG_FILE" ]; then
   pacman -U --noconfirm "$PKG_FILE"
-else
-  echo "⚠️ Warning: Package file not found, copying binary directly."
-  cp -f "${PKG_DIR}/iptv-live-bridge.py" /usr/bin/iptv-live-bridge
+  echo "⚠️ Warning: Package file not found, compiling Go binary directly."
+  (cd "${PKG_DIR}" && go build -mod=vendor -ldflags="-s -w" -o /usr/bin/iptv-live-bridge .)
   chmod 755 /usr/bin/iptv-live-bridge
 fi
 cd "${PROJECT_DIR}"
