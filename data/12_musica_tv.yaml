@@ -4,6 +4,12 @@
   tvg_name: Studio Brussel Visual
   logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png
   url: https://live.vrtcdn.be/groupb/live/450aa9d1-7173-47f3-aaaa-9701426f8ddd/live.isml/live.m3u8
+- name: MNM Kijk Live (Visual Radio)
+  group: Música & Video
+  tvg_id: MNM.be
+  tvg_name: MNM Visual
+  logo: https://upload.wikimedia.org/wikipedia/commons/0/03/Logo-MNM.svg
+  url: https://live.vrtcdn.be/groupa/live/1718328a-5c53-410d-87ec-d8db68124cfc/live.isml/live.m3u8
 - name: Qmusic NL Kijk Live (Visual Radio)
   group: Música & Video
   tvg_id: Qmusic.nl

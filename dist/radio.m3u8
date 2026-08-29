@@ -242,28 +242,31 @@ https://icecast.vrtcdn.be/radio1-high.mp3
 #EXTINF:-1 tvg-id="Radio2Antwerpen.be" tvg-name="Radio 2 Antwerpen" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Radio-2-BE.png" group-title="BE Rádio" tvg-chno="7203" radio="true",Radio 2 (VRT Antwerpen)
 https://icecast.vrtcdn.be/ra2ant-high.mp3
 
-#EXTINF:-1 tvg-id="MNM.be" tvg-name="MNM" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/MNM.png" group-title="BE Rádio" tvg-chno="7204" radio="true",MNM (VRT)
+#EXTINF:-1 tvg-id="MNM.be" tvg-name="MNM" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/03/Logo-MNM.svg" group-title="BE Rádio" tvg-chno="7204" radio="true",MNM (VRT)
 https://icecast.vrtcdn.be/mnm-high.mp3
 
-#EXTINF:-1 tvg-id="Klara.be" tvg-name="Klara" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Klara.png" group-title="BE Rádio" tvg-chno="7205" radio="true",Klara (VRT Classical)
+#EXTINF:-1 tvg-id="MNMHits.be" tvg-name="MNM Hits" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/03/Logo-MNM.svg" group-title="BE Rádio" tvg-chno="7205" radio="true",MNM Hits
+https://icecast.vrtcdn.be/mnm_hits-high.mp3
+
+#EXTINF:-1 tvg-id="Klara.be" tvg-name="Klara" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Klara.png" group-title="BE Rádio" tvg-chno="7206" radio="true",Klara (VRT Classical)
 https://icecast.vrtcdn.be/klara-high.mp3
 
-#EXTINF:-1 tvg-id="KlaraContinuo.be" tvg-name="Klara Continuo" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Klara.png" group-title="BE Rádio" tvg-chno="7206" radio="true",Klara Continuo
+#EXTINF:-1 tvg-id="KlaraContinuo.be" tvg-name="Klara Continuo" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Klara.png" group-title="BE Rádio" tvg-chno="7207" radio="true",Klara Continuo
 https://icecast.vrtcdn.be/klaracontinuo-high.mp3
 
-#EXTINF:-1 tvg-id="Classic21.be" tvg-name="Classic 21" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Classic-21.png" group-title="BE Rádio" tvg-chno="7207" radio="true",Classic 21 (RTBF Rock)
+#EXTINF:-1 tvg-id="Classic21.be" tvg-name="Classic 21" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Classic-21.png" group-title="BE Rádio" tvg-chno="7208" radio="true",Classic 21 (RTBF Rock)
 https://radios.rtbf.be/classic21-128.mp3
 
-#EXTINF:-1 tvg-id="LaPremiere.be" tvg-name="RTBF La Première" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/La-Premiere.png" group-title="BE Rádio" tvg-chno="7208" radio="true",RTBF La Première
+#EXTINF:-1 tvg-id="LaPremiere.be" tvg-name="RTBF La Première" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/La-Premiere.png" group-title="BE Rádio" tvg-chno="7209" radio="true",RTBF La Première
 https://radios.rtbf.be/laprem1ere-128.mp3
 
-#EXTINF:-1 tvg-id="Musiq3.be" tvg-name="RTBF Musiq3" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Musiq3.png" group-title="BE Rádio" tvg-chno="7209" radio="true",RTBF Musiq3
+#EXTINF:-1 tvg-id="Musiq3.be" tvg-name="RTBF Musiq3" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Musiq3.png" group-title="BE Rádio" tvg-chno="7210" radio="true",RTBF Musiq3
 https://radios.rtbf.be/musiq3-128.mp3
 
-#EXTINF:-1 tvg-id="BRF1.be" tvg-name="BRF 1" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/brf1.png" group-title="BE Rádio" tvg-chno="7210" radio="true",BRF 1 (Ostbelgien Deutsch)
+#EXTINF:-1 tvg-id="BRF1.be" tvg-name="BRF 1" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/brf1.png" group-title="BE Rádio" tvg-chno="7211" radio="true",BRF 1 (Ostbelgien Deutsch)
 http://mp3.stream.brf.be/brf1.mp3
 
-#EXTINF:-1 tvg-id="BRF2.be" tvg-name="BRF 2" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/brf2.png" group-title="BE Rádio" tvg-chno="7211" radio="true",BRF 2 (Ostbelgien Deutsch Schlager)
+#EXTINF:-1 tvg-id="BRF2.be" tvg-name="BRF 2" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/brf2.png" group-title="BE Rádio" tvg-chno="7212" radio="true",BRF 2 (Ostbelgien Deutsch Schlager)
 http://mp3.stream.brf.be/brf2.mp3
 
 #EXTINF:-1 tvg-id="RadioParadiseMain.us" tvg-name="Radio Paradise Main FLAC" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radioparadise.png" group-title="Rádio Global" tvg-chno="8000" radio="true",Radio Paradise - Main Mix (FLAC)

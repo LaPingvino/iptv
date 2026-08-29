@@ -26,8 +26,14 @@
   group: BE Rádio
   tvg_id: MNM.be
   tvg_name: MNM
-  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/MNM.png
+  logo: https://upload.wikimedia.org/wikipedia/commons/0/03/Logo-MNM.svg
   url: https://icecast.vrtcdn.be/mnm-high.mp3
+- name: MNM Hits
+  group: BE Rádio
+  tvg_id: MNMHits.be
+  tvg_name: MNM Hits
+  logo: https://upload.wikimedia.org/wikipedia/commons/0/03/Logo-MNM.svg
+  url: https://icecast.vrtcdn.be/mnm_hits-high.mp3
 - name: Klara (VRT Classical)
   group: BE Rádio
   tvg_id: Klara.be

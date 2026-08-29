@@ -846,13 +846,22 @@
     "chno": 700
   },
   {
+    "name": "MNM Kijk Live (Visual Radio)",
+    "group": "Música \u0026 Video",
+    "tvg_id": "MNM.be",
+    "tvg_name": "MNM Visual",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/0/03/Logo-MNM.svg",
+    "url": "https://live.vrtcdn.be/groupa/live/1718328a-5c53-410d-87ec-d8db68124cfc/live.isml/live.m3u8",
+    "chno": 701
+  },
+  {
     "name": "Qmusic NL Kijk Live (Visual Radio)",
     "group": "Música \u0026 Video",
     "tvg_id": "Qmusic.nl",
     "tvg_name": "Qmusic NL Visual",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Qmusic_logo_2019.svg/512px-Qmusic_logo_2019.svg.png",
     "url": "https://stream.qmusic.nl/qmusic/videohls.m3u8",
-    "chno": 701
+    "chno": 702
   },
   {
     "name": "DELUXE MUSIC",
@@ -861,7 +870,7 @@
     "tvg_name": "DELUXE MUSIC",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Deluxe_Music_2013_Logo.svg/512px-Deluxe_Music_2013_Logo.svg.png",
     "url": "https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8",
-    "chno": 702
+    "chno": 703
   },
   {
     "name": "DELUXE DANCE by Kontor",
@@ -870,7 +879,7 @@
     "tvg_name": "DELUXE DANCE",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Deluxe_Music_2013_Logo.svg/512px-Deluxe_Music_2013_Logo.svg.png",
     "url": "https://sdn-global-live-streaming-packager-cache.3qsdn.com/64733/64733_264_live.m3u8",
-    "chno": 703
+    "chno": 704
   },
   {
     "name": "DELUXE RAP",
@@ -879,7 +888,7 @@
     "tvg_name": "DELUXE RAP",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Deluxe_Music_2013_Logo.svg/512px-Deluxe_Music_2013_Logo.svg.png",
     "url": "https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.m3u8",
-    "chno": 704
+    "chno": 705
   },
   {
     "name": "Dance TV",
@@ -888,7 +897,7 @@
     "tvg_name": "Dance TV",
     "logo": "",
     "url": "https://m1b2.worldcast.tv/dancetelevisionone/2/dancetelevisionone.m3u8",
-    "chno": 705
+    "chno": 706
   },
   {
     "name": "DanceTV Deep House District (Sunset \u0026 Melodic 1080p)",
@@ -897,7 +906,7 @@
     "tvg_name": "DanceTV Deep House",
     "logo": "",
     "url": "https://m1b2.worldcast.tv/dancetelevisiontwo/dancetelevisiontwo.m3u8",
-    "chno": 706
+    "chno": 707
   },
   {
     "name": "Trace Urban (1080p)",
@@ -906,7 +915,7 @@
     "tvg_name": "Trace Urban",
     "logo": "https://i.imgur.com/DLIbUMx.png",
     "url": "https://channels.trace.plus/Traceprod/URBAN_INTER_hd/index.m3u8",
-    "chno": 707
+    "chno": 708
   },
   {
     "name": "Trace Toca (Kizomba / Zouk / PALOP)",
@@ -915,7 +924,7 @@
     "tvg_name": "Trace Toca",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Toca.png",
     "url": "https://channels.trace.plus/Traceprod/TOCA_hd/index.m3u8",
-    "chno": 708
+    "chno": 709
   },
   {
     "name": "Trace Africa",
@@ -924,7 +933,7 @@
     "tvg_name": "Trace Africa",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Africa.png",
     "url": "https://channels.trace.plus/Traceprod/AFRICA_FR_hd/index.m3u8",
-    "chno": 709
+    "chno": 710
   },
   {
     "name": "Trace Brasil",
@@ -933,7 +942,7 @@
     "tvg_name": "Trace Brasil",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Brazuca.png",
     "url": "https://amg01131-tracetv-tracebrazuca-xiaomi-vvr19.amagi.tv/playlist/amg01131-tracetv-tracebrazuca-xiaomi/playlist.m3u8",
-    "chno": 710
+    "chno": 711
   },
   {
     "name": "Trace Naija (Afrobeats)",
@@ -942,7 +951,7 @@
     "tvg_name": "Trace Naija",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Naija.png",
     "url": "https://channels.trace.plus/Traceprod/NAIJA_hd/index.m3u8",
-    "chno": 711
+    "chno": 712
   },
   {
     "name": "Trace Kitoko (Lingala / Central Africa)",
@@ -951,7 +960,7 @@
     "tvg_name": "Trace Kitoko",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Kitoko.png",
     "url": "https://channels.trace.plus/Traceprod/KITOKO_hd/index.m3u8",
-    "chno": 712
+    "chno": 713
   },
   {
     "name": "Trace Miziki (East Africa)",
@@ -960,7 +969,7 @@
     "tvg_name": "Trace Miziki",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Miziki.png",
     "url": "https://channels.trace.plus/Traceprod/MZIKI_hd/index.m3u8",
-    "chno": 713
+    "chno": 714
   },
   {
     "name": "Trace Latina",
@@ -969,7 +978,7 @@
     "tvg_name": "Trace Latina",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Latina.png",
     "url": "https://channels.trace.plus/Traceprod/LATINA_hd/index.m3u8",
-    "chno": 714
+    "chno": 715
   },
   {
     "name": "Trace UK",
@@ -978,7 +987,7 @@
     "tvg_name": "Trace UK",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-UK.png",
     "url": "https://channels.trace.plus/Traceprod/UK_FAST_hd/index.m3u8",
-    "chno": 715
+    "chno": 716
   },
   {
     "name": "Trace Gospel",
@@ -987,7 +996,7 @@
     "tvg_name": "Trace Gospel",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Gospel.png",
     "url": "https://channels.trace.plus/Traceprod/GOSPEL_FR/.m3u8",
-    "chno": 716
+    "chno": 717
   },
   {
     "name": "XITE",
@@ -996,7 +1005,7 @@
     "tvg_name": "XITE",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.png",
     "url": "https://xite-rakuten.amagi.tv/playlist.m3u8",
-    "chno": 717
+    "chno": 718
   },
   {
     "name": "XITE Hits Germany",
@@ -1005,7 +1014,7 @@
     "tvg_name": "XITE Hits Germany",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.png",
     "url": "https://d726x48n2pd5h.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-skxr1pazhltvp/XITE_Hits.m3u8",
-    "chno": 718
+    "chno": 719
   },
   {
     "name": "4Fun.TV",
@@ -1014,7 +1023,7 @@
     "tvg_name": "4Fun TV",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/4Fun-TV.png",
     "url": "https://stream.4fun.tv:8888/hls/4f_high/index.m3u8",
-    "chno": 719
+    "chno": 720
   },
   {
     "name": "DeeJay TV",
@@ -1023,7 +1032,7 @@
     "tvg_name": "DeeJay TV",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/DeeJay-TV.png",
     "url": "https://streamcdng5-4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S85984808/sMO0tz9Sr2Rk/playlist.m3u8",
-    "chno": 720
+    "chno": 721
   },
   {
     "name": "NRG 91 TV",
@@ -1032,7 +1041,7 @@
     "tvg_name": "NRG 91 TV",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/NRG-91-TV.png",
     "url": "http://tv.nrg91.gr:1935/onweb/live/playlist.m3u8",
-    "chno": 721
+    "chno": 722
   },
   {
     "name": "FM Italia TV",
@@ -1041,7 +1050,7 @@
     "tvg_name": "FM Italia TV",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/FM-Italia-TV.png",
     "url": "https://stream1.xdevel.com/video0s975817-1182/stream/playlist.m3u8",
-    "chno": 722
+    "chno": 723
   },
   {
     "name": "California Music Channel",
@@ -1050,7 +1059,7 @@
     "tvg_name": "California Music Channel",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/California-Music-Channel.png",
     "url": "https://cmc-cmctv-cineverse.amagi.tv/playlist.m3u8",
-    "chno": 723
+    "chno": 724
   },
   {
     "name": "KpopTV Play",
@@ -1059,7 +1068,7 @@
     "tvg_name": "KpopTV Play",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/KpopTV-Play.png",
     "url": "https://183.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8",
-    "chno": 724
+    "chno": 725
   },
   {
     "name": "Monstercat (24/7 Electronic Music HD)",
@@ -1068,7 +1077,7 @@
     "tvg_name": "Monstercat",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Monstercat_logo.svg/512px-Monstercat_logo.svg.png",
     "url": "https://kiefte.eu/iptv/twitch/monstercat",
-    "chno": 725
+    "chno": 726
   },
   {
     "name": "Insomniac (24/7 EDM Festival TV)",
@@ -1077,7 +1086,7 @@
     "tvg_name": "Insomniac Events",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/insomniac",
-    "chno": 726
+    "chno": 727
   },
   {
     "name": "Radio Kiss Kiss TV (Visual Radio 1080p)",
@@ -1086,7 +1095,7 @@
     "tvg_name": "Radio Kiss Kiss TV",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Radio_Kiss_Kiss_logo.svg/512px-Radio_Kiss_Kiss_logo.svg.png",
     "url": "https://58f12ffd2447a.streamlock.net/KKMulti/livestream/playlist.m3u8",
-    "chno": 727
+    "chno": 728
   },
   {
     "name": "Hype Visual Radio (1080p Studio Cam)",
@@ -1095,7 +1104,7 @@
     "tvg_name": "Hype Visual Radio",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/DJ_mixer_icon.svg/512px-DJ_mixer_icon.svg.png",
     "url": "https://streammix.alsolnet.com/hyperadio/live/playlist.m3u8",
-    "chno": 728
+    "chno": 729
   },
   {
     "name": "ARTV (Canal Parlamento PT)",
@@ -2570,9 +2579,18 @@
     "group": "BE Rádio",
     "tvg_id": "MNM.be",
     "tvg_name": "MNM",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/MNM.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/0/03/Logo-MNM.svg",
     "url": "https://icecast.vrtcdn.be/mnm-high.mp3",
     "chno": 7204
+  },
+  {
+    "name": "MNM Hits",
+    "group": "BE Rádio",
+    "tvg_id": "MNMHits.be",
+    "tvg_name": "MNM Hits",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/0/03/Logo-MNM.svg",
+    "url": "https://icecast.vrtcdn.be/mnm_hits-high.mp3",
+    "chno": 7205
   },
   {
     "name": "Klara (VRT Classical)",
@@ -2581,7 +2599,7 @@
     "tvg_name": "Klara",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Klara.png",
     "url": "https://icecast.vrtcdn.be/klara-high.mp3",
-    "chno": 7205
+    "chno": 7206
   },
   {
     "name": "Klara Continuo",
@@ -2590,7 +2608,7 @@
     "tvg_name": "Klara Continuo",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Klara.png",
     "url": "https://icecast.vrtcdn.be/klaracontinuo-high.mp3",
-    "chno": 7206
+    "chno": 7207
   },
   {
     "name": "Classic 21 (RTBF Rock)",
@@ -2599,7 +2617,7 @@
     "tvg_name": "Classic 21",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Classic-21.png",
     "url": "https://radios.rtbf.be/classic21-128.mp3",
-    "chno": 7207
+    "chno": 7208
   },
   {
     "name": "RTBF La Première",
@@ -2608,7 +2626,7 @@
     "tvg_name": "RTBF La Première",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/La-Premiere.png",
     "url": "https://radios.rtbf.be/laprem1ere-128.mp3",
-    "chno": 7208
+    "chno": 7209
   },
   {
     "name": "RTBF Musiq3",
@@ -2617,7 +2635,7 @@
     "tvg_name": "RTBF Musiq3",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Musiq3.png",
     "url": "https://radios.rtbf.be/musiq3-128.mp3",
-    "chno": 7209
+    "chno": 7210
   },
   {
     "name": "BRF 1 (Ostbelgien Deutsch)",
@@ -2626,7 +2644,7 @@
     "tvg_name": "BRF 1",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/brf1.png",
     "url": "http://mp3.stream.brf.be/brf1.mp3",
-    "chno": 7210
+    "chno": 7211
   },
   {
     "name": "BRF 2 (Ostbelgien Deutsch Schlager)",
@@ -2635,7 +2653,7 @@
     "tvg_name": "BRF 2",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/brf2.png",
     "url": "http://mp3.stream.brf.be/brf2.mp3",
-    "chno": 7211
+    "chno": 7212
   },
   {
     "name": "Radio Paradise - Main Mix (FLAC)",
