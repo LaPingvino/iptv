@@ -2,1075 +2,1091 @@
 <!DOCTYPE tv SYSTEM "xmltv.dtd">
 <tv source-info-url="https://kiefte.eu/iptv" generator-info-name="LaPingvino Twitch IPTV Live EPG Engine">
   <channel id="MST3K.us@HD"><display-name>Mystery Science Theater 3000 (MST3K 1080p)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="MST3K.us@HD">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="MST3K.us@HD">
     <title lang="en">Always On - Happy Zaturday MSTies! All riffs, all the time. 24/7 MST3K episodes (and some Cinematic Titanic, Rifftrax &amp; The Film Crew too!) (Previous)</title>
-    <desc lang="en">Live on MST3K streaming Always On with 200 viewers.</desc>
+    <desc lang="en">Live on MST3K streaming Always On with 192 viewers.</desc>
     <category lang="en">Always On</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="MST3K.us@HD">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="MST3K.us@HD">
     <title lang="en">Always On - Happy Zaturday MSTies! All riffs, all the time. 24/7 MST3K episodes (and some Cinematic Titanic, Rifftrax &amp; The Film Crew too!)</title>
-    <desc lang="en">Live on MST3K streaming Always On with 200 viewers.</desc>
+    <desc lang="en">Live on MST3K streaming Always On with 192 viewers.</desc>
     <category lang="en">Always On</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="MST3K.us@HD">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="MST3K.us@HD">
     <title lang="en">Always On - Happy Zaturday MSTies! All riffs, all the time. 24/7 MST3K episodes (and some Cinematic Titanic, Rifftrax &amp; The Film Crew too!) (Upcoming)</title>
-    <desc lang="en">Live on MST3K streaming Always On with 200 viewers.</desc>
+    <desc lang="en">Live on MST3K streaming Always On with 192 viewers.</desc>
     <category lang="en">Always On</category>
   </programme>
   <channel id="ShoutFactoryTV.us@HD"><display-name>Shout! Factory TV (Cult Sci-Fi &amp; Classics)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="ShoutFactoryTV.us@HD">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="ShoutFactoryTV.us@HD">
     <title lang="en">[Circle: mst3k] Community Relay (Previous)</title>
     <desc lang="en">Shout! Factory TV (Cult Sci-Fi &amp; Classics) is offline. Priority relay to community circle member mst3k.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="ShoutFactoryTV.us@HD">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="ShoutFactoryTV.us@HD">
     <title lang="en">[Circle: mst3k] Community Relay</title>
     <desc lang="en">Shout! Factory TV (Cult Sci-Fi &amp; Classics) is offline. Priority relay to community circle member mst3k.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="ShoutFactoryTV.us@HD">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="ShoutFactoryTV.us@HD">
     <title lang="en">[Circle: mst3k] Community Relay (Upcoming)</title>
     <desc lang="en">Shout! Factory TV (Cult Sci-Fi &amp; Classics) is offline. Priority relay to community circle member mst3k.</desc>
     <category lang="en">Gaming</category>
   </programme>
   <channel id="WorldOfLongplays.tv@HD"><display-name>World of Longplays (Retro Gaming 1080p60)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="WorldOfLongplays.tv@HD">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="WorldOfLongplays.tv@HD">
     <title lang="en">[Circle: tasvideos] Community Relay (Previous)</title>
     <desc lang="en">WorldOfLongplays is offline. Priority relay to community circle member tasvideos.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="WorldOfLongplays.tv@HD">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="WorldOfLongplays.tv@HD">
     <title lang="en">[Circle: tasvideos] Community Relay</title>
     <desc lang="en">WorldOfLongplays is offline. Priority relay to community circle member tasvideos.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="WorldOfLongplays.tv@HD">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="WorldOfLongplays.tv@HD">
     <title lang="en">[Circle: tasvideos] Community Relay (Upcoming)</title>
     <desc lang="en">WorldOfLongplays is offline. Priority relay to community circle member tasvideos.</desc>
     <category lang="en">Gaming</category>
   </programme>
   <channel id="BobRoss.tv@HD"><display-name>Bob Ross (24/7 The Joy of Painting)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="BobRoss.tv@HD">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="BobRoss.tv@HD">
     <title lang="en">Art - A Happy Little Weekend Marathon! (Previous)</title>
-    <desc lang="en">Live on BobRoss streaming Art with 922 viewers.</desc>
+    <desc lang="en">Live on BobRoss streaming Art with 938 viewers.</desc>
     <category lang="en">Art</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="BobRoss.tv@HD">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="BobRoss.tv@HD">
     <title lang="en">Art - A Happy Little Weekend Marathon!</title>
-    <desc lang="en">Live on BobRoss streaming Art with 922 viewers.</desc>
+    <desc lang="en">Live on BobRoss streaming Art with 938 viewers.</desc>
     <category lang="en">Art</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="BobRoss.tv@HD">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="BobRoss.tv@HD">
     <title lang="en">Art - A Happy Little Weekend Marathon! (Upcoming)</title>
-    <desc lang="en">Live on BobRoss streaming Art with 922 viewers.</desc>
+    <desc lang="en">Live on BobRoss streaming Art with 938 viewers.</desc>
     <category lang="en">Art</category>
   </programme>
   <channel id="LofiGirl.tv@HD"><display-name>Lofi Girl (24/7 Relaxing Beats &amp; Ambience 1080p)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="LofiGirl.tv@HD">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="LofiGirl.tv@HD">
     <title lang="en">Music - lofi hip hop radio 📚  beats to relax/study to (Previous)</title>
-    <desc lang="en">Live on LofiGirl streaming Music with 219 viewers.</desc>
+    <desc lang="en">Live on LofiGirl streaming Music with 240 viewers.</desc>
     <category lang="en">Music</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="LofiGirl.tv@HD">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="LofiGirl.tv@HD">
     <title lang="en">Music - lofi hip hop radio 📚  beats to relax/study to</title>
-    <desc lang="en">Live on LofiGirl streaming Music with 219 viewers.</desc>
+    <desc lang="en">Live on LofiGirl streaming Music with 240 viewers.</desc>
     <category lang="en">Music</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="LofiGirl.tv@HD">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="LofiGirl.tv@HD">
     <title lang="en">Music - lofi hip hop radio 📚  beats to relax/study to (Upcoming)</title>
-    <desc lang="en">Live on LofiGirl streaming Music with 219 viewers.</desc>
+    <desc lang="en">Live on LofiGirl streaming Music with 240 viewers.</desc>
     <category lang="en">Music</category>
   </programme>
   <channel id="RelaxBeats.tv@HD"><display-name>Relax Beats &amp; Chill Music (24/7 HD)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="RelaxBeats.tv@HD">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="RelaxBeats.tv@HD">
     <title lang="en">Music - Chill, Relax, Study !Trivia (Previous)</title>
-    <desc lang="en">Live on RelaxBeats streaming Music with 72 viewers.</desc>
+    <desc lang="en">Live on RelaxBeats streaming Music with 62 viewers.</desc>
     <category lang="en">Music</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="RelaxBeats.tv@HD">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="RelaxBeats.tv@HD">
     <title lang="en">Music - Chill, Relax, Study !Trivia</title>
-    <desc lang="en">Live on RelaxBeats streaming Music with 72 viewers.</desc>
+    <desc lang="en">Live on RelaxBeats streaming Music with 62 viewers.</desc>
     <category lang="en">Music</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="RelaxBeats.tv@HD">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="RelaxBeats.tv@HD">
     <title lang="en">Music - Chill, Relax, Study !Trivia (Upcoming)</title>
-    <desc lang="en">Live on RelaxBeats streaming Music with 72 viewers.</desc>
+    <desc lang="en">Live on RelaxBeats streaming Music with 62 viewers.</desc>
     <category lang="en">Music</category>
   </programme>
   <channel id="NASATV.us@HD"><display-name>NASA Live (Earth from Space &amp; ISS 1080p)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="NASATV.us@HD">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="NASATV.us@HD">
     <title lang="en">NASA (Offline) (Previous)</title>
     <desc lang="en">NASA is offline. Last broadcast was Science &amp; Technology.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="NASATV.us@HD">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="NASATV.us@HD">
     <title lang="en">NASA (Offline)</title>
     <desc lang="en">NASA is offline. Last broadcast was Science &amp; Technology.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="NASATV.us@HD">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="NASATV.us@HD">
     <title lang="en">NASA (Offline) (Upcoming)</title>
     <desc lang="en">NASA is offline. Last broadcast was Science &amp; Technology.</desc>
     <category lang="en">Gaming</category>
   </programme>
   <channel id="Monstercat.tv@HD"><display-name>Monstercat (24/7 Electronic Music HD)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="Monstercat.tv@HD">
-    <title lang="en">[Circle: insomniac] Community Relay (Previous)</title>
-    <desc lang="en">Monstercat is offline. Priority relay to community circle member insomniac.</desc>
-    <category lang="en">Gaming</category>
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="Monstercat.tv@HD">
+    <title lang="en">[Relay: GoingQuantum] DJs (Previous)</title>
+    <desc lang="en">Monstercat is offline. Auto-relaying Monstercat teammate GoingQuantum (118 viewers).</desc>
+    <category lang="en">DJs</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="Monstercat.tv@HD">
-    <title lang="en">[Circle: insomniac] Community Relay</title>
-    <desc lang="en">Monstercat is offline. Priority relay to community circle member insomniac.</desc>
-    <category lang="en">Gaming</category>
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="Monstercat.tv@HD">
+    <title lang="en">[Relay: GoingQuantum] DJs</title>
+    <desc lang="en">Monstercat is offline. Auto-relaying Monstercat teammate GoingQuantum (118 viewers).</desc>
+    <category lang="en">DJs</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="Monstercat.tv@HD">
-    <title lang="en">[Circle: insomniac] Community Relay (Upcoming)</title>
-    <desc lang="en">Monstercat is offline. Priority relay to community circle member insomniac.</desc>
-    <category lang="en">Gaming</category>
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="Monstercat.tv@HD">
+    <title lang="en">[Relay: GoingQuantum] DJs (Upcoming)</title>
+    <desc lang="en">Monstercat is offline. Auto-relaying Monstercat teammate GoingQuantum (118 viewers).</desc>
+    <category lang="en">DJs</category>
   </programme>
   <channel id="Insomniac.tv@HD"><display-name>Insomniac (24/7 EDM Festival TV)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="Insomniac.tv@HD">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="Insomniac.tv@HD">
     <title lang="en">[Circle: monstercat] Community Relay (Previous)</title>
     <desc lang="en">Insomniac is offline. Priority relay to community circle member monstercat.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="Insomniac.tv@HD">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="Insomniac.tv@HD">
     <title lang="en">[Circle: monstercat] Community Relay</title>
     <desc lang="en">Insomniac is offline. Priority relay to community circle member monstercat.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="Insomniac.tv@HD">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="Insomniac.tv@HD">
     <title lang="en">[Circle: monstercat] Community Relay (Upcoming)</title>
     <desc lang="en">Insomniac is offline. Priority relay to community circle member monstercat.</desc>
     <category lang="en">Gaming</category>
   </programme>
   <channel id="Speedrun.tv"><display-name>Speedrun (24/7 Speedrun.com)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="Speedrun.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="Speedrun.tv">
     <title lang="en">The Legend of Zelda: Skyward Sword HD - World Record Speedruns 24/7 | 100% in 7:37:29 by @Flo26_ (Previous)</title>
-    <desc lang="en">Live on Speedrun streaming The Legend of Zelda: Skyward Sword HD with 29 viewers.</desc>
+    <desc lang="en">Live on Speedrun streaming The Legend of Zelda: Skyward Sword HD with 23 viewers.</desc>
     <category lang="en">The Legend of Zelda: Skyward Sword HD</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="Speedrun.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="Speedrun.tv">
     <title lang="en">The Legend of Zelda: Skyward Sword HD - World Record Speedruns 24/7 | 100% in 7:37:29 by @Flo26_</title>
-    <desc lang="en">Live on Speedrun streaming The Legend of Zelda: Skyward Sword HD with 29 viewers.</desc>
+    <desc lang="en">Live on Speedrun streaming The Legend of Zelda: Skyward Sword HD with 23 viewers.</desc>
     <category lang="en">The Legend of Zelda: Skyward Sword HD</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="Speedrun.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="Speedrun.tv">
     <title lang="en">The Legend of Zelda: Skyward Sword HD - World Record Speedruns 24/7 | 100% in 7:37:29 by @Flo26_ (Upcoming)</title>
-    <desc lang="en">Live on Speedrun streaming The Legend of Zelda: Skyward Sword HD with 29 viewers.</desc>
+    <desc lang="en">Live on Speedrun streaming The Legend of Zelda: Skyward Sword HD with 23 viewers.</desc>
     <category lang="en">The Legend of Zelda: Skyward Sword HD</category>
   </programme>
   <channel id="GamesDoneQuick.tv"><display-name>GamesDoneQuick (GDQ)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="GamesDoneQuick.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="GamesDoneQuick.tv">
     <title lang="en">Games Done Quick - [REPLAY] gamescom GDQ 2026 Day 2 - Tune in for day 3 at 10am CEST !donate !schedule (Previous)</title>
-    <desc lang="en">Live on GamesDoneQuick streaming Games Done Quick with 1314 viewers.</desc>
+    <desc lang="en">Live on GamesDoneQuick streaming Games Done Quick with 1291 viewers.</desc>
     <category lang="en">Games Done Quick</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="GamesDoneQuick.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="GamesDoneQuick.tv">
     <title lang="en">Games Done Quick - [REPLAY] gamescom GDQ 2026 Day 2 - Tune in for day 3 at 10am CEST !donate !schedule</title>
-    <desc lang="en">Live on GamesDoneQuick streaming Games Done Quick with 1314 viewers.</desc>
+    <desc lang="en">Live on GamesDoneQuick streaming Games Done Quick with 1291 viewers.</desc>
     <category lang="en">Games Done Quick</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="GamesDoneQuick.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="GamesDoneQuick.tv">
     <title lang="en">Games Done Quick - [REPLAY] gamescom GDQ 2026 Day 2 - Tune in for day 3 at 10am CEST !donate !schedule (Upcoming)</title>
-    <desc lang="en">Live on GamesDoneQuick streaming Games Done Quick with 1314 viewers.</desc>
+    <desc lang="en">Live on GamesDoneQuick streaming Games Done Quick with 1291 viewers.</desc>
     <category lang="en">Games Done Quick</category>
   </programme>
   <channel id="ESAMarathon.tv"><display-name>ESAMarathon (European Speedrunner Assembly)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="ESAMarathon.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="ESAMarathon.tv">
     <title lang="en">The Legend of Zelda: A Link to the Past - ↪ Rerun - The Legend of Zelda: A Link to the Past [Randomizer (Crowd Control)] by NilssonAlex92 - #ESAWinter26 (Previous)</title>
-    <desc lang="en">Live on ESAMarathon streaming The Legend of Zelda: A Link to the Past with 158 viewers.</desc>
+    <desc lang="en">Live on ESAMarathon streaming The Legend of Zelda: A Link to the Past with 155 viewers.</desc>
     <category lang="en">The Legend of Zelda: A Link to the Past</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="ESAMarathon.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="ESAMarathon.tv">
     <title lang="en">The Legend of Zelda: A Link to the Past - ↪ Rerun - The Legend of Zelda: A Link to the Past [Randomizer (Crowd Control)] by NilssonAlex92 - #ESAWinter26</title>
-    <desc lang="en">Live on ESAMarathon streaming The Legend of Zelda: A Link to the Past with 158 viewers.</desc>
+    <desc lang="en">Live on ESAMarathon streaming The Legend of Zelda: A Link to the Past with 155 viewers.</desc>
     <category lang="en">The Legend of Zelda: A Link to the Past</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="ESAMarathon.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="ESAMarathon.tv">
     <title lang="en">The Legend of Zelda: A Link to the Past - ↪ Rerun - The Legend of Zelda: A Link to the Past [Randomizer (Crowd Control)] by NilssonAlex92 - #ESAWinter26 (Upcoming)</title>
-    <desc lang="en">Live on ESAMarathon streaming The Legend of Zelda: A Link to the Past with 158 viewers.</desc>
+    <desc lang="en">Live on ESAMarathon streaming The Legend of Zelda: A Link to the Past with 155 viewers.</desc>
     <category lang="en">The Legend of Zelda: A Link to the Past</category>
   </programme>
   <channel id="TASVideos.tv"><display-name>TASVideos (Tool-Assisted Speedruns)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="TASVideos.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="TASVideos.tv">
     <title lang="en">[Circle: speedrun] Community Relay (Previous)</title>
     <desc lang="en">TASVideos is offline. Priority relay to community circle member speedrun.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="TASVideos.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="TASVideos.tv">
     <title lang="en">[Circle: speedrun] Community Relay</title>
     <desc lang="en">TASVideos is offline. Priority relay to community circle member speedrun.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="TASVideos.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="TASVideos.tv">
     <title lang="en">[Circle: speedrun] Community Relay (Upcoming)</title>
     <desc lang="en">TASVideos is offline. Priority relay to community circle member speedrun.</desc>
     <category lang="en">Gaming</category>
   </programme>
   <channel id="MitchFlowerPower.tv"><display-name>MitchFlowerPower (SMB3 Speedruns)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="MitchFlowerPower.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="MitchFlowerPower.tv">
     <title lang="en">[Circle: speedrun] Community Relay (Previous)</title>
     <desc lang="en">Mitchflowerpower is offline. Priority relay to community circle member speedrun.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="MitchFlowerPower.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="MitchFlowerPower.tv">
     <title lang="en">[Circle: speedrun] Community Relay</title>
     <desc lang="en">Mitchflowerpower is offline. Priority relay to community circle member speedrun.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="MitchFlowerPower.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="MitchFlowerPower.tv">
     <title lang="en">[Circle: speedrun] Community Relay (Upcoming)</title>
     <desc lang="en">Mitchflowerpower is offline. Priority relay to community circle member speedrun.</desc>
     <category lang="en">Gaming</category>
   </programme>
   <channel id="SmallAnt.tv"><display-name>SmallAnt (Challenges &amp; Speedruns)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="SmallAnt.tv">
-    <title lang="en">[Circle: dgr_dave] Community Relay (Previous)</title>
-    <desc lang="en">SmallAnt is offline. Priority relay to community circle member dgr_dave.</desc>
-    <category lang="en">Gaming</category>
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="SmallAnt.tv">
+    <title lang="en">[Relay: cjya] Super Mario Odyssey (Previous)</title>
+    <desc lang="en">SmallAnt is offline. Auto-relaying Ant Colony teammate cjya (375 viewers).</desc>
+    <category lang="en">Super Mario Odyssey</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="SmallAnt.tv">
-    <title lang="en">[Circle: dgr_dave] Community Relay</title>
-    <desc lang="en">SmallAnt is offline. Priority relay to community circle member dgr_dave.</desc>
-    <category lang="en">Gaming</category>
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="SmallAnt.tv">
+    <title lang="en">[Relay: cjya] Super Mario Odyssey</title>
+    <desc lang="en">SmallAnt is offline. Auto-relaying Ant Colony teammate cjya (375 viewers).</desc>
+    <category lang="en">Super Mario Odyssey</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="SmallAnt.tv">
-    <title lang="en">[Circle: dgr_dave] Community Relay (Upcoming)</title>
-    <desc lang="en">SmallAnt is offline. Priority relay to community circle member dgr_dave.</desc>
-    <category lang="en">Gaming</category>
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="SmallAnt.tv">
+    <title lang="en">[Relay: cjya] Super Mario Odyssey (Upcoming)</title>
+    <desc lang="en">SmallAnt is offline. Auto-relaying Ant Colony teammate cjya (375 viewers).</desc>
+    <category lang="en">Super Mario Odyssey</category>
   </programme>
   <channel id="Carrarium.tv"><display-name>Carrarium (Celeste &amp; GDQ)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="Carrarium.tv">
-    <title lang="en">[Circle: tgh_sr] Community Relay (Previous)</title>
-    <desc lang="en">carrarium is offline. Priority relay to community circle member tgh_sr.</desc>
-    <category lang="en">Gaming</category>
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="Carrarium.tv">
+    <title lang="en">[Relay: Larxa] WE ARE SO DEAD (Previous)</title>
+    <desc lang="en">carrarium is offline. Auto-relaying Women in Speedrunning teammate Larxa (189 viewers).</desc>
+    <category lang="en">WE ARE SO DEAD</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="Carrarium.tv">
-    <title lang="en">[Circle: tgh_sr] Community Relay</title>
-    <desc lang="en">carrarium is offline. Priority relay to community circle member tgh_sr.</desc>
-    <category lang="en">Gaming</category>
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="Carrarium.tv">
+    <title lang="en">[Relay: Larxa] WE ARE SO DEAD</title>
+    <desc lang="en">carrarium is offline. Auto-relaying Women in Speedrunning teammate Larxa (189 viewers).</desc>
+    <category lang="en">WE ARE SO DEAD</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="Carrarium.tv">
-    <title lang="en">[Circle: tgh_sr] Community Relay (Upcoming)</title>
-    <desc lang="en">carrarium is offline. Priority relay to community circle member tgh_sr.</desc>
-    <category lang="en">Gaming</category>
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="Carrarium.tv">
+    <title lang="en">[Relay: Larxa] WE ARE SO DEAD (Upcoming)</title>
+    <desc lang="en">carrarium is offline. Auto-relaying Women in Speedrunning teammate Larxa (189 viewers).</desc>
+    <category lang="en">WE ARE SO DEAD</category>
   </programme>
   <channel id="TGH.tv"><display-name>TGH (Celeste &amp; Retro Speedruns)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="TGH.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="TGH.tv">
     <title lang="en">[Circle: carrarium] Community Relay (Previous)</title>
     <desc lang="en">TGH_sr is offline. Priority relay to community circle member carrarium.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="TGH.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="TGH.tv">
     <title lang="en">[Circle: carrarium] Community Relay</title>
     <desc lang="en">TGH_sr is offline. Priority relay to community circle member carrarium.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="TGH.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="TGH.tv">
     <title lang="en">[Circle: carrarium] Community Relay (Upcoming)</title>
     <desc lang="en">TGH_sr is offline. Priority relay to community circle member carrarium.</desc>
     <category lang="en">Gaming</category>
   </programme>
   <channel id="AmberCyprian.tv"><display-name>AmberCyprian (Speedruns &amp; Retro)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="AmberCyprian.tv">
-    <title lang="en">[Circle: speedrun] Community Relay (Previous)</title>
-    <desc lang="en">AmberCyprian is offline. Priority relay to community circle member speedrun.</desc>
-    <category lang="en">Gaming</category>
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="AmberCyprian.tv">
+    <title lang="en">[Relay: Toad22484] X-COM: UFO Defense (Previous)</title>
+    <desc lang="en">AmberCyprian is offline. Auto-relaying Team RGLtv teammate Toad22484 (42 viewers).</desc>
+    <category lang="en">X-COM: UFO Defense</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="AmberCyprian.tv">
-    <title lang="en">[Circle: speedrun] Community Relay</title>
-    <desc lang="en">AmberCyprian is offline. Priority relay to community circle member speedrun.</desc>
-    <category lang="en">Gaming</category>
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="AmberCyprian.tv">
+    <title lang="en">[Relay: Toad22484] X-COM: UFO Defense</title>
+    <desc lang="en">AmberCyprian is offline. Auto-relaying Team RGLtv teammate Toad22484 (42 viewers).</desc>
+    <category lang="en">X-COM: UFO Defense</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="AmberCyprian.tv">
-    <title lang="en">[Circle: speedrun] Community Relay (Upcoming)</title>
-    <desc lang="en">AmberCyprian is offline. Priority relay to community circle member speedrun.</desc>
-    <category lang="en">Gaming</category>
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="AmberCyprian.tv">
+    <title lang="en">[Relay: Toad22484] X-COM: UFO Defense (Upcoming)</title>
+    <desc lang="en">AmberCyprian is offline. Auto-relaying Team RGLtv teammate Toad22484 (42 viewers).</desc>
+    <category lang="en">X-COM: UFO Defense</category>
   </programme>
   <channel id="Msushi.tv"><display-name>Msushi (Celeste &amp; Portal Speedruns)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="Msushi.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="Msushi.tv">
     <title lang="en">[Circle: carrarium] Community Relay (Previous)</title>
     <desc lang="en">Msushi is offline. Priority relay to community circle member carrarium.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="Msushi.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="Msushi.tv">
     <title lang="en">[Circle: carrarium] Community Relay</title>
     <desc lang="en">Msushi is offline. Priority relay to community circle member carrarium.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="Msushi.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="Msushi.tv">
     <title lang="en">[Circle: carrarium] Community Relay (Upcoming)</title>
     <desc lang="en">Msushi is offline. Priority relay to community circle member carrarium.</desc>
     <category lang="en">Gaming</category>
   </programme>
   <channel id="SMWRomhacks.tv"><display-name>Super Mario World (Romhacks &amp; Kaizo Live)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="SMWRomhacks.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="SMWRomhacks.tv">
     <title lang="en">Super Mario World - !hacklist Ok we&#39;re back to Tortured Souls 3 (Previous)</title>
-    <desc lang="en">Live on Thabeast721 streaming Super Mario World with 272 viewers.</desc>
+    <desc lang="en">Live on Thabeast721 streaming Super Mario World with 277 viewers.</desc>
     <category lang="en">Super Mario World</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="SMWRomhacks.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="SMWRomhacks.tv">
     <title lang="en">Super Mario World - !hacklist Ok we&#39;re back to Tortured Souls 3</title>
-    <desc lang="en">Live on Thabeast721 streaming Super Mario World with 272 viewers.</desc>
+    <desc lang="en">Live on Thabeast721 streaming Super Mario World with 277 viewers.</desc>
     <category lang="en">Super Mario World</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="SMWRomhacks.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="SMWRomhacks.tv">
     <title lang="en">Super Mario World - !hacklist Ok we&#39;re back to Tortured Souls 3 (Upcoming)</title>
-    <desc lang="en">Live on Thabeast721 streaming Super Mario World with 272 viewers.</desc>
+    <desc lang="en">Live on Thabeast721 streaming Super Mario World with 277 viewers.</desc>
     <category lang="en">Super Mario World</category>
   </programme>
   <channel id="MarioMaker2.tv"><display-name>Super Mario Maker 2 (Top Live Streamer)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="MarioMaker2.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="MarioMaker2.tv">
     <title lang="en">Super Mario Maker 2 - 5000 Super Expert Clears?! Let&#39;s Go! (Previous)</title>
-    <desc lang="en">Live on BlueX2_ streaming Super Mario Maker 2 with 122 viewers.</desc>
+    <desc lang="en">Live on BlueX2_ streaming Super Mario Maker 2 with 120 viewers.</desc>
     <category lang="en">Super Mario Maker 2</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="MarioMaker2.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="MarioMaker2.tv">
     <title lang="en">Super Mario Maker 2 - 5000 Super Expert Clears?! Let&#39;s Go!</title>
-    <desc lang="en">Live on BlueX2_ streaming Super Mario Maker 2 with 122 viewers.</desc>
+    <desc lang="en">Live on BlueX2_ streaming Super Mario Maker 2 with 120 viewers.</desc>
     <category lang="en">Super Mario Maker 2</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="MarioMaker2.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="MarioMaker2.tv">
     <title lang="en">Super Mario Maker 2 - 5000 Super Expert Clears?! Let&#39;s Go! (Upcoming)</title>
-    <desc lang="en">Live on BlueX2_ streaming Super Mario Maker 2 with 122 viewers.</desc>
+    <desc lang="en">Live on BlueX2_ streaming Super Mario Maker 2 with 120 viewers.</desc>
     <category lang="en">Super Mario Maker 2</category>
   </programme>
   <channel id="Ryukahr.tv"><display-name>Ryukahr</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="Ryukahr.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="Ryukahr.tv">
     <title lang="en">[Circle: rbpimlico] Community Relay (Previous)</title>
     <desc lang="en">ryukahr is offline. Priority relay to community circle member rbpimlico.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="Ryukahr.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="Ryukahr.tv">
     <title lang="en">[Circle: rbpimlico] Community Relay</title>
     <desc lang="en">ryukahr is offline. Priority relay to community circle member rbpimlico.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="Ryukahr.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="Ryukahr.tv">
     <title lang="en">[Circle: rbpimlico] Community Relay (Upcoming)</title>
     <desc lang="en">ryukahr is offline. Priority relay to community circle member rbpimlico.</desc>
     <category lang="en">Gaming</category>
   </programme>
   <channel id="GrandPooBear.tv"><display-name>GrandPooBear</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="GrandPooBear.tv">
-    <title lang="en">[Circle: thabeast721] Community Relay (Previous)</title>
-    <desc lang="en">GrandPooBear is offline. Priority relay to community circle member thabeast721.</desc>
-    <category lang="en">Gaming</category>
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="GrandPooBear.tv">
+    <title lang="en">[Relay: negaoryx] Waterpark Simulator (Previous)</title>
+    <desc lang="en">GrandPooBear is offline. Auto-relaying Twitch Ambassadors teammate negaoryx (148 viewers).</desc>
+    <category lang="en">Waterpark Simulator</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="GrandPooBear.tv">
-    <title lang="en">[Circle: thabeast721] Community Relay</title>
-    <desc lang="en">GrandPooBear is offline. Priority relay to community circle member thabeast721.</desc>
-    <category lang="en">Gaming</category>
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="GrandPooBear.tv">
+    <title lang="en">[Relay: negaoryx] Waterpark Simulator</title>
+    <desc lang="en">GrandPooBear is offline. Auto-relaying Twitch Ambassadors teammate negaoryx (148 viewers).</desc>
+    <category lang="en">Waterpark Simulator</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="GrandPooBear.tv">
-    <title lang="en">[Circle: thabeast721] Community Relay (Upcoming)</title>
-    <desc lang="en">GrandPooBear is offline. Priority relay to community circle member thabeast721.</desc>
-    <category lang="en">Gaming</category>
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="GrandPooBear.tv">
+    <title lang="en">[Relay: negaoryx] Waterpark Simulator (Upcoming)</title>
+    <desc lang="en">GrandPooBear is offline. Auto-relaying Twitch Ambassadors teammate negaoryx (148 viewers).</desc>
+    <category lang="en">Waterpark Simulator</category>
   </programme>
   <channel id="ThaBeast721.tv"><display-name>ThaBeast721 (Kaizo &amp; Mario 64)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="ThaBeast721.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="ThaBeast721.tv">
     <title lang="en">Super Mario World - !hacklist Ok we&#39;re back to Tortured Souls 3 (Previous)</title>
-    <desc lang="en">Live on Thabeast721 streaming Super Mario World with 272 viewers.</desc>
+    <desc lang="en">Live on Thabeast721 streaming Super Mario World with 277 viewers.</desc>
     <category lang="en">Super Mario World</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="ThaBeast721.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="ThaBeast721.tv">
     <title lang="en">Super Mario World - !hacklist Ok we&#39;re back to Tortured Souls 3</title>
-    <desc lang="en">Live on Thabeast721 streaming Super Mario World with 272 viewers.</desc>
+    <desc lang="en">Live on Thabeast721 streaming Super Mario World with 277 viewers.</desc>
     <category lang="en">Super Mario World</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="ThaBeast721.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="ThaBeast721.tv">
     <title lang="en">Super Mario World - !hacklist Ok we&#39;re back to Tortured Souls 3 (Upcoming)</title>
-    <desc lang="en">Live on Thabeast721 streaming Super Mario World with 272 viewers.</desc>
+    <desc lang="en">Live on Thabeast721 streaming Super Mario World with 277 viewers.</desc>
     <category lang="en">Super Mario World</category>
   </programme>
   <channel id="CarlSagan42.tv"><display-name>CarlSagan42 (Kaizo &amp; Troll Maker)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="CarlSagan42.tv">
-    <title lang="en">[Circle: rbpimlico] Community Relay (Previous)</title>
-    <desc lang="en">CarlSagan42 is offline. Priority relay to community circle member rbpimlico.</desc>
-    <category lang="en">Gaming</category>
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="CarlSagan42.tv">
+    <title lang="en">[Relay: Mikwuyma] Michael Jackson&#39;s Moonwalker (Previous)</title>
+    <desc lang="en">CarlSagan42 is offline. Auto-relaying Speed Demos Archive teammate Mikwuyma (13 viewers).</desc>
+    <category lang="en">Michael Jackson&#39;s Moonwalker</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="CarlSagan42.tv">
-    <title lang="en">[Circle: rbpimlico] Community Relay</title>
-    <desc lang="en">CarlSagan42 is offline. Priority relay to community circle member rbpimlico.</desc>
-    <category lang="en">Gaming</category>
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="CarlSagan42.tv">
+    <title lang="en">[Relay: Mikwuyma] Michael Jackson&#39;s Moonwalker</title>
+    <desc lang="en">CarlSagan42 is offline. Auto-relaying Speed Demos Archive teammate Mikwuyma (13 viewers).</desc>
+    <category lang="en">Michael Jackson&#39;s Moonwalker</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="CarlSagan42.tv">
-    <title lang="en">[Circle: rbpimlico] Community Relay (Upcoming)</title>
-    <desc lang="en">CarlSagan42 is offline. Priority relay to community circle member rbpimlico.</desc>
-    <category lang="en">Gaming</category>
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="CarlSagan42.tv">
+    <title lang="en">[Relay: Mikwuyma] Michael Jackson&#39;s Moonwalker (Upcoming)</title>
+    <desc lang="en">CarlSagan42 is offline. Auto-relaying Speed Demos Archive teammate Mikwuyma (13 viewers).</desc>
+    <category lang="en">Michael Jackson&#39;s Moonwalker</category>
   </programme>
   <channel id="Juzcook.tv"><display-name>Juzcook (Kaizo &amp; Mario Maker)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="Juzcook.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="Juzcook.tv">
     <title lang="en">[Circle: carlsagan42] Community Relay (Previous)</title>
     <desc lang="en">juzcook is offline. Priority relay to community circle member carlsagan42.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="Juzcook.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="Juzcook.tv">
     <title lang="en">[Circle: carlsagan42] Community Relay</title>
     <desc lang="en">juzcook is offline. Priority relay to community circle member carlsagan42.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="Juzcook.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="Juzcook.tv">
     <title lang="en">[Circle: carlsagan42] Community Relay (Upcoming)</title>
     <desc lang="en">juzcook is offline. Priority relay to community circle member carlsagan42.</desc>
     <category lang="en">Gaming</category>
   </programme>
   <channel id="Aurateur.tv"><display-name>Aurateur (Endless Mario Maker)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="Aurateur.tv">
-    <title lang="en">[Circle: ryukahr] Community Relay (Previous)</title>
-    <desc lang="en">Aurateur is offline. Priority relay to community circle member ryukahr.</desc>
-    <category lang="en">Gaming</category>
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="Aurateur.tv">
+    <title lang="en">[Relay: luality] Star Wars Zero Company (Previous)</title>
+    <desc lang="en">Aurateur is offline. Auto-relaying GG Talent Group teammate luality (2295 viewers).</desc>
+    <category lang="en">Star Wars Zero Company</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="Aurateur.tv">
-    <title lang="en">[Circle: ryukahr] Community Relay</title>
-    <desc lang="en">Aurateur is offline. Priority relay to community circle member ryukahr.</desc>
-    <category lang="en">Gaming</category>
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="Aurateur.tv">
+    <title lang="en">[Relay: luality] Star Wars Zero Company</title>
+    <desc lang="en">Aurateur is offline. Auto-relaying GG Talent Group teammate luality (2295 viewers).</desc>
+    <category lang="en">Star Wars Zero Company</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="Aurateur.tv">
-    <title lang="en">[Circle: ryukahr] Community Relay (Upcoming)</title>
-    <desc lang="en">Aurateur is offline. Priority relay to community circle member ryukahr.</desc>
-    <category lang="en">Gaming</category>
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="Aurateur.tv">
+    <title lang="en">[Relay: luality] Star Wars Zero Company (Upcoming)</title>
+    <desc lang="en">Aurateur is offline. Auto-relaying GG Talent Group teammate luality (2295 viewers).</desc>
+    <category lang="en">Star Wars Zero Company</category>
   </programme>
   <channel id="PangaeaPanga.tv"><display-name>PangaeaPanga (Kaizo SMW)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="PangaeaPanga.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="PangaeaPanga.tv">
     <title lang="en">[Circle: thabeast721] Community Relay (Previous)</title>
     <desc lang="en">PangaeaPanga is offline. Priority relay to community circle member thabeast721.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="PangaeaPanga.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="PangaeaPanga.tv">
     <title lang="en">[Circle: thabeast721] Community Relay</title>
     <desc lang="en">PangaeaPanga is offline. Priority relay to community circle member thabeast721.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="PangaeaPanga.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="PangaeaPanga.tv">
     <title lang="en">[Circle: thabeast721] Community Relay (Upcoming)</title>
     <desc lang="en">PangaeaPanga is offline. Priority relay to community circle member thabeast721.</desc>
     <category lang="en">Gaming</category>
   </programme>
   <channel id="SimpleFlips.tv"><display-name>SimpleFlips (SM64 Romhacks)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="SimpleFlips.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="SimpleFlips.tv">
     <title lang="en">[Circle: thabeast721] Community Relay (Previous)</title>
     <desc lang="en">SimpleFlips is offline. Priority relay to community circle member thabeast721.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="SimpleFlips.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="SimpleFlips.tv">
     <title lang="en">[Circle: thabeast721] Community Relay</title>
     <desc lang="en">SimpleFlips is offline. Priority relay to community circle member thabeast721.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="SimpleFlips.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="SimpleFlips.tv">
     <title lang="en">[Circle: thabeast721] Community Relay (Upcoming)</title>
     <desc lang="en">SimpleFlips is offline. Priority relay to community circle member thabeast721.</desc>
     <category lang="en">Gaming</category>
   </programme>
   <channel id="Failstream.tv"><display-name>Failstream (Mario Maker Builds)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="Failstream.tv">
-    <title lang="en">[Circle: dgr_dave] Community Relay (Previous)</title>
-    <desc lang="en">Failstream is offline. Priority relay to community circle member dgr_dave.</desc>
-    <category lang="en">Gaming</category>
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="Failstream.tv">
+    <title lang="en">[Relay: DegenTP] Star Wars Zero Company (Previous)</title>
+    <desc lang="en">Failstream is offline. Auto-relaying Weaponized Stupidity teammate DegenTP (15 viewers).</desc>
+    <category lang="en">Star Wars Zero Company</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="Failstream.tv">
-    <title lang="en">[Circle: dgr_dave] Community Relay</title>
-    <desc lang="en">Failstream is offline. Priority relay to community circle member dgr_dave.</desc>
-    <category lang="en">Gaming</category>
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="Failstream.tv">
+    <title lang="en">[Relay: DegenTP] Star Wars Zero Company</title>
+    <desc lang="en">Failstream is offline. Auto-relaying Weaponized Stupidity teammate DegenTP (15 viewers).</desc>
+    <category lang="en">Star Wars Zero Company</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="Failstream.tv">
-    <title lang="en">[Circle: dgr_dave] Community Relay (Upcoming)</title>
-    <desc lang="en">Failstream is offline. Priority relay to community circle member dgr_dave.</desc>
-    <category lang="en">Gaming</category>
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="Failstream.tv">
+    <title lang="en">[Relay: DegenTP] Star Wars Zero Company (Upcoming)</title>
+    <desc lang="en">Failstream is offline. Auto-relaying Weaponized Stupidity teammate DegenTP (15 viewers).</desc>
+    <category lang="en">Star Wars Zero Company</category>
   </programme>
   <channel id="GlitchCat7.tv"><display-name>GlitchCat7 (SMW Kaizo &amp; Speedruns)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="GlitchCat7.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="GlitchCat7.tv">
     <title lang="en">[Circle: thabeast721] Community Relay (Previous)</title>
     <desc lang="en">GlitchCat7 is offline. Priority relay to community circle member thabeast721.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="GlitchCat7.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="GlitchCat7.tv">
     <title lang="en">[Circle: thabeast721] Community Relay</title>
     <desc lang="en">GlitchCat7 is offline. Priority relay to community circle member thabeast721.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="GlitchCat7.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="GlitchCat7.tv">
     <title lang="en">[Circle: thabeast721] Community Relay (Upcoming)</title>
     <desc lang="en">GlitchCat7 is offline. Priority relay to community circle member thabeast721.</desc>
     <category lang="en">Gaming</category>
   </programme>
   <channel id="DGR.tv"><display-name>DGR (Mario Maker &amp; Super Mario)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="DGR.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="DGR.tv">
     <title lang="en">[Circle: ryukahr] Community Relay (Previous)</title>
     <desc lang="en">DGR_Dave is offline. Priority relay to community circle member ryukahr.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="DGR.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="DGR.tv">
     <title lang="en">[Circle: ryukahr] Community Relay</title>
     <desc lang="en">DGR_Dave is offline. Priority relay to community circle member ryukahr.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="DGR.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="DGR.tv">
     <title lang="en">[Circle: ryukahr] Community Relay (Upcoming)</title>
     <desc lang="en">DGR_Dave is offline. Priority relay to community circle member ryukahr.</desc>
     <category lang="en">Gaming</category>
   </programme>
   <channel id="RBPimlico.tv"><display-name>RBPimlico (Mario Maker &amp; Kaizo)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="RBPimlico.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="RBPimlico.tv">
     <title lang="en">[Circle: dgr_dave] Community Relay (Previous)</title>
     <desc lang="en">RBPimlico is offline. Priority relay to community circle member dgr_dave.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="RBPimlico.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="RBPimlico.tv">
     <title lang="en">[Circle: dgr_dave] Community Relay</title>
     <desc lang="en">RBPimlico is offline. Priority relay to community circle member dgr_dave.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="RBPimlico.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="RBPimlico.tv">
     <title lang="en">[Circle: dgr_dave] Community Relay (Upcoming)</title>
     <desc lang="en">RBPimlico is offline. Priority relay to community circle member dgr_dave.</desc>
     <category lang="en">Gaming</category>
   </programme>
   <channel id="ClassicTetris.tv"><display-name>Classic Tetris (CTWC Main)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="ClassicTetris.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="ClassicTetris.tv">
     <title lang="en">[Circle: classictetris2] Community Relay (Previous)</title>
     <desc lang="en">ClassicTetris is offline. Priority relay to community circle member classictetris2.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="ClassicTetris.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="ClassicTetris.tv">
     <title lang="en">[Circle: classictetris2] Community Relay</title>
     <desc lang="en">ClassicTetris is offline. Priority relay to community circle member classictetris2.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="ClassicTetris.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="ClassicTetris.tv">
     <title lang="en">[Circle: classictetris2] Community Relay (Upcoming)</title>
     <desc lang="en">ClassicTetris is offline. Priority relay to community circle member classictetris2.</desc>
     <category lang="en">Gaming</category>
   </programme>
   <channel id="ClassicTetris2.tv"><display-name>Classic Tetris 2 (CTWC)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="ClassicTetris2.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="ClassicTetris2.tv">
     <title lang="en">[Circle: classictetris] Community Relay (Previous)</title>
     <desc lang="en">ClassicTetris2 is offline. Priority relay to community circle member classictetris.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="ClassicTetris2.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="ClassicTetris2.tv">
     <title lang="en">[Circle: classictetris] Community Relay</title>
     <desc lang="en">ClassicTetris2 is offline. Priority relay to community circle member classictetris.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="ClassicTetris2.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="ClassicTetris2.tv">
     <title lang="en">[Circle: classictetris] Community Relay (Upcoming)</title>
     <desc lang="en">ClassicTetris2 is offline. Priority relay to community circle member classictetris.</desc>
     <category lang="en">Gaming</category>
   </programme>
   <channel id="ClassicTetris3.tv"><display-name>Classic Tetris 3 (CTWC)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="ClassicTetris3.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="ClassicTetris3.tv">
     <title lang="en">[Circle: classictetris] Community Relay (Previous)</title>
     <desc lang="en">classictetris3 is offline. Priority relay to community circle member classictetris.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="ClassicTetris3.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="ClassicTetris3.tv">
     <title lang="en">[Circle: classictetris] Community Relay</title>
     <desc lang="en">classictetris3 is offline. Priority relay to community circle member classictetris.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="ClassicTetris3.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="ClassicTetris3.tv">
     <title lang="en">[Circle: classictetris] Community Relay (Upcoming)</title>
     <desc lang="en">classictetris3 is offline. Priority relay to community circle member classictetris.</desc>
     <category lang="en">Gaming</category>
   </programme>
   <channel id="ClassicTetris4.tv"><display-name>Classic Tetris 4 (CTWC)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="ClassicTetris4.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="ClassicTetris4.tv">
     <title lang="en">[Circle: classictetris] Community Relay (Previous)</title>
     <desc lang="en">ClassicTetris4 is offline. Priority relay to community circle member classictetris.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="ClassicTetris4.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="ClassicTetris4.tv">
     <title lang="en">[Circle: classictetris] Community Relay</title>
     <desc lang="en">ClassicTetris4 is offline. Priority relay to community circle member classictetris.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="ClassicTetris4.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="ClassicTetris4.tv">
     <title lang="en">[Circle: classictetris] Community Relay (Upcoming)</title>
     <desc lang="en">ClassicTetris4 is offline. Priority relay to community circle member classictetris.</desc>
     <category lang="en">Gaming</category>
   </programme>
   <channel id="NESTetris.tv"><display-name>NES Tetris (Top Live Streamer)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="NESTetris.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="NESTetris.tv">
     <title lang="en">Tetris - CTBW QUALL  (EN/LV) (Previous)</title>
     <desc lang="en">Live on kasanepearto_ streaming Tetris with 3 viewers.</desc>
     <category lang="en">Tetris</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="NESTetris.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="NESTetris.tv">
     <title lang="en">Tetris - CTBW QUALL  (EN/LV)</title>
     <desc lang="en">Live on kasanepearto_ streaming Tetris with 3 viewers.</desc>
     <category lang="en">Tetris</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="NESTetris.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="NESTetris.tv">
     <title lang="en">Tetris - CTBW QUALL  (EN/LV) (Upcoming)</title>
     <desc lang="en">Live on kasanepearto_ streaming Tetris with 3 viewers.</desc>
     <category lang="en">Tetris</category>
   </programme>
   <channel id="ModernTetris.tv"><display-name>Modern Tetris (Top Live Streamer)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="ModernTetris.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="ModernTetris.tv">
     <title lang="en">[Circle: harddrop] Community Relay (Previous)</title>
     <desc lang="en">Modern Tetris (Top Live Streamer) is offline. Priority relay to community circle member harddrop.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="ModernTetris.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="ModernTetris.tv">
     <title lang="en">[Circle: harddrop] Community Relay</title>
     <desc lang="en">Modern Tetris (Top Live Streamer) is offline. Priority relay to community circle member harddrop.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="ModernTetris.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="ModernTetris.tv">
     <title lang="en">[Circle: harddrop] Community Relay (Upcoming)</title>
     <desc lang="en">Modern Tetris (Top Live Streamer) is offline. Priority relay to community circle member harddrop.</desc>
     <category lang="en">Gaming</category>
   </programme>
   <channel id="Wumbotize.tv"><display-name>Wumbotize (Modern Tetris Master)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="Wumbotize.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="Wumbotize.tv">
     <title lang="en">Tetris Effect: Connected - FULL MOON Event !pc !newkeyboard !bounties !plushy !rogue (Previous)</title>
-    <desc lang="en">Live on Wumbotize streaming Tetris Effect: Connected with 19 viewers.</desc>
+    <desc lang="en">Live on Wumbotize streaming Tetris Effect: Connected with 22 viewers.</desc>
     <category lang="en">Tetris Effect: Connected</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="Wumbotize.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="Wumbotize.tv">
     <title lang="en">Tetris Effect: Connected - FULL MOON Event !pc !newkeyboard !bounties !plushy !rogue</title>
-    <desc lang="en">Live on Wumbotize streaming Tetris Effect: Connected with 19 viewers.</desc>
+    <desc lang="en">Live on Wumbotize streaming Tetris Effect: Connected with 22 viewers.</desc>
     <category lang="en">Tetris Effect: Connected</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="Wumbotize.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="Wumbotize.tv">
     <title lang="en">Tetris Effect: Connected - FULL MOON Event !pc !newkeyboard !bounties !plushy !rogue (Upcoming)</title>
-    <desc lang="en">Live on Wumbotize streaming Tetris Effect: Connected with 19 viewers.</desc>
+    <desc lang="en">Live on Wumbotize streaming Tetris Effect: Connected with 22 viewers.</desc>
     <category lang="en">Tetris Effect: Connected</category>
   </programme>
   <channel id="Doremy.tv"><display-name>Doremy (Modern Tetris &amp; TETR.IO)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="Doremy.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="Doremy.tv">
     <title lang="en">[Circle: harddrop] Community Relay (Previous)</title>
     <desc lang="en">Doremy is offline. Priority relay to community circle member harddrop.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="Doremy.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="Doremy.tv">
     <title lang="en">[Circle: harddrop] Community Relay</title>
     <desc lang="en">Doremy is offline. Priority relay to community circle member harddrop.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="Doremy.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="Doremy.tv">
     <title lang="en">[Circle: harddrop] Community Relay (Upcoming)</title>
     <desc lang="en">Doremy is offline. Priority relay to community circle member harddrop.</desc>
     <category lang="en">Gaming</category>
   </programme>
   <channel id="HardDrop.tv"><display-name>Hard Drop (Tetris Community &amp; Tourneys)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="HardDrop.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="HardDrop.tv">
     <title lang="en">[Circle: classictetris] Community Relay (Previous)</title>
     <desc lang="en">HardDrop is offline. Priority relay to community circle member classictetris.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="HardDrop.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="HardDrop.tv">
     <title lang="en">[Circle: classictetris] Community Relay</title>
     <desc lang="en">HardDrop is offline. Priority relay to community circle member classictetris.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="HardDrop.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="HardDrop.tv">
     <title lang="en">[Circle: classictetris] Community Relay (Upcoming)</title>
     <desc lang="en">HardDrop is offline. Priority relay to community circle member classictetris.</desc>
     <category lang="en">Gaming</category>
   </programme>
   <channel id="DogPlayingTetris.tv"><display-name>DogPlayingTetris (3x CTWC World Champion)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="DogPlayingTetris.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="DogPlayingTetris.tv">
     <title lang="en">[Circle: classictetris] Community Relay (Previous)</title>
     <desc lang="en">dogplayingtetris is offline. Priority relay to community circle member classictetris.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="DogPlayingTetris.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="DogPlayingTetris.tv">
     <title lang="en">[Circle: classictetris] Community Relay</title>
     <desc lang="en">dogplayingtetris is offline. Priority relay to community circle member classictetris.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="DogPlayingTetris.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="DogPlayingTetris.tv">
     <title lang="en">[Circle: classictetris] Community Relay (Upcoming)</title>
     <desc lang="en">dogplayingtetris is offline. Priority relay to community circle member classictetris.</desc>
     <category lang="en">Gaming</category>
   </programme>
   <channel id="EricICX.tv"><display-name>EricICX (CTWC World Champion)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="EricICX.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="EricICX.tv">
     <title lang="en">[Circle: classictetris] Community Relay (Previous)</title>
     <desc lang="en">EricICX is offline. Priority relay to community circle member classictetris.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="EricICX.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="EricICX.tv">
     <title lang="en">[Circle: classictetris] Community Relay</title>
     <desc lang="en">EricICX is offline. Priority relay to community circle member classictetris.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="EricICX.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="EricICX.tv">
     <title lang="en">[Circle: classictetris] Community Relay (Upcoming)</title>
     <desc lang="en">EricICX is offline. Priority relay to community circle member classictetris.</desc>
     <category lang="en">Gaming</category>
   </programme>
   <channel id="FractalTetris.tv"><display-name>Fractal (CTWC World Champion)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="FractalTetris.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="FractalTetris.tv">
     <title lang="en">[Circle: classictetris] Community Relay (Previous)</title>
     <desc lang="en">fractal is offline. Priority relay to community circle member classictetris.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="FractalTetris.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="FractalTetris.tv">
     <title lang="en">[Circle: classictetris] Community Relay</title>
     <desc lang="en">fractal is offline. Priority relay to community circle member classictetris.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="FractalTetris.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="FractalTetris.tv">
     <title lang="en">[Circle: classictetris] Community Relay (Upcoming)</title>
     <desc lang="en">fractal is offline. Priority relay to community circle member classictetris.</desc>
     <category lang="en">Gaming</category>
   </programme>
   <channel id="AlexT.tv"><display-name>Alex_T (CTWC Champion)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="AlexT.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="AlexT.tv">
     <title lang="en">[Circle: classictetris] Community Relay (Previous)</title>
     <desc lang="en">Alex_T is offline. Priority relay to community circle member classictetris.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="AlexT.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="AlexT.tv">
     <title lang="en">[Circle: classictetris] Community Relay</title>
     <desc lang="en">Alex_T is offline. Priority relay to community circle member classictetris.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="AlexT.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="AlexT.tv">
     <title lang="en">[Circle: classictetris] Community Relay (Upcoming)</title>
     <desc lang="en">Alex_T is offline. Priority relay to community circle member classictetris.</desc>
     <category lang="en">Gaming</category>
   </programme>
   <channel id="BlueScuti.tv"><display-name>BlueScuti (NES Tetris Crash Record)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="BlueScuti.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="BlueScuti.tv">
     <title lang="en">[Circle: classictetris] Community Relay (Previous)</title>
     <desc lang="en">Bluescuti is offline. Priority relay to community circle member classictetris.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="BlueScuti.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="BlueScuti.tv">
     <title lang="en">[Circle: classictetris] Community Relay</title>
     <desc lang="en">Bluescuti is offline. Priority relay to community circle member classictetris.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="BlueScuti.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="BlueScuti.tv">
     <title lang="en">[Circle: classictetris] Community Relay (Upcoming)</title>
     <desc lang="en">Bluescuti is offline. Priority relay to community circle member classictetris.</desc>
     <category lang="en">Gaming</category>
   </programme>
   <channel id="AnnaD.tv"><display-name>Anna D. (Tetris)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="AnnaD.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="AnnaD.tv">
     <title lang="en">[Circle: classictetris] Community Relay (Previous)</title>
     <desc lang="en">VinesandWillows is offline. Priority relay to community circle member classictetris.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="AnnaD.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="AnnaD.tv">
     <title lang="en">[Circle: classictetris] Community Relay</title>
     <desc lang="en">VinesandWillows is offline. Priority relay to community circle member classictetris.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="AnnaD.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="AnnaD.tv">
     <title lang="en">[Circle: classictetris] Community Relay (Upcoming)</title>
     <desc lang="en">VinesandWillows is offline. Priority relay to community circle member classictetris.</desc>
     <category lang="en">Gaming</category>
   </programme>
   <channel id="BluePrince.tv"><display-name>Blue Prince (Top Live Streamer)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="BluePrince.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="BluePrince.tv">
     <title lang="en">Blue Prince - Day 3 for me, the more I uncover the more I can&#39;t solve. NO SPOILERS (Previous)</title>
-    <desc lang="en">Live on delicia27 streaming Blue Prince with 31 viewers.</desc>
+    <desc lang="en">Live on delicia27 streaming Blue Prince with 34 viewers.</desc>
     <category lang="en">Blue Prince</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="BluePrince.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="BluePrince.tv">
     <title lang="en">Blue Prince - Day 3 for me, the more I uncover the more I can&#39;t solve. NO SPOILERS</title>
-    <desc lang="en">Live on delicia27 streaming Blue Prince with 31 viewers.</desc>
+    <desc lang="en">Live on delicia27 streaming Blue Prince with 34 viewers.</desc>
     <category lang="en">Blue Prince</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="BluePrince.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="BluePrince.tv">
     <title lang="en">Blue Prince - Day 3 for me, the more I uncover the more I can&#39;t solve. NO SPOILERS (Upcoming)</title>
-    <desc lang="en">Live on delicia27 streaming Blue Prince with 31 viewers.</desc>
+    <desc lang="en">Live on delicia27 streaming Blue Prince with 34 viewers.</desc>
     <category lang="en">Blue Prince</category>
   </programme>
   <channel id="Celeste.tv"><display-name>Celeste (Top Live Streamer)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="Celeste.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="Celeste.tv">
     <title lang="en">Celeste - Spark in the Machine (Full Clear) (PB: 133/140, 2 death) | !video !clears (Previous)</title>
-    <desc lang="en">Live on Parrot_Dash streaming Celeste with 152 viewers.</desc>
+    <desc lang="en">Live on Parrot_Dash streaming Celeste with 145 viewers.</desc>
     <category lang="en">Celeste</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="Celeste.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="Celeste.tv">
     <title lang="en">Celeste - Spark in the Machine (Full Clear) (PB: 133/140, 2 death) | !video !clears</title>
-    <desc lang="en">Live on Parrot_Dash streaming Celeste with 152 viewers.</desc>
+    <desc lang="en">Live on Parrot_Dash streaming Celeste with 145 viewers.</desc>
     <category lang="en">Celeste</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="Celeste.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="Celeste.tv">
     <title lang="en">Celeste - Spark in the Machine (Full Clear) (PB: 133/140, 2 death) | !video !clears (Upcoming)</title>
-    <desc lang="en">Live on Parrot_Dash streaming Celeste with 152 viewers.</desc>
+    <desc lang="en">Live on Parrot_Dash streaming Celeste with 145 viewers.</desc>
     <category lang="en">Celeste</category>
   </programme>
   <channel id="Portal.tv"><display-name>Portal (Top Live Streamer)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="Portal.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="Portal.tv">
     <title lang="en">Portal - ⤷ 🔵 I HAVE NEVER PLAYED PORTAL BEFORE 🟠 [18+] | ▶ !pp 🔋  !clip 🔋 !quote (Previous)</title>
-    <desc lang="en">Live on TrashCtrl_ streaming Portal with 23 viewers.</desc>
+    <desc lang="en">Live on TrashCtrl_ streaming Portal with 25 viewers.</desc>
     <category lang="en">Portal</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="Portal.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="Portal.tv">
     <title lang="en">Portal - ⤷ 🔵 I HAVE NEVER PLAYED PORTAL BEFORE 🟠 [18+] | ▶ !pp 🔋  !clip 🔋 !quote</title>
-    <desc lang="en">Live on TrashCtrl_ streaming Portal with 23 viewers.</desc>
+    <desc lang="en">Live on TrashCtrl_ streaming Portal with 25 viewers.</desc>
     <category lang="en">Portal</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="Portal.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="Portal.tv">
     <title lang="en">Portal - ⤷ 🔵 I HAVE NEVER PLAYED PORTAL BEFORE 🟠 [18+] | ▶ !pp 🔋  !clip 🔋 !quote (Upcoming)</title>
-    <desc lang="en">Live on TrashCtrl_ streaming Portal with 23 viewers.</desc>
+    <desc lang="en">Live on TrashCtrl_ streaming Portal with 25 viewers.</desc>
     <category lang="en">Portal</category>
   </programme>
   <channel id="Portal2.tv"><display-name>Portal 2 (Top Live Streamer)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="Portal2.tv">
-    <title lang="en">Portal 2 - Je prends des portails avec @mikadessin 🟠🔵  | !discord !youtube (Previous)</title>
-    <desc lang="en">Live on Batchio streaming Portal 2 with 20 viewers.</desc>
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="Portal2.tv">
+    <title lang="en">Portal 2 - ✨ Portal 2 PT.2 with my Pookie @fazedxiv | Chill gaming - Lurkers Welcomed - Join the Discord :D ✨ (Previous)</title>
+    <desc lang="en">Live on bunnybytevt streaming Portal 2 with 16 viewers.</desc>
     <category lang="en">Portal 2</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="Portal2.tv">
-    <title lang="en">Portal 2 - Je prends des portails avec @mikadessin 🟠🔵  | !discord !youtube</title>
-    <desc lang="en">Live on Batchio streaming Portal 2 with 20 viewers.</desc>
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="Portal2.tv">
+    <title lang="en">Portal 2 - ✨ Portal 2 PT.2 with my Pookie @fazedxiv | Chill gaming - Lurkers Welcomed - Join the Discord :D ✨</title>
+    <desc lang="en">Live on bunnybytevt streaming Portal 2 with 16 viewers.</desc>
     <category lang="en">Portal 2</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="Portal2.tv">
-    <title lang="en">Portal 2 - Je prends des portails avec @mikadessin 🟠🔵  | !discord !youtube (Upcoming)</title>
-    <desc lang="en">Live on Batchio streaming Portal 2 with 20 viewers.</desc>
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="Portal2.tv">
+    <title lang="en">Portal 2 - ✨ Portal 2 PT.2 with my Pookie @fazedxiv | Chill gaming - Lurkers Welcomed - Join the Discord :D ✨ (Upcoming)</title>
+    <desc lang="en">Live on bunnybytevt streaming Portal 2 with 16 viewers.</desc>
     <category lang="en">Portal 2</category>
   </programme>
   <channel id="TammyBlackMedia.tv"><display-name>Tammy (Tammy_BlackMedia)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="TammyBlackMedia.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="TammyBlackMedia.tv">
     <title lang="en">[Circle: ryukahr] Community Relay (Previous)</title>
     <desc lang="en">Tammy_BlackMedia is offline. Priority relay to community circle member ryukahr.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="TammyBlackMedia.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="TammyBlackMedia.tv">
     <title lang="en">[Circle: ryukahr] Community Relay</title>
     <desc lang="en">Tammy_BlackMedia is offline. Priority relay to community circle member ryukahr.</desc>
     <category lang="en">Gaming</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="TammyBlackMedia.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="TammyBlackMedia.tv">
     <title lang="en">[Circle: ryukahr] Community Relay (Upcoming)</title>
     <desc lang="en">Tammy_BlackMedia is offline. Priority relay to community circle member ryukahr.</desc>
     <category lang="en">Gaming</category>
   </programme>
+  <channel id="ElanaOrama.tv"><display-name>ElanaOrama (Colony Sim &amp; Variety)</display-name></channel>
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="ElanaOrama.tv">
+    <title lang="en">RimWorld - NEW RUN - Two Points Rimseum #OptedOutOfGenAI !micro drop festival! (Previous)</title>
+    <desc lang="en">Live on ElanaOrama streaming RimWorld with 79 viewers.</desc>
+    <category lang="en">RimWorld</category>
+  </programme>
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="ElanaOrama.tv">
+    <title lang="en">RimWorld - NEW RUN - Two Points Rimseum #OptedOutOfGenAI !micro drop festival!</title>
+    <desc lang="en">Live on ElanaOrama streaming RimWorld with 79 viewers.</desc>
+    <category lang="en">RimWorld</category>
+  </programme>
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="ElanaOrama.tv">
+    <title lang="en">RimWorld - NEW RUN - Two Points Rimseum #OptedOutOfGenAI !micro drop festival! (Upcoming)</title>
+    <desc lang="en">Live on ElanaOrama streaming RimWorld with 79 viewers.</desc>
+    <category lang="en">RimWorld</category>
+  </programme>
   <channel id="Chess.tv"><display-name>Chess (Top Live Grandmaster)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="Chess.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="Chess.tv">
     <title lang="en">Chess - HEUTE 1100? | ABSOLUTER ELO BRUCH | CHESS.COM (Previous)</title>
-    <desc lang="en">Live on Arcai0s streaming Chess with 153 viewers.</desc>
+    <desc lang="en">Live on Arcai0s streaming Chess with 133 viewers.</desc>
     <category lang="en">Chess</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="Chess.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="Chess.tv">
     <title lang="en">Chess - HEUTE 1100? | ABSOLUTER ELO BRUCH | CHESS.COM</title>
-    <desc lang="en">Live on Arcai0s streaming Chess with 153 viewers.</desc>
+    <desc lang="en">Live on Arcai0s streaming Chess with 133 viewers.</desc>
     <category lang="en">Chess</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="Chess.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="Chess.tv">
     <title lang="en">Chess - HEUTE 1100? | ABSOLUTER ELO BRUCH | CHESS.COM (Upcoming)</title>
-    <desc lang="en">Live on Arcai0s streaming Chess with 153 viewers.</desc>
+    <desc lang="en">Live on Arcai0s streaming Chess with 133 viewers.</desc>
     <category lang="en">Chess</category>
   </programme>
   <channel id="GeoGuessr.tv"><display-name>GeoGuessr (World Exploration)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="GeoGuessr.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="GeoGuessr.tv">
     <title lang="en">GeoGuessr - Капитальный игрок (Previous)</title>
-    <desc lang="en">Live on TOHHA300 streaming GeoGuessr with 589 viewers.</desc>
+    <desc lang="en">Live on TOHHA300 streaming GeoGuessr with 746 viewers.</desc>
     <category lang="en">GeoGuessr</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="GeoGuessr.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="GeoGuessr.tv">
     <title lang="en">GeoGuessr - Капитальный игрок</title>
-    <desc lang="en">Live on TOHHA300 streaming GeoGuessr with 589 viewers.</desc>
+    <desc lang="en">Live on TOHHA300 streaming GeoGuessr with 746 viewers.</desc>
     <category lang="en">GeoGuessr</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="GeoGuessr.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="GeoGuessr.tv">
     <title lang="en">GeoGuessr - Капитальный игрок (Upcoming)</title>
-    <desc lang="en">Live on TOHHA300 streaming GeoGuessr with 589 viewers.</desc>
+    <desc lang="en">Live on TOHHA300 streaming GeoGuessr with 746 viewers.</desc>
     <category lang="en">GeoGuessr</category>
   </programme>
   <channel id="Trackmania.tv"><display-name>Trackmania (Precision Racing Live)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="Trackmania.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="Trackmania.tv">
     <title lang="en">Trackmania - 🔴 TODAY? -&gt; Beating ALL Prime Number Maps for Every Prime in Chat - Day 33 🔴 | !primechallenge !prime !royalupdate (Previous)</title>
     <desc lang="en">Live on Lars_tm streaming Trackmania with 1600 viewers.</desc>
     <category lang="en">Trackmania</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="Trackmania.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="Trackmania.tv">
     <title lang="en">Trackmania - 🔴 TODAY? -&gt; Beating ALL Prime Number Maps for Every Prime in Chat - Day 33 🔴 | !primechallenge !prime !royalupdate</title>
     <desc lang="en">Live on Lars_tm streaming Trackmania with 1600 viewers.</desc>
     <category lang="en">Trackmania</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="Trackmania.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="Trackmania.tv">
     <title lang="en">Trackmania - 🔴 TODAY? -&gt; Beating ALL Prime Number Maps for Every Prime in Chat - Day 33 🔴 | !primechallenge !prime !royalupdate (Upcoming)</title>
     <desc lang="en">Live on Lars_tm streaming Trackmania with 1600 viewers.</desc>
     <category lang="en">Trackmania</category>
   </programme>
   <channel id="Zeepkist.tv"><display-name>Zeepkist (Soapbox Physics Racing Live)</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="Zeepkist.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="Zeepkist.tv">
     <title lang="en">Zeepkist - No username cached (Previous)</title>
     <desc lang="en">No active broadcast in category Zeepkist right now. Stream relay is standing by.</desc>
     <category lang="en">Zeepkist</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="Zeepkist.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="Zeepkist.tv">
     <title lang="en">Zeepkist - No username cached</title>
     <desc lang="en">No active broadcast in category Zeepkist right now. Stream relay is standing by.</desc>
     <category lang="en">Zeepkist</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="Zeepkist.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="Zeepkist.tv">
     <title lang="en">Zeepkist - No username cached (Upcoming)</title>
     <desc lang="en">No active broadcast in category Zeepkist right now. Stream relay is standing by.</desc>
     <category lang="en">Zeepkist</category>
   </programme>
   <channel id="FollowedStreamer1.tv"><display-name>Followed Streamer #1</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="FollowedStreamer1.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="FollowedStreamer1.tv">
     <title lang="en">#1: BarbarousKing - Star Wars: Zero Aim Company - Buncha Glup Shittos killing droids across the galaxy (Previous)</title>
     <desc lang="en">Followed streamer #1 (BarbarousKing) playing Star Wars Zero Company with 2362 viewers.</desc>
     <category lang="en">Star Wars Zero Company</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="FollowedStreamer1.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="FollowedStreamer1.tv">
     <title lang="en">#1: BarbarousKing - Star Wars: Zero Aim Company - Buncha Glup Shittos killing droids across the galaxy</title>
     <desc lang="en">Followed streamer #1 (BarbarousKing) playing Star Wars Zero Company with 2362 viewers.</desc>
     <category lang="en">Star Wars Zero Company</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="FollowedStreamer1.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="FollowedStreamer1.tv">
     <title lang="en">#1: BarbarousKing - Star Wars: Zero Aim Company - Buncha Glup Shittos killing droids across the galaxy (Upcoming)</title>
     <desc lang="en">Followed streamer #1 (BarbarousKing) playing Star Wars Zero Company with 2362 viewers.</desc>
     <category lang="en">Star Wars Zero Company</category>
   </programme>
   <channel id="FollowedStreamer2.tv"><display-name>Followed Streamer #2</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="FollowedStreamer2.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="FollowedStreamer2.tv">
     <title lang="en">#2: akaNemsko - Nami Cosplay (One Piece) at Fan Expo!!! -&gt; IRL Chess downtown after ♟️ !Audible !neuro !allin (Previous)</title>
-    <desc lang="en">Followed streamer #2 (akaNemsko) playing IRL with 1053 viewers.</desc>
+    <desc lang="en">Followed streamer #2 (akaNemsko) playing IRL with 1074 viewers.</desc>
     <category lang="en">IRL</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="FollowedStreamer2.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="FollowedStreamer2.tv">
     <title lang="en">#2: akaNemsko - Nami Cosplay (One Piece) at Fan Expo!!! -&gt; IRL Chess downtown after ♟️ !Audible !neuro !allin</title>
-    <desc lang="en">Followed streamer #2 (akaNemsko) playing IRL with 1053 viewers.</desc>
+    <desc lang="en">Followed streamer #2 (akaNemsko) playing IRL with 1074 viewers.</desc>
     <category lang="en">IRL</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="FollowedStreamer2.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="FollowedStreamer2.tv">
     <title lang="en">#2: akaNemsko - Nami Cosplay (One Piece) at Fan Expo!!! -&gt; IRL Chess downtown after ♟️ !Audible !neuro !allin (Upcoming)</title>
-    <desc lang="en">Followed streamer #2 (akaNemsko) playing IRL with 1053 viewers.</desc>
+    <desc lang="en">Followed streamer #2 (akaNemsko) playing IRL with 1074 viewers.</desc>
     <category lang="en">IRL</category>
   </programme>
   <channel id="FollowedStreamer3.tv"><display-name>Followed Streamer #3</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="FollowedStreamer3.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="FollowedStreamer3.tv">
     <title lang="en">#3: iateyourpie - !scamathon Day 1 | Dark Souls Rando FIRST TIME (Previous)</title>
-    <desc lang="en">Followed streamer #3 (iateyourpie) playing Dark Souls with 717 viewers.</desc>
+    <desc lang="en">Followed streamer #3 (iateyourpie) playing Dark Souls with 731 viewers.</desc>
     <category lang="en">Dark Souls</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="FollowedStreamer3.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="FollowedStreamer3.tv">
     <title lang="en">#3: iateyourpie - !scamathon Day 1 | Dark Souls Rando FIRST TIME</title>
-    <desc lang="en">Followed streamer #3 (iateyourpie) playing Dark Souls with 717 viewers.</desc>
+    <desc lang="en">Followed streamer #3 (iateyourpie) playing Dark Souls with 731 viewers.</desc>
     <category lang="en">Dark Souls</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="FollowedStreamer3.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="FollowedStreamer3.tv">
     <title lang="en">#3: iateyourpie - !scamathon Day 1 | Dark Souls Rando FIRST TIME (Upcoming)</title>
-    <desc lang="en">Followed streamer #3 (iateyourpie) playing Dark Souls with 717 viewers.</desc>
+    <desc lang="en">Followed streamer #3 (iateyourpie) playing Dark Souls with 731 viewers.</desc>
     <category lang="en">Dark Souls</category>
   </programme>
   <channel id="FollowedStreamer4.tv"><display-name>Followed Streamer #4</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="FollowedStreamer4.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="FollowedStreamer4.tv">
     <title lang="en">#4: HAchubby - Twitch Pepega Goes to Harvard! Later Waterpark Simulator! | Boston IRL - Day 5 | !subtember | !socials (Previous)</title>
-    <desc lang="en">Followed streamer #4 (HAchubby) playing IRL with 547 viewers.</desc>
+    <desc lang="en">Followed streamer #4 (HAchubby) playing IRL with 539 viewers.</desc>
     <category lang="en">IRL</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="FollowedStreamer4.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="FollowedStreamer4.tv">
     <title lang="en">#4: HAchubby - Twitch Pepega Goes to Harvard! Later Waterpark Simulator! | Boston IRL - Day 5 | !subtember | !socials</title>
-    <desc lang="en">Followed streamer #4 (HAchubby) playing IRL with 547 viewers.</desc>
+    <desc lang="en">Followed streamer #4 (HAchubby) playing IRL with 539 viewers.</desc>
     <category lang="en">IRL</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="FollowedStreamer4.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="FollowedStreamer4.tv">
     <title lang="en">#4: HAchubby - Twitch Pepega Goes to Harvard! Later Waterpark Simulator! | Boston IRL - Day 5 | !subtember | !socials (Upcoming)</title>
-    <desc lang="en">Followed streamer #4 (HAchubby) playing IRL with 547 viewers.</desc>
+    <desc lang="en">Followed streamer #4 (HAchubby) playing IRL with 539 viewers.</desc>
     <category lang="en">IRL</category>
   </programme>
   <channel id="FollowedStreamer5.tv"><display-name>Followed Streamer #5</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="FollowedStreamer5.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="FollowedStreamer5.tv">
     <title lang="en">#5: Andy - Can we finish an 81 game multiworld in 60 hours? !ARCHIPOCALYPSE (Previous)</title>
-    <desc lang="en">Followed streamer #5 (Andy) playing Retro with 329 viewers.</desc>
+    <desc lang="en">Followed streamer #5 (Andy) playing Retro with 334 viewers.</desc>
     <category lang="en">Retro</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="FollowedStreamer5.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="FollowedStreamer5.tv">
     <title lang="en">#5: Andy - Can we finish an 81 game multiworld in 60 hours? !ARCHIPOCALYPSE</title>
-    <desc lang="en">Followed streamer #5 (Andy) playing Retro with 329 viewers.</desc>
+    <desc lang="en">Followed streamer #5 (Andy) playing Retro with 334 viewers.</desc>
     <category lang="en">Retro</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="FollowedStreamer5.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="FollowedStreamer5.tv">
     <title lang="en">#5: Andy - Can we finish an 81 game multiworld in 60 hours? !ARCHIPOCALYPSE (Upcoming)</title>
-    <desc lang="en">Followed streamer #5 (Andy) playing Retro with 329 viewers.</desc>
+    <desc lang="en">Followed streamer #5 (Andy) playing Retro with 334 viewers.</desc>
     <category lang="en">Retro</category>
   </programme>
   <channel id="FollowedStreamer6.tv"><display-name>Followed Streamer #6</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="FollowedStreamer6.tv">
-    <title lang="en">#6: OnePortugueseFarm - Partner push!? Raid us!? 🤔 Welp!? !hi !donate !feed !meteor (Previous)</title>
-    <desc lang="en">Followed streamer #6 (OnePortugueseFarm) playing Animals, Aquariums, and Zoos with 108 viewers.</desc>
-    <category lang="en">Animals, Aquariums, and Zoos</category>
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="FollowedStreamer6.tv">
+    <title lang="en">#6: EazySpeezy - I&#39;m 100% Speedrunning How To Fish (Previous)</title>
+    <desc lang="en">Followed streamer #6 (EazySpeezy) playing How to Fish with 127 viewers.</desc>
+    <category lang="en">How to Fish</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="FollowedStreamer6.tv">
-    <title lang="en">#6: OnePortugueseFarm - Partner push!? Raid us!? 🤔 Welp!? !hi !donate !feed !meteor</title>
-    <desc lang="en">Followed streamer #6 (OnePortugueseFarm) playing Animals, Aquariums, and Zoos with 108 viewers.</desc>
-    <category lang="en">Animals, Aquariums, and Zoos</category>
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="FollowedStreamer6.tv">
+    <title lang="en">#6: EazySpeezy - I&#39;m 100% Speedrunning How To Fish</title>
+    <desc lang="en">Followed streamer #6 (EazySpeezy) playing How to Fish with 127 viewers.</desc>
+    <category lang="en">How to Fish</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="FollowedStreamer6.tv">
-    <title lang="en">#6: OnePortugueseFarm - Partner push!? Raid us!? 🤔 Welp!? !hi !donate !feed !meteor (Upcoming)</title>
-    <desc lang="en">Followed streamer #6 (OnePortugueseFarm) playing Animals, Aquariums, and Zoos with 108 viewers.</desc>
-    <category lang="en">Animals, Aquariums, and Zoos</category>
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="FollowedStreamer6.tv">
+    <title lang="en">#6: EazySpeezy - I&#39;m 100% Speedrunning How To Fish (Upcoming)</title>
+    <desc lang="en">Followed streamer #6 (EazySpeezy) playing How to Fish with 127 viewers.</desc>
+    <category lang="en">How to Fish</category>
   </programme>
   <channel id="FollowedStreamer7.tv"><display-name>Followed Streamer #7</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="FollowedStreamer7.tv">
-    <title lang="en">#7: PapaNug - 1/12 games done - Stream ends when I beat 5+ Kaizo hacks (chat decides) - the stupidest thing I&#39;ve done (so far) !options !hacks  [2276] (Previous)</title>
-    <desc lang="en">Followed streamer #7 (PapaNug) playing Super Mario World with 95 viewers.</desc>
-    <category lang="en">Super Mario World</category>
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="FollowedStreamer7.tv">
+    <title lang="en">#7: OnePortugueseFarm - Partner push!? Raid us!? 🤔 Welp!? !hi !donate !feed !meteor (Previous)</title>
+    <desc lang="en">Followed streamer #7 (OnePortugueseFarm) playing Animals, Aquariums, and Zoos with 106 viewers.</desc>
+    <category lang="en">Animals, Aquariums, and Zoos</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="FollowedStreamer7.tv">
-    <title lang="en">#7: PapaNug - 1/12 games done - Stream ends when I beat 5+ Kaizo hacks (chat decides) - the stupidest thing I&#39;ve done (so far) !options !hacks  [2276]</title>
-    <desc lang="en">Followed streamer #7 (PapaNug) playing Super Mario World with 95 viewers.</desc>
-    <category lang="en">Super Mario World</category>
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="FollowedStreamer7.tv">
+    <title lang="en">#7: OnePortugueseFarm - Partner push!? Raid us!? 🤔 Welp!? !hi !donate !feed !meteor</title>
+    <desc lang="en">Followed streamer #7 (OnePortugueseFarm) playing Animals, Aquariums, and Zoos with 106 viewers.</desc>
+    <category lang="en">Animals, Aquariums, and Zoos</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="FollowedStreamer7.tv">
-    <title lang="en">#7: PapaNug - 1/12 games done - Stream ends when I beat 5+ Kaizo hacks (chat decides) - the stupidest thing I&#39;ve done (so far) !options !hacks  [2276] (Upcoming)</title>
-    <desc lang="en">Followed streamer #7 (PapaNug) playing Super Mario World with 95 viewers.</desc>
-    <category lang="en">Super Mario World</category>
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="FollowedStreamer7.tv">
+    <title lang="en">#7: OnePortugueseFarm - Partner push!? Raid us!? 🤔 Welp!? !hi !donate !feed !meteor (Upcoming)</title>
+    <desc lang="en">Followed streamer #7 (OnePortugueseFarm) playing Animals, Aquariums, and Zoos with 106 viewers.</desc>
+    <category lang="en">Animals, Aquariums, and Zoos</category>
   </programme>
   <channel id="FollowedStreamer8.tv"><display-name>Followed Streamer #8</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="FollowedStreamer8.tv">
-    <title lang="en">#8: ElanaOrama - NEW RUN - Two Points Rimseum #OptedOutOfGenAI !micro drop festival! (Previous)</title>
-    <desc lang="en">Followed streamer #8 (ElanaOrama) playing RimWorld with 90 viewers.</desc>
-    <category lang="en">RimWorld</category>
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="FollowedStreamer8.tv">
+    <title lang="en">#8: PapaNug - 1/12 games done - Stream ends when I beat 5+ Kaizo hacks (chat decides) - the stupidest thing I&#39;ve done (so far) !options !hacks  [2276] (Previous)</title>
+    <desc lang="en">Followed streamer #8 (PapaNug) playing Super Mario World with 96 viewers.</desc>
+    <category lang="en">Super Mario World</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="FollowedStreamer8.tv">
-    <title lang="en">#8: ElanaOrama - NEW RUN - Two Points Rimseum #OptedOutOfGenAI !micro drop festival!</title>
-    <desc lang="en">Followed streamer #8 (ElanaOrama) playing RimWorld with 90 viewers.</desc>
-    <category lang="en">RimWorld</category>
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="FollowedStreamer8.tv">
+    <title lang="en">#8: PapaNug - 1/12 games done - Stream ends when I beat 5+ Kaizo hacks (chat decides) - the stupidest thing I&#39;ve done (so far) !options !hacks  [2276]</title>
+    <desc lang="en">Followed streamer #8 (PapaNug) playing Super Mario World with 96 viewers.</desc>
+    <category lang="en">Super Mario World</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="FollowedStreamer8.tv">
-    <title lang="en">#8: ElanaOrama - NEW RUN - Two Points Rimseum #OptedOutOfGenAI !micro drop festival! (Upcoming)</title>
-    <desc lang="en">Followed streamer #8 (ElanaOrama) playing RimWorld with 90 viewers.</desc>
-    <category lang="en">RimWorld</category>
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="FollowedStreamer8.tv">
+    <title lang="en">#8: PapaNug - 1/12 games done - Stream ends when I beat 5+ Kaizo hacks (chat decides) - the stupidest thing I&#39;ve done (so far) !options !hacks  [2276] (Upcoming)</title>
+    <desc lang="en">Followed streamer #8 (PapaNug) playing Super Mario World with 96 viewers.</desc>
+    <category lang="en">Super Mario World</category>
   </programme>
   <channel id="FollowedStreamer9.tv"><display-name>Followed Streamer #9</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="FollowedStreamer9.tv">
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="FollowedStreamer9.tv">
     <title lang="en">#9: Shoujo - friend multiworld w/ @lizstar and @amethyst_rocks! (Previous)</title>
-    <desc lang="en">Followed streamer #9 (Shoujo) playing The Legend of Zelda: Ocarina of Time with 82 viewers.</desc>
+    <desc lang="en">Followed streamer #9 (Shoujo) playing The Legend of Zelda: Ocarina of Time with 84 viewers.</desc>
     <category lang="en">The Legend of Zelda: Ocarina of Time</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="FollowedStreamer9.tv">
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="FollowedStreamer9.tv">
     <title lang="en">#9: Shoujo - friend multiworld w/ @lizstar and @amethyst_rocks!</title>
-    <desc lang="en">Followed streamer #9 (Shoujo) playing The Legend of Zelda: Ocarina of Time with 82 viewers.</desc>
+    <desc lang="en">Followed streamer #9 (Shoujo) playing The Legend of Zelda: Ocarina of Time with 84 viewers.</desc>
     <category lang="en">The Legend of Zelda: Ocarina of Time</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="FollowedStreamer9.tv">
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="FollowedStreamer9.tv">
     <title lang="en">#9: Shoujo - friend multiworld w/ @lizstar and @amethyst_rocks! (Upcoming)</title>
-    <desc lang="en">Followed streamer #9 (Shoujo) playing The Legend of Zelda: Ocarina of Time with 82 viewers.</desc>
+    <desc lang="en">Followed streamer #9 (Shoujo) playing The Legend of Zelda: Ocarina of Time with 84 viewers.</desc>
     <category lang="en">The Legend of Zelda: Ocarina of Time</category>
   </programme>
   <channel id="FollowedStreamer10.tv"><display-name>Followed Streamer #10</display-name></channel>
-  <programme start="20260829181512 +0000" stop="20260829201512 +0000" channel="FollowedStreamer10.tv">
-    <title lang="en">#10: EazySpeezy - I&#39;m 100% Speedrunning How To Fish (Previous)</title>
-    <desc lang="en">Followed streamer #10 (EazySpeezy) playing How to Fish with 69 viewers.</desc>
-    <category lang="en">How to Fish</category>
+  <programme start="20260829181959 +0000" stop="20260829201959 +0000" channel="FollowedStreamer10.tv">
+    <title lang="en">#10: MrMightyMouse - DAY 2 OF ARCHIPOCALYPSE - 81 Games in 60 Hours - Fundraising for NAMI !colo (Previous)</title>
+    <desc lang="en">Followed streamer #10 (MrMightyMouse) playing The Legend of Zelda: A Link to the Past with 51 viewers.</desc>
+    <category lang="en">The Legend of Zelda: A Link to the Past</category>
   </programme>
-  <programme start="20260829201512 +0000" stop="20260829231512 +0000" channel="FollowedStreamer10.tv">
-    <title lang="en">#10: EazySpeezy - I&#39;m 100% Speedrunning How To Fish</title>
-    <desc lang="en">Followed streamer #10 (EazySpeezy) playing How to Fish with 69 viewers.</desc>
-    <category lang="en">How to Fish</category>
+  <programme start="20260829201959 +0000" stop="20260829231959 +0000" channel="FollowedStreamer10.tv">
+    <title lang="en">#10: MrMightyMouse - DAY 2 OF ARCHIPOCALYPSE - 81 Games in 60 Hours - Fundraising for NAMI !colo</title>
+    <desc lang="en">Followed streamer #10 (MrMightyMouse) playing The Legend of Zelda: A Link to the Past with 51 viewers.</desc>
+    <category lang="en">The Legend of Zelda: A Link to the Past</category>
   </programme>
-  <programme start="20260829231512 +0000" stop="20260830021512 +0000" channel="FollowedStreamer10.tv">
-    <title lang="en">#10: EazySpeezy - I&#39;m 100% Speedrunning How To Fish (Upcoming)</title>
-    <desc lang="en">Followed streamer #10 (EazySpeezy) playing How to Fish with 69 viewers.</desc>
-    <category lang="en">How to Fish</category>
+  <programme start="20260829231959 +0000" stop="20260830021959 +0000" channel="FollowedStreamer10.tv">
+    <title lang="en">#10: MrMightyMouse - DAY 2 OF ARCHIPOCALYPSE - 81 Games in 60 Hours - Fundraising for NAMI !colo (Upcoming)</title>
+    <desc lang="en">Followed streamer #10 (MrMightyMouse) playing The Legend of Zelda: A Link to the Past with 51 viewers.</desc>
+    <category lang="en">The Legend of Zelda: A Link to the Past</category>
   </programme>
 </tv>

@@ -51,6 +51,7 @@ var (
 		"dgr_dave":         true,
 		"dogplayingtetris": true,
 		"doremy":           true,
+		"elanaorama":       true,
 		"ericicx":          true,
 		"esamarathon":      true,
 		"failstream":       true,
@@ -76,7 +77,6 @@ var (
 		"smallant":         true,
 		"speedrun":         true,
 		"tammy_blackmedia": true,
-		"tamthegamer":      true,
 		"tasvideos":        true,
 		"tgh_sr":           true,
 		"thabeast721":      true,
@@ -257,8 +257,8 @@ var creatorCircles = map[string][]string{
 	"failstream":       {"dgr_dave", "ryukahr", "carlsagan42", "grandpoobear", "thabeast721"},
 	"glitchcat7":       {"thabeast721", "pangaeapanga", "grandpoobear", "carlsagan42"},
 	"dgr_dave":         {"ryukahr", "rbpimlico", "carlsagan42", "smallant", "aurateur"},
-	"tammy_blackmedia": {"ryukahr", "dgr_dave", "carlsagan42", "rbpimlico"},
-	"tamthegamer":      {"tammy_blackmedia", "ryukahr"},
+	"tammy_blackmedia": {"ryukahr", "elanaorama", "dgr_dave", "carlsagan42", "rbpimlico"},
+	"elanaorama":       {"tammy_blackmedia", "ryukahr", "smallant", "speedrun"},
 
 	// Retro, Culture & Slow TV
 	"mst3k":            {"shoutfactorytv", "worldoflongplays"},
