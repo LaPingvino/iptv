@@ -15,10 +15,15 @@ import (
 	"sync"
 	"time"
 
+	_ "embed"
+
 	"github.com/LaPingvino/streamglink"
 	_ "github.com/LaPingvino/streamglink/plugins/generic"
 	_ "github.com/LaPingvino/streamglink/plugins/twitch"
 )
+
+//go:embed lapingvino_follows.json
+var embeddedFollowsJSON []byte
 
 type FollowedStreamer struct {
 	BroadcasterID    string `json:"broadcaster_id"`
@@ -42,8 +47,9 @@ func loadLapingvinoFollows() {
 	paths := []string{
 		filepath.Join(ProjectDir, "data", "lapingvino_follows.json"),
 		filepath.Join(MediaDir, "data", "lapingvino_follows.json"),
-		"/home/joop/iptv/data/lapingvino_follows.json",
 		"/var/lib/iptv-live-bridge/data/lapingvino_follows.json",
+		"/usr/share/iptv-live-bridge/data/lapingvino_follows.json",
+		"/home/joop/iptv/data/lapingvino_follows.json",
 	}
 	for _, p := range paths {
 		b, err := os.ReadFile(p)
@@ -52,19 +58,31 @@ func loadLapingvinoFollows() {
 		}
 		var items []FollowedStreamer
 		if err := json.Unmarshal(b, &items); err == nil && len(items) > 0 {
-			lapingvinoFollowsMu.Lock()
-			lapingvinoFollowsList = make([]string, 0, len(items))
-			lapingvinoFollowsSet = make(map[string]bool, len(items))
-			for _, item := range items {
-				l := strings.ToLower(item.BroadcasterLogin)
-				if l != "" {
-					lapingvinoFollowsList = append(lapingvinoFollowsList, l)
-					lapingvinoFollowsSet[l] = true
-				}
-			}
-			lapingvinoFollowsMu.Unlock()
-			log.Printf("[Twitch] Loaded %d followed streamers for lapingvino from %s", len(lapingvinoFollowsList), p)
+			setFollows(items)
+			log.Printf("[Twitch] Loaded %d followed streamers for lapingvino from %s", len(items), p)
 			return
+		}
+	}
+
+	if len(embeddedFollowsJSON) > 0 {
+		var items []FollowedStreamer
+		if err := json.Unmarshal(embeddedFollowsJSON, &items); err == nil && len(items) > 0 {
+			setFollows(items)
+			log.Printf("[Twitch] Loaded %d followed streamers for lapingvino from embedded binary data", len(items))
+		}
+	}
+}
+
+func setFollows(items []FollowedStreamer) {
+	lapingvinoFollowsMu.Lock()
+	defer lapingvinoFollowsMu.Unlock()
+	lapingvinoFollowsList = make([]string, 0, len(items))
+	lapingvinoFollowsSet = make(map[string]bool, len(items))
+	for _, item := range items {
+		l := strings.ToLower(item.BroadcasterLogin)
+		if l != "" {
+			lapingvinoFollowsList = append(lapingvinoFollowsList, l)
+			lapingvinoFollowsSet[l] = true
 		}
 	}
 }
@@ -454,83 +472,25 @@ func (tm *TwitchManager) Resolve(ctx context.Context, channel string) (string, e
 }
 
 func (tm *TwitchManager) resolveLapingvinoFollowedLastResort(ctx context.Context) (string, string) {
-	lapingvinoFollowsMu.RLock()
-	list := make([]string, len(lapingvinoFollowsList))
-	copy(list, lapingvinoFollowsList)
-	lapingvinoFollowsMu.RUnlock()
-
-	if len(list) == 0 {
+	liveList := tm.GetRankedLiveFollows(ctx)
+	if len(liveList) == 0 {
 		return "", ""
 	}
 
-	// 1. Check live follows cache (refresh every 90s)
-	lapingvinoFollowsMu.RLock()
-	if len(liveFollowsCache) > 0 && time.Since(liveFollowsCacheTime) < 90*time.Second {
-		candidates := liveFollowsCache
-		lapingvinoFollowsMu.RUnlock()
-		for _, cand := range candidates {
-			if streamURL, err := tm.resolveSingle(ctx, cand); err == nil {
-				return streamURL, cand
-			}
-		}
-	} else {
-		lapingvinoFollowsMu.RUnlock()
-	}
-
-	// 2. Query live status for followed channels (batch check in chunks of 50)
-	var liveCandidates []string
-	chunkSize := 50
-	for i := 0; i < len(list) && len(liveCandidates) < 15; i += chunkSize {
-		end := i + chunkSize
-		if end > len(list) {
-			end = len(list)
-		}
-		chunk := list[i:end]
-		var subqueries []string
-		for _, l := range chunk {
-			alias := "u_" + sanitizeAlias(l)
-			subqueries = append(subqueries, fmt.Sprintf(`%s: user(login: "%s") { stream { viewersCount } }`, alias, l))
-		}
-		query := "query CheckLiveFollows {\n" + strings.Join(subqueries, "\n") + "\n}"
-		payload, _ := json.Marshal(map[string]string{"query": query})
-		req, err := http.NewRequestWithContext(ctx, http.MethodPost, "https://gql.twitch.tv/gql", bytes.NewReader(payload))
-		if err != nil {
-			continue
-		}
-		req.Header.Set("Client-Id", "kimne78kx3ncx6brgo4mv6wki5h1ko")
-		req.Header.Set("Content-Type", "application/json")
-		resp, err := http.DefaultClient.Do(req)
-		if err != nil {
-			continue
-		}
-		var res struct {
-			Data map[string]*struct {
-				Stream *struct {
-					ViewersCount int `json:"viewersCount"`
-				} `json:"stream"`
-			} `json:"data"`
-		}
-		_ = json.NewDecoder(resp.Body).Decode(&res)
-		resp.Body.Close()
-
-		for _, l := range chunk {
-			alias := "u_" + sanitizeAlias(l)
-			if u, ok := res.Data[alias]; ok && u != nil && u.Stream != nil {
-				liveCandidates = append(liveCandidates, l)
+	// 1. Prefer gaming streamers (exclude non-game categories like Just Chatting, ASMR, etc.)
+	for _, s := range liveList {
+		g := strings.ToLower(strings.TrimSpace(s.Game))
+		if !ignoredGameCategories[g] && g != "" && g != "unknown" {
+			if streamURL, err := tm.resolveSingle(ctx, s.Login); err == nil {
+				return streamURL, s.Login
 			}
 		}
 	}
 
-	if len(liveCandidates) > 0 {
-		lapingvinoFollowsMu.Lock()
-		liveFollowsCache = liveCandidates
-		liveFollowsCacheTime = time.Now()
-		lapingvinoFollowsMu.Unlock()
-
-		for _, cand := range liveCandidates {
-			if streamURL, err := tm.resolveSingle(ctx, cand); err == nil {
-				return streamURL, cand
-			}
+	// 2. Fallback to any live streamer
+	for _, s := range liveList {
+		if streamURL, err := tm.resolveSingle(ctx, s.Login); err == nil {
+			return streamURL, s.Login
 		}
 	}
 

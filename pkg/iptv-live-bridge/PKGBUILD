@@ -18,6 +18,7 @@ source=(
     'bvn.go'
     'epg.go'
     'builder.go'
+    'lapingvino_follows.json'
     'go.mod'
     'go.sum'
 )
@@ -25,10 +26,11 @@ sha256sums=('2f318269d1e7812b4ba503aae2953a7eac5f833f6cf2c53f89ec71fc383b55c2'
             '56155f929a8de288491e28e124433ae655b028ff9539bca8997d1c1f86ca569f'
             '8f565531472a83553685dd11a509200047e27c0948b8650103d731bb6759947f'
             '1544e15dfa5c47dfe87b9ac7028d1fafb3faec8b4c6d6c8ab464a1a820578584'
-            '6eea867c0e2fd387601d25cba0ee9b3bd3eea7574d7def1a5ef5d777527dda4e'
+            '12b425f94212f80bfe0c3586384c94d06e33e965e09b4b1b67805c49e5cb4d79'
             'cb45f582e69eb017fb2d40d94f3e73717f65ecbf3f2fe76dcbb2b567fd0b8ba3'
             '57b9348c5284068a6452a373d418ba1835eb0e45deba96c5eddc314303794ad6'
             '19c3dbfe8f9f7ba217fd20a9eee3caa8d5301128f462bd72f925bdcccd0afa81'
+            '2c3123d2e39f61c203f17df283318f1ebfcf095799af1eb47b4fd8d3a395f95f'
             'a42724340f1a5027d891db7c03b8d4838bd8d1e6b74f8d31b4c17bcff04bc840'
             'e2e045c323233167e8bbe46c953e581aa1d6635d9aa295b1e791029ee6ebbac4')
 
@@ -60,6 +62,11 @@ package() {
         cp -r "${startdir}/testcard/"* "${pkgdir}/usr/share/iptv-live-bridge/testcard/" 2>/dev/null || true
     fi
     
+    install -d "${pkgdir}/usr/share/iptv-live-bridge/data"
+    install -Dm644 "${srcdir}/lapingvino_follows.json" "${pkgdir}/usr/share/iptv-live-bridge/data/lapingvino_follows.json"
+    install -d "${pkgdir}/var/lib/iptv-live-bridge/data"
+    install -Dm644 "${srcdir}/lapingvino_follows.json" "${pkgdir}/var/lib/iptv-live-bridge/data/lapingvino_follows.json"
+
     install -d "${pkgdir}/var/lib/iptv-live-bridge/esperantotv"
     install -d "${pkgdir}/var/lib/iptv-live-bridge/bahaitv"
 }

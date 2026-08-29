@@ -37,12 +37,14 @@ cd "${PROJECT_DIR}"
 
 echo "2. Ensuring media & distribution directories exist..."
 mkdir -p /var/lib/iptv-live-bridge/dist
+mkdir -p /var/lib/iptv-live-bridge/data
 mkdir -p /var/lib/iptv-live-bridge/esperantotv
 mkdir -p /var/lib/iptv-live-bridge/bahaitv
 
 echo "3. Compiling master playlists & EPG distribution files via Go builder..."
 /usr/bin/iptv-live-bridge -build-dist "${PROJECT_DIR}/data" "${PROJECT_DIR}/dist"
 rsync -a "${PROJECT_DIR}/dist/" /var/lib/iptv-live-bridge/dist/
+rsync -a "${PROJECT_DIR}/data/" /var/lib/iptv-live-bridge/data/
 
 echo "4. Syncing Esperanto TV media library (with hardlinks to save disk)..."
 if [ -d "${PKG_DIR}/esperantotv" ]; then
