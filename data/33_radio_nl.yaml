@@ -22,6 +22,18 @@
   tvg_name: NPO Klassiek
   logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/npoklassiek.png
   url: https://icecast.omroep.nl/radio4-bb-mp3
+- name: Classicnl (Klassiek & Film)
+  group: NL Rádio
+  tvg_id: Classicnl.nl
+  tvg_name: Classicnl
+  logo: https://www.classic.nl/images/logo_classicnl_square.jpg
+  url: https://stream.classic.nl/classicnl.mp3
+- name: Concertzender (Klassiek & Jazz)
+  group: NL Rádio
+  tvg_id: Concertzender.nl
+  tvg_name: Concertzender
+  logo: https://www.concertzender.nl/wp-content/uploads/2017/01/Concertzender-FB-OpengrapFoto-1.jpg
+  url: http://streams.greenhost.nl:8080/live
 - name: NPO Radio 5
   group: NL Rádio
   tvg_id: NPORadio5.nl

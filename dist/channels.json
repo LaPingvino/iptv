@@ -900,13 +900,22 @@
     "chno": 706
   },
   {
+    "name": "Trace Urban (1080p)",
+    "group": "Música \u0026 Video",
+    "tvg_id": "TraceUrban.fr@HD",
+    "tvg_name": "Trace Urban",
+    "logo": "https://i.imgur.com/DLIbUMx.png",
+    "url": "https://channels.trace.plus/Traceprod/URBAN_INTER_hd/index.m3u8",
+    "chno": 707
+  },
+  {
     "name": "Trace Toca (Kizomba / Zouk / PALOP)",
     "group": "Música \u0026 Video",
     "tvg_id": "TraceToca.fr@HD",
     "tvg_name": "Trace Toca",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Toca.png",
     "url": "https://channels.trace.plus/Traceprod/TOCA_hd/index.m3u8",
-    "chno": 707
+    "chno": 708
   },
   {
     "name": "Trace Africa",
@@ -915,7 +924,7 @@
     "tvg_name": "Trace Africa",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Africa.png",
     "url": "https://channels.trace.plus/Traceprod/AFRICA_FR_hd/index.m3u8",
-    "chno": 708
+    "chno": 709
   },
   {
     "name": "Trace Brasil",
@@ -924,7 +933,7 @@
     "tvg_name": "Trace Brasil",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Brazuca.png",
     "url": "https://amg01131-tracetv-tracebrazuca-xiaomi-vvr19.amagi.tv/playlist/amg01131-tracetv-tracebrazuca-xiaomi/playlist.m3u8",
-    "chno": 709
+    "chno": 710
   },
   {
     "name": "Trace Naija (Afrobeats)",
@@ -933,7 +942,7 @@
     "tvg_name": "Trace Naija",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Naija.png",
     "url": "https://channels.trace.plus/Traceprod/NAIJA_hd/index.m3u8",
-    "chno": 710
+    "chno": 711
   },
   {
     "name": "Trace Kitoko (Lingala / Central Africa)",
@@ -942,7 +951,7 @@
     "tvg_name": "Trace Kitoko",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Kitoko.png",
     "url": "https://channels.trace.plus/Traceprod/KITOKO_hd/index.m3u8",
-    "chno": 711
+    "chno": 712
   },
   {
     "name": "Trace Miziki (East Africa)",
@@ -951,7 +960,7 @@
     "tvg_name": "Trace Miziki",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Miziki.png",
     "url": "https://channels.trace.plus/Traceprod/MZIKI_hd/index.m3u8",
-    "chno": 712
+    "chno": 713
   },
   {
     "name": "Trace Latina",
@@ -960,7 +969,7 @@
     "tvg_name": "Trace Latina",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Latina.png",
     "url": "https://channels.trace.plus/Traceprod/LATINA_hd/index.m3u8",
-    "chno": 713
+    "chno": 714
   },
   {
     "name": "Trace UK",
@@ -969,7 +978,7 @@
     "tvg_name": "Trace UK",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-UK.png",
     "url": "https://channels.trace.plus/Traceprod/UK_FAST_hd/index.m3u8",
-    "chno": 714
+    "chno": 715
   },
   {
     "name": "Trace Gospel",
@@ -978,7 +987,7 @@
     "tvg_name": "Trace Gospel",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Gospel.png",
     "url": "https://channels.trace.plus/Traceprod/GOSPEL_FR/.m3u8",
-    "chno": 715
+    "chno": 716
   },
   {
     "name": "XITE",
@@ -987,7 +996,7 @@
     "tvg_name": "XITE",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.png",
     "url": "https://xite-rakuten.amagi.tv/playlist.m3u8",
-    "chno": 716
+    "chno": 717
   },
   {
     "name": "XITE Hits Germany",
@@ -996,7 +1005,7 @@
     "tvg_name": "XITE Hits Germany",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.png",
     "url": "https://d726x48n2pd5h.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-skxr1pazhltvp/XITE_Hits.m3u8",
-    "chno": 717
+    "chno": 718
   },
   {
     "name": "4Fun.TV",
@@ -1005,7 +1014,7 @@
     "tvg_name": "4Fun TV",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/4Fun-TV.png",
     "url": "https://stream.4fun.tv:8888/hls/4f_high/index.m3u8",
-    "chno": 718
+    "chno": 719
   },
   {
     "name": "DeeJay TV",
@@ -1014,7 +1023,7 @@
     "tvg_name": "DeeJay TV",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/DeeJay-TV.png",
     "url": "https://streamcdng5-4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S85984808/sMO0tz9Sr2Rk/playlist.m3u8",
-    "chno": 719
+    "chno": 720
   },
   {
     "name": "NRG 91 TV",
@@ -1023,7 +1032,7 @@
     "tvg_name": "NRG 91 TV",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/NRG-91-TV.png",
     "url": "http://tv.nrg91.gr:1935/onweb/live/playlist.m3u8",
-    "chno": 720
+    "chno": 721
   },
   {
     "name": "FM Italia TV",
@@ -1032,7 +1041,7 @@
     "tvg_name": "FM Italia TV",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/FM-Italia-TV.png",
     "url": "https://stream1.xdevel.com/video0s975817-1182/stream/playlist.m3u8",
-    "chno": 721
+    "chno": 722
   },
   {
     "name": "California Music Channel",
@@ -1041,7 +1050,7 @@
     "tvg_name": "California Music Channel",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/California-Music-Channel.png",
     "url": "https://cmc-cmctv-cineverse.amagi.tv/playlist.m3u8",
-    "chno": 722
+    "chno": 723
   },
   {
     "name": "KpopTV Play",
@@ -1050,7 +1059,7 @@
     "tvg_name": "KpopTV Play",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/KpopTV-Play.png",
     "url": "https://183.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8",
-    "chno": 723
+    "chno": 724
   },
   {
     "name": "Monstercat (24/7 Electronic Music HD)",
@@ -1059,7 +1068,7 @@
     "tvg_name": "Monstercat",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Monstercat_logo.svg/512px-Monstercat_logo.svg.png",
     "url": "https://kiefte.eu/iptv/twitch/monstercat",
-    "chno": 724
+    "chno": 725
   },
   {
     "name": "Insomniac (24/7 EDM Festival TV)",
@@ -1068,7 +1077,7 @@
     "tvg_name": "Insomniac Events",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/insomniac",
-    "chno": 725
+    "chno": 726
   },
   {
     "name": "Radio Kiss Kiss TV (Visual Radio 1080p)",
@@ -1077,7 +1086,7 @@
     "tvg_name": "Radio Kiss Kiss TV",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Radio_Kiss_Kiss_logo.svg/512px-Radio_Kiss_Kiss_logo.svg.png",
     "url": "https://58f12ffd2447a.streamlock.net/KKMulti/livestream/playlist.m3u8",
-    "chno": 726
+    "chno": 727
   },
   {
     "name": "Hype Visual Radio (1080p Studio Cam)",
@@ -1086,7 +1095,7 @@
     "tvg_name": "Hype Visual Radio",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/DJ_mixer_icon.svg/512px-DJ_mixer_icon.svg.png",
     "url": "https://streammix.alsolnet.com/hyperadio/live/playlist.m3u8",
-    "chno": 727
+    "chno": 728
   },
   {
     "name": "ARTV (Canal Parlamento PT)",
@@ -2188,13 +2197,31 @@
     "chno": 7003
   },
   {
+    "name": "Classicnl (Klassiek \u0026 Film)",
+    "group": "NL Rádio",
+    "tvg_id": "Classicnl.nl",
+    "tvg_name": "Classicnl",
+    "logo": "https://www.classic.nl/images/logo_classicnl_square.jpg",
+    "url": "https://stream.classic.nl/classicnl.mp3",
+    "chno": 7004
+  },
+  {
+    "name": "Concertzender (Klassiek \u0026 Jazz)",
+    "group": "NL Rádio",
+    "tvg_id": "Concertzender.nl",
+    "tvg_name": "Concertzender",
+    "logo": "https://www.concertzender.nl/wp-content/uploads/2017/01/Concertzender-FB-OpengrapFoto-1.jpg",
+    "url": "http://streams.greenhost.nl:8080/live",
+    "chno": 7005
+  },
+  {
     "name": "NPO Radio 5",
     "group": "NL Rádio",
     "tvg_id": "NPORadio5.nl",
     "tvg_name": "NPO Radio 5",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nporadio5.png",
     "url": "https://icecast.omroep.nl/radio5-bb-mp3",
-    "chno": 7004
+    "chno": 7006
   },
   {
     "name": "NPO FunX",
@@ -2203,7 +2230,7 @@
     "tvg_name": "NPO FunX",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/funx.png",
     "url": "https://icecast.omroep.nl/funx-bb-mp3",
-    "chno": 7005
+    "chno": 7007
   },
   {
     "name": "NPO Blend",
@@ -2212,7 +2239,7 @@
     "tvg_name": "NPO Blend",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/funx.png",
     "url": "https://icecast.omroep.nl/radio6-bb-mp3",
-    "chno": 7006
+    "chno": 7008
   },
   {
     "name": "Radio 538",
@@ -2221,7 +2248,7 @@
     "tvg_name": "Radio 538",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/538.png",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO538.mp3",
-    "chno": 7007
+    "chno": 7009
   },
   {
     "name": "Radio 538 Ibiza (Sunset \u0026 Deep House)",
@@ -2230,7 +2257,7 @@
     "tvg_name": "Radio 538 Ibiza",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/538.png",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/TLPSTR19.mp3",
-    "chno": 7008
+    "chno": 7010
   },
   {
     "name": "SLAM!",
@@ -2239,7 +2266,7 @@
     "tvg_name": "SLAM!",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/SLAM%21_logo_2020.svg/512px-SLAM%21_logo_2020.svg.png",
     "url": "https://stream.slam.nl/slam_mp3",
-    "chno": 7009
+    "chno": 7011
   },
   {
     "name": "Qmusic NL",
@@ -2248,7 +2275,7 @@
     "tvg_name": "Qmusic",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Qmusic_logo_2019.svg/512px-Qmusic_logo_2019.svg.png",
     "url": "https://stream.qmusic.nl/qmusic/mp3",
-    "chno": 7010
+    "chno": 7012
   },
   {
     "name": "Radio Veronica",
@@ -2257,7 +2284,7 @@
     "tvg_name": "Radio Veronica",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radioveronica.png",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/VERONICA.mp3",
-    "chno": 7011
+    "chno": 7013
   },
   {
     "name": "Sky Radio",
@@ -2266,7 +2293,7 @@
     "tvg_name": "Sky Radio",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/skyradio.png",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SKYRADIO.mp3",
-    "chno": 7012
+    "chno": 7014
   },
   {
     "name": "Radio 10",
@@ -2275,7 +2302,7 @@
     "tvg_name": "Radio 10",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/radio10.png",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO10.mp3",
-    "chno": 7013
+    "chno": 7015
   },
   {
     "name": "Arrow Classic Rock",
@@ -2284,7 +2311,7 @@
     "tvg_name": "Arrow Classic Rock",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/arrowclassicrock.png",
     "url": "http://stream.gal.io/arrow",
-    "chno": 7014
+    "chno": 7016
   },
   {
     "name": "Sublime",
@@ -2293,7 +2320,7 @@
     "tvg_name": "Sublime",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/sublime.png",
     "url": "https://stream.sublime.nl/sublime_mp3",
-    "chno": 7015
+    "chno": 7017
   },
   {
     "name": "BNR Nieuwsradio",
@@ -2302,7 +2329,7 @@
     "tvg_name": "BNR Nieuwsradio",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/bnr.png",
     "url": "https://stream.bnr.nl/bnr_mp3_128_01",
-    "chno": 7016
+    "chno": 7018
   },
   {
     "name": "KINK",
@@ -2311,7 +2338,7 @@
     "tvg_name": "KINK",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/kink.png",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KINK.mp3",
-    "chno": 7017
+    "chno": 7019
   },
   {
     "name": "Omrop Fryslân Radio (Frysk)",
@@ -2320,7 +2347,7 @@
     "tvg_name": "Omrop Fryslân Radio",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omropfryslan.png",
     "url": "https://d3pvma9xb2775h.cloudfront.net/icecast/omropfryslan/radio.mp3",
-    "chno": 7018
+    "chno": 7020
   },
   {
     "name": "L1 Radio (Limburgs Dialect)",
@@ -2329,7 +2356,7 @@
     "tvg_name": "L1 Radio",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/l1.png",
     "url": "http://d34pj260kw1xmk.cloudfront.net/icecast/l1/radio-bb-mp3",
-    "chno": 7019
+    "chno": 7021
   },
   {
     "name": "L1 Plat-eweg (Limburgs Dialectmuziek)",
@@ -2338,7 +2365,7 @@
     "tvg_name": "L1 Plat-eweg",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/l1.png",
     "url": "https://d34pj260kw1xmk.cloudfront.net/icecast/l1/plat-eweg-bb-mp3",
-    "chno": 7020
+    "chno": 7022
   },
   {
     "name": "Omroep Brabant Radio",
@@ -2347,7 +2374,7 @@
     "tvg_name": "Omroep Brabant Radio",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepbrabant.png",
     "url": "https://av.omroepbrabant.nl/icecast/omroepbrabant/mp3hq",
-    "chno": 7021
+    "chno": 7023
   },
   {
     "name": "Omroep West Radio",
@@ -2356,7 +2383,7 @@
     "tvg_name": "Omroep West Radio",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepwest.png",
     "url": "http://icecast.stream.bbvms.com/omroepwest_radio",
-    "chno": 7022
+    "chno": 7024
   },
   {
     "name": "Omroep Zeeland Radio",
@@ -2365,7 +2392,7 @@
     "tvg_name": "Omroep Zeeland Radio",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepzeeland.png",
     "url": "https://d3isaxd2t6q8zm.cloudfront.net/icecast/omroepzeeland/omroepzeeland_radio",
-    "chno": 7023
+    "chno": 7025
   },
   {
     "name": "Tukker FM (Twents / Piratenhits)",
@@ -2374,7 +2401,7 @@
     "tvg_name": "Tukker FM",
     "logo": "",
     "url": "https://stream.tukkerfm.nl/tukkerfm",
-    "chno": 7024
+    "chno": 7026
   },
   {
     "name": "Radio Continu (Noord \u0026 Oost NL)",
@@ -2383,7 +2410,7 @@
     "tvg_name": "Radio Continu",
     "logo": "",
     "url": "https://stream.radiocontinu.nl/radiocontinu",
-    "chno": 7025
+    "chno": 7027
   },
   {
     "name": "Gigant FM (Piratenmuziek)",
@@ -2392,7 +2419,7 @@
     "tvg_name": "Gigant FM",
     "logo": "",
     "url": "https://stream.gigantfm.nl/gigantfm",
-    "chno": 7026
+    "chno": 7028
   },
   {
     "name": "Radio Gelderland",
@@ -2401,7 +2428,7 @@
     "tvg_name": "Radio Gelderland",
     "logo": "",
     "url": "https://d2od87akyl46nm.cloudfront.net/icecast/omroepgelderland/radiogelderland",
-    "chno": 7027
+    "chno": 7029
   },
   {
     "name": "Radio Noord (Groningen)",
@@ -2410,7 +2437,7 @@
     "tvg_name": "Radio Noord",
     "logo": "",
     "url": "https://d2od87akyl46nm.cloudfront.net/icecast/rtvnoord/radio",
-    "chno": 7028
+    "chno": 7030
   },
   {
     "name": "100% NL",
@@ -2419,7 +2446,7 @@
     "tvg_name": "100% NL",
     "logo": "",
     "url": "https://stream.100p.nl/100pctnl.mp3",
-    "chno": 7029
+    "chno": 7031
   },
   {
     "name": "100% NL Nederpop",
@@ -2428,7 +2455,7 @@
     "tvg_name": "100% NL Nederpop",
     "logo": "",
     "url": "https://stream.100p.nl/web02_mp3",
-    "chno": 7030
+    "chno": 7032
   },
   {
     "name": "100% NL Feest",
@@ -2437,7 +2464,7 @@
     "tvg_name": "100% NL Feest",
     "logo": "",
     "url": "https://stream.100p.nl/web03_mp3",
-    "chno": 7031
+    "chno": 7033
   },
   {
     "name": "Keizerstad Classics (Nijmegen/Arnhem)",
@@ -2446,7 +2473,7 @@
     "tvg_name": "Keizerstad Classics",
     "logo": "",
     "url": "http://server-06.stream-server.nl:8800/;stream.mp3",
-    "chno": 7032
+    "chno": 7034
   },
   {
     "name": "Radio Decibel (Randstad)",
@@ -2455,7 +2482,7 @@
     "tvg_name": "Radio Decibel",
     "logo": "",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIODECIBEL.mp3",
-    "chno": 7033
+    "chno": 7035
   },
   {
     "name": "RadioNL",
@@ -2464,7 +2491,7 @@
     "tvg_name": "RadioNL",
     "logo": "",
     "url": "https://stream.radionl.fm/radionl",
-    "chno": 7034
+    "chno": 7036
   },
   {
     "name": "Waterstad FM (Friesland)",
@@ -2473,7 +2500,7 @@
     "tvg_name": "Waterstad FM",
     "logo": "",
     "url": "https://stream.waterstadfm.nl/waterstadfm",
-    "chno": 7035
+    "chno": 7037
   },
   {
     "name": "Freez FM (Noord-NL)",
@@ -2482,7 +2509,7 @@
     "tvg_name": "Freez FM",
     "logo": "",
     "url": "https://stream.freezfm.nl/freezfm",
-    "chno": 7036
+    "chno": 7038
   },
   {
     "name": "Delta FM (Twente)",
@@ -2491,7 +2518,7 @@
     "tvg_name": "Delta FM",
     "logo": "",
     "url": "https://stream.deltafm.nl/deltafm",
-    "chno": 7037
+    "chno": 7039
   },
   {
     "name": "Studio 040 (Eindhoven)",
@@ -2500,7 +2527,7 @@
     "tvg_name": "Studio 040",
     "logo": "",
     "url": "https://stream.studio040.nl/studio040",
-    "chno": 7038
+    "chno": 7040
   },
   {
     "name": "Studio Brussel",
@@ -2931,13 +2958,53 @@
     "radio": true
   },
   {
+    "name": "Classic FM (UK)",
+    "group": "Rádio Global",
+    "tvg_id": "ClassicFM.uk",
+    "tvg_name": "Classic FM",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Classic_FM_logo.svg",
+    "url": "https://media-ice.musicradio.com/ClassicFMMP3",
+    "chno": 8035,
+    "radio": true
+  },
+  {
+    "name": "Classic FM Movies (Soundtracks)",
+    "group": "Rádio Global",
+    "tvg_id": "ClassicFMMovies.uk",
+    "tvg_name": "Classic FM Movies",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Classic_FM_logo.svg",
+    "url": "https://media-ice.musicradio.com/ClassicFMMoviesMP3",
+    "chno": 8036,
+    "radio": true
+  },
+  {
+    "name": "Classic FM Calm (Peaceful \u0026 Study)",
+    "group": "Rádio Global",
+    "tvg_id": "ClassicFMCalm.uk",
+    "tvg_name": "Classic FM Calm",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Classic_FM_logo.svg",
+    "url": "https://media-ice.musicradio.com/ClassicFMCalmMP3",
+    "chno": 8037,
+    "radio": true
+  },
+  {
+    "name": "Radio Swiss Classic (Ad-Free)",
+    "group": "Rádio Global",
+    "tvg_id": "RadioSwissClassic.ch",
+    "tvg_name": "Radio Swiss Classic",
+    "logo": "https://www.radioswissclassic.ch/social-media/rsc-web.png",
+    "url": "http://stream.srg-ssr.ch/m/rsc_de/mp3_128",
+    "chno": 8038,
+    "radio": true
+  },
+  {
     "name": "Muzaiko (24/7 Esperanto Radio)",
     "group": "Rádio Global",
     "tvg_id": "Muzaiko.eo",
     "tvg_name": "Muzaiko Esperanto",
     "logo": "",
     "url": "http://fluo.muzaiko.saluton.dk:8000/radio.mp3",
-    "chno": 8035
+    "chno": 8039
   },
   {
     "name": "Radio Habana Cuba (Esperanto)",
@@ -2946,7 +3013,7 @@
     "tvg_name": "Radio Habana Cuba Esperanto",
     "logo": "",
     "url": "https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/McW3fLhs",
-    "chno": 8036
+    "chno": 8040
   },
   {
     "name": "Bok Radio 98.9 FM (Afrikaans)",
@@ -2955,7 +3022,7 @@
     "tvg_name": "Bok Radio Afrikaans",
     "logo": "",
     "url": "http://bokradio.highquality.radiostream.co.za/",
-    "chno": 8037
+    "chno": 8041
   },
   {
     "name": "Bosveld Stereo 107.5 FM (Afrikaans)",
@@ -2964,7 +3031,7 @@
     "tvg_name": "Bosveld Stereo Afrikaans",
     "logo": "",
     "url": "http://capeant.antfarm.co.za:8000/Bosveld",
-    "chno": 8038
+    "chno": 8042
   },
   {
     "name": "Fine Music Radio (Cape Town Classical)",
@@ -2973,7 +3040,7 @@
     "tvg_name": "Fine Music Radio",
     "logo": "",
     "url": "https://edge.iono.fm/xhls/fmr_live_high.m3u8",
-    "chno": 8039
+    "chno": 8043
   },
   {
     "name": "Radio 3ZZZ 92.3 FM (Melbourne / Esperanto)",
@@ -2982,7 +3049,7 @@
     "tvg_name": "Radio 3ZZZ Esperanto",
     "logo": "",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/3ZZZ.mp3",
-    "chno": 8040
+    "chno": 8044
   },
   {
     "name": "Hitradio Namibia (Windhoek / Deutsch)",
@@ -2991,7 +3058,7 @@
     "tvg_name": "Hitradio Namibia",
     "logo": "",
     "url": "https://s37.derstream.net/hitradio-namibia.mp3",
-    "chno": 8041
+    "chno": 8045
   },
   {
     "name": "Kosmos 94.1 (Namibië / Afrikaans)",
@@ -3000,6 +3067,6 @@
     "tvg_name": "Kosmos 94.1 Afrikaans",
     "logo": "",
     "url": "https://edge.iono.fm/xice/88_high.mp3",
-    "chno": 8042
+    "chno": 8046
   }
 ]

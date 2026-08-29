@@ -217,3 +217,35 @@
   tvg_id: TropicalHouseRadio.de
   tvg_name: Tropical House Radio
   url: https://stream.technolovers.fm/tropical-house
+
+- name: Classic FM (UK)
+  group: Rádio Global
+  radio: true
+  tvg_id: ClassicFM.uk
+  tvg_name: Classic FM
+  logo: https://upload.wikimedia.org/wikipedia/commons/a/ae/Classic_FM_logo.svg
+  url: https://media-ice.musicradio.com/ClassicFMMP3
+
+- name: Classic FM Movies (Soundtracks)
+  group: Rádio Global
+  radio: true
+  tvg_id: ClassicFMMovies.uk
+  tvg_name: Classic FM Movies
+  logo: https://upload.wikimedia.org/wikipedia/commons/a/ae/Classic_FM_logo.svg
+  url: https://media-ice.musicradio.com/ClassicFMMoviesMP3
+
+- name: Classic FM Calm (Peaceful & Study)
+  group: Rádio Global
+  radio: true
+  tvg_id: ClassicFMCalm.uk
+  tvg_name: Classic FM Calm
+  logo: https://upload.wikimedia.org/wikipedia/commons/a/ae/Classic_FM_logo.svg
+  url: https://media-ice.musicradio.com/ClassicFMCalmMP3
+
+- name: Radio Swiss Classic (Ad-Free)
+  group: Rádio Global
+  radio: true
+  tvg_id: RadioSwissClassic.ch
+  tvg_name: Radio Swiss Classic
+  logo: https://www.radioswissclassic.ch/social-media/rsc-web.png
+  url: http://stream.srg-ssr.ch/m/rsc_de/mp3_128
