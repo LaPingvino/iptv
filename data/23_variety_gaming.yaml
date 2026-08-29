@@ -23,11 +23,11 @@
   tvg_id: Portal2.tv
   tvg_name: Portal 2 Live
   url: https://kiefte.eu/iptv/twitch/game/Portal%202
-- name: TamTheGamer (Tammy)
+- name: Tammy (Tammy_BlackMedia)
   group: Indie & Variety Gaming
-  tvg_id: TamTheGamer.tv
-  tvg_name: TamTheGamer
-  url: https://kiefte.eu/iptv/twitch/tamthegamer
+  tvg_id: TammyBlackMedia.tv
+  tvg_name: Tammy BlackMedia
+  url: https://kiefte.eu/iptv/twitch/tammy_blackmedia
 - name: ElanaOrama (Colony Sim & Variety)
   group: Indie & Variety Gaming
   tvg_id: ElanaOrama.tv

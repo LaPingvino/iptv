@@ -2,16 +2,6 @@
 <!DOCTYPE tv SYSTEM "xmltv.dtd">
 <tv source-info-url="https://kiefte.eu/iptv" generator-info-name="IPTV Linear 24/7 EPG Engine">
   <channel id="EsperantoTV.eo@SD"><display-name>Esperanto TV</display-name></channel>
-  <programme start="20260828204140 +0000" stop="20260828211030 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 8: Vojaĝaj planoj</title>
-    <desc lang="eo">La familio kaj gastoj planas novajn vojaĝojn tra la mondo.</desc>
-    <category lang="eo">Kurso / Komedio</category>
-  </programme>
-  <programme start="20260828211030 +0000" stop="20260828211230 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Estas: Enkonduko</title>
-    <desc lang="eo">Oficiala stacia vineto kaj enkonduko al la internacia lingvo Esperanto.</desc>
-    <category lang="eo">Vineto</category>
-  </programme>
   <programme start="20260828211230 +0000" stop="20260828215300 +0000" channel="EsperantoTV.eo@SD">
     <title lang="eo">Esperanto Senlime - Epizodo 8: Pluvo kaj suno</title>
     <desc lang="eo">Veteraj defioj dum la subĉiela vojaĝo.</desc>

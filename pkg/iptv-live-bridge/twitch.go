@@ -75,6 +75,7 @@ var (
 		"simpleflips":      true,
 		"smallant":         true,
 		"speedrun":         true,
+		"tammy_blackmedia": true,
 		"tamthegamer":      true,
 		"tasvideos":        true,
 		"tgh_sr":           true,
@@ -244,7 +245,7 @@ var creatorCircles = map[string][]string{
 	"msushi":           {"carrarium", "tgh_sr", "speedrun", "gamesdonequick"},
 
 	// Mario & Romhacks
-	"ryukahr":          {"rbpimlico", "tamthegamer", "dgr_dave", "smallant", "thabeast721", "aurateur"},
+	"ryukahr":          {"rbpimlico", "tammy_blackmedia", "dgr_dave", "smallant", "thabeast721", "aurateur"},
 	"carlsagan42":      {"rbpimlico", "juzcook", "dgr_dave", "grandpoobear", "thabeast721", "aurateur"},
 	"thabeast721":      {"grandpoobear", "aurateur", "pangaeapanga", "simpleflips", "carlsagan42", "rbpimlico"},
 	"grandpoobear":     {"thabeast721", "aurateur", "carlsagan42", "juzcook", "pangaeapanga", "rbpimlico"},
@@ -256,7 +257,8 @@ var creatorCircles = map[string][]string{
 	"failstream":       {"dgr_dave", "ryukahr", "carlsagan42", "grandpoobear", "thabeast721"},
 	"glitchcat7":       {"thabeast721", "pangaeapanga", "grandpoobear", "carlsagan42"},
 	"dgr_dave":         {"ryukahr", "rbpimlico", "carlsagan42", "smallant", "aurateur"},
-	"tamthegamer":      {"ryukahr", "dgr_dave", "carlsagan42", "rbpimlico"},
+	"tammy_blackmedia": {"ryukahr", "dgr_dave", "carlsagan42", "rbpimlico"},
+	"tamthegamer":      {"tammy_blackmedia", "ryukahr"},
 
 	// Retro, Culture & Slow TV
 	"mst3k":            {"shoutfactorytv", "worldoflongplays"},

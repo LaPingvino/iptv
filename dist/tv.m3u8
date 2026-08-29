@@ -555,8 +555,8 @@ https://kiefte.eu/iptv/twitch/game/Portal
 #EXTINF:-1 tvg-id="Portal2.tv" tvg-name="Portal 2 Live" group-title="Indie & Variety Gaming" tvg-chno="1154",Portal 2 (Top Live Streamer)
 https://kiefte.eu/iptv/twitch/game/Portal%202
 
-#EXTINF:-1 tvg-id="TamTheGamer.tv" tvg-name="TamTheGamer" group-title="Indie & Variety Gaming" tvg-chno="1155",TamTheGamer (Tammy)
-https://kiefte.eu/iptv/twitch/tamthegamer
+#EXTINF:-1 tvg-id="TammyBlackMedia.tv" tvg-name="Tammy BlackMedia" group-title="Indie & Variety Gaming" tvg-chno="1155",Tammy (Tammy_BlackMedia)
+https://kiefte.eu/iptv/twitch/tammy_blackmedia
 
 #EXTINF:-1 tvg-id="ElanaOrama.tv" tvg-name="ElanaOrama" group-title="Indie & Variety Gaming" tvg-chno="1156",ElanaOrama (Colony Sim & Variety)
 
