@@ -43,9 +43,12 @@ func TestLinearEPGGeneration(t *testing.T) {
 	}
 }
 
-func TestFallbackEmptyEPG(t *testing.T) {
-	xml := fallbackEmptyEPG()
+func TestFallbackBaselineEPG(t *testing.T) {
+	xml := fallbackBaselineEPG()
 	if !strings.Contains(xml, "Speedrun.tv") {
 		t.Errorf("unexpected fallback EPG: %s", xml)
+	}
+	if !strings.Contains(xml, "Live status unknown") {
+		t.Errorf("expected 'Live status unknown' baseline in fallback EPG")
 	}
 }

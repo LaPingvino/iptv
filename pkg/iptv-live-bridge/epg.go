@@ -52,9 +52,11 @@ func init() {
 		if b, err := os.ReadFile(dp); err == nil && len(b) > 0 {
 			epgManager.twitchXML = string(b)
 			epgManager.twitchTS = time.Now()
-			break
+			return
 		}
 	}
+	epgManager.twitchXML = fallbackBaselineEPG()
+	epgManager.twitchTS = time.Now()
 }
 
 func getTwitchEPGChannels() []EPGChannelDef {
@@ -171,7 +173,7 @@ func (m *EPGManager) GetTwitchEPG(ctx context.Context) string {
 				return string(b)
 			}
 		}
-		return fallbackEmptyEPG()
+		return fallbackBaselineEPG()
 	}
 
 	m.mu.Lock()
@@ -337,12 +339,12 @@ func (m *EPGManager) buildTwitchEPG(ctx context.Context) (string, error) {
 					title = fmt.Sprintf("%s - %s", ch.GameName, top.Title)
 					desc = fmt.Sprintf("Live on %s streaming %s with %d viewers.", top.Broadcaster.DisplayName, ch.GameName, top.ViewersCount)
 				} else {
-					title = fmt.Sprintf("%s (Standby)", ch.GameName)
-					desc = fmt.Sprintf("No active broadcast in category %s right now. Standby active.", ch.GameName)
+					title = fmt.Sprintf("%s - No username cached", ch.GameName)
+					desc = fmt.Sprintf("No active broadcast in category %s right now. Stream relay is standing by.", ch.GameName)
 				}
 			} else {
-				title = fmt.Sprintf("%s (Standby)", ch.GameName)
-				desc = fmt.Sprintf("Category %s live stream relay.", ch.GameName)
+				title = fmt.Sprintf("%s - No username cached", ch.GameName)
+				desc = fmt.Sprintf("No streamer currently cached for category %s. Stream relay is standing by.", ch.GameName)
 			}
 		} else {
 			alias := "u_" + sanitizeAlias(ch.Login)
@@ -459,8 +461,8 @@ func (m *EPGManager) buildTwitchEPG(ctx context.Context) (string, error) {
 					}
 				}
 			} else {
-				title = fmt.Sprintf("%s (Offline)", ch.Name)
-				desc = fmt.Sprintf("%s is offline. Standby slate active.", ch.Name)
+				title = fmt.Sprintf("%s - Live status unknown", ch.Name)
+				desc = fmt.Sprintf("Live status for %s is currently unknown. Stream relay is standing by.", ch.Name)
 			}
 		}
 
@@ -584,6 +586,46 @@ func (m *EPGManager) GetLinearEPG(station *LinearStation, chID, chName, lang str
 	return sb.String()
 }
 
-func fallbackEmptyEPG() string {
-	return "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<tv><channel id=\"Speedrun.tv\"><display-name>Speedrun.com 24/7</display-name></channel></tv>\n"
+func fallbackBaselineEPG() string {
+	channels := getTwitchEPGChannels()
+	now := time.Now().UTC()
+	curStart := now.Add(-1 * time.Hour).Format("20060102150405 +0000")
+	curStop := now.Add(3 * time.Hour).Format("20060102150405 +0000")
+
+	var sb strings.Builder
+	sb.WriteString("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n")
+	sb.WriteString("<!DOCTYPE tv SYSTEM \"xmltv.dtd\">\n")
+	sb.WriteString("<tv source-info-url=\"https://kiefte.eu/iptv\" generator-info-name=\"LaPingvino Twitch IPTV Live EPG Engine\">\n")
+
+	for _, ch := range channels {
+		sb.WriteString(fmt.Sprintf("  <channel id=\"%s\"><display-name>%s</display-name></channel>\n",
+			html.EscapeString(ch.ID), html.EscapeString(ch.Name)))
+
+		var title string
+		var desc string
+		var cat string = "Gaming"
+
+		if ch.IsGame {
+			title = fmt.Sprintf("%s - No username cached", ch.GameName)
+			desc = fmt.Sprintf("No streamer is currently cached for category %s. Stream relay is standing by.", ch.GameName)
+			cat = ch.GameName
+		} else {
+			name := ch.Name
+			if name == "" {
+				name = ch.Login
+			}
+			title = fmt.Sprintf("%s - Live status unknown", name)
+			desc = fmt.Sprintf("Live status for %s is currently unknown. Stream relay is standing by.", name)
+		}
+
+		sb.WriteString(fmt.Sprintf("  <programme start=\"%s\" stop=\"%s\" channel=\"%s\">\n",
+			curStart, curStop, html.EscapeString(ch.ID)))
+		sb.WriteString(fmt.Sprintf("    <title lang=\"en\">%s</title>\n", html.EscapeString(title)))
+		sb.WriteString(fmt.Sprintf("    <desc lang=\"en\">%s</desc>\n", html.EscapeString(desc)))
+		sb.WriteString(fmt.Sprintf("    <category lang=\"en\">%s</category>\n", html.EscapeString(cat)))
+		sb.WriteString("  </programme>\n")
+	}
+
+	sb.WriteString("</tv>\n")
+	return sb.String()
 }
