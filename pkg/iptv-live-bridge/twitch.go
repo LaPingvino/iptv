@@ -15,15 +15,10 @@ import (
 	"sync"
 	"time"
 
-	_ "embed"
-
 	"github.com/LaPingvino/streamglink"
 	_ "github.com/LaPingvino/streamglink/plugins/generic"
 	_ "github.com/LaPingvino/streamglink/plugins/twitch"
 )
-
-//go:embed lapingvino_follows.json
-var embeddedFollowsJSON []byte
 
 type FollowedStreamer struct {
 	BroadcasterID    string `json:"broadcaster_id"`
@@ -66,7 +61,7 @@ func loadLapingvinoFollows() {
 
 	if len(embeddedFollowsJSON) > 0 {
 		var items []FollowedStreamer
-		if err := json.Unmarshal(embeddedFollowsJSON, &items); err == nil && len(items) > 0 {
+		if err := json.Unmarshal([]byte(embeddedFollowsJSON), &items); err == nil && len(items) > 0 {
 			setFollows(items)
 			log.Printf("[Twitch] Loaded %d followed streamers for lapingvino from embedded binary data", len(items))
 		}

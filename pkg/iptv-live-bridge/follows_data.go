@@ -1,3 +1,6 @@
+package main
+
+const embeddedFollowsJSON = `
 [
   {
     "broadcaster_id": "468946143",
@@ -2171,4 +2174,4 @@
     "broadcaster_name": "MCjgp",
     "followed_at": "2016-02-28T00:26:20Z"
   }
-]
+]`
