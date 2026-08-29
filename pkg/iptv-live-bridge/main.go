@@ -288,6 +288,23 @@ func main() {
 			return
 		}
 
+		// 11b. Twitch Top Followed: twitch/followed/<rank>
+		if strings.HasPrefix(path, "twitch/followed/") {
+			rankStr := strings.TrimPrefix(path, "twitch/followed/")
+			rankStr = strings.TrimSuffix(rankStr, ".m3u8")
+			rank, _ := strconv.Atoi(rankStr)
+			if rank < 1 {
+				rank = 1
+			}
+			streamURL, err := twitchMgr.ResolveFollowedRank(r.Context(), rank)
+			if err != nil || streamURL == "" {
+				serveOfflineSlate(w, r)
+				return
+			}
+			serveTwitchM3U8(w, r, streamURL, fmt.Sprintf("followed-%d", rank))
+			return
+		}
+
 		// 12. Specific Twitch Channel: twitch/<channel>
 		if strings.HasPrefix(path, "twitch/") {
 			channel := strings.TrimPrefix(path, "twitch/")

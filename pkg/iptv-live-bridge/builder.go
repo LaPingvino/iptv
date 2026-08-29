@@ -55,6 +55,7 @@ var groupBaseChNo = map[string]int{
 	"Mario & Romhacks":            1050,
 	"Tetris":                      1100,
 	"Indie & Variety Gaming":      1150,
+	"LaPingvino Favorites":       1200,
 	"Diag":                        2000,
 	"PT Rádio":                    5000,
 	"MZ Rádio":                    5100,
@@ -386,7 +387,10 @@ func buildMasterEPG(channels []ChannelDef, distDir string) error {
 	extractLocalEPG(bahaiXML, "BahaiStudioSessions.tv@HD", finalChannels, &finalProgrammes)
 
 	// Add Live Twitch EPG
-	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	epgManager.mu.Lock()
+	epgManager.twitchXML = ""
+	epgManager.mu.Unlock()
+	ctx, cancel := context.WithTimeout(context.Background(), 25*time.Second)
 	defer cancel()
 	twitchXML := epgManager.GetTwitchEPG(ctx)
 	_ = os.WriteFile(filepath.Join(distDir, "twitch_epg.xml"), []byte(twitchXML), 0644)

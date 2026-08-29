@@ -1639,6 +1639,96 @@
     "chno": 1160
   },
   {
+    "name": "Followed Streamer #1",
+    "group": "LaPingvino Favorites",
+    "tvg_id": "FollowedStreamer1.tv",
+    "tvg_name": "Followed #1",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/followed/1",
+    "chno": 1200
+  },
+  {
+    "name": "Followed Streamer #2",
+    "group": "LaPingvino Favorites",
+    "tvg_id": "FollowedStreamer2.tv",
+    "tvg_name": "Followed #2",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/followed/2",
+    "chno": 1201
+  },
+  {
+    "name": "Followed Streamer #3",
+    "group": "LaPingvino Favorites",
+    "tvg_id": "FollowedStreamer3.tv",
+    "tvg_name": "Followed #3",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/followed/3",
+    "chno": 1202
+  },
+  {
+    "name": "Followed Streamer #4",
+    "group": "LaPingvino Favorites",
+    "tvg_id": "FollowedStreamer4.tv",
+    "tvg_name": "Followed #4",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/followed/4",
+    "chno": 1203
+  },
+  {
+    "name": "Followed Streamer #5",
+    "group": "LaPingvino Favorites",
+    "tvg_id": "FollowedStreamer5.tv",
+    "tvg_name": "Followed #5",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/followed/5",
+    "chno": 1204
+  },
+  {
+    "name": "Followed Streamer #6",
+    "group": "LaPingvino Favorites",
+    "tvg_id": "FollowedStreamer6.tv",
+    "tvg_name": "Followed #6",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/followed/6",
+    "chno": 1205
+  },
+  {
+    "name": "Followed Streamer #7",
+    "group": "LaPingvino Favorites",
+    "tvg_id": "FollowedStreamer7.tv",
+    "tvg_name": "Followed #7",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/followed/7",
+    "chno": 1206
+  },
+  {
+    "name": "Followed Streamer #8",
+    "group": "LaPingvino Favorites",
+    "tvg_id": "FollowedStreamer8.tv",
+    "tvg_name": "Followed #8",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/followed/8",
+    "chno": 1207
+  },
+  {
+    "name": "Followed Streamer #9",
+    "group": "LaPingvino Favorites",
+    "tvg_id": "FollowedStreamer9.tv",
+    "tvg_name": "Followed #9",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/followed/9",
+    "chno": 1208
+  },
+  {
+    "name": "Followed Streamer #10",
+    "group": "LaPingvino Favorites",
+    "tvg_id": "FollowedStreamer10.tv",
+    "tvg_name": "Followed #10",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/followed/10",
+    "chno": 1209
+  },
+  {
     "name": "HEVC / H.265 10-Bit Reference Ladder",
     "group": "Diag",
     "tvg_id": "HEVC10Bit.ref@HD",

@@ -11,6 +11,7 @@ import (
 	"net/url"
 	"os"
 	"path/filepath"
+	"strconv"
 	"strings"
 	"sync"
 	"time"
@@ -19,11 +20,13 @@ import (
 )
 
 type EPGChannelDef struct {
-	ID       string
-	Name     string
-	IsGame   bool
-	GameName string
-	Login    string
+	ID             string
+	Name           string
+	IsGame         bool
+	GameName       string
+	Login          string
+	IsFollowedRank bool
+	Rank           int
 }
 
 type EPGManager struct {
@@ -85,6 +88,22 @@ func getTwitchEPGChannels() []EPGChannelDef {
 
 				cleanURL := strings.Split(ch.URL, "?")[0]
 				cleanURL = strings.TrimRight(cleanURL, "/")
+
+				if strings.Contains(cleanURL, "/twitch/followed/") {
+					parts := strings.Split(cleanURL, "/twitch/followed/")
+					rank, _ := strconv.Atoi(parts[len(parts)-1])
+					if rank < 1 {
+						rank = 1
+					}
+					channels = append(channels, EPGChannelDef{
+						ID:             ch.TVGID,
+						Name:           ch.Name,
+						IsFollowedRank: true,
+						Rank:           rank,
+					})
+					continue
+				}
+
 				parts := strings.Split(cleanURL, "/")
 				if len(parts) == 0 {
 					continue
@@ -214,6 +233,9 @@ func (m *EPGManager) buildTwitchEPG(ctx context.Context) (string, error) {
 
 	var queries []string
 	for _, ch := range channels {
+		if ch.IsFollowedRank {
+			continue
+		}
 		if ch.IsGame {
 			alias := "g_" + sanitizeAlias(ch.GameName)
 			queries = append(queries, fmt.Sprintf(`
@@ -300,6 +322,8 @@ func (m *EPGManager) buildTwitchEPG(ctx context.Context) (string, error) {
 	curStop := now.Add(2 * time.Hour).Format("20060102150405 +0000")
 	nextStop := now.Add(5 * time.Hour).Format("20060102150405 +0000")
 
+	liveFollows := twitchMgr.GetRankedLiveFollows(ctx)
+
 	var sb strings.Builder
 	sb.WriteString("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n")
 	sb.WriteString("<!DOCTYPE tv SYSTEM \"xmltv.dtd\">\n")
@@ -313,7 +337,19 @@ func (m *EPGManager) buildTwitchEPG(ctx context.Context) (string, error) {
 		var desc string
 		var category string = "Gaming"
 
-		if ch.IsGame {
+		if ch.IsFollowedRank {
+			idx := ch.Rank - 1
+			if idx < len(liveFollows) {
+				s := liveFollows[idx]
+				title = fmt.Sprintf("#%d: %s - %s", ch.Rank, s.DisplayName, s.Title)
+				desc = fmt.Sprintf("Followed streamer #%d (%s) playing %s with %d viewers.", ch.Rank, s.DisplayName, s.Game, s.Viewers)
+				category = s.Game
+			} else {
+				title = fmt.Sprintf("Followed Streamer #%d (Standby)", ch.Rank)
+				desc = fmt.Sprintf("Slot reserved for live followed streamer #%d. Standby active.", ch.Rank)
+				category = "Standby"
+			}
+		} else if ch.IsGame {
 			alias := "g_" + sanitizeAlias(ch.GameName)
 			raw, exists := result.Data[alias]
 			if exists {
@@ -605,7 +641,11 @@ func fallbackBaselineEPG() string {
 		var desc string
 		var cat string = "Gaming"
 
-		if ch.IsGame {
+		if ch.IsFollowedRank {
+			title = fmt.Sprintf("Followed Streamer #%d", ch.Rank)
+			desc = fmt.Sprintf("Followed streamer slot #%d.", ch.Rank)
+			cat = "Gaming"
+		} else if ch.IsGame {
 			title = fmt.Sprintf("%s - No username cached", ch.GameName)
 			desc = fmt.Sprintf("No streamer is currently cached for category %s. Stream relay is standing by.", ch.GameName)
 			cat = ch.GameName

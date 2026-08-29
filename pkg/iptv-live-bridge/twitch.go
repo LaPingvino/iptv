@@ -537,6 +537,143 @@ func (tm *TwitchManager) resolveLapingvinoFollowedLastResort(ctx context.Context
 	return "", ""
 }
 
+type LiveStreamerInfo struct {
+	Login       string
+	DisplayName string
+	Game        string
+	Viewers     int
+	Title       string
+}
+
+var (
+	rankedFollowsMu   sync.RWMutex
+	rankedFollowsList []LiveStreamerInfo
+	rankedFollowsTime time.Time
+)
+
+func (tm *TwitchManager) GetRankedLiveFollows(ctx context.Context) []LiveStreamerInfo {
+	rankedFollowsMu.RLock()
+	if len(rankedFollowsList) > 0 && time.Since(rankedFollowsTime) < 60*time.Second {
+		list := make([]LiveStreamerInfo, len(rankedFollowsList))
+		copy(list, rankedFollowsList)
+		rankedFollowsMu.RUnlock()
+		return list
+	}
+	rankedFollowsMu.RUnlock()
+
+	lapingvinoFollowsMu.RLock()
+	logins := make([]string, len(lapingvinoFollowsList))
+	copy(logins, lapingvinoFollowsList)
+	lapingvinoFollowsMu.RUnlock()
+
+	if len(logins) == 0 {
+		return nil
+	}
+
+	var results []LiveStreamerInfo
+	chunkSize := 50
+	for i := 0; i < len(logins); i += chunkSize {
+		end := i + chunkSize
+		if end > len(logins) {
+			end = len(logins)
+		}
+		chunk := logins[i:end]
+		var subqueries []string
+		for _, l := range chunk {
+			alias := "u_" + sanitizeAlias(l)
+			subqueries = append(subqueries, fmt.Sprintf(`
+			%s: user(login: "%s") {
+				login
+				displayName
+				stream {
+					title
+					viewersCount
+					game { name }
+				}
+			}`, alias, l))
+		}
+		query := "query GetFollowedLive {\n" + strings.Join(subqueries, "\n") + "\n}"
+		payload, _ := json.Marshal(map[string]string{"query": query})
+		req, err := http.NewRequestWithContext(ctx, http.MethodPost, "https://gql.twitch.tv/gql", bytes.NewReader(payload))
+		if err != nil {
+			continue
+		}
+		req.Header.Set("Client-Id", "kimne78kx3ncx6brgo4mv6wki5h1ko")
+		req.Header.Set("Content-Type", "application/json")
+		resp, err := http.DefaultClient.Do(req)
+		if err != nil {
+			continue
+		}
+		var gData struct {
+			Data map[string]*struct {
+				Login       string `json:"login"`
+				DisplayName string `json:"displayName"`
+				Stream      *struct {
+					Title        string `json:"title"`
+					ViewersCount int    `json:"viewersCount"`
+					Game         *struct {
+						Name string `json:"name"`
+					} `json:"game"`
+				} `json:"stream"`
+			} `json:"data"`
+		}
+		_ = json.NewDecoder(resp.Body).Decode(&gData)
+		resp.Body.Close()
+
+		for _, l := range chunk {
+			alias := "u_" + sanitizeAlias(l)
+			if u, ok := gData.Data[alias]; ok && u != nil && u.Stream != nil {
+				gName := "Gaming"
+				if u.Stream.Game != nil && u.Stream.Game.Name != "" {
+					gName = u.Stream.Game.Name
+				}
+				results = append(results, LiveStreamerInfo{
+					Login:       u.Login,
+					DisplayName: u.DisplayName,
+					Game:        gName,
+					Viewers:     u.Stream.ViewersCount,
+					Title:       u.Stream.Title,
+				})
+			}
+		}
+	}
+
+	// Sort descending by viewer count
+	for i := 0; i < len(results); i++ {
+		for j := i + 1; j < len(results); j++ {
+			if results[j].Viewers > results[i].Viewers {
+				results[i], results[j] = results[j], results[i]
+			}
+		}
+	}
+
+	rankedFollowsMu.Lock()
+	rankedFollowsList = results
+	rankedFollowsTime = time.Now()
+	rankedFollowsMu.Unlock()
+
+	return results
+}
+
+func (tm *TwitchManager) ResolveFollowedRank(ctx context.Context, rank int) (string, error) {
+	if rank < 1 {
+		rank = 1
+	}
+	liveList := tm.GetRankedLiveFollows(ctx)
+	idx := rank - 1
+	if idx < len(liveList) {
+		target := liveList[idx].Login
+		log.Printf("[Twitch] Followed Rank #%d -> resolving %s (%d viewers)", rank, target, liveList[idx].Viewers)
+		return tm.Resolve(ctx, target)
+	}
+
+	// If fewer streamers are live than rank requested, fallback to rank 1 or safety stream
+	if len(liveList) > 0 {
+		return tm.Resolve(ctx, liveList[0].Login)
+	}
+	return tm.Resolve(ctx, "speedrun")
+}
+
 func (tm *TwitchManager) resolveSingle(ctx context.Context, channel string) (string, error) {
 	targetURL := fmt.Sprintf("https://www.twitch.tv/%s", channel)
 	st, err := tm.session.Best(ctx, targetURL)
