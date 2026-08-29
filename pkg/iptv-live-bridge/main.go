@@ -42,9 +42,26 @@ func main() {
 		}
 	}
 
+	buildDist := flag.Bool("build-dist", false, "Compile playlists and master EPG files from data/ into dist/ then exit")
 	flag.IntVar(&Port, "port", Port, "HTTP listen port")
 	flag.StringVar(&MediaDir, "media-dir", MediaDir, "Media root directory")
 	flag.Parse()
+
+	if *buildDist {
+		dataDir := filepath.Join(ProjectDir, "data")
+		distDir := filepath.Join(ProjectDir, "dist")
+		if flag.NArg() > 0 {
+			dataDir = flag.Arg(0)
+		}
+		if flag.NArg() > 1 {
+			distDir = flag.Arg(1)
+		}
+		if err := RunBuildDist(dataDir, distDir); err != nil {
+			log.Fatalf("[Builder] Fatal error: %v", err)
+		}
+		log.Printf("[Builder] All distribution files successfully generated in %s", distDir)
+		os.Exit(0)
+	}
 
 	bvnEngine.SetPort(Port)
 

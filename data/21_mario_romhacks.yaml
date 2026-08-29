@@ -63,3 +63,8 @@
   tvg_id: DGR.tv
   tvg_name: DGR
   url: https://kiefte.eu/iptv/twitch/dgr_dave
+- name: RBPimlico (Mario Maker & Kaizo)
+  group: Mario & Romhacks
+  tvg_id: RBPimlico.tv
+  tvg_name: RBPimlico
+  url: https://kiefte.eu/iptv/twitch/rbpimlico

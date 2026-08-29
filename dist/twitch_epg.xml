@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv SYSTEM "xmltv.dtd">
+<tv source-info-url="https://kiefte.eu/iptv" generator-info-name="IPTV Live Twitch Real-Time EPG Engine">
+  <channel id="Speedrun.tv"><display-name>Speedrun.com 24/7</display-name></channel>
+  <programme start="20260829003003 +0000" stop="20260829043003 +0000" channel="Speedrun.tv">
+    <title lang="en">World Record Speedruns 24/7 | 100% in 7:26:40 by @SwayNC</title>
+    <desc lang="en">Live on Speedrun playing Paper Mario: The Thousand-Year Door with 24 viewers</desc>
+    <category lang="en">Paper Mario: The Thousand-Year Door</category>
+  </programme>
+  <channel id="GamesDoneQuick.tv"><display-name>Games Done Quick</display-name></channel>
+  <programme start="20260829003003 +0000" stop="20260829043003 +0000" channel="GamesDoneQuick.tv">
+    <title lang="en">[REPLAY] gamescom GDQ 2026 supports the Gaming for Democracy initiative — Day 1 Replay !donate !schedule</title>
+    <desc lang="en">Live on GamesDoneQuick playing Games Done Quick with 884 viewers</desc>
+    <category lang="en">Games Done Quick</category>
+  </programme>
+  <channel id="ESAMarathon.tv"><display-name>European Speedrunner Assembly</display-name></channel>
+  <programme start="20260829003003 +0000" stop="20260829043003 +0000" channel="ESAMarathon.tv">
+    <title lang="en">↪ Rerun - A Bug&#39;s Life [Any%] by OddKara - #ESAWinter26</title>
+    <desc lang="en">Live on ESAMarathon playing A Bug&#39;s Life with 130 viewers</desc>
+    <category lang="en">A Bug&#39;s Life</category>
+  </programme>
+  <channel id="TASVideos.tv"><display-name>TASVideos</display-name></channel>
+  <programme start="20260829003003 +0000" stop="20260829043003 +0000" channel="TASVideos.tv">
+    <title lang="en">TASVideos (Offline)</title>
+    <desc lang="en">TASVideos is currently offline.</desc>
+    <category lang="en">Gaming</category>
+  </programme>
+  <channel id="MitchFlowerPower.tv"><display-name>MitchFlowerPower</display-name></channel>
+  <programme start="20260829003003 +0000" stop="20260829043003 +0000" channel="MitchFlowerPower.tv">
+    <title lang="en">MitchFlowerPower (Offline)</title>
+    <desc lang="en">MitchFlowerPower is currently offline.</desc>
+    <category lang="en">Gaming</category>
+  </programme>
+  <channel id="SmallAnt.tv"><display-name>SmallAnt</display-name></channel>
+  <programme start="20260829003003 +0000" stop="20260829043003 +0000" channel="SmallAnt.tv">
+    <title lang="en">[Relay: Linkus7] The Legend of Zelda: The Wind Waker</title>
+    <desc lang="en">SmallAnt is offline. Auto-relaying Ant Colony teammate Linkus7 (1384 viewers).</desc>
+    <category lang="en">The Legend of Zelda: The Wind Waker</category>
+  </programme>
+  <channel id="GrandPOOBear.tv"><display-name>GrandPOOBear</display-name></channel>
+  <programme start="20260829003003 +0000" stop="20260829043003 +0000" channel="GrandPOOBear.tv">
+    <title lang="en">[Relay: LaVanGFan] Star Citizen</title>
+    <desc lang="en">GrandPOOBear is offline. Auto-relaying Twitch Ambassadors teammate LaVanGFan (4 viewers).</desc>
+    <category lang="en">Star Citizen</category>
+  </programme>
+  <channel id="SimpleFlips.tv"><display-name>SimpleFlips</display-name></channel>
+  <programme start="20260829003003 +0000" stop="20260829043003 +0000" channel="SimpleFlips.tv">
+    <title lang="en">[Relay: Nesamons] Pokémon</title>
+    <desc lang="en">SimpleFlips is offline. Auto-relaying Schmove teammate Nesamons (58 viewers).</desc>
+    <category lang="en">Pokémon</category>
+  </programme>
+  <channel id="Ryukahr.tv"><display-name>Ryukahr</display-name></channel>
+  <programme start="20260829003003 +0000" stop="20260829043003 +0000" channel="Ryukahr.tv">
+    <title lang="en">Ryukahr (Offline)</title>
+    <desc lang="en">Ryukahr is currently offline.</desc>
+    <category lang="en">Gaming</category>
+  </programme>
+  <channel id="PangaeaPanga.tv"><display-name>PangaeaPanga</display-name></channel>
+  <programme start="20260829003003 +0000" stop="20260829043003 +0000" channel="PangaeaPanga.tv">
+    <title lang="en">PangaeaPanga (Offline)</title>
+    <desc lang="en">PangaeaPanga is currently offline. Last broadcast was Super Mario Sunshine.</desc>
+    <category lang="en">Gaming</category>
+  </programme>
+  <channel id="CarlSagan42.tv"><display-name>CarlSagan42</display-name></channel>
+  <programme start="20260829003003 +0000" stop="20260829043003 +0000" channel="CarlSagan42.tv">
+    <title lang="en">[Relay: PJDiCesare] FINAL FANTASY III</title>
+    <desc lang="en">CarlSagan42 is offline. Auto-relaying Speed Demos Archive teammate PJDiCesare (116 viewers).</desc>
+    <category lang="en">FINAL FANTASY III</category>
+  </programme>
+  <channel id="Aurateur.tv"><display-name>Aurateur</display-name></channel>
+  <programme start="20260829003003 +0000" stop="20260829043003 +0000" channel="Aurateur.tv">
+    <title lang="en">[Relay: LilAggy] Star Wars Zero Company</title>
+    <desc lang="en">Aurateur is offline. Auto-relaying GG Talent Group teammate LilAggy (1227 viewers).</desc>
+    <category lang="en">Star Wars Zero Company</category>
+  </programme>
+  <channel id="HardDrop.tv"><display-name>Hard Drop Tetris</display-name></channel>
+  <programme start="20260829003003 +0000" stop="20260829043003 +0000" channel="HardDrop.tv">
+    <title lang="en">Hard Drop Tetris (Offline)</title>
+    <desc lang="en">Hard Drop Tetris is currently offline. Last broadcast was Teamfight Tactics.</desc>
+    <category lang="en">Gaming</category>
+  </programme>
+  <channel id="ClassicTetris.tv"><display-name>Classic Tetris World Championship</display-name></channel>
+  <programme start="20260829003003 +0000" stop="20260829043003 +0000" channel="ClassicTetris.tv">
+    <title lang="en">Classic Tetris World Championship (Offline)</title>
+    <desc lang="en">Classic Tetris World Championship is currently offline. Last broadcast was Tetris.</desc>
+    <category lang="en">Gaming</category>
+  </programme>
+  <channel id="DGR.tv"><display-name>DGR</display-name></channel>
+  <programme start="20260829003003 +0000" stop="20260829043003 +0000" channel="DGR.tv">
+    <title lang="en">DGR (Offline)</title>
+    <desc lang="en">DGR is currently offline.</desc>
+    <category lang="en">Gaming</category>
+  </programme>
+  <channel id="BobRoss.tv"><display-name>Bob Ross</display-name></channel>
+  <programme start="20260829003003 +0000" stop="20260829043003 +0000" channel="BobRoss.tv">
+    <title lang="en">A Happy Little Weekend Marathon!</title>
+    <desc lang="en">Live on BobRoss playing Art with 709 viewers</desc>
+    <category lang="en">Art</category>
+  </programme>
+  <channel id="MST3K.tv"><display-name>Mystery Science Theater 3000</display-name></channel>
+  <programme start="20260829003003 +0000" stop="20260829043003 +0000" channel="MST3K.tv">
+    <title lang="en">All riffs, all the time. 24/7 MST3K episodes (and some Cinematic Titanic, Rifftrax &amp; The Film Crew too!)</title>
+    <desc lang="en">Live on MST3K playing Always On with 147 viewers</desc>
+    <category lang="en">Always On</category>
+  </programme>
+  <channel id="ShoutFactoryTV.tv"><display-name>Shout! Factory TV</display-name></channel>
+  <programme start="20260829003003 +0000" stop="20260829043003 +0000" channel="ShoutFactoryTV.tv">
+    <title lang="en">Shout! Factory TV</title>
+    <desc lang="en">Live Twitch broadcast</desc>
+    <category lang="en">Gaming</category>
+  </programme>
+  <channel id="LofiGirl.tv"><display-name>Lofi Girl</display-name></channel>
+  <programme start="20260829003003 +0000" stop="20260829043003 +0000" channel="LofiGirl.tv">
+    <title lang="en">lofi hip hop radio 📚  beats to relax/study to</title>
+    <desc lang="en">Live on LofiGirl playing Music with 225 viewers</desc>
+    <category lang="en">Music</category>
+  </programme>
+  <channel id="Monstercat.tv"><display-name>Monstercat</display-name></channel>
+  <programme start="20260829003003 +0000" stop="20260829043003 +0000" channel="Monstercat.tv">
+    <title lang="en">Monstercat (Offline)</title>
+    <desc lang="en">Monstercat is currently offline. Last broadcast was Music.</desc>
+    <category lang="en">Gaming</category>
+  </programme>
+  <channel id="NASALive.tv"><display-name>NASA Live</display-name></channel>
+  <programme start="20260829003003 +0000" stop="20260829043003 +0000" channel="NASALive.tv">
+    <title lang="en">NASA Live (Offline)</title>
+    <desc lang="en">NASA Live is currently offline.</desc>
+    <category lang="en">Gaming</category>
+  </programme>
+</tv>

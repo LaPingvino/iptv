@@ -5,4 +5,13 @@ github.com/LaPingvino/streamglink/plugin
 github.com/LaPingvino/streamglink/plugins/generic
 github.com/LaPingvino/streamglink/plugins/twitch
 github.com/LaPingvino/streamglink/stream
+# github.com/ulikunitz/xz v0.5.16
+## explicit; go 1.20
+github.com/ulikunitz/xz
+github.com/ulikunitz/xz/internal/hash
+github.com/ulikunitz/xz/internal/xlog
+github.com/ulikunitz/xz/lzma
+# gopkg.in/yaml.v3 v3.0.1
+## explicit
+gopkg.in/yaml.v3
 # github.com/LaPingvino/streamglink => /home/joop/streamglink

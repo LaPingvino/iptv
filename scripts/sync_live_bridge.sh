@@ -28,6 +28,7 @@ fi
 PKG_FILE=$(ls -1t iptv-live-bridge-*.pkg.tar.zst 2>/dev/null | head -n 1)
 if [ -n "$PKG_FILE" ]; then
   pacman -U --noconfirm "$PKG_FILE"
+else
   echo "⚠️ Warning: Package file not found, compiling Go binary directly."
   (cd "${PKG_DIR}" && go build -mod=vendor -ldflags="-s -w" -o /usr/bin/iptv-live-bridge .)
   chmod 755 /usr/bin/iptv-live-bridge
@@ -39,10 +40,9 @@ mkdir -p /var/lib/iptv-live-bridge/dist
 mkdir -p /var/lib/iptv-live-bridge/esperantotv
 mkdir -p /var/lib/iptv-live-bridge/bahaitv
 
-echo "3. Syncing master playlists & EPG distribution files..."
-if [ -d "${PROJECT_DIR}/dist" ]; then
-  rsync -a "${PROJECT_DIR}/dist/" /var/lib/iptv-live-bridge/dist/
-fi
+echo "3. Compiling master playlists & EPG distribution files via Go builder..."
+/usr/bin/iptv-live-bridge -build-dist "${PROJECT_DIR}/data" "${PROJECT_DIR}/dist"
+rsync -a "${PROJECT_DIR}/dist/" /var/lib/iptv-live-bridge/dist/
 
 echo "4. Syncing Esperanto TV media library (with hardlinks to save disk)..."
 if [ -d "${PKG_DIR}/esperantotv" ]; then
