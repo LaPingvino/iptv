@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bytes"
 	"context"
 	"encoding/json"
 	"fmt"
@@ -8,6 +9,8 @@ import (
 	"log"
 	"net/http"
 	"net/url"
+	"os"
+	"path/filepath"
 	"strings"
 	"sync"
 	"time"
@@ -16,6 +19,61 @@ import (
 	_ "github.com/LaPingvino/streamglink/plugins/generic"
 	_ "github.com/LaPingvino/streamglink/plugins/twitch"
 )
+
+type FollowedStreamer struct {
+	BroadcasterID    string `json:"broadcaster_id"`
+	BroadcasterLogin string `json:"broadcaster_login"`
+	BroadcasterName  string `json:"broadcaster_name"`
+}
+
+var (
+	lapingvinoFollowsMu   sync.RWMutex
+	lapingvinoFollowsList []string
+	lapingvinoFollowsSet  = make(map[string]bool)
+	liveFollowsCache      []string
+	liveFollowsCacheTime  time.Time
+)
+
+func init() {
+	loadLapingvinoFollows()
+}
+
+func loadLapingvinoFollows() {
+	paths := []string{
+		filepath.Join(ProjectDir, "data", "lapingvino_follows.json"),
+		filepath.Join(MediaDir, "data", "lapingvino_follows.json"),
+		"/home/joop/iptv/data/lapingvino_follows.json",
+		"/var/lib/iptv-live-bridge/data/lapingvino_follows.json",
+	}
+	for _, p := range paths {
+		b, err := os.ReadFile(p)
+		if err != nil || len(b) == 0 {
+			continue
+		}
+		var items []FollowedStreamer
+		if err := json.Unmarshal(b, &items); err == nil && len(items) > 0 {
+			lapingvinoFollowsMu.Lock()
+			lapingvinoFollowsList = make([]string, 0, len(items))
+			lapingvinoFollowsSet = make(map[string]bool, len(items))
+			for _, item := range items {
+				l := strings.ToLower(item.BroadcasterLogin)
+				if l != "" {
+					lapingvinoFollowsList = append(lapingvinoFollowsList, l)
+					lapingvinoFollowsSet[l] = true
+				}
+			}
+			lapingvinoFollowsMu.Unlock()
+			log.Printf("[Twitch] Loaded %d followed streamers for lapingvino from %s", len(lapingvinoFollowsList), p)
+			return
+		}
+	}
+}
+
+func isLapingvinoFollow(login string) bool {
+	lapingvinoFollowsMu.RLock()
+	defer lapingvinoFollowsMu.RUnlock()
+	return lapingvinoFollowsSet[strings.ToLower(login)]
+}
 
 type CachedStream struct {
 	URL       string
@@ -386,7 +444,97 @@ func (tm *TwitchManager) Resolve(ctx context.Context, channel string) (string, e
 		}
 	}
 
+	// 7. Ultimate Last Resort: Check any live streamer from lapingvino's followed channels!
+	if fallbackURL, fallbackLogin := tm.resolveLapingvinoFollowedLastResort(ctx); fallbackURL != "" {
+		log.Printf("[Twitch] %s exhausted all fallbacks -> routed to lapingvino followed last-resort '%s'", channel, fallbackLogin)
+		return fallbackURL, nil
+	}
+
 	return "", fmt.Errorf("channel %s and all fallbacks offline", channel)
+}
+
+func (tm *TwitchManager) resolveLapingvinoFollowedLastResort(ctx context.Context) (string, string) {
+	lapingvinoFollowsMu.RLock()
+	list := make([]string, len(lapingvinoFollowsList))
+	copy(list, lapingvinoFollowsList)
+	lapingvinoFollowsMu.RUnlock()
+
+	if len(list) == 0 {
+		return "", ""
+	}
+
+	// 1. Check live follows cache (refresh every 90s)
+	lapingvinoFollowsMu.RLock()
+	if len(liveFollowsCache) > 0 && time.Since(liveFollowsCacheTime) < 90*time.Second {
+		candidates := liveFollowsCache
+		lapingvinoFollowsMu.RUnlock()
+		for _, cand := range candidates {
+			if streamURL, err := tm.resolveSingle(ctx, cand); err == nil {
+				return streamURL, cand
+			}
+		}
+	} else {
+		lapingvinoFollowsMu.RUnlock()
+	}
+
+	// 2. Query live status for followed channels (batch check in chunks of 50)
+	var liveCandidates []string
+	chunkSize := 50
+	for i := 0; i < len(list) && len(liveCandidates) < 15; i += chunkSize {
+		end := i + chunkSize
+		if end > len(list) {
+			end = len(list)
+		}
+		chunk := list[i:end]
+		var subqueries []string
+		for _, l := range chunk {
+			alias := "u_" + sanitizeAlias(l)
+			subqueries = append(subqueries, fmt.Sprintf(`%s: user(login: "%s") { stream { viewersCount } }`, alias, l))
+		}
+		query := "query CheckLiveFollows {\n" + strings.Join(subqueries, "\n") + "\n}"
+		payload, _ := json.Marshal(map[string]string{"query": query})
+		req, err := http.NewRequestWithContext(ctx, http.MethodPost, "https://gql.twitch.tv/gql", bytes.NewReader(payload))
+		if err != nil {
+			continue
+		}
+		req.Header.Set("Client-Id", "kimne78kx3ncx6brgo4mv6wki5h1ko")
+		req.Header.Set("Content-Type", "application/json")
+		resp, err := http.DefaultClient.Do(req)
+		if err != nil {
+			continue
+		}
+		var res struct {
+			Data map[string]*struct {
+				Stream *struct {
+					ViewersCount int `json:"viewersCount"`
+				} `json:"stream"`
+			} `json:"data"`
+		}
+		_ = json.NewDecoder(resp.Body).Decode(&res)
+		resp.Body.Close()
+
+		for _, l := range chunk {
+			alias := "u_" + sanitizeAlias(l)
+			if u, ok := res.Data[alias]; ok && u != nil && u.Stream != nil {
+				liveCandidates = append(liveCandidates, l)
+			}
+		}
+	}
+
+	if len(liveCandidates) > 0 {
+		lapingvinoFollowsMu.Lock()
+		liveFollowsCache = liveCandidates
+		liveFollowsCacheTime = time.Now()
+		lapingvinoFollowsMu.Unlock()
+
+		for _, cand := range liveCandidates {
+			if streamURL, err := tm.resolveSingle(ctx, cand); err == nil {
+				return streamURL, cand
+			}
+		}
+	}
+
+	return "", ""
 }
 
 func (tm *TwitchManager) resolveSingle(ctx context.Context, channel string) (string, error) {
@@ -556,8 +704,21 @@ func (tm *TwitchManager) ResolveGame(ctx context.Context, gameName, bias string)
 	var topLogin string
 	maxViewers := 0
 
-	// Check bias
-	if bias == "romhack" || bias == "nes" {
+	// Priority 1: Bias towards streamers followed by lapingvino for this game category!
+	for _, e := range edges {
+		login := strings.ToLower(e.Node.Broadcaster.Login)
+		if blacklistedStreamers[login] {
+			continue
+		}
+		if isLapingvinoFollow(login) {
+			log.Printf("[Twitch] Game '%s' -> prioritizing lapingvino followed streamer '%s' (%d viewers)", cleanName, login, e.Node.ViewersCount)
+			topLogin = e.Node.Broadcaster.Login
+			break
+		}
+	}
+
+	// Priority 2: Check keyword bias (romhack or nes)
+	if topLogin == "" && (bias == "romhack" || bias == "nes") {
 		for _, e := range edges {
 			n := e.Node
 			login := strings.ToLower(n.Broadcaster.Login)
