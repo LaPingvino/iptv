@@ -624,14 +624,18 @@ func (tm *TwitchManager) ResolveFollowedRank(ctx context.Context, rank int) (str
 	if idx < len(liveList) {
 		target := liveList[idx].Login
 		log.Printf("[Twitch] Followed Rank #%d -> resolving %s (%d viewers)", rank, target, liveList[idx].Viewers)
-		return tm.Resolve(ctx, target)
+		if streamURL, err := tm.resolveSingle(ctx, target); err == nil {
+			return streamURL, nil
+		}
 	}
 
-	// If fewer streamers are live than rank requested, fallback to rank 1 or safety stream
-	if len(liveList) > 0 {
-		return tm.Resolve(ctx, liveList[0].Login)
+	// If fewer streamers are live than rank requested or target failed, try other live candidates
+	for _, s := range liveList {
+		if streamURL, err := tm.resolveSingle(ctx, s.Login); err == nil {
+			return streamURL, nil
+		}
 	}
-	return tm.Resolve(ctx, "speedrun")
+	return tm.resolveSingle(ctx, "speedrun")
 }
 
 func (tm *TwitchManager) resolveSingle(ctx context.Context, channel string) (string, error) {
