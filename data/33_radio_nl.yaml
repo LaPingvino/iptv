@@ -46,6 +46,12 @@
   tvg_name: Radio 538
   logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/538.png
   url: https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO538.mp3
+- name: Radio 538 Ibiza (Sunset & Deep House)
+  group: NL Rádio
+  tvg_id: Radio538Ibiza.nl
+  tvg_name: Radio 538 Ibiza
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/538.png
+  url: https://playerservices.streamtheworld.com/api/livestream-redirect/TLPSTR19.mp3
 - name: SLAM!
   group: NL Rádio
   tvg_id: SLAM.nl

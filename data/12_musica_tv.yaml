@@ -33,6 +33,11 @@
   tvg_id: DanceTV.nl
   tvg_name: Dance TV
   url: https://m1b2.worldcast.tv/dancetelevisionone/2/dancetelevisionone.m3u8
+- name: DanceTV Deep House District (Sunset & Melodic 1080p)
+  group: Música & Video
+  tvg_id: DanceTVDeepHouse.nl@HD
+  tvg_name: DanceTV Deep House
+  url: https://m1b2.worldcast.tv/dancetelevisiontwo/dancetelevisiontwo.m3u8
 - name: Trace Toca (Kizomba / Zouk / PALOP)
   group: Música & Video
   tvg_id: TraceToca.fr@HD

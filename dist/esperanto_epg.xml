@@ -2,16 +2,6 @@
 <!DOCTYPE tv SYSTEM "xmltv.dtd">
 <tv source-info-url="https://kiefte.eu/iptv" generator-info-name="IPTV Linear 24/7 EPG Engine">
   <channel id="EsperantoTV.eo@SD"><display-name>Esperanto TV</display-name></channel>
-  <programme start="20260828220540 +0000" stop="20260828222450 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Mazi en Gondolando</title>
-    <desc lang="eo">Klasika animacia Esperanto-kurso kun Mazi, Silvia kaj Bob.</desc>
-    <category lang="eo">Animacio</category>
-  </programme>
-  <programme start="20260828222450 +0000" stop="20260828222650 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Estas: Enkonduko</title>
-    <desc lang="eo">Oficiala stacia vineto kaj enkonduko al la internacia lingvo Esperanto.</desc>
-    <category lang="eo">Vineto</category>
-  </programme>
   <programme start="20260828222650 +0000" stop="20260828225530 +0000" channel="EsperantoTV.eo@SD">
     <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 9: Trajnoj kaj biletoj</title>
     <desc lang="eo">Aventuroj ĉe la stacidomo.</desc>
@@ -2466,5 +2456,25 @@
     <title lang="eo">Esperanto Senlime - Epizodo 12: Plaĝa tago</title>
     <desc lang="eo">Amuzaj ludoj kaj defioj ĉe la marbordo.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20260901221240 +0000" stop="20260901221440 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Enkonduko</title>
+    <desc lang="eo">Oficiala stacia vineto kaj enkonduko al la internacia lingvo Esperanto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20260901221440 +0000" stop="20260901222320 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20260901222320 +0000" stop="20260901222520 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Enkonduko</title>
+    <desc lang="eo">Oficiala stacia vineto kaj enkonduko al la internacia lingvo Esperanto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20260901222520 +0000" stop="20260901223910 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 13: Sur la strando</title>
+    <desc lang="eo">Someraj ferioj kaj amuzaj agadoj ĉe la maro.</desc>
+    <category lang="eo">Kurso / Komedio</category>
   </programme>
 </tv>

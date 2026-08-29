@@ -186,3 +186,11 @@
   tvg_id: WLGI.us
   tvg_name: "Radio Bahai"
   url: https://wlgi.streamguys1.com/live
+
+- name: 24/7 EDM Radio
+  group: Rádio Global
+  radio: true
+  tvg_id: 247EDMRadio.com
+  tvg_name: 24/7 EDM Radio
+  logo: https://usercontent.one/wp/247edmradio.com/wp-content/uploads/2020/10/cropped-247-EDM-Radio.jpg
+  url: https://ec6.yesstreaming.net:1455/stream
