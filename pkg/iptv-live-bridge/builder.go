@@ -66,6 +66,7 @@ var groupBaseChNo = map[string]int{
 }
 
 var epgSourceHeaders = []string{
+	"https://kiefte.eu/iptv/epg.xml.gz",
 	"https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/epg.xml.gz",
 	"https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-m3upt.xml.xz",
 	"https://raw.githubusercontent.com/Free-TV/IPTV/master/epg.xml.gz",

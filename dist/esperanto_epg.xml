@@ -2,14 +2,9 @@
 <!DOCTYPE tv SYSTEM "xmltv.dtd">
 <tv source-info-url="https://kiefte.eu/iptv" generator-info-name="IPTV Linear 24/7 EPG Engine">
   <channel id="EsperantoTV.eo@SD"><display-name>Esperanto TV</display-name></channel>
-  <programme start="20260828012930 +0000" stop="20260828013130 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Estas: Enkonduko</title>
-    <desc lang="eo">Oficiala stacia vineto kaj enkonduko al la internacia lingvo Esperanto.</desc>
-    <category lang="eo">Vineto</category>
-  </programme>
   <programme start="20260828013130 +0000" stop="20260828015940 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 10</title>
-    <desc lang="eo">Epizodo 10 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 10: Aventuro en la urbo</title>
+    <desc lang="eo">Esplorado de nova urbo kaj renkontoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260828015940 +0000" stop="20260828020140 +0000" channel="EsperantoTV.eo@SD">
@@ -18,8 +13,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828020140 +0000" stop="20260828022850 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 10</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 10).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 10: Mangirdito scias kion vi faris</title>
+    <desc lang="eo">Misteraj ludoj kaj teamaj taktikoj.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260828022850 +0000" stop="20260828023050 +0000" channel="EsperantoTV.eo@SD">
@@ -48,8 +43,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828025830 +0000" stop="20260828032730 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 11</title>
-    <desc lang="eo">Epizodo 11 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 11: La hotelo</title>
+    <desc lang="eo">Restado en hotelo kun neatenditaj surprizoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260828032730 +0000" stop="20260828032930 +0000" channel="EsperantoTV.eo@SD">
@@ -58,8 +53,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828032930 +0000" stop="20260828040400 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 11</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 11).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 11: Supren, suben kaj akven</title>
+    <desc lang="eo">Akvo-defioj kaj sportaj agadoj.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260828040400 +0000" stop="20260828040600 +0000" channel="EsperantoTV.eo@SD">
@@ -88,8 +83,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828043850 +0000" stop="20260828050650 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 12</title>
-    <desc lang="eo">Epizodo 12 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 12: La restoracio</title>
+    <desc lang="eo">Mendo de manĝaĵoj kaj lingvaj defioj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260828050650 +0000" stop="20260828050850 +0000" channel="EsperantoTV.eo@SD">
@@ -98,8 +93,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828050850 +0000" stop="20260828055150 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 12</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 12).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 12: Plaĝa tago</title>
+    <desc lang="eo">Amuzaj ludoj kaj defioj ĉe la marbordo.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260828055150 +0000" stop="20260828055350 +0000" channel="EsperantoTV.eo@SD">
@@ -118,8 +113,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828060430 +0000" stop="20260828061820 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 13</title>
-    <desc lang="eo">Epizodo 13 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 13: Sur la strando</title>
+    <desc lang="eo">Someraj ferioj kaj amuzaj agadoj ĉe la maro.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260828061820 +0000" stop="20260828062020 +0000" channel="EsperantoTV.eo@SD">
@@ -128,8 +123,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828062020 +0000" stop="20260828065800 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 13</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 13).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 13: La voko de Ĥthuluzo</title>
+    <desc lang="eo">Mistera vespera defio kun mitologia etoso.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260828065800 +0000" stop="20260828070000 +0000" channel="EsperantoTV.eo@SD">
@@ -148,8 +143,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828071210 +0000" stop="20260828074050 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 14</title>
-    <desc lang="eo">Epizodo 14 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 14: La muzeo</title>
+    <desc lang="eo">Kultura vizito al muzeo kun historiaj sekretoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260828074050 +0000" stop="20260828074250 +0000" channel="EsperantoTV.eo@SD">
@@ -158,8 +153,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828074250 +0000" stop="20260828075730 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 14</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 14).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 14: Nia plej granda perdo</title>
+    <desc lang="eo">Dramaj momentoj kaj poentaj ŝanĝoj.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260828075730 +0000" stop="20260828075930 +0000" channel="EsperantoTV.eo@SD">
@@ -178,8 +173,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828080800 +0000" stop="20260828083820 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 15</title>
-    <desc lang="eo">Epizodo 15 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 15: La adiaŭa vespero</title>
+    <desc lang="eo">Gaja vespero antaŭ la reveno hejmen.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260828083820 +0000" stop="20260828084020 +0000" channel="EsperantoTV.eo@SD">
@@ -188,8 +183,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828084020 +0000" stop="20260828090910 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 15</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 15).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 15: Gajni plej gravas</title>
+    <desc lang="eo">La granda antaŭ-finala konkurso.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260828090910 +0000" stop="20260828091110 +0000" channel="EsperantoTV.eo@SD">
@@ -208,8 +203,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828091630 +0000" stop="20260828094000 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 16</title>
-    <desc lang="eo">Epizodo 16 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 16: Ĝis revido, amikoj!</title>
+    <desc lang="eo">La granda finalo de Pasporto al la Tuta Mondo.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260828094000 +0000" stop="20260828094200 +0000" channel="EsperantoTV.eo@SD">
@@ -218,8 +213,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828094200 +0000" stop="20260828100550 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 16</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 16).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 16: Ni nur parolas Esperanton</title>
+    <desc lang="eo">La grandioza finalo de Esperanto Senlime Sezono 1!</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260828100550 +0000" stop="20260828100750 +0000" channel="EsperantoTV.eo@SD">
@@ -228,8 +223,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828100750 +0000" stop="20260828103400 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 1</title>
-    <desc lang="eo">Epizodo 1 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260828103400 +0000" stop="20260828103600 +0000" channel="EsperantoTV.eo@SD">
@@ -238,8 +233,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828103600 +0000" stop="20260828111610 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 1</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 1).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 1: La unua serio en Esperanto</title>
+    <desc lang="eo">La teamoj ekas sian grandan vojaĝon tra Eŭropo.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260828111610 +0000" stop="20260828111810 +0000" channel="EsperantoTV.eo@SD">
@@ -268,8 +263,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828113710 +0000" stop="20260828120440 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 2</title>
-    <desc lang="eo">Epizodo 2 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260828120440 +0000" stop="20260828120640 +0000" channel="EsperantoTV.eo@SD">
@@ -278,8 +273,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828120640 +0000" stop="20260828123440 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 2</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 2).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 2: Konstruado per dolĉaĵoj kaj spagetoj</title>
+    <desc lang="eo">Krea defio uzanta nur dolĉaĵojn kaj spagetojn.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260828123440 +0000" stop="20260828123640 +0000" channel="EsperantoTV.eo@SD">
@@ -308,8 +303,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828125330 +0000" stop="20260828132030 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 3</title>
-    <desc lang="eo">Epizodo 3 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260828132030 +0000" stop="20260828132230 +0000" channel="EsperantoTV.eo@SD">
@@ -318,8 +313,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828132230 +0000" stop="20260828135100 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 3</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 3).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 3: Riskante la vivon sur du radoj</title>
+    <desc lang="eo">Biciklaj defioj kaj rapidaj kuroj tra la urbo.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260828135100 +0000" stop="20260828135300 +0000" channel="EsperantoTV.eo@SD">
@@ -348,8 +343,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828140950 +0000" stop="20260828143810 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 4</title>
-    <desc lang="eo">Epizodo 4 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 4: Surprizo en la kuirejo</title>
+    <desc lang="eo">Kuirartaj aventuroj kaj nekutimaj petoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260828143810 +0000" stop="20260828144010 +0000" channel="EsperantoTV.eo@SD">
@@ -358,8 +353,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828144010 +0000" stop="20260828151050 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 4</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 4).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 4: Filmproduktado en trajnoj</title>
+    <desc lang="eo">Kreado de filmetoj dum veturado per trajno.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260828151050 +0000" stop="20260828151250 +0000" channel="EsperantoTV.eo@SD">
@@ -388,8 +383,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828153030 +0000" stop="20260828155930 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 5</title>
-    <desc lang="eo">Epizodo 5 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 5: La granda festo</title>
+    <desc lang="eo">Preparado por granda familia festo kun amikoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260828155930 +0000" stop="20260828160130 +0000" channel="EsperantoTV.eo@SD">
@@ -398,8 +393,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828160130 +0000" stop="20260828163510 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 5</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 5).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 5: La venĝo de la trajnoj</title>
+    <desc lang="eo">Fervojaj misaventuroj kaj horar-defioj.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260828163510 +0000" stop="20260828163710 +0000" channel="EsperantoTV.eo@SD">
@@ -428,8 +423,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828165330 +0000" stop="20260828172230 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 6</title>
-    <desc lang="eo">Epizodo 6 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 6: Nekonata vizitanto</title>
+    <desc lang="eo">Mistera vizitanto aperas ĉe la pordo.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260828172230 +0000" stop="20260828172430 +0000" channel="EsperantoTV.eo@SD">
@@ -438,8 +433,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828172430 +0000" stop="20260828175620 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 6</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 6).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 6: Rilaksado inter bestoj</title>
+    <desc lang="eo">Vizito al bestoj kaj trankvilaj momentoj.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260828175620 +0000" stop="20260828175820 +0000" channel="EsperantoTV.eo@SD">
@@ -468,8 +463,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828181900 +0000" stop="20260828184720 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 7</title>
-    <desc lang="eo">Epizodo 7 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 7: La sekreto malkaŝita</title>
+    <desc lang="eo">Gravaj sekretoj kaj komediaj klarigoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260828184720 +0000" stop="20260828184920 +0000" channel="EsperantoTV.eo@SD">
@@ -478,8 +473,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828184920 +0000" stop="20260828191920 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 7</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 7).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 7: ASMR kun arboj</title>
+    <desc lang="eo">Nekutima kaj amuza natura ASMR-defio.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260828191920 +0000" stop="20260828192120 +0000" channel="EsperantoTV.eo@SD">
@@ -508,8 +503,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828204140 +0000" stop="20260828211030 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 8</title>
-    <desc lang="eo">Epizodo 8 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 8: Vojaĝaj planoj</title>
+    <desc lang="eo">La familio kaj gastoj planas novajn vojaĝojn tra la mondo.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260828211030 +0000" stop="20260828211230 +0000" channel="EsperantoTV.eo@SD">
@@ -518,8 +513,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828211230 +0000" stop="20260828215300 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 8</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 8).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 8: Pluvo kaj suno</title>
+    <desc lang="eo">Veteraj defioj dum la subĉiela vojaĝo.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260828215300 +0000" stop="20260828215500 +0000" channel="EsperantoTV.eo@SD">
@@ -548,8 +543,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828222650 +0000" stop="20260828225530 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 9</title>
-    <desc lang="eo">Epizodo 9 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 9: Trajnoj kaj biletoj</title>
+    <desc lang="eo">Aventuroj ĉe la stacidomo.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260828225530 +0000" stop="20260828225730 +0000" channel="EsperantoTV.eo@SD">
@@ -558,8 +553,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828225730 +0000" stop="20260828232900 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 9</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 9).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 9: Vojaĝi sen biletoj</title>
+    <desc lang="eo">Strategiaj vojaĝdefioj kaj amuzaj taskoj.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260828232900 +0000" stop="20260828233100 +0000" channel="EsperantoTV.eo@SD">
@@ -588,8 +583,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260828235940 +0000" stop="20260829002750 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 10</title>
-    <desc lang="eo">Epizodo 10 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 10: Aventuro en la urbo</title>
+    <desc lang="eo">Esplorado de nova urbo kaj renkontoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260829002750 +0000" stop="20260829002950 +0000" channel="EsperantoTV.eo@SD">
@@ -598,8 +593,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829002950 +0000" stop="20260829005700 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 10</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 10).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 10: Mangirdito scias kion vi faris</title>
+    <desc lang="eo">Misteraj ludoj kaj teamaj taktikoj.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260829005700 +0000" stop="20260829005900 +0000" channel="EsperantoTV.eo@SD">
@@ -628,8 +623,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829012640 +0000" stop="20260829015540 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 11</title>
-    <desc lang="eo">Epizodo 11 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 11: La hotelo</title>
+    <desc lang="eo">Restado en hotelo kun neatenditaj surprizoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260829015540 +0000" stop="20260829015740 +0000" channel="EsperantoTV.eo@SD">
@@ -638,8 +633,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829015740 +0000" stop="20260829023210 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 11</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 11).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 11: Supren, suben kaj akven</title>
+    <desc lang="eo">Akvo-defioj kaj sportaj agadoj.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260829023210 +0000" stop="20260829023410 +0000" channel="EsperantoTV.eo@SD">
@@ -668,8 +663,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829030700 +0000" stop="20260829033500 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 12</title>
-    <desc lang="eo">Epizodo 12 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 12: La restoracio</title>
+    <desc lang="eo">Mendo de manĝaĵoj kaj lingvaj defioj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260829033500 +0000" stop="20260829033700 +0000" channel="EsperantoTV.eo@SD">
@@ -678,8 +673,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829033700 +0000" stop="20260829042000 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 12</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 12).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 12: Plaĝa tago</title>
+    <desc lang="eo">Amuzaj ludoj kaj defioj ĉe la marbordo.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260829042000 +0000" stop="20260829042200 +0000" channel="EsperantoTV.eo@SD">
@@ -698,8 +693,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829043240 +0000" stop="20260829044630 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 13</title>
-    <desc lang="eo">Epizodo 13 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 13: Sur la strando</title>
+    <desc lang="eo">Someraj ferioj kaj amuzaj agadoj ĉe la maro.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260829044630 +0000" stop="20260829044830 +0000" channel="EsperantoTV.eo@SD">
@@ -708,8 +703,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829044830 +0000" stop="20260829052610 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 13</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 13).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 13: La voko de Ĥthuluzo</title>
+    <desc lang="eo">Mistera vespera defio kun mitologia etoso.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260829052610 +0000" stop="20260829052810 +0000" channel="EsperantoTV.eo@SD">
@@ -728,8 +723,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829054020 +0000" stop="20260829060900 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 14</title>
-    <desc lang="eo">Epizodo 14 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 14: La muzeo</title>
+    <desc lang="eo">Kultura vizito al muzeo kun historiaj sekretoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260829060900 +0000" stop="20260829061100 +0000" channel="EsperantoTV.eo@SD">
@@ -738,8 +733,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829061100 +0000" stop="20260829062540 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 14</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 14).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 14: Nia plej granda perdo</title>
+    <desc lang="eo">Dramaj momentoj kaj poentaj ŝanĝoj.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260829062540 +0000" stop="20260829062740 +0000" channel="EsperantoTV.eo@SD">
@@ -758,8 +753,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829063610 +0000" stop="20260829070630 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 15</title>
-    <desc lang="eo">Epizodo 15 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 15: La adiaŭa vespero</title>
+    <desc lang="eo">Gaja vespero antaŭ la reveno hejmen.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260829070630 +0000" stop="20260829070830 +0000" channel="EsperantoTV.eo@SD">
@@ -768,8 +763,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829070830 +0000" stop="20260829073720 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 15</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 15).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 15: Gajni plej gravas</title>
+    <desc lang="eo">La granda antaŭ-finala konkurso.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260829073720 +0000" stop="20260829073920 +0000" channel="EsperantoTV.eo@SD">
@@ -788,8 +783,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829074440 +0000" stop="20260829080810 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 16</title>
-    <desc lang="eo">Epizodo 16 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 16: Ĝis revido, amikoj!</title>
+    <desc lang="eo">La granda finalo de Pasporto al la Tuta Mondo.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260829080810 +0000" stop="20260829081010 +0000" channel="EsperantoTV.eo@SD">
@@ -798,8 +793,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829081010 +0000" stop="20260829083400 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 16</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 16).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 16: Ni nur parolas Esperanton</title>
+    <desc lang="eo">La grandioza finalo de Esperanto Senlime Sezono 1!</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260829083400 +0000" stop="20260829083600 +0000" channel="EsperantoTV.eo@SD">
@@ -808,8 +803,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829083600 +0000" stop="20260829090210 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 1</title>
-    <desc lang="eo">Epizodo 1 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260829090210 +0000" stop="20260829090410 +0000" channel="EsperantoTV.eo@SD">
@@ -818,8 +813,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829090410 +0000" stop="20260829094420 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 1</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 1).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 1: La unua serio en Esperanto</title>
+    <desc lang="eo">La teamoj ekas sian grandan vojaĝon tra Eŭropo.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260829094420 +0000" stop="20260829094620 +0000" channel="EsperantoTV.eo@SD">
@@ -848,8 +843,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829100520 +0000" stop="20260829103250 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 2</title>
-    <desc lang="eo">Epizodo 2 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260829103250 +0000" stop="20260829103450 +0000" channel="EsperantoTV.eo@SD">
@@ -858,8 +853,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829103450 +0000" stop="20260829110250 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 2</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 2).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 2: Konstruado per dolĉaĵoj kaj spagetoj</title>
+    <desc lang="eo">Krea defio uzanta nur dolĉaĵojn kaj spagetojn.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260829110250 +0000" stop="20260829110450 +0000" channel="EsperantoTV.eo@SD">
@@ -888,8 +883,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829112140 +0000" stop="20260829114840 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 3</title>
-    <desc lang="eo">Epizodo 3 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260829114840 +0000" stop="20260829115040 +0000" channel="EsperantoTV.eo@SD">
@@ -898,8 +893,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829115040 +0000" stop="20260829121910 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 3</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 3).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 3: Riskante la vivon sur du radoj</title>
+    <desc lang="eo">Biciklaj defioj kaj rapidaj kuroj tra la urbo.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260829121910 +0000" stop="20260829122110 +0000" channel="EsperantoTV.eo@SD">
@@ -928,8 +923,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829123800 +0000" stop="20260829130620 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 4</title>
-    <desc lang="eo">Epizodo 4 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 4: Surprizo en la kuirejo</title>
+    <desc lang="eo">Kuirartaj aventuroj kaj nekutimaj petoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260829130620 +0000" stop="20260829130820 +0000" channel="EsperantoTV.eo@SD">
@@ -938,8 +933,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829130820 +0000" stop="20260829133900 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 4</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 4).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 4: Filmproduktado en trajnoj</title>
+    <desc lang="eo">Kreado de filmetoj dum veturado per trajno.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260829133900 +0000" stop="20260829134100 +0000" channel="EsperantoTV.eo@SD">
@@ -968,8 +963,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829135840 +0000" stop="20260829142740 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 5</title>
-    <desc lang="eo">Epizodo 5 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 5: La granda festo</title>
+    <desc lang="eo">Preparado por granda familia festo kun amikoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260829142740 +0000" stop="20260829142940 +0000" channel="EsperantoTV.eo@SD">
@@ -978,8 +973,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829142940 +0000" stop="20260829150320 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 5</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 5).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 5: La venĝo de la trajnoj</title>
+    <desc lang="eo">Fervojaj misaventuroj kaj horar-defioj.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260829150320 +0000" stop="20260829150520 +0000" channel="EsperantoTV.eo@SD">
@@ -1008,8 +1003,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829152140 +0000" stop="20260829155040 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 6</title>
-    <desc lang="eo">Epizodo 6 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 6: Nekonata vizitanto</title>
+    <desc lang="eo">Mistera vizitanto aperas ĉe la pordo.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260829155040 +0000" stop="20260829155240 +0000" channel="EsperantoTV.eo@SD">
@@ -1018,8 +1013,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829155240 +0000" stop="20260829162430 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 6</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 6).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 6: Rilaksado inter bestoj</title>
+    <desc lang="eo">Vizito al bestoj kaj trankvilaj momentoj.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260829162430 +0000" stop="20260829162630 +0000" channel="EsperantoTV.eo@SD">
@@ -1048,8 +1043,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829164710 +0000" stop="20260829171530 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 7</title>
-    <desc lang="eo">Epizodo 7 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 7: La sekreto malkaŝita</title>
+    <desc lang="eo">Gravaj sekretoj kaj komediaj klarigoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260829171530 +0000" stop="20260829171730 +0000" channel="EsperantoTV.eo@SD">
@@ -1058,8 +1053,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829171730 +0000" stop="20260829174730 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 7</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 7).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 7: ASMR kun arboj</title>
+    <desc lang="eo">Nekutima kaj amuza natura ASMR-defio.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260829174730 +0000" stop="20260829174930 +0000" channel="EsperantoTV.eo@SD">
@@ -1088,8 +1083,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829190950 +0000" stop="20260829193840 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 8</title>
-    <desc lang="eo">Epizodo 8 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 8: Vojaĝaj planoj</title>
+    <desc lang="eo">La familio kaj gastoj planas novajn vojaĝojn tra la mondo.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260829193840 +0000" stop="20260829194040 +0000" channel="EsperantoTV.eo@SD">
@@ -1098,8 +1093,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829194040 +0000" stop="20260829202110 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 8</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 8).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 8: Pluvo kaj suno</title>
+    <desc lang="eo">Veteraj defioj dum la subĉiela vojaĝo.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260829202110 +0000" stop="20260829202310 +0000" channel="EsperantoTV.eo@SD">
@@ -1128,8 +1123,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829205500 +0000" stop="20260829212340 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 9</title>
-    <desc lang="eo">Epizodo 9 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 9: Trajnoj kaj biletoj</title>
+    <desc lang="eo">Aventuroj ĉe la stacidomo.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260829212340 +0000" stop="20260829212540 +0000" channel="EsperantoTV.eo@SD">
@@ -1138,8 +1133,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829212540 +0000" stop="20260829215710 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 9</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 9).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 9: Vojaĝi sen biletoj</title>
+    <desc lang="eo">Strategiaj vojaĝdefioj kaj amuzaj taskoj.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260829215710 +0000" stop="20260829215910 +0000" channel="EsperantoTV.eo@SD">
@@ -1168,8 +1163,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829222750 +0000" stop="20260829225600 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 10</title>
-    <desc lang="eo">Epizodo 10 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 10: Aventuro en la urbo</title>
+    <desc lang="eo">Esplorado de nova urbo kaj renkontoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260829225600 +0000" stop="20260829225800 +0000" channel="EsperantoTV.eo@SD">
@@ -1178,8 +1173,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829225800 +0000" stop="20260829232510 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 10</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 10).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 10: Mangirdito scias kion vi faris</title>
+    <desc lang="eo">Misteraj ludoj kaj teamaj taktikoj.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260829232510 +0000" stop="20260829232710 +0000" channel="EsperantoTV.eo@SD">
@@ -1208,8 +1203,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260829235450 +0000" stop="20260830002350 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 11</title>
-    <desc lang="eo">Epizodo 11 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 11: La hotelo</title>
+    <desc lang="eo">Restado en hotelo kun neatenditaj surprizoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260830002350 +0000" stop="20260830002550 +0000" channel="EsperantoTV.eo@SD">
@@ -1218,8 +1213,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830002550 +0000" stop="20260830010020 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 11</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 11).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 11: Supren, suben kaj akven</title>
+    <desc lang="eo">Akvo-defioj kaj sportaj agadoj.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260830010020 +0000" stop="20260830010220 +0000" channel="EsperantoTV.eo@SD">
@@ -1248,8 +1243,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830013510 +0000" stop="20260830020310 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 12</title>
-    <desc lang="eo">Epizodo 12 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 12: La restoracio</title>
+    <desc lang="eo">Mendo de manĝaĵoj kaj lingvaj defioj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260830020310 +0000" stop="20260830020510 +0000" channel="EsperantoTV.eo@SD">
@@ -1258,8 +1253,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830020510 +0000" stop="20260830024810 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 12</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 12).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 12: Plaĝa tago</title>
+    <desc lang="eo">Amuzaj ludoj kaj defioj ĉe la marbordo.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260830024810 +0000" stop="20260830025010 +0000" channel="EsperantoTV.eo@SD">
@@ -1278,8 +1273,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830030050 +0000" stop="20260830031440 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 13</title>
-    <desc lang="eo">Epizodo 13 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 13: Sur la strando</title>
+    <desc lang="eo">Someraj ferioj kaj amuzaj agadoj ĉe la maro.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260830031440 +0000" stop="20260830031640 +0000" channel="EsperantoTV.eo@SD">
@@ -1288,8 +1283,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830031640 +0000" stop="20260830035420 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 13</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 13).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 13: La voko de Ĥthuluzo</title>
+    <desc lang="eo">Mistera vespera defio kun mitologia etoso.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260830035420 +0000" stop="20260830035620 +0000" channel="EsperantoTV.eo@SD">
@@ -1308,8 +1303,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830040830 +0000" stop="20260830043710 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 14</title>
-    <desc lang="eo">Epizodo 14 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 14: La muzeo</title>
+    <desc lang="eo">Kultura vizito al muzeo kun historiaj sekretoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260830043710 +0000" stop="20260830043910 +0000" channel="EsperantoTV.eo@SD">
@@ -1318,8 +1313,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830043910 +0000" stop="20260830045350 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 14</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 14).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 14: Nia plej granda perdo</title>
+    <desc lang="eo">Dramaj momentoj kaj poentaj ŝanĝoj.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260830045350 +0000" stop="20260830045550 +0000" channel="EsperantoTV.eo@SD">
@@ -1338,8 +1333,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830050420 +0000" stop="20260830053440 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 15</title>
-    <desc lang="eo">Epizodo 15 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 15: La adiaŭa vespero</title>
+    <desc lang="eo">Gaja vespero antaŭ la reveno hejmen.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260830053440 +0000" stop="20260830053640 +0000" channel="EsperantoTV.eo@SD">
@@ -1348,8 +1343,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830053640 +0000" stop="20260830060530 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 15</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 15).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 15: Gajni plej gravas</title>
+    <desc lang="eo">La granda antaŭ-finala konkurso.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260830060530 +0000" stop="20260830060730 +0000" channel="EsperantoTV.eo@SD">
@@ -1368,8 +1363,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830061250 +0000" stop="20260830063620 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 16</title>
-    <desc lang="eo">Epizodo 16 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 16: Ĝis revido, amikoj!</title>
+    <desc lang="eo">La granda finalo de Pasporto al la Tuta Mondo.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260830063620 +0000" stop="20260830063820 +0000" channel="EsperantoTV.eo@SD">
@@ -1378,8 +1373,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830063820 +0000" stop="20260830070210 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 16</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 16).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 16: Ni nur parolas Esperanton</title>
+    <desc lang="eo">La grandioza finalo de Esperanto Senlime Sezono 1!</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260830070210 +0000" stop="20260830070410 +0000" channel="EsperantoTV.eo@SD">
@@ -1388,8 +1383,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830070410 +0000" stop="20260830073020 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 1</title>
-    <desc lang="eo">Epizodo 1 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260830073020 +0000" stop="20260830073220 +0000" channel="EsperantoTV.eo@SD">
@@ -1398,8 +1393,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830073220 +0000" stop="20260830081230 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 1</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 1).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 1: La unua serio en Esperanto</title>
+    <desc lang="eo">La teamoj ekas sian grandan vojaĝon tra Eŭropo.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260830081230 +0000" stop="20260830081430 +0000" channel="EsperantoTV.eo@SD">
@@ -1428,8 +1423,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830083330 +0000" stop="20260830090100 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 2</title>
-    <desc lang="eo">Epizodo 2 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260830090100 +0000" stop="20260830090300 +0000" channel="EsperantoTV.eo@SD">
@@ -1438,8 +1433,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830090300 +0000" stop="20260830093100 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 2</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 2).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 2: Konstruado per dolĉaĵoj kaj spagetoj</title>
+    <desc lang="eo">Krea defio uzanta nur dolĉaĵojn kaj spagetojn.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260830093100 +0000" stop="20260830093300 +0000" channel="EsperantoTV.eo@SD">
@@ -1468,8 +1463,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830094950 +0000" stop="20260830101650 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 3</title>
-    <desc lang="eo">Epizodo 3 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260830101650 +0000" stop="20260830101850 +0000" channel="EsperantoTV.eo@SD">
@@ -1478,8 +1473,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830101850 +0000" stop="20260830104720 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 3</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 3).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 3: Riskante la vivon sur du radoj</title>
+    <desc lang="eo">Biciklaj defioj kaj rapidaj kuroj tra la urbo.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260830104720 +0000" stop="20260830104920 +0000" channel="EsperantoTV.eo@SD">
@@ -1508,8 +1503,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830110610 +0000" stop="20260830113430 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 4</title>
-    <desc lang="eo">Epizodo 4 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 4: Surprizo en la kuirejo</title>
+    <desc lang="eo">Kuirartaj aventuroj kaj nekutimaj petoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260830113430 +0000" stop="20260830113630 +0000" channel="EsperantoTV.eo@SD">
@@ -1518,8 +1513,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830113630 +0000" stop="20260830120710 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 4</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 4).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 4: Filmproduktado en trajnoj</title>
+    <desc lang="eo">Kreado de filmetoj dum veturado per trajno.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260830120710 +0000" stop="20260830120910 +0000" channel="EsperantoTV.eo@SD">
@@ -1548,8 +1543,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830122650 +0000" stop="20260830125550 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 5</title>
-    <desc lang="eo">Epizodo 5 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 5: La granda festo</title>
+    <desc lang="eo">Preparado por granda familia festo kun amikoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260830125550 +0000" stop="20260830125750 +0000" channel="EsperantoTV.eo@SD">
@@ -1558,8 +1553,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830125750 +0000" stop="20260830133130 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 5</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 5).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 5: La venĝo de la trajnoj</title>
+    <desc lang="eo">Fervojaj misaventuroj kaj horar-defioj.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260830133130 +0000" stop="20260830133330 +0000" channel="EsperantoTV.eo@SD">
@@ -1588,8 +1583,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830134950 +0000" stop="20260830141850 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 6</title>
-    <desc lang="eo">Epizodo 6 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 6: Nekonata vizitanto</title>
+    <desc lang="eo">Mistera vizitanto aperas ĉe la pordo.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260830141850 +0000" stop="20260830142050 +0000" channel="EsperantoTV.eo@SD">
@@ -1598,8 +1593,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830142050 +0000" stop="20260830145240 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 6</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 6).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 6: Rilaksado inter bestoj</title>
+    <desc lang="eo">Vizito al bestoj kaj trankvilaj momentoj.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260830145240 +0000" stop="20260830145440 +0000" channel="EsperantoTV.eo@SD">
@@ -1628,8 +1623,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830151520 +0000" stop="20260830154340 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 7</title>
-    <desc lang="eo">Epizodo 7 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 7: La sekreto malkaŝita</title>
+    <desc lang="eo">Gravaj sekretoj kaj komediaj klarigoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260830154340 +0000" stop="20260830154540 +0000" channel="EsperantoTV.eo@SD">
@@ -1638,8 +1633,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830154540 +0000" stop="20260830161540 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 7</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 7).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 7: ASMR kun arboj</title>
+    <desc lang="eo">Nekutima kaj amuza natura ASMR-defio.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260830161540 +0000" stop="20260830161740 +0000" channel="EsperantoTV.eo@SD">
@@ -1668,8 +1663,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830173800 +0000" stop="20260830180650 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 8</title>
-    <desc lang="eo">Epizodo 8 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 8: Vojaĝaj planoj</title>
+    <desc lang="eo">La familio kaj gastoj planas novajn vojaĝojn tra la mondo.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260830180650 +0000" stop="20260830180850 +0000" channel="EsperantoTV.eo@SD">
@@ -1678,8 +1673,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830180850 +0000" stop="20260830184920 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 8</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 8).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 8: Pluvo kaj suno</title>
+    <desc lang="eo">Veteraj defioj dum la subĉiela vojaĝo.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260830184920 +0000" stop="20260830185120 +0000" channel="EsperantoTV.eo@SD">
@@ -1708,8 +1703,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830192310 +0000" stop="20260830195150 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 9</title>
-    <desc lang="eo">Epizodo 9 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 9: Trajnoj kaj biletoj</title>
+    <desc lang="eo">Aventuroj ĉe la stacidomo.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260830195150 +0000" stop="20260830195350 +0000" channel="EsperantoTV.eo@SD">
@@ -1718,8 +1713,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830195350 +0000" stop="20260830202520 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 9</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 9).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 9: Vojaĝi sen biletoj</title>
+    <desc lang="eo">Strategiaj vojaĝdefioj kaj amuzaj taskoj.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260830202520 +0000" stop="20260830202720 +0000" channel="EsperantoTV.eo@SD">
@@ -1748,8 +1743,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830205600 +0000" stop="20260830212410 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 10</title>
-    <desc lang="eo">Epizodo 10 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 10: Aventuro en la urbo</title>
+    <desc lang="eo">Esplorado de nova urbo kaj renkontoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260830212410 +0000" stop="20260830212610 +0000" channel="EsperantoTV.eo@SD">
@@ -1758,8 +1753,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830212610 +0000" stop="20260830215320 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 10</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 10).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 10: Mangirdito scias kion vi faris</title>
+    <desc lang="eo">Misteraj ludoj kaj teamaj taktikoj.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260830215320 +0000" stop="20260830215520 +0000" channel="EsperantoTV.eo@SD">
@@ -1788,8 +1783,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830222300 +0000" stop="20260830225200 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 11</title>
-    <desc lang="eo">Epizodo 11 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 11: La hotelo</title>
+    <desc lang="eo">Restado en hotelo kun neatenditaj surprizoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260830225200 +0000" stop="20260830225400 +0000" channel="EsperantoTV.eo@SD">
@@ -1798,8 +1793,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260830225400 +0000" stop="20260830232830 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 11</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 11).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 11: Supren, suben kaj akven</title>
+    <desc lang="eo">Akvo-defioj kaj sportaj agadoj.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260830232830 +0000" stop="20260830233030 +0000" channel="EsperantoTV.eo@SD">
@@ -1828,8 +1823,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831000320 +0000" stop="20260831003120 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 12</title>
-    <desc lang="eo">Epizodo 12 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 12: La restoracio</title>
+    <desc lang="eo">Mendo de manĝaĵoj kaj lingvaj defioj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260831003120 +0000" stop="20260831003320 +0000" channel="EsperantoTV.eo@SD">
@@ -1838,8 +1833,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831003320 +0000" stop="20260831011620 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 12</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 12).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 12: Plaĝa tago</title>
+    <desc lang="eo">Amuzaj ludoj kaj defioj ĉe la marbordo.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260831011620 +0000" stop="20260831011820 +0000" channel="EsperantoTV.eo@SD">
@@ -1858,8 +1853,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831012900 +0000" stop="20260831014250 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 13</title>
-    <desc lang="eo">Epizodo 13 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 13: Sur la strando</title>
+    <desc lang="eo">Someraj ferioj kaj amuzaj agadoj ĉe la maro.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260831014250 +0000" stop="20260831014450 +0000" channel="EsperantoTV.eo@SD">
@@ -1868,8 +1863,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831014450 +0000" stop="20260831022230 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 13</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 13).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 13: La voko de Ĥthuluzo</title>
+    <desc lang="eo">Mistera vespera defio kun mitologia etoso.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260831022230 +0000" stop="20260831022430 +0000" channel="EsperantoTV.eo@SD">
@@ -1888,8 +1883,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831023640 +0000" stop="20260831030520 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 14</title>
-    <desc lang="eo">Epizodo 14 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 14: La muzeo</title>
+    <desc lang="eo">Kultura vizito al muzeo kun historiaj sekretoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260831030520 +0000" stop="20260831030720 +0000" channel="EsperantoTV.eo@SD">
@@ -1898,8 +1893,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831030720 +0000" stop="20260831032200 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 14</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 14).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 14: Nia plej granda perdo</title>
+    <desc lang="eo">Dramaj momentoj kaj poentaj ŝanĝoj.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260831032200 +0000" stop="20260831032400 +0000" channel="EsperantoTV.eo@SD">
@@ -1918,8 +1913,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831033230 +0000" stop="20260831040250 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 15</title>
-    <desc lang="eo">Epizodo 15 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 15: La adiaŭa vespero</title>
+    <desc lang="eo">Gaja vespero antaŭ la reveno hejmen.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260831040250 +0000" stop="20260831040450 +0000" channel="EsperantoTV.eo@SD">
@@ -1928,8 +1923,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831040450 +0000" stop="20260831043340 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 15</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 15).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 15: Gajni plej gravas</title>
+    <desc lang="eo">La granda antaŭ-finala konkurso.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260831043340 +0000" stop="20260831043540 +0000" channel="EsperantoTV.eo@SD">
@@ -1948,8 +1943,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831044100 +0000" stop="20260831050430 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 16</title>
-    <desc lang="eo">Epizodo 16 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 16: Ĝis revido, amikoj!</title>
+    <desc lang="eo">La granda finalo de Pasporto al la Tuta Mondo.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260831050430 +0000" stop="20260831050630 +0000" channel="EsperantoTV.eo@SD">
@@ -1958,8 +1953,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831050630 +0000" stop="20260831053020 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 16</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 16).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 16: Ni nur parolas Esperanton</title>
+    <desc lang="eo">La grandioza finalo de Esperanto Senlime Sezono 1!</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260831053020 +0000" stop="20260831053220 +0000" channel="EsperantoTV.eo@SD">
@@ -1968,8 +1963,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831053220 +0000" stop="20260831055830 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 1</title>
-    <desc lang="eo">Epizodo 1 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260831055830 +0000" stop="20260831060030 +0000" channel="EsperantoTV.eo@SD">
@@ -1978,8 +1973,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831060030 +0000" stop="20260831064040 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 1</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 1).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 1: La unua serio en Esperanto</title>
+    <desc lang="eo">La teamoj ekas sian grandan vojaĝon tra Eŭropo.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260831064040 +0000" stop="20260831064240 +0000" channel="EsperantoTV.eo@SD">
@@ -2008,8 +2003,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831070140 +0000" stop="20260831072910 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 2</title>
-    <desc lang="eo">Epizodo 2 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260831072910 +0000" stop="20260831073110 +0000" channel="EsperantoTV.eo@SD">
@@ -2018,8 +2013,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831073110 +0000" stop="20260831075910 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 2</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 2).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 2: Konstruado per dolĉaĵoj kaj spagetoj</title>
+    <desc lang="eo">Krea defio uzanta nur dolĉaĵojn kaj spagetojn.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260831075910 +0000" stop="20260831080110 +0000" channel="EsperantoTV.eo@SD">
@@ -2048,8 +2043,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831081800 +0000" stop="20260831084500 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 3</title>
-    <desc lang="eo">Epizodo 3 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260831084500 +0000" stop="20260831084700 +0000" channel="EsperantoTV.eo@SD">
@@ -2058,8 +2053,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831084700 +0000" stop="20260831091530 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 3</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 3).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 3: Riskante la vivon sur du radoj</title>
+    <desc lang="eo">Biciklaj defioj kaj rapidaj kuroj tra la urbo.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260831091530 +0000" stop="20260831091730 +0000" channel="EsperantoTV.eo@SD">
@@ -2088,8 +2083,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831093420 +0000" stop="20260831100240 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 4</title>
-    <desc lang="eo">Epizodo 4 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 4: Surprizo en la kuirejo</title>
+    <desc lang="eo">Kuirartaj aventuroj kaj nekutimaj petoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260831100240 +0000" stop="20260831100440 +0000" channel="EsperantoTV.eo@SD">
@@ -2098,8 +2093,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831100440 +0000" stop="20260831103520 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 4</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 4).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 4: Filmproduktado en trajnoj</title>
+    <desc lang="eo">Kreado de filmetoj dum veturado per trajno.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260831103520 +0000" stop="20260831103720 +0000" channel="EsperantoTV.eo@SD">
@@ -2128,8 +2123,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831105500 +0000" stop="20260831112400 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 5</title>
-    <desc lang="eo">Epizodo 5 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 5: La granda festo</title>
+    <desc lang="eo">Preparado por granda familia festo kun amikoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260831112400 +0000" stop="20260831112600 +0000" channel="EsperantoTV.eo@SD">
@@ -2138,8 +2133,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831112600 +0000" stop="20260831115940 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 5</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 5).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 5: La venĝo de la trajnoj</title>
+    <desc lang="eo">Fervojaj misaventuroj kaj horar-defioj.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260831115940 +0000" stop="20260831120140 +0000" channel="EsperantoTV.eo@SD">
@@ -2168,8 +2163,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831121800 +0000" stop="20260831124700 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 6</title>
-    <desc lang="eo">Epizodo 6 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 6: Nekonata vizitanto</title>
+    <desc lang="eo">Mistera vizitanto aperas ĉe la pordo.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260831124700 +0000" stop="20260831124900 +0000" channel="EsperantoTV.eo@SD">
@@ -2178,8 +2173,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831124900 +0000" stop="20260831132050 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 6</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 6).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 6: Rilaksado inter bestoj</title>
+    <desc lang="eo">Vizito al bestoj kaj trankvilaj momentoj.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260831132050 +0000" stop="20260831132250 +0000" channel="EsperantoTV.eo@SD">
@@ -2208,8 +2203,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831134330 +0000" stop="20260831141150 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 7</title>
-    <desc lang="eo">Epizodo 7 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 7: La sekreto malkaŝita</title>
+    <desc lang="eo">Gravaj sekretoj kaj komediaj klarigoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260831141150 +0000" stop="20260831141350 +0000" channel="EsperantoTV.eo@SD">
@@ -2218,8 +2213,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831141350 +0000" stop="20260831144350 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 7</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 7).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 7: ASMR kun arboj</title>
+    <desc lang="eo">Nekutima kaj amuza natura ASMR-defio.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260831144350 +0000" stop="20260831144550 +0000" channel="EsperantoTV.eo@SD">
@@ -2248,8 +2243,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831160610 +0000" stop="20260831163500 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 8</title>
-    <desc lang="eo">Epizodo 8 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 8: Vojaĝaj planoj</title>
+    <desc lang="eo">La familio kaj gastoj planas novajn vojaĝojn tra la mondo.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260831163500 +0000" stop="20260831163700 +0000" channel="EsperantoTV.eo@SD">
@@ -2258,8 +2253,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831163700 +0000" stop="20260831171730 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 8</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 8).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 8: Pluvo kaj suno</title>
+    <desc lang="eo">Veteraj defioj dum la subĉiela vojaĝo.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260831171730 +0000" stop="20260831171930 +0000" channel="EsperantoTV.eo@SD">
@@ -2288,8 +2283,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831175120 +0000" stop="20260831182000 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 9</title>
-    <desc lang="eo">Epizodo 9 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 9: Trajnoj kaj biletoj</title>
+    <desc lang="eo">Aventuroj ĉe la stacidomo.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260831182000 +0000" stop="20260831182200 +0000" channel="EsperantoTV.eo@SD">
@@ -2298,8 +2293,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831182200 +0000" stop="20260831185330 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 9</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 9).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 9: Vojaĝi sen biletoj</title>
+    <desc lang="eo">Strategiaj vojaĝdefioj kaj amuzaj taskoj.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260831185330 +0000" stop="20260831185530 +0000" channel="EsperantoTV.eo@SD">
@@ -2328,8 +2323,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831192410 +0000" stop="20260831195220 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 10</title>
-    <desc lang="eo">Epizodo 10 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 10: Aventuro en la urbo</title>
+    <desc lang="eo">Esplorado de nova urbo kaj renkontoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260831195220 +0000" stop="20260831195420 +0000" channel="EsperantoTV.eo@SD">
@@ -2338,8 +2333,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831195420 +0000" stop="20260831202130 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 10</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 10).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 10: Mangirdito scias kion vi faris</title>
+    <desc lang="eo">Misteraj ludoj kaj teamaj taktikoj.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260831202130 +0000" stop="20260831202330 +0000" channel="EsperantoTV.eo@SD">
@@ -2368,8 +2363,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831205110 +0000" stop="20260831212010 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 11</title>
-    <desc lang="eo">Epizodo 11 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 11: La hotelo</title>
+    <desc lang="eo">Restado en hotelo kun neatenditaj surprizoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260831212010 +0000" stop="20260831212210 +0000" channel="EsperantoTV.eo@SD">
@@ -2378,8 +2373,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831212210 +0000" stop="20260831215640 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 11</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 11).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 11: Supren, suben kaj akven</title>
+    <desc lang="eo">Akvo-defioj kaj sportaj agadoj.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260831215640 +0000" stop="20260831215840 +0000" channel="EsperantoTV.eo@SD">
@@ -2408,8 +2403,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831223130 +0000" stop="20260831225930 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 12</title>
-    <desc lang="eo">Epizodo 12 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 12: La restoracio</title>
+    <desc lang="eo">Mendo de manĝaĵoj kaj lingvaj defioj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260831225930 +0000" stop="20260831230130 +0000" channel="EsperantoTV.eo@SD">
@@ -2418,8 +2413,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831230130 +0000" stop="20260831234430 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 12</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 12).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 12: Plaĝa tago</title>
+    <desc lang="eo">Amuzaj ludoj kaj defioj ĉe la marbordo.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260831234430 +0000" stop="20260831234630 +0000" channel="EsperantoTV.eo@SD">
@@ -2438,8 +2433,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260831235710 +0000" stop="20260901001100 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 13</title>
-    <desc lang="eo">Epizodo 13 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 13: Sur la strando</title>
+    <desc lang="eo">Someraj ferioj kaj amuzaj agadoj ĉe la maro.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
   <programme start="20260901001100 +0000" stop="20260901001300 +0000" channel="EsperantoTV.eo@SD">
@@ -2448,8 +2443,8 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260901001300 +0000" stop="20260901005040 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 13</title>
-    <desc lang="eo">Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo 13).</desc>
+    <title lang="eo">Esperanto Senlime - Epizodo 13: La voko de Ĥthuluzo</title>
+    <desc lang="eo">Mistera vespera defio kun mitologia etoso.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
   <programme start="20260901005040 +0000" stop="20260901005240 +0000" channel="EsperantoTV.eo@SD">
@@ -2468,8 +2463,18 @@
     <category lang="eo">Vineto</category>
   </programme>
   <programme start="20260901010450 +0000" stop="20260901013330 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 14</title>
-    <desc lang="eo">Epizodo 14 de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.</desc>
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 14: La muzeo</title>
+    <desc lang="eo">Kultura vizito al muzeo kun historiaj sekretoj.</desc>
     <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20260901013330 +0000" stop="20260901013530 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Enkonduko</title>
+    <desc lang="eo">Oficiala stacia vineto kaj enkonduko al la internacia lingvo Esperanto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20260901013530 +0000" stop="20260901015010 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 14: Nia plej granda perdo</title>
+    <desc lang="eo">Dramaj momentoj kaj poentaj ŝanĝoj.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
 </tv>

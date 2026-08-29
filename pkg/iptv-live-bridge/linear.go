@@ -27,6 +27,44 @@ type LinearStation struct {
 	discOffsets []int
 }
 
+var pasportoEpInfo = map[int][2]string{
+	1:  {"Bonvenon al nia hejmo!", "Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo."},
+	2:  {"Kiu estas tiu?", "Novaj gastoj alvenas kaj misteraj situacioj komenciĝas."},
+	3:  {"La perdita valizo", "Serĉado de perdita valizo kaj amuzaj miskomprenoj."},
+	4:  {"Surprizo en la kuirejo", "Kuirartaj aventuroj kaj nekutimaj petoj."},
+	5:  {"La granda festo", "Preparado por granda familia festo kun amikoj."},
+	6:  {"Nekonata vizitanto", "Mistera vizitanto aperas ĉe la pordo."},
+	7:  {"La sekreto malkaŝita", "Gravaj sekretoj kaj komediaj klarigoj."},
+	8:  {"Vojaĝaj planoj", "La familio kaj gastoj planas novajn vojaĝojn tra la mondo."},
+	9:  {"Trajnoj kaj biletoj", "Aventuroj ĉe la stacidomo."},
+	10: {"Aventuro en la urbo", "Esplorado de nova urbo kaj renkontoj."},
+	11: {"La hotelo", "Restado en hotelo kun neatenditaj surprizoj."},
+	12: {"La restoracio", "Mendo de manĝaĵoj kaj lingvaj defioj."},
+	13: {"Sur la strando", "Someraj ferioj kaj amuzaj agadoj ĉe la maro."},
+	14: {"La muzeo", "Kultura vizito al muzeo kun historiaj sekretoj."},
+	15: {"La adiaŭa vespero", "Gaja vespero antaŭ la reveno hejmen."},
+	16: {"Ĝis revido, amikoj!", "La granda finalo de Pasporto al la Tuta Mondo."},
+}
+
+var senlimeEpInfo = map[int][2]string{
+	1:  {"La unua serio en Esperanto", "La teamoj ekas sian grandan vojaĝon tra Eŭropo."},
+	2:  {"Konstruado per dolĉaĵoj kaj spagetoj", "Krea defio uzanta nur dolĉaĵojn kaj spagetojn."},
+	3:  {"Riskante la vivon sur du radoj", "Biciklaj defioj kaj rapidaj kuroj tra la urbo."},
+	4:  {"Filmproduktado en trajnoj", "Kreado de filmetoj dum veturado per trajno."},
+	5:  {"La venĝo de la trajnoj", "Fervojaj misaventuroj kaj horar-defioj."},
+	6:  {"Rilaksado inter bestoj", "Vizito al bestoj kaj trankvilaj momentoj."},
+	7:  {"ASMR kun arboj", "Nekutima kaj amuza natura ASMR-defio."},
+	8:  {"Pluvo kaj suno", "Veteraj defioj dum la subĉiela vojaĝo."},
+	9:  {"Vojaĝi sen biletoj", "Strategiaj vojaĝdefioj kaj amuzaj taskoj."},
+	10: {"Mangirdito scias kion vi faris", "Misteraj ludoj kaj teamaj taktikoj."},
+	11: {"Supren, suben kaj akven", "Akvo-defioj kaj sportaj agadoj."},
+	12: {"Plaĝa tago", "Amuzaj ludoj kaj defioj ĉe la marbordo."},
+	13: {"La voko de Ĥthuluzo", "Mistera vespera defio kun mitologia etoso."},
+	14: {"Nia plej granda perdo", "Dramaj momentoj kaj poentaj ŝanĝoj."},
+	15: {"Gajni plej gravas", "La granda antaŭ-finala konkurso."},
+	16: {"Ni nur parolas Esperanton", "La grandioza finalo de Esperanto Senlime Sezono 1!"},
+}
+
 func NewLinearStation(dir, prefix string, segDuration float64) *LinearStation {
 	ls := &LinearStation{
 		dir:         dir,
@@ -198,9 +236,17 @@ func (ls *LinearStation) buildEsperantoSchedule(allSegs []string) {
 			// 1. Pasporto
 			if r < len(pasporto) {
 				epNum := r + 1
+				t := fmt.Sprintf("Pasporto al la Tuta Mondo - Epizodo %d", epNum)
+				d := fmt.Sprintf("Epizodo %d de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.", epNum)
+				if info, ok := pasportoEpInfo[epNum]; ok {
+					t = fmt.Sprintf("Pasporto al la Tuta Mondo - Epizodo %d: %s", epNum, info[0])
+					if info[1] != "" {
+						d = info[1]
+					}
+				}
 				programBlocks = append(programBlocks, blockDef{
-					title:    fmt.Sprintf("Pasporto al la Tuta Mondo - Epizodo %d", epNum),
-					desc:     fmt.Sprintf("Epizodo %d de la internacia komedia realspektaklo Pasporto al la Tuta Mondo.", epNum),
+					title:    t,
+					desc:     d,
 					category: "Kurso / Komedio",
 					segs:     pasporto[r],
 				})
@@ -212,9 +258,17 @@ func (ls *LinearStation) buildEsperantoSchedule(allSegs []string) {
 			// 2. Senlime
 			if r < len(senlime) {
 				epNum := r + 1
+				t := fmt.Sprintf("Esperanto Senlime - Epizodo %d", epNum)
+				d := fmt.Sprintf("Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo %d).", epNum)
+				if info, ok := senlimeEpInfo[epNum]; ok {
+					t = fmt.Sprintf("Esperanto Senlime - Epizodo %d: %s", epNum, info[0])
+					if info[1] != "" {
+						d = info[1]
+					}
+				}
 				programBlocks = append(programBlocks, blockDef{
-					title:    fmt.Sprintf("Esperanto Senlime - Epizodo %d", epNum),
-					desc:     fmt.Sprintf("Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo %d).", epNum),
+					title:    t,
+					desc:     d,
 					category: "Realspektaklo / Junularo",
 					segs:     senlime[r],
 				})
