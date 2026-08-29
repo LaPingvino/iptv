@@ -7,6 +7,7 @@ Generates XMLTV <programme> blocks synchronized with the wall-clock epoch modulo
 import os
 import time
 import datetime
+from collections import defaultdict
 from itertools import groupby
 
 # Metadata Dictionary for Esperanto TV
@@ -105,13 +106,122 @@ def format_xmltv_time(epoch_sec):
     return dt.strftime("%Y%m%d%H%M%S +0000")
 
 def get_channel_schedule_blocks(media_dir, default_meta=None, seg_duration=10.0):
-    """Calculates ordered schedule blocks from directory TS files."""
+    """Calculates ordered schedule blocks from directory TS files matching Go LinearStation."""
     if not os.path.exists(media_dir):
         return []
     ts_files = sorted([f for f in os.listdir(media_dir) if f.endswith(".ts")])
     if not ts_files:
         return []
-        
+
+    # If Esperanto TV, perform the exact same round-by-round episodic interleaving as Go linear.go!
+    if "esperanto" in media_dir.lower():
+        shows = defaultdict(list)
+        bumper = []
+        for s in ts_files:
+            if s.startswith("dok_estas_parto_01_"):
+                bumper.append(s)
+            elif s.startswith("ident_z_"):
+                continue
+            else:
+                k = s.rsplit("_", 1)[0]
+                shows[k].append(s)
+
+        pasporto = [shows[f"pasporto_{i:02d}"] for i in range(1, 17) if f"pasporto_{i:02d}" in shows]
+        senlime = [shows[f"senlime_s01e{i:02d}"] for i in range(1, 17) if f"senlime_s01e{i:02d}" in shows]
+
+        mv_keys = sorted([k for k in shows if k.startswith("mv_")])
+        mv_blocks = []
+        for i in range(0, len(mv_keys), 2):
+            b = []
+            for k in mv_keys[i:i+2]:
+                b.extend(shows[k])
+            if b:
+                mv_blocks.append(b)
+
+        doc_keys = sorted([k for k in shows if k.startswith("dok_")])
+        specials = [shows[k] for k in doc_keys]
+        if "mazi" in shows:
+            mazi = shows["mazi"]
+            chunk_size = 115
+            for i in range(0, len(mazi), chunk_size):
+                specials.append(mazi[i:i+chunk_size])
+
+        max_rounds = max(len(pasporto), len(senlime), len(specials), len(mv_blocks))
+        blocks = []
+        bumper_block = {
+            "title": "Esperanto Estas: Enkonduko",
+            "desc": "Oficiala stacia vineto kaj enkonduko al la internacia lingvo Esperanto.",
+            "category": "Vineto",
+            "duration": len(bumper) * seg_duration
+        }
+
+        for r in range(max_rounds):
+            # 1. Pasporto
+            if r < len(pasporto):
+                ep = r + 1
+                info = PASPORTO_EP_INFO.get(ep, (f"Epizodo {ep}", ""))
+                blocks.append({
+                    "title": f"Pasporto al la Tuta Mondo - Epizodo {ep}: {info[0]}",
+                    "desc": info[1] or f"Epizodo {ep} de la internacia realspektaklo Pasporto al la Tuta Mondo.",
+                    "category": "Kurso / Komedio",
+                    "duration": len(pasporto[r]) * seg_duration
+                })
+                if bumper:
+                    blocks.append(bumper_block)
+
+            # 2. Senlime
+            if r < len(senlime):
+                ep = r + 1
+                info = SENLIME_EP_INFO.get(ep, (f"Epizodo {ep}", ""))
+                blocks.append({
+                    "title": f"Esperanto Senlime - Epizodo {ep}: {info[0]}",
+                    "desc": info[1] or f"Moderna vojaĝa kaj lingva realspektaklo tra Eŭropo (Epizodo {ep}).",
+                    "category": "Realspektaklo / Junularo",
+                    "duration": len(senlime[r]) * seg_duration
+                })
+                if bumper:
+                    blocks.append(bumper_block)
+
+            # 3. Music Video Block
+            if r < len(mv_blocks):
+                blocks.append({
+                    "title": "Esperanto-Muziko (Muzikvideoj)",
+                    "desc": "Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.",
+                    "category": "Muziko",
+                    "duration": len(mv_blocks[r]) * seg_duration
+                })
+                if bumper:
+                    blocks.append(bumper_block)
+
+            # 4. Special (Docs / Mazi)
+            if r < len(specials):
+                s_segs = specials[r]
+                title = "Dokumenta Filmo"
+                desc = "Esperanto-dokumentario aŭ animacia klasikaĵo."
+                cat = "Dokumentario"
+                first = s_segs[0]
+                if "mazi" in first:
+                    title = "Mazi en Gondolando"
+                    desc = "Klasika animacia Esperanto-kurso kun Mazi, Silvia kaj Bob."
+                    cat = "Animacio"
+                elif "kef2005" in first:
+                    title = "KEF 2005: La Plejpleja Festivalo"
+                    desc = "Kultura Esperanto-Festivalo en Helsinki."
+                elif "dok_estas" in first:
+                    title = "Esperanto Estas: Dokumentario"
+                    desc = "Dokumenta serio pri la historio kaj moderna komunumo de Esperanto."
+                blocks.append({
+                    "title": title,
+                    "desc": desc,
+                    "category": cat,
+                    "duration": len(s_segs) * seg_duration
+                })
+                if bumper:
+                    blocks.append(bumper_block)
+
+        return blocks
+
+    # Default fallback for other directories (Bahá'í TV, etc.)
     blocks = []
     for prefix, group in groupby(ts_files, key=lambda f: f.rsplit("_", 1)[0]):
         count = len(list(group))
@@ -121,12 +231,11 @@ def get_channel_schedule_blocks(media_dir, default_meta=None, seg_duration=10.0)
         if default_meta and prefix in default_meta:
             meta = default_meta[prefix]
         else:
-            # Fallback humanized title
             clean_title = prefix.replace("_", " ").title()
             meta = {
                 "title": clean_title,
-                "desc": f"Elsendo de {clean_title}",
-                "category": "Ĝenerala"
+                "desc": f"Broadcast of {clean_title}",
+                "category": "General"
             }
             
         blocks.append({

@@ -247,8 +247,8 @@ https://kiefte.eu/iptv/twitch/relaxbeats
 #EXTINF:-1 tvg-id="NASATV.us@HD" tvg-name="NASA Live" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/512px-NASA_logo.svg.png" group-title="Natureza & Slow TV" tvg-chno="403",NASA Live (Earth from Space & ISS 1080p)
 https://kiefte.eu/iptv/twitch/nasa
 
-#EXTINF:-1 tvg-id="RailCowGirl.tv@HD" tvg-name="RailCowGirl" tvg-logo="https://static-cdn.jtvnw.net/jtv_user_pictures/3004f2f9-715b-4395-8b3d-4c3dbdd1be36-profile_image-300x300.png" group-title="Natureza & Slow TV" tvg-chno="404",RailCowGirl (Norway Scenic Cabview Train Journeys)
-https://kiefte.eu/iptv/twitch/railcowgirl?fallback=0
+#EXTINF:-1 tvg-id="WildEarth.tv@HD" tvg-name="WildEarth" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/WildEarth_logo.svg/512px-WildEarth_logo.svg.png" group-title="Natureza & Slow TV" tvg-chno="404",WildEarth (24/7 Live Safari & Wildlife 1080p)
+https://wildearth-adsfree-ono.amagi.tv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="AdventureEarth.de@HD" tvg-name="Adventure Earth" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Earth_symbol_%28bold%29.svg/512px-Earth_symbol_%28bold%29.svg.png" group-title="Natureza & Slow TV" tvg-chno="405",Adventure Earth (1080p Full HD)
 https://autentic-adventure-earth-1-gb.samsung.wurl.tv/playlist.m3u8
