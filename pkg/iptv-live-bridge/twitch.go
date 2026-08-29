@@ -15,6 +15,8 @@ import (
 	"sync"
 	"time"
 
+	"gopkg.in/yaml.v3"
+
 	"github.com/LaPingvino/streamglink"
 	_ "github.com/LaPingvino/streamglink/plugins/generic"
 	_ "github.com/LaPingvino/streamglink/plugins/twitch"
@@ -32,10 +34,116 @@ var (
 	lapingvinoFollowsSet  = make(map[string]bool)
 	liveFollowsCache      []string
 	liveFollowsCacheTime  time.Time
+
+	dedicatedStreamersMu sync.RWMutex
+	dedicatedStreamers   = map[string]bool{
+		"alex_t":           true,
+		"ambercyprian":     true,
+		"aurateur":         true,
+		"bluescuti":        true,
+		"bobross":          true,
+		"carlsagan42":      true,
+		"carrarium":        true,
+		"classictetris":    true,
+		"classictetris2":   true,
+		"classictetris3":   true,
+		"classictetris4":   true,
+		"dgr_dave":         true,
+		"dogplayingtetris": true,
+		"doremy":           true,
+		"ericicx":          true,
+		"esamarathon":      true,
+		"failstream":       true,
+		"fractal":          true,
+		"gamesdonequick":   true,
+		"glitchcat7":       true,
+		"grandpoobear":     true,
+		"harddrop":         true,
+		"insomniac":        true,
+		"juzcook":          true,
+		"lofigirl":         true,
+		"mitchflowerpower": true,
+		"monstercat":       true,
+		"mst3k":            true,
+		"msushi":           true,
+		"nasa":             true,
+		"pangaeapanga":     true,
+		"rbpimlico":        true,
+		"relaxbeats":       true,
+		"ryukahr":          true,
+		"shoutfactorytv":   true,
+		"simpleflips":      true,
+		"smallant":         true,
+		"speedrun":         true,
+		"tamthegamer":      true,
+		"tasvideos":        true,
+		"tgh_sr":           true,
+		"thabeast721":      true,
+		"vinesandwillows":  true,
+		"worldoflongplays": true,
+		"wumbotize":        true,
+	}
 )
 
 func init() {
 	loadLapingvinoFollows()
+	loadDedicatedStreamers()
+}
+
+func isDedicatedStreamer(login string) bool {
+	dedicatedStreamersMu.RLock()
+	defer dedicatedStreamersMu.RUnlock()
+	return dedicatedStreamers[strings.ToLower(login)]
+}
+
+func loadDedicatedStreamers() {
+	paths := []string{
+		filepath.Join(ProjectDir, "data"),
+		filepath.Join(MediaDir, "data"),
+		"/var/lib/iptv-live-bridge/data",
+		"/usr/share/iptv-live-bridge/data",
+		"/home/joop/iptv/data",
+	}
+	for _, dir := range paths {
+		files, err := filepath.Glob(filepath.Join(dir, "*.yaml"))
+		if err != nil || len(files) == 0 {
+			continue
+		}
+		for _, f := range files {
+			if strings.Contains(f, "24_followed_streamers.yaml") {
+				continue
+			}
+			b, err := os.ReadFile(f)
+			if err != nil {
+				continue
+			}
+			var list []ChannelDef
+			if err := yaml.Unmarshal(b, &list); err != nil {
+				continue
+			}
+			for _, ch := range list {
+				if strings.Contains(ch.URL, "twitch") {
+					cleanURL := strings.Split(ch.URL, "?")[0]
+					cleanURL = strings.TrimRight(cleanURL, "/")
+					if strings.Contains(cleanURL, "/game/") || strings.Contains(cleanURL, "/group/") ||
+						strings.Contains(cleanURL, "/followed/") || strings.Contains(cleanURL, "/auto-live") ||
+						strings.Contains(cleanURL, "/live") {
+						continue
+					}
+					parts := strings.Split(cleanURL, "/")
+					if len(parts) > 0 {
+						target := strings.ToLower(strings.TrimSuffix(parts[len(parts)-1], ".m3u8"))
+						if target != "" {
+							dedicatedStreamersMu.Lock()
+							dedicatedStreamers[target] = true
+							dedicatedStreamersMu.Unlock()
+						}
+					}
+				}
+			}
+		}
+		return
+	}
 }
 
 func loadLapingvinoFollows() {
@@ -578,6 +686,9 @@ func (tm *TwitchManager) GetRankedLiveFollows(ctx context.Context) []LiveStreame
 		for _, l := range chunk {
 			alias := "u_" + sanitizeAlias(l)
 			if u, ok := gData.Data[alias]; ok && u != nil && u.Stream != nil {
+				if isDedicatedStreamer(u.Login) {
+					continue
+				}
 				gName := "Gaming"
 				if u.Stream.Game != nil && u.Stream.Game.Name != "" {
 					gName = u.Stream.Game.Name
