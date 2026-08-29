@@ -30,15 +30,16 @@ type EPGChannelDef struct {
 }
 
 type EPGManager struct {
-	mu           sync.RWMutex
-	twitchXML    string
-	twitchTS     time.Time
-	unifiedXML   string
-	unifiedTS    time.Time
-	esperantoXML string
-	esperantoTS  time.Time
-	bahaiXML     string
-	bahaiTS      time.Time
+	mu             sync.RWMutex
+	twitchXML      string
+	twitchTS       time.Time
+	twitchUpdating bool
+	unifiedXML     string
+	unifiedTS      time.Time
+	esperantoXML   string
+	esperantoTS    time.Time
+	bahaiXML       string
+	bahaiTS        time.Time
 }
 
 var epgManager = &EPGManager{}
@@ -156,42 +157,71 @@ func fallbackTwitchChannels() []EPGChannelDef {
 
 func (m *EPGManager) GetTwitchEPG(ctx context.Context) string {
 	m.mu.RLock()
-	if m.twitchXML != "" && time.Since(m.twitchTS) < 90*time.Second {
-		xml := m.twitchXML
-		m.mu.RUnlock()
-		return xml
-	}
+	cached := m.twitchXML
+	isStale := time.Since(m.twitchTS) >= 2*time.Minute
+	isUpdating := m.twitchUpdating
 	m.mu.RUnlock()
+
+	// If we have cached XML in memory, return it immediately (lazy, non-blocking!)
+	if cached != "" {
+		if isStale && !isUpdating {
+			m.mu.Lock()
+			if !m.twitchUpdating {
+				m.twitchUpdating = true
+				go func() {
+					defer func() {
+						m.mu.Lock()
+						m.twitchUpdating = false
+						m.mu.Unlock()
+					}()
+					bgCtx, cancel := context.WithTimeout(context.Background(), 25*time.Second)
+					defer cancel()
+					xml, err := m.buildTwitchEPG(bgCtx)
+					if err == nil && xml != "" {
+						m.mu.Lock()
+						m.twitchXML = xml
+						m.twitchTS = time.Now()
+						m.mu.Unlock()
+
+						// Asynchronously save to files
+						for _, name := range []string{"twitch_lapingvino_iptv_epg.xml", "twitch_epg.xml"} {
+							p1 := filepath.Join(MediaDir, "dist", name)
+							_ = os.MkdirAll(filepath.Dir(p1), 0755)
+							_ = os.WriteFile(p1, []byte(xml), 0644)
+
+							p2 := filepath.Join(ProjectDir, "dist", name)
+							_ = os.MkdirAll(filepath.Dir(p2), 0755)
+							_ = os.WriteFile(p2, []byte(xml), 0644)
+						}
+					}
+				}()
+			}
+			m.mu.Unlock()
+		}
+		return cached
+	}
+
+	// Cold start (no cache yet): try loading from disk first for instant response
+	diskPaths := []string{
+		filepath.Join(MediaDir, "dist", "twitch_lapingvino_iptv_epg.xml"),
+		filepath.Join(ProjectDir, "dist", "twitch_lapingvino_iptv_epg.xml"),
+		filepath.Join(MediaDir, "dist", "twitch_epg.xml"),
+		filepath.Join(ProjectDir, "dist", "twitch_epg.xml"),
+	}
+	for _, dp := range diskPaths {
+		if b, err := os.ReadFile(dp); err == nil && len(b) > 0 {
+			m.mu.Lock()
+			m.twitchXML = string(b)
+			m.twitchTS = time.Now()
+			m.mu.Unlock()
+			log.Printf("[Twitch EPG] Loaded instant cache from %s", dp)
+			return string(b)
+		}
+	}
 
 	xml, err := m.buildTwitchEPG(ctx)
 	if err != nil {
-		log.Printf("[Twitch EPG] Warning: Failed to refresh Twitch EPG: %v", err)
-		m.mu.RLock()
-		if m.twitchXML != "" {
-			cached := m.twitchXML
-			m.mu.RUnlock()
-			log.Printf("[Twitch EPG] Retaining existing in-memory EPG cache")
-			return cached
-		}
-		m.mu.RUnlock()
-
-		// Try loading from disk
-		diskPaths := []string{
-			filepath.Join(MediaDir, "dist", "twitch_lapingvino_iptv_epg.xml"),
-			filepath.Join(ProjectDir, "dist", "twitch_lapingvino_iptv_epg.xml"),
-			filepath.Join(MediaDir, "dist", "twitch_epg.xml"),
-			filepath.Join(ProjectDir, "dist", "twitch_epg.xml"),
-		}
-		for _, dp := range diskPaths {
-			if b, err := os.ReadFile(dp); err == nil && len(b) > 0 {
-				m.mu.Lock()
-				m.twitchXML = string(b)
-				m.twitchTS = time.Now()
-				m.mu.Unlock()
-				log.Printf("[Twitch EPG] Loaded fallback from %s", dp)
-				return string(b)
-			}
-		}
+		log.Printf("[Twitch EPG] Warning: Failed to build Twitch EPG: %v", err)
 		return fallbackBaselineEPG()
 	}
 
@@ -200,7 +230,6 @@ func (m *EPGManager) GetTwitchEPG(ctx context.Context) string {
 	m.twitchTS = time.Now()
 	m.mu.Unlock()
 
-	// Asynchronously save to both files for user convenience
 	go func() {
 		for _, name := range []string{"twitch_lapingvino_iptv_epg.xml", "twitch_epg.xml"} {
 			p1 := filepath.Join(MediaDir, "dist", name)
