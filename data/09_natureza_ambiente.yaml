@@ -22,6 +22,13 @@
   tvg_name: Relax Beats
   url: https://kiefte.eu/iptv/twitch/relaxbeats
 
+- name: LeekBeats (24/7 Anime Lofi & Study Beats 1080p)
+  group: Natureza & Slow TV
+  tvg_id: LeekBeats.tv@HD
+  tvg_name: LeekBeats
+  logo: https://static-cdn.jtvnw.net/jtv_user_pictures/1e46777d-69dd-48da-9f49-4aa749f412f6-profile_image-300x300.png
+  url: https://kiefte.eu/iptv/twitch/leekbeats
+
 - name: NASA Live (Earth from Space & ISS 1080p)
   group: Natureza & Slow TV
   tvg_id: NASATV.us@HD

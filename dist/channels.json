@@ -663,13 +663,22 @@
     "chno": 402
   },
   {
+    "name": "LeekBeats (24/7 Anime Lofi \u0026 Study Beats 1080p)",
+    "group": "Natureza \u0026 Slow TV",
+    "tvg_id": "LeekBeats.tv@HD",
+    "tvg_name": "LeekBeats",
+    "logo": "https://static-cdn.jtvnw.net/jtv_user_pictures/1e46777d-69dd-48da-9f49-4aa749f412f6-profile_image-300x300.png",
+    "url": "https://kiefte.eu/iptv/twitch/leekbeats",
+    "chno": 403
+  },
+  {
     "name": "NASA Live (Earth from Space \u0026 ISS 1080p)",
     "group": "Natureza \u0026 Slow TV",
     "tvg_id": "NASATV.us@HD",
     "tvg_name": "NASA Live",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/512px-NASA_logo.svg.png",
     "url": "https://kiefte.eu/iptv/twitch/nasa",
-    "chno": 403
+    "chno": 404
   },
   {
     "name": "WildEarth (24/7 Live Safari \u0026 Wildlife 1080p)",
@@ -678,7 +687,7 @@
     "tvg_name": "WildEarth",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/WildEarth_logo.svg/512px-WildEarth_logo.svg.png",
     "url": "https://wildearth-adsfree-ono.amagi.tv/playlist.m3u8",
-    "chno": 404
+    "chno": 405
   },
   {
     "name": "Adventure Earth (1080p Full HD)",
@@ -687,7 +696,7 @@
     "tvg_name": "Adventure Earth",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Earth_symbol_%28bold%29.svg/512px-Earth_symbol_%28bold%29.svg.png",
     "url": "https://autentic-adventure-earth-1-gb.samsung.wurl.tv/playlist.m3u8",
-    "chno": 405
+    "chno": 406
   },
   {
     "name": "FIFA+",
@@ -2892,13 +2901,43 @@
     "radio": true
   },
   {
+    "name": "Electro Swing Radio (Berlin 192k)",
+    "group": "Rádio Global",
+    "tvg_id": "ElectroSwingRadio.de",
+    "tvg_name": "Electro Swing Radio",
+    "logo": "https://electroswing-radio.com/wp-content/uploads/2023/10/Radio_Logo_2023.png",
+    "url": "https://streamer.radio.co/s2c3cc784b/listen",
+    "chno": 8032,
+    "radio": true
+  },
+  {
+    "name": "Jazz Radio - Electro Swing (France)",
+    "group": "Rádio Global",
+    "tvg_id": "JazzRadioElectroSwing.fr",
+    "tvg_name": "Jazz Radio Electro Swing",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Jazz_Radio_logo.svg/512px-Jazz_Radio_logo.svg.png",
+    "url": "https://jazz-wr04.ice.infomaniak.ch/jazz-wr04-64.aac",
+    "chno": 8033,
+    "radio": true
+  },
+  {
+    "name": "Technolovers - Tropical House (192k)",
+    "group": "Rádio Global",
+    "tvg_id": "TropicalHouseRadio.de",
+    "tvg_name": "Tropical House Radio",
+    "logo": "",
+    "url": "https://stream.technolovers.fm/tropical-house",
+    "chno": 8034,
+    "radio": true
+  },
+  {
     "name": "Muzaiko (24/7 Esperanto Radio)",
     "group": "Rádio Global",
     "tvg_id": "Muzaiko.eo",
     "tvg_name": "Muzaiko Esperanto",
     "logo": "",
     "url": "http://fluo.muzaiko.saluton.dk:8000/radio.mp3",
-    "chno": 8032
+    "chno": 8035
   },
   {
     "name": "Radio Habana Cuba (Esperanto)",
@@ -2907,7 +2946,7 @@
     "tvg_name": "Radio Habana Cuba Esperanto",
     "logo": "",
     "url": "https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/McW3fLhs",
-    "chno": 8033
+    "chno": 8036
   },
   {
     "name": "Bok Radio 98.9 FM (Afrikaans)",
@@ -2916,7 +2955,7 @@
     "tvg_name": "Bok Radio Afrikaans",
     "logo": "",
     "url": "http://bokradio.highquality.radiostream.co.za/",
-    "chno": 8034
+    "chno": 8037
   },
   {
     "name": "Bosveld Stereo 107.5 FM (Afrikaans)",
@@ -2925,7 +2964,7 @@
     "tvg_name": "Bosveld Stereo Afrikaans",
     "logo": "",
     "url": "http://capeant.antfarm.co.za:8000/Bosveld",
-    "chno": 8035
+    "chno": 8038
   },
   {
     "name": "Fine Music Radio (Cape Town Classical)",
@@ -2934,7 +2973,7 @@
     "tvg_name": "Fine Music Radio",
     "logo": "",
     "url": "https://edge.iono.fm/xhls/fmr_live_high.m3u8",
-    "chno": 8036
+    "chno": 8039
   },
   {
     "name": "Radio 3ZZZ 92.3 FM (Melbourne / Esperanto)",
@@ -2943,7 +2982,7 @@
     "tvg_name": "Radio 3ZZZ Esperanto",
     "logo": "",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/3ZZZ.mp3",
-    "chno": 8037
+    "chno": 8040
   },
   {
     "name": "Hitradio Namibia (Windhoek / Deutsch)",
@@ -2952,7 +2991,7 @@
     "tvg_name": "Hitradio Namibia",
     "logo": "",
     "url": "https://s37.derstream.net/hitradio-namibia.mp3",
-    "chno": 8038
+    "chno": 8041
   },
   {
     "name": "Kosmos 94.1 (Namibië / Afrikaans)",
@@ -2961,6 +3000,6 @@
     "tvg_name": "Kosmos 94.1 Afrikaans",
     "logo": "",
     "url": "https://edge.iono.fm/xice/88_high.mp3",
-    "chno": 8039
+    "chno": 8042
   }
 ]

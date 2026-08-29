@@ -245,13 +245,16 @@ https://kiefte.eu/iptv/twitch/lofigirl
 #EXTINF:-1 tvg-id="RelaxBeats.tv@HD" tvg-name="Relax Beats" group-title="Natureza & Slow TV" tvg-chno="402",Relax Beats & Chill Music (24/7 HD)
 https://kiefte.eu/iptv/twitch/relaxbeats
 
-#EXTINF:-1 tvg-id="NASATV.us@HD" tvg-name="NASA Live" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/512px-NASA_logo.svg.png" group-title="Natureza & Slow TV" tvg-chno="403",NASA Live (Earth from Space & ISS 1080p)
+#EXTINF:-1 tvg-id="LeekBeats.tv@HD" tvg-name="LeekBeats" tvg-logo="https://static-cdn.jtvnw.net/jtv_user_pictures/1e46777d-69dd-48da-9f49-4aa749f412f6-profile_image-300x300.png" group-title="Natureza & Slow TV" tvg-chno="403",LeekBeats (24/7 Anime Lofi & Study Beats 1080p)
+https://kiefte.eu/iptv/twitch/leekbeats
+
+#EXTINF:-1 tvg-id="NASATV.us@HD" tvg-name="NASA Live" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/512px-NASA_logo.svg.png" group-title="Natureza & Slow TV" tvg-chno="404",NASA Live (Earth from Space & ISS 1080p)
 https://kiefte.eu/iptv/twitch/nasa
 
-#EXTINF:-1 tvg-id="WildEarth.tv@HD" tvg-name="WildEarth" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/WildEarth_logo.svg/512px-WildEarth_logo.svg.png" group-title="Natureza & Slow TV" tvg-chno="404",WildEarth (24/7 Live Safari & Wildlife 1080p)
+#EXTINF:-1 tvg-id="WildEarth.tv@HD" tvg-name="WildEarth" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/WildEarth_logo.svg/512px-WildEarth_logo.svg.png" group-title="Natureza & Slow TV" tvg-chno="405",WildEarth (24/7 Live Safari & Wildlife 1080p)
 https://wildearth-adsfree-ono.amagi.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="AdventureEarth.de@HD" tvg-name="Adventure Earth" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Earth_symbol_%28bold%29.svg/512px-Earth_symbol_%28bold%29.svg.png" group-title="Natureza & Slow TV" tvg-chno="405",Adventure Earth (1080p Full HD)
+#EXTINF:-1 tvg-id="AdventureEarth.de@HD" tvg-name="Adventure Earth" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Earth_symbol_%28bold%29.svg/512px-Earth_symbol_%28bold%29.svg.png" group-title="Natureza & Slow TV" tvg-chno="406",Adventure Earth (1080p Full HD)
 https://autentic-adventure-earth-1-gb.samsung.wurl.tv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="FIFAPlus.ch" tvg-name="FIFA+" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/FIFA-Plus.png" group-title="Desporto" tvg-chno="500",FIFA+
@@ -990,26 +993,35 @@ https://wlgi.streamguys1.com/live
 #EXTINF:-1 tvg-id="247EDMRadio.com" tvg-name="24/7 EDM Radio" tvg-logo="https://usercontent.one/wp/247edmradio.com/wp-content/uploads/2020/10/cropped-247-EDM-Radio.jpg" group-title="Rádio Global" tvg-chno="8031" radio="true",24/7 EDM Radio
 https://ec6.yesstreaming.net:1455/stream
 
-#EXTINF:-1 tvg-id="Muzaiko.eo" tvg-name="Muzaiko Esperanto" group-title="Rádio Global" tvg-chno="8032" radio="true",Muzaiko (24/7 Esperanto Radio)
+#EXTINF:-1 tvg-id="ElectroSwingRadio.de" tvg-name="Electro Swing Radio" tvg-logo="https://electroswing-radio.com/wp-content/uploads/2023/10/Radio_Logo_2023.png" group-title="Rádio Global" tvg-chno="8032" radio="true",Electro Swing Radio (Berlin 192k)
+https://streamer.radio.co/s2c3cc784b/listen
+
+#EXTINF:-1 tvg-id="JazzRadioElectroSwing.fr" tvg-name="Jazz Radio Electro Swing" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Jazz_Radio_logo.svg/512px-Jazz_Radio_logo.svg.png" group-title="Rádio Global" tvg-chno="8033" radio="true",Jazz Radio - Electro Swing (France)
+https://jazz-wr04.ice.infomaniak.ch/jazz-wr04-64.aac
+
+#EXTINF:-1 tvg-id="TropicalHouseRadio.de" tvg-name="Tropical House Radio" group-title="Rádio Global" tvg-chno="8034" radio="true",Technolovers - Tropical House (192k)
+https://stream.technolovers.fm/tropical-house
+
+#EXTINF:-1 tvg-id="Muzaiko.eo" tvg-name="Muzaiko Esperanto" group-title="Rádio Global" tvg-chno="8035" radio="true",Muzaiko (24/7 Esperanto Radio)
 http://fluo.muzaiko.saluton.dk:8000/radio.mp3
 
-#EXTINF:-1 tvg-id="RadioHabanaCuba.eo" tvg-name="Radio Habana Cuba Esperanto" group-title="Rádio Global" tvg-chno="8033" radio="true",Radio Habana Cuba (Esperanto)
+#EXTINF:-1 tvg-id="RadioHabanaCuba.eo" tvg-name="Radio Habana Cuba Esperanto" group-title="Rádio Global" tvg-chno="8036" radio="true",Radio Habana Cuba (Esperanto)
 https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/McW3fLhs
 
-#EXTINF:-1 tvg-id="BokRadio.za" tvg-name="Bok Radio Afrikaans" group-title="Rádio Global" tvg-chno="8034" radio="true",Bok Radio 98.9 FM (Afrikaans)
+#EXTINF:-1 tvg-id="BokRadio.za" tvg-name="Bok Radio Afrikaans" group-title="Rádio Global" tvg-chno="8037" radio="true",Bok Radio 98.9 FM (Afrikaans)
 http://bokradio.highquality.radiostream.co.za/
 
-#EXTINF:-1 tvg-id="BosveldStereo.za" tvg-name="Bosveld Stereo Afrikaans" group-title="Rádio Global" tvg-chno="8035" radio="true",Bosveld Stereo 107.5 FM (Afrikaans)
+#EXTINF:-1 tvg-id="BosveldStereo.za" tvg-name="Bosveld Stereo Afrikaans" group-title="Rádio Global" tvg-chno="8038" radio="true",Bosveld Stereo 107.5 FM (Afrikaans)
 http://capeant.antfarm.co.za:8000/Bosveld
 
-#EXTINF:-1 tvg-id="FineMusicRadio.za" tvg-name="Fine Music Radio" group-title="Rádio Global" tvg-chno="8036" radio="true",Fine Music Radio (Cape Town Classical)
+#EXTINF:-1 tvg-id="FineMusicRadio.za" tvg-name="Fine Music Radio" group-title="Rádio Global" tvg-chno="8039" radio="true",Fine Music Radio (Cape Town Classical)
 https://edge.iono.fm/xhls/fmr_live_high.m3u8
 
-#EXTINF:-1 tvg-id="Radio3ZZZ.au" tvg-name="Radio 3ZZZ Esperanto" group-title="Rádio Global" tvg-chno="8037" radio="true",Radio 3ZZZ 92.3 FM (Melbourne / Esperanto)
+#EXTINF:-1 tvg-id="Radio3ZZZ.au" tvg-name="Radio 3ZZZ Esperanto" group-title="Rádio Global" tvg-chno="8040" radio="true",Radio 3ZZZ 92.3 FM (Melbourne / Esperanto)
 https://playerservices.streamtheworld.com/api/livestream-redirect/3ZZZ.mp3
 
-#EXTINF:-1 tvg-id="HitradioNamibia.na" tvg-name="Hitradio Namibia" group-title="Rádio Global" tvg-chno="8038" radio="true",Hitradio Namibia (Windhoek / Deutsch)
+#EXTINF:-1 tvg-id="HitradioNamibia.na" tvg-name="Hitradio Namibia" group-title="Rádio Global" tvg-chno="8041" radio="true",Hitradio Namibia (Windhoek / Deutsch)
 https://s37.derstream.net/hitradio-namibia.mp3
 
-#EXTINF:-1 tvg-id="Kosmos941.na" tvg-name="Kosmos 94.1 Afrikaans" group-title="Rádio Global" tvg-chno="8039" radio="true",Kosmos 94.1 (Namibië / Afrikaans)
+#EXTINF:-1 tvg-id="Kosmos941.na" tvg-name="Kosmos 94.1 Afrikaans" group-title="Rádio Global" tvg-chno="8042" radio="true",Kosmos 94.1 (Namibië / Afrikaans)
 https://edge.iono.fm/xice/88_high.mp3

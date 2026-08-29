@@ -194,3 +194,26 @@
   tvg_name: 24/7 EDM Radio
   logo: https://usercontent.one/wp/247edmradio.com/wp-content/uploads/2020/10/cropped-247-EDM-Radio.jpg
   url: https://ec6.yesstreaming.net:1455/stream
+
+- name: Electro Swing Radio (Berlin 192k)
+  group: Rádio Global
+  radio: true
+  tvg_id: ElectroSwingRadio.de
+  tvg_name: Electro Swing Radio
+  logo: https://electroswing-radio.com/wp-content/uploads/2023/10/Radio_Logo_2023.png
+  url: https://streamer.radio.co/s2c3cc784b/listen
+
+- name: Jazz Radio - Electro Swing (France)
+  group: Rádio Global
+  radio: true
+  tvg_id: JazzRadioElectroSwing.fr
+  tvg_name: Jazz Radio Electro Swing
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Jazz_Radio_logo.svg/512px-Jazz_Radio_logo.svg.png
+  url: https://jazz-wr04.ice.infomaniak.ch/jazz-wr04-64.aac
+
+- name: Technolovers - Tropical House (192k)
+  group: Rádio Global
+  radio: true
+  tvg_id: TropicalHouseRadio.de
+  tvg_name: Tropical House Radio
+  url: https://stream.technolovers.fm/tropical-house
