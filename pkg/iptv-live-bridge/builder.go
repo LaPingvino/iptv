@@ -390,6 +390,7 @@ func buildMasterEPG(channels []ChannelDef, distDir string) error {
 	defer cancel()
 	twitchXML := epgManager.GetTwitchEPG(ctx)
 	_ = os.WriteFile(filepath.Join(distDir, "twitch_epg.xml"), []byte(twitchXML), 0644)
+	_ = os.WriteFile(filepath.Join(distDir, "twitch_lapingvino_iptv_epg.xml"), []byte(twitchXML), 0644)
 	extractFullXMLTV(twitchXML, finalChannels, &finalProgrammes)
 
 	// Assemble final XMLTV output

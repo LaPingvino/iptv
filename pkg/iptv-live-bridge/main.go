@@ -96,11 +96,11 @@ func main() {
 		}
 
 		// 2b. Real-Time EPG Handlers
-		if path == "twitch/epg" || path == "twitch/epg.xml" || path == "epg/twitch.xml" {
+		if path == "twitch/epg" || path == "twitch/epg.xml" || path == "epg/twitch.xml" || path == "twitch_lapingvino_iptv_epg.xml" || path == "dist/twitch_lapingvino_iptv_epg.xml" {
 			xml := epgManager.GetTwitchEPG(r.Context())
 			w.Header().Set("Content-Type", "application/xml; charset=utf-8")
 			w.Header().Set("Access-Control-Allow-Origin", "*")
-			w.Header().Set("Cache-Control", "max-age=60, must-revalidate")
+			w.Header().Set("Cache-Control", "no-cache, must-revalidate")
 			w.Write([]byte(xml))
 			return
 		}
