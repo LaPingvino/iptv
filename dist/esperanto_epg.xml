@@ -2477,4 +2477,14 @@
     <desc lang="eo">Mendo de manĝaĵoj kaj lingvaj defioj.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
+  <programme start="20260901212740 +0000" stop="20260901212940 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Enkonduko</title>
+    <desc lang="eo">Oficiala stacia vineto kaj enkonduko al la internacia lingvo Esperanto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20260901212940 +0000" stop="20260901221240 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 12: Plaĝa tago</title>
+    <desc lang="eo">Amuzaj ludoj kaj defioj ĉe la marbordo.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
 </tv>

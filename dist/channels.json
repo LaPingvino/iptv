@@ -1279,6 +1279,15 @@
     "chno": 1009
   },
   {
+    "name": "Shoujo (Speedruns \u0026 Multiworld)",
+    "group": "Speedrunning \u0026 Marathons",
+    "tvg_id": "Shoujo.tv",
+    "tvg_name": "Shoujo",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/shoujo",
+    "chno": 1010
+  },
+  {
     "name": "Super Mario World (Romhacks \u0026 Kaizo Live)",
     "group": "Mario \u0026 Romhacks",
     "tvg_id": "SMWRomhacks.tv",
@@ -1403,6 +1412,15 @@
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/rbpimlico",
     "chno": 1063
+  },
+  {
+    "name": "BarbarousKing (Mario Romhacks \u0026 Variety)",
+    "group": "Mario \u0026 Romhacks",
+    "tvg_id": "BarbarousKing.tv",
+    "tvg_name": "BarbarousKing",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/barbarousking",
+    "chno": 1064
   },
   {
     "name": "Classic Tetris (CTWC Main)",

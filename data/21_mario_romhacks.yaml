@@ -68,3 +68,8 @@
   tvg_id: RBPimlico.tv
   tvg_name: RBPimlico
   url: https://kiefte.eu/iptv/twitch/rbpimlico
+- name: BarbarousKing (Mario Romhacks & Variety)
+  group: Mario & Romhacks
+  tvg_id: BarbarousKing.tv
+  tvg_name: BarbarousKing
+  url: https://kiefte.eu/iptv/twitch/barbarousking

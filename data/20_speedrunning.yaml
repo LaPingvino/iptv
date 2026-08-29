@@ -48,3 +48,8 @@
   tvg_id: Msushi.tv
   tvg_name: Msushi
   url: https://kiefte.eu/iptv/twitch/msushi
+- name: Shoujo (Speedruns & Multiworld)
+  group: Speedrunning & Marathons
+  tvg_id: Shoujo.tv
+  tvg_name: Shoujo
+  url: https://kiefte.eu/iptv/twitch/shoujo

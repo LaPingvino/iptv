@@ -55,7 +55,7 @@ func TestCreatorCirclesConfig(t *testing.T) {
 	if len(creatorCircles["tetris"]) == 0 {
 		t.Error("expected tetris fallback circle")
 	}
-	if len(creatorCircles["smallant"]) == 0 {
-		t.Error("expected smallant fallback circle")
+	if len(creatorCircles["tasvideos"]) == 0 {
+		t.Error("expected tasvideos fallback circle")
 	}
 }

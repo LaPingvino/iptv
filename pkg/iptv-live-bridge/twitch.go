@@ -40,6 +40,7 @@ var (
 		"alex_t":           true,
 		"ambercyprian":     true,
 		"aurateur":         true,
+		"barbarousking":    true,
 		"bluescuti":        true,
 		"bobross":          true,
 		"carlsagan42":      true,
@@ -73,6 +74,7 @@ var (
 		"relaxbeats":       true,
 		"ryukahr":          true,
 		"shoutfactorytv":   true,
+		"shoujo":           true,
 		"simpleflips":      true,
 		"smallant":         true,
 		"speedrun":         true,
@@ -215,71 +217,38 @@ type TwitchManager struct {
 	raidMemories map[string]RaidMemory
 }
 
-// Creator Circles for fallback when primary stream is offline
+// Essential Fallbacks for multi-channel events and 24/7 non-game streams
 var creatorCircles = map[string][]string{
-	// Tetris Community
-	"classictetris":    {"classictetris2", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "harddrop", "speedrun"},
-	"classictetris2":   {"classictetris", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "classictetris3", "harddrop", "speedrun"},
-	"classictetris3":   {"classictetris", "classictetris2", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "harddrop", "speedrun"},
-	"classictetris4":   {"classictetris", "classictetris2", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "harddrop", "speedrun"},
-	"harddrop":         {"classictetris", "classictetris2", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "speedrun"},
-	"dogplayingtetris": {"classictetris", "fractal", "ericicx", "alex_t", "bluescuti", "harddrop"},
-	"fractal":          {"classictetris", "dogplayingtetris", "ericicx", "alex_t", "bluescuti", "harddrop"},
-	"ericicx":          {"classictetris", "dogplayingtetris", "fractal", "alex_t", "bluescuti", "harddrop"},
-	"alex_t":           {"classictetris", "dogplayingtetris", "fractal", "ericicx", "bluescuti", "harddrop"},
-	"bluescuti":        {"classictetris", "dogplayingtetris", "fractal", "ericicx", "alex_t", "harddrop"},
-	"wumbotize":        {"harddrop", "doremy", "classictetris", "speedrun"},
-	"doremy":           {"harddrop", "wumbotize", "classictetris", "speedrun"},
-	"vinesandwillows":  {"classictetris", "harddrop", "dogplayingtetris", "bluescuti"},
+	// CTWC Multi-Feeds (mirror to main championship channel)
+	"classictetris2": {"classictetris"},
+	"classictetris3": {"classictetris"},
+	"classictetris4": {"classictetris"},
 
-	// Speedrunning & Marathons
-	"speedrun":         {"gamesdonequick", "esamarathon", "tasvideos", "mitchflowerpower"},
-	"gamesdonequick":   {"esamarathon", "speedrun", "tasvideos", "mitchflowerpower"},
-	"esamarathon":      {"gamesdonequick", "speedrun", "tasvideos", "mitchflowerpower"},
-	"tasvideos":        {"speedrun", "gamesdonequick", "esamarathon", "mitchflowerpower"},
-	"mitchflowerpower": {"speedrun", "gamesdonequick", "grandpoobear", "thabeast721", "ryukahr", "esamarathon"},
-	"smallant":         {"dgr_dave", "ryukahr", "speedrun", "thabeast721", "grandpoobear"},
-	"carrarium":        {"tgh_sr", "msushi", "speedrun", "gamesdonequick"},
-	"tgh_sr":           {"carrarium", "msushi", "speedrun", "gamesdonequick"},
-	"ambercyprian":     {"speedrun", "gamesdonequick", "esamarathon", "mitchflowerpower"},
-	"msushi":           {"carrarium", "tgh_sr", "speedrun", "gamesdonequick"},
+	// Speedrun Marathon & Archive Relays
+	"tasvideos":        {"speedrun", "gamesdonequick"},
+	"esamarathon":      {"gamesdonequick", "speedrun"},
+	"gamesdonequick":   {"speedrun", "esamarathon"},
+	"worldoflongplays": {"speedrun"},
 
-	// Mario & Romhacks
-	"ryukahr":          {"rbpimlico", "tammy_blackmedia", "dgr_dave", "smallant", "thabeast721", "aurateur"},
-	"carlsagan42":      {"rbpimlico", "juzcook", "dgr_dave", "grandpoobear", "thabeast721", "aurateur"},
-	"thabeast721":      {"grandpoobear", "aurateur", "pangaeapanga", "simpleflips", "carlsagan42", "rbpimlico"},
-	"grandpoobear":     {"thabeast721", "aurateur", "carlsagan42", "juzcook", "pangaeapanga", "rbpimlico"},
-	"rbpimlico":        {"dgr_dave", "ryukahr", "carlsagan42", "aurateur", "juzcook", "thabeast721", "grandpoobear"},
-	"juzcook":          {"carlsagan42", "rbpimlico", "dgr_dave", "grandpoobear", "thabeast721", "aurateur"},
-	"aurateur":         {"ryukahr", "dgr_dave", "rbpimlico", "carlsagan42", "thabeast721", "grandpoobear"},
-	"pangaeapanga":     {"thabeast721", "grandpoobear", "simpleflips", "carlsagan42", "ryukahr"},
-	"simpleflips":      {"thabeast721", "pangaeapanga", "grandpoobear", "carlsagan42"},
-	"failstream":       {"dgr_dave", "ryukahr", "carlsagan42", "grandpoobear", "thabeast721"},
-	"glitchcat7":       {"thabeast721", "pangaeapanga", "grandpoobear", "carlsagan42"},
-	"dgr_dave":         {"ryukahr", "rbpimlico", "carlsagan42", "smallant", "aurateur"},
-	"tammy_blackmedia": {"ryukahr", "elanaorama", "dgr_dave", "carlsagan42", "rbpimlico"},
-	"elanaorama":       {"tammy_blackmedia", "ryukahr", "smallant", "speedrun"},
-
-	// Retro, Culture & Slow TV
-	"mst3k":            {"shoutfactorytv", "worldoflongplays"},
-	"shoutfactorytv":   {"mst3k", "worldoflongplays"},
-	"worldoflongplays": {"tasvideos", "speedrun"},
+	// Retro, Culture & 24/7 Music/Slow TV
+	"mst3k":            {"shoutfactorytv"},
+	"shoutfactorytv":   {"mst3k"},
 	"bobross":          {"lofigirl", "relaxbeats"},
 	"lofigirl":         {"relaxbeats", "monstercat"},
 	"relaxbeats":       {"lofigirl", "monstercat"},
 	"monstercat":       {"insomniac", "lofigirl"},
 	"insomniac":         {"monstercat", "relaxbeats"},
 
-	// Game Categories Fallback Circles
-	"nes-tetris":                {"classictetris", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "classictetris2", "harddrop", "speedrun"},
-	"tetris":                    {"classictetris", "dogplayingtetris", "fractal", "ericicx", "alex_t", "bluescuti", "harddrop", "speedrun"},
+	// Game Categories Safety Nets (for when a game has 0 live streams on Twitch)
+	"nes-tetris":                {"classictetris", "dogplayingtetris", "bluescuti", "speedrun"},
+	"tetris":                    {"classictetris", "dogplayingtetris", "bluescuti", "speedrun"},
 	"modern-tetris":             {"harddrop", "wumbotize", "doremy", "classictetris", "speedrun"},
-	"super mario world":         {"ryukahr", "grandpoobear", "thabeast721", "carlsagan42", "juzcook", "aurateur", "pangaeapanga", "simpleflips", "dgr_dave", "rbpimlico"},
-	"romhack-super mario world": {"ryukahr", "grandpoobear", "thabeast721", "carlsagan42", "juzcook", "aurateur", "pangaeapanga", "simpleflips", "dgr_dave", "rbpimlico"},
-	"super mario maker 2":       {"ryukahr", "dgr_dave", "carlsagan42", "rbpimlico", "aurateur", "juzcook", "grandpoobear", "thabeast721"},
-	"celeste":                   {"carrarium", "tgh_sr", "msushi", "speedrun"},
-	"portal":                    {"msushi", "speedrun"},
-	"portal 2":                  {"msushi", "speedrun"},
+	"super mario world":         {"speedrun"},
+	"romhack-super mario world": {"speedrun"},
+	"super mario maker 2":       {"speedrun"},
+	"celeste":                   {"speedrun"},
+	"portal":                    {"speedrun"},
+	"portal 2":                  {"speedrun"},
 }
 
 // Known AFK / desktop / fake stream traps to strictly filter out
@@ -533,32 +502,54 @@ func (tm *TwitchManager) Resolve(ctx context.Context, channel string) (string, e
 		}
 	}
 
-	// 4. Check Live Teammates (Primary Team)
+	// 4. Check Live Teammates (Primary Team from API) - prioritizing followed teammates
 	if info != nil && len(info.Teammates) > 0 {
 		for _, teammate := range info.Teammates {
-			teammateURL, err := tm.resolveSingle(ctx, teammate)
-			if err == nil {
+			if isLapingvinoFollow(teammate) {
+				if teammateURL, err := tm.resolveSingle(ctx, teammate); err == nil {
+					log.Printf("[Twitch] %s offline -> routed to followed teammate %s (%s)", channel, teammate, info.TeamName)
+					return teammateURL, nil
+				}
+			}
+		}
+		for _, teammate := range info.Teammates {
+			if teammateURL, err := tm.resolveSingle(ctx, teammate); err == nil {
 				log.Printf("[Twitch] %s offline -> routed to live teammate %s (%s)", channel, teammate, info.TeamName)
 				return teammateURL, nil
 			}
 		}
 	}
 
-	// 5. Check Curated Creator Circles Safety Net FIRST (Check teammates & community friends)
+	// 5. Automatic Dynamic Fallback: Check if any followed streamer is live playing the same game (API + followed list)
+	if info != nil && info.LastGameName != "" {
+		cleanGame := strings.ToLower(strings.TrimSpace(info.LastGameName))
+		if !ignoredGameCategories[cleanGame] && cleanGame != "games + demos" {
+			liveFollows := tm.GetRankedLiveFollows(ctx)
+			for _, f := range liveFollows {
+				if f.Login != channel && strings.EqualFold(f.Game, info.LastGameName) {
+					if fURL, err := tm.resolveSingle(ctx, f.Login); err == nil {
+						log.Printf("[Twitch] %s offline -> automatically routed to followed streamer %s playing same game '%s'", channel, f.Login, f.Game)
+						return fURL, nil
+					}
+				}
+			}
+		}
+	}
+
+	// 6. Minimal Essential Mirrors (for multi-channel events and 24/7 non-game archives)
 	if circle, exists := creatorCircles[channel]; exists {
 		for _, fb := range circle {
-			fbURL, fbErr := tm.resolveSingle(ctx, fb)
-			if fbErr == nil {
-				log.Printf("[Twitch] %s offline -> routed to creator circle fallback %s", channel, fb)
+			if fbURL, fbErr := tm.resolveSingle(ctx, fb); fbErr == nil {
+				log.Printf("[Twitch] %s offline -> routed to essential circle fallback %s", channel, fb)
 				return fbURL, nil
 			}
 		}
 	}
 
-	// 6. Check Contextual Last Broadcast Game Category (if not a generic non-game category)
+	// 7. Contextual Last Broadcast Game Category (broad Twitch search with personal follow bias)
 	if info != nil && info.LastGameName != "" {
 		cleanGame := strings.ToLower(strings.TrimSpace(info.LastGameName))
-		if !ignoredGameCategories[cleanGame] {
+		if !ignoredGameCategories[cleanGame] && cleanGame != "games + demos" {
 			gameURL, err := tm.ResolveGame(ctx, info.LastGameName, "")
 			if err == nil && gameURL != "" {
 				log.Printf("[Twitch] %s offline -> routed to top streamer in last played game '%s'", channel, info.LastGameName)
@@ -567,7 +558,7 @@ func (tm *TwitchManager) Resolve(ctx context.Context, channel string) (string, e
 		}
 	}
 
-	// 7. Ultimate Last Resort: Check any live streamer from lapingvino's followed channels!
+	// 8. Tiered Last Resort: Check any live streamer from lapingvino's followed channels!
 	if fallbackURL, fallbackLogin := tm.resolveLapingvinoFollowedLastResort(ctx); fallbackURL != "" {
 		log.Printf("[Twitch] %s exhausted all fallbacks -> routed to lapingvino followed last-resort '%s'", channel, fallbackLogin)
 		return fallbackURL, nil

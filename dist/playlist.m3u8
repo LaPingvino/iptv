@@ -453,6 +453,9 @@ https://kiefte.eu/iptv/twitch/ambercyprian
 #EXTINF:-1 tvg-id="Msushi.tv" tvg-name="Msushi" group-title="Speedrunning & Marathons" tvg-chno="1009",Msushi (Celeste & Portal Speedruns)
 https://kiefte.eu/iptv/twitch/msushi
 
+#EXTINF:-1 tvg-id="Shoujo.tv" tvg-name="Shoujo" group-title="Speedrunning & Marathons" tvg-chno="1010",Shoujo (Speedruns & Multiworld)
+https://kiefte.eu/iptv/twitch/shoujo
+
 #EXTINF:-1 tvg-id="SMWRomhacks.tv" tvg-name="SMW Romhacks Live" group-title="Mario & Romhacks" tvg-chno="1050",Super Mario World (Romhacks & Kaizo Live)
 https://kiefte.eu/iptv/twitch/game/Super%20Mario%20World?bias=romhack
 
@@ -494,6 +497,9 @@ https://kiefte.eu/iptv/twitch/dgr_dave
 
 #EXTINF:-1 tvg-id="RBPimlico.tv" tvg-name="RBPimlico" group-title="Mario & Romhacks" tvg-chno="1063",RBPimlico (Mario Maker & Kaizo)
 https://kiefte.eu/iptv/twitch/rbpimlico
+
+#EXTINF:-1 tvg-id="BarbarousKing.tv" tvg-name="BarbarousKing" group-title="Mario & Romhacks" tvg-chno="1064",BarbarousKing (Mario Romhacks & Variety)
+https://kiefte.eu/iptv/twitch/barbarousking
 
 #EXTINF:-1 tvg-id="ClassicTetris.tv" tvg-name="ClassicTetris" group-title="Tetris" tvg-chno="1100",Classic Tetris (CTWC Main)
 https://kiefte.eu/iptv/twitch/classictetris
