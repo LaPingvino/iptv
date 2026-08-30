@@ -1,5 +1,4 @@
-#EXTM3U url-tvg="https://kiefte.eu/iptv/epg.xml.gz,https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/epg.xml.gz,https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-m3upt.xml.xz,https://raw.githubusercontent.com/Free-TV/IPTV/master/epg.xml.gz" x-tvg-url="https://kiefte.eu/iptv/epg.xml.gz,https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/epg.xml.gz,https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-m3upt.xml.xz,https://raw.githubusercontent.com/Free-TV/IPTV/master/epg.xml.gz"
-
+#EXTM3U url-tvg="https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/epg.xml.gz,https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-m3upt.xml.xz,https://raw.githubusercontent.com/Free-TV/IPTV/master/epg.xml.gz" x-tvg-url="https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/epg.xml.gz,https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-m3upt.xml.xz,https://raw.githubusercontent.com/Free-TV/IPTV/master/epg.xml.gz"
 
 
 #EXTINF:-1 tvg-id="Antena1.pt" tvg-name="RDP Antena 1" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-1.png" group-title="PT Rádio" tvg-chno="5000" radio="true",RDP Antena 1
