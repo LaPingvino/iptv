@@ -184,6 +184,38 @@ func getBVNDynamicMPD(ctx context.Context) ([]byte, error) {
 	return data, nil
 }
 
+// getBVNRawMPD returns the unstripped, full-fidelity live DASH MPD with absolute BaseURL,
+// preserving all ABR tiers, subtitles, and trick-play scrubbing tracks for testing native player DASH support.
+func getBVNRawMPD(ctx context.Context) ([]byte, error) {
+	mpdURL, err := getBVNStreamURL(ctx)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequestWithContext(ctx, http.MethodGet, mpdURL, nil)
+	if err != nil {
+		return nil, err
+	}
+	req.Header.Set("User-Agent", "Mozilla/5.0")
+
+	resp, err := http.DefaultClient.Do(req)
+	if err != nil {
+		return nil, err
+	}
+	defer resp.Body.Close()
+
+	rawXML, err := io.ReadAll(resp.Body)
+	if err != nil {
+		return nil, err
+	}
+
+	xmlStr := string(rawXML)
+	baseURL := mpdURL[:strings.LastIndex(mpdURL, "/")+1]
+	xmlStr = strings.Replace(xmlStr, "<Period", fmt.Sprintf("<BaseURL>%s</BaseURL><Period", baseURL), 1)
+
+	return []byte(xmlStr), nil
+}
+
 // filterDynamicVideoAdaptationSets dynamically keeps only the single representation with the highest bandwidth,
 // completely eliminating fragile hardcoded bitrates.
 func filterDynamicVideoAdaptationSets(xmlStr string) string {

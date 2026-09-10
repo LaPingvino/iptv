@@ -1,4 +1,5 @@
-#EXTM3U url-tvg="https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/epg.xml.gz,https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-m3upt.xml.xz,https://raw.githubusercontent.com/Free-TV/IPTV/master/epg.xml.gz" x-tvg-url="https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/epg.xml.gz,https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-m3upt.xml.xz,https://raw.githubusercontent.com/Free-TV/IPTV/master/epg.xml.gz"
+#EXTM3U url-tvg="https://kiefte.eu/iptv/epg.xml.gz,https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/epg.xml.gz,https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-m3upt.xml.xz,https://raw.githubusercontent.com/Free-TV/IPTV/master/epg.xml.gz" x-tvg-url="https://kiefte.eu/iptv/epg.xml.gz,https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/epg.xml.gz,https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-m3upt.xml.xz,https://raw.githubusercontent.com/Free-TV/IPTV/master/epg.xml.gz"
+
 
 
 #EXTINF:-1 tvg-id="RTP1.pt" tvg-name="RTP 1" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP1.png" group-title="PT Geral" tvg-chno="1",RTP 1
@@ -590,6 +591,36 @@ https://kiefte.eu/iptv/twitch/game/Trackmania
 #EXTINF:-1 tvg-id="Zeepkist.tv" tvg-name="Zeepkist Live" group-title="Indie & Variety Gaming" tvg-chno="1160",Zeepkist (Soapbox Physics Racing Live)
 https://kiefte.eu/iptv/twitch/game/Zeepkist
 
+#EXTINF:-1 tvg-id="FollowedStreamer1.tv" tvg-name="Followed #1" group-title="LaPingvino Favorites" tvg-chno="1200",Followed Streamer #1
+https://kiefte.eu/iptv/twitch/followed/1
+
+#EXTINF:-1 tvg-id="FollowedStreamer2.tv" tvg-name="Followed #2" group-title="LaPingvino Favorites" tvg-chno="1201",Followed Streamer #2
+https://kiefte.eu/iptv/twitch/followed/2
+
+#EXTINF:-1 tvg-id="FollowedStreamer3.tv" tvg-name="Followed #3" group-title="LaPingvino Favorites" tvg-chno="1202",Followed Streamer #3
+https://kiefte.eu/iptv/twitch/followed/3
+
+#EXTINF:-1 tvg-id="FollowedStreamer4.tv" tvg-name="Followed #4" group-title="LaPingvino Favorites" tvg-chno="1203",Followed Streamer #4
+https://kiefte.eu/iptv/twitch/followed/4
+
+#EXTINF:-1 tvg-id="FollowedStreamer5.tv" tvg-name="Followed #5" group-title="LaPingvino Favorites" tvg-chno="1204",Followed Streamer #5
+https://kiefte.eu/iptv/twitch/followed/5
+
+#EXTINF:-1 tvg-id="FollowedStreamer6.tv" tvg-name="Followed #6" group-title="LaPingvino Favorites" tvg-chno="1205",Followed Streamer #6
+https://kiefte.eu/iptv/twitch/followed/6
+
+#EXTINF:-1 tvg-id="FollowedStreamer7.tv" tvg-name="Followed #7" group-title="LaPingvino Favorites" tvg-chno="1206",Followed Streamer #7
+https://kiefte.eu/iptv/twitch/followed/7
+
+#EXTINF:-1 tvg-id="FollowedStreamer8.tv" tvg-name="Followed #8" group-title="LaPingvino Favorites" tvg-chno="1207",Followed Streamer #8
+https://kiefte.eu/iptv/twitch/followed/8
+
+#EXTINF:-1 tvg-id="FollowedStreamer9.tv" tvg-name="Followed #9" group-title="LaPingvino Favorites" tvg-chno="1208",Followed Streamer #9
+https://kiefte.eu/iptv/twitch/followed/9
+
+#EXTINF:-1 tvg-id="FollowedStreamer10.tv" tvg-name="Followed #10" group-title="LaPingvino Favorites" tvg-chno="1209",Followed Streamer #10
+https://kiefte.eu/iptv/twitch/followed/10
+
 #EXTINF:-1 tvg-id="HEVC10Bit.ref@HD" tvg-name="HEVC 10-Bit Reference" group-title="Diag" tvg-chno="2000",HEVC / H.265 10-Bit Reference Ladder
 https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_adv_example_hevc/master.m3u8
 
@@ -613,6 +644,24 @@ https://kiefte.eu/iptv/test/hdr
 
 #EXTINF:-1 tvg-id="HDRSwitchSmooth.ref@HD" tvg-name="HDR Smooth Switch (30s)" group-title="Diag" tvg-chno="2007",HDR Dynamic Switch Smooth (30s Cadence)
 https://kiefte.eu/iptv/test/hdr-smooth
+
+#EXTINF:-1 tvg-id="BVNRawDASH.ref" tvg-name="BVN Raw DASH" group-title="Diag" tvg-chno="2008",BVN • Raw DASH with Trickplay & Subtitles (ExoPlayer / Sparkle)
+https://kiefte.eu/iptv/test/bvn_raw.mpd
+
+#EXTINF:-1 tvg-id="DASHIFLive.ref" tvg-name="DASH-IF Live Testpic" group-title="Diag" tvg-chno="2009",DASH-IF • Live Wall-Clock Test Picture (2s Segments)
+https://livesim2.dashif.org/livesim2/testpic_2s/Manifest.mpd
+
+#EXTINF:-1 tvg-id="DASHIFRotate.ref" tvg-name="DASH-IF Multi-Rate" group-title="Diag" tvg-chno="2010",DASH-IF • Rotating Logo Multi-Rate Ladder (720p/540p/360p AVC)
+https://livesim2.dashif.org/livesim2/testrotate_2s/Manifest.mpd
+
+#EXTINF:-1 tvg-id="DASHIFAV1.ref" tvg-name="DASH-IF AV1 Live" group-title="Diag" tvg-chno="2011",DASH-IF • AV1 Next-Gen Codec Live Stream (720p@25)
+https://livesim2.dashif.org/livesim2/testpic_2s_av1/Manifest.mpd
+
+#EXTINF:-1 tvg-id="UnifiedVirtualChannel.ref" tvg-name="Unified Virtual Channel" group-title="Diag" tvg-chno="2012",Unified Streaming • Live Virtual Channel (Multi-Period)
+https://virtual-channel.unified-streaming.com/demo_channel-stable.isml/.mpd
+
+#EXTINF:-1 tvg-id="AkamaiBBBDASH.ref" tvg-name="Akamai BBB DASH" group-title="Diag" tvg-chno="2013",Akamai • Big Buck Bunny Adaptive Bitrate Ladder (240p - 1080p)
+https://dash.akamaized.net/akamai/bbb_30fps/bbb_30fps.mpd
 
 #EXTINF:-1 tvg-id="Antena1.pt" tvg-name="RDP Antena 1" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Antena-1.png" group-title="PT Rádio" tvg-chno="5000" radio="true",RDP Antena 1
 https://streaming-live.rtp.pt/liveradio/antena180a/playlist.m3u8
@@ -1021,33 +1070,3 @@ https://s37.derstream.net/hitradio-namibia.mp3
 
 #EXTINF:-1 tvg-id="Kosmos941.na" tvg-name="Kosmos 94.1 Afrikaans" group-title="Rádio Global" tvg-chno="8046" radio="true",Kosmos 94.1 (Namibië / Afrikaans)
 https://edge.iono.fm/xice/88_high.mp3
-
-#EXTINF:-1 tvg-id="FollowedStreamer1.tv" tvg-name="Followed #1" group-title="LaPingvino Favorites" tvg-chno="9000",Followed Streamer #1
-https://kiefte.eu/iptv/twitch/followed/1
-
-#EXTINF:-1 tvg-id="FollowedStreamer2.tv" tvg-name="Followed #2" group-title="LaPingvino Favorites" tvg-chno="9001",Followed Streamer #2
-https://kiefte.eu/iptv/twitch/followed/2
-
-#EXTINF:-1 tvg-id="FollowedStreamer3.tv" tvg-name="Followed #3" group-title="LaPingvino Favorites" tvg-chno="9002",Followed Streamer #3
-https://kiefte.eu/iptv/twitch/followed/3
-
-#EXTINF:-1 tvg-id="FollowedStreamer4.tv" tvg-name="Followed #4" group-title="LaPingvino Favorites" tvg-chno="9003",Followed Streamer #4
-https://kiefte.eu/iptv/twitch/followed/4
-
-#EXTINF:-1 tvg-id="FollowedStreamer5.tv" tvg-name="Followed #5" group-title="LaPingvino Favorites" tvg-chno="9004",Followed Streamer #5
-https://kiefte.eu/iptv/twitch/followed/5
-
-#EXTINF:-1 tvg-id="FollowedStreamer6.tv" tvg-name="Followed #6" group-title="LaPingvino Favorites" tvg-chno="9005",Followed Streamer #6
-https://kiefte.eu/iptv/twitch/followed/6
-
-#EXTINF:-1 tvg-id="FollowedStreamer7.tv" tvg-name="Followed #7" group-title="LaPingvino Favorites" tvg-chno="9006",Followed Streamer #7
-https://kiefte.eu/iptv/twitch/followed/7
-
-#EXTINF:-1 tvg-id="FollowedStreamer8.tv" tvg-name="Followed #8" group-title="LaPingvino Favorites" tvg-chno="9007",Followed Streamer #8
-https://kiefte.eu/iptv/twitch/followed/8
-
-#EXTINF:-1 tvg-id="FollowedStreamer9.tv" tvg-name="Followed #9" group-title="LaPingvino Favorites" tvg-chno="9008",Followed Streamer #9
-https://kiefte.eu/iptv/twitch/followed/9
-
-#EXTINF:-1 tvg-id="FollowedStreamer10.tv" tvg-name="Followed #10" group-title="LaPingvino Favorites" tvg-chno="9009",Followed Streamer #10
-https://kiefte.eu/iptv/twitch/followed/10

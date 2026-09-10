@@ -39,3 +39,40 @@
   tvg_name: HDR Smooth Switch (30s)
   url: https://kiefte.eu/iptv/test/hdr-smooth
 
+- name: "BVN • Raw DASH with Trickplay & Subtitles (ExoPlayer / Sparkle)"
+  group: Diag
+  tvg_id: BVNRawDASH.ref
+  tvg_name: BVN Raw DASH
+  url: https://kiefte.eu/iptv/test/bvn_raw.mpd
+
+- name: "DASH-IF • Live Wall-Clock Test Picture (2s Segments)"
+  group: Diag
+  tvg_id: DASHIFLive.ref
+  tvg_name: DASH-IF Live Testpic
+  url: https://livesim2.dashif.org/livesim2/testpic_2s/Manifest.mpd
+
+- name: "DASH-IF • Rotating Logo Multi-Rate Ladder (720p/540p/360p AVC)"
+  group: Diag
+  tvg_id: DASHIFRotate.ref
+  tvg_name: DASH-IF Multi-Rate
+  url: https://livesim2.dashif.org/livesim2/testrotate_2s/Manifest.mpd
+
+- name: "DASH-IF • AV1 Next-Gen Codec Live Stream (720p@25)"
+  group: Diag
+  tvg_id: DASHIFAV1.ref
+  tvg_name: DASH-IF AV1 Live
+  url: https://livesim2.dashif.org/livesim2/testpic_2s_av1/Manifest.mpd
+
+- name: "Unified Streaming • Live Virtual Channel (Multi-Period)"
+  group: Diag
+  tvg_id: UnifiedVirtualChannel.ref
+  tvg_name: Unified Virtual Channel
+  url: https://virtual-channel.unified-streaming.com/demo_channel-stable.isml/.mpd
+
+- name: "Akamai • Big Buck Bunny Adaptive Bitrate Ladder (240p - 1080p)"
+  group: Diag
+  tvg_id: AkamaiBBBDASH.ref
+  tvg_name: Akamai BBB DASH
+  url: https://dash.akamaized.net/akamai/bbb_30fps/bbb_30fps.mpd
+
+

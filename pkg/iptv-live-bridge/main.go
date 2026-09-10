@@ -155,6 +155,20 @@ func main() {
 			return
 		}
 
+		// 4b. BVN Raw Unfiltered MPD (diagnostic endpoint for testing native player DASH & trickplay)
+		if path == "test/bvn_raw.mpd" || path == "bvn_raw.mpd" || path == "bvn.mpd" || path == "bvn/manifest.mpd" {
+			data, err := getBVNRawMPD(r.Context())
+			if err != nil {
+				http.Error(w, err.Error(), http.StatusBadGateway)
+				return
+			}
+			w.Header().Set("Content-Type", "application/dash+xml")
+			w.Header().Set("Access-Control-Allow-Origin", "*")
+			w.Header().Set("Cache-Control", "no-cache, must-revalidate")
+			w.Write(data)
+			return
+		}
+
 		// 5. BVN Live Decrypted Stream (/bvn, /bvn.ts, /nl/bvn, /nl/bvn.ts)
 		if path == "bvn" || path == "bvn.ts" || path == "nl/bvn" || path == "nl/bvn.ts" {
 			w.Header().Set("Content-Type", "video/MP2T")
