@@ -12,6 +12,7 @@ import (
 	"os"
 	"os/exec"
 	"regexp"
+	"strconv"
 	"strings"
 	"sync"
 	"time"
@@ -171,9 +172,8 @@ func getBVNDynamicMPD(ctx context.Context) ([]byte, error) {
 	reText := regexp.MustCompile(`(?s)<AdaptationSet[^>]*contentType="text"[^>]*>.*?</AdaptationSet>`)
 	xmlStr = reText.ReplaceAllString(xmlStr, "")
 
-	// 3. Filter video representations to keep only video=2000000 (highest bitrate 1024x576)
-	reLower := regexp.MustCompile(`(?s)<Representation\s+id="video=(?:500000|600000|1000000)(?:\([^)]*\))?".*?</Representation>`)
-	xmlStr = reLower.ReplaceAllString(xmlStr, "")
+	// 3. Dynamically filter video representations to keep only the highest bandwidth
+	xmlStr = filterDynamicVideoAdaptationSets(xmlStr)
 
 	data := []byte(xmlStr)
 	bvnCache.mu.Lock()
@@ -182,6 +182,41 @@ func getBVNDynamicMPD(ctx context.Context) ([]byte, error) {
 	bvnCache.mu.Unlock()
 
 	return data, nil
+}
+
+// filterDynamicVideoAdaptationSets dynamically keeps only the single representation with the highest bandwidth,
+// completely eliminating fragile hardcoded bitrates.
+func filterDynamicVideoAdaptationSets(xmlStr string) string {
+	reVideoSet := regexp.MustCompile(`(?s)<AdaptationSet[^>]*contentType="video"[^>]*>.*?</AdaptationSet>`)
+	return reVideoSet.ReplaceAllStringFunc(xmlStr, func(adSet string) string {
+		reRep := regexp.MustCompile(`(?s)<Representation\s+([^>]+)>.*?</Representation>`)
+		reBandwidth := regexp.MustCompile(`bandwidth="(\d+)"`)
+
+		maxBW := -1
+		var bestRep string
+
+		matches := reRep.FindAllStringSubmatch(adSet, -1)
+		for _, m := range matches {
+			bw := 0
+			if bwMatch := reBandwidth.FindStringSubmatch(m[1]); len(bwMatch) >= 2 {
+				bw, _ = strconv.Atoi(bwMatch[1])
+			}
+			if bw > maxBW {
+				maxBW = bw
+				bestRep = m[0]
+			}
+		}
+
+		if bestRep != "" {
+			return reRep.ReplaceAllStringFunc(adSet, func(raw string) string {
+				if raw == bestRep {
+					return raw
+				}
+				return ""
+			})
+		}
+		return adSet
+	})
 }
 
 // BVNEngine manages the single-instance ffmpeg decryption process with goroutine fan-out.
