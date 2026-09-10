@@ -155,16 +155,24 @@ func getBVNDynamicMPD(ctx context.Context) ([]byte, error) {
 	// Always insert root BaseURL before <Period so ffmpeg resolves dash/ chunks against CDN
 	xmlStr = strings.Replace(xmlStr, "<Period", fmt.Sprintf("<BaseURL>%s</BaseURL><Period", baseURL), 1)
 
-	// Adjust suggestedPresentationDelay and minBufferTime to PT15S for stable live buffering
+	// Adjust suggestedPresentationDelay and minBufferTime for stable live buffering
 	if !strings.Contains(xmlStr, "suggestedPresentationDelay=") {
-		xmlStr = strings.Replace(xmlStr, "<MPD", `<MPD suggestedPresentationDelay="PT15S"`, 1)
+		xmlStr = strings.Replace(xmlStr, "<MPD", `<MPD suggestedPresentationDelay="PT8S"`, 1)
 	} else {
-		xmlStr = regexp.MustCompile(`suggestedPresentationDelay="[^"]*"`).ReplaceAllString(xmlStr, `suggestedPresentationDelay="PT15S"`)
+		xmlStr = regexp.MustCompile(`suggestedPresentationDelay="[^"]*"`).ReplaceAllString(xmlStr, `suggestedPresentationDelay="PT8S"`)
 	}
-	xmlStr = regexp.MustCompile(`minBufferTime="[^"]*"`).ReplaceAllString(xmlStr, `minBufferTime="PT15S"`)
+	xmlStr = regexp.MustCompile(`minBufferTime="[^"]*"`).ReplaceAllString(xmlStr, `minBufferTime="PT4S"`)
 
-	// Filter video representations to keep only video=2000000 (highest bitrate)
-	reLower := regexp.MustCompile(`(?s)<Representation\s+id="video=(?:600000|1000000)".*?</Representation>`)
+	// 1. Remove trick-play AdaptationSets (codingDependency="false" or maxPlayoutRate)
+	reTrick := regexp.MustCompile(`(?s)<AdaptationSet[^>]*(?:codingDependency="false"|maxPlayoutRate="[^"]*")[^>]*>.*?</AdaptationSet>`)
+	xmlStr = reTrick.ReplaceAllString(xmlStr, "")
+
+	// 2. Remove subtitle/text AdaptationSets
+	reText := regexp.MustCompile(`(?s)<AdaptationSet[^>]*contentType="text"[^>]*>.*?</AdaptationSet>`)
+	xmlStr = reText.ReplaceAllString(xmlStr, "")
+
+	// 3. Filter video representations to keep only video=2000000 (highest bitrate 1024x576)
+	reLower := regexp.MustCompile(`(?s)<Representation\s+id="video=(?:500000|600000|1000000)(?:\([^)]*\))?".*?</Representation>`)
 	xmlStr = reLower.ReplaceAllString(xmlStr, "")
 
 	data := []byte(xmlStr)
@@ -196,7 +204,7 @@ func (e *BVNEngine) SetPort(p int) {
 }
 
 func (e *BVNEngine) Subscribe() chan []byte {
-	ch := make(chan []byte, 64)
+	ch := make(chan []byte, 256)
 	e.mu.Lock()
 	defer e.mu.Unlock()
 
@@ -327,7 +335,7 @@ func (e *BVNEngine) startWorker() {
 				e.mu.Lock()
 				numClients := len(e.clients)
 				idle := time.Since(e.lastAccess)
-				stalled := numClients > 0 && time.Since(lastData) > 8*time.Second
+				stalled := numClients > 0 && time.Since(lastData) > 15*time.Second
 				e.mu.Unlock()
 
 				if numClients == 0 && idle > 30*time.Second {
@@ -335,7 +343,7 @@ func (e *BVNEngine) startWorker() {
 					return
 				}
 				if stalled {
-					log.Printf("[BVN] Worker stalled (no data for 8s), killing and restarting...")
+					log.Printf("[BVN] Worker stalled (no data for 15s), killing and restarting...")
 					return
 				}
 			}

@@ -12,6 +12,7 @@ import (
 	"path/filepath"
 	"strconv"
 	"strings"
+	"sync"
 	"syscall"
 	"time"
 )
@@ -347,13 +348,68 @@ func main() {
 	server.Shutdown(ctx)
 }
 
+type m3u8CacheEntry struct {
+	content   string
+	timestamp time.Time
+}
+
+var (
+	m3u8RecentMu sync.RWMutex
+	m3u8Recent   = make(map[string]m3u8CacheEntry)
+)
+
 func serveTwitchM3U8(w http.ResponseWriter, r *http.Request, streamURL, channel string) {
 	m3u8, err := FetchAndMakeAbsoluteM3U8(r.Context(), streamURL)
 	if err != nil {
 		twitchMgr.Invalidate(channel)
+
+		// 1. Immediate fast retry: resolve fresh stream URL and fetch once more
+		var freshURL string
+		var rErr error
+		if strings.HasPrefix(channel, "followed-") {
+			rankStr := strings.TrimPrefix(channel, "followed-")
+			rank, _ := strconv.Atoi(rankStr)
+			freshURL, rErr = twitchMgr.ResolveFollowedRank(r.Context(), rank)
+		} else if strings.HasPrefix(channel, "game:") {
+			gameName := strings.TrimPrefix(channel, "game:")
+			freshURL, rErr = twitchMgr.ResolveGame(r.Context(), gameName, "")
+		} else {
+			freshURL, rErr = twitchMgr.Resolve(r.Context(), channel)
+		}
+
+		if rErr == nil && freshURL != "" && freshURL != streamURL {
+			m3u8, err = FetchAndMakeAbsoluteM3U8(r.Context(), freshURL)
+		}
+	}
+
+	// 2. Resilience: If upstream attempts failed (transient CDN hiccup or network blip),
+	// serve the previous playlist from recent cache (up to 6 seconds old).
+	// This gives the player continuous buffer and completely eliminates "little black moments".
+	if err != nil {
+		m3u8RecentMu.RLock()
+		cached, ok := m3u8Recent[channel]
+		m3u8RecentMu.RUnlock()
+
+		if ok && time.Since(cached.timestamp) < 6*time.Second {
+			w.Header().Set("Content-Type", "application/vnd.apple.mpegurl")
+			w.Header().Set("Access-Control-Allow-Origin", "*")
+			w.Header().Set("Cache-Control", "no-cache, no-store, must-revalidate")
+			w.Write([]byte(cached.content))
+			return
+		}
+
 		serveOfflineSlate(w, r)
 		return
 	}
+
+	// Update recent cache on success
+	m3u8RecentMu.Lock()
+	m3u8Recent[channel] = m3u8CacheEntry{
+		content:   m3u8,
+		timestamp: time.Now(),
+	}
+	m3u8RecentMu.Unlock()
+
 	w.Header().Set("Content-Type", "application/vnd.apple.mpegurl")
 	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Header().Set("Cache-Control", "no-cache, no-store, must-revalidate")

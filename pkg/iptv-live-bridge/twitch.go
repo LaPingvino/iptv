@@ -771,12 +771,27 @@ func (tm *TwitchManager) ResolveFollowedRank(ctx context.Context, rank int) (str
 	if rank < 1 {
 		rank = 1
 	}
+	cacheKey := fmt.Sprintf("followed-%d", rank)
+	tm.mu.RLock()
+	cached, ok := tm.cache[cacheKey]
+	if ok && time.Now().Before(cached.ExpiresAt) {
+		tm.mu.RUnlock()
+		return cached.URL, nil
+	}
+	tm.mu.RUnlock()
+
 	liveList := tm.GetRankedLiveFollows(ctx)
 	idx := rank - 1
 	if idx < len(liveList) {
 		target := liveList[idx].Login
 		log.Printf("[Twitch] Followed Rank #%d -> resolving %s (%d viewers)", rank, target, liveList[idx].Viewers)
 		if streamURL, err := tm.resolveSingle(ctx, target); err == nil {
+			tm.mu.Lock()
+			tm.cache[cacheKey] = CachedStream{
+				URL:       streamURL,
+				ExpiresAt: time.Now().Add(120 * time.Second),
+			}
+			tm.mu.Unlock()
 			return streamURL, nil
 		}
 	}
@@ -784,6 +799,12 @@ func (tm *TwitchManager) ResolveFollowedRank(ctx context.Context, rank int) (str
 	// If fewer streamers are live than rank requested or target failed, try other live candidates
 	for _, s := range liveList {
 		if streamURL, err := tm.resolveSingle(ctx, s.Login); err == nil {
+			tm.mu.Lock()
+			tm.cache[cacheKey] = CachedStream{
+				URL:       streamURL,
+				ExpiresAt: time.Now().Add(120 * time.Second),
+			}
+			tm.mu.Unlock()
 			return streamURL, nil
 		}
 	}
@@ -799,9 +820,15 @@ func (tm *TwitchManager) resolveSingle(ctx context.Context, channel string) (str
 	return st.URL(), nil
 }
 
+var hlsHTTPClient = &http.Client{
+	Timeout: 4 * time.Second,
+}
+
 func (tm *TwitchManager) Invalidate(channel string) {
+	channel = strings.ToLower(strings.TrimSpace(channel))
 	tm.mu.Lock()
-	delete(tm.cache, strings.ToLower(channel))
+	delete(tm.cache, channel)
+	delete(tm.cache, strings.ReplaceAll(channel, "-", ":"))
 	tm.mu.Unlock()
 }
 
@@ -813,7 +840,7 @@ func FetchAndMakeAbsoluteM3U8(ctx context.Context, targetURL string) (string, er
 	}
 	req.Header.Set("User-Agent", "Mozilla/5.0")
 
-	resp, err := http.DefaultClient.Do(req)
+	resp, err := hlsHTTPClient.Do(req)
 	if err != nil {
 		return "", err
 	}
@@ -843,6 +870,15 @@ func FetchAndMakeAbsoluteM3U8(ctx context.Context, targetURL string) (string, er
 			if err == nil {
 				out = append(out, segURL.String())
 				continue
+			}
+		}
+		if strings.HasPrefix(trimmed, "#EXT-X-MAP:URI=\"") {
+			parts := strings.SplitN(trimmed, "\"", 3)
+			if len(parts) >= 2 {
+				if parsedMap, err := baseURL.Parse(parts[1]); err == nil {
+					out = append(out, fmt.Sprintf("#EXT-X-MAP:URI=\"%s\"%s", parsedMap.String(), parts[2]))
+					continue
+				}
 			}
 		}
 		out = append(out, line)
@@ -886,6 +922,15 @@ type gameGQLResponse struct {
 func (tm *TwitchManager) ResolveGame(ctx context.Context, gameName, bias string) (string, error) {
 	cleanName := strings.ReplaceAll(gameName, "-", " ")
 	cleanName, _ = url.QueryUnescape(cleanName)
+	cacheKey := fmt.Sprintf("game:%s:%s", strings.ToLower(cleanName), bias)
+
+	tm.mu.RLock()
+	cached, ok := tm.cache[cacheKey]
+	if ok && time.Now().Before(cached.ExpiresAt) {
+		tm.mu.RUnlock()
+		return cached.URL, nil
+	}
+	tm.mu.RUnlock()
 
 	rawQuery := `
 	query GetGameStreams($name: String!) {
@@ -1040,7 +1085,16 @@ func (tm *TwitchManager) ResolveGame(ctx context.Context, gameName, bias string)
 	}
 
 	log.Printf("[Twitch] Resolved game '%s' -> streamer '%s'", cleanName, topLogin)
-	return tm.Resolve(ctx, topLogin)
+	streamURL, err := tm.Resolve(ctx, topLogin)
+	if err == nil && streamURL != "" {
+		tm.mu.Lock()
+		tm.cache[cacheKey] = CachedStream{
+			URL:       streamURL,
+			ExpiresAt: time.Now().Add(120 * time.Second),
+		}
+		tm.mu.Unlock()
+	}
+	return streamURL, err
 }
 
 func (tm *TwitchManager) ResolveGroup(ctx context.Context, groupName, bias string) (string, error) {
