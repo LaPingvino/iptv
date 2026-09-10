@@ -125,5 +125,5 @@ python3 src/validator.py
 ---
 
 ## 📺 Note on BVN & Geo-fencing
-* **BVN (Beste van NPO)** uses dynamic JWT tokens and Apple FairPlay DRM (SAMPLE-AES) on web endpoints, which cannot be decrypted directly in generic IPTV players. For Google TV / Smart TV, use the official **BVN Live** app or cast from `bvn.tv`.
+* **BVN (Beste van NPO)**: Streamed in native, unencrypted MPEG-DASH (`https://kiefte.eu/iptv/bvn.mpd`) with dynamic bearer token resolution, adaptive bitrate ladder (up to 1024x576 HD), native subtitles, and trickplay scrubbing support in modern players (Sparkle TV, TiviMate, Kodi, VLC). A fallback MPEG-TS stream is also maintained at `/iptv/bvn.ts`.
 * **Portuguese National Streams (RTP, SIC, TVI)**: Working stream recipes and headers are included; they play seamlessly when connected within Portugal.

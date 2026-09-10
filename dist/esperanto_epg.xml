@@ -2,21 +2,6 @@
 <!DOCTYPE tv SYSTEM "xmltv.dtd">
 <tv source-info-url="https://kiefte.eu/iptv" generator-info-name="IPTV Linear 24/7 EPG Engine">
   <channel id="EsperantoTV.eo@SD"><display-name>Esperanto TV</display-name></channel>
-  <programme start="20260909205110 +0000" stop="20260909205310 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Estas: Enkonduko</title>
-    <desc lang="eo">Oficiala stacia vineto kaj enkonduko al la internacia lingvo Esperanto.</desc>
-    <category lang="eo">Vineto</category>
-  </programme>
-  <programme start="20260909205310 +0000" stop="20260909205740 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Estas: Dokumentario</title>
-    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
-    <category lang="eo">Dokumentario</category>
-  </programme>
-  <programme start="20260909205740 +0000" stop="20260909205940 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Estas: Enkonduko</title>
-    <desc lang="eo">Oficiala stacia vineto kaj enkonduko al la internacia lingvo Esperanto.</desc>
-    <category lang="eo">Vineto</category>
-  </programme>
   <programme start="20260909205940 +0000" stop="20260909212840 +0000" channel="EsperantoTV.eo@SD">
     <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 6: Nekonata vizitanto</title>
     <desc lang="eo">Mistera vizitanto aperas ĉe la pordo.</desc>
@@ -2461,5 +2446,15 @@
     <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 9: Trajnoj kaj biletoj</title>
     <desc lang="eo">Aventuroj ĉe la stacidomo.</desc>
     <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20260913205420 +0000" stop="20260913205620 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Enkonduko</title>
+    <desc lang="eo">Oficiala stacia vineto kaj enkonduko al la internacia lingvo Esperanto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20260913205620 +0000" stop="20260913212750 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 9: Vojaĝi sen biletoj</title>
+    <desc lang="eo">Strategiaj vojaĝdefioj kaj amuzaj taskoj.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
 </tv>

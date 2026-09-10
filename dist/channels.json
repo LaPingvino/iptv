@@ -362,7 +362,7 @@
     "tvg_id": "BVN.nl",
     "tvg_name": "BVN",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/BVN_logo_2018.svg/512px-BVN_logo_2018.svg.png",
-    "url": "https://kiefte.eu/iptv/bvn.ts",
+    "url": "https://kiefte.eu/iptv/bvn.mpd",
     "chno": 260
   },
   {
@@ -1855,12 +1855,12 @@
     "chno": 2007
   },
   {
-    "name": "BVN • Raw DASH with Trickplay \u0026 Subtitles (ExoPlayer / Sparkle)",
+    "name": "BVN • Legacy MPEG-TS Stream (Bridge Fallback Test)",
     "group": "Diag",
-    "tvg_id": "BVNRawDASH.ref",
-    "tvg_name": "BVN Raw DASH",
+    "tvg_id": "BVNLegacyTS.ref",
+    "tvg_name": "BVN Legacy TS",
     "logo": "",
-    "url": "https://kiefte.eu/iptv/test/bvn_raw.mpd",
+    "url": "https://kiefte.eu/iptv/bvn.ts",
     "chno": 2008
   },
   {
