@@ -114,7 +114,7 @@ var ProxiedChannels = map[string]ProxiedChannel{
 	"wdr": {
 		ID:          "wdr",
 		Name:        "WDR Fernsehen",
-		UpstreamURL: "https://wdr-live.ard-mcdn.de/wdr/live/hls/de/master.m3u8",
+		UpstreamURL: "https://wdr-live.ard-mcdn.de/wdr/live/hls/int/master.m3u8",
 		Logo:        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/WDR_Fernsehen_Logo_2018.svg/960px-WDR_Fernsehen_Logo_2018.svg.png",
 		TvgID:       "WDRFernsehen.de@Koln",
 	},
@@ -184,6 +184,24 @@ func RewriteM3U8(content string, upstreamURL string) (string, error) {
 		if strings.HasPrefix(trimmed, "#EXT-X-STREAM-INF:") {
 			expectVariantURI = true
 			out = append(out, line)
+			continue
+		}
+
+		if strings.HasPrefix(trimmed, "#EXT-X-I-FRAME-STREAM-INF:") {
+			rewrittenLine := uriAttrRegex.ReplaceAllStringFunc(line, func(m string) string {
+				parts := uriAttrRegex.FindStringSubmatch(m)
+				if len(parts) < 2 {
+					return m
+				}
+				refURL, err := url.Parse(parts[1])
+				if err != nil {
+					return m
+				}
+				resolved := baseURL.ResolveReference(refURL).String()
+				token := base64.RawURLEncoding.EncodeToString([]byte(resolved))
+				return fmt.Sprintf(`URI="/iptv/hls/m/%s/playlist.m3u8"`, token)
+			})
+			out = append(out, rewrittenLine)
 			continue
 		}
 
@@ -325,7 +343,12 @@ func HandleHLSManifest(w http.ResponseWriter, r *http.Request, rawToken string) 
 		return
 	}
 
-	rewritten, err := RewriteM3U8(string(body), manifestURL)
+	finalURL := manifestURL
+	if resp.Request != nil && resp.Request.URL != nil {
+		finalURL = resp.Request.URL.String()
+	}
+
+	rewritten, err := RewriteM3U8(string(body), finalURL)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return

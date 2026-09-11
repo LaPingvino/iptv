@@ -232,7 +232,7 @@ func TestLiveRealUpstream(t *testing.T) {
 		t.Skip("skipping real network test in short mode")
 	}
 
-	channelsToTest := []string{"arte_fr", "arte_de", "tv5monde_europe", "zdf", "3sat"}
+	channelsToTest := []string{"arte_fr", "arte_de", "tv5monde_europe", "zdf", "3sat", "wdr"}
 	for _, id := range channelsToTest {
 		ch, ok := ProxiedChannels[id]
 		if !ok {
