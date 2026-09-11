@@ -104,3 +104,10 @@
   tvg_id: RTLZwee.lu@HD
   tvg_name: RTL Zwee
   url: https://stream.rtl.lu/live/hls/channel2/playlist.m3u8
+- name: WDR Fernsehen (HD • Köln / NRW)
+  group: Regional & Local
+  tvg_id: WDRFernsehen.de@Koln
+  tvg_name: WDR Fernsehen
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/WDR_Fernsehen_Logo_2018.svg/960px-WDR_Fernsehen_Logo_2018.svg.png
+  url: https://kiefte.eu/iptv/wdr.m3u8
+

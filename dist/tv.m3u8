@@ -113,6 +113,15 @@ https://media-tyo.hls.nhkworld.jp/hls/w/live/master.m3u8
 #EXTINF:-1 tvg-id="TVBrasil.br@HD" tvg-name="TV Brasil" group-title="Notícias" tvg-chno="114",TV Brasil (EBC)
 https://tvbrasilinternacional-stream.ebc.com.br/index.m3u8
 
+#EXTINF:-1 tvg-id="TV5MondeInfo.fr@SD" tvg-name="TV5Monde Info" tvg-logo="https://i.imgur.com/NcysrWH.png" group-title="Notícias" tvg-chno="115",TV5Monde Info (1080p • Monde & Actualité)
+https://kiefte.eu/iptv/tv5monde_info.m3u8
+
+#EXTINF:-1 tvg-id="tagesschau24.de@SD" tvg-name="Tagesschau 24" tvg-logo="https://i.imgur.com/LH0Gctv.png" group-title="Notícias" tvg-chno="116",Tagesschau 24 (HD • ARD Notícias 24/7)
+https://kiefte.eu/iptv/tagesschau24.m3u8
+
+#EXTINF:-1 tvg-id="ZDF.de@SD" tvg-name="ZDF" tvg-logo="https://i.imgur.com/rtLb6m9.png" group-title="Notícias" tvg-chno="117",ZDF (HD • Informação & Geral)
+https://kiefte.eu/iptv/zdf.m3u8
+
 #EXTINF:-1 tvg-id="Canal.24.horas.es" tvg-name="24 Horas" group-title="ES Geral & TDT" tvg-chno="200",RTVE Canal 24 Horas
 https://rtvelivestream.rtve.es/rtvesec/24h/24h_main_dvr_720.m3u8
 
@@ -197,6 +206,9 @@ https://stream.rtl.lu/live/hls/channel1/playlist.m3u8
 #EXTINF:-1 tvg-id="RTLZwee.lu@HD" tvg-name="RTL Zwee" group-title="Regional & Local" tvg-chno="277",RTL Zwee (Lëtzebuerg)
 https://stream.rtl.lu/live/hls/channel2/playlist.m3u8
 
+#EXTINF:-1 tvg-id="WDRFernsehen.de@Koln" tvg-name="WDR Fernsehen" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/WDR_Fernsehen_Logo_2018.svg/960px-WDR_Fernsehen_Logo_2018.svg.png" group-title="Regional & Local" tvg-chno="278",WDR Fernsehen (HD • Köln / NRW)
+https://kiefte.eu/iptv/wdr.m3u8
+
 #EXTINF:-1 tvg-id="DasErste.de" tvg-name="Das Erste" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Das-Erste.png" group-title="Filmes & Docs" tvg-chno="300",Das Erste (ARD Germany)
 https://daserste-live.ard-mcdn.de/daserste/live/hls/int/master.m3u8
 
@@ -208,6 +220,24 @@ https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8
 
 #EXTINF:-1 tvg-id="EsperantoTV.eo@SD" tvg-name="Esperanto TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_Esperanto.svg/512px-Flag_of_Esperanto.svg.png" group-title="Filmes & Docs" tvg-chno="303",Esperanto TV (24/7 Kulturo, Muziko & Filmoj)
 https://kiefte.eu/iptv/esperanto/tv
+
+#EXTINF:-1 tvg-id="arte.fr@SD" tvg-name="ARTE France" tvg-logo="https://api-cdn.arte.tv/img/v2/image/j4EoSJjX26uySVWdmt3EmS/1920x1080" group-title="Filmes & Docs" tvg-chno="304",ARTE France (HD)
+https://kiefte.eu/iptv/arte_fr.m3u8
+
+#EXTINF:-1 tvg-id="arte.de@SD" tvg-name="ARTE Deutschland" tvg-logo="https://api-cdn.arte.tv/img/v2/image/j4EoSJjX26uySVWdmt3EmS/1920x1080" group-title="Filmes & Docs" tvg-chno="305",ARTE Deutschland (HD)
+https://kiefte.eu/iptv/arte_de.m3u8
+
+#EXTINF:-1 tvg-id="TV5MondeEurope.fr" tvg-name="TV5Monde Europe" tvg-logo="https://i.imgur.com/uPmwTo9.png" group-title="Filmes & Docs" tvg-chno="306",TV5Monde Europe (1080p • Legendas NL/DE/EN/FR)
+https://kiefte.eu/iptv/tv5monde_europe.m3u8
+
+#EXTINF:-1 tvg-id="3sat.de@SD" tvg-name="3sat" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/3sat_2019.svg/960px-3sat_2019.svg.png" group-title="Filmes & Docs" tvg-chno="307",3sat (HD • DACH Kultur & Doku)
+https://kiefte.eu/iptv/3sat.m3u8
+
+#EXTINF:-1 tvg-id="ZDFneo.de@SD" tvg-name="ZDFneo" tvg-logo="https://i.imgur.com/1JIIGgL.png" group-title="Filmes & Docs" tvg-chno="308",ZDFneo (HD • Séries & Cinema)
+https://kiefte.eu/iptv/zdfneo.m3u8
+
+#EXTINF:-1 tvg-id="ZDFinfo.de@SD" tvg-name="ZDFinfo" tvg-logo="https://i.imgur.com/vtq1IWp.png" group-title="Filmes & Docs" tvg-chno="309",ZDFinfo (HD • Documentários)
+https://kiefte.eu/iptv/zdfinfo.m3u8
 
 #EXTINF:-1 tvg-id="DoctorWhoClassic.uk@HD" tvg-name="Doctor Who Classic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Doctor_Who_logo_2018.svg/512px-Doctor_Who_logo_2018.svg.png" group-title="Sci-Fi & Cult Retro" tvg-chno="350",Doctor Who Classic (24/7 1080p HD)
 https://bbc-classicdrwho-1-us.roku.wurl.tv/playlist.m3u8
@@ -304,6 +334,9 @@ https://dil9xdvretp0f.cloudfront.net/index.m3u8
 
 #EXTINF:-1 tvg-id="LegoChannel.us@HD" tvg-name="Lego Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/512px-LEGO_logo.svg.png" group-title="Infantil & Kids" tvg-chno="608",Lego Channel (Animation HD)
 https://dltiqboxjw21d.cloudfront.net/index.m3u8
+
+#EXTINF:-1 tvg-id="KiKA.de@SD" tvg-name="KiKa" tvg-logo="https://i.imgur.com/vZdNp5S.png" group-title="Infantil & Kids" tvg-chno="609",KiKa (HD • ARD/ZDF Kinderkanal)
+https://kiefte.eu/iptv/kika.m3u8
 
 #EXTINF:-1 tvg-id="StudioBrussel.be" tvg-name="Studio Brussel Visual" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="Música & Video" tvg-chno="700",Studio Brussel (Visual Radio)
 https://live.vrtcdn.be/groupb/live/450aa9d1-7173-47f3-aaaa-9701426f8ddd/live.isml/live.m3u8
@@ -416,6 +449,9 @@ https://streams.prd.commavservices.eu/live/ebs/index.m3u8
 
 #EXTINF:-1 tvg-id="EbS2.eu@HD" tvg-name="Europe by Satellite Plus" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/ebs_plus.png" group-title="Cívico & Parlamento" tvg-chno="806",Europe by Satellite+ (EbS+)
 https://streams.prd.commavservices.eu/live/ebsplus/index.m3u8
+
+#EXTINF:-1 tvg-id="phoenix.de@HD" tvg-name="Phoenix" tvg-logo="https://i.imgur.com/T1532t9.png" group-title="Cívico & Parlamento" tvg-chno="807",Phoenix (HD • Parlamento & Debates DE)
+https://kiefte.eu/iptv/phoenix.m3u8
 
 #EXTINF:-1 tvg-id="TVManaMZ.mz" tvg-name="TV Maná Moçambique" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-Mocambique.png" group-title="Religião" tvg-chno="850",TV Maná Moçambique
 https://w2.manasat.com/tvmana-mz/smil:tvmana-mz.smil/playlist.m3u8

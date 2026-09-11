@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"encoding/base64"
 	"encoding/json"
 	"flag"
 	"fmt"
@@ -233,6 +234,44 @@ func main() {
 			w.Header().Set("Access-Control-Allow-Origin", "*")
 			w.Header().Set("Cache-Control", "no-cache, no-store, must-revalidate")
 			w.Write([]byte(m3u8))
+			return
+		}
+
+		// 7b. HLS Proxy Routes (/hls/m/..., /hls/s/..., /hls/manifest, /hls/segment)
+		if strings.HasPrefix(path, "hls/m/") {
+			parts := strings.Split(strings.TrimPrefix(path, "hls/m/"), "/")
+			if len(parts) > 0 {
+				HandleHLSManifest(w, r, parts[0])
+				return
+			}
+		}
+		if strings.HasPrefix(path, "hls/s/") {
+			parts := strings.Split(strings.TrimPrefix(path, "hls/s/"), "/")
+			if len(parts) > 0 {
+				HandleHLSSegment(w, r, parts[0])
+				return
+			}
+		}
+		if path == "hls/manifest" || path == "hls/manifest.m3u8" {
+			rawURL := r.URL.Query().Get("url")
+			if rawURL != "" {
+				token := base64.RawURLEncoding.EncodeToString([]byte(rawURL))
+				HandleHLSManifest(w, r, token)
+				return
+			}
+		}
+		if path == "hls/segment" || path == "hls/segment.ts" {
+			rawURL := r.URL.Query().Get("url")
+			if rawURL != "" {
+				token := base64.RawURLEncoding.EncodeToString([]byte(rawURL))
+				HandleHLSSegment(w, r, token)
+				return
+			}
+		}
+
+		// 7c. Named Proxied Channels (ARTE, TV5Monde, ZDF, 3sat, Phoenix, KiKa, etc.)
+		if ch, ok := ResolveProxiedChannel(path); ok {
+			HandleProxiedChannel(w, r, ch)
 			return
 		}
 

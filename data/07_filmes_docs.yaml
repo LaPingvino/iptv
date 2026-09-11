@@ -21,4 +21,40 @@
   tvg_name: Esperanto TV
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_Esperanto.svg/512px-Flag_of_Esperanto.svg.png
   url: https://kiefte.eu/iptv/esperanto/tv
+- name: ARTE France (HD)
+  group: Filmes & Docs
+  tvg_id: arte.fr@SD
+  tvg_name: ARTE France
+  logo: https://api-cdn.arte.tv/img/v2/image/j4EoSJjX26uySVWdmt3EmS/1920x1080
+  url: https://kiefte.eu/iptv/arte_fr.m3u8
+- name: ARTE Deutschland (HD)
+  group: Filmes & Docs
+  tvg_id: arte.de@SD
+  tvg_name: ARTE Deutschland
+  logo: https://api-cdn.arte.tv/img/v2/image/j4EoSJjX26uySVWdmt3EmS/1920x1080
+  url: https://kiefte.eu/iptv/arte_de.m3u8
+- name: TV5Monde Europe (1080p • Legendas NL/DE/EN/FR)
+  group: Filmes & Docs
+  tvg_id: TV5MondeEurope.fr
+  tvg_name: TV5Monde Europe
+  logo: https://i.imgur.com/uPmwTo9.png
+  url: https://kiefte.eu/iptv/tv5monde_europe.m3u8
+- name: 3sat (HD • DACH Kultur & Doku)
+  group: Filmes & Docs
+  tvg_id: 3sat.de@SD
+  tvg_name: 3sat
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/3sat_2019.svg/960px-3sat_2019.svg.png
+  url: https://kiefte.eu/iptv/3sat.m3u8
+- name: ZDFneo (HD • Séries & Cinema)
+  group: Filmes & Docs
+  tvg_id: ZDFneo.de@SD
+  tvg_name: ZDFneo
+  logo: https://i.imgur.com/1JIIGgL.png
+  url: https://kiefte.eu/iptv/zdfneo.m3u8
+- name: ZDFinfo (HD • Documentários)
+  group: Filmes & Docs
+  tvg_id: ZDFinfo.de@SD
+  tvg_name: ZDFinfo
+  logo: https://i.imgur.com/vtq1IWp.png
+  url: https://kiefte.eu/iptv/zdfinfo.m3u8
 

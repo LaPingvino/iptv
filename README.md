@@ -124,6 +124,11 @@ python3 src/validator.py
 
 ---
 
-## 📺 Note on BVN & Geo-fencing
+## 📺 Note on BVN & Geo-fenced Proxied Channels
 * **BVN (Beste van NPO)**: Streamed in native, unencrypted MPEG-DASH (`https://kiefte.eu/iptv/bvn.mpd`) with dynamic bearer token resolution, adaptive bitrate ladder (up to 1024x576 HD), native subtitles, and trickplay scrubbing support in modern players (Sparkle TV, TiviMate, Kodi, VLC). A fallback MPEG-TS stream is also maintained at `/iptv/bvn.ts`.
+* **🇫🇷 & 🇩🇪 Cultural & Public Broadcasters (0% Transcoding Overhead)**:
+  * **ARTE**: ARTE France (`https://kiefte.eu/iptv/arte_fr.m3u8`) and ARTE Deutschland (`https://kiefte.eu/iptv/arte_de.m3u8`) proxied via the Go live bridge using the VPS's French/German border IP, bypassing Akamai geoblocking without any CPU-heavy transcoding.
+  * **TV5Monde**: TV5Monde Europe (`https://kiefte.eu/iptv/tv5monde_europe.m3u8`, including embedded Dutch `Nederlands`, German, English, and French subtitles) and TV5Monde Info (`https://kiefte.eu/iptv/tv5monde_info.m3u8`).
+  * **German Public Broadcasters**: ZDF (`/iptv/zdf.m3u8`), ZDFneo (`/iptv/zdfneo.m3u8`), ZDFinfo (`/iptv/zdfinfo.m3u8`), 3sat (`/iptv/3sat.m3u8`), Phoenix (`/iptv/phoenix.m3u8`), KiKa (`/iptv/kika.m3u8`), Tagesschau 24 (`/iptv/tagesschau24.m3u8`), and WDR Fernsehen (`/iptv/wdr.m3u8`).
 * **Portuguese National Streams (RTP, SIC, TVI)**: Working stream recipes and headers are included; they play seamlessly when connected within Portugal.
+

@@ -267,6 +267,33 @@
     "chno": 114
   },
   {
+    "name": "TV5Monde Info (1080p • Monde \u0026 Actualité)",
+    "group": "Notícias",
+    "tvg_id": "TV5MondeInfo.fr@SD",
+    "tvg_name": "TV5Monde Info",
+    "logo": "https://i.imgur.com/NcysrWH.png",
+    "url": "https://kiefte.eu/iptv/tv5monde_info.m3u8",
+    "chno": 115
+  },
+  {
+    "name": "Tagesschau 24 (HD • ARD Notícias 24/7)",
+    "group": "Notícias",
+    "tvg_id": "tagesschau24.de@SD",
+    "tvg_name": "Tagesschau 24",
+    "logo": "https://i.imgur.com/LH0Gctv.png",
+    "url": "https://kiefte.eu/iptv/tagesschau24.m3u8",
+    "chno": 116
+  },
+  {
+    "name": "ZDF (HD • Informação \u0026 Geral)",
+    "group": "Notícias",
+    "tvg_id": "ZDF.de@SD",
+    "tvg_name": "ZDF",
+    "logo": "https://i.imgur.com/rtLb6m9.png",
+    "url": "https://kiefte.eu/iptv/zdf.m3u8",
+    "chno": 117
+  },
+  {
     "name": "RTVE Canal 24 Horas",
     "group": "ES Geral \u0026 TDT",
     "tvg_id": "Canal.24.horas.es",
@@ -519,6 +546,15 @@
     "chno": 277
   },
   {
+    "name": "WDR Fernsehen (HD • Köln / NRW)",
+    "group": "Regional \u0026 Local",
+    "tvg_id": "WDRFernsehen.de@Koln",
+    "tvg_name": "WDR Fernsehen",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/WDR_Fernsehen_Logo_2018.svg/960px-WDR_Fernsehen_Logo_2018.svg.png",
+    "url": "https://kiefte.eu/iptv/wdr.m3u8",
+    "chno": 278
+  },
+  {
     "name": "Das Erste (ARD Germany)",
     "group": "Filmes \u0026 Docs",
     "tvg_id": "DasErste.de",
@@ -553,6 +589,60 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_Esperanto.svg/512px-Flag_of_Esperanto.svg.png",
     "url": "https://kiefte.eu/iptv/esperanto/tv",
     "chno": 303
+  },
+  {
+    "name": "ARTE France (HD)",
+    "group": "Filmes \u0026 Docs",
+    "tvg_id": "arte.fr@SD",
+    "tvg_name": "ARTE France",
+    "logo": "https://api-cdn.arte.tv/img/v2/image/j4EoSJjX26uySVWdmt3EmS/1920x1080",
+    "url": "https://kiefte.eu/iptv/arte_fr.m3u8",
+    "chno": 304
+  },
+  {
+    "name": "ARTE Deutschland (HD)",
+    "group": "Filmes \u0026 Docs",
+    "tvg_id": "arte.de@SD",
+    "tvg_name": "ARTE Deutschland",
+    "logo": "https://api-cdn.arte.tv/img/v2/image/j4EoSJjX26uySVWdmt3EmS/1920x1080",
+    "url": "https://kiefte.eu/iptv/arte_de.m3u8",
+    "chno": 305
+  },
+  {
+    "name": "TV5Monde Europe (1080p • Legendas NL/DE/EN/FR)",
+    "group": "Filmes \u0026 Docs",
+    "tvg_id": "TV5MondeEurope.fr",
+    "tvg_name": "TV5Monde Europe",
+    "logo": "https://i.imgur.com/uPmwTo9.png",
+    "url": "https://kiefte.eu/iptv/tv5monde_europe.m3u8",
+    "chno": 306
+  },
+  {
+    "name": "3sat (HD • DACH Kultur \u0026 Doku)",
+    "group": "Filmes \u0026 Docs",
+    "tvg_id": "3sat.de@SD",
+    "tvg_name": "3sat",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/3sat_2019.svg/960px-3sat_2019.svg.png",
+    "url": "https://kiefte.eu/iptv/3sat.m3u8",
+    "chno": 307
+  },
+  {
+    "name": "ZDFneo (HD • Séries \u0026 Cinema)",
+    "group": "Filmes \u0026 Docs",
+    "tvg_id": "ZDFneo.de@SD",
+    "tvg_name": "ZDFneo",
+    "logo": "https://i.imgur.com/1JIIGgL.png",
+    "url": "https://kiefte.eu/iptv/zdfneo.m3u8",
+    "chno": 308
+  },
+  {
+    "name": "ZDFinfo (HD • Documentários)",
+    "group": "Filmes \u0026 Docs",
+    "tvg_id": "ZDFinfo.de@SD",
+    "tvg_name": "ZDFinfo",
+    "logo": "https://i.imgur.com/vtq1IWp.png",
+    "url": "https://kiefte.eu/iptv/zdfinfo.m3u8",
+    "chno": 309
   },
   {
     "name": "Doctor Who Classic (24/7 1080p HD)",
@@ -835,6 +925,15 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/512px-LEGO_logo.svg.png",
     "url": "https://dltiqboxjw21d.cloudfront.net/index.m3u8",
     "chno": 608
+  },
+  {
+    "name": "KiKa (HD • ARD/ZDF Kinderkanal)",
+    "group": "Infantil \u0026 Kids",
+    "tvg_id": "KiKA.de@SD",
+    "tvg_name": "KiKa",
+    "logo": "https://i.imgur.com/vZdNp5S.png",
+    "url": "https://kiefte.eu/iptv/kika.m3u8",
+    "chno": 609
   },
   {
     "name": "Studio Brussel (Visual Radio)",
@@ -1169,6 +1268,15 @@
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/ebs_plus.png",
     "url": "https://streams.prd.commavservices.eu/live/ebsplus/index.m3u8",
     "chno": 806
+  },
+  {
+    "name": "Phoenix (HD • Parlamento \u0026 Debates DE)",
+    "group": "Cívico \u0026 Parlamento",
+    "tvg_id": "phoenix.de@HD",
+    "tvg_name": "Phoenix",
+    "logo": "https://i.imgur.com/T1532t9.png",
+    "url": "https://kiefte.eu/iptv/phoenix.m3u8",
+    "chno": 807
   },
   {
     "name": "TV Maná Moçambique",
