@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"net/http"
 	"net/http/httptest"
+	"os"
 	"strings"
 	"testing"
 )
@@ -401,6 +402,40 @@ func TestNowDashboardAndAPI(t *testing.T) {
 		t.Errorf("expected overlay badge in response")
 	}
 }
+
+func TestLoadConfigFile(t *testing.T) {
+	tmpFile, err := os.CreateTemp("", "iptv-test-*.conf")
+	if err != nil {
+		t.Fatalf("failed to create temp file: %v", err)
+	}
+	defer os.Remove(tmpFile.Name())
+
+	content := `# Test configuration
+BRIDGE_HOST=fd00:2830::1234
+BRIDGE_PORT=8081
+BRIDGE_ADDR=[fd00:2830::1234]:8081
+BRIDGE_QUALITY=720p
+`
+	if _, err := tmpFile.WriteString(content); err != nil {
+		t.Fatalf("failed to write temp file: %v", err)
+	}
+	tmpFile.Close()
+
+	cfg := loadConfigFile(tmpFile.Name())
+	if cfg["BRIDGE_HOST"] != "fd00:2830::1234" {
+		t.Errorf("expected BRIDGE_HOST=fd00:2830::1234, got %s", cfg["BRIDGE_HOST"])
+	}
+	if cfg["BRIDGE_PORT"] != "8081" {
+		t.Errorf("expected BRIDGE_PORT=8081, got %s", cfg["BRIDGE_PORT"])
+	}
+	if cfg["BRIDGE_ADDR"] != "[fd00:2830::1234]:8081" {
+		t.Errorf("expected BRIDGE_ADDR=[fd00:2830::1234]:8081, got %s", cfg["BRIDGE_ADDR"])
+	}
+	if cfg["BRIDGE_QUALITY"] != "720p" {
+		t.Errorf("expected BRIDGE_QUALITY=720p, got %s", cfg["BRIDGE_QUALITY"])
+	}
+}
+
 
 
 

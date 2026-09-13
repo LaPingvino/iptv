@@ -137,11 +137,48 @@ if os.path.exists(SRC_ROZOJ):
         print("Aborting due to error in dok_insulo_de_la_rozoj")
         sys.exit(1)
 
+def get_configured_bridge_addr():
+    if os.environ.get("BRIDGE_ADDR"):
+        return os.environ["BRIDGE_ADDR"]
+    host = os.environ.get("BRIDGE_HOST")
+    port = os.environ.get("BRIDGE_PORT")
+    if host and port:
+        if ":" in host and not host.startswith("["):
+            host = f"[{host}]"
+        return f"{host}:{port}"
+    for conf_path in [
+        "/etc/iptv-live-bridge.conf",
+        os.path.join(os.path.dirname(__file__), "../pkg/iptv-live-bridge/iptv-live-bridge.conf")
+    ]:
+        if os.path.exists(conf_path):
+            try:
+                conf = {}
+                with open(conf_path, "r", encoding="utf-8") as f:
+                    for line in f:
+                        line = line.strip()
+                        if line and not line.startswith("#") and "=" in line:
+                            k, v = line.split("=", 1)
+                            conf[k.strip()] = v.strip().strip("\"'")
+                if "BRIDGE_ADDR" in conf:
+                    return conf["BRIDGE_ADDR"]
+                if "BRIDGE_HOST" in conf and "BRIDGE_PORT" in conf:
+                    h = conf["BRIDGE_HOST"]
+                    p = conf["BRIDGE_PORT"]
+                    if ":" in h and not h.startswith("["):
+                        h = f"[{h}]"
+                    return f"{h}:{p}"
+            except Exception:
+                pass
+    return "[fd00:2830::7555]:8080"
+
 # Trigger reload on local bridge
 try:
-    with urllib.request.urlopen("http://[fd00:2830::7555]:8080/iptv/reload", timeout=5) as resp:
+    bridge_addr = get_configured_bridge_addr()
+    reload_url = f"http://{bridge_addr}/iptv/reload"
+    with urllib.request.urlopen(reload_url, timeout=5) as resp:
         print("🔄 In-memory reload triggered on bridge:", resp.read().decode(), flush=True)
 except Exception as e:
     print("Reload error:", e, flush=True)
 
 print("🎉 All movies successfully transcoded, verified, and live!", flush=True)
+

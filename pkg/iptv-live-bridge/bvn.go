@@ -287,7 +287,7 @@ func (e *BVNEngine) SetPort(p int) {
 	e.port = p
 	h, _, err := net.SplitHostPort(e.listenAddr)
 	if err != nil || h == "" {
-		h = "fd00:2830::7555"
+		h = Host
 	}
 	e.listenAddr = net.JoinHostPort(h, strconv.Itoa(p))
 }
@@ -335,6 +335,10 @@ func (e *BVNEngine) startWorker() {
 	targetAddr := e.listenAddr
 	e.mu.Unlock()
 
+	if targetAddr == "" {
+		targetAddr = ListenAddr
+	}
+
 	host, port, err := net.SplitHostPort(targetAddr)
 	var connectHost string
 	if err == nil {
@@ -350,8 +354,8 @@ func (e *BVNEngine) startWorker() {
 			}
 		}
 	} else {
-		connectHost = "[fd00:2830::7555]"
-		port = "8080"
+		connectHost = "127.0.0.1"
+		port = strconv.Itoa(Port)
 	}
 	mpdURL := fmt.Sprintf("http://%s:%s/bvn_internal.mpd", connectHost, port)
 

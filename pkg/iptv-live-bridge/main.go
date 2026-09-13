@@ -41,44 +41,128 @@ func getMediaDir(sub string) string {
 	return filepath.Join(ProjectDir, "pkg/iptv-live-bridge", sub)
 }
 
+func loadConfigFile(paths ...string) map[string]string {
+	cfg := make(map[string]string)
+	for _, p := range paths {
+		if p == "" {
+			continue
+		}
+		data, err := os.ReadFile(p)
+		if err != nil {
+			continue
+		}
+		lines := strings.Split(string(data), "\n")
+		for _, l := range lines {
+			l = strings.TrimSpace(l)
+			if l == "" || strings.HasPrefix(l, "#") || strings.HasPrefix(l, ";") {
+				continue
+			}
+			parts := strings.SplitN(l, "=", 2)
+			if len(parts) == 2 {
+				k := strings.TrimSpace(parts[0])
+				v := strings.Trim(strings.TrimSpace(parts[1]), "\"'")
+				cfg[k] = v
+			}
+		}
+		log.Printf("[Config] Loaded configuration from %s", p)
+		break
+	}
+	return cfg
+}
+
 func main() {
+	var (
+		cfgFile    string
+		flagListen string
+		flagPort   int
+		flagHost   string
+		flagMedia  string
+	)
+
+	buildDist := flag.Bool("build-dist", false, "Compile playlists and master EPG files from data/ into dist/ then exit")
+	flag.StringVar(&cfgFile, "config", "", "Path to configuration file (/etc/iptv-live-bridge.conf)")
+	flag.StringVar(&flagListen, "listen", "", "HTTP listen address ([host]:port)")
+	flag.IntVar(&flagPort, "port", 0, "HTTP listen port")
+	flag.StringVar(&flagHost, "host", "", "HTTP listen host")
+	flag.StringVar(&flagMedia, "media-dir", "", "Media root directory")
+	flag.Parse()
+
+	// 1. Config file resolution
+	customConfig := cfgFile
+	if customConfig == "" {
+		customConfig = os.Getenv("BRIDGE_CONFIG")
+	}
+	conf := loadConfigFile(
+		customConfig,
+		"/etc/iptv-live-bridge.conf",
+		filepath.Join(ProjectDir, "pkg/iptv-live-bridge/iptv-live-bridge.conf"),
+		"iptv-live-bridge.conf",
+	)
+
+	// 2. Base values from config file
+	if v, ok := conf["BRIDGE_HOST"]; ok && v != "" {
+		Host = v
+	}
+	if v, ok := conf["BRIDGE_PORT"]; ok && v != "" {
+		if p, err := strconv.Atoi(v); err == nil && p > 0 {
+			Port = p
+		}
+	}
+	if v, ok := conf["BRIDGE_ADDR"]; ok && v != "" {
+		ListenAddr = v
+	} else {
+		ListenAddr = net.JoinHostPort(Host, strconv.Itoa(Port))
+	}
+	if v, ok := conf["BRIDGE_MEDIA_DIR"]; ok && v != "" {
+		MediaDir = v
+	}
+
+	// 3. Environment variable overrides
 	if hEnv := os.Getenv("BRIDGE_HOST"); hEnv != "" {
 		Host = hEnv
 	}
 	if pEnv := os.Getenv("BRIDGE_PORT"); pEnv != "" {
-		if p, err := strconv.Atoi(pEnv); err == nil {
+		if p, err := strconv.Atoi(pEnv); err == nil && p > 0 {
 			Port = p
 		}
 	} else if pEnv := os.Getenv("PORT"); pEnv != "" {
-		if p, err := strconv.Atoi(pEnv); err == nil {
+		if p, err := strconv.Atoi(pEnv); err == nil && p > 0 {
 			Port = p
 		}
 	}
 	if aEnv := os.Getenv("BRIDGE_ADDR"); aEnv != "" {
 		ListenAddr = aEnv
-	} else {
+	} else if os.Getenv("BRIDGE_HOST") != "" || os.Getenv("BRIDGE_PORT") != "" || os.Getenv("PORT") != "" {
 		ListenAddr = net.JoinHostPort(Host, strconv.Itoa(Port))
 	}
+	if mEnv := os.Getenv("BRIDGE_MEDIA_DIR"); mEnv != "" {
+		MediaDir = mEnv
+	}
 
-	buildDist := flag.Bool("build-dist", false, "Compile playlists and master EPG files from data/ into dist/ then exit")
-	flag.StringVar(&ListenAddr, "listen", ListenAddr, "HTTP listen address ([host]:port)")
-	flag.IntVar(&Port, "port", Port, "HTTP listen port")
-	flag.StringVar(&Host, "host", Host, "HTTP listen host")
-	flag.StringVar(&MediaDir, "media-dir", MediaDir, "Media root directory")
-	flag.Parse()
-
-	flagsSet := make(map[string]bool)
-	flag.Visit(func(f *flag.Flag) {
-		flagsSet[f.Name] = true
-	})
-	if flagsSet["listen"] {
+	// 4. CLI flags overrides (highest priority)
+	if flagHost != "" {
+		Host = flagHost
+	}
+	if flagPort > 0 {
+		Port = flagPort
+	}
+	if flagListen != "" {
+		ListenAddr = flagListen
 		if h, p, err := net.SplitHostPort(ListenAddr); err == nil {
 			Host = h
 			if pInt, err := strconv.Atoi(p); err == nil {
 				Port = pInt
 			}
 		}
-	} else if flagsSet["port"] || flagsSet["host"] {
+	} else if flagHost != "" || flagPort > 0 {
+		ListenAddr = net.JoinHostPort(Host, strconv.Itoa(Port))
+	}
+	if flagMedia != "" {
+		MediaDir = flagMedia
+	}
+
+	// 5. Final fallback guarantee
+	if ListenAddr == "" {
 		ListenAddr = net.JoinHostPort(Host, strconv.Itoa(Port))
 	}
 

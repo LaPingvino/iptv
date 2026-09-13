@@ -27,37 +27,65 @@ with open(CADDYFILE, "r", encoding="utf-8") as f:
 shutil.copy2(CADDYFILE, BACKUP)
 print(f"Created backup at {BACKUP}")
 
-old_block = """kiefte.eu, www.kiefte.eu, joop.kiefte.eu, joop.kiefte.nom.br {
-        redir * https://bsky.app/profile/joop.kiefte.eu
-}"""
+def get_configured_bridge_addr():
+    if len(sys.argv) > 1 and not sys.argv[1].startswith("-"):
+        return sys.argv[1]
+    if os.environ.get("BRIDGE_ADDR"):
+        return os.environ["BRIDGE_ADDR"]
+    host = os.environ.get("BRIDGE_HOST")
+    port = os.environ.get("BRIDGE_PORT")
+    if host and port:
+        if ":" in host and not host.startswith("["):
+            host = f"[{host}]"
+        return f"{host}:{port}"
+    for conf_path in [
+        "/etc/iptv-live-bridge.conf",
+        os.path.join(os.path.dirname(__file__), "../pkg/iptv-live-bridge/iptv-live-bridge.conf")
+    ]:
+        if os.path.exists(conf_path):
+            try:
+                conf = {}
+                with open(conf_path, "r", encoding="utf-8") as f:
+                    for line in f:
+                        line = line.strip()
+                        if line and not line.startswith("#") and "=" in line:
+                            k, v = line.split("=", 1)
+                            conf[k.strip()] = v.strip().strip("\"'")
+                if "BRIDGE_ADDR" in conf:
+                    return conf["BRIDGE_ADDR"]
+                if "BRIDGE_HOST" in conf and "BRIDGE_PORT" in conf:
+                    h = conf["BRIDGE_HOST"]
+                    p = conf["BRIDGE_PORT"]
+                    if ":" in h and not h.startswith("["):
+                        h = f"[{h}]"
+                    return f"{h}:{p}"
+            except Exception:
+                pass
+    return "[fd00:2830::7555]:8080"
 
-new_block = """kiefte.eu, www.kiefte.eu, joop.kiefte.eu, joop.kiefte.nom.br {
-        handle_path /iptv/* {
-                reverse_proxy [fd00:2830::7555]:8080
-        }
-        handle {
-                redir https://bsky.app/profile/joop.kiefte.eu
-        }
-}"""
+bridge_addr = get_configured_bridge_addr()
+print(f"Targeting IPTV bridge address: {bridge_addr}")
 
+import re
 if "handle_path /iptv/*" in content:
-    print("Caddyfile is already configured for /iptv/*.")
+    # Update existing reverse_proxy line inside handle_path /iptv/*
+    content = re.sub(
+        r"(handle_path /iptv/\*\s*\{\s*reverse_proxy\s+)[^\n\s\}]+",
+        r"\g<1>" + bridge_addr,
+        content
+    )
+    print(f"Updated existing /iptv/* reverse_proxy target to {bridge_addr}")
 else:
-    # Normalize whitespaces for replacement
-    if old_block in content:
-        content = content.replace(old_block, new_block)
-    else:
-        # Fallback replacement matching the domain line
-        import re
-        content = re.sub(
-            r"(kiefte\.eu,\s*www\.kiefte\.eu[^{]*\{\s*)(redir[^\n\}]+)(\s*\})",
-            r"\1handle_path /iptv/* {\n                reverse_proxy [fd00:2830::7555]:8080\n        }\n        handle {\n                \2\n        }\3",
-            content
-        )
+    # Insert new block
+    content = re.sub(
+        r"(kiefte\.eu,\s*www\.kiefte\.eu[^{]*\{\s*)(redir[^\n\}]+)(\s*\})",
+        f"\\1handle_path /iptv/* {{\\n                reverse_proxy {bridge_addr}\\n        }}\\n        handle {{\\n                \\2\\n        }}\\3",
+        content
+    )
+    print(f"Inserted /iptv/* block into {CADDYFILE}")
 
-    with open(CADDYFILE, "w", encoding="utf-8") as f:
-        f.write(content)
-    print(f"Updated {CADDYFILE}")
+with open(CADDYFILE, "w", encoding="utf-8") as f:
+    f.write(content)
 
 # Validate Caddy configuration
 print("\nValidating Caddy configuration...")
