@@ -102,6 +102,26 @@ https://cdn.example.com/live/segment102.ts
 	}
 }
 
+func TestRewriteM3U8SubtitlePlaylist(t *testing.T) {
+	subM3U8 := `#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:2
+#EXT-X-MEDIA-SEQUENCE:100
+#EXTINF:2.0,
+807575.webvtt
+#EXTINF:2.0,
+807576.vtt
+`
+	upstreamURL := "https://example.com/live/sub/index.m3u8"
+	rewritten, err := RewriteM3U8(subM3U8, upstreamURL)
+	if err != nil {
+		t.Fatalf("RewriteM3U8 failed: %v", err)
+	}
+	if !strings.Contains(rewritten, "/segment.vtt") {
+		t.Errorf("expected /segment.vtt in rewritten subtitle playlist, got:\n%s", rewritten)
+	}
+}
+
 func TestResolveProxiedChannel(t *testing.T) {
 	testCases := []struct {
 		Path       string

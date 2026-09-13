@@ -283,10 +283,16 @@ func RewriteM3U8(content string, upstreamURL string) (string, error) {
 		} else {
 			ext := "segment.ts"
 			lowerPath := strings.ToLower(refURL.Path)
-			if strings.HasSuffix(lowerPath, ".m4s") {
+			if strings.HasSuffix(lowerPath, ".vtt") || strings.HasSuffix(lowerPath, ".webvtt") {
+				ext = "segment.vtt"
+			} else if strings.HasSuffix(lowerPath, ".m4s") {
 				ext = "segment.m4s"
 			} else if strings.HasSuffix(lowerPath, ".mp4") {
 				ext = "segment.mp4"
+			} else if strings.HasSuffix(lowerPath, ".ttml") {
+				ext = "segment.ttml"
+			} else if strings.HasSuffix(lowerPath, ".aac") {
+				ext = "segment.aac"
 			}
 			out = append(out, fmt.Sprintf("/iptv/hls/s/%s/%s", token, ext))
 		}
