@@ -22,6 +22,7 @@ import datetime
 
 EPG_SOURCES = [
     "https://kiefte.eu/iptv/epg.xml.gz",
+    "https://kiefte.eu/iptv/twitch/epg.xml",
     "https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/epg.xml.gz",
     "https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-m3upt.xml.xz",
     "https://raw.githubusercontent.com/Free-TV/IPTV/master/epg.xml.gz"
@@ -49,40 +50,40 @@ def load_channels(data_dir):
     return all_channels
 
 GROUP_BASE_CHNO = {
-    # 📺 Television (1 - 899)
+    # 📺 Television (1 - 399)
     "PT Geral": 1,
     "MZ Geral": 20,
-    "Notícias": 100,
-    "ES Geral & TDT": 200,
-    "Galiza": 230,
-    "Regional & Local": 260,
-    "Filmes & Docs": 300,
-    "Sci-Fi & Cult Retro": 350,
-    "Natureza & Slow TV": 400,
-    "Desporto": 500,
-    "Infantil & Kids": 600,
-    "Música & Video": 700,
-    "Cívico & Parlamento": 800,
-    "Religião": 850,
+    "Notícias": 30,
+    "ES Geral & TDT": 60,
+    "Galiza": 70,
+    "Regional & Local": 80,
+    "Filmes & Docs": 110,
+    "Sci-Fi & Cult Retro": 130,
+    "Natureza & Slow TV": 145,
+    "Desporto": 155,
+    "Infantil & Kids": 165,
+    "Música & Video": 180,
+    "Cívico & Parlamento": 220,
+    "Religião": 235,
     
-    # 🎮 Distant Block: Gaming Streams (1000 - 1999)
-    "Speedrunning & Marathons": 1000,
-    "Mario & Romhacks": 1050,
-    "Tetris": 1100,
-    "Indie & Variety Gaming": 1150,
-    "LaPingvino Favorites": 1200,
+    # 🎮 Gaming & Twitch Streams (250 - 339)
+    "Speedrunning & Marathons": 250,
+    "Mario & Romhacks": 265,
+    "Tetris": 285,
+    "Indie & Variety Gaming": 305,
+    "LaPingvino Favorites": 320,
     
-    # 🧪 Distant Block: Diagnostics (2000 - 2999)
-    "Diag": 2000,
+    # 🧪 Diagnostics (340 - 399)
+    "Diag": 340,
     
-    # 📻 Unified Radio Block (5000 - 8999)
-    "PT Rádio": 5000,
-    "MZ Rádio": 5100,
-    "ES Rádio": 6000,
-    "NL Rádio": 7000,
-    "BE Rádio": 7200,
-    "Rádio Global": 8000,
-    "Esperanto & Afrikaans Rádio": 8200,
+    # 📻 Unified Radio Block (400 - 599)
+    "PT Rádio": 400,
+    "MZ Rádio": 420,
+    "ES Rádio": 440,
+    "NL Rádio": 450,
+    "BE Rádio": 500,
+    "Rádio Global": 520,
+    "Esperanto & Afrikaans Rádio": 580,
 }
 
 def assign_channel_numbers(channels):

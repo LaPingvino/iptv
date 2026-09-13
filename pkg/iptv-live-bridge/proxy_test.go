@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/base64"
+	"encoding/json"
 	"fmt"
 	"net/http"
 	"net/http/httptest"
@@ -337,5 +338,49 @@ func TestReloadState(t *testing.T) {
 	}()
 	reloadState(nil, nil)
 }
+
+func TestNowDashboardAndAPI(t *testing.T) {
+	// Test serveNowJSON
+	req := httptest.NewRequest("GET", "/api/now", nil)
+	w := httptest.NewRecorder()
+	serveNowJSON(w, req, nil, nil)
+	if w.Code != http.StatusOK {
+		t.Errorf("serveNowJSON returned HTTP %d, want 200", w.Code)
+	}
+	var data struct {
+		Timestamp string `json:"timestamp"`
+		Channels  []struct {
+			ChNo int    `json:"chno"`
+			Slot string `json:"slot"`
+		} `json:"channels"`
+	}
+	if err := json.Unmarshal(w.Body.Bytes(), &data); err != nil {
+		t.Fatalf("failed to decode serveNowJSON: %v", err)
+	}
+	if len(data.Channels) == 0 {
+		t.Errorf("expected channels in serveNowJSON, got 0")
+	}
+
+	// Test serveNowDashboard
+	wDash := httptest.NewRecorder()
+	serveNowDashboard(wDash, req)
+	if wDash.Code != http.StatusOK {
+		t.Errorf("serveNowDashboard returned HTTP %d, want 200", wDash.Code)
+	}
+	if !strings.Contains(wDash.Body.String(), "LaPingvino IPTV") {
+		t.Errorf("expected dashboard HTML title in response")
+	}
+
+	// Test serveOverlayWidget
+	wOverlay := httptest.NewRecorder()
+	serveOverlayWidget(wOverlay, req)
+	if wOverlay.Code != http.StatusOK {
+		t.Errorf("serveOverlayWidget returned HTTP %d, want 200", wOverlay.Code)
+	}
+	if !strings.Contains(wOverlay.Body.String(), "badge") {
+		t.Errorf("expected overlay badge in response")
+	}
+}
+
 
 

@@ -111,7 +111,21 @@ func main() {
 			return
 		}
 
-		// 2b. Real-Time EPG Handlers
+		// 2b. Real-Time Status & Now Playing Endpoints
+		if path == "api/now" || path == "twitch/now.json" || path == "now.json" {
+			serveNowJSON(w, r, esperantoStation, bahaiStation)
+			return
+		}
+		if path == "now" || path == "twitch/now" || path == "now.html" {
+			serveNowDashboard(w, r)
+			return
+		}
+		if path == "overlay" || path == "twitch/overlay" {
+			serveOverlayWidget(w, r)
+			return
+		}
+
+		// 2c. Real-Time EPG Handlers
 		if path == "twitch/epg" || path == "twitch/epg.xml" || path == "epg/twitch.xml" || path == "twitch_lapingvino_iptv_epg.xml" || path == "dist/twitch_lapingvino_iptv_epg.xml" {
 			xml := epgManager.GetTwitchEPG(r.Context())
 			w.Header().Set("Content-Type", "application/xml; charset=utf-8")
@@ -533,6 +547,23 @@ func serveTwitchM3U8(w http.ResponseWriter, r *http.Request, streamURL, channel 
 		return
 	}
 
+	// Enrich playlist with real-time active streamer metadata if available
+	if sInfo := twitchMgr.GetActiveStreamInfo(channel); sInfo != nil && sInfo.DisplayName != "" {
+		tag := fmt.Sprintf("🔴 %s", sInfo.DisplayName)
+		if sInfo.Game != "" {
+			tag += fmt.Sprintf(" • %s", sInfo.Game)
+		}
+		if sInfo.Viewers > 0 {
+			tag += fmt.Sprintf(" (%d viewers)", sInfo.Viewers)
+		}
+		m3u8 = strings.ReplaceAll(m3u8, ",live", ","+tag)
+		w.Header().Set("X-Streamer-Name", sInfo.DisplayName)
+		w.Header().Set("X-Streamer-Game", sInfo.Game)
+		if sInfo.Viewers > 0 {
+			w.Header().Set("X-Streamer-Viewers", strconv.Itoa(sInfo.Viewers))
+		}
+	}
+
 	// Update recent cache on success
 	m3u8RecentMu.Lock()
 	m3u8Recent[channel] = m3u8CacheEntry{
@@ -608,3 +639,461 @@ func serveDistFile(w http.ResponseWriter, r *http.Request, filePath, fileName st
 
 	http.ServeFile(w, r, filePath)
 }
+
+func serveNowJSON(w http.ResponseWriter, r *http.Request, esp, bahai *LinearStation) {
+	liveFollows := twitchMgr.GetRankedLiveFollows(r.Context())
+
+	type ChannelNow struct {
+		ChNo        int    `json:"chno"`
+		Slot        string `json:"slot"`
+		Name        string `json:"name"`
+		Category    string `json:"category"`
+		Live        bool   `json:"live"`
+		Streamer    string `json:"streamer"`
+		DisplayName string `json:"display_name"`
+		Game        string `json:"game"`
+		Title       string `json:"title"`
+		Viewers     int    `json:"viewers"`
+		StreamURL   string `json:"stream_url"`
+	}
+
+	var channels []ChannelNow
+
+	// 1. Followed Streamers (Ch. 320–329)
+	for i := 1; i <= 10; i++ {
+		slotKey := fmt.Sprintf("followed-%d", i)
+		sInfo := twitchMgr.GetActiveStreamInfo(slotKey)
+
+		item := ChannelNow{
+			ChNo:      319 + i,
+			Slot:      slotKey,
+			Name:      fmt.Sprintf("Followed Streamer #%d", i),
+			Category:  "LaPingvino Favorites",
+			StreamURL: fmt.Sprintf("/iptv/twitch/followed/%d", i),
+		}
+
+		if sInfo != nil && sInfo.DisplayName != "" {
+			item.Live = true
+			item.Streamer = sInfo.Login
+			item.DisplayName = sInfo.DisplayName
+			item.Game = sInfo.Game
+			item.Title = sInfo.Title
+			item.Viewers = sInfo.Viewers
+		} else if i-1 < len(liveFollows) {
+			item.Live = true
+			item.Streamer = liveFollows[i-1].Login
+			item.DisplayName = liveFollows[i-1].DisplayName
+			item.Game = liveFollows[i-1].Game
+			item.Title = liveFollows[i-1].Title
+			item.Viewers = liveFollows[i-1].Viewers
+		}
+
+		channels = append(channels, item)
+	}
+
+	// 2. Dedicated Gaming Channels
+	gamingChannels := []struct {
+		Slot string
+		ChNo int
+		Name string
+	}{
+		{"speedrun", 250, "Speedrun (24/7 Speedrun.com)"},
+		{"gamesdonequick", 251, "GamesDoneQuick (GDQ)"},
+		{"esamarathon", 252, "ESAMarathon"},
+		{"tasvideos", 253, "TASVideos"},
+		{"mitchflowerpower", 254, "MitchFlowerPower (SMB3)"},
+		{"classictetris", 285, "Classic Tetris (CTWC Main)"},
+		{"classictetris2", 286, "Classic Tetris 2 (CTWC)"},
+	}
+	for _, g := range gamingChannels {
+		sInfo := twitchMgr.GetActiveStreamInfo(g.Slot)
+		item := ChannelNow{
+			ChNo:      g.ChNo,
+			Slot:      g.Slot,
+			Name:      g.Name,
+			Category:  "Gaming",
+			StreamURL: fmt.Sprintf("/iptv/twitch/%s", g.Slot),
+		}
+		if sInfo != nil && sInfo.DisplayName != "" {
+			item.Live = true
+			item.Streamer = sInfo.Login
+			item.DisplayName = sInfo.DisplayName
+			item.Game = sInfo.Game
+			item.Title = sInfo.Title
+			item.Viewers = sInfo.Viewers
+		}
+		channels = append(channels, item)
+	}
+
+	w.Header().Set("Content-Type", "application/json; charset=utf-8")
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Set("Cache-Control", "no-cache, no-store, must-revalidate")
+	json.NewEncoder(w).Encode(map[string]any{
+		"timestamp": time.Now().Format(time.RFC3339),
+		"channels":  channels,
+	})
+}
+
+func serveNowDashboard(w http.ResponseWriter, r *http.Request) {
+	html := `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LaPingvino IPTV • Live Stream Status & Now Playing</title>
+<style>
+  :root {
+    --bg: #0b0f19;
+    --card: #151d30;
+    --card-hover: #1e2942;
+    --border: rgba(255,255,255,0.08);
+    --text: #f1f5f9;
+    --subtext: #94a3b8;
+    --primary: #9146ff;
+    --live: #10b981;
+    --standby: #64748b;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+    padding: 32px 20px;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  h1 { font-size: 26px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+  .badge-live {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    background: rgba(16, 185, 129, 0.15);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    color: var(--live);
+    border-radius: 9999px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .pulse {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--live);
+    box-shadow: 0 0 8px var(--live);
+    animation: pulse 1.8s infinite;
+  }
+  @keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.3); opacity: 0.5; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  .section-title {
+    font-size: 19px;
+    font-weight: 600;
+    margin: 28px 0 16px;
+    color: #e2e8f0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+    transition: transform 0.2s, border-color 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+  .card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(145, 70, 255, 0.4);
+  }
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  .chno {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--primary);
+    background: rgba(145, 70, 255, 0.12);
+    padding: 2px 8px;
+    border-radius: 6px;
+    letter-spacing: 0.5px;
+  }
+  .status-tag {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 9999px;
+    text-transform: uppercase;
+  }
+  .status-live {
+    background: rgba(16, 185, 129, 0.2);
+    color: var(--live);
+  }
+  .status-standby {
+    background: rgba(100, 116, 139, 0.2);
+    color: var(--standby);
+  }
+  .streamer-name {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #fff;
+  }
+  .streamer-name a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .streamer-name a:hover {
+    color: var(--primary);
+  }
+  .game-name {
+    font-size: 13px;
+    color: #cbd5e1;
+    margin-bottom: 8px;
+    display: inline-block;
+    background: rgba(255,255,255,0.06);
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+  .stream-title {
+    font-size: 12px;
+    color: var(--subtext);
+    margin-bottom: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 34px;
+  }
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+    font-size: 12px;
+  }
+  .viewers {
+    color: #e2e8f0;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .links {
+    display: flex;
+    gap: 8px;
+  }
+  .links a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  .links a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>📺 LaPingvino IPTV</h1>
+      <p style="color:var(--subtext); margin-top:4px; font-size:14px;">Live Streamer Monitor & Now Playing Guide</p>
+    </div>
+    <div style="display:flex; align-items:center; gap:12px;">
+      <span class="badge-live"><span class="pulse"></span> AUTO-REFRESHING</span>
+      <span id="clock" style="font-size:13px; color:var(--subtext); font-variant-numeric:tabular-nums;"></span>
+    </div>
+  </header>
+
+  <h2 class="section-title">⭐ LaPingvino Favorites (Top 10 Live Follows • Ch. 320–329)</h2>
+  <div class="grid" id="favorites-grid">
+    <p style="color:var(--subtext);">Loading live follows...</p>
+  </div>
+
+  <h2 class="section-title">🎮 Dedicated Gaming Streams (Ch. 250–286)</h2>
+  <div class="grid" id="gaming-grid">
+    <p style="color:var(--subtext);">Loading gaming streams...</p>
+  </div>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      document.getElementById('clock').textContent = now.toLocaleTimeString();
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    async function refreshNow() {
+      try {
+        const res = await fetch('/api/now');
+        const data = await res.json();
+
+        const favsGrid = document.getElementById('favorites-grid');
+        const gamingGrid = document.getElementById('gaming-grid');
+
+        const favs = data.channels.filter(c => c.category === 'LaPingvino Favorites');
+        const gaming = data.channels.filter(c => c.category === 'Gaming');
+
+        favsGrid.innerHTML = favs.map(renderCard).join('');
+        gamingGrid.innerHTML = gaming.map(renderCard).join('');
+      } catch (err) {
+        console.error('Failed to load /api/now:', err);
+      }
+    }
+
+    function renderCard(ch) {
+      const isLive = ch.live;
+      const statusClass = isLive ? 'status-live' : 'status-standby';
+      const statusText = isLive ? 'LIVE' : 'STANDBY';
+      const name = isLive ? (ch.display_name || ch.streamer) : ch.name;
+      const game = isLive ? (ch.game || 'Gaming') : 'Slot Available';
+      const title = isLive ? (ch.title || 'Live Broadcast') : 'Awaiting live followed streamer...';
+      const twitchUrl = isLive ? 'https://twitch.tv/' + ch.streamer : '#';
+      const viewers = isLive && ch.viewers > 0 ? ch.viewers.toLocaleString() + ' viewers' : '—';
+
+      return '<div class="card">' +
+        '<div class="card-header">' +
+          '<span class="chno">CH ' + ch.chno + '</span>' +
+          '<span class="status-tag ' + statusClass + '">' + statusText + '</span>' +
+        '</div>' +
+        '<div class="streamer-name">' +
+          (isLive ? '<a href="' + twitchUrl + '" target="_blank" rel="noopener">' + name + '</a>' : name) +
+        '</div>' +
+        '<div class="game-name">' + game + '</div>' +
+        '<div class="stream-title">' + title + '</div>' +
+        '<div class="card-footer">' +
+          '<span class="viewers">👁️ ' + viewers + '</span>' +
+          '<div class="links">' +
+            '<a href="' + ch.stream_url + '" target="_blank">Stream</a>' +
+            '<a href="/overlay?channel=' + ch.slot + '" target="_blank">Overlay</a>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+    }
+
+    setInterval(refreshNow, 10000);
+    refreshNow();
+  </script>
+</body>
+</html>`
+
+	w.Header().Set("Content-Type", "text/html; charset=utf-8")
+	w.Header().Set("Cache-Control", "no-cache, must-revalidate")
+	w.Write([]byte(html))
+}
+
+func serveOverlayWidget(w http.ResponseWriter, r *http.Request) {
+	html := `<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>IPTV Overlay Widget</title>
+<style>
+  body {
+    margin: 0;
+    padding: 24px;
+    background: transparent;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 20px;
+    background: rgba(15, 23, 42, 0.88);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(145, 70, 255, 0.5);
+    border-radius: 9999px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+  }
+  .pulse {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ef4444;
+    box-shadow: 0 0 10px #ef4444;
+    animation: pulse 1.5s infinite;
+  }
+  @keyframes pulse {
+    0% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(1.2); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  .name { color: #f8fafc; font-weight: 700; }
+  .sep { color: rgba(255,255,255,0.3); }
+  .game { color: #a78bfa; font-weight: 500; }
+  .viewers {
+    background: rgba(255,255,255,0.1);
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #cbd5e1;
+  }
+  .hidden { opacity: 0; transform: translateY(15px); }
+</style>
+</head>
+<body>
+  <div id="badge" class="badge">
+    <span class="pulse"></span>
+    <span class="name" id="name">Loading...</span>
+    <span class="sep">•</span>
+    <span class="game" id="game">Twitch Live</span>
+    <span class="viewers" id="viewers">...</span>
+  </div>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const slot = params.get('channel') || params.get('slot') || 'followed-1';
+    async function update() {
+      try {
+        const res = await fetch('/api/now');
+        const data = await res.json();
+        const ch = data.channels.find(c => c.slot === slot || String(c.chno) === slot);
+        if (ch && ch.live) {
+          document.getElementById('name').textContent = ch.display_name || ch.streamer;
+          document.getElementById('game').textContent = ch.game || 'Live Stream';
+          document.getElementById('viewers').textContent = ch.viewers ? ch.viewers.toLocaleString() + ' viewers' : 'LIVE';
+          document.getElementById('badge').classList.remove('hidden');
+        } else {
+          document.getElementById('badge').classList.add('hidden');
+        }
+      } catch(e) {}
+    }
+    setInterval(update, 4000);
+    update();
+  </script>
+</body>
+</html>`
+
+	w.Header().Set("Content-Type", "text/html; charset=utf-8")
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Set("Cache-Control", "no-cache, must-revalidate")
+	w.Write([]byte(html))
+}
+

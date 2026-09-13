@@ -207,9 +207,23 @@ func isLapingvinoFollow(login string) bool {
 	return lapingvinoFollowsSet[strings.ToLower(login)]
 }
 
+type StreamInfo struct {
+	Login       string    `json:"login"`
+	DisplayName string    `json:"display_name"`
+	Game        string    `json:"game"`
+	Title       string    `json:"title"`
+	Viewers     int       `json:"viewers"`
+	ExpiresAt   time.Time `json:"expires_at"`
+}
+
 type CachedStream struct {
-	URL       string
-	ExpiresAt time.Time
+	URL         string
+	Streamer    string
+	DisplayName string
+	Game        string
+	Title       string
+	Viewers     int
+	ExpiresAt   time.Time
 }
 
 type RaidMemory struct {
@@ -462,8 +476,10 @@ func (tm *TwitchManager) Resolve(ctx context.Context, channel string) (string, e
 	if err == nil {
 		tm.mu.Lock()
 		tm.cache[channel] = CachedStream{
-			URL:       streamURL,
-			ExpiresAt: time.Now().Add(tm.cacheTTL),
+			URL:         streamURL,
+			Streamer:    channel,
+			DisplayName: channel,
+			ExpiresAt:   time.Now().Add(tm.cacheTTL),
 		}
 		tm.mu.Unlock()
 		return streamURL, nil
@@ -517,6 +533,15 @@ func (tm *TwitchManager) Resolve(ctx context.Context, channel string) (string, e
 			if isLapingvinoFollow(teammate) {
 				if teammateURL, err := tm.resolveSingle(ctx, teammate); err == nil {
 					log.Printf("[Twitch] %s offline -> routed to followed teammate %s (%s)", channel, teammate, info.TeamName)
+					tm.mu.Lock()
+					tm.cache[channel] = CachedStream{
+						URL:         teammateURL,
+						Streamer:    teammate,
+						DisplayName: teammate,
+						Game:        info.TeamName,
+						ExpiresAt:   time.Now().Add(tm.cacheTTL),
+					}
+					tm.mu.Unlock()
 					return teammateURL, nil
 				}
 			}
@@ -524,6 +549,15 @@ func (tm *TwitchManager) Resolve(ctx context.Context, channel string) (string, e
 		for _, teammate := range info.Teammates {
 			if teammateURL, err := tm.resolveSingle(ctx, teammate); err == nil {
 				log.Printf("[Twitch] %s offline -> routed to live teammate %s (%s)", channel, teammate, info.TeamName)
+				tm.mu.Lock()
+				tm.cache[channel] = CachedStream{
+					URL:         teammateURL,
+					Streamer:    teammate,
+					DisplayName: teammate,
+					Game:        info.TeamName,
+					ExpiresAt:   time.Now().Add(tm.cacheTTL),
+				}
+				tm.mu.Unlock()
 				return teammateURL, nil
 			}
 		}
@@ -538,6 +572,17 @@ func (tm *TwitchManager) Resolve(ctx context.Context, channel string) (string, e
 				if f.Login != channel && strings.EqualFold(f.Game, info.LastGameName) {
 					if fURL, err := tm.resolveSingle(ctx, f.Login); err == nil {
 						log.Printf("[Twitch] %s offline -> automatically routed to followed streamer %s playing same game '%s'", channel, f.Login, f.Game)
+						tm.mu.Lock()
+						tm.cache[channel] = CachedStream{
+							URL:         fURL,
+							Streamer:    f.Login,
+							DisplayName: f.DisplayName,
+							Game:        f.Game,
+							Title:       f.Title,
+							Viewers:     f.Viewers,
+							ExpiresAt:   time.Now().Add(tm.cacheTTL),
+						}
+						tm.mu.Unlock()
 						return fURL, nil
 					}
 				}
@@ -550,6 +595,14 @@ func (tm *TwitchManager) Resolve(ctx context.Context, channel string) (string, e
 		for _, fb := range circle {
 			if fbURL, fbErr := tm.resolveSingle(ctx, fb); fbErr == nil {
 				log.Printf("[Twitch] %s offline -> routed to essential circle fallback %s", channel, fb)
+				tm.mu.Lock()
+				tm.cache[channel] = CachedStream{
+					URL:         fbURL,
+					Streamer:    fb,
+					DisplayName: fb,
+					ExpiresAt:   time.Now().Add(tm.cacheTTL),
+				}
+				tm.mu.Unlock()
 				return fbURL, nil
 			}
 		}
@@ -570,6 +623,14 @@ func (tm *TwitchManager) Resolve(ctx context.Context, channel string) (string, e
 	// 8. Tiered Last Resort: Check any live streamer from lapingvino's followed channels!
 	if fallbackURL, fallbackLogin := tm.resolveLapingvinoFollowedLastResort(ctx); fallbackURL != "" {
 		log.Printf("[Twitch] %s exhausted all fallbacks -> routed to lapingvino followed last-resort '%s'", channel, fallbackLogin)
+		tm.mu.Lock()
+		tm.cache[channel] = CachedStream{
+			URL:         fallbackURL,
+			Streamer:    fallbackLogin,
+			DisplayName: fallbackLogin,
+			ExpiresAt:   time.Now().Add(tm.cacheTTL),
+		}
+		tm.mu.Unlock()
 		return fallbackURL, nil
 	}
 
@@ -795,8 +856,13 @@ func (tm *TwitchManager) ResolveFollowedRank(ctx context.Context, rank int) (str
 		if streamURL, err := tm.resolveSingle(ctx, target); err == nil {
 			tm.mu.Lock()
 			tm.cache[cacheKey] = CachedStream{
-				URL:       streamURL,
-				ExpiresAt: time.Now().Add(120 * time.Second),
+				URL:         streamURL,
+				Streamer:    liveList[idx].Login,
+				DisplayName: liveList[idx].DisplayName,
+				Game:        liveList[idx].Game,
+				Title:       liveList[idx].Title,
+				Viewers:     liveList[idx].Viewers,
+				ExpiresAt:   time.Now().Add(120 * time.Second),
 			}
 			tm.mu.Unlock()
 			return streamURL, nil
@@ -808,8 +874,13 @@ func (tm *TwitchManager) ResolveFollowedRank(ctx context.Context, rank int) (str
 		if streamURL, err := tm.resolveSingle(ctx, s.Login); err == nil {
 			tm.mu.Lock()
 			tm.cache[cacheKey] = CachedStream{
-				URL:       streamURL,
-				ExpiresAt: time.Now().Add(120 * time.Second),
+				URL:         streamURL,
+				Streamer:    s.Login,
+				DisplayName: s.DisplayName,
+				Game:        s.Game,
+				Title:       s.Title,
+				Viewers:     s.Viewers,
+				ExpiresAt:   time.Now().Add(120 * time.Second),
 			}
 			tm.mu.Unlock()
 			return streamURL, nil
@@ -844,6 +915,54 @@ func (tm *TwitchManager) ClearCache() {
 	tm.cache = make(map[string]CachedStream)
 	tm.mu.Unlock()
 }
+
+func (tm *TwitchManager) GetActiveStreamInfo(channelKey string) *StreamInfo {
+	channelKey = strings.ToLower(strings.TrimSpace(channelKey))
+	tm.mu.RLock()
+	defer tm.mu.RUnlock()
+
+	cached, ok := tm.cache[channelKey]
+	if !ok || cached.Streamer == "" {
+		for k, v := range tm.cache {
+			if strings.EqualFold(k, channelKey) && v.Streamer != "" {
+				cached = v
+				ok = true
+				break
+			}
+		}
+	}
+	if !ok || cached.Streamer == "" {
+		return nil
+	}
+	return &StreamInfo{
+		Login:       cached.Streamer,
+		DisplayName: cached.DisplayName,
+		Game:        cached.Game,
+		Title:       cached.Title,
+		Viewers:     cached.Viewers,
+		ExpiresAt:   cached.ExpiresAt,
+	}
+}
+
+func (tm *TwitchManager) GetAllActiveStreamers() map[string]StreamInfo {
+	tm.mu.RLock()
+	defer tm.mu.RUnlock()
+	res := make(map[string]StreamInfo)
+	for k, v := range tm.cache {
+		if v.Streamer != "" && time.Now().Before(v.ExpiresAt) {
+			res[k] = StreamInfo{
+				Login:       v.Streamer,
+				DisplayName: v.DisplayName,
+				Game:        v.Game,
+				Title:       v.Title,
+				Viewers:     v.Viewers,
+				ExpiresAt:   v.ExpiresAt,
+			}
+		}
+	}
+	return res
+}
+
 
 // FetchAndMakeAbsoluteM3U8 fetches the HLS playlist and rewrites relative segment paths to absolute URLs.
 func FetchAndMakeAbsoluteM3U8(ctx context.Context, targetURL string) (string, error) {
@@ -1102,8 +1221,11 @@ func (tm *TwitchManager) ResolveGame(ctx context.Context, gameName, bias string)
 	if err == nil && streamURL != "" {
 		tm.mu.Lock()
 		tm.cache[cacheKey] = CachedStream{
-			URL:       streamURL,
-			ExpiresAt: time.Now().Add(120 * time.Second),
+			URL:         streamURL,
+			Streamer:    topLogin,
+			DisplayName: topLogin,
+			Game:        cleanName,
+			ExpiresAt:   time.Now().Add(120 * time.Second),
 		}
 		tm.mu.Unlock()
 	}

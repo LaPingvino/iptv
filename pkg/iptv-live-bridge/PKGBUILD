@@ -1,6 +1,6 @@
 # Maintainer: Joop Kiefte <ikojba@gmail.com>
 pkgname=iptv-live-bridge
-pkgver=4.2.0
+pkgver=4.3.0
 pkgrel=1
 pkgdesc="High-performance Go-native IPTV Live Bridge with streamglink, BVN, EPG & Dist Builder"
 arch=('x86_64')
@@ -27,13 +27,13 @@ source=(
 sha256sums=('1bd0e1cd3ee9cafb38895ab50b257217c569a17125adf83f6879618732310d5e'
             '1e8634c516019e9bf6ccf3981dfe2187f2cb1e35a51912969125afddec9d6166'
             '56155f929a8de288491e28e124433ae655b028ff9539bca8997d1c1f86ca569f'
-            '8a31b35d5f7fdd36b01775a8f57823d19509dc5243de23679019ee07721760e9'
+            'fc24a7b9b07bee446973d718a7ca0fb4ae63ce001167cdd1472cdaa442682ef7'
             '2d1e3ea8c4e65380cdef0e7d0ed32703ea9bfa133bbed5c933ad9249f5acf6ae'
             'ed2727e4b0055dcf42f1a8e6a0632c948e959dc52c80758447e4025db9709878'
-            '165a8cfe74aab970b08b8e44ad6e1d20c252208f210b8a977f7ba3050898c5a4'
+            '3726a20a776aaeb6202ff0fe67820e5ae847f2609c903f25a119bebacb0db5d7'
             '9ebef51c3da65cfaeb9f3f9d30ea870179f825b66b6637678886e6b4d799bfb8'
             '49594699e35a05e78bae0381e1c0db5262b848657968ba596fd48886446ddd0a'
-            '19c3dbfe8f9f7ba217fd20a9eee3caa8d5301128f462bd72f925bdcccd0afa81'
+            'cdda4959ad1b2a9cda5c58c628875857691d717a67a3c52d3dac9422a4025b05'
             '19b3bea030a782f567a0ccd9f042665e15dbe007b9f7a87483018cb1f7517c10'
             'a42724340f1a5027d891db7c03b8d4838bd8d1e6b74f8d31b4c17bcff04bc840'
             'e2e045c323233167e8bbe46c953e581aa1d6635d9aa295b1e791029ee6ebbac4')

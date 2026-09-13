@@ -2,26 +2,6 @@
 <!DOCTYPE tv SYSTEM "xmltv.dtd">
 <tv source-info-url="https://kiefte.eu/iptv" generator-info-name="IPTV Linear 24/7 EPG Engine">
   <channel id="EsperantoTV.eo@SD"><display-name>Esperanto TV</display-name></channel>
-  <programme start="20260912125310 +0000" stop="20260912132140 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 3: Riskante la vivon sur du radoj</title>
-    <desc lang="eo">Biciklaj defioj kaj rapidaj kuroj tra la urbo.</desc>
-    <category lang="eo">Realspektaklo / Junularo</category>
-  </programme>
-  <programme start="20260912132140 +0000" stop="20260912132340 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Estas: Enkonduko</title>
-    <desc lang="eo">Oficiala stacia vineto kaj enkonduko al la internacia lingvo Esperanto.</desc>
-    <category lang="eo">Vineto</category>
-  </programme>
-  <programme start="20260912132340 +0000" stop="20260912133030 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
-    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
-    <category lang="eo">Muziko</category>
-  </programme>
-  <programme start="20260912133030 +0000" stop="20260912133230 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Estas: Enkonduko</title>
-    <desc lang="eo">Oficiala stacia vineto kaj enkonduko al la internacia lingvo Esperanto.</desc>
-    <category lang="eo">Vineto</category>
-  </programme>
   <programme start="20260912133230 +0000" stop="20260912133830 +0000" channel="EsperantoTV.eo@SD">
     <title lang="eo">Esperanto Estas: Dokumentario</title>
     <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
