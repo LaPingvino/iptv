@@ -8,6 +8,7 @@ import (
 	"fmt"
 	"io"
 	"log"
+	"net"
 	"net/http"
 	"os"
 	"os/exec"
@@ -260,14 +261,35 @@ type BVNEngine struct {
 	recentChunks [][]byte
 	lastAccess   time.Time
 	port         int
+	listenAddr   string
 }
 
 var bvnEngine = &BVNEngine{
-	clients: make(map[chan []byte]struct{}),
+	clients:    make(map[chan []byte]struct{}),
+	port:       8080,
+	listenAddr: "[fd00:2830::7555]:8080",
+}
+
+func (e *BVNEngine) SetListenAddr(addr string) {
+	e.mu.Lock()
+	defer e.mu.Unlock()
+	e.listenAddr = addr
+	if _, p, err := net.SplitHostPort(addr); err == nil {
+		if pInt, err := strconv.Atoi(p); err == nil {
+			e.port = pInt
+		}
+	}
 }
 
 func (e *BVNEngine) SetPort(p int) {
+	e.mu.Lock()
+	defer e.mu.Unlock()
 	e.port = p
+	h, _, err := net.SplitHostPort(e.listenAddr)
+	if err != nil || h == "" {
+		h = "fd00:2830::7555"
+	}
+	e.listenAddr = net.JoinHostPort(h, strconv.Itoa(p))
 }
 
 func (e *BVNEngine) Subscribe() chan []byte {
@@ -309,12 +331,36 @@ func (e *BVNEngine) startWorker() {
 	e.running = true
 	e.recentChunks = nil
 
+	e.mu.Lock()
+	targetAddr := e.listenAddr
+	e.mu.Unlock()
+
+	host, port, err := net.SplitHostPort(targetAddr)
+	var connectHost string
+	if err == nil {
+		if host == "" || host == "0.0.0.0" {
+			connectHost = "127.0.0.1"
+		} else if host == "::" {
+			connectHost = "[::1]"
+		} else {
+			if strings.Contains(host, ":") && !strings.HasPrefix(host, "[") {
+				connectHost = "[" + host + "]"
+			} else {
+				connectHost = host
+			}
+		}
+	} else {
+		connectHost = "[fd00:2830::7555]"
+		port = "8080"
+	}
+	mpdURL := fmt.Sprintf("http://%s:%s/bvn_internal.mpd", connectHost, port)
+
 	cmd := exec.CommandContext(
 		ctx,
 		"ffmpeg", "-nostdin", "-v", "warning",
 		"-re",
 		"-cenc_decryption_key", BVNDecryptionKey,
-		"-i", fmt.Sprintf("http://127.0.0.1:%d/bvn_internal.mpd", e.port),
+		"-i", mpdURL,
 		"-map", "0:v:0",
 		"-map", "0:a:0",
 		"-c:v", "copy",

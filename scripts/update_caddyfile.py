@@ -33,7 +33,7 @@ old_block = """kiefte.eu, www.kiefte.eu, joop.kiefte.eu, joop.kiefte.nom.br {
 
 new_block = """kiefte.eu, www.kiefte.eu, joop.kiefte.eu, joop.kiefte.nom.br {
         handle_path /iptv/* {
-                reverse_proxy 127.0.0.1:7555
+                reverse_proxy [fd00:2830::7555]:8080
         }
         handle {
                 redir https://bsky.app/profile/joop.kiefte.eu
@@ -51,7 +51,7 @@ else:
         import re
         content = re.sub(
             r"(kiefte\.eu,\s*www\.kiefte\.eu[^{]*\{\s*)(redir[^\n\}]+)(\s*\})",
-            r"\1handle_path /iptv/* {\n                reverse_proxy 127.0.0.1:7555\n        }\n        handle {\n                \2\n        }\3",
+            r"\1handle_path /iptv/* {\n                reverse_proxy [fd00:2830::7555]:8080\n        }\n        handle {\n                \2\n        }\3",
             content
         )
 

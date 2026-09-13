@@ -2,7 +2,7 @@
 Description=IPTV Live Bridge Socket (Zero-Downtime Connection Holding)
 
 [Socket]
-ListenStream=127.0.0.1:7555
+ListenStream=[fd00:2830::7555]:8080
 Service=iptv-live-bridge.service
 NoDelay=true
 FreeBind=true

@@ -139,7 +139,7 @@ if os.path.exists(SRC_ROZOJ):
 
 # Trigger reload on local bridge
 try:
-    with urllib.request.urlopen("http://127.0.0.1:7555/iptv/reload", timeout=5) as resp:
+    with urllib.request.urlopen("http://[fd00:2830::7555]:8080/iptv/reload", timeout=5) as resp:
         print("🔄 In-memory reload triggered on bridge:", resp.read().decode(), flush=True)
 except Exception as e:
     print("Reload error:", e, flush=True)

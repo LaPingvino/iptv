@@ -333,16 +333,16 @@ func min(a, b int) int {
 }
 
 func TestSOReusePortListener(t *testing.T) {
-	// Test on ephemeral port 17555
-	testPort := 17555
-	l1, err := createListener(testPort)
+	// Test on ephemeral port 18080 on loopback
+	testAddr := "127.0.0.1:18080"
+	l1, err := createListener(testAddr)
 	if err != nil {
 		t.Fatalf("first createListener failed: %v", err)
 	}
 	defer l1.Close()
 
 	// Second listener on same port must succeed due to SO_REUSEPORT
-	l2, err := createListener(testPort)
+	l2, err := createListener(testAddr)
 	if err != nil {
 		t.Fatalf("second createListener on same port failed (SO_REUSEPORT expected): %v", err)
 	}

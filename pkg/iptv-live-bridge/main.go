@@ -21,7 +21,9 @@ import (
 )
 
 var (
-	Port        = 7555
+	ListenAddr  = "[fd00:2830::7555]:8080"
+	Port        = 8080
+	Host        = "fd00:2830::7555"
 	MediaDir    = "/var/lib/iptv-live-bridge"
 	FallbackDir = "/usr/share/iptv-live-bridge"
 	ProjectDir  = "/home/joop/iptv"
@@ -40,16 +42,45 @@ func getMediaDir(sub string) string {
 }
 
 func main() {
-	if pEnv := os.Getenv("PORT"); pEnv != "" {
+	if hEnv := os.Getenv("BRIDGE_HOST"); hEnv != "" {
+		Host = hEnv
+	}
+	if pEnv := os.Getenv("BRIDGE_PORT"); pEnv != "" {
+		if p, err := strconv.Atoi(pEnv); err == nil {
+			Port = p
+		}
+	} else if pEnv := os.Getenv("PORT"); pEnv != "" {
 		if p, err := strconv.Atoi(pEnv); err == nil {
 			Port = p
 		}
 	}
+	if aEnv := os.Getenv("BRIDGE_ADDR"); aEnv != "" {
+		ListenAddr = aEnv
+	} else {
+		ListenAddr = net.JoinHostPort(Host, strconv.Itoa(Port))
+	}
 
 	buildDist := flag.Bool("build-dist", false, "Compile playlists and master EPG files from data/ into dist/ then exit")
+	flag.StringVar(&ListenAddr, "listen", ListenAddr, "HTTP listen address ([host]:port)")
 	flag.IntVar(&Port, "port", Port, "HTTP listen port")
+	flag.StringVar(&Host, "host", Host, "HTTP listen host")
 	flag.StringVar(&MediaDir, "media-dir", MediaDir, "Media root directory")
 	flag.Parse()
+
+	flagsSet := make(map[string]bool)
+	flag.Visit(func(f *flag.Flag) {
+		flagsSet[f.Name] = true
+	})
+	if flagsSet["listen"] {
+		if h, p, err := net.SplitHostPort(ListenAddr); err == nil {
+			Host = h
+			if pInt, err := strconv.Atoi(p); err == nil {
+				Port = pInt
+			}
+		}
+	} else if flagsSet["port"] || flagsSet["host"] {
+		ListenAddr = net.JoinHostPort(Host, strconv.Itoa(Port))
+	}
 
 	if *buildDist {
 		dataDir := filepath.Join(ProjectDir, "data")
@@ -67,7 +98,7 @@ func main() {
 		os.Exit(0)
 	}
 
-	bvnEngine.SetPort(Port)
+	bvnEngine.SetListenAddr(ListenAddr)
 
 	esperantoDir := getMediaDir("esperantotv")
 	bahaiDir := getMediaDir("bahaitv")
@@ -92,7 +123,7 @@ func main() {
 			json.NewEncoder(w).Encode(map[string]any{
 				"status":    "ok",
 				"service":   "iptv-live-bridge",
-				"version":   "4.0.0",
+				"version":   "4.4.1",
 				"runtime":   "go",
 				"timestamp": time.Now().Format(time.RFC3339),
 			})
@@ -460,9 +491,9 @@ func main() {
 		http.NotFound(w, r)
 	})
 
-	listener, err := createListener(Port)
+	listener, err := createListener(ListenAddr)
 	if err != nil {
-		log.Fatalf("[Bridge] Failed to create listener on port %d: %v", Port, err)
+		log.Fatalf("[Bridge] Failed to create listener on %s: %v", ListenAddr, err)
 	}
 
 	recoveryMiddleware := func(next http.Handler) http.Handler {
@@ -517,7 +548,7 @@ func main() {
 	}
 }
 
-func createListener(port int) (net.Listener, error) {
+func createListener(addr string) (net.Listener, error) {
 	// 1. Check for systemd socket activation (zero-downtime socket passing)
 	if listenFds := os.Getenv("LISTEN_FDS"); listenFds != "" {
 		if n, err := strconv.Atoi(listenFds); err == nil && n > 0 {
@@ -545,7 +576,7 @@ func createListener(port int) (net.Listener, error) {
 			return sockErr
 		},
 	}
-	return lc.Listen(context.Background(), "tcp", fmt.Sprintf(":%d", port))
+	return lc.Listen(context.Background(), "tcp", addr)
 }
 
 func reloadState(esperantoStation, bahaiStation *LinearStation) {
