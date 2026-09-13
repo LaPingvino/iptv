@@ -1,15 +1,17 @@
 [Unit]
 Description=IPTV Live Bridge (Twitch, YouTube Live, etc. to M3U HLS redirector)
-After=network-online.target
+After=network-online.target iptv-live-bridge.socket
 Wants=network-online.target
+Requires=iptv-live-bridge.socket
 
 [Service]
 Type=simple
 EnvironmentFile=-/etc/iptv-live-bridge.conf
 ExecStart=/usr/bin/iptv-live-bridge
+ExecReload=/bin/kill -HUP $MAINPID
 Restart=always
 RestartSec=5
-TimeoutStopSec=10
+TimeoutStopSec=35
 DynamicUser=yes
 ReadOnlyPaths=/var/lib/iptv-live-bridge /usr/share/iptv-live-bridge
 

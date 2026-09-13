@@ -59,9 +59,11 @@ fi
 echo "5. Applying strict permissions..."
 chmod -R 755 /var/lib/iptv-live-bridge /usr/share/iptv-live-bridge
 
-echo "6. Reloading systemd & restarting iptv-live-bridge.service..."
+echo "6. Reloading systemd & enabling zero-downtime socket activation..."
 systemctl daemon-reload
-systemctl restart iptv-live-bridge
+systemctl enable --now iptv-live-bridge.socket
+systemctl restart iptv-live-bridge.service
+
 
 echo ""
 echo "=================================================="

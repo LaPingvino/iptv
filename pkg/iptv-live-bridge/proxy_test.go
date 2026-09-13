@@ -311,3 +311,31 @@ func min(a, b int) int {
 	return b
 }
 
+func TestSOReusePortListener(t *testing.T) {
+	// Test on ephemeral port 17555
+	testPort := 17555
+	l1, err := createListener(testPort)
+	if err != nil {
+		t.Fatalf("first createListener failed: %v", err)
+	}
+	defer l1.Close()
+
+	// Second listener on same port must succeed due to SO_REUSEPORT
+	l2, err := createListener(testPort)
+	if err != nil {
+		t.Fatalf("second createListener on same port failed (SO_REUSEPORT expected): %v", err)
+	}
+	defer l2.Close()
+}
+
+func TestReloadState(t *testing.T) {
+	// Ensure reloadState executes cleanly without panics
+	defer func() {
+		if r := recover(); r != nil {
+			t.Fatalf("reloadState panicked: %v", r)
+		}
+	}()
+	reloadState(nil, nil)
+}
+
+

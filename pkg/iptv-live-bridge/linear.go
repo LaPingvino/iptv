@@ -75,6 +75,12 @@ func NewLinearStation(dir, prefix string, segDuration float64) *LinearStation {
 	return ls
 }
 
+// Reload re-scans the station's media directory and rebuilds its linear schedule.
+func (ls *LinearStation) Reload() {
+	ls.rebuildSchedule()
+}
+
+
 func (ls *LinearStation) rebuildSchedule() {
 	ls.mu.Lock()
 	defer ls.mu.Unlock()

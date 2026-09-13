@@ -94,6 +94,13 @@ func init() {
 	loadDedicatedStreamers()
 }
 
+// ReloadTwitchMetadata refreshes followed streamers and dedicated channel configs.
+func ReloadTwitchMetadata() {
+	loadLapingvinoFollows()
+	loadDedicatedStreamers()
+}
+
+
 func isDedicatedStreamer(login string) bool {
 	dedicatedStreamersMu.RLock()
 	defer dedicatedStreamersMu.RUnlock()
@@ -829,6 +836,12 @@ func (tm *TwitchManager) Invalidate(channel string) {
 	tm.mu.Lock()
 	delete(tm.cache, channel)
 	delete(tm.cache, strings.ReplaceAll(channel, "-", ":"))
+	tm.mu.Unlock()
+}
+
+func (tm *TwitchManager) ClearCache() {
+	tm.mu.Lock()
+	tm.cache = make(map[string]CachedStream)
 	tm.mu.Unlock()
 }
 

@@ -2,26 +2,6 @@
 <!DOCTYPE tv SYSTEM "xmltv.dtd">
 <tv source-info-url="https://kiefte.eu/iptv" generator-info-name="IPTV Linear 24/7 EPG Engine">
   <channel id="EsperantoTV.eo@SD"><display-name>Esperanto TV</display-name></channel>
-  <programme start="20260910192750 +0000" stop="20260910195650 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 6: Nekonata vizitanto</title>
-    <desc lang="eo">Mistera vizitanto aperas ĉe la pordo.</desc>
-    <category lang="eo">Kurso / Komedio</category>
-  </programme>
-  <programme start="20260910195650 +0000" stop="20260910195850 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Estas: Enkonduko</title>
-    <desc lang="eo">Oficiala stacia vineto kaj enkonduko al la internacia lingvo Esperanto.</desc>
-    <category lang="eo">Vineto</category>
-  </programme>
-  <programme start="20260910195850 +0000" stop="20260910203040 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 6: Rilaksado inter bestoj</title>
-    <desc lang="eo">Vizito al bestoj kaj trankvilaj momentoj.</desc>
-    <category lang="eo">Realspektaklo / Junularo</category>
-  </programme>
-  <programme start="20260910203040 +0000" stop="20260910203240 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Estas: Enkonduko</title>
-    <desc lang="eo">Oficiala stacia vineto kaj enkonduko al la internacia lingvo Esperanto.</desc>
-    <category lang="eo">Vineto</category>
-  </programme>
   <programme start="20260910203240 +0000" stop="20260910203930 +0000" channel="EsperantoTV.eo@SD">
     <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
     <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
@@ -2456,5 +2436,35 @@
     <title lang="eo">Esperanto Senlime - Epizodo 9: Vojaĝi sen biletoj</title>
     <desc lang="eo">Strategiaj vojaĝdefioj kaj amuzaj taskoj.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20260914195600 +0000" stop="20260914195800 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Enkonduko</title>
+    <desc lang="eo">Oficiala stacia vineto kaj enkonduko al la internacia lingvo Esperanto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20260914195800 +0000" stop="20260914200330 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20260914200330 +0000" stop="20260914200530 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Enkonduko</title>
+    <desc lang="eo">Oficiala stacia vineto kaj enkonduko al la internacia lingvo Esperanto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20260914200530 +0000" stop="20260914202440 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">Klasika animacia Esperanto-kurso kun Mazi, Silvia kaj Bob.</desc>
+    <category lang="eo">Animacio</category>
+  </programme>
+  <programme start="20260914202440 +0000" stop="20260914202640 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Enkonduko</title>
+    <desc lang="eo">Oficiala stacia vineto kaj enkonduko al la internacia lingvo Esperanto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20260914202640 +0000" stop="20260914205450 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 10: Aventuro en la urbo</title>
+    <desc lang="eo">Esplorado de nova urbo kaj renkontoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
   </programme>
 </tv>

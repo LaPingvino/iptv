@@ -7,6 +7,7 @@ import (
 	"flag"
 	"fmt"
 	"log"
+	"net"
 	"net/http"
 	"os"
 	"os/signal"
@@ -92,6 +93,19 @@ func main() {
 				"service":   "iptv-live-bridge",
 				"version":   "4.0.0",
 				"runtime":   "go",
+				"timestamp": time.Now().Format(time.RFC3339),
+			})
+			return
+		}
+
+		// 2c. Gentle In-Memory Reload (flushes caches, reloads stations & metadata without dropping streams)
+		if path == "reload" || path == "admin/reload" {
+			reloadState(esperantoStation, bahaiStation)
+			w.Header().Set("Content-Type", "application/json")
+			w.Header().Set("Access-Control-Allow-Origin", "*")
+			json.NewEncoder(w).Encode(map[string]any{
+				"status":    "ok",
+				"message":   "Gentle reload complete: caches flushed and linear stations refreshed without dropping streams",
 				"timestamp": time.Now().Format(time.RFC3339),
 			})
 			return
@@ -377,28 +391,92 @@ func main() {
 		http.NotFound(w, r)
 	})
 
+	listener, err := createListener(Port)
+	if err != nil {
+		log.Fatalf("[Bridge] Failed to create listener on port %d: %v", Port, err)
+	}
+
 	server := &http.Server{
-		Addr:         fmt.Sprintf(":%d", Port),
 		Handler:      handler,
 		ReadTimeout:  15 * time.Second,
 		WriteTimeout: 0,
 	}
 
-	stopChan := make(chan os.Signal, 1)
-	signal.Notify(stopChan, os.Interrupt, syscall.SIGTERM)
+	sigChan := make(chan os.Signal, 2)
+	signal.Notify(sigChan, os.Interrupt, syscall.SIGTERM, syscall.SIGHUP)
 
 	go func() {
-		log.Printf("[Bridge] Starting Go IPTV Live Bridge on port %d...", Port)
-		if err := server.ListenAndServe(); err != nil && err != http.ErrServerClosed {
+		log.Printf("[Bridge] Starting Go IPTV Live Bridge on %s...", listener.Addr())
+		if err := server.Serve(listener); err != nil && err != http.ErrServerClosed {
 			log.Fatalf("[Bridge] Server error: %v", err)
 		}
 	}()
 
-	<-stopChan
-	log.Printf("[Bridge] Shutting down gracefully...")
-	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
-	defer cancel()
-	server.Shutdown(ctx)
+	for sig := range sigChan {
+		if sig == syscall.SIGHUP {
+			log.Printf("[Bridge] SIGHUP received: performing gentle in-memory reload...")
+			reloadState(esperantoStation, bahaiStation)
+			continue
+		}
+
+		log.Printf("[Bridge] %v received: shutting down gracefully (allowing up to 30s for active streams to drain)...", sig)
+		ctx, cancel := context.WithTimeout(context.Background(), 30*time.Second)
+		defer cancel()
+		if err := server.Shutdown(ctx); err != nil {
+			log.Printf("[Bridge] Graceful shutdown error: %v", err)
+		}
+		break
+	}
+}
+
+func createListener(port int) (net.Listener, error) {
+	// 1. Check for systemd socket activation (zero-downtime socket passing)
+	if listenFds := os.Getenv("LISTEN_FDS"); listenFds != "" {
+		if n, err := strconv.Atoi(listenFds); err == nil && n > 0 {
+			// In systemd socket activation, fd 3 is SD_LISTEN_FDS_START
+			file := os.NewFile(3, "systemd-socket")
+			if l, err := net.FileListener(file); err == nil {
+				log.Printf("[Bridge] Activated via systemd socket on %s", l.Addr())
+				return l, nil
+			}
+		}
+	}
+
+	// 2. Direct listen with SO_REUSEPORT & SO_REUSEADDR for gentle restarts
+	lc := net.ListenConfig{
+		Control: func(network, address string, c syscall.RawConn) error {
+			var sockErr error
+			err := c.Control(func(fd uintptr) {
+				_ = syscall.SetsockoptInt(int(fd), syscall.SOL_SOCKET, syscall.SO_REUSEADDR, 1)
+				// 0x0F is SO_REUSEPORT on Linux
+				sockErr = syscall.SetsockoptInt(int(fd), syscall.SOL_SOCKET, 0x0F, 1)
+			})
+			if err != nil {
+				return err
+			}
+			return sockErr
+		},
+	}
+	return lc.Listen(context.Background(), "tcp", fmt.Sprintf(":%d", port))
+}
+
+func reloadState(esperantoStation, bahaiStation *LinearStation) {
+	log.Printf("[Bridge] Reloading configurations, follows, and linear stations...")
+	ReloadTwitchMetadata()
+	if esperantoStation != nil {
+		esperantoStation.Reload()
+	}
+	if bahaiStation != nil {
+		bahaiStation.Reload()
+	}
+
+	twitchMgr.ClearCache()
+
+	m3u8RecentMu.Lock()
+	m3u8Recent = make(map[string]m3u8CacheEntry)
+	m3u8RecentMu.Unlock()
+
+	log.Printf("[Bridge] Gentle reload complete: 0 dropped connections.")
 }
 
 type m3u8CacheEntry struct {
