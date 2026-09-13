@@ -21,10 +21,12 @@ import time
 import datetime
 
 EPG_SOURCES = [
+    "https://kiefte.eu/iptv/epg.xml.gz",
     "https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/epg.xml.gz",
     "https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-m3upt.xml.xz",
     "https://raw.githubusercontent.com/Free-TV/IPTV/master/epg.xml.gz"
 ]
+
 
 UPSTREAM_M3UPT_EPG = "https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-m3upt.xml.xz"
 
@@ -68,6 +70,7 @@ GROUP_BASE_CHNO = {
     "Mario & Romhacks": 1050,
     "Tetris": 1100,
     "Indie & Variety Gaming": 1150,
+    "LaPingvino Favorites": 1200,
     
     # 🧪 Distant Block: Diagnostics (2000 - 2999)
     "Diag": 2000,
