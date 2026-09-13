@@ -61,8 +61,16 @@ chmod -R 755 /var/lib/iptv-live-bridge /usr/share/iptv-live-bridge
 
 echo "6. Reloading systemd & enabling zero-downtime socket activation..."
 systemctl daemon-reload
-systemctl enable --now iptv-live-bridge.socket
+systemctl enable iptv-live-bridge.socket
+
+if ! systemctl is-active --quiet iptv-live-bridge.socket; then
+  echo "   Activating socket (first-time transition from standalone service)..."
+  systemctl stop iptv-live-bridge.service || true
+  systemctl start iptv-live-bridge.socket
+fi
+
 systemctl restart iptv-live-bridge.service
+
 
 
 echo ""

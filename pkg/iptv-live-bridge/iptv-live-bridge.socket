@@ -1,12 +1,13 @@
 [Unit]
 Description=IPTV Live Bridge Socket (Zero-Downtime Connection Holding)
-PartOf=iptv-live-bridge.service
 
 [Socket]
 ListenStream=127.0.0.1:7555
+Service=iptv-live-bridge.service
 NoDelay=true
 FreeBind=true
 ReusePort=true
 
 [Install]
 WantedBy=sockets.target
+
