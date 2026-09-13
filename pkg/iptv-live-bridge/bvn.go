@@ -296,8 +296,10 @@ func (e *BVNEngine) Unsubscribe(ch chan []byte) {
 	e.mu.Lock()
 	defer e.mu.Unlock()
 
-	delete(e.clients, ch)
-	close(ch)
+	if _, ok := e.clients[ch]; ok {
+		delete(e.clients, ch)
+		close(ch)
+	}
 	e.lastAccess = time.Now()
 }
 
@@ -346,6 +348,9 @@ func (e *BVNEngine) startWorker() {
 
 	go func() {
 		defer func() {
+			if rec := recover(); rec != nil {
+				log.Printf("[BVN PANIC RECOVERED] %v", rec)
+			}
 			stdout.Close()
 			if waitErr := cmd.Wait(); waitErr != nil {
 				log.Printf("[BVN] FFmpeg process exited: %v", waitErr)
@@ -353,8 +358,12 @@ func (e *BVNEngine) startWorker() {
 			cancel()
 			e.mu.Lock()
 			e.running = false
+			for c := range e.clients {
+				close(c)
+			}
+			e.clients = make(map[chan []byte]struct{})
 			e.mu.Unlock()
-			log.Printf("[BVN] Decryption worker stopped")
+			log.Printf("[BVN] Decryption worker stopped and clients notified")
 		}()
 
 		buf := make([]byte, 65536)

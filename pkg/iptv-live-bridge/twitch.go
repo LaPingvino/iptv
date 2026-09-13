@@ -11,6 +11,7 @@ import (
 	"net/url"
 	"os"
 	"path/filepath"
+	"strconv"
 	"strings"
 	"sync"
 	"time"
@@ -1220,13 +1221,16 @@ func (tm *TwitchManager) ResolveGame(ctx context.Context, gameName, bias string)
 	streamURL, err := tm.Resolve(ctx, topLogin)
 	if err == nil && streamURL != "" {
 		tm.mu.Lock()
-		tm.cache[cacheKey] = CachedStream{
+		cEntry := CachedStream{
 			URL:         streamURL,
 			Streamer:    topLogin,
 			DisplayName: topLogin,
 			Game:        cleanName,
 			ExpiresAt:   time.Now().Add(120 * time.Second),
 		}
+		tm.cache[cacheKey] = cEntry
+		tm.cache[strings.ToLower(cleanName)] = cEntry
+		tm.cache[strings.ToLower(gameName)] = cEntry
 		tm.mu.Unlock()
 	}
 	return streamURL, err
@@ -1242,9 +1246,264 @@ func (tm *TwitchManager) ResolveGroup(ctx context.Context, groupName, bias strin
 	for _, g := range games {
 		u, err := tm.ResolveGame(ctx, g, bias)
 		if err == nil && u != "" {
+			tm.mu.Lock()
+			if entry, ok := tm.cache[strings.ToLower(g)]; ok {
+				tm.cache[groupName] = entry
+				tm.cache["group:"+groupName] = entry
+			}
+			tm.mu.Unlock()
 			return u, nil
 		}
 	}
 
 	return "", fmt.Errorf("no active streams for group %s", groupName)
+}
+
+type TwitchSubSegment struct {
+	Seq      int64
+	Duration float64
+	PTS      uint64
+}
+
+type TwitchSubState struct {
+	MediaSequence  int64
+	TargetDuration int
+	BaseSeq        int64
+	BasePTS        uint64
+	Segments       []TwitchSubSegment
+	LastUpdated    time.Time
+}
+
+var (
+	twitchSubStatesMu sync.RWMutex
+	twitchSubStates   = make(map[string]*TwitchSubState)
+)
+
+// SniffMpegTsPTS reads up to 8KB from an MPEG-TS stream and extracts the first PES PTS timestamp.
+func SniffMpegTsPTS(r io.Reader) (uint64, error) {
+	buf := make([]byte, 8192)
+	n, err := io.ReadFull(r, buf)
+	if err != nil && err != io.ErrUnexpectedEOF && err != io.EOF {
+		return 0, err
+	}
+	buf = buf[:n]
+
+	for i := 0; i+188 <= len(buf); {
+		if buf[i] != 0x47 {
+			i++
+			continue
+		}
+		packet := buf[i : i+188]
+		i += 188
+
+		pusi := (packet[1] & 0x40) != 0
+		if !pusi {
+			continue
+		}
+
+		afc := (packet[3] >> 4) & 0x03
+		payloadOffset := 4
+		if afc == 2 {
+			continue
+		} else if afc == 3 {
+			afLen := int(packet[4])
+			payloadOffset = 5 + afLen
+			if payloadOffset >= 188 {
+				continue
+			}
+		}
+
+		payload := packet[payloadOffset:]
+		if len(payload) < 14 {
+			continue
+		}
+
+		if payload[0] == 0x00 && payload[1] == 0x00 && payload[2] == 0x01 {
+			streamID := payload[3]
+			if (streamID >= 0xE0 && streamID <= 0xEF) || (streamID >= 0xC0 && streamID <= 0xDF) {
+				flags2 := payload[7]
+				ptsFlags := (flags2 >> 6) & 0x03
+				if ptsFlags >= 2 {
+					ptsBytes := payload[9 : 9+5]
+					pts := (uint64(ptsBytes[0]&0x0E) << 29) |
+						(uint64(ptsBytes[1]) << 22) |
+						(uint64(ptsBytes[2]&0xFE) << 14) |
+						(uint64(ptsBytes[3]) << 7) |
+						(uint64(ptsBytes[4]) >> 1)
+					return pts, nil
+				}
+			}
+		}
+	}
+	return 0, fmt.Errorf("no PES PTS found in %d bytes", len(buf))
+}
+
+func sniffPTSFromURL(segURL string) (uint64, error) {
+	ctx, cancel := context.WithTimeout(context.Background(), 2*time.Second)
+	defer cancel()
+
+	req, err := http.NewRequestWithContext(ctx, http.MethodGet, segURL, nil)
+	if err != nil {
+		return 0, err
+	}
+	req.Header.Set("Range", "bytes=0-8192")
+	req.Header.Set("User-Agent", "Mozilla/5.0")
+
+	resp, err := hlsHTTPClient.Do(req)
+	if err != nil {
+		return 0, err
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK && resp.StatusCode != http.StatusPartialContent {
+		return 0, fmt.Errorf("HTTP %d", resp.StatusCode)
+	}
+
+	return SniffMpegTsPTS(resp.Body)
+}
+
+func normalizeChannelKey(target string) string {
+	k := strings.Trim(target, "/")
+	k = strings.TrimPrefix(k, "iptv/")
+	k = strings.TrimPrefix(k, "twitch/")
+	k = strings.TrimSuffix(k, ".m3u8")
+	k = strings.ToLower(k)
+
+	if strings.HasPrefix(k, "followed/") {
+		rankStr := strings.TrimPrefix(k, "followed/")
+		return fmt.Sprintf("followed-%s", rankStr)
+	}
+	if strings.HasPrefix(k, "group/") {
+		return strings.TrimPrefix(k, "group/")
+	}
+	if strings.HasPrefix(k, "game/") {
+		return strings.TrimPrefix(k, "game/")
+	}
+	return k
+}
+
+// UpdateTwitchSubState updates the sliding window of subtitle segments and synchronizes PTS timestamps.
+func UpdateTwitchSubState(channelKey string, m3u8Content string, defaultStreamURL string) {
+	channelKey = normalizeChannelKey(channelKey)
+	if channelKey == "" {
+		return
+	}
+
+	var mediaSeq int64 = 0
+	targetDur := 2
+	var elapsedSecs float64 = 0
+
+	type parsedSeg struct {
+		duration float64
+		url      string
+	}
+	var parsedSegs []parsedSeg
+
+	lines := strings.Split(m3u8Content, "\n")
+	var curDur float64 = 0
+	for _, l := range lines {
+		trimmed := strings.TrimSpace(l)
+		if strings.HasPrefix(trimmed, "#EXT-X-MEDIA-SEQUENCE:") {
+			mediaSeq, _ = strconv.ParseInt(strings.TrimPrefix(trimmed, "#EXT-X-MEDIA-SEQUENCE:"), 10, 64)
+		} else if strings.HasPrefix(trimmed, "#EXT-X-TARGETDURATION:") {
+			targetDur, _ = strconv.Atoi(strings.TrimPrefix(trimmed, "#EXT-X-TARGETDURATION:"))
+		} else if strings.HasPrefix(trimmed, "#EXT-X-TWITCH-ELAPSED-SECS:") {
+			elapsedSecs, _ = strconv.ParseFloat(strings.TrimPrefix(trimmed, "#EXT-X-TWITCH-ELAPSED-SECS:"), 64)
+		} else if strings.HasPrefix(trimmed, "#EXTINF:") {
+			durPart := strings.TrimPrefix(trimmed, "#EXTINF:")
+			if comma := strings.Index(durPart, ","); comma != -1 {
+				durPart = durPart[:comma]
+			}
+			curDur, _ = strconv.ParseFloat(durPart, 64)
+		} else if !strings.HasPrefix(trimmed, "#") && trimmed != "" {
+			if curDur > 0 {
+				parsedSegs = append(parsedSegs, parsedSeg{duration: curDur, url: trimmed})
+				curDur = 0
+			}
+		}
+	}
+
+	if len(parsedSegs) == 0 {
+		return
+	}
+
+	twitchSubStatesMu.Lock()
+	defer twitchSubStatesMu.Unlock()
+
+	st, exists := twitchSubStates[channelKey]
+	needSniff := false
+	if !exists || st.BasePTS == 0 || mediaSeq < st.BaseSeq || (mediaSeq-st.BaseSeq) > 500 {
+		needSniff = true
+	}
+
+	var basePTS uint64
+	var baseSeq int64 = mediaSeq
+
+	if needSniff {
+		if len(parsedSegs) > 0 && strings.HasPrefix(parsedSegs[0].url, "http") {
+			sniffedPTS, err := sniffPTSFromURL(parsedSegs[0].url)
+			if err == nil && sniffedPTS > 0 {
+				basePTS = sniffedPTS
+			}
+		}
+		if basePTS == 0 {
+			if elapsedSecs > 0 {
+				basePTS = uint64(elapsedSecs * 90000)
+			} else {
+				basePTS = uint64(time.Now().Unix()%86400) * 90000
+			}
+		}
+	} else {
+		basePTS = st.BasePTS
+		baseSeq = st.BaseSeq
+	}
+
+	var segs []TwitchSubSegment
+	accumDur := 0.0
+	for i, ps := range parsedSegs {
+		segSeq := mediaSeq + int64(i)
+		ptsOffset := float64(segSeq-baseSeq)*ps.duration*90000.0 + accumDur
+		pts := basePTS + uint64(ptsOffset)
+		segs = append(segs, TwitchSubSegment{
+			Seq:      segSeq,
+			Duration: ps.duration,
+			PTS:      pts,
+		})
+	}
+
+	twitchSubStates[channelKey] = &TwitchSubState{
+		MediaSequence:  mediaSeq,
+		TargetDuration: targetDur,
+		BaseSeq:        baseSeq,
+		BasePTS:        basePTS,
+		Segments:       segs,
+		LastUpdated:    time.Now(),
+	}
+}
+
+// GetTwitchSubState retrieves cached subtitle state for a channel key.
+func GetTwitchSubState(channelKey string) *TwitchSubState {
+	channelKey = normalizeChannelKey(channelKey)
+	twitchSubStatesMu.RLock()
+	defer twitchSubStatesMu.RUnlock()
+	return twitchSubStates[channelKey]
+}
+
+func formatVTTTime(sec float64) string {
+	totalMs := int64(sec * 1000)
+	hours := totalMs / 3600000
+	mins := (totalMs % 3600000) / 60000
+	secs := (totalMs % 60000) / 1000
+	ms := totalMs % 1000
+	return fmt.Sprintf("%02d:%02d:%02d.%03d", hours, mins, secs, ms)
+}
+
+func formatNumber(n int) string {
+	if n >= 1000000 {
+		return fmt.Sprintf("%.1fM", float64(n)/1000000.0)
+	}
+	if n >= 1000 {
+		return fmt.Sprintf("%.1fk", float64(n)/1000.0)
+	}
+	return strconv.Itoa(n)
 }

@@ -9,4 +9,5 @@ pkg/iptv-live-bridge/esperantotv/
 pkg/iptv-live-bridge/bahaitv/
 pkg/iptv-live-bridge/iptv-live-bridge
 dist/epg.xml
+staging_transcode/
 

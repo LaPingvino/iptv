@@ -311,6 +311,10 @@ func (ls *LinearStation) buildEsperantoSchedule(allSegs []string) {
 					} else if strings.Contains(first, "kef2005") {
 						sTitle = "KEF 2005: La Plejpleja Festivalo"
 						sDesc = "Kultura Esperanto-Festivalo en Helsinki."
+					} else if strings.Contains(first, "insulo") || strings.Contains(first, "rozoj") {
+						sTitle = "Insulo de la Rozoj"
+						sDesc = "Plena filmo en Esperanto pri la historia mikronacio."
+						sCat = "Filmo"
 					} else if strings.Contains(first, "dok_estas") {
 						sTitle = "Esperanto Estas: Dokumentario"
 						sDesc = "Dokumenta serio pri la historio kaj moderna komunumo de Esperanto."

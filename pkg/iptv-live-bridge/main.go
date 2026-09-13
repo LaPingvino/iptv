@@ -12,6 +12,7 @@ import (
 	"os"
 	"os/signal"
 	"path/filepath"
+	"runtime/debug"
 	"strconv"
 	"strings"
 	"sync"
@@ -333,16 +334,55 @@ func main() {
 			return
 		}
 
-		// 9. Twitch Group: twitch/group/<name> or group/<name>
-		if strings.HasPrefix(path, "twitch/group/") || strings.HasPrefix(path, "group/") {
-			group := strings.TrimPrefix(path, "twitch/group/")
-			group = strings.TrimPrefix(group, "group/")
-			streamURL, err := twitchMgr.ResolveGroup(r.Context(), group, bias)
+		// 8b. Twitch Subtitle Segment: twitch/subseg/<target>/<seq>.vtt
+		if strings.HasPrefix(path, "twitch/subseg/") {
+			subPath := strings.TrimPrefix(path, "twitch/subseg/")
+			subPath = strings.TrimSuffix(subPath, ".vtt")
+			lastSlash := strings.LastIndex(subPath, "/")
+			if lastSlash == -1 {
+				http.NotFound(w, r)
+				return
+			}
+			targetKey := subPath[:lastSlash]
+			seqStr := subPath[lastSlash+1:]
+			seq, _ := strconv.ParseInt(seqStr, 10, 64)
+			serveTwitchSubSeg(w, r, targetKey, seq)
+			return
+		}
+
+		// 8c. Twitch Subtitle Playlist: twitch/sub/<target>
+		if strings.HasPrefix(path, "twitch/sub/") {
+			target := strings.TrimPrefix(path, "twitch/sub/")
+			serveTwitchSubM3U8(w, r, target, bias)
+			return
+		}
+
+		// 8d. Twitch Video Media Playlist: twitch/video/<target>
+		if strings.HasPrefix(path, "twitch/video/") {
+			target := strings.TrimPrefix(path, "twitch/video/")
+			streamURL, channelKey, err := resolveTwitchTarget(r.Context(), target, bias)
 			if err != nil || streamURL == "" {
 				serveOfflineSlate(w, r)
 				return
 			}
-			serveTwitchM3U8(w, r, streamURL, group)
+			serveTwitchM3U8(w, r, streamURL, channelKey)
+			return
+		}
+
+		// 9. Twitch Group: twitch/group/<name> or group/<name>
+		if strings.HasPrefix(path, "twitch/group/") || strings.HasPrefix(path, "group/") {
+			group := strings.TrimPrefix(path, "twitch/group/")
+			group = strings.TrimPrefix(group, "group/")
+			if r.URL.Query().Get("raw") == "1" {
+				streamURL, err := twitchMgr.ResolveGroup(r.Context(), group, bias)
+				if err != nil || streamURL == "" {
+					serveOfflineSlate(w, r)
+					return
+				}
+				serveTwitchM3U8(w, r, streamURL, group)
+				return
+			}
+			serveTwitchMasterM3U8(w, r, "group/"+group)
 			return
 		}
 
@@ -350,23 +390,31 @@ func main() {
 		if strings.HasPrefix(path, "twitch/game/") || strings.HasPrefix(path, "game/") {
 			game := strings.TrimPrefix(path, "twitch/game/")
 			game = strings.TrimPrefix(game, "game/")
-			streamURL, err := twitchMgr.ResolveGame(r.Context(), game, bias)
-			if err != nil || streamURL == "" {
-				serveOfflineSlate(w, r)
+			if r.URL.Query().Get("raw") == "1" {
+				streamURL, err := twitchMgr.ResolveGame(r.Context(), game, bias)
+				if err != nil || streamURL == "" {
+					serveOfflineSlate(w, r)
+					return
+				}
+				serveTwitchM3U8(w, r, streamURL, game)
 				return
 			}
-			serveTwitchM3U8(w, r, streamURL, game)
+			serveTwitchMasterM3U8(w, r, "game/"+game)
 			return
 		}
 
 		// 11. Twitch Auto-Live
 		if path == "twitch/auto-live" || path == "gaming/live" || path == "twitch/live" {
-			streamURL, err := twitchMgr.Resolve(r.Context(), "speedrun")
-			if err != nil || streamURL == "" {
-				serveOfflineSlate(w, r)
+			if r.URL.Query().Get("raw") == "1" {
+				streamURL, err := twitchMgr.Resolve(r.Context(), "speedrun")
+				if err != nil || streamURL == "" {
+					serveOfflineSlate(w, r)
+					return
+				}
+				serveTwitchM3U8(w, r, streamURL, "speedrun")
 				return
 			}
-			serveTwitchM3U8(w, r, streamURL, "speedrun")
+			serveTwitchMasterM3U8(w, r, "speedrun")
 			return
 		}
 
@@ -374,16 +422,20 @@ func main() {
 		if strings.HasPrefix(path, "twitch/followed/") {
 			rankStr := strings.TrimPrefix(path, "twitch/followed/")
 			rankStr = strings.TrimSuffix(rankStr, ".m3u8")
-			rank, _ := strconv.Atoi(rankStr)
-			if rank < 1 {
-				rank = 1
-			}
-			streamURL, err := twitchMgr.ResolveFollowedRank(r.Context(), rank)
-			if err != nil || streamURL == "" {
-				serveOfflineSlate(w, r)
+			if r.URL.Query().Get("raw") == "1" {
+				rank, _ := strconv.Atoi(rankStr)
+				if rank < 1 {
+					rank = 1
+				}
+				streamURL, err := twitchMgr.ResolveFollowedRank(r.Context(), rank)
+				if err != nil || streamURL == "" {
+					serveOfflineSlate(w, r)
+					return
+				}
+				serveTwitchM3U8(w, r, streamURL, fmt.Sprintf("followed-%d", rank))
 				return
 			}
-			serveTwitchM3U8(w, r, streamURL, fmt.Sprintf("followed-%d", rank))
+			serveTwitchMasterM3U8(w, r, "followed/"+rankStr)
 			return
 		}
 
@@ -391,13 +443,16 @@ func main() {
 		if strings.HasPrefix(path, "twitch/") {
 			channel := strings.TrimPrefix(path, "twitch/")
 			channel = strings.TrimSuffix(channel, ".m3u8")
-
-			streamURL, err := twitchMgr.Resolve(r.Context(), channel)
-			if err != nil || streamURL == "" {
-				serveOfflineSlate(w, r)
+			if r.URL.Query().Get("raw") == "1" {
+				streamURL, err := twitchMgr.Resolve(r.Context(), channel)
+				if err != nil || streamURL == "" {
+					serveOfflineSlate(w, r)
+					return
+				}
+				serveTwitchM3U8(w, r, streamURL, channel)
 				return
 			}
-			serveTwitchM3U8(w, r, streamURL, channel)
+			serveTwitchMasterM3U8(w, r, channel)
 			return
 		}
 
@@ -410,8 +465,27 @@ func main() {
 		log.Fatalf("[Bridge] Failed to create listener on port %d: %v", Port, err)
 	}
 
+	recoveryMiddleware := func(next http.Handler) http.Handler {
+		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+			defer func() {
+				if rec := recover(); rec != nil {
+					log.Printf("[PANIC RECOVERED] path=%s remote=%s error=%v\nstack:\n%s",
+						r.URL.Path, r.RemoteAddr, rec, debug.Stack())
+					w.Header().Set("Content-Type", "application/json")
+					w.Header().Set("Access-Control-Allow-Origin", "*")
+					w.WriteHeader(http.StatusInternalServerError)
+					json.NewEncoder(w).Encode(map[string]any{
+						"error":  "Internal server error",
+						"detail": fmt.Sprintf("%v", rec),
+					})
+				}
+			}()
+			next.ServeHTTP(w, r)
+		})
+	}
+
 	server := &http.Server{
-		Handler:      handler,
+		Handler:      recoveryMiddleware(handler),
 		ReadTimeout:  15 * time.Second,
 		WriteTimeout: 0,
 	}
@@ -572,10 +646,178 @@ func serveTwitchM3U8(w http.ResponseWriter, r *http.Request, streamURL, channel 
 	}
 	m3u8RecentMu.Unlock()
 
+	UpdateTwitchSubState(channel, m3u8, streamURL)
+
 	w.Header().Set("Content-Type", "application/vnd.apple.mpegurl")
 	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Header().Set("Cache-Control", "no-cache, no-store, must-revalidate")
 	w.Write([]byte(m3u8))
+}
+
+func resolveTwitchTarget(ctx context.Context, target, bias string) (string, string, error) {
+	clean := strings.Trim(target, "/")
+	clean = strings.TrimSuffix(clean, ".m3u8")
+
+	if strings.HasPrefix(clean, "followed/") {
+		rankStr := strings.TrimPrefix(clean, "followed/")
+		rank, _ := strconv.Atoi(rankStr)
+		if rank < 1 {
+			rank = 1
+		}
+		u, err := twitchMgr.ResolveFollowedRank(ctx, rank)
+		return u, fmt.Sprintf("followed-%d", rank), err
+	}
+
+	if strings.HasPrefix(clean, "group/") {
+		group := strings.TrimPrefix(clean, "group/")
+		u, err := twitchMgr.ResolveGroup(ctx, group, bias)
+		return u, group, err
+	}
+
+	if strings.HasPrefix(clean, "game/") {
+		game := strings.TrimPrefix(clean, "game/")
+		u, err := twitchMgr.ResolveGame(ctx, game, bias)
+		return u, game, err
+	}
+
+	if clean == "auto-live" || clean == "live" || clean == "speedrun" {
+		u, err := twitchMgr.Resolve(ctx, "speedrun")
+		return u, "speedrun", err
+	}
+
+	u, err := twitchMgr.Resolve(ctx, clean)
+	return u, clean, err
+}
+
+func serveTwitchMasterM3U8(w http.ResponseWriter, r *http.Request, target string) {
+	q := r.URL.RawQuery
+	queryString := ""
+	if q != "" {
+		queryString = "?" + q
+	}
+
+	cleanTarget := strings.Trim(target, "/")
+	cleanTarget = strings.TrimSuffix(cleanTarget, ".m3u8")
+
+	subURI := fmt.Sprintf("/iptv/twitch/sub/%s.m3u8%s", cleanTarget, queryString)
+	videoURI := fmt.Sprintf("/iptv/twitch/video/%s.m3u8%s", cleanTarget, queryString)
+
+	master := fmt.Sprintf(`#EXTM3U
+#EXT-X-VERSION:4
+#EXT-X-INDEPENDENT-SEGMENTS
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subs",NAME="Stream Info",DEFAULT=YES,AUTOSELECT=YES,FORCED=YES,LANGUAGE="en",URI="%s"
+
+#EXT-X-STREAM-INF:BANDWIDTH=6000000,AVERAGE-BANDWIDTH=4000000,RESOLUTION=1920x1080,FRAME-RATE=60.000,SUBTITLES="subs"
+%s
+`, subURI, videoURI)
+
+	w.Header().Set("Content-Type", "application/vnd.apple.mpegurl")
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Set("Cache-Control", "no-cache, no-store, must-revalidate")
+	w.Write([]byte(master))
+}
+
+func serveTwitchSubM3U8(w http.ResponseWriter, r *http.Request, target, bias string) {
+	channelKey := normalizeChannelKey(target)
+	st := GetTwitchSubState(channelKey)
+
+	if st == nil || time.Since(st.LastUpdated) > 3*time.Second {
+		streamURL, key, err := resolveTwitchTarget(r.Context(), target, bias)
+		if err == nil && streamURL != "" {
+			m3u8, fErr := FetchAndMakeAbsoluteM3U8(r.Context(), streamURL)
+			if fErr == nil {
+				UpdateTwitchSubState(key, m3u8, streamURL)
+				st = GetTwitchSubState(key)
+			}
+		}
+	}
+
+	if st == nil || len(st.Segments) == 0 {
+		w.Header().Set("Content-Type", "application/vnd.apple.mpegurl")
+		w.Header().Set("Access-Control-Allow-Origin", "*")
+		w.Header().Set("Cache-Control", "no-cache, no-store, must-revalidate")
+		w.Write([]byte("#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:6\n#EXT-X-MEDIA-SEQUENCE:0\n#EXTINF:6.000,\n/iptv/twitch/subseg/offline/0.vtt\n#EXT-X-ENDLIST\n"))
+		return
+	}
+
+	var b strings.Builder
+	b.WriteString("#EXTM3U\n")
+	b.WriteString("#EXT-X-VERSION:3\n")
+	b.WriteString(fmt.Sprintf("#EXT-X-TARGETDURATION:%d\n", st.TargetDuration))
+	b.WriteString(fmt.Sprintf("#EXT-X-MEDIA-SEQUENCE:%d\n\n", st.MediaSequence))
+
+	cleanTarget := strings.Trim(target, "/")
+	cleanTarget = strings.TrimSuffix(cleanTarget, ".m3u8")
+
+	for _, seg := range st.Segments {
+		b.WriteString(fmt.Sprintf("#EXTINF:%.3f,\n", seg.Duration))
+		b.WriteString(fmt.Sprintf("/iptv/twitch/subseg/%s/%d.vtt\n", cleanTarget, seg.Seq))
+	}
+
+	w.Header().Set("Content-Type", "application/vnd.apple.mpegurl")
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Set("Cache-Control", "no-cache, no-store, must-revalidate")
+	w.Write([]byte(b.String()))
+}
+
+func serveTwitchSubSeg(w http.ResponseWriter, r *http.Request, targetKey string, seq int64) {
+	if targetKey == "offline" {
+		vtt := "WEBVTT\n\n00:00:00.000 --> 00:00:06.000 line:85% align:center\n⚠️ Channel is currently offline\n"
+		w.Header().Set("Content-Type", "text/vtt; charset=utf-8")
+		w.Header().Set("Access-Control-Allow-Origin", "*")
+		w.Header().Set("Cache-Control", "max-age=10")
+		w.Write([]byte(vtt))
+		return
+	}
+
+	channelKey := normalizeChannelKey(targetKey)
+	st := GetTwitchSubState(channelKey)
+
+	var pts uint64
+	duration := 2.0
+	if st != nil {
+		found := false
+		for _, seg := range st.Segments {
+			if seg.Seq == seq {
+				pts = seg.PTS
+				duration = seg.Duration
+				found = true
+				break
+			}
+		}
+		if !found {
+			pts = st.BasePTS + uint64(float64(seq-st.BaseSeq)*2.0*90000.0)
+		}
+	} else {
+		pts = uint64(time.Now().Unix()%86400) * 90000
+	}
+
+	sInfo := twitchMgr.GetActiveStreamInfo(channelKey)
+	if sInfo == nil {
+		sInfo = twitchMgr.GetActiveStreamInfo(targetKey)
+	}
+
+	text := "🔴 Live: Twitch"
+	if sInfo != nil && sInfo.DisplayName != "" {
+		text = fmt.Sprintf("🔴 Live: %s", sInfo.DisplayName)
+		if sInfo.Game != "" {
+			text += fmt.Sprintf(" • %s", sInfo.Game)
+		}
+		if sInfo.Viewers > 0 {
+			text += fmt.Sprintf(" (%s viewers)", formatNumber(sInfo.Viewers))
+		}
+	} else if channelKey != "" && channelKey != "speedrun" {
+		text = fmt.Sprintf("🔴 Live: %s", channelKey)
+	}
+
+	vtt := fmt.Sprintf("WEBVTT\nX-TIMESTAMP-MAP=MPEGTS:%d,LOCAL:00:00:00.000\n\n00:00:00.000 --> %s line:85%% align:center\n%s\n",
+		pts, formatVTTTime(duration), text)
+
+	w.Header().Set("Content-Type", "text/vtt; charset=utf-8")
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Set("Cache-Control", "max-age=10")
+	w.Write([]byte(vtt))
 }
 
 func serveOfflineSlate(w http.ResponseWriter, r *http.Request) {
