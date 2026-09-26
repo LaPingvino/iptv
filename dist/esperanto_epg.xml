@@ -2397,4 +2397,14 @@
     <desc lang="eo">La familio kaj gastoj planas novajn vojaĝojn tra la mondo.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
+  <programme start="20260929231550 +0000" stop="20260929231750 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Enkonduko</title>
+    <desc lang="eo">Oficiala stacia vineto kaj enkonduko al la internacia lingvo Esperanto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20260929231750 +0000" stop="20260929235820 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 8: Pluvo kaj suno</title>
+    <desc lang="eo">Veteraj defioj dum la subĉiela vojaĝo.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
 </tv>

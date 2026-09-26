@@ -89,4 +89,9 @@
 #   url: http://23.237.104.106:8080/USA_CARTOON_NETWORK/tracks-v1a1/mono.m3u8
 # - name: FXX (The Simpsons & Family Guy 720p60)
 #   url: http://23.237.104.106:8080/USA_FXX/tracks-v1a1/mono.m3u8
-
+- name: Persiana Junior
+  group: Infantil & Kids
+  tvg_id: PersianaJunior.fr
+  tvg_name: Persiana Junior
+  logo: https://i.imgur.com/zeKHZYG.png
+  url: https://junhls.persiana.live/hls/stream.m3u8

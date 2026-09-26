@@ -65,17 +65,17 @@ GROUP_BASE_CHNO = {
     "Música & Video": 180,
     "Cívico & Parlamento": 220,
     "Religião": 235,
-    "Persa / Farsi": 243,
+    "Persa / Farsi": 250,
     
-    # 🎮 Gaming & Twitch Streams (250 - 339)
-    "Speedrunning & Marathons": 250,
-    "Mario & Romhacks": 265,
-    "Tetris": 285,
-    "Indie & Variety Gaming": 305,
-    "LaPingvino Favorites": 320,
+    # 🎮 Gaming & Twitch Streams (300 - 374)
+    "Speedrunning & Marathons": 300,
+    "Mario & Romhacks": 315,
+    "Tetris": 330,
+    "Indie & Variety Gaming": 345,
+    "LaPingvino Favorites": 360,
     
-    # 🧪 Diagnostics (340 - 399)
-    "Diag": 340,
+    # 🧪 Diagnostics (375 - 399)
+    "Diag": 375,
     
     # 📻 Unified Radio Block (400 - 599)
     "PT Rádio": 400,

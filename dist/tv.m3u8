@@ -359,125 +359,125 @@ https://dltiqboxjw21d.cloudfront.net/index.m3u8
 #EXTINF:-1 tvg-id="KiKA.de@SD" tvg-name="KiKa" tvg-logo="https://i.imgur.com/vZdNp5S.png" group-title="Infantil & Kids" tvg-chno="174",KiKa (HD • ARD/ZDF Kinderkanal)
 https://kiefte.eu/iptv/kika.m3u8
 
-#EXTINF:-1 tvg-id="StudioBrussel.be" tvg-name="Studio Brussel Visual" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="Música & Video" tvg-chno="180",Studio Brussel (Visual Radio)
-https://live.vrtcdn.be/groupb/live/450aa9d1-7173-47f3-aaaa-9701426f8ddd/live.isml/live.m3u8
+#EXTINF:-1 tvg-id="PersianaJunior.fr" tvg-name="Persiana Junior" tvg-logo="https://i.imgur.com/zeKHZYG.png" group-title="Infantil & Kids" tvg-chno="175",Persiana Junior
+https://junhls.persiana.live/hls/stream.m3u8
 
-#EXTINF:-1 tvg-id="MNM.be" tvg-name="MNM Visual" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/03/Logo-MNM.svg" group-title="Música & Video" tvg-chno="181",MNM Kijk Live (Visual Radio)
-https://live.vrtcdn.be/groupa/live/1718328a-5c53-410d-87ec-d8db68124cfc/live.isml/live.m3u8
-
-#EXTINF:-1 tvg-id="Qmusic.nl" tvg-name="Qmusic NL Visual" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Qmusic_logo_2019.svg/512px-Qmusic_logo_2019.svg.png" group-title="Música & Video" tvg-chno="182",Qmusic NL Kijk Live (Visual Radio)
-https://stream.qmusic.nl/qmusic/videohls.m3u8
-
-#EXTINF:-1 tvg-id="DeluxeMusic.de@HD" tvg-name="DELUXE MUSIC" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Deluxe_Music_2013_Logo.svg/512px-Deluxe_Music_2013_Logo.svg.png" group-title="Música & Video" tvg-chno="183",DELUXE MUSIC
-https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8
-
-#EXTINF:-1 tvg-id="DeluxeDance.de" tvg-name="DELUXE DANCE" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Deluxe_Music_2013_Logo.svg/512px-Deluxe_Music_2013_Logo.svg.png" group-title="Música & Video" tvg-chno="184",DELUXE DANCE by Kontor
-https://sdn-global-live-streaming-packager-cache.3qsdn.com/64733/64733_264_live.m3u8
-
-#EXTINF:-1 tvg-id="DeluxeRap.de" tvg-name="DELUXE RAP" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Deluxe_Music_2013_Logo.svg/512px-Deluxe_Music_2013_Logo.svg.png" group-title="Música & Video" tvg-chno="185",DELUXE RAP
-https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.m3u8
-
-#EXTINF:-1 tvg-id="DanceTV.nl" tvg-name="Dance TV" group-title="Música & Video" tvg-chno="186",Dance TV
-https://m1b2.worldcast.tv/dancetelevisionone/2/dancetelevisionone.m3u8
-
-#EXTINF:-1 tvg-id="DanceTVDeepHouse.nl@HD" tvg-name="DanceTV Deep House" group-title="Música & Video" tvg-chno="187",DanceTV Deep House District (Sunset & Melodic 1080p)
-https://m1b2.worldcast.tv/dancetelevisiontwo/dancetelevisiontwo.m3u8
-
-#EXTINF:-1 tvg-id="TraceUrban.fr@HD" tvg-name="Trace Urban" tvg-logo="https://i.imgur.com/DLIbUMx.png" group-title="Música & Video" tvg-chno="188",Trace Urban (1080p)
-https://channels.trace.plus/Traceprod/URBAN_INTER_hd/index.m3u8
-
-#EXTINF:-1 tvg-id="TraceToca.fr@HD" tvg-name="Trace Toca" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Toca.png" group-title="Música & Video" tvg-chno="189",Trace Toca (Kizomba / Zouk / PALOP)
-https://channels.trace.plus/Traceprod/TOCA_hd/index.m3u8
-
-#EXTINF:-1 tvg-id="TraceAfrica.fr@HD" tvg-name="Trace Africa" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Africa.png" group-title="Música & Video" tvg-chno="190",Trace Africa
-https://channels.trace.plus/Traceprod/AFRICA_FR_hd/index.m3u8
-
-#EXTINF:-1 tvg-id="TraceBrazuca.br@HD" tvg-name="Trace Brasil" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Brazuca.png" group-title="Música & Video" tvg-chno="191",Trace Brasil
-https://amg01131-tracetv-tracebrazuca-xiaomi-vvr19.amagi.tv/playlist/amg01131-tracetv-tracebrazuca-xiaomi/playlist.m3u8
-
-#EXTINF:-1 tvg-id="TraceNaija.ng@HD" tvg-name="Trace Naija" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Naija.png" group-title="Música & Video" tvg-chno="192",Trace Naija (Afrobeats)
-https://channels.trace.plus/Traceprod/NAIJA_hd/index.m3u8
-
-#EXTINF:-1 tvg-id="TraceKitoko.fr@HD" tvg-name="Trace Kitoko" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Kitoko.png" group-title="Música & Video" tvg-chno="193",Trace Kitoko (Lingala / Central Africa)
-https://channels.trace.plus/Traceprod/KITOKO_hd/index.m3u8
-
-#EXTINF:-1 tvg-id="TraceMziki.ke@HD" tvg-name="Trace Miziki" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Miziki.png" group-title="Música & Video" tvg-chno="194",Trace Miziki (East Africa)
-https://channels.trace.plus/Traceprod/MZIKI_hd/index.m3u8
-
-#EXTINF:-1 tvg-id="TraceLatina.fr@HD" tvg-name="Trace Latina" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Latina.png" group-title="Música & Video" tvg-chno="195",Trace Latina
-https://channels.trace.plus/Traceprod/LATINA_hd/index.m3u8
-
-#EXTINF:-1 tvg-id="TraceUK.uk@HD" tvg-name="Trace UK" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-UK.png" group-title="Música & Video" tvg-chno="196",Trace UK
-https://channels.trace.plus/Traceprod/UK_FAST_hd/index.m3u8
-
-#EXTINF:-1 tvg-id="TraceGospel.fr@HD" tvg-name="Trace Gospel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Gospel.png" group-title="Música & Video" tvg-chno="197",Trace Gospel
-https://channels.trace.plus/Traceprod/GOSPEL_FR/.m3u8
-
-#EXTINF:-1 tvg-id="XITE.nl@HD" tvg-name="XITE" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.png" group-title="Música & Video" tvg-chno="198",XITE
-https://xite-rakuten.amagi.tv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="XITEHitsDE.de@HD" tvg-name="XITE Hits Germany" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.png" group-title="Música & Video" tvg-chno="199",XITE Hits Germany
-https://d726x48n2pd5h.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-skxr1pazhltvp/XITE_Hits.m3u8
-
-#EXTINF:-1 tvg-id="4FunTV.pl@HD" tvg-name="4Fun TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/4Fun-TV.png" group-title="Música & Video" tvg-chno="200",4Fun.TV
-https://stream.4fun.tv:8888/hls/4f_high/index.m3u8
-
-#EXTINF:-1 tvg-id="DeeJayTV.it@HD" tvg-name="DeeJay TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/DeeJay-TV.png" group-title="Música & Video" tvg-chno="201",DeeJay TV
-https://streamcdng5-4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S85984808/sMO0tz9Sr2Rk/playlist.m3u8
-
-#EXTINF:-1 tvg-id="NRG91TV.gr@HD" tvg-name="NRG 91 TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/NRG-91-TV.png" group-title="Música & Video" tvg-chno="202",NRG 91 TV
-http://tv.nrg91.gr:1935/onweb/live/playlist.m3u8
-
-#EXTINF:-1 tvg-id="FMItaliaTV.it@HD" tvg-name="FM Italia TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/FM-Italia-TV.png" group-title="Música & Video" tvg-chno="203",FM Italia TV
-https://stream1.xdevel.com/video0s975817-1182/stream/playlist.m3u8
-
-#EXTINF:-1 tvg-id="CaliforniaMusicChannel.us@HD" tvg-name="California Music Channel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/California-Music-Channel.png" group-title="Música & Video" tvg-chno="204",California Music Channel
-https://cmc-cmctv-cineverse.amagi.tv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="KpopTVPlay.kr@HD" tvg-name="KpopTV Play" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/KpopTV-Play.png" group-title="Música & Video" tvg-chno="205",KpopTV Play
-https://183.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Monstercat.tv@HD" tvg-name="Monstercat" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Monstercat_logo.svg/512px-Monstercat_logo.svg.png" group-title="Música & Video" tvg-chno="206",Monstercat (24/7 Electronic Music HD)
-https://kiefte.eu/iptv/twitch/monstercat
-
-#EXTINF:-1 tvg-id="Insomniac.tv@HD" tvg-name="Insomniac Events" group-title="Música & Video" tvg-chno="207",Insomniac (24/7 EDM Festival TV)
-https://kiefte.eu/iptv/twitch/insomniac
-
-#EXTINF:-1 tvg-id="KissKissTV.it@HD" tvg-name="Radio Kiss Kiss TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Radio_Kiss_Kiss_logo.svg/512px-Radio_Kiss_Kiss_logo.svg.png" group-title="Música & Video" tvg-chno="208",Radio Kiss Kiss TV (Visual Radio 1080p)
-https://58f12ffd2447a.streamlock.net/KKMulti/livestream/playlist.m3u8
-
-#EXTINF:-1 tvg-id="HypeVisualRadio.tv@HD" tvg-name="Hype Visual Radio" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/DJ_mixer_icon.svg/512px-DJ_mixer_icon.svg.png" group-title="Música & Video" tvg-chno="209",Hype Visual Radio (1080p Studio Cam)
-https://streammix.alsolnet.com/hyperadio/live/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Radio350.nl" tvg-name="Radio 350" tvg-logo="https://i.imgur.com/3nkzXup.png" group-title="Música & Video" tvg-chno="210",Radio 350 (Visual Radio)
-https://stream.radio350.nl/hls/radio350.m3u8
-
-#EXTINF:-1 tvg-id="PMC.ae" tvg-name="PMC (Persian Music Channel)" tvg-logo="https://i.imgur.com/AbrHI7K.png" group-title="Música & Video" tvg-chno="211",PMC (Persian Music Channel)
-https://pmchls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 tvg-id="PMCRoyale.ae" tvg-name="PMC Royale" group-title="Música & Video" tvg-chno="212",PMC Royale
-https://pmcrohls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 tvg-id="RJTV.us" tvg-name="RJTV" tvg-logo="https://i.imgur.com/a1zuW2C.png" group-title="Música & Video" tvg-chno="213",RJTV
-https://rjtvhls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 tvg-id="PersianaFolk.fr" tvg-name="Persiana Folk" group-title="Música & Video" tvg-chno="214",Persiana Folk
-https://sonhls.persiana.live/hls/stream.m3u8
-
-#EXTINF:-1 tvg-id="ONFM.pt" tvg-name="ON FM" tvg-logo="https://onfmwordpressfiles.ams3.digitaloceanspaces.com/wp-content/uploads/2023/03/17130121/logo-on-fm.png" group-title="Música & Video" tvg-chno="215",ON FM (Visual Radio)
+#EXTINF:-1 tvg-id="ONFM.pt" tvg-name="ON FM" tvg-logo="https://onfmwordpressfiles.ams3.digitaloceanspaces.com/wp-content/uploads/2023/03/17130121/logo-on-fm.png" group-title="Música & Video" tvg-chno="180",ON FM (Visual Radio)
 https://5ce9406b73c33.streamlock.net/ONFM/livestream/playlist.m3u8
 
-#EXTINF:-1 tvg-id="RadioSines.pt" tvg-name="Rádio Sines" tvg-logo="https://i.imgur.com/Oe6F1nL.png" group-title="Música & Video" tvg-chno="216",Rádio Sines (Visual Radio)
+#EXTINF:-1 tvg-id="RadioSines.pt" tvg-name="Rádio Sines" tvg-logo="https://i.imgur.com/Oe6F1nL.png" group-title="Música & Video" tvg-chno="181",Rádio Sines (Visual Radio)
 https://load-balancer.azotosolutions.com/cdnedge19/smil:live19.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="KuriakosMusic.pt" tvg-name="Kuriakos Music" tvg-logo="https://i.imgur.com/Zl40NYi.jpg" group-title="Música & Video" tvg-chno="217",Kuriakos Music
-https://w2.manasat.com/kmusic/kmusic.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-id="RFPtv.pt" tvg-name="RFPtv" tvg-logo="https://i.imgur.com/I60nQuR.png" group-title="Música & Video" tvg-chno="218",RFPtv (Rádio do Folclore de Portugal)
+#EXTINF:-1 tvg-id="RFPtv.pt" tvg-name="RFPtv" tvg-logo="https://i.imgur.com/I60nQuR.png" group-title="Música & Video" tvg-chno="182",RFPtv (Rádio do Folclore de Portugal)
 https://video03.logicahost.com.br/rfptv/rfptv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="NPCRadioeTV.pt" tvg-name="NPC Rádio e TV" tvg-logo="https://i.imgur.com/mw1lYWE.png" group-title="Música & Video" tvg-chno="219",NPC Rádio e TV (Visual Radio)
-https://stmv5.samcast.com.br/nasciparacantartv/nasciparacantartv/playlist.m3u8
+#EXTINF:-1 tvg-id="KuriakosMusic.pt" tvg-name="Kuriakos Music" tvg-logo="https://i.imgur.com/Zl40NYi.jpg" group-title="Música & Video" tvg-chno="183",Kuriakos Music
+https://w2.manasat.com/kmusic/kmusic.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="StudioBrussel.be" tvg-name="Studio Brussel Visual" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="Música & Video" tvg-chno="184",Studio Brussel (Visual Radio)
+https://live.vrtcdn.be/groupb/live/450aa9d1-7173-47f3-aaaa-9701426f8ddd/live.isml/live.m3u8
+
+#EXTINF:-1 tvg-id="MNM.be" tvg-name="MNM Visual" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/03/Logo-MNM.svg" group-title="Música & Video" tvg-chno="185",MNM Kijk Live (Visual Radio)
+https://live.vrtcdn.be/groupa/live/1718328a-5c53-410d-87ec-d8db68124cfc/live.isml/live.m3u8
+
+#EXTINF:-1 tvg-id="Qmusic.nl" tvg-name="Qmusic NL Visual" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Qmusic_logo_2019.svg/512px-Qmusic_logo_2019.svg.png" group-title="Música & Video" tvg-chno="186",Qmusic NL Kijk Live (Visual Radio)
+https://stream.qmusic.nl/qmusic/videohls.m3u8
+
+#EXTINF:-1 tvg-id="DeluxeMusic.de@HD" tvg-name="DELUXE MUSIC" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Deluxe_Music_2013_Logo.svg/512px-Deluxe_Music_2013_Logo.svg.png" group-title="Música & Video" tvg-chno="187",DELUXE MUSIC
+https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8
+
+#EXTINF:-1 tvg-id="DeluxeDance.de" tvg-name="DELUXE DANCE" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Deluxe_Music_2013_Logo.svg/512px-Deluxe_Music_2013_Logo.svg.png" group-title="Música & Video" tvg-chno="188",DELUXE DANCE by Kontor
+https://sdn-global-live-streaming-packager-cache.3qsdn.com/64733/64733_264_live.m3u8
+
+#EXTINF:-1 tvg-id="DeluxeRap.de" tvg-name="DELUXE RAP" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Deluxe_Music_2013_Logo.svg/512px-Deluxe_Music_2013_Logo.svg.png" group-title="Música & Video" tvg-chno="189",DELUXE RAP
+https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.m3u8
+
+#EXTINF:-1 tvg-id="DanceTV.nl" tvg-name="Dance TV" group-title="Música & Video" tvg-chno="190",Dance TV
+https://m1b2.worldcast.tv/dancetelevisionone/2/dancetelevisionone.m3u8
+
+#EXTINF:-1 tvg-id="DanceTVDeepHouse.nl@HD" tvg-name="DanceTV Deep House" group-title="Música & Video" tvg-chno="191",DanceTV Deep House District (Sunset & Melodic 1080p)
+https://m1b2.worldcast.tv/dancetelevisiontwo/dancetelevisiontwo.m3u8
+
+#EXTINF:-1 tvg-id="TraceUrban.fr@HD" tvg-name="Trace Urban" tvg-logo="https://i.imgur.com/DLIbUMx.png" group-title="Música & Video" tvg-chno="192",Trace Urban (1080p)
+https://channels.trace.plus/Traceprod/URBAN_INTER_hd/index.m3u8
+
+#EXTINF:-1 tvg-id="TraceToca.fr@HD" tvg-name="Trace Toca" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Toca.png" group-title="Música & Video" tvg-chno="193",Trace Toca (Kizomba / Zouk / PALOP)
+https://channels.trace.plus/Traceprod/TOCA_hd/index.m3u8
+
+#EXTINF:-1 tvg-id="TraceAfrica.fr@HD" tvg-name="Trace Africa" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Africa.png" group-title="Música & Video" tvg-chno="194",Trace Africa
+https://channels.trace.plus/Traceprod/AFRICA_FR_hd/index.m3u8
+
+#EXTINF:-1 tvg-id="TraceBrazuca.br@HD" tvg-name="Trace Brasil" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Brazuca.png" group-title="Música & Video" tvg-chno="195",Trace Brasil
+https://amg01131-tracetv-tracebrazuca-xiaomi-vvr19.amagi.tv/playlist/amg01131-tracetv-tracebrazuca-xiaomi/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TraceNaija.ng@HD" tvg-name="Trace Naija" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Naija.png" group-title="Música & Video" tvg-chno="196",Trace Naija (Afrobeats)
+https://channels.trace.plus/Traceprod/NAIJA_hd/index.m3u8
+
+#EXTINF:-1 tvg-id="TraceKitoko.fr@HD" tvg-name="Trace Kitoko" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Kitoko.png" group-title="Música & Video" tvg-chno="197",Trace Kitoko (Lingala / Central Africa)
+https://channels.trace.plus/Traceprod/KITOKO_hd/index.m3u8
+
+#EXTINF:-1 tvg-id="TraceMziki.ke@HD" tvg-name="Trace Miziki" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Miziki.png" group-title="Música & Video" tvg-chno="198",Trace Miziki (East Africa)
+https://channels.trace.plus/Traceprod/MZIKI_hd/index.m3u8
+
+#EXTINF:-1 tvg-id="TraceLatina.fr@HD" tvg-name="Trace Latina" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Latina.png" group-title="Música & Video" tvg-chno="199",Trace Latina
+https://channels.trace.plus/Traceprod/LATINA_hd/index.m3u8
+
+#EXTINF:-1 tvg-id="TraceUK.uk@HD" tvg-name="Trace UK" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-UK.png" group-title="Música & Video" tvg-chno="200",Trace UK
+https://channels.trace.plus/Traceprod/UK_FAST_hd/index.m3u8
+
+#EXTINF:-1 tvg-id="TraceGospel.fr@HD" tvg-name="Trace Gospel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Gospel.png" group-title="Música & Video" tvg-chno="201",Trace Gospel
+https://channels.trace.plus/Traceprod/GOSPEL_FR/.m3u8
+
+#EXTINF:-1 tvg-id="XITE.nl@HD" tvg-name="XITE" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.png" group-title="Música & Video" tvg-chno="202",XITE
+https://xite-rakuten.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="XITEHitsDE.de@HD" tvg-name="XITE Hits Germany" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.png" group-title="Música & Video" tvg-chno="203",XITE Hits Germany
+https://d726x48n2pd5h.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-skxr1pazhltvp/XITE_Hits.m3u8
+
+#EXTINF:-1 tvg-id="4FunTV.pl@HD" tvg-name="4Fun TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/4Fun-TV.png" group-title="Música & Video" tvg-chno="204",4Fun.TV
+https://stream.4fun.tv:8888/hls/4f_high/index.m3u8
+
+#EXTINF:-1 tvg-id="DeeJayTV.it@HD" tvg-name="DeeJay TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/DeeJay-TV.png" group-title="Música & Video" tvg-chno="205",DeeJay TV
+https://streamcdng5-4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S85984808/sMO0tz9Sr2Rk/playlist.m3u8
+
+#EXTINF:-1 tvg-id="NRG91TV.gr@HD" tvg-name="NRG 91 TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/NRG-91-TV.png" group-title="Música & Video" tvg-chno="206",NRG 91 TV
+http://tv.nrg91.gr:1935/onweb/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="FMItaliaTV.it@HD" tvg-name="FM Italia TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/FM-Italia-TV.png" group-title="Música & Video" tvg-chno="207",FM Italia TV
+https://stream1.xdevel.com/video0s975817-1182/stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="CaliforniaMusicChannel.us@HD" tvg-name="California Music Channel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/California-Music-Channel.png" group-title="Música & Video" tvg-chno="208",California Music Channel
+https://cmc-cmctv-cineverse.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="KpopTVPlay.kr@HD" tvg-name="KpopTV Play" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/KpopTV-Play.png" group-title="Música & Video" tvg-chno="209",KpopTV Play
+https://183.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Monstercat.tv@HD" tvg-name="Monstercat" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Monstercat_logo.svg/512px-Monstercat_logo.svg.png" group-title="Música & Video" tvg-chno="210",Monstercat (24/7 Electronic Music HD)
+https://kiefte.eu/iptv/twitch/monstercat
+
+#EXTINF:-1 tvg-id="Insomniac.tv@HD" tvg-name="Insomniac Events" group-title="Música & Video" tvg-chno="211",Insomniac (24/7 EDM Festival TV)
+https://kiefte.eu/iptv/twitch/insomniac
+
+#EXTINF:-1 tvg-id="KissKissTV.it@HD" tvg-name="Radio Kiss Kiss TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Radio_Kiss_Kiss_logo.svg/512px-Radio_Kiss_Kiss_logo.svg.png" group-title="Música & Video" tvg-chno="212",Radio Kiss Kiss TV (Visual Radio 1080p)
+https://58f12ffd2447a.streamlock.net/KKMulti/livestream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="HypeVisualRadio.tv@HD" tvg-name="Hype Visual Radio" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/DJ_mixer_icon.svg/512px-DJ_mixer_icon.svg.png" group-title="Música & Video" tvg-chno="213",Hype Visual Radio (1080p Studio Cam)
+https://streammix.alsolnet.com/hyperadio/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Radio350.nl" tvg-name="Radio 350" tvg-logo="https://i.imgur.com/3nkzXup.png" group-title="Música & Video" tvg-chno="214",Radio 350 (Visual Radio)
+https://stream.radio350.nl/hls/radio350.m3u8
+
+#EXTINF:-1 tvg-id="PMC.ae" tvg-name="PMC (Persian Music Channel)" tvg-logo="https://i.imgur.com/AbrHI7K.png" group-title="Música & Video" tvg-chno="215",PMC (Persian Music Channel)
+https://pmchls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="PMCRoyale.ae" tvg-name="PMC Royale" group-title="Música & Video" tvg-chno="216",PMC Royale
+https://pmcrohls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="RJTV.us" tvg-name="RJTV" tvg-logo="https://i.imgur.com/a1zuW2C.png" group-title="Música & Video" tvg-chno="217",RJTV
+https://rjtvhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="PersianaFolk.fr" tvg-name="Persiana Folk" group-title="Música & Video" tvg-chno="218",Persiana Folk
+https://sonhls.persiana.live/hls/stream.m3u8
 
 #EXTINF:-1 tvg-id="ARTV.pt" tvg-name="ARTV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/AR-TV.png" group-title="Cívico & Parlamento" tvg-chno="220",ARTV (Canal Parlamento PT)
 #EXTVLCOPT:http-user-agent="Mozilla/5.0"
@@ -528,245 +528,242 @@ http://iran620.com:1935/live/IranJewishTv/playlist.m3u8
 #EXTINF:-1 tvg-id="ADBTV.pt" tvg-name="ADB TV" tvg-logo="https://i.ibb.co/HGfTJwt/ADBTV.jpg" group-title="Religião" tvg-chno="242",ADB TV
 https://live-tv.waytv.pt/adbtv/adbtv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="PersianaNostalgia.fr" tvg-name="Persiana Nostalgia" tvg-logo="https://i.imgur.com/SWO9CKA.png" group-title="Persa / Farsi" tvg-chno="243",Persiana Nostalgia
+#EXTINF:-1 tvg-id="PersianaNostalgia.fr" tvg-name="Persiana Nostalgia" tvg-logo="https://i.imgur.com/SWO9CKA.png" group-title="Persa / Farsi" tvg-chno="250",Persiana Nostalgia
 https://noshls.persiana.live/hls/stream.m3u8
 
-#EXTINF:-1 tvg-id="PersianaTravel.fr" tvg-name="Persiana Travel" group-title="Persa / Farsi" tvg-chno="244",Persiana Travel
+#EXTINF:-1 tvg-id="PersianaTravel.fr" tvg-name="Persiana Travel" group-title="Persa / Farsi" tvg-chno="251",Persiana Travel
 https://ptravelhls.persiana.live/hls/stream.m3u8
 
-#EXTINF:-1 tvg-id="PersianaDocs.fr" tvg-name="Persiana Docs" group-title="Persa / Farsi" tvg-chno="245",Persiana Docs
+#EXTINF:-1 tvg-id="PersianaDocs.fr" tvg-name="Persiana Docs" group-title="Persa / Farsi" tvg-chno="252",Persiana Docs
 https://scihls.persiana.live/hls/stream.m3u8
 
-#EXTINF:-1 tvg-id="PersianaFamily.fr" tvg-name="Persiana Family" tvg-logo="https://i.imgur.com/lMZsuWi.png" group-title="Persa / Farsi" tvg-chno="246",Persiana Family
+#EXTINF:-1 tvg-id="PersianaFamily.fr" tvg-name="Persiana Family" tvg-logo="https://i.imgur.com/lMZsuWi.png" group-title="Persa / Farsi" tvg-chno="253",Persiana Family
 https://familyhls.persiana.live/hls/stream.m3u8
 
-#EXTINF:-1 tvg-id="PersianaJunior.fr" tvg-name="Persiana Junior" tvg-logo="https://i.imgur.com/zeKHZYG.png" group-title="Persa / Farsi" tvg-chno="247",Persiana Junior
-https://junhls.persiana.live/hls/stream.m3u8
-
-#EXTINF:-1 tvg-id="Speedrun.tv" tvg-name="Speedrun" group-title="Speedrunning & Marathons" tvg-chno="250",Speedrun (24/7 Speedrun.com)
+#EXTINF:-1 tvg-id="Speedrun.tv" tvg-name="Speedrun" group-title="Speedrunning & Marathons" tvg-chno="300",Speedrun (24/7 Speedrun.com)
 https://kiefte.eu/iptv/twitch/speedrun
 
-#EXTINF:-1 tvg-id="GamesDoneQuick.tv" tvg-name="GamesDoneQuick" group-title="Speedrunning & Marathons" tvg-chno="251",GamesDoneQuick (GDQ)
+#EXTINF:-1 tvg-id="GamesDoneQuick.tv" tvg-name="GamesDoneQuick" group-title="Speedrunning & Marathons" tvg-chno="301",GamesDoneQuick (GDQ)
 https://kiefte.eu/iptv/twitch/gamesdonequick
 
-#EXTINF:-1 tvg-id="ESAMarathon.tv" tvg-name="ESAMarathon" group-title="Speedrunning & Marathons" tvg-chno="252",ESAMarathon (European Speedrunner Assembly)
+#EXTINF:-1 tvg-id="ESAMarathon.tv" tvg-name="ESAMarathon" group-title="Speedrunning & Marathons" tvg-chno="302",ESAMarathon (European Speedrunner Assembly)
 https://kiefte.eu/iptv/twitch/esamarathon
 
-#EXTINF:-1 tvg-id="TASVideos.tv" tvg-name="TASVideos" group-title="Speedrunning & Marathons" tvg-chno="253",TASVideos (Tool-Assisted Speedruns)
+#EXTINF:-1 tvg-id="TASVideos.tv" tvg-name="TASVideos" group-title="Speedrunning & Marathons" tvg-chno="303",TASVideos (Tool-Assisted Speedruns)
 https://kiefte.eu/iptv/twitch/tasvideos
 
-#EXTINF:-1 tvg-id="MitchFlowerPower.tv" tvg-name="MitchFlowerPower" group-title="Speedrunning & Marathons" tvg-chno="254",MitchFlowerPower (SMB3 Speedruns)
+#EXTINF:-1 tvg-id="MitchFlowerPower.tv" tvg-name="MitchFlowerPower" group-title="Speedrunning & Marathons" tvg-chno="304",MitchFlowerPower (SMB3 Speedruns)
 https://kiefte.eu/iptv/twitch/mitchflowerpower
 
-#EXTINF:-1 tvg-id="SmallAnt.tv" tvg-name="SmallAnt" group-title="Speedrunning & Marathons" tvg-chno="255",SmallAnt (Challenges & Speedruns)
+#EXTINF:-1 tvg-id="SmallAnt.tv" tvg-name="SmallAnt" group-title="Speedrunning & Marathons" tvg-chno="305",SmallAnt (Challenges & Speedruns)
 https://kiefte.eu/iptv/twitch/smallant
 
-#EXTINF:-1 tvg-id="Carrarium.tv" tvg-name="Carrarium" group-title="Speedrunning & Marathons" tvg-chno="256",Carrarium (Celeste & GDQ)
+#EXTINF:-1 tvg-id="Carrarium.tv" tvg-name="Carrarium" group-title="Speedrunning & Marathons" tvg-chno="306",Carrarium (Celeste & GDQ)
 https://kiefte.eu/iptv/twitch/carrarium
 
-#EXTINF:-1 tvg-id="TGH.tv" tvg-name="TGH" group-title="Speedrunning & Marathons" tvg-chno="257",TGH (Celeste & Retro Speedruns)
+#EXTINF:-1 tvg-id="TGH.tv" tvg-name="TGH" group-title="Speedrunning & Marathons" tvg-chno="307",TGH (Celeste & Retro Speedruns)
 https://kiefte.eu/iptv/twitch/tgh_sr
 
-#EXTINF:-1 tvg-id="AmberCyprian.tv" tvg-name="AmberCyprian" group-title="Speedrunning & Marathons" tvg-chno="258",AmberCyprian (Speedruns & Retro)
+#EXTINF:-1 tvg-id="AmberCyprian.tv" tvg-name="AmberCyprian" group-title="Speedrunning & Marathons" tvg-chno="308",AmberCyprian (Speedruns & Retro)
 https://kiefte.eu/iptv/twitch/ambercyprian
 
-#EXTINF:-1 tvg-id="Msushi.tv" tvg-name="Msushi" group-title="Speedrunning & Marathons" tvg-chno="259",Msushi (Celeste & Portal Speedruns)
+#EXTINF:-1 tvg-id="Msushi.tv" tvg-name="Msushi" group-title="Speedrunning & Marathons" tvg-chno="309",Msushi (Celeste & Portal Speedruns)
 https://kiefte.eu/iptv/twitch/msushi
 
-#EXTINF:-1 tvg-id="Shoujo.tv" tvg-name="Shoujo" group-title="Speedrunning & Marathons" tvg-chno="260",Shoujo (Speedruns & Multiworld)
+#EXTINF:-1 tvg-id="Shoujo.tv" tvg-name="Shoujo" group-title="Speedrunning & Marathons" tvg-chno="310",Shoujo (Speedruns & Multiworld)
 https://kiefte.eu/iptv/twitch/shoujo
 
-#EXTINF:-1 tvg-id="SMWRomhacks.tv" tvg-name="SMW Romhacks Live" group-title="Mario & Romhacks" tvg-chno="265",Super Mario World (Romhacks & Kaizo Live)
+#EXTINF:-1 tvg-id="SMWRomhacks.tv" tvg-name="SMW Romhacks Live" group-title="Mario & Romhacks" tvg-chno="315",Super Mario World (Romhacks & Kaizo Live)
 https://kiefte.eu/iptv/twitch/game/Super%20Mario%20World?bias=romhack
 
-#EXTINF:-1 tvg-id="MarioMaker2.tv" tvg-name="Mario Maker 2 Live" group-title="Mario & Romhacks" tvg-chno="266",Super Mario Maker 2 (Top Live Streamer)
+#EXTINF:-1 tvg-id="MarioMaker2.tv" tvg-name="Mario Maker 2 Live" group-title="Mario & Romhacks" tvg-chno="316",Super Mario Maker 2 (Top Live Streamer)
 https://kiefte.eu/iptv/twitch/game/Super%20Mario%20Maker%202
 
-#EXTINF:-1 tvg-id="Ryukahr.tv" tvg-name="Ryukahr" group-title="Mario & Romhacks" tvg-chno="267",Ryukahr
+#EXTINF:-1 tvg-id="Ryukahr.tv" tvg-name="Ryukahr" group-title="Mario & Romhacks" tvg-chno="317",Ryukahr
 https://kiefte.eu/iptv/twitch/ryukahr
 
-#EXTINF:-1 tvg-id="GrandPooBear.tv" tvg-name="GrandPooBear" group-title="Mario & Romhacks" tvg-chno="268",GrandPooBear
+#EXTINF:-1 tvg-id="GrandPooBear.tv" tvg-name="GrandPooBear" group-title="Mario & Romhacks" tvg-chno="318",GrandPooBear
 https://kiefte.eu/iptv/twitch/grandpoobear
 
-#EXTINF:-1 tvg-id="ThaBeast721.tv" tvg-name="ThaBeast721" group-title="Mario & Romhacks" tvg-chno="269",ThaBeast721 (Kaizo & Mario 64)
+#EXTINF:-1 tvg-id="ThaBeast721.tv" tvg-name="ThaBeast721" group-title="Mario & Romhacks" tvg-chno="319",ThaBeast721 (Kaizo & Mario 64)
 https://kiefte.eu/iptv/twitch/thabeast721
 
-#EXTINF:-1 tvg-id="CarlSagan42.tv" tvg-name="CarlSagan42" group-title="Mario & Romhacks" tvg-chno="270",CarlSagan42 (Kaizo & Troll Maker)
+#EXTINF:-1 tvg-id="CarlSagan42.tv" tvg-name="CarlSagan42" group-title="Mario & Romhacks" tvg-chno="320",CarlSagan42 (Kaizo & Troll Maker)
 https://kiefte.eu/iptv/twitch/carlsagan42
 
-#EXTINF:-1 tvg-id="Juzcook.tv" tvg-name="Juzcook" group-title="Mario & Romhacks" tvg-chno="271",Juzcook (Kaizo & Mario Maker)
+#EXTINF:-1 tvg-id="Juzcook.tv" tvg-name="Juzcook" group-title="Mario & Romhacks" tvg-chno="321",Juzcook (Kaizo & Mario Maker)
 https://kiefte.eu/iptv/twitch/juzcook
 
-#EXTINF:-1 tvg-id="Aurateur.tv" tvg-name="Aurateur" group-title="Mario & Romhacks" tvg-chno="272",Aurateur (Endless Mario Maker)
+#EXTINF:-1 tvg-id="Aurateur.tv" tvg-name="Aurateur" group-title="Mario & Romhacks" tvg-chno="322",Aurateur (Endless Mario Maker)
 https://kiefte.eu/iptv/twitch/aurateur
 
-#EXTINF:-1 tvg-id="PangaeaPanga.tv" tvg-name="PangaeaPanga" group-title="Mario & Romhacks" tvg-chno="273",PangaeaPanga (Kaizo SMW)
+#EXTINF:-1 tvg-id="PangaeaPanga.tv" tvg-name="PangaeaPanga" group-title="Mario & Romhacks" tvg-chno="323",PangaeaPanga (Kaizo SMW)
 https://kiefte.eu/iptv/twitch/pangaeapanga
 
-#EXTINF:-1 tvg-id="SimpleFlips.tv" tvg-name="SimpleFlips" group-title="Mario & Romhacks" tvg-chno="274",SimpleFlips (SM64 Romhacks)
+#EXTINF:-1 tvg-id="SimpleFlips.tv" tvg-name="SimpleFlips" group-title="Mario & Romhacks" tvg-chno="324",SimpleFlips (SM64 Romhacks)
 https://kiefte.eu/iptv/twitch/simpleflips
 
-#EXTINF:-1 tvg-id="Failstream.tv" tvg-name="Failstream" group-title="Mario & Romhacks" tvg-chno="275",Failstream (Mario Maker Builds)
+#EXTINF:-1 tvg-id="Failstream.tv" tvg-name="Failstream" group-title="Mario & Romhacks" tvg-chno="325",Failstream (Mario Maker Builds)
 https://kiefte.eu/iptv/twitch/failstream
 
-#EXTINF:-1 tvg-id="GlitchCat7.tv" tvg-name="GlitchCat7" group-title="Mario & Romhacks" tvg-chno="276",GlitchCat7 (SMW Kaizo & Speedruns)
+#EXTINF:-1 tvg-id="GlitchCat7.tv" tvg-name="GlitchCat7" group-title="Mario & Romhacks" tvg-chno="326",GlitchCat7 (SMW Kaizo & Speedruns)
 https://kiefte.eu/iptv/twitch/glitchcat7
 
-#EXTINF:-1 tvg-id="DGR.tv" tvg-name="DGR" group-title="Mario & Romhacks" tvg-chno="277",DGR (Mario Maker & Super Mario)
+#EXTINF:-1 tvg-id="DGR.tv" tvg-name="DGR" group-title="Mario & Romhacks" tvg-chno="327",DGR (Mario Maker & Super Mario)
 https://kiefte.eu/iptv/twitch/dgr_dave
 
-#EXTINF:-1 tvg-id="RBPimlico.tv" tvg-name="RBPimlico" group-title="Mario & Romhacks" tvg-chno="278",RBPimlico (Mario Maker & Kaizo)
+#EXTINF:-1 tvg-id="RBPimlico.tv" tvg-name="RBPimlico" group-title="Mario & Romhacks" tvg-chno="328",RBPimlico (Mario Maker & Kaizo)
 https://kiefte.eu/iptv/twitch/rbpimlico
 
-#EXTINF:-1 tvg-id="BarbarousKing.tv" tvg-name="BarbarousKing" group-title="Mario & Romhacks" tvg-chno="279",BarbarousKing (Mario Romhacks & Variety)
+#EXTINF:-1 tvg-id="BarbarousKing.tv" tvg-name="BarbarousKing" group-title="Mario & Romhacks" tvg-chno="329",BarbarousKing (Mario Romhacks & Variety)
 https://kiefte.eu/iptv/twitch/barbarousking
 
-#EXTINF:-1 tvg-id="ClassicTetris.tv" tvg-name="ClassicTetris" group-title="Tetris" tvg-chno="285",Classic Tetris (CTWC Main)
+#EXTINF:-1 tvg-id="ClassicTetris.tv" tvg-name="ClassicTetris" group-title="Tetris" tvg-chno="330",Classic Tetris (CTWC Main)
 https://kiefte.eu/iptv/twitch/classictetris
 
-#EXTINF:-1 tvg-id="ClassicTetris2.tv" tvg-name="ClassicTetris 2" group-title="Tetris" tvg-chno="286",Classic Tetris 2 (CTWC)
+#EXTINF:-1 tvg-id="ClassicTetris2.tv" tvg-name="ClassicTetris 2" group-title="Tetris" tvg-chno="331",Classic Tetris 2 (CTWC)
 https://kiefte.eu/iptv/twitch/classictetris2
 
-#EXTINF:-1 tvg-id="ClassicTetris3.tv" tvg-name="ClassicTetris 3" group-title="Tetris" tvg-chno="287",Classic Tetris 3 (CTWC)
+#EXTINF:-1 tvg-id="ClassicTetris3.tv" tvg-name="ClassicTetris 3" group-title="Tetris" tvg-chno="332",Classic Tetris 3 (CTWC)
 https://kiefte.eu/iptv/twitch/classictetris3
 
-#EXTINF:-1 tvg-id="ClassicTetris4.tv" tvg-name="ClassicTetris 4" group-title="Tetris" tvg-chno="288",Classic Tetris 4 (CTWC)
+#EXTINF:-1 tvg-id="ClassicTetris4.tv" tvg-name="ClassicTetris 4" group-title="Tetris" tvg-chno="333",Classic Tetris 4 (CTWC)
 https://kiefte.eu/iptv/twitch/classictetris4
 
-#EXTINF:-1 tvg-id="NESTetris.tv" tvg-name="NES Tetris Live" group-title="Tetris" tvg-chno="289",NES Tetris (Top Live Streamer)
+#EXTINF:-1 tvg-id="NESTetris.tv" tvg-name="NES Tetris Live" group-title="Tetris" tvg-chno="334",NES Tetris (Top Live Streamer)
 https://kiefte.eu/iptv/twitch/game/Tetris?bias=nes
 
-#EXTINF:-1 tvg-id="ModernTetris.tv" tvg-name="Modern Tetris Live" group-title="Tetris" tvg-chno="290",Modern Tetris (Top Live Streamer)
+#EXTINF:-1 tvg-id="ModernTetris.tv" tvg-name="Modern Tetris Live" group-title="Tetris" tvg-chno="335",Modern Tetris (Top Live Streamer)
 https://kiefte.eu/iptv/twitch/group/modern-tetris
 
-#EXTINF:-1 tvg-id="Wumbotize.tv" tvg-name="Wumbotize" group-title="Tetris" tvg-chno="291",Wumbotize (Modern Tetris Master)
+#EXTINF:-1 tvg-id="Wumbotize.tv" tvg-name="Wumbotize" group-title="Tetris" tvg-chno="336",Wumbotize (Modern Tetris Master)
 https://kiefte.eu/iptv/twitch/wumbotize
 
-#EXTINF:-1 tvg-id="Doremy.tv" tvg-name="Doremy" group-title="Tetris" tvg-chno="292",Doremy (Modern Tetris & TETR.IO)
+#EXTINF:-1 tvg-id="Doremy.tv" tvg-name="Doremy" group-title="Tetris" tvg-chno="337",Doremy (Modern Tetris & TETR.IO)
 https://kiefte.eu/iptv/twitch/doremy
 
-#EXTINF:-1 tvg-id="HardDrop.tv" tvg-name="Hard Drop" group-title="Tetris" tvg-chno="293",Hard Drop (Tetris Community & Tourneys)
+#EXTINF:-1 tvg-id="HardDrop.tv" tvg-name="Hard Drop" group-title="Tetris" tvg-chno="338",Hard Drop (Tetris Community & Tourneys)
 https://kiefte.eu/iptv/twitch/harddrop
 
-#EXTINF:-1 tvg-id="DogPlayingTetris.tv" tvg-name="DogPlayingTetris" group-title="Tetris" tvg-chno="294",DogPlayingTetris (3x CTWC World Champion)
+#EXTINF:-1 tvg-id="DogPlayingTetris.tv" tvg-name="DogPlayingTetris" group-title="Tetris" tvg-chno="339",DogPlayingTetris (3x CTWC World Champion)
 https://kiefte.eu/iptv/twitch/dogplayingtetris
 
-#EXTINF:-1 tvg-id="EricICX.tv" tvg-name="EricICX" group-title="Tetris" tvg-chno="295",EricICX (CTWC World Champion)
+#EXTINF:-1 tvg-id="EricICX.tv" tvg-name="EricICX" group-title="Tetris" tvg-chno="340",EricICX (CTWC World Champion)
 https://kiefte.eu/iptv/twitch/ericicx
 
-#EXTINF:-1 tvg-id="FractalTetris.tv" tvg-name="Fractal" group-title="Tetris" tvg-chno="296",Fractal (CTWC World Champion)
+#EXTINF:-1 tvg-id="FractalTetris.tv" tvg-name="Fractal" group-title="Tetris" tvg-chno="341",Fractal (CTWC World Champion)
 https://kiefte.eu/iptv/twitch/fractal
 
-#EXTINF:-1 tvg-id="AlexT.tv" tvg-name="Alex T" group-title="Tetris" tvg-chno="297",Alex_T (CTWC Champion)
+#EXTINF:-1 tvg-id="AlexT.tv" tvg-name="Alex T" group-title="Tetris" tvg-chno="342",Alex_T (CTWC Champion)
 https://kiefte.eu/iptv/twitch/alex_t
 
-#EXTINF:-1 tvg-id="BlueScuti.tv" tvg-name="BlueScuti" group-title="Tetris" tvg-chno="298",BlueScuti (NES Tetris Crash Record)
+#EXTINF:-1 tvg-id="BlueScuti.tv" tvg-name="BlueScuti" group-title="Tetris" tvg-chno="343",BlueScuti (NES Tetris Crash Record)
 https://kiefte.eu/iptv/twitch/bluescuti
 
-#EXTINF:-1 tvg-id="AnnaD.tv" tvg-name="Anna D." group-title="Tetris" tvg-chno="299",Anna D. (Tetris)
+#EXTINF:-1 tvg-id="AnnaD.tv" tvg-name="Anna D." group-title="Tetris" tvg-chno="344",Anna D. (Tetris)
 https://kiefte.eu/iptv/twitch/vinesandwillows
 
-#EXTINF:-1 tvg-id="GamingAutoLive.tv" tvg-name="Gaming 24/7 Auto-Live" group-title="Indie & Variety Gaming" tvg-chno="305",Gaming 24/7 (Auto-Live Streamer)
+#EXTINF:-1 tvg-id="GamingAutoLive.tv" tvg-name="Gaming 24/7 Auto-Live" group-title="Indie & Variety Gaming" tvg-chno="345",Gaming 24/7 (Auto-Live Streamer)
 https://kiefte.eu/iptv/gaming/live
 
-#EXTINF:-1 tvg-id="BluePrince.tv" tvg-name="Blue Prince Live" group-title="Indie & Variety Gaming" tvg-chno="306",Blue Prince (Top Live Streamer)
+#EXTINF:-1 tvg-id="BluePrince.tv" tvg-name="Blue Prince Live" group-title="Indie & Variety Gaming" tvg-chno="346",Blue Prince (Top Live Streamer)
 https://kiefte.eu/iptv/twitch/game/Blue%20Prince
 
-#EXTINF:-1 tvg-id="Celeste.tv" tvg-name="Celeste Live" group-title="Indie & Variety Gaming" tvg-chno="307",Celeste (Top Live Streamer)
+#EXTINF:-1 tvg-id="Celeste.tv" tvg-name="Celeste Live" group-title="Indie & Variety Gaming" tvg-chno="347",Celeste (Top Live Streamer)
 https://kiefte.eu/iptv/twitch/game/Celeste
 
-#EXTINF:-1 tvg-id="Portal.tv" tvg-name="Portal Live" group-title="Indie & Variety Gaming" tvg-chno="308",Portal (Top Live Streamer)
+#EXTINF:-1 tvg-id="Portal.tv" tvg-name="Portal Live" group-title="Indie & Variety Gaming" tvg-chno="348",Portal (Top Live Streamer)
 https://kiefte.eu/iptv/twitch/game/Portal
 
-#EXTINF:-1 tvg-id="Portal2.tv" tvg-name="Portal 2 Live" group-title="Indie & Variety Gaming" tvg-chno="309",Portal 2 (Top Live Streamer)
+#EXTINF:-1 tvg-id="Portal2.tv" tvg-name="Portal 2 Live" group-title="Indie & Variety Gaming" tvg-chno="349",Portal 2 (Top Live Streamer)
 https://kiefte.eu/iptv/twitch/game/Portal%202
 
-#EXTINF:-1 tvg-id="TammyBlackMedia.tv" tvg-name="Tammy BlackMedia" group-title="Indie & Variety Gaming" tvg-chno="310",Tammy (Tammy_BlackMedia)
+#EXTINF:-1 tvg-id="TammyBlackMedia.tv" tvg-name="Tammy BlackMedia" group-title="Indie & Variety Gaming" tvg-chno="350",Tammy (Tammy_BlackMedia)
 https://kiefte.eu/iptv/twitch/tammy_blackmedia
 
-#EXTINF:-1 tvg-id="ElanaOrama.tv" tvg-name="ElanaOrama" group-title="Indie & Variety Gaming" tvg-chno="311",ElanaOrama (Colony Sim & Variety)
+#EXTINF:-1 tvg-id="ElanaOrama.tv" tvg-name="ElanaOrama" group-title="Indie & Variety Gaming" tvg-chno="351",ElanaOrama (Colony Sim & Variety)
 https://kiefte.eu/iptv/twitch/elanaorama
 
-#EXTINF:-1 tvg-id="Chess.tv" tvg-name="Chess Live" group-title="Indie & Variety Gaming" tvg-chno="312",Chess (Top Live Grandmaster)
+#EXTINF:-1 tvg-id="Chess.tv" tvg-name="Chess Live" group-title="Indie & Variety Gaming" tvg-chno="352",Chess (Top Live Grandmaster)
 https://kiefte.eu/iptv/twitch/game/Chess
 
-#EXTINF:-1 tvg-id="GeoGuessr.tv" tvg-name="GeoGuessr Live" group-title="Indie & Variety Gaming" tvg-chno="313",GeoGuessr (World Exploration)
+#EXTINF:-1 tvg-id="GeoGuessr.tv" tvg-name="GeoGuessr Live" group-title="Indie & Variety Gaming" tvg-chno="353",GeoGuessr (World Exploration)
 https://kiefte.eu/iptv/twitch/game/GeoGuessr
 
-#EXTINF:-1 tvg-id="Trackmania.tv" tvg-name="Trackmania Live" group-title="Indie & Variety Gaming" tvg-chno="314",Trackmania (Precision Racing Live)
+#EXTINF:-1 tvg-id="Trackmania.tv" tvg-name="Trackmania Live" group-title="Indie & Variety Gaming" tvg-chno="354",Trackmania (Precision Racing Live)
 https://kiefte.eu/iptv/twitch/game/Trackmania
 
-#EXTINF:-1 tvg-id="Zeepkist.tv" tvg-name="Zeepkist Live" group-title="Indie & Variety Gaming" tvg-chno="315",Zeepkist (Soapbox Physics Racing Live)
+#EXTINF:-1 tvg-id="Zeepkist.tv" tvg-name="Zeepkist Live" group-title="Indie & Variety Gaming" tvg-chno="355",Zeepkist (Soapbox Physics Racing Live)
 https://kiefte.eu/iptv/twitch/game/Zeepkist
 
-#EXTINF:-1 tvg-id="FollowedStreamer1.tv" tvg-name="Followed #1" group-title="LaPingvino Favorites" tvg-chno="320",Followed Streamer #1
+#EXTINF:-1 tvg-id="FollowedStreamer1.tv" tvg-name="Followed #1" group-title="LaPingvino Favorites" tvg-chno="360",Followed Streamer #1
 https://kiefte.eu/iptv/twitch/followed/1
 
-#EXTINF:-1 tvg-id="FollowedStreamer2.tv" tvg-name="Followed #2" group-title="LaPingvino Favorites" tvg-chno="321",Followed Streamer #2
+#EXTINF:-1 tvg-id="FollowedStreamer2.tv" tvg-name="Followed #2" group-title="LaPingvino Favorites" tvg-chno="361",Followed Streamer #2
 https://kiefte.eu/iptv/twitch/followed/2
 
-#EXTINF:-1 tvg-id="FollowedStreamer3.tv" tvg-name="Followed #3" group-title="LaPingvino Favorites" tvg-chno="322",Followed Streamer #3
+#EXTINF:-1 tvg-id="FollowedStreamer3.tv" tvg-name="Followed #3" group-title="LaPingvino Favorites" tvg-chno="362",Followed Streamer #3
 https://kiefte.eu/iptv/twitch/followed/3
 
-#EXTINF:-1 tvg-id="FollowedStreamer4.tv" tvg-name="Followed #4" group-title="LaPingvino Favorites" tvg-chno="323",Followed Streamer #4
+#EXTINF:-1 tvg-id="FollowedStreamer4.tv" tvg-name="Followed #4" group-title="LaPingvino Favorites" tvg-chno="363",Followed Streamer #4
 https://kiefte.eu/iptv/twitch/followed/4
 
-#EXTINF:-1 tvg-id="FollowedStreamer5.tv" tvg-name="Followed #5" group-title="LaPingvino Favorites" tvg-chno="324",Followed Streamer #5
+#EXTINF:-1 tvg-id="FollowedStreamer5.tv" tvg-name="Followed #5" group-title="LaPingvino Favorites" tvg-chno="364",Followed Streamer #5
 https://kiefte.eu/iptv/twitch/followed/5
 
-#EXTINF:-1 tvg-id="FollowedStreamer6.tv" tvg-name="Followed #6" group-title="LaPingvino Favorites" tvg-chno="325",Followed Streamer #6
+#EXTINF:-1 tvg-id="FollowedStreamer6.tv" tvg-name="Followed #6" group-title="LaPingvino Favorites" tvg-chno="365",Followed Streamer #6
 https://kiefte.eu/iptv/twitch/followed/6
 
-#EXTINF:-1 tvg-id="FollowedStreamer7.tv" tvg-name="Followed #7" group-title="LaPingvino Favorites" tvg-chno="326",Followed Streamer #7
+#EXTINF:-1 tvg-id="FollowedStreamer7.tv" tvg-name="Followed #7" group-title="LaPingvino Favorites" tvg-chno="366",Followed Streamer #7
 https://kiefte.eu/iptv/twitch/followed/7
 
-#EXTINF:-1 tvg-id="FollowedStreamer8.tv" tvg-name="Followed #8" group-title="LaPingvino Favorites" tvg-chno="327",Followed Streamer #8
+#EXTINF:-1 tvg-id="FollowedStreamer8.tv" tvg-name="Followed #8" group-title="LaPingvino Favorites" tvg-chno="367",Followed Streamer #8
 https://kiefte.eu/iptv/twitch/followed/8
 
-#EXTINF:-1 tvg-id="FollowedStreamer9.tv" tvg-name="Followed #9" group-title="LaPingvino Favorites" tvg-chno="328",Followed Streamer #9
+#EXTINF:-1 tvg-id="FollowedStreamer9.tv" tvg-name="Followed #9" group-title="LaPingvino Favorites" tvg-chno="368",Followed Streamer #9
 https://kiefte.eu/iptv/twitch/followed/9
 
-#EXTINF:-1 tvg-id="FollowedStreamer10.tv" tvg-name="Followed #10" group-title="LaPingvino Favorites" tvg-chno="329",Followed Streamer #10
+#EXTINF:-1 tvg-id="FollowedStreamer10.tv" tvg-name="Followed #10" group-title="LaPingvino Favorites" tvg-chno="369",Followed Streamer #10
 https://kiefte.eu/iptv/twitch/followed/10
 
-#EXTINF:-1 tvg-id="HEVC10Bit.ref@HD" tvg-name="HEVC 10-Bit Reference" group-title="Diag" tvg-chno="340",HEVC / H.265 10-Bit Reference Ladder
+#EXTINF:-1 tvg-id="HEVC10Bit.ref@HD" tvg-name="HEVC 10-Bit Reference" group-title="Diag" tvg-chno="375",HEVC / H.265 10-Bit Reference Ladder
 https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_adv_example_hevc/master.m3u8
 
-#EXTINF:-1 tvg-id="HDR10Atmos4K.ref@UHD" tvg-name="HDR10 Dolby Atmos 4K" group-title="Diag" tvg-chno="341",4K UHD • HDR10 & Dolby Vision / Atmos
+#EXTINF:-1 tvg-id="HDR10Atmos4K.ref@UHD" tvg-name="HDR10 Dolby Atmos 4K" group-title="Diag" tvg-chno="376",4K UHD • HDR10 & Dolby Vision / Atmos
 https://devstreaming-cdn.apple.com/videos/streaming/examples/adv_dv_atmos/main.m3u8
 
-#EXTINF:-1 tvg-id="BitrateLadder1080p60.ref@HD" tvg-name="1080p60 Bitrate Ladder" group-title="Diag" tvg-chno="342",1080p60 Multi-Bitrate Adaptive Ladder
+#EXTINF:-1 tvg-id="BitrateLadder1080p60.ref@HD" tvg-name="1080p60 Bitrate Ladder" group-title="Diag" tvg-chno="377",1080p60 Multi-Bitrate Adaptive Ladder
 https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8
 
-#EXTINF:-1 tvg-id="UnifiedTimecode.ref" tvg-name="Unified Timecode Test" group-title="Diag" tvg-chno="343",Unified Streaming • Timecode & SCTE-35
+#EXTINF:-1 tvg-id="UnifiedTimecode.ref" tvg-name="Unified Timecode Test" group-title="Diag" tvg-chno="378",Unified Streaming • Timecode & SCTE-35
 https://demo.unified-streaming.com/k8s/live/stable/scte35.isml/.m3u8
 
-#EXTINF:-1 tvg-id="BipBopSync.ref" tvg-name="BipBop Sync Reference" group-title="Diag" tvg-chno="344",BipBop • Audio Sweep & Frame Sync
+#EXTINF:-1 tvg-id="BipBopSync.ref" tvg-name="BipBop Sync Reference" group-title="Diag" tvg-chno="379",BipBop • Audio Sweep & Frame Sync
 https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8
 
-#EXTINF:-1 tvg-id="BridgeDiag.ref@HD" tvg-name="Bridge Diag Testcard" group-title="Diag" tvg-chno="345",Bridge • IPv6 & AV-Sync Dynamic Testcard
+#EXTINF:-1 tvg-id="BridgeDiag.ref@HD" tvg-name="Bridge Diag Testcard" group-title="Diag" tvg-chno="380",Bridge • IPv6 & AV-Sync Dynamic Testcard
 https://kiefte.eu/iptv/test/avsync
 
-#EXTINF:-1 tvg-id="HDRSwitch.ref@HD" tvg-name="HDR Dynamic Switch" group-title="Diag" tvg-chno="346",HDR Dynamic Switch (SDR ➔ HLG ➔ HDR10)
+#EXTINF:-1 tvg-id="HDRSwitch.ref@HD" tvg-name="HDR Dynamic Switch" group-title="Diag" tvg-chno="381",HDR Dynamic Switch (SDR ➔ HLG ➔ HDR10)
 https://kiefte.eu/iptv/test/hdr
 
-#EXTINF:-1 tvg-id="HDRSwitchSmooth.ref@HD" tvg-name="HDR Smooth Switch (30s)" group-title="Diag" tvg-chno="347",HDR Dynamic Switch Smooth (30s Cadence)
+#EXTINF:-1 tvg-id="HDRSwitchSmooth.ref@HD" tvg-name="HDR Smooth Switch (30s)" group-title="Diag" tvg-chno="382",HDR Dynamic Switch Smooth (30s Cadence)
 https://kiefte.eu/iptv/test/hdr-smooth
 
-#EXTINF:-1 tvg-id="BVNRawDASH.ref" tvg-name="BVN Raw DASH" group-title="Diag" tvg-chno="348",BVN • Raw Encrypted DASH (Widevine, needs player-side key)
+#EXTINF:-1 tvg-id="BVNRawDASH.ref" tvg-name="BVN Raw DASH" group-title="Diag" tvg-chno="383",BVN • Raw Encrypted DASH (Widevine, needs player-side key)
 https://kiefte.eu/iptv/bvn.mpd
 
-#EXTINF:-1 tvg-id="DASHIFLive.ref" tvg-name="DASH-IF Live Testpic" group-title="Diag" tvg-chno="349",DASH-IF • Live Wall-Clock Test Picture (2s Segments)
+#EXTINF:-1 tvg-id="DASHIFLive.ref" tvg-name="DASH-IF Live Testpic" group-title="Diag" tvg-chno="384",DASH-IF • Live Wall-Clock Test Picture (2s Segments)
 https://livesim2.dashif.org/livesim2/testpic_2s/Manifest.mpd
 
-#EXTINF:-1 tvg-id="DASHIFRotate.ref" tvg-name="DASH-IF Multi-Rate" group-title="Diag" tvg-chno="350",DASH-IF • Rotating Logo Multi-Rate Ladder (720p/540p/360p AVC)
+#EXTINF:-1 tvg-id="DASHIFRotate.ref" tvg-name="DASH-IF Multi-Rate" group-title="Diag" tvg-chno="385",DASH-IF • Rotating Logo Multi-Rate Ladder (720p/540p/360p AVC)
 https://livesim2.dashif.org/livesim2/testrotate_2s/Manifest.mpd
 
-#EXTINF:-1 tvg-id="DASHIFAV1.ref" tvg-name="DASH-IF AV1 Live" group-title="Diag" tvg-chno="351",DASH-IF • AV1 Next-Gen Codec Live Stream (720p@25)
+#EXTINF:-1 tvg-id="DASHIFAV1.ref" tvg-name="DASH-IF AV1 Live" group-title="Diag" tvg-chno="386",DASH-IF • AV1 Next-Gen Codec Live Stream (720p@25)
 https://livesim2.dashif.org/livesim2/testpic_2s_av1/Manifest.mpd
 
-#EXTINF:-1 tvg-id="UnifiedVirtualChannel.ref" tvg-name="Unified Virtual Channel" group-title="Diag" tvg-chno="352",Unified Streaming • Live Virtual Channel (Multi-Period)
+#EXTINF:-1 tvg-id="UnifiedVirtualChannel.ref" tvg-name="Unified Virtual Channel" group-title="Diag" tvg-chno="387",Unified Streaming • Live Virtual Channel (Multi-Period)
 https://virtual-channel.unified-streaming.com/demo_channel-stable.isml/.mpd
 
-#EXTINF:-1 tvg-id="AkamaiBBBDASH.ref" tvg-name="Akamai BBB DASH" group-title="Diag" tvg-chno="353",Akamai • Big Buck Bunny Adaptive Bitrate Ladder (240p - 1080p)
+#EXTINF:-1 tvg-id="AkamaiBBBDASH.ref" tvg-name="Akamai BBB DASH" group-title="Diag" tvg-chno="388",Akamai • Big Buck Bunny Adaptive Bitrate Ladder (240p - 1080p)
 https://dash.akamaized.net/akamai/bbb_30fps/bbb_30fps.mpd

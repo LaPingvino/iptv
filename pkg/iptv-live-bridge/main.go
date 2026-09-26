@@ -207,7 +207,7 @@ func main() {
 			json.NewEncoder(w).Encode(map[string]any{
 				"status":    "ok",
 				"service":   "iptv-live-bridge",
-				"version":   "4.4.4",
+				"version":   "4.4.5",
 				"runtime":   "go",
 				"timestamp": time.Now().Format(time.RFC3339),
 			})
@@ -1016,13 +1016,13 @@ func serveNowJSON(w http.ResponseWriter, r *http.Request, esp, bahai *LinearStat
 
 	var channels []ChannelNow
 
-	// 1. Followed Streamers (Ch. 320–329)
+	// 1. Followed Streamers (first 10 slots of the LaPingvino Favorites block)
 	for i := 1; i <= 10; i++ {
 		slotKey := fmt.Sprintf("followed-%d", i)
 		sInfo := twitchMgr.GetActiveStreamInfo(slotKey)
 
 		item := ChannelNow{
-			ChNo:      319 + i,
+			ChNo:      groupBaseChNo["LaPingvino Favorites"] + i - 1,
 			Slot:      slotKey,
 			Name:      fmt.Sprintf("Followed Streamer #%d", i),
 			Category:  "LaPingvino Favorites",
@@ -1054,13 +1054,13 @@ func serveNowJSON(w http.ResponseWriter, r *http.Request, esp, bahai *LinearStat
 		ChNo int
 		Name string
 	}{
-		{"speedrun", 250, "Speedrun (24/7 Speedrun.com)"},
-		{"gamesdonequick", 251, "GamesDoneQuick (GDQ)"},
-		{"esamarathon", 252, "ESAMarathon"},
-		{"tasvideos", 253, "TASVideos"},
-		{"mitchflowerpower", 254, "MitchFlowerPower (SMB3)"},
-		{"classictetris", 285, "Classic Tetris (CTWC Main)"},
-		{"classictetris2", 286, "Classic Tetris 2 (CTWC)"},
+		{"speedrun", groupBaseChNo["Speedrunning & Marathons"], "Speedrun (24/7 Speedrun.com)"},
+		{"gamesdonequick", groupBaseChNo["Speedrunning & Marathons"] + 1, "GamesDoneQuick (GDQ)"},
+		{"esamarathon", groupBaseChNo["Speedrunning & Marathons"] + 2, "ESAMarathon"},
+		{"tasvideos", groupBaseChNo["Speedrunning & Marathons"] + 3, "TASVideos"},
+		{"mitchflowerpower", groupBaseChNo["Speedrunning & Marathons"] + 4, "MitchFlowerPower (SMB3)"},
+		{"classictetris", groupBaseChNo["Tetris"], "Classic Tetris (CTWC Main)"},
+		{"classictetris2", groupBaseChNo["Tetris"] + 1, "Classic Tetris 2 (CTWC)"},
 	}
 	for _, g := range gamingChannels {
 		sInfo := twitchMgr.GetActiveStreamInfo(g.Slot)
@@ -1284,12 +1284,12 @@ func serveNowDashboard(w http.ResponseWriter, r *http.Request) {
     </div>
   </header>
 
-  <h2 class="section-title">⭐ LaPingvino Favorites (Top 10 Live Follows • Ch. 320–329)</h2>
+  <h2 class="section-title">⭐ LaPingvino Favorites (Top 10 Live Follows • Ch. 360–369)</h2>
   <div class="grid" id="favorites-grid">
     <p style="color:var(--subtext);">Loading live follows...</p>
   </div>
 
-  <h2 class="section-title">🎮 Dedicated Gaming Streams (Ch. 250–286)</h2>
+  <h2 class="section-title">🎮 Dedicated Gaming Streams (Ch. 300–331)</h2>
   <div class="grid" id="gaming-grid">
     <p style="color:var(--subtext);">Loading gaming streams...</p>
   </div>
