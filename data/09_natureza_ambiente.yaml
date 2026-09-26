@@ -49,3 +49,9 @@
   tvg_name: Adventure Earth
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Earth_symbol_%28bold%29.svg/512px-Earth_symbol_%28bold%29.svg.png
   url: https://autentic-adventure-earth-1-gb.samsung.wurl.tv/playlist.m3u8
+- name: 3Cat Càmeres del Temps (Weather Cams)
+  group: Natureza & Slow TV
+  tvg_id: 3CatCameresdeltemps.es
+  tvg_name: 3Cat Càmeres del Temps
+  logo: https://i.imgur.com/zXy2kbe.png
+  url: https://directes-tv-int.3catdirectes.cat/live-content/beauties-hls/master.m3u8

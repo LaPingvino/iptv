@@ -114,4 +114,15 @@
   tvg_name: ZDF
   logo: https://i.imgur.com/rtLb6m9.png
   url: https://kiefte.eu/iptv/zdf.m3u8
-
+- name: 24 Horas Catalunya
+  group: Notícias
+  tvg_id: 24HorasCatalunya.es
+  tvg_name: 24 Horas Catalunya
+  logo: https://i.ibb.co/21sXZ3GT/24h.png
+  url: https://ztnr.rtve.es/ztnr/4952053.m3u8
+- name: Negocios TV
+  group: Notícias
+  tvg_id: NegociosTV.es
+  tvg_name: Negocios TV
+  logo: https://m.media-amazon.com/images/I/21HEgSJn2gL.png
+  url: https://streaming013.gestec-video.com/hls/negociostv.m3u8

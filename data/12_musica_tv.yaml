@@ -227,3 +227,9 @@
   tvg_id: PersianaFolk.fr
   tvg_name: Persiana Folk
   url: https://sonhls.persiana.live/hls/stream.m3u8
+- name: RTVE Radio 3 (Visual Radio)
+  group: Música & Video
+  tvg_id: Radio3.es
+  tvg_name: RTVE Radio 3
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/RNE_Radio_3_2026.svg/500px-RNE_Radio_3_2026.svg.png
+  url: https://rtvelivestream.rtve.es/rtvesec/rne/rne3_main.m3u8

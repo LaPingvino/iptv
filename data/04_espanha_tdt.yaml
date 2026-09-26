@@ -36,3 +36,15 @@
   tvg_name: ETB 2
   logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/etb2.png
   url: https://cdn1.etbon.eus/etb2on/index.m3u8
+- name: TVE Internacional (Europa HD)
+  group: ES Geral & TDT
+  tvg_id: TVEInternacionalEurope.es
+  tvg_name: TVE Internacional
+  logo: https://i.ibb.co/RpKLCMvp/tve.png
+  url: https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/tvei_eu_main_1080.m3u8
+- name: TVE Star HD
+  group: ES Geral & TDT
+  tvg_id: TVEStar.es
+  tvg_name: TVE Star HD
+  logo: https://i.ibb.co/j98NY8Mr/starcolor.png
+  url: https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/star_main_1080.m3u8

@@ -1,0 +1,216 @@
+- name: À Punt (Comunitat Valenciana)
+  group: ES Regional & Local
+  tvg_id: APunt.es
+  tvg_name: À Punt
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Logotip_d%27%C3%80_Punt_%282017-%29.svg/960px-Logotip_d%27%C3%80_Punt_%282017-%29.svg.png
+  url: https://fastly.live.brightcove.com/1846756479408303045/eu-central-1/6057955885001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiZWFxNWh4LmVncmVzcy53YzQ3bTEiLCJhY2NvdW50X2lkIjoiNjA1Nzk1NTg4NTAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI2MDU3OTU1ODg1MDAxIl0sImp0aSI6IjE4NDY3NTY0Nzk0MDgzMDMwNDUifQ.o6wb_VA-TVxl3ERgr7FKLlaTjY7smErmsf73QAydySE/playlist-hls-dvr.m3u8
+- name: Telemadrid
+  group: ES Regional & Local
+  tvg_id: Telemadrid.es
+  tvg_name: Telemadrid
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/TeleMadrid.svg/960px-TeleMadrid.svg.png
+  url: https://live.telemadrid.cross-media.es/6389770581112/eu-central-1/6416060453001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiajI5YjgyLmVncmVzcy5haGc3NmwiLCJhY2NvdW50X2lkIjoiNjQxNjA2MDQ1MzAwMSIsImVobiI6ImxpdmUudGVsZW1hZHJpZC5jcm9zcy1tZWRpYS5lcyIsImlzcyI6ImJsaXZlLXBsYXliYWNrLXNvdXJjZS1hcGkiLCJzdWIiOiJwYXRobWFwdG9rZW4iLCJhdWQiOlsiNjQxNjA2MDQ1MzAwMSJdLCJqdGkiOiI2Mzg5NzcwNTgxMTEyIn0.kqriAMUkHT6m0V6wkCHJum_EUyL4PAi1zJMKlfmYHEU/playlist-hls.m3u8
+- name: Televisión Canaria
+  group: ES Regional & Local
+  tvg_id: TelevisionCanaria.es
+  tvg_name: Televisión Canaria
+  logo: https://rtvc.es/archivos/2020/03/logo-mobilretina.png
+  url: https://rtvclive.flumotion.cloud/rtvc1live/smil:channel1PRG.smil/playlist.m3u8
+- name: 3CatInfo (Catalunya)
+  group: ES Regional & Local
+  tvg_id: 3CatInfo.es
+  tvg_name: 3CatInfo
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/3CatInfo_logo.svg/960px-3CatInfo_logo.svg.png
+  url: https://directes-tv-int.3catdirectes.cat/live-origin/canal324-hls/master.m3u8
+- name: Bon Dia TV (Catalunya)
+  group: ES Regional & Local
+  tvg_id: BonDiaTV.es
+  tvg_name: Bon Dia TV
+  logo: https://i.imgur.com/VgRCu2U.png
+  url: https://directes-tv-int.3catdirectes.cat/live-content/bondia-hls/master.m3u8
+- name: 28 Kanala (Euskadi)
+  group: ES Regional & Local
+  tvg_id: 28kanala.es
+  tvg_name: 28 Kanala
+  logo: https://i.imgur.com/DyvK28q.png
+  url: https://streaming.28kanala.eus/hls/z.m3u8
+- name: Durangaldeko Telebista (Euskadi)
+  group: ES Regional & Local
+  tvg_id: DurangaldekoTelebista.es
+  tvg_name: Durangaldeko Telebista
+  logo: https://i.imgur.com/qdlW6cg.png
+  url: https://nlb2-live.emitstream.com/hls/5f9asjsehd7gmyxsdpzu/master.m3u8
+- name: Goiena (Euskadi)
+  group: ES Regional & Local
+  tvg_id: GoienaEus.es
+  tvg_name: Goiena
+  logo: https://i.imgur.com/eaLIJzK.png
+  url: https://zuzenean.goienamedia.eus/goiena-telebista.m3u8
+- name: Hamaika Telebista (Euskadi)
+  group: ES Regional & Local
+  tvg_id: HamaikaTelebista.es
+  tvg_name: Hamaika Telebista
+  logo: https://i.imgur.com/HR3G3Ie.png
+  url: https://cdn3.wowza.com/1/RERMR282dnU5eE5Z/OHY0dVFs/hls/live/playlist.m3u8
+- name: Urola Telebista (Euskadi)
+  group: ES Regional & Local
+  tvg_id: UrolaTelebista.es
+  tvg_name: Urola Telebista
+  logo: https://i.imgur.com/V23bltn.png
+  url: https://5940924978228.streamlock.net/j_Directo2/mp4:j_Directo2/playlist.m3u8
+- name: Elche 7 TV
+  group: ES Regional & Local
+  tvg_id: Elche7TV.es
+  tvg_name: Elche 7 TV
+  logo: https://i.imgur.com/tjI0dLx.png
+  url: https://elche7tv.gestec-video.com/hls/canal2.m3u8
+- name: Tele Elx
+  group: ES Regional & Local
+  tvg_id: TeleElx.es
+  tvg_name: Tele Elx
+  logo: https://i.imgur.com/w5NTWpl.png
+  url: https://tvdirecto.teleelx.es/stream/teleelx.m3u8
+- name: Canal 7 TeleValencia
+  group: ES Regional & Local
+  tvg_id: Canal7TeleValencia.es
+  tvg_name: Canal 7 TeleValencia
+  logo: https://i.imgur.com/ILfXDRs.png
+  url: https://play.cdn.enetres.net/9E9557EFCEBB43A89CEC8FBD3C500247022/028/playlist.m3u8
+- name: Alacantí TV
+  group: ES Regional & Local
+  tvg_id: AlacantiTV.es
+  tvg_name: Alacantí TV
+  logo: https://i.imgur.com/pcWU6e1.png
+  url: https://streaming01.gestec-video.com/hls/artequatreAlacanti.m3u8
+- name: Une Vinalopó
+  group: ES Regional & Local
+  tvg_id: UneVinalopo.es
+  tvg_name: Une Vinalopó
+  logo: https://i.imgur.com/WpGR7RQ.png
+  url: https://streamingtvi.gestec-video.com/hls/unesd.m3u8
+- name: Canal 3 TV Biar
+  group: ES Regional & Local
+  tvg_id: Canal3TVBiar.es
+  tvg_name: Canal 3 TV Biar
+  logo: https://i.imgur.com/cnKCZkK.png
+  url: https://avantstreaming.es/hls/canal3.m3u8
+- name: Tele Safor
+  group: ES Regional & Local
+  tvg_id: TeleSafor.es
+  tvg_name: Tele Safor
+  logo: https://i.imgur.com/EowJfr0.png
+  url: https://video.telesafor.com/hls/video.m3u8
+- name: La 8 Mediterráneo
+  group: ES Regional & Local
+  tvg_id: La8Mediterraneo.es
+  tvg_name: La 8 Mediterráneo
+  logo: https://tbsfibra.es/wp-content/uploads/2022/07/17-8-MEDITERRANEO.png
+  url: https://newscript.gestec-video.com/hls/8TVEVENTOS.m3u8
+- name: Mijas 3.40 TV
+  group: ES Regional & Local
+  tvg_id: Mijas340TV.es
+  tvg_name: Mijas 3.40 TV
+  logo: https://i.imgur.com/RH1zLLs.png
+  url: https://streaming004.gestec-video.com/hls/MIJAS.m3u8
+- name: RTV Marbella
+  group: ES Regional & Local
+  tvg_id: RadioTelevisionMarbella.es
+  tvg_name: RTV Marbella
+  logo: https://i.imgur.com/o9Ro8TR.png
+  url: https://streaming.rtvmarbella.tv/hls/streamingweb.m3u8
+- name: M95 Televisión Marbella
+  group: ES Regional & Local
+  tvg_id: M95TelevisionMarbella.es
+  tvg_name: M95 Televisión Marbella
+  logo: https://i.imgur.com/RzAkP1V.png
+  url: https://limited2.todostreaming.es/live/m95-livestream.m3u8
+- name: Onda Cádiz
+  group: ES Regional & Local
+  tvg_id: OndaCadiz.es
+  tvg_name: Onda Cádiz
+  logo: https://i.imgur.com/sOBMnby.png
+  url: https://ondacadiztv.es:30443/octv/24h/playlist.m3u8
+- name: Onda Algeciras
+  group: ES Regional & Local
+  tvg_id: OndaAlgeciras.es
+  tvg_name: Onda Algeciras
+  logo: https://i.imgur.com/kUhFkVF.png
+  url: https://cloudtv.provideo.es/live/algecirastv-livestream.m3u8
+- name: Canal San Roque
+  group: ES Regional & Local
+  tvg_id: CanalSanRoque.es
+  tvg_name: Canal San Roque
+  logo: https://i.imgur.com/SN9kFKh.png
+  url: https://cdnlivevlc.codev8.net/aytosanroquelive/smil:channel1.smil/playlist.m3u8
+- name: Costa Noroeste TV
+  group: ES Regional & Local
+  tvg_id: CostaNoroesteTV.es
+  tvg_name: Costa Noroeste TV
+  logo: https://i.imgur.com/iM9AN6Z.png
+  url: https://limited31.todostreaming.es/live/noroestetv-livestream.m3u8
+- name: Diez TV Úbeda
+  group: ES Regional & Local
+  tvg_id: DiezTVUbeda.es
+  tvg_name: Diez TV Úbeda
+  logo: https://i.imgur.com/o2a7s4W.png
+  url: https://streaming.cloud.innovasur.es/mmj/index.m3u8
+- name: Interalmería TV
+  group: ES Regional & Local
+  tvg_id: InteralmeriaTV.es
+  tvg_name: Interalmería TV
+  logo: https://i.imgur.com/ulSkAjZ.png
+  url: https://interalmeria.tv/directo/live.m3u8
+- name: Estepona Televisión
+  group: ES Regional & Local
+  tvg_id: EsteponaTelevision.es
+  tvg_name: Estepona Televisión
+  logo: https://i.imgur.com/rMAB720.png
+  url: https://cloudvideo.servers10.com:8081/8022/index.m3u8
+- name: Empordà TV
+  group: ES Regional & Local
+  tvg_id: EmpordaTV.es
+  tvg_name: Empordà TV
+  logo: https://i.imgur.com/jc0lUbX.png
+  url: https://video3.lhdserver.es/empordatv2/live.m3u8
+- name: Canal 10 Empordà
+  group: ES Regional & Local
+  tvg_id: Canal10Emporda.es
+  tvg_name: Canal 10 Empordà
+  logo: https://i.imgur.com/ojQ6wzX.png
+  url: https://ventdelnord.tv:8080/escala/directe.m3u8
+- name: TV Reus
+  group: ES Regional & Local
+  tvg_id: TVReus.es
+  tvg_name: TV Reus
+  logo: https://i.imgur.com/Ee0C8UH.jpg
+  url: https://eu1.servers10.com:8081/8166/index.m3u8
+- name: Teleganes
+  group: ES Regional & Local
+  tvg_id: Teleganes.es
+  tvg_name: Teleganes
+  logo: https://i.imgur.com/BXyplMX.png
+  url: https://nlb2-live.emitstream.com/hls/5z6oj7ziwxzfnj78vg2m/master.m3u8
+- name: Canal 33 Madrid
+  group: ES Regional & Local
+  tvg_id: Canal33Madrid.es
+  tvg_name: Canal 33 Madrid
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Logo_Canal_33_Madrid_2025.jpg/960px-Logo_Canal_33_Madrid_2025.jpg
+  url: https://media2.streambrothers.com:1936/8140/8140/playlist.m3u8
+- name: Distrito TV (Madrid)
+  group: ES Regional & Local
+  tvg_id: DistritoTV.es
+  tvg_name: Distrito TV
+  logo: https://i.imgur.com/AqGIoIt.png
+  url: https://nlb2-live.emitstream.com/hls/3mn7wpcv7hbmxmdzaxap/master.m3u8
+- name: Fuerteventura TV
+  group: ES Regional & Local
+  tvg_id: FuerteventuraTV.es
+  tvg_name: Fuerteventura TV
+  logo: https://i.ibb.co/MpvjCzC/Fuerteventura-tv-service-webtv-488969d1-1.png
+  url: https://5c0956165db0b.streamlock.net/ftv/directo/.m3u8
+- name: Lancelot TV (Lanzarote)
+  group: ES Regional & Local
+  tvg_id: LancelotTV.es
+  tvg_name: Lancelot TV
+  logo: https://i.imgur.com/RlzVIJP.png
+  url: https://5c0956165db0b.streamlock.net:8090/directo/_definst_/lancelot.television/master.m3u8

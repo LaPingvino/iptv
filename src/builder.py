@@ -50,41 +50,42 @@ def load_channels(data_dir):
     return all_channels
 
 GROUP_BASE_CHNO = {
-    # 📺 Television (1 - 399)
+    # 📺 Television (1 - 499)
     "PT Geral": 1,
     "MZ Geral": 20,
     "Notícias": 30,
     "ES Geral & TDT": 60,
     "Galiza": 70,
     "Regional & Local": 80,
-    "Filmes & Docs": 110,
-    "Sci-Fi & Cult Retro": 130,
-    "Natureza & Slow TV": 145,
-    "Desporto": 155,
-    "Infantil & Kids": 165,
-    "Música & Video": 180,
-    "Cívico & Parlamento": 220,
-    "Religião": 235,
-    "Persa / Farsi": 250,
+    "ES Regional & Local": 110,
+    "Filmes & Docs": 150,
+    "Sci-Fi & Cult Retro": 170,
+    "Natureza & Slow TV": 185,
+    "Desporto": 195,
+    "Infantil & Kids": 205,
+    "Música & Video": 220,
+    "Cívico & Parlamento": 270,
+    "Religião": 285,
+    "Persa / Farsi": 295,
     
-    # 🎮 Gaming & Twitch Streams (300 - 374)
-    "Speedrunning & Marathons": 300,
-    "Mario & Romhacks": 315,
-    "Tetris": 330,
-    "Indie & Variety Gaming": 345,
-    "LaPingvino Favorites": 360,
+    # 🎮 Gaming & Twitch Streams (350 - 424)
+    "Speedrunning & Marathons": 350,
+    "Mario & Romhacks": 365,
+    "Tetris": 380,
+    "Indie & Variety Gaming": 395,
+    "LaPingvino Favorites": 410,
     
-    # 🧪 Diagnostics (375 - 399)
-    "Diag": 375,
+    # 🧪 Diagnostics (425 - 499)
+    "Diag": 425,
     
-    # 📻 Unified Radio Block (400 - 599)
-    "PT Rádio": 400,
-    "MZ Rádio": 420,
-    "ES Rádio": 440,
-    "NL Rádio": 450,
-    "BE Rádio": 500,
-    "Rádio Global": 520,
-    "Esperanto & Afrikaans Rádio": 580,
+    # 📻 Unified Radio Block (500 - 699)
+    "PT Rádio": 500,
+    "MZ Rádio": 520,
+    "ES Rádio": 540,
+    "NL Rádio": 550,
+    "BE Rádio": 600,
+    "Rádio Global": 620,
+    "Esperanto & Afrikaans Rádio": 680,
 }
 
 def assign_channel_numbers(channels):
