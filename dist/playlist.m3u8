@@ -200,14 +200,35 @@ https://takeoff.jetstre.am/?account=atvijf&file=live&output=playlist.m3u8&protoc
 #EXTINF:-1 tvg-id="NH.nl" tvg-name="NH Nieuws" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nhnieuws.png" group-title="Regional & Local" tvg-chno="95",NH Nieuws (Noord-Holland)
 https://takeoff.jetstre.am/?account=nhnieuws&file=live&output=playlist.m3u8&protocol=https&service=wowza&type=live
 
-#EXTINF:-1 tvg-id="RTLTeleLetzebuerg.lu@HD" tvg-name="RTL Tele Letzebuerg" group-title="Regional & Local" tvg-chno="96",RTL Télé Lëtzebuerg (1080p)
+#EXTINF:-1 tvg-id="StreekstadCentral.nl" tvg-name="Streekstad Centraal" tvg-logo="https://i.imgur.com/9gM6rPb.png" group-title="Regional & Local" tvg-chno="96",Streekstad Centraal (Noord-Holland)
+https://videostreams.streekstadcentraal.nl/hls/streekstad_alkmaar/streekstad_alkmaar.m3u8
+
+#EXTINF:-1 tvg-id="SleutelstadTV.nl" tvg-name="Sleutelstad TV" tvg-logo="https://i.imgur.com/ljVGMWV.png" group-title="Regional & Local" tvg-chno="97",Sleutelstad TV (Leiden)
+https://video-eu1.streamerr.co/hls/s7fdeb27a49/live.m3u8
+
+#EXTINF:-1 tvg-id="RTVWesterwolde.nl" tvg-name="RTV Westerwolde" tvg-logo="https://i.imgur.com/002YXP6.png" group-title="Regional & Local" tvg-chno="98",RTV Westerwolde (Groningen)
+https://media.rtvwesterwolde.nl/hls/live/index.m3u8
+
+#EXTINF:-1 tvg-id="A1TV.nl" tvg-name="A1 TV" tvg-logo="https://i.imgur.com/JZ1oTM2.png" group-title="Regional & Local" tvg-chno="99",A1 TV (Achterhoek)
+https://stream.a1mediagroep.nl/hls/a1tv.m3u8
+
+#EXTINF:-1 tvg-id="Radio350.nl" tvg-name="Radio 350" tvg-logo="https://i.imgur.com/3nkzXup.png" group-title="Regional & Local" tvg-chno="100",Radio 350 (Visual Radio)
+https://stream.radio350.nl/hls/radio350.m3u8
+
+#EXTINF:-1 tvg-id="RTLTeleLetzebuerg.lu@HD" tvg-name="RTL Tele Letzebuerg" group-title="Regional & Local" tvg-chno="101",RTL Télé Lëtzebuerg (1080p)
 https://stream.rtl.lu/live/hls/channel1/playlist.m3u8
 
-#EXTINF:-1 tvg-id="RTLZwee.lu@HD" tvg-name="RTL Zwee" group-title="Regional & Local" tvg-chno="97",RTL Zwee (Lëtzebuerg)
+#EXTINF:-1 tvg-id="RTLZwee.lu@HD" tvg-name="RTL Zwee" group-title="Regional & Local" tvg-chno="102",RTL Zwee (Lëtzebuerg)
 https://stream.rtl.lu/live/hls/channel2/playlist.m3u8
 
-#EXTINF:-1 tvg-id="WDRFernsehen.de@Koln" tvg-name="WDR Fernsehen" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/WDR_Fernsehen_Logo_2018.svg/960px-WDR_Fernsehen_Logo_2018.svg.png" group-title="Regional & Local" tvg-chno="98",WDR Fernsehen (HD • Köln / NRW)
+#EXTINF:-1 tvg-id="WDRFernsehen.de@Koln" tvg-name="WDR Fernsehen" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/WDR_Fernsehen_Logo_2018.svg/960px-WDR_Fernsehen_Logo_2018.svg.png" group-title="Regional & Local" tvg-chno="103",WDR Fernsehen (HD • Köln / NRW)
 https://kiefte.eu/iptv/wdr.m3u8
+
+#EXTINF:-1 tvg-id="Matele.be" tvg-name="Matele" tvg-logo="https://i.imgur.com/rw72POr.png" group-title="Regional & Local" tvg-chno="104",Matele (Wallonie)
+https://live.matele.be/hls/live.m3u8
+
+#EXTINF:-1 tvg-id="SheffieldLiveTV.uk" tvg-name="Sheffield Live TV" tvg-logo="https://i.imgur.com/p0QzCFs.png" group-title="Regional & Local" tvg-chno="105",Sheffield Live TV
+http://tv.sheffieldlive.org/hls/main.m3u8
 
 #EXTINF:-1 tvg-id="DasErste.de" tvg-name="Das Erste" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Das-Erste.png" group-title="Filmes & Docs" tvg-chno="110",Das Erste (ARD Germany)
 https://daserste-live.ard-mcdn.de/daserste/live/hls/int/master.m3u8

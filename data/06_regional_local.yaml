@@ -94,6 +94,36 @@
   tvg_name: NH Nieuws
   logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nhnieuws.png
   url: https://takeoff.jetstre.am/?account=nhnieuws&file=live&output=playlist.m3u8&protocol=https&service=wowza&type=live
+- name: Streekstad Centraal (Noord-Holland)
+  group: Regional & Local
+  tvg_id: StreekstadCentral.nl
+  tvg_name: Streekstad Centraal
+  logo: https://i.imgur.com/9gM6rPb.png
+  url: https://videostreams.streekstadcentraal.nl/hls/streekstad_alkmaar/streekstad_alkmaar.m3u8
+- name: Sleutelstad TV (Leiden)
+  group: Regional & Local
+  tvg_id: SleutelstadTV.nl
+  tvg_name: Sleutelstad TV
+  logo: https://i.imgur.com/ljVGMWV.png
+  url: https://video-eu1.streamerr.co/hls/s7fdeb27a49/live.m3u8
+- name: RTV Westerwolde (Groningen)
+  group: Regional & Local
+  tvg_id: RTVWesterwolde.nl
+  tvg_name: RTV Westerwolde
+  logo: https://i.imgur.com/002YXP6.png
+  url: https://media.rtvwesterwolde.nl/hls/live/index.m3u8
+- name: A1 TV (Achterhoek)
+  group: Regional & Local
+  tvg_id: A1TV.nl
+  tvg_name: A1 TV
+  logo: https://i.imgur.com/JZ1oTM2.png
+  url: https://stream.a1mediagroep.nl/hls/a1tv.m3u8
+- name: Radio 350 (Visual Radio)
+  group: Regional & Local
+  tvg_id: Radio350.nl
+  tvg_name: Radio 350
+  logo: https://i.imgur.com/3nkzXup.png
+  url: https://stream.radio350.nl/hls/radio350.m3u8
 - name: RTL Télé Lëtzebuerg (1080p)
   group: Regional & Local
   tvg_id: RTLTeleLetzebuerg.lu@HD
@@ -110,4 +140,15 @@
   tvg_name: WDR Fernsehen
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/WDR_Fernsehen_Logo_2018.svg/960px-WDR_Fernsehen_Logo_2018.svg.png
   url: https://kiefte.eu/iptv/wdr.m3u8
-
+- name: Matele (Wallonie)
+  group: Regional & Local
+  tvg_id: Matele.be
+  tvg_name: Matele
+  logo: https://i.imgur.com/rw72POr.png
+  url: https://live.matele.be/hls/live.m3u8
+- name: Sheffield Live TV
+  group: Regional & Local
+  tvg_id: SheffieldLiveTV.uk
+  tvg_name: Sheffield Live TV
+  logo: https://i.imgur.com/p0QzCFs.png
+  url: http://tv.sheffieldlive.org/hls/main.m3u8
