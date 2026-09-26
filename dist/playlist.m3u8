@@ -1248,28 +1248,28 @@ https://media-ice.musicradio.com/ClassicFMCalmMP3
 #EXTINF:-1 tvg-id="RadioSwissClassic.ch" tvg-name="Radio Swiss Classic" tvg-logo="https://www.radioswissclassic.ch/social-media/rsc-web.png" group-title="Rádio Global" tvg-chno="658" radio="true",Radio Swiss Classic (Ad-Free)
 http://stream.srg-ssr.ch/m/rsc_de/mp3_128
 
-#EXTINF:-1 tvg-id="Muzaiko.eo" tvg-name="Muzaiko Esperanto" group-title="Rádio Global" tvg-chno="659" radio="true",Muzaiko (24/7 Esperanto Radio)
-http://fluo.muzaiko.saluton.dk:8000/radio.mp3
-
-#EXTINF:-1 tvg-id="RadioHabanaCuba.eo" tvg-name="Radio Habana Cuba Esperanto" group-title="Rádio Global" tvg-chno="660" radio="true",Radio Habana Cuba (Esperanto)
-https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/McW3fLhs
-
-#EXTINF:-1 tvg-id="BokRadio.za" tvg-name="Bok Radio Afrikaans" group-title="Rádio Global" tvg-chno="661" radio="true",Bok Radio 98.9 FM (Afrikaans)
-http://bokradio.highquality.radiostream.co.za/
-
-#EXTINF:-1 tvg-id="BosveldStereo.za" tvg-name="Bosveld Stereo Afrikaans" group-title="Rádio Global" tvg-chno="662" radio="true",Bosveld Stereo 107.5 FM (Afrikaans)
-http://capeant.antfarm.co.za:8000/Bosveld
-
-#EXTINF:-1 tvg-id="FineMusicRadio.za" tvg-name="Fine Music Radio" group-title="Rádio Global" tvg-chno="663" radio="true",Fine Music Radio (Cape Town Classical)
+#EXTINF:-1 tvg-id="FineMusicRadio.za" tvg-name="Fine Music Radio" group-title="Rádio Global" tvg-chno="659" radio="true",Fine Music Radio (Cape Town Classical)
 https://edge.iono.fm/xhls/fmr_live_high.m3u8
 
-#EXTINF:-1 tvg-id="Radio3ZZZ.au" tvg-name="Radio 3ZZZ Esperanto" group-title="Rádio Global" tvg-chno="664" radio="true",Radio 3ZZZ 92.3 FM (Melbourne / Esperanto)
-https://playerservices.streamtheworld.com/api/livestream-redirect/3ZZZ.mp3
-
-#EXTINF:-1 tvg-id="HitradioNamibia.na" tvg-name="Hitradio Namibia" group-title="Rádio Global" tvg-chno="665" radio="true",Hitradio Namibia (Windhoek / Deutsch)
+#EXTINF:-1 tvg-id="HitradioNamibia.na" tvg-name="Hitradio Namibia" group-title="Rádio Global" tvg-chno="660" radio="true",Hitradio Namibia (Windhoek / Deutsch)
 https://s37.derstream.net/hitradio-namibia.mp3
 
-#EXTINF:-1 tvg-id="Kosmos941.na" tvg-name="Kosmos 94.1 Afrikaans" group-title="Rádio Global" tvg-chno="666" radio="true",Kosmos 94.1 (Namibië / Afrikaans)
+#EXTINF:-1 tvg-id="Muzaiko.eo" tvg-name="Muzaiko Esperanto" group-title="Esperanto & Afrikaans Rádio" tvg-chno="680" radio="true",Muzaiko (24/7 Esperanto Radio)
+http://fluo.muzaiko.saluton.dk:8000/radio.mp3
+
+#EXTINF:-1 tvg-id="RadioHabanaCuba.eo" tvg-name="Radio Habana Cuba Esperanto" group-title="Esperanto & Afrikaans Rádio" tvg-chno="681" radio="true",Radio Habana Cuba (Esperanto)
+https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/McW3fLhs
+
+#EXTINF:-1 tvg-id="BokRadio.za" tvg-name="Bok Radio Afrikaans" group-title="Esperanto & Afrikaans Rádio" tvg-chno="682" radio="true",Bok Radio 98.9 FM (Afrikaans)
+http://bokradio.highquality.radiostream.co.za/
+
+#EXTINF:-1 tvg-id="BosveldStereo.za" tvg-name="Bosveld Stereo Afrikaans" group-title="Esperanto & Afrikaans Rádio" tvg-chno="683" radio="true",Bosveld Stereo 107.5 FM (Afrikaans)
+http://capeant.antfarm.co.za:8000/Bosveld
+
+#EXTINF:-1 tvg-id="Radio3ZZZ.au" tvg-name="Radio 3ZZZ Esperanto" group-title="Esperanto & Afrikaans Rádio" tvg-chno="684" radio="true",Radio 3ZZZ 92.3 FM (Melbourne / Esperanto)
+https://playerservices.streamtheworld.com/api/livestream-redirect/3ZZZ.mp3
+
+#EXTINF:-1 tvg-id="Kosmos941.na" tvg-name="Kosmos 94.1 Afrikaans" group-title="Esperanto & Afrikaans Rádio" tvg-chno="685" radio="true",Kosmos 94.1 (Namibië / Afrikaans)
 https://edge.iono.fm/xice/88_high.mp3
 
 #EXTINF:-1 tvg-id="HEVC10Bit.ref@HD" tvg-name="HEVC 10-Bit Reference" group-title="Diag" tvg-chno="900",HEVC / H.265 10-Bit Reference Ladder

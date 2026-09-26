@@ -1,20 +1,20 @@
 - name: Muzaiko (24/7 Esperanto Radio)
-  group: Rádio Global
+  group: Esperanto & Afrikaans Rádio
   tvg_id: Muzaiko.eo
   tvg_name: Muzaiko Esperanto
   url: http://fluo.muzaiko.saluton.dk:8000/radio.mp3
 - name: Radio Habana Cuba (Esperanto)
-  group: Rádio Global
+  group: Esperanto & Afrikaans Rádio
   tvg_id: RadioHabanaCuba.eo
   tvg_name: Radio Habana Cuba Esperanto
   url: https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/McW3fLhs
 - name: Bok Radio 98.9 FM (Afrikaans)
-  group: Rádio Global
+  group: Esperanto & Afrikaans Rádio
   tvg_id: BokRadio.za
   tvg_name: Bok Radio Afrikaans
   url: http://bokradio.highquality.radiostream.co.za/
 - name: Bosveld Stereo 107.5 FM (Afrikaans)
-  group: Rádio Global
+  group: Esperanto & Afrikaans Rádio
   tvg_id: BosveldStereo.za
   tvg_name: Bosveld Stereo Afrikaans
   url: http://capeant.antfarm.co.za:8000/Bosveld
@@ -24,7 +24,7 @@
   tvg_name: Fine Music Radio
   url: https://edge.iono.fm/xhls/fmr_live_high.m3u8
 - name: Radio 3ZZZ 92.3 FM (Melbourne / Esperanto)
-  group: Rádio Global
+  group: Esperanto & Afrikaans Rádio
   tvg_id: Radio3ZZZ.au
   tvg_name: Radio 3ZZZ Esperanto
   url: https://playerservices.streamtheworld.com/api/livestream-redirect/3ZZZ.mp3
@@ -34,7 +34,7 @@
   tvg_name: Hitradio Namibia
   url: https://s37.derstream.net/hitradio-namibia.mp3
 - name: Kosmos 94.1 (Namibië / Afrikaans)
-  group: Rádio Global
+  group: Esperanto & Afrikaans Rádio
   tvg_id: Kosmos941.na
   tvg_name: Kosmos 94.1 Afrikaans
   url: https://edge.iono.fm/xice/88_high.mp3

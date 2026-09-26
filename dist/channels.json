@@ -3673,58 +3673,13 @@
     "radio": true
   },
   {
-    "name": "Muzaiko (24/7 Esperanto Radio)",
-    "group": "Rádio Global",
-    "tvg_id": "Muzaiko.eo",
-    "tvg_name": "Muzaiko Esperanto",
-    "logo": "",
-    "url": "http://fluo.muzaiko.saluton.dk:8000/radio.mp3",
-    "chno": 659
-  },
-  {
-    "name": "Radio Habana Cuba (Esperanto)",
-    "group": "Rádio Global",
-    "tvg_id": "RadioHabanaCuba.eo",
-    "tvg_name": "Radio Habana Cuba Esperanto",
-    "logo": "",
-    "url": "https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/McW3fLhs",
-    "chno": 660
-  },
-  {
-    "name": "Bok Radio 98.9 FM (Afrikaans)",
-    "group": "Rádio Global",
-    "tvg_id": "BokRadio.za",
-    "tvg_name": "Bok Radio Afrikaans",
-    "logo": "",
-    "url": "http://bokradio.highquality.radiostream.co.za/",
-    "chno": 661
-  },
-  {
-    "name": "Bosveld Stereo 107.5 FM (Afrikaans)",
-    "group": "Rádio Global",
-    "tvg_id": "BosveldStereo.za",
-    "tvg_name": "Bosveld Stereo Afrikaans",
-    "logo": "",
-    "url": "http://capeant.antfarm.co.za:8000/Bosveld",
-    "chno": 662
-  },
-  {
     "name": "Fine Music Radio (Cape Town Classical)",
     "group": "Rádio Global",
     "tvg_id": "FineMusicRadio.za",
     "tvg_name": "Fine Music Radio",
     "logo": "",
     "url": "https://edge.iono.fm/xhls/fmr_live_high.m3u8",
-    "chno": 663
-  },
-  {
-    "name": "Radio 3ZZZ 92.3 FM (Melbourne / Esperanto)",
-    "group": "Rádio Global",
-    "tvg_id": "Radio3ZZZ.au",
-    "tvg_name": "Radio 3ZZZ Esperanto",
-    "logo": "",
-    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/3ZZZ.mp3",
-    "chno": 664
+    "chno": 659
   },
   {
     "name": "Hitradio Namibia (Windhoek / Deutsch)",
@@ -3733,16 +3688,61 @@
     "tvg_name": "Hitradio Namibia",
     "logo": "",
     "url": "https://s37.derstream.net/hitradio-namibia.mp3",
-    "chno": 665
+    "chno": 660
+  },
+  {
+    "name": "Muzaiko (24/7 Esperanto Radio)",
+    "group": "Esperanto \u0026 Afrikaans Rádio",
+    "tvg_id": "Muzaiko.eo",
+    "tvg_name": "Muzaiko Esperanto",
+    "logo": "",
+    "url": "http://fluo.muzaiko.saluton.dk:8000/radio.mp3",
+    "chno": 680
+  },
+  {
+    "name": "Radio Habana Cuba (Esperanto)",
+    "group": "Esperanto \u0026 Afrikaans Rádio",
+    "tvg_id": "RadioHabanaCuba.eo",
+    "tvg_name": "Radio Habana Cuba Esperanto",
+    "logo": "",
+    "url": "https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/McW3fLhs",
+    "chno": 681
+  },
+  {
+    "name": "Bok Radio 98.9 FM (Afrikaans)",
+    "group": "Esperanto \u0026 Afrikaans Rádio",
+    "tvg_id": "BokRadio.za",
+    "tvg_name": "Bok Radio Afrikaans",
+    "logo": "",
+    "url": "http://bokradio.highquality.radiostream.co.za/",
+    "chno": 682
+  },
+  {
+    "name": "Bosveld Stereo 107.5 FM (Afrikaans)",
+    "group": "Esperanto \u0026 Afrikaans Rádio",
+    "tvg_id": "BosveldStereo.za",
+    "tvg_name": "Bosveld Stereo Afrikaans",
+    "logo": "",
+    "url": "http://capeant.antfarm.co.za:8000/Bosveld",
+    "chno": 683
+  },
+  {
+    "name": "Radio 3ZZZ 92.3 FM (Melbourne / Esperanto)",
+    "group": "Esperanto \u0026 Afrikaans Rádio",
+    "tvg_id": "Radio3ZZZ.au",
+    "tvg_name": "Radio 3ZZZ Esperanto",
+    "logo": "",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/3ZZZ.mp3",
+    "chno": 684
   },
   {
     "name": "Kosmos 94.1 (Namibië / Afrikaans)",
-    "group": "Rádio Global",
+    "group": "Esperanto \u0026 Afrikaans Rádio",
     "tvg_id": "Kosmos941.na",
     "tvg_name": "Kosmos 94.1 Afrikaans",
     "logo": "",
     "url": "https://edge.iono.fm/xice/88_high.mp3",
-    "chno": 666
+    "chno": 685
   },
   {
     "name": "HEVC / H.265 10-Bit Reference Ladder",
