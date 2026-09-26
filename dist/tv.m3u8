@@ -719,3 +719,33 @@ https://virtual-channel.unified-streaming.com/demo_channel-stable.isml/.mpd
 
 #EXTINF:-1 tvg-id="AkamaiBBBDASH.ref" tvg-name="Akamai BBB DASH" group-title="Diag" tvg-chno="353",Akamai • Big Buck Bunny Adaptive Bitrate Ladder (240p - 1080p)
 https://dash.akamaized.net/akamai/bbb_30fps/bbb_30fps.mpd
+
+#EXTINF:-1 tvg-id="PMC.ae" tvg-name="PMC (Persian Music Channel)" tvg-logo="https://i.imgur.com/AbrHI7K.png" group-title="Persa / Farsi" tvg-chno="370",PMC (Persian Music Channel)
+https://pmchls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="PMCRoyale.ae" tvg-name="PMC Royale" group-title="Persa / Farsi" tvg-chno="371",PMC Royale
+https://pmcrohls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="RJTV.us" tvg-name="RJTV" tvg-logo="https://i.imgur.com/a1zuW2C.png" group-title="Persa / Farsi" tvg-chno="372",RJTV
+https://rjtvhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="PersianaFolk.fr" tvg-name="Persiana Folk" group-title="Persa / Farsi" tvg-chno="373",Persiana Folk
+https://sonhls.persiana.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="PersianaNostalgia.fr" tvg-name="Persiana Nostalgia" tvg-logo="https://i.imgur.com/SWO9CKA.png" group-title="Persa / Farsi" tvg-chno="374",Persiana Nostalgia
+https://noshls.persiana.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="PersianaTravel.fr" tvg-name="Persiana Travel" group-title="Persa / Farsi" tvg-chno="375",Persiana Travel
+https://ptravelhls.persiana.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="PersianaDocs.fr" tvg-name="Persiana Docs" group-title="Persa / Farsi" tvg-chno="376",Persiana Docs
+https://scihls.persiana.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="PersianaFamily.fr" tvg-name="Persiana Family" tvg-logo="https://i.imgur.com/lMZsuWi.png" group-title="Persa / Farsi" tvg-chno="377",Persiana Family
+https://familyhls.persiana.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="PersianaJunior.fr" tvg-name="Persiana Junior" tvg-logo="https://i.imgur.com/zeKHZYG.png" group-title="Persa / Farsi" tvg-chno="378",Persiana Junior
+https://junhls.persiana.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="IranJewishTV.ir" tvg-name="Iran Jewish TV" tvg-logo="https://i.ibb.co/JWXs7csN/en.png" group-title="Persa / Farsi" tvg-chno="379",Iran Jewish TV
+http://iran620.com:1935/live/IranJewishTv/playlist.m3u8
