@@ -227,6 +227,9 @@ https://kiefte.eu/iptv/wdr.m3u8
 #EXTINF:-1 tvg-id="SheffieldLiveTV.uk" tvg-name="Sheffield Live TV" tvg-logo="https://i.imgur.com/p0QzCFs.png" group-title="Regional & Local" tvg-chno="104",Sheffield Live TV
 http://tv.sheffieldlive.org/hls/main.m3u8
 
+#EXTINF:-1 tvg-id="Famatv.pt" tvg-name="Fama TV" tvg-logo="https://i.ibb.co/tMmRp18/Fama-TV-cor-whitebg-hotizontal.jpg" group-title="Regional & Local" tvg-chno="105",Fama TV (Famalicão)
+https://tv2.fastcast4u.com:3310/live/famatvlive.m3u8
+
 #EXTINF:-1 tvg-id="DasErste.de" tvg-name="Das Erste" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Das-Erste.png" group-title="Filmes & Docs" tvg-chno="110",Das Erste (ARD Germany)
 https://daserste-live.ard-mcdn.de/daserste/live/hls/int/master.m3u8
 
@@ -449,6 +452,24 @@ https://streammix.alsolnet.com/hyperadio/live/playlist.m3u8
 #EXTINF:-1 tvg-id="Radio350.nl" tvg-name="Radio 350" tvg-logo="https://i.imgur.com/3nkzXup.png" group-title="Música & Video" tvg-chno="210",Radio 350 (Visual Radio)
 https://stream.radio350.nl/hls/radio350.m3u8
 
+#EXTINF:-1 tvg-id="PMC.ae" tvg-name="PMC (Persian Music Channel)" tvg-logo="https://i.imgur.com/AbrHI7K.png" group-title="Música & Video" tvg-chno="211",PMC (Persian Music Channel)
+https://pmchls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="PMCRoyale.ae" tvg-name="PMC Royale" group-title="Música & Video" tvg-chno="212",PMC Royale
+https://pmcrohls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="RJTV.us" tvg-name="RJTV" tvg-logo="https://i.imgur.com/a1zuW2C.png" group-title="Música & Video" tvg-chno="213",RJTV
+https://rjtvhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="PersianaFolk.fr" tvg-name="Persiana Folk" group-title="Música & Video" tvg-chno="214",Persiana Folk
+https://sonhls.persiana.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="ONFM.pt" tvg-name="ON FM" tvg-logo="https://onfmwordpressfiles.ams3.digitaloceanspaces.com/wp-content/uploads/2023/03/17130121/logo-on-fm.png" group-title="Música & Video" tvg-chno="215",ON FM (Visual Radio)
+https://5ce9406b73c33.streamlock.net/ONFM/livestream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="RadioSines.pt" tvg-name="Rádio Sines" tvg-logo="https://i.imgur.com/Oe6F1nL.png" group-title="Música & Video" tvg-chno="216",Rádio Sines (Visual Radio)
+https://load-balancer.azotosolutions.com/cdnedge19/smil:live19.smil/playlist.m3u8
+
 #EXTINF:-1 tvg-id="ARTV.pt" tvg-name="ARTV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/AR-TV.png" group-title="Cívico & Parlamento" tvg-chno="220",ARTV (Canal Parlamento PT)
 #EXTVLCOPT:http-user-agent="Mozilla/5.0"
 https://playout175.livextend.cloud/livenlin4/_definst_/2liveartvpub2/playlist.m3u8
@@ -491,6 +512,27 @@ https://5c65286fc6ace.streamlock.net/cancaonova/CancaoNova.stream_720p/playlist.
 
 #EXTINF:-1 tvg-id="BahaiStudioSessions.tv@HD" tvg-name="Bahá'í Studio Sessions TV" group-title="Religião" tvg-chno="240",Bahá'í Studio Sessions TV (24/7 Devotional Music)
 https://kiefte.eu/iptv/bahai/tv
+
+#EXTINF:-1 tvg-id="IranJewishTV.ir" tvg-name="Iran Jewish TV" tvg-logo="https://i.ibb.co/JWXs7csN/en.png" group-title="Religião" tvg-chno="241",Iran Jewish TV
+http://iran620.com:1935/live/IranJewishTv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="ADBTV.pt" tvg-name="ADB TV" tvg-logo="https://i.ibb.co/HGfTJwt/ADBTV.jpg" group-title="Religião" tvg-chno="242",ADB TV
+https://live-tv.waytv.pt/adbtv/adbtv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="PersianaNostalgia.fr" tvg-name="Persiana Nostalgia" tvg-logo="https://i.imgur.com/SWO9CKA.png" group-title="Persa / Farsi" tvg-chno="243",Persiana Nostalgia
+https://noshls.persiana.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="PersianaTravel.fr" tvg-name="Persiana Travel" group-title="Persa / Farsi" tvg-chno="244",Persiana Travel
+https://ptravelhls.persiana.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="PersianaDocs.fr" tvg-name="Persiana Docs" group-title="Persa / Farsi" tvg-chno="245",Persiana Docs
+https://scihls.persiana.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="PersianaFamily.fr" tvg-name="Persiana Family" tvg-logo="https://i.imgur.com/lMZsuWi.png" group-title="Persa / Farsi" tvg-chno="246",Persiana Family
+https://familyhls.persiana.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="PersianaJunior.fr" tvg-name="Persiana Junior" tvg-logo="https://i.imgur.com/zeKHZYG.png" group-title="Persa / Farsi" tvg-chno="247",Persiana Junior
+https://junhls.persiana.live/hls/stream.m3u8
 
 #EXTINF:-1 tvg-id="Speedrun.tv" tvg-name="Speedrun" group-title="Speedrunning & Marathons" tvg-chno="250",Speedrun (24/7 Speedrun.com)
 https://kiefte.eu/iptv/twitch/speedrun
@@ -719,33 +761,3 @@ https://virtual-channel.unified-streaming.com/demo_channel-stable.isml/.mpd
 
 #EXTINF:-1 tvg-id="AkamaiBBBDASH.ref" tvg-name="Akamai BBB DASH" group-title="Diag" tvg-chno="353",Akamai • Big Buck Bunny Adaptive Bitrate Ladder (240p - 1080p)
 https://dash.akamaized.net/akamai/bbb_30fps/bbb_30fps.mpd
-
-#EXTINF:-1 tvg-id="PMC.ae" tvg-name="PMC (Persian Music Channel)" tvg-logo="https://i.imgur.com/AbrHI7K.png" group-title="Persa / Farsi" tvg-chno="370",PMC (Persian Music Channel)
-https://pmchls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 tvg-id="PMCRoyale.ae" tvg-name="PMC Royale" group-title="Persa / Farsi" tvg-chno="371",PMC Royale
-https://pmcrohls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 tvg-id="RJTV.us" tvg-name="RJTV" tvg-logo="https://i.imgur.com/a1zuW2C.png" group-title="Persa / Farsi" tvg-chno="372",RJTV
-https://rjtvhls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 tvg-id="PersianaFolk.fr" tvg-name="Persiana Folk" group-title="Persa / Farsi" tvg-chno="373",Persiana Folk
-https://sonhls.persiana.live/hls/stream.m3u8
-
-#EXTINF:-1 tvg-id="PersianaNostalgia.fr" tvg-name="Persiana Nostalgia" tvg-logo="https://i.imgur.com/SWO9CKA.png" group-title="Persa / Farsi" tvg-chno="374",Persiana Nostalgia
-https://noshls.persiana.live/hls/stream.m3u8
-
-#EXTINF:-1 tvg-id="PersianaTravel.fr" tvg-name="Persiana Travel" group-title="Persa / Farsi" tvg-chno="375",Persiana Travel
-https://ptravelhls.persiana.live/hls/stream.m3u8
-
-#EXTINF:-1 tvg-id="PersianaDocs.fr" tvg-name="Persiana Docs" group-title="Persa / Farsi" tvg-chno="376",Persiana Docs
-https://scihls.persiana.live/hls/stream.m3u8
-
-#EXTINF:-1 tvg-id="PersianaFamily.fr" tvg-name="Persiana Family" tvg-logo="https://i.imgur.com/lMZsuWi.png" group-title="Persa / Farsi" tvg-chno="377",Persiana Family
-https://familyhls.persiana.live/hls/stream.m3u8
-
-#EXTINF:-1 tvg-id="PersianaJunior.fr" tvg-name="Persiana Junior" tvg-logo="https://i.imgur.com/zeKHZYG.png" group-title="Persa / Farsi" tvg-chno="378",Persiana Junior
-https://junhls.persiana.live/hls/stream.m3u8
-
-#EXTINF:-1 tvg-id="IranJewishTV.ir" tvg-name="Iran Jewish TV" tvg-logo="https://i.ibb.co/JWXs7csN/en.png" group-title="Persa / Farsi" tvg-chno="379",Iran Jewish TV
-http://iran620.com:1935/live/IranJewishTv/playlist.m3u8

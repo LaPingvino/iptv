@@ -33,4 +33,15 @@
   tvg_id: BahaiStudioSessions.tv@HD
   tvg_name: "Bahá'í Studio Sessions TV"
   url: https://kiefte.eu/iptv/bahai/tv
-
+- name: Iran Jewish TV
+  group: Religião
+  tvg_id: IranJewishTV.ir
+  tvg_name: Iran Jewish TV
+  logo: https://i.ibb.co/JWXs7csN/en.png
+  url: http://iran620.com:1935/live/IranJewishTv/playlist.m3u8
+- name: ADB TV
+  group: Religião
+  tvg_id: ADBTV.pt
+  tvg_name: ADB TV
+  logo: https://i.ibb.co/HGfTJwt/ADBTV.jpg
+  url: https://live-tv.waytv.pt/adbtv/adbtv/playlist.m3u8

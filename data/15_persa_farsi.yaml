@@ -1,25 +1,3 @@
-- name: PMC (Persian Music Channel)
-  group: Persa / Farsi
-  tvg_id: PMC.ae
-  tvg_name: PMC (Persian Music Channel)
-  logo: https://i.imgur.com/AbrHI7K.png
-  url: https://pmchls.wns.live/hls/stream.m3u8
-- name: PMC Royale
-  group: Persa / Farsi
-  tvg_id: PMCRoyale.ae
-  tvg_name: PMC Royale
-  url: https://pmcrohls.wns.live/hls/stream.m3u8
-- name: RJTV
-  group: Persa / Farsi
-  tvg_id: RJTV.us
-  tvg_name: RJTV
-  logo: https://i.imgur.com/a1zuW2C.png
-  url: https://rjtvhls.wns.live/hls/stream.m3u8
-- name: Persiana Folk
-  group: Persa / Farsi
-  tvg_id: PersianaFolk.fr
-  tvg_name: Persiana Folk
-  url: https://sonhls.persiana.live/hls/stream.m3u8
 - name: Persiana Nostalgia
   group: Persa / Farsi
   tvg_id: PersianaNostalgia.fr
@@ -48,9 +26,3 @@
   tvg_name: Persiana Junior
   logo: https://i.imgur.com/zeKHZYG.png
   url: https://junhls.persiana.live/hls/stream.m3u8
-- name: Iran Jewish TV
-  group: Persa / Farsi
-  tvg_id: IranJewishTV.ir
-  tvg_name: Iran Jewish TV
-  logo: https://i.ibb.co/JWXs7csN/en.png
-  url: http://iran620.com:1935/live/IranJewishTv/playlist.m3u8

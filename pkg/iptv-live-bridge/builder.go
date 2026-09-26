@@ -51,7 +51,7 @@ var groupBaseChNo = map[string]int{
 	"Música & Video":              180,
 	"Cívico & Parlamento":         220,
 	"Religião":                    235,
-	"Persa / Farsi":               370,
+	"Persa / Farsi":               243,
 	"Speedrunning & Marathons":    250,
 	"Mario & Romhacks":            265,
 	"Tetris":                      285,

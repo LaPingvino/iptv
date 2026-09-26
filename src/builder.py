@@ -65,7 +65,7 @@ GROUP_BASE_CHNO = {
     "Música & Video": 180,
     "Cívico & Parlamento": 220,
     "Religião": 235,
-    "Persa / Farsi": 370,
+    "Persa / Farsi": 243,
     
     # 🎮 Gaming & Twitch Streams (250 - 339)
     "Speedrunning & Marathons": 250,
