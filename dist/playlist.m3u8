@@ -816,6 +816,9 @@ https://tsfdirecto.tsf.pt/tsfdirecto.mp3
 #EXTINF:-1 tvg-id="RUC.pt" tvg-name="Rádio Universitária de Coimbra" tvg-logo="https://bucket-backblaze.ruc.pt/file/bucket-ruc-pt/wp-content/uploads/2021/02/15233926/Logo-RUC-2020_assinaturas_Prancheta-1-copia.png" group-title="PT Rádio" tvg-chno="415" radio="true",RUC - Rádio Universidade de Coimbra
 https://stream.ruc.pt/high
 
+#EXTINF:-1 tvg-id="ONFMRadio.pt" tvg-name="ON FM" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/On-FM.png" group-title="PT Rádio" tvg-chno="416" radio="true",ON FM 93.8 (Torres Vedras)
+https://cast1.lunabroadcasting.net/listen/onfm/stream
+
 #EXTINF:-1 tvg-id="RMAntenaNacional.mz" tvg-name="RM Antena Nacional" group-title="MZ Rádio" tvg-chno="420" radio="true",Rádio Moçambique - Antena Nacional
 http://node.stream-africa.com:8000/AntenaNacional
 

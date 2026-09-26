@@ -2368,6 +2368,15 @@
     "chno": 415
   },
   {
+    "name": "ON FM 93.8 (Torres Vedras)",
+    "group": "PT Rádio",
+    "tvg_id": "ONFMRadio.pt",
+    "tvg_name": "ON FM",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/On-FM.png",
+    "url": "https://cast1.lunabroadcasting.net/listen/onfm/stream",
+    "chno": 416
+  },
+  {
     "name": "Rádio Moçambique - Antena Nacional",
     "group": "MZ Rádio",
     "tvg_id": "RMAntenaNacional.mz",

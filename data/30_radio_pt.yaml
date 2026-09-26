@@ -94,3 +94,9 @@
   tvg_name: Rádio Universitária de Coimbra
   logo: https://bucket-backblaze.ruc.pt/file/bucket-ruc-pt/wp-content/uploads/2021/02/15233926/Logo-RUC-2020_assinaturas_Prancheta-1-copia.png
   url: https://stream.ruc.pt/high
+- name: ON FM 93.8 (Torres Vedras)
+  group: PT Rádio
+  tvg_id: ONFMRadio.pt
+  tvg_name: ON FM
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/On-FM.png
+  url: https://cast1.lunabroadcasting.net/listen/onfm/stream
