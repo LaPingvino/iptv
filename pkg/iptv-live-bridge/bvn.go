@@ -331,9 +331,8 @@ func (e *BVNEngine) startWorker() {
 	e.running = true
 	e.recentChunks = nil
 
-	e.mu.Lock()
+	// Caller (Subscribe) already holds e.mu; locking again here deadlocks.
 	targetAddr := e.listenAddr
-	e.mu.Unlock()
 
 	if targetAddr == "" {
 		targetAddr = ListenAddr
@@ -426,7 +425,11 @@ func (e *BVNEngine) startWorker() {
 				if n > 0 {
 					chunk := make([]byte, n)
 					copy(chunk, buf[:n])
-					dataChan <- chunk
+					select {
+					case dataChan <- chunk:
+					case <-ctx.Done():
+						return
+					}
 				}
 				if err != nil {
 					close(dataChan)

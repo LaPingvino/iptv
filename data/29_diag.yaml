@@ -39,11 +39,11 @@
   tvg_name: HDR Smooth Switch (30s)
   url: https://kiefte.eu/iptv/test/hdr-smooth
 
-- name: "BVN • Legacy MPEG-TS Stream (Bridge Fallback Test)"
+- name: "BVN • Raw Encrypted DASH (Widevine, needs player-side key)"
   group: Diag
-  tvg_id: BVNLegacyTS.ref
-  tvg_name: BVN Legacy TS
-  url: https://kiefte.eu/iptv/bvn.ts
+  tvg_id: BVNRawDASH.ref
+  tvg_name: BVN Raw DASH
+  url: https://kiefte.eu/iptv/bvn.mpd
 
 - name: "DASH-IF • Live Wall-Clock Test Picture (2s Segments)"
   group: Diag
