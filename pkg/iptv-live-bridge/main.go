@@ -207,7 +207,7 @@ func main() {
 			json.NewEncoder(w).Encode(map[string]any{
 				"status":    "ok",
 				"service":   "iptv-live-bridge",
-				"version":   "4.4.7",
+				"version":   "4.4.8",
 				"runtime":   "go",
 				"timestamp": time.Now().Format(time.RFC3339),
 			})
@@ -1284,7 +1284,7 @@ func serveNowDashboard(w http.ResponseWriter, r *http.Request) {
     </div>
   </header>
 
-  <h2 class="section-title">⭐ LaPingvino Favorites (Top 10 Live Follows • Ch. 460–469)</h2>
+  <h2 class="section-title">⭐ LaPingvino Favorites (Top 10 Live Follows • Ch. 461–470)</h2>
   <div class="grid" id="favorites-grid">
     <p style="color:var(--subtext);">Loading live follows...</p>
   </div>

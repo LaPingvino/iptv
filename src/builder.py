@@ -73,7 +73,7 @@ GROUP_BASE_CHNO = {
     "Mario & Romhacks": 415,
     "Tetris": 430,
     "Indie & Variety Gaming": 445,
-    "LaPingvino Favorites": 460,
+    "LaPingvino Favorites": 461,
     
     # 🧪 Diagnostics (900+)
     "Diag": 900,

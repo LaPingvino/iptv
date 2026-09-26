@@ -57,7 +57,7 @@ var groupBaseChNo = map[string]int{
 	"Mario & Romhacks":            415,
 	"Tetris":                      430,
 	"Indie & Variety Gaming":      445,
-	"LaPingvino Favorites":        460,
+	"LaPingvino Favorites":        461,
 	"Diag":                        900,
 	"PT Rádio":                    500,
 	"MZ Rádio":                    520,
