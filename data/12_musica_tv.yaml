@@ -219,3 +219,21 @@
   tvg_name: Rádio Sines
   logo: https://i.imgur.com/Oe6F1nL.png
   url: https://load-balancer.azotosolutions.com/cdnedge19/smil:live19.smil/playlist.m3u8
+- name: Kuriakos Music
+  group: Música & Video
+  tvg_id: KuriakosMusic.pt
+  tvg_name: Kuriakos Music
+  logo: https://i.imgur.com/Zl40NYi.jpg
+  url: https://w2.manasat.com/kmusic/kmusic.smil/playlist.m3u8
+- name: RFPtv (Rádio do Folclore de Portugal)
+  group: Música & Video
+  tvg_id: RFPtv.pt
+  tvg_name: RFPtv
+  logo: https://i.imgur.com/I60nQuR.png
+  url: https://video03.logicahost.com.br/rfptv/rfptv/playlist.m3u8
+- name: NPC Rádio e TV (Visual Radio)
+  group: Música & Video
+  tvg_id: NPCRadioeTV.pt
+  tvg_name: NPC Rádio e TV
+  logo: https://i.imgur.com/mw1lYWE.png
+  url: https://stmv5.samcast.com.br/nasciparacantartv/nasciparacantartv/playlist.m3u8

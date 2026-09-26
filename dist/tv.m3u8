@@ -470,6 +470,15 @@ https://5ce9406b73c33.streamlock.net/ONFM/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioSines.pt" tvg-name="Rádio Sines" tvg-logo="https://i.imgur.com/Oe6F1nL.png" group-title="Música & Video" tvg-chno="216",Rádio Sines (Visual Radio)
 https://load-balancer.azotosolutions.com/cdnedge19/smil:live19.smil/playlist.m3u8
 
+#EXTINF:-1 tvg-id="KuriakosMusic.pt" tvg-name="Kuriakos Music" tvg-logo="https://i.imgur.com/Zl40NYi.jpg" group-title="Música & Video" tvg-chno="217",Kuriakos Music
+https://w2.manasat.com/kmusic/kmusic.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="RFPtv.pt" tvg-name="RFPtv" tvg-logo="https://i.imgur.com/I60nQuR.png" group-title="Música & Video" tvg-chno="218",RFPtv (Rádio do Folclore de Portugal)
+https://video03.logicahost.com.br/rfptv/rfptv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="NPCRadioeTV.pt" tvg-name="NPC Rádio e TV" tvg-logo="https://i.imgur.com/mw1lYWE.png" group-title="Música & Video" tvg-chno="219",NPC Rádio e TV (Visual Radio)
+https://stmv5.samcast.com.br/nasciparacantartv/nasciparacantartv/playlist.m3u8
+
 #EXTINF:-1 tvg-id="ARTV.pt" tvg-name="ARTV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/AR-TV.png" group-title="Cívico & Parlamento" tvg-chno="220",ARTV (Canal Parlamento PT)
 #EXTVLCOPT:http-user-agent="Mozilla/5.0"
 https://playout175.livextend.cloud/livenlin4/_definst_/2liveartvpub2/playlist.m3u8
