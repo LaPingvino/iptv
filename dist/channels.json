@@ -564,12 +564,12 @@
     "chno": 99
   },
   {
-    "name": "Radio 350 (Visual Radio)",
+    "name": "Matele (Wallonie)",
     "group": "Regional \u0026 Local",
-    "tvg_id": "Radio350.nl",
-    "tvg_name": "Radio 350",
-    "logo": "https://i.imgur.com/3nkzXup.png",
-    "url": "https://stream.radio350.nl/hls/radio350.m3u8",
+    "tvg_id": "Matele.be",
+    "tvg_name": "Matele",
+    "logo": "https://i.imgur.com/rw72POr.png",
+    "url": "https://live.matele.be/hls/live.m3u8",
     "chno": 100
   },
   {
@@ -600,22 +600,13 @@
     "chno": 103
   },
   {
-    "name": "Matele (Wallonie)",
-    "group": "Regional \u0026 Local",
-    "tvg_id": "Matele.be",
-    "tvg_name": "Matele",
-    "logo": "https://i.imgur.com/rw72POr.png",
-    "url": "https://live.matele.be/hls/live.m3u8",
-    "chno": 104
-  },
-  {
     "name": "Sheffield Live TV",
     "group": "Regional \u0026 Local",
     "tvg_id": "SheffieldLiveTV.uk",
     "tvg_name": "Sheffield Live TV",
     "logo": "https://i.imgur.com/p0QzCFs.png",
     "url": "http://tv.sheffieldlive.org/hls/main.m3u8",
-    "chno": 105
+    "chno": 104
   },
   {
     "name": "Das Erste (ARD Germany)",
@@ -1267,6 +1258,15 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/DJ_mixer_icon.svg/512px-DJ_mixer_icon.svg.png",
     "url": "https://streammix.alsolnet.com/hyperadio/live/playlist.m3u8",
     "chno": 209
+  },
+  {
+    "name": "Radio 350 (Visual Radio)",
+    "group": "Música \u0026 Video",
+    "tvg_id": "Radio350.nl",
+    "tvg_name": "Radio 350",
+    "logo": "https://i.imgur.com/3nkzXup.png",
+    "url": "https://stream.radio350.nl/hls/radio350.m3u8",
+    "chno": 210
   },
   {
     "name": "ARTV (Canal Parlamento PT)",

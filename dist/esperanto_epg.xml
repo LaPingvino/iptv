@@ -2397,4 +2397,14 @@
     <desc lang="eo">Plena filmo en Esperanto pri la historia mikronacio.</desc>
     <category lang="eo">Filmo</category>
   </programme>
+  <programme start="20260929224500 +0000" stop="20260929224700 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Enkonduko</title>
+    <desc lang="eo">Oficiala stacia vineto kaj enkonduko al la internacia lingvo Esperanto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20260929224700 +0000" stop="20260929231550 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 8: Vojaĝaj planoj</title>
+    <desc lang="eo">La familio kaj gastoj planas novajn vojaĝojn tra la mondo.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
 </tv>

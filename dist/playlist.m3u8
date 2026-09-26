@@ -212,8 +212,8 @@ https://media.rtvwesterwolde.nl/hls/live/index.m3u8
 #EXTINF:-1 tvg-id="A1TV.nl" tvg-name="A1 TV" tvg-logo="https://i.imgur.com/JZ1oTM2.png" group-title="Regional & Local" tvg-chno="99",A1 TV (Achterhoek)
 https://stream.a1mediagroep.nl/hls/a1tv.m3u8
 
-#EXTINF:-1 tvg-id="Radio350.nl" tvg-name="Radio 350" tvg-logo="https://i.imgur.com/3nkzXup.png" group-title="Regional & Local" tvg-chno="100",Radio 350 (Visual Radio)
-https://stream.radio350.nl/hls/radio350.m3u8
+#EXTINF:-1 tvg-id="Matele.be" tvg-name="Matele" tvg-logo="https://i.imgur.com/rw72POr.png" group-title="Regional & Local" tvg-chno="100",Matele (Wallonie)
+https://live.matele.be/hls/live.m3u8
 
 #EXTINF:-1 tvg-id="RTLTeleLetzebuerg.lu@HD" tvg-name="RTL Tele Letzebuerg" group-title="Regional & Local" tvg-chno="101",RTL Télé Lëtzebuerg (1080p)
 https://stream.rtl.lu/live/hls/channel1/playlist.m3u8
@@ -224,10 +224,7 @@ https://stream.rtl.lu/live/hls/channel2/playlist.m3u8
 #EXTINF:-1 tvg-id="WDRFernsehen.de@Koln" tvg-name="WDR Fernsehen" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/WDR_Fernsehen_Logo_2018.svg/960px-WDR_Fernsehen_Logo_2018.svg.png" group-title="Regional & Local" tvg-chno="103",WDR Fernsehen (HD • Köln / NRW)
 https://kiefte.eu/iptv/wdr.m3u8
 
-#EXTINF:-1 tvg-id="Matele.be" tvg-name="Matele" tvg-logo="https://i.imgur.com/rw72POr.png" group-title="Regional & Local" tvg-chno="104",Matele (Wallonie)
-https://live.matele.be/hls/live.m3u8
-
-#EXTINF:-1 tvg-id="SheffieldLiveTV.uk" tvg-name="Sheffield Live TV" tvg-logo="https://i.imgur.com/p0QzCFs.png" group-title="Regional & Local" tvg-chno="105",Sheffield Live TV
+#EXTINF:-1 tvg-id="SheffieldLiveTV.uk" tvg-name="Sheffield Live TV" tvg-logo="https://i.imgur.com/p0QzCFs.png" group-title="Regional & Local" tvg-chno="104",Sheffield Live TV
 http://tv.sheffieldlive.org/hls/main.m3u8
 
 #EXTINF:-1 tvg-id="DasErste.de" tvg-name="Das Erste" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Das-Erste.png" group-title="Filmes & Docs" tvg-chno="110",Das Erste (ARD Germany)
@@ -448,6 +445,9 @@ https://58f12ffd2447a.streamlock.net/KKMulti/livestream/playlist.m3u8
 
 #EXTINF:-1 tvg-id="HypeVisualRadio.tv@HD" tvg-name="Hype Visual Radio" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/DJ_mixer_icon.svg/512px-DJ_mixer_icon.svg.png" group-title="Música & Video" tvg-chno="209",Hype Visual Radio (1080p Studio Cam)
 https://streammix.alsolnet.com/hyperadio/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Radio350.nl" tvg-name="Radio 350" tvg-logo="https://i.imgur.com/3nkzXup.png" group-title="Música & Video" tvg-chno="210",Radio 350 (Visual Radio)
+https://stream.radio350.nl/hls/radio350.m3u8
 
 #EXTINF:-1 tvg-id="ARTV.pt" tvg-name="ARTV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/AR-TV.png" group-title="Cívico & Parlamento" tvg-chno="220",ARTV (Canal Parlamento PT)
 #EXTVLCOPT:http-user-agent="Mozilla/5.0"

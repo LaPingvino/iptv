@@ -118,12 +118,12 @@
   tvg_name: A1 TV
   logo: https://i.imgur.com/JZ1oTM2.png
   url: https://stream.a1mediagroep.nl/hls/a1tv.m3u8
-- name: Radio 350 (Visual Radio)
+- name: Matele (Wallonie)
   group: Regional & Local
-  tvg_id: Radio350.nl
-  tvg_name: Radio 350
-  logo: https://i.imgur.com/3nkzXup.png
-  url: https://stream.radio350.nl/hls/radio350.m3u8
+  tvg_id: Matele.be
+  tvg_name: Matele
+  logo: https://i.imgur.com/rw72POr.png
+  url: https://live.matele.be/hls/live.m3u8
 - name: RTL Télé Lëtzebuerg (1080p)
   group: Regional & Local
   tvg_id: RTLTeleLetzebuerg.lu@HD
@@ -140,12 +140,6 @@
   tvg_name: WDR Fernsehen
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/WDR_Fernsehen_Logo_2018.svg/960px-WDR_Fernsehen_Logo_2018.svg.png
   url: https://kiefte.eu/iptv/wdr.m3u8
-- name: Matele (Wallonie)
-  group: Regional & Local
-  tvg_id: Matele.be
-  tvg_name: Matele
-  logo: https://i.imgur.com/rw72POr.png
-  url: https://live.matele.be/hls/live.m3u8
 - name: Sheffield Live TV
   group: Regional & Local
   tvg_id: SheffieldLiveTV.uk
