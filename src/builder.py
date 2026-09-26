@@ -68,15 +68,15 @@ GROUP_BASE_CHNO = {
     "Religião": 285,
     "Persa / Farsi": 295,
     
-    # 🎮 Gaming & Twitch Streams (350 - 424)
-    "Speedrunning & Marathons": 350,
-    "Mario & Romhacks": 365,
-    "Tetris": 380,
-    "Indie & Variety Gaming": 395,
-    "LaPingvino Favorites": 410,
+    # 🎮 Gaming & Twitch Streams (400 - 499)
+    "Speedrunning & Marathons": 400,
+    "Mario & Romhacks": 415,
+    "Tetris": 430,
+    "Indie & Variety Gaming": 445,
+    "LaPingvino Favorites": 460,
     
-    # 🧪 Diagnostics (425 - 499)
-    "Diag": 425,
+    # 🧪 Diagnostics (900+)
+    "Diag": 900,
     
     # 📻 Unified Radio Block (500 - 699)
     "PT Rádio": 500,

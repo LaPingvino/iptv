@@ -1951,7 +1951,7 @@
     "tvg_name": "Speedrun",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/speedrun",
-    "chno": 350
+    "chno": 400
   },
   {
     "name": "GamesDoneQuick (GDQ)",
@@ -1960,7 +1960,7 @@
     "tvg_name": "GamesDoneQuick",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/gamesdonequick",
-    "chno": 351
+    "chno": 401
   },
   {
     "name": "ESAMarathon (European Speedrunner Assembly)",
@@ -1969,7 +1969,7 @@
     "tvg_name": "ESAMarathon",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/esamarathon",
-    "chno": 352
+    "chno": 402
   },
   {
     "name": "TASVideos (Tool-Assisted Speedruns)",
@@ -1978,7 +1978,7 @@
     "tvg_name": "TASVideos",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/tasvideos",
-    "chno": 353
+    "chno": 403
   },
   {
     "name": "MitchFlowerPower (SMB3 Speedruns)",
@@ -1987,7 +1987,7 @@
     "tvg_name": "MitchFlowerPower",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/mitchflowerpower",
-    "chno": 354
+    "chno": 404
   },
   {
     "name": "SmallAnt (Challenges \u0026 Speedruns)",
@@ -1996,7 +1996,7 @@
     "tvg_name": "SmallAnt",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/smallant",
-    "chno": 355
+    "chno": 405
   },
   {
     "name": "Carrarium (Celeste \u0026 GDQ)",
@@ -2005,7 +2005,7 @@
     "tvg_name": "Carrarium",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/carrarium",
-    "chno": 356
+    "chno": 406
   },
   {
     "name": "TGH (Celeste \u0026 Retro Speedruns)",
@@ -2014,7 +2014,7 @@
     "tvg_name": "TGH",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/tgh_sr",
-    "chno": 357
+    "chno": 407
   },
   {
     "name": "AmberCyprian (Speedruns \u0026 Retro)",
@@ -2023,7 +2023,7 @@
     "tvg_name": "AmberCyprian",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/ambercyprian",
-    "chno": 358
+    "chno": 408
   },
   {
     "name": "Msushi (Celeste \u0026 Portal Speedruns)",
@@ -2032,7 +2032,7 @@
     "tvg_name": "Msushi",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/msushi",
-    "chno": 359
+    "chno": 409
   },
   {
     "name": "Shoujo (Speedruns \u0026 Multiworld)",
@@ -2041,7 +2041,7 @@
     "tvg_name": "Shoujo",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/shoujo",
-    "chno": 360
+    "chno": 410
   },
   {
     "name": "Super Mario World (Romhacks \u0026 Kaizo Live)",
@@ -2050,7 +2050,7 @@
     "tvg_name": "SMW Romhacks Live",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/game/Super%20Mario%20World?bias=romhack",
-    "chno": 365
+    "chno": 415
   },
   {
     "name": "Super Mario Maker 2 (Top Live Streamer)",
@@ -2059,7 +2059,7 @@
     "tvg_name": "Mario Maker 2 Live",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/game/Super%20Mario%20Maker%202",
-    "chno": 366
+    "chno": 416
   },
   {
     "name": "Ryukahr",
@@ -2068,7 +2068,7 @@
     "tvg_name": "Ryukahr",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/ryukahr",
-    "chno": 367
+    "chno": 417
   },
   {
     "name": "GrandPooBear",
@@ -2077,7 +2077,7 @@
     "tvg_name": "GrandPooBear",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/grandpoobear",
-    "chno": 368
+    "chno": 418
   },
   {
     "name": "ThaBeast721 (Kaizo \u0026 Mario 64)",
@@ -2086,7 +2086,7 @@
     "tvg_name": "ThaBeast721",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/thabeast721",
-    "chno": 369
+    "chno": 419
   },
   {
     "name": "CarlSagan42 (Kaizo \u0026 Troll Maker)",
@@ -2095,7 +2095,7 @@
     "tvg_name": "CarlSagan42",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/carlsagan42",
-    "chno": 370
+    "chno": 420
   },
   {
     "name": "Juzcook (Kaizo \u0026 Mario Maker)",
@@ -2104,7 +2104,7 @@
     "tvg_name": "Juzcook",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/juzcook",
-    "chno": 371
+    "chno": 421
   },
   {
     "name": "Aurateur (Endless Mario Maker)",
@@ -2113,7 +2113,7 @@
     "tvg_name": "Aurateur",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/aurateur",
-    "chno": 372
+    "chno": 422
   },
   {
     "name": "PangaeaPanga (Kaizo SMW)",
@@ -2122,7 +2122,7 @@
     "tvg_name": "PangaeaPanga",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/pangaeapanga",
-    "chno": 373
+    "chno": 423
   },
   {
     "name": "SimpleFlips (SM64 Romhacks)",
@@ -2131,7 +2131,7 @@
     "tvg_name": "SimpleFlips",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/simpleflips",
-    "chno": 374
+    "chno": 424
   },
   {
     "name": "Failstream (Mario Maker Builds)",
@@ -2140,7 +2140,7 @@
     "tvg_name": "Failstream",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/failstream",
-    "chno": 375
+    "chno": 425
   },
   {
     "name": "GlitchCat7 (SMW Kaizo \u0026 Speedruns)",
@@ -2149,7 +2149,7 @@
     "tvg_name": "GlitchCat7",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/glitchcat7",
-    "chno": 376
+    "chno": 426
   },
   {
     "name": "DGR (Mario Maker \u0026 Super Mario)",
@@ -2158,7 +2158,7 @@
     "tvg_name": "DGR",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/dgr_dave",
-    "chno": 377
+    "chno": 427
   },
   {
     "name": "RBPimlico (Mario Maker \u0026 Kaizo)",
@@ -2167,7 +2167,7 @@
     "tvg_name": "RBPimlico",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/rbpimlico",
-    "chno": 378
+    "chno": 428
   },
   {
     "name": "BarbarousKing (Mario Romhacks \u0026 Variety)",
@@ -2176,7 +2176,7 @@
     "tvg_name": "BarbarousKing",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/barbarousking",
-    "chno": 379
+    "chno": 429
   },
   {
     "name": "Classic Tetris (CTWC Main)",
@@ -2185,7 +2185,7 @@
     "tvg_name": "ClassicTetris",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/classictetris",
-    "chno": 380
+    "chno": 430
   },
   {
     "name": "Classic Tetris 2 (CTWC)",
@@ -2194,7 +2194,7 @@
     "tvg_name": "ClassicTetris 2",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/classictetris2",
-    "chno": 381
+    "chno": 431
   },
   {
     "name": "Classic Tetris 3 (CTWC)",
@@ -2203,7 +2203,7 @@
     "tvg_name": "ClassicTetris 3",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/classictetris3",
-    "chno": 382
+    "chno": 432
   },
   {
     "name": "Classic Tetris 4 (CTWC)",
@@ -2212,7 +2212,7 @@
     "tvg_name": "ClassicTetris 4",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/classictetris4",
-    "chno": 383
+    "chno": 433
   },
   {
     "name": "NES Tetris (Top Live Streamer)",
@@ -2221,7 +2221,7 @@
     "tvg_name": "NES Tetris Live",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/game/Tetris?bias=nes",
-    "chno": 384
+    "chno": 434
   },
   {
     "name": "Modern Tetris (Top Live Streamer)",
@@ -2230,7 +2230,7 @@
     "tvg_name": "Modern Tetris Live",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/group/modern-tetris",
-    "chno": 385
+    "chno": 435
   },
   {
     "name": "Wumbotize (Modern Tetris Master)",
@@ -2239,7 +2239,7 @@
     "tvg_name": "Wumbotize",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/wumbotize",
-    "chno": 386
+    "chno": 436
   },
   {
     "name": "Doremy (Modern Tetris \u0026 TETR.IO)",
@@ -2248,7 +2248,7 @@
     "tvg_name": "Doremy",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/doremy",
-    "chno": 387
+    "chno": 437
   },
   {
     "name": "Hard Drop (Tetris Community \u0026 Tourneys)",
@@ -2257,7 +2257,7 @@
     "tvg_name": "Hard Drop",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/harddrop",
-    "chno": 388
+    "chno": 438
   },
   {
     "name": "DogPlayingTetris (3x CTWC World Champion)",
@@ -2266,7 +2266,7 @@
     "tvg_name": "DogPlayingTetris",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/dogplayingtetris",
-    "chno": 389
+    "chno": 439
   },
   {
     "name": "EricICX (CTWC World Champion)",
@@ -2275,7 +2275,7 @@
     "tvg_name": "EricICX",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/ericicx",
-    "chno": 390
+    "chno": 440
   },
   {
     "name": "Fractal (CTWC World Champion)",
@@ -2284,7 +2284,7 @@
     "tvg_name": "Fractal",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/fractal",
-    "chno": 391
+    "chno": 441
   },
   {
     "name": "Alex_T (CTWC Champion)",
@@ -2293,7 +2293,7 @@
     "tvg_name": "Alex T",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/alex_t",
-    "chno": 392
+    "chno": 442
   },
   {
     "name": "BlueScuti (NES Tetris Crash Record)",
@@ -2302,7 +2302,7 @@
     "tvg_name": "BlueScuti",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/bluescuti",
-    "chno": 393
+    "chno": 443
   },
   {
     "name": "Anna D. (Tetris)",
@@ -2311,7 +2311,7 @@
     "tvg_name": "Anna D.",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/vinesandwillows",
-    "chno": 394
+    "chno": 444
   },
   {
     "name": "Gaming 24/7 (Auto-Live Streamer)",
@@ -2320,7 +2320,7 @@
     "tvg_name": "Gaming 24/7 Auto-Live",
     "logo": "",
     "url": "https://kiefte.eu/iptv/gaming/live",
-    "chno": 395
+    "chno": 445
   },
   {
     "name": "Blue Prince (Top Live Streamer)",
@@ -2329,7 +2329,7 @@
     "tvg_name": "Blue Prince Live",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/game/Blue%20Prince",
-    "chno": 396
+    "chno": 446
   },
   {
     "name": "Celeste (Top Live Streamer)",
@@ -2338,7 +2338,7 @@
     "tvg_name": "Celeste Live",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/game/Celeste",
-    "chno": 397
+    "chno": 447
   },
   {
     "name": "Portal (Top Live Streamer)",
@@ -2347,7 +2347,7 @@
     "tvg_name": "Portal Live",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/game/Portal",
-    "chno": 398
+    "chno": 448
   },
   {
     "name": "Portal 2 (Top Live Streamer)",
@@ -2356,7 +2356,7 @@
     "tvg_name": "Portal 2 Live",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/game/Portal%202",
-    "chno": 399
+    "chno": 449
   },
   {
     "name": "Tammy (Tammy_BlackMedia)",
@@ -2365,7 +2365,7 @@
     "tvg_name": "Tammy BlackMedia",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/tammy_blackmedia",
-    "chno": 400
+    "chno": 450
   },
   {
     "name": "ElanaOrama (Colony Sim \u0026 Variety)",
@@ -2374,7 +2374,7 @@
     "tvg_name": "ElanaOrama",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/elanaorama",
-    "chno": 401
+    "chno": 451
   },
   {
     "name": "Chess (Top Live Grandmaster)",
@@ -2383,7 +2383,7 @@
     "tvg_name": "Chess Live",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/game/Chess",
-    "chno": 402
+    "chno": 452
   },
   {
     "name": "GeoGuessr (World Exploration)",
@@ -2392,7 +2392,7 @@
     "tvg_name": "GeoGuessr Live",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/game/GeoGuessr",
-    "chno": 403
+    "chno": 453
   },
   {
     "name": "Trackmania (Precision Racing Live)",
@@ -2401,7 +2401,7 @@
     "tvg_name": "Trackmania Live",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/game/Trackmania",
-    "chno": 404
+    "chno": 454
   },
   {
     "name": "Zeepkist (Soapbox Physics Racing Live)",
@@ -2410,7 +2410,7 @@
     "tvg_name": "Zeepkist Live",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/game/Zeepkist",
-    "chno": 405
+    "chno": 455
   },
   {
     "name": "Followed Streamer #1",
@@ -2419,7 +2419,7 @@
     "tvg_name": "Followed #1",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/followed/1",
-    "chno": 410
+    "chno": 460
   },
   {
     "name": "Followed Streamer #2",
@@ -2428,7 +2428,7 @@
     "tvg_name": "Followed #2",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/followed/2",
-    "chno": 411
+    "chno": 461
   },
   {
     "name": "Followed Streamer #3",
@@ -2437,7 +2437,7 @@
     "tvg_name": "Followed #3",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/followed/3",
-    "chno": 412
+    "chno": 462
   },
   {
     "name": "Followed Streamer #4",
@@ -2446,7 +2446,7 @@
     "tvg_name": "Followed #4",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/followed/4",
-    "chno": 413
+    "chno": 463
   },
   {
     "name": "Followed Streamer #5",
@@ -2455,7 +2455,7 @@
     "tvg_name": "Followed #5",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/followed/5",
-    "chno": 414
+    "chno": 464
   },
   {
     "name": "Followed Streamer #6",
@@ -2464,7 +2464,7 @@
     "tvg_name": "Followed #6",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/followed/6",
-    "chno": 415
+    "chno": 465
   },
   {
     "name": "Followed Streamer #7",
@@ -2473,7 +2473,7 @@
     "tvg_name": "Followed #7",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/followed/7",
-    "chno": 416
+    "chno": 466
   },
   {
     "name": "Followed Streamer #8",
@@ -2482,7 +2482,7 @@
     "tvg_name": "Followed #8",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/followed/8",
-    "chno": 417
+    "chno": 467
   },
   {
     "name": "Followed Streamer #9",
@@ -2491,7 +2491,7 @@
     "tvg_name": "Followed #9",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/followed/9",
-    "chno": 418
+    "chno": 468
   },
   {
     "name": "Followed Streamer #10",
@@ -2500,133 +2500,7 @@
     "tvg_name": "Followed #10",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/followed/10",
-    "chno": 419
-  },
-  {
-    "name": "HEVC / H.265 10-Bit Reference Ladder",
-    "group": "Diag",
-    "tvg_id": "HEVC10Bit.ref@HD",
-    "tvg_name": "HEVC 10-Bit Reference",
-    "logo": "",
-    "url": "https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_adv_example_hevc/master.m3u8",
-    "chno": 425
-  },
-  {
-    "name": "4K UHD • HDR10 \u0026 Dolby Vision / Atmos",
-    "group": "Diag",
-    "tvg_id": "HDR10Atmos4K.ref@UHD",
-    "tvg_name": "HDR10 Dolby Atmos 4K",
-    "logo": "",
-    "url": "https://devstreaming-cdn.apple.com/videos/streaming/examples/adv_dv_atmos/main.m3u8",
-    "chno": 426
-  },
-  {
-    "name": "1080p60 Multi-Bitrate Adaptive Ladder",
-    "group": "Diag",
-    "tvg_id": "BitrateLadder1080p60.ref@HD",
-    "tvg_name": "1080p60 Bitrate Ladder",
-    "logo": "",
-    "url": "https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8",
-    "chno": 427
-  },
-  {
-    "name": "Unified Streaming • Timecode \u0026 SCTE-35",
-    "group": "Diag",
-    "tvg_id": "UnifiedTimecode.ref",
-    "tvg_name": "Unified Timecode Test",
-    "logo": "",
-    "url": "https://demo.unified-streaming.com/k8s/live/stable/scte35.isml/.m3u8",
-    "chno": 428
-  },
-  {
-    "name": "BipBop • Audio Sweep \u0026 Frame Sync",
-    "group": "Diag",
-    "tvg_id": "BipBopSync.ref",
-    "tvg_name": "BipBop Sync Reference",
-    "logo": "",
-    "url": "https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8",
-    "chno": 429
-  },
-  {
-    "name": "Bridge • IPv6 \u0026 AV-Sync Dynamic Testcard",
-    "group": "Diag",
-    "tvg_id": "BridgeDiag.ref@HD",
-    "tvg_name": "Bridge Diag Testcard",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/test/avsync",
-    "chno": 430
-  },
-  {
-    "name": "HDR Dynamic Switch (SDR ➔ HLG ➔ HDR10)",
-    "group": "Diag",
-    "tvg_id": "HDRSwitch.ref@HD",
-    "tvg_name": "HDR Dynamic Switch",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/test/hdr",
-    "chno": 431
-  },
-  {
-    "name": "HDR Dynamic Switch Smooth (30s Cadence)",
-    "group": "Diag",
-    "tvg_id": "HDRSwitchSmooth.ref@HD",
-    "tvg_name": "HDR Smooth Switch (30s)",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/test/hdr-smooth",
-    "chno": 432
-  },
-  {
-    "name": "BVN • Raw Encrypted DASH (Widevine, needs player-side key)",
-    "group": "Diag",
-    "tvg_id": "BVNRawDASH.ref",
-    "tvg_name": "BVN Raw DASH",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/bvn.mpd",
-    "chno": 433
-  },
-  {
-    "name": "DASH-IF • Live Wall-Clock Test Picture (2s Segments)",
-    "group": "Diag",
-    "tvg_id": "DASHIFLive.ref",
-    "tvg_name": "DASH-IF Live Testpic",
-    "logo": "",
-    "url": "https://livesim2.dashif.org/livesim2/testpic_2s/Manifest.mpd",
-    "chno": 434
-  },
-  {
-    "name": "DASH-IF • Rotating Logo Multi-Rate Ladder (720p/540p/360p AVC)",
-    "group": "Diag",
-    "tvg_id": "DASHIFRotate.ref",
-    "tvg_name": "DASH-IF Multi-Rate",
-    "logo": "",
-    "url": "https://livesim2.dashif.org/livesim2/testrotate_2s/Manifest.mpd",
-    "chno": 435
-  },
-  {
-    "name": "DASH-IF • AV1 Next-Gen Codec Live Stream (720p@25)",
-    "group": "Diag",
-    "tvg_id": "DASHIFAV1.ref",
-    "tvg_name": "DASH-IF AV1 Live",
-    "logo": "",
-    "url": "https://livesim2.dashif.org/livesim2/testpic_2s_av1/Manifest.mpd",
-    "chno": 436
-  },
-  {
-    "name": "Unified Streaming • Live Virtual Channel (Multi-Period)",
-    "group": "Diag",
-    "tvg_id": "UnifiedVirtualChannel.ref",
-    "tvg_name": "Unified Virtual Channel",
-    "logo": "",
-    "url": "https://virtual-channel.unified-streaming.com/demo_channel-stable.isml/.mpd",
-    "chno": 437
-  },
-  {
-    "name": "Akamai • Big Buck Bunny Adaptive Bitrate Ladder (240p - 1080p)",
-    "group": "Diag",
-    "tvg_id": "AkamaiBBBDASH.ref",
-    "tvg_name": "Akamai BBB DASH",
-    "logo": "",
-    "url": "https://dash.akamaized.net/akamai/bbb_30fps/bbb_30fps.mpd",
-    "chno": 438
+    "chno": 469
   },
   {
     "name": "RDP Antena 1",
@@ -3869,5 +3743,131 @@
     "logo": "",
     "url": "https://edge.iono.fm/xice/88_high.mp3",
     "chno": 666
+  },
+  {
+    "name": "HEVC / H.265 10-Bit Reference Ladder",
+    "group": "Diag",
+    "tvg_id": "HEVC10Bit.ref@HD",
+    "tvg_name": "HEVC 10-Bit Reference",
+    "logo": "",
+    "url": "https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_adv_example_hevc/master.m3u8",
+    "chno": 900
+  },
+  {
+    "name": "4K UHD • HDR10 \u0026 Dolby Vision / Atmos",
+    "group": "Diag",
+    "tvg_id": "HDR10Atmos4K.ref@UHD",
+    "tvg_name": "HDR10 Dolby Atmos 4K",
+    "logo": "",
+    "url": "https://devstreaming-cdn.apple.com/videos/streaming/examples/adv_dv_atmos/main.m3u8",
+    "chno": 901
+  },
+  {
+    "name": "1080p60 Multi-Bitrate Adaptive Ladder",
+    "group": "Diag",
+    "tvg_id": "BitrateLadder1080p60.ref@HD",
+    "tvg_name": "1080p60 Bitrate Ladder",
+    "logo": "",
+    "url": "https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8",
+    "chno": 902
+  },
+  {
+    "name": "Unified Streaming • Timecode \u0026 SCTE-35",
+    "group": "Diag",
+    "tvg_id": "UnifiedTimecode.ref",
+    "tvg_name": "Unified Timecode Test",
+    "logo": "",
+    "url": "https://demo.unified-streaming.com/k8s/live/stable/scte35.isml/.m3u8",
+    "chno": 903
+  },
+  {
+    "name": "BipBop • Audio Sweep \u0026 Frame Sync",
+    "group": "Diag",
+    "tvg_id": "BipBopSync.ref",
+    "tvg_name": "BipBop Sync Reference",
+    "logo": "",
+    "url": "https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8",
+    "chno": 904
+  },
+  {
+    "name": "Bridge • IPv6 \u0026 AV-Sync Dynamic Testcard",
+    "group": "Diag",
+    "tvg_id": "BridgeDiag.ref@HD",
+    "tvg_name": "Bridge Diag Testcard",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/test/avsync",
+    "chno": 905
+  },
+  {
+    "name": "HDR Dynamic Switch (SDR ➔ HLG ➔ HDR10)",
+    "group": "Diag",
+    "tvg_id": "HDRSwitch.ref@HD",
+    "tvg_name": "HDR Dynamic Switch",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/test/hdr",
+    "chno": 906
+  },
+  {
+    "name": "HDR Dynamic Switch Smooth (30s Cadence)",
+    "group": "Diag",
+    "tvg_id": "HDRSwitchSmooth.ref@HD",
+    "tvg_name": "HDR Smooth Switch (30s)",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/test/hdr-smooth",
+    "chno": 907
+  },
+  {
+    "name": "BVN • Raw Encrypted DASH (Widevine, needs player-side key)",
+    "group": "Diag",
+    "tvg_id": "BVNRawDASH.ref",
+    "tvg_name": "BVN Raw DASH",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/bvn.mpd",
+    "chno": 908
+  },
+  {
+    "name": "DASH-IF • Live Wall-Clock Test Picture (2s Segments)",
+    "group": "Diag",
+    "tvg_id": "DASHIFLive.ref",
+    "tvg_name": "DASH-IF Live Testpic",
+    "logo": "",
+    "url": "https://livesim2.dashif.org/livesim2/testpic_2s/Manifest.mpd",
+    "chno": 909
+  },
+  {
+    "name": "DASH-IF • Rotating Logo Multi-Rate Ladder (720p/540p/360p AVC)",
+    "group": "Diag",
+    "tvg_id": "DASHIFRotate.ref",
+    "tvg_name": "DASH-IF Multi-Rate",
+    "logo": "",
+    "url": "https://livesim2.dashif.org/livesim2/testrotate_2s/Manifest.mpd",
+    "chno": 910
+  },
+  {
+    "name": "DASH-IF • AV1 Next-Gen Codec Live Stream (720p@25)",
+    "group": "Diag",
+    "tvg_id": "DASHIFAV1.ref",
+    "tvg_name": "DASH-IF AV1 Live",
+    "logo": "",
+    "url": "https://livesim2.dashif.org/livesim2/testpic_2s_av1/Manifest.mpd",
+    "chno": 911
+  },
+  {
+    "name": "Unified Streaming • Live Virtual Channel (Multi-Period)",
+    "group": "Diag",
+    "tvg_id": "UnifiedVirtualChannel.ref",
+    "tvg_name": "Unified Virtual Channel",
+    "logo": "",
+    "url": "https://virtual-channel.unified-streaming.com/demo_channel-stable.isml/.mpd",
+    "chno": 912
+  },
+  {
+    "name": "Akamai • Big Buck Bunny Adaptive Bitrate Ladder (240p - 1080p)",
+    "group": "Diag",
+    "tvg_id": "AkamaiBBBDASH.ref",
+    "tvg_name": "Akamai BBB DASH",
+    "logo": "",
+    "url": "https://dash.akamaized.net/akamai/bbb_30fps/bbb_30fps.mpd",
+    "chno": 913
   }
 ]
