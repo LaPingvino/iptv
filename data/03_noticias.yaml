@@ -101,7 +101,7 @@
   tvg_id: TV5MondeInfo.fr@SD
   tvg_name: TV5Monde Info
   logo: https://i.imgur.com/NcysrWH.png
-  url: https://kiefte.eu/iptv/tv5monde_info.m3u8
+  url: https://kiefte.eu/iptv/tv5monde_info.ts
 - name: Tagesschau 24 (HD • ARD Notícias 24/7)
   group: Notícias
   tvg_id: tagesschau24.de@SD

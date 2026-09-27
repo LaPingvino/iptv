@@ -220,7 +220,7 @@ func main() {
 			json.NewEncoder(w).Encode(map[string]any{
 				"status":    "ok",
 				"service":   "iptv-live-bridge",
-				"version":   "4.4.11",
+				"version":   "4.4.12",
 				"runtime":   "go",
 				"timestamp": time.Now().Format(time.RFC3339),
 			})
@@ -329,32 +329,15 @@ func main() {
 
 		// 4c. Now Playing dashboard as a live TV channel (clock, weather, live streams)
 		if path == "now.ts" || path == "nowtv" || path == "nowtv.ts" || path == "dashboard.ts" {
-			w.Header().Set("Content-Type", "video/MP2T")
-			w.Header().Set("Access-Control-Allow-Origin", "*")
-			w.Header().Set("Connection", "close")
-			if r.Method == http.MethodHead {
+			nowTV.ServeHTTP(w, r)
+			return
+		}
+
+		// 4d. Upstream channels re-served with levelled audio (e.g. tv5monde_info.ts)
+		if strings.HasSuffix(path, ".ts") {
+			if eng, ok := loudnormRestreams[strings.TrimSuffix(path, ".ts")]; ok {
+				eng.ServeHTTP(w, r)
 				return
-			}
-			flusher, ok := w.(http.Flusher)
-			if !ok {
-				http.Error(w, "Streaming unsupported", http.StatusInternalServerError)
-				return
-			}
-			ch := nowTV.Subscribe()
-			defer nowTV.Unsubscribe(ch)
-			for {
-				select {
-				case <-r.Context().Done():
-					return
-				case chunk, ok := <-ch:
-					if !ok {
-						return
-					}
-					if _, err := w.Write(chunk); err != nil {
-						return
-					}
-					flusher.Flush()
-				}
 			}
 		}
 

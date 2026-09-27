@@ -114,7 +114,7 @@ https://media-tyo.hls.nhkworld.jp/hls/w/live/master.m3u8
 https://tvbrasilinternacional-stream.ebc.com.br/index.m3u8
 
 #EXTINF:-1 tvg-id="TV5MondeInfo.fr@SD" tvg-name="TV5Monde Info" tvg-logo="https://i.imgur.com/NcysrWH.png" group-title="Notícias" tvg-chno="45",TV5Monde Info (1080p • Monde & Actualité)
-https://kiefte.eu/iptv/tv5monde_info.m3u8
+https://kiefte.eu/iptv/tv5monde_info.ts
 
 #EXTINF:-1 tvg-id="tagesschau24.de@SD" tvg-name="Tagesschau 24" tvg-logo="https://i.imgur.com/LH0Gctv.png" group-title="Notícias" tvg-chno="46",Tagesschau 24 (HD • ARD Notícias 24/7)
 https://kiefte.eu/iptv/tagesschau24.m3u8

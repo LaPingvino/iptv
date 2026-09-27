@@ -17,31 +17,28 @@ import (
 )
 
 // NowTV renders the Now Playing overview, a clock and the local weather as a
-// live MPEG-TS channel. Like BVN it runs a single on-demand ffmpeg process and
-// fans its output out to every viewer; it stops 30s after the last one leaves.
+// live MPEG-TS channel, using a FanoutEngine (one on-demand ffmpeg shared by
+// all viewers, stopped 30s after the last one leaves).
 //
 // The picture is composed from a handful of text files that ffmpeg's drawtext
 // re-reads every frame. A Go goroutine rewrites them (clock every second,
-// weather and channel list less often) using atomic renames.
+// weather and channel list every 30s) using atomic renames.
 type NowTVEngine struct {
-	mu           sync.Mutex
-	running      bool
-	cancel       context.CancelFunc
-	clients      map[chan []byte]struct{}
-	recentChunks [][]byte
-	lastAccess   time.Time
-
+	mu      sync.Mutex
 	workDir string
 
 	weatherLat, weatherLon float64
 	weatherName            string
+
+	engine *FanoutEngine
 }
 
-var nowTV = &NowTVEngine{
-	clients:     make(map[chan []byte]struct{}),
-	weatherLat:  38.7223,
-	weatherLon:  -9.1393,
-	weatherName: "Lisboa",
+var nowTV = newNowTV()
+
+func newNowTV() *NowTVEngine {
+	e := &NowTVEngine{weatherLat: 38.7223, weatherLon: -9.1393, weatherName: "Lisboa"}
+	e.engine = &FanoutEngine{Name: "NowTV", OnStart: e.onStart, BuildCmd: e.buildCmd}
+	return e
 }
 
 // ConfigureWeather sets the location used for the weather panel.
@@ -51,35 +48,12 @@ func (e *NowTVEngine) ConfigureWeather(lat, lon float64, name string) {
 	e.weatherLat, e.weatherLon, e.weatherName = lat, lon, name
 }
 
-func (e *NowTVEngine) Subscribe() chan []byte {
-	ch := make(chan []byte, 256)
+func (e *NowTVEngine) ServeHTTP(w http.ResponseWriter, r *http.Request) { e.engine.ServeHTTP(w, r) }
+
+func (e *NowTVEngine) weather() (float64, float64, string) {
 	e.mu.Lock()
 	defer e.mu.Unlock()
-
-	e.lastAccess = time.Now()
-	e.clients[ch] = struct{}{}
-
-	if !e.running {
-		e.startWorker()
-	} else {
-		for _, c := range e.recentChunks {
-			select {
-			case ch <- c:
-			default:
-			}
-		}
-	}
-	return ch
-}
-
-func (e *NowTVEngine) Unsubscribe(ch chan []byte) {
-	e.mu.Lock()
-	defer e.mu.Unlock()
-	if _, ok := e.clients[ch]; ok {
-		delete(e.clients, ch)
-		close(ch)
-	}
-	e.lastAccess = time.Now()
+	return e.weatherLat, e.weatherLon, e.weatherName
 }
 
 // Text slots drawn on the card; each maps to one file in workDir.
@@ -116,29 +90,40 @@ func (e *NowTVEngine) drawtext(slot, font string, size int, x, y, color string) 
 		f, e.slotPath(slot), size, color, x, y)
 }
 
-// Caller holds e.mu.
-func (e *NowTVEngine) startWorker() {
+// onStart seeds the text files ffmpeg reads and starts the refresher.
+func (e *NowTVEngine) onStart(ctx context.Context) {
 	if e.workDir == "" {
 		dir, err := os.MkdirTemp("", "iptv-nowtv-")
 		if err != nil {
 			log.Printf("[NowTV] Cannot create work dir: %v", err)
-			return
+			dir = os.TempDir()
 		}
 		e.workDir = dir
 	}
-	lat, lon, place := e.weatherLat, e.weatherLon, e.weatherName
-
-	ctx, cancel := context.WithCancel(context.Background())
-	e.cancel = cancel
-	e.running = true
-	e.recentChunks = nil
-
-	// Seed every slot before ffmpeg opens them; drawtext fails on missing files.
+	lat, lon, place := e.weather()
+	// drawtext fails on missing files, so every slot must exist before ffmpeg starts.
 	for _, s := range nowTVSlots {
 		writeAtomic(e.slotPath(s), " ")
 	}
 	e.refreshText(ctx, lat, lon, place, true)
 
+	go func() {
+		t := time.NewTicker(time.Second)
+		defer t.Stop()
+		n := 0
+		for {
+			select {
+			case <-ctx.Done():
+				return
+			case <-t.C:
+				n++
+				e.refreshText(ctx, lat, lon, place, n%30 == 0)
+			}
+		}
+	}()
+}
+
+func (e *NowTVEngine) buildCmd(ctx context.Context) *exec.Cmd {
 	sans := fontFile("/usr/share/fonts/TTF/DejaVuSans.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf")
 	bold := fontFile("/usr/share/fonts/TTF/DejaVuSans-Bold.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf")
 	mono := fontFile("/usr/share/fonts/TTF/DejaVuSansMono.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf")
@@ -159,7 +144,7 @@ func (e *NowTVEngine) startWorker() {
 		e.drawtext("footer", sans, 20, "40", "680", "0x64748b"),
 	}, ",")
 
-	cmd := exec.CommandContext(ctx,
+	return exec.CommandContext(ctx,
 		"ffmpeg", "-nostdin", "-v", "warning",
 		"-re",
 		"-f", "lavfi", "-i", "color=c=0x0f172a:s=1280x720:r=25",
@@ -171,117 +156,6 @@ func (e *NowTVEngine) startWorker() {
 		"-mpegts_flags", "resend_headers+initial_discontinuity",
 		"-f", "mpegts", "pipe:1",
 	)
-	stdout, err := cmd.StdoutPipe()
-	if err != nil {
-		log.Printf("[NowTV] Failed to open ffmpeg pipe: %v", err)
-		e.running = false
-		cancel()
-		return
-	}
-	cmd.Stderr = os.Stderr
-	if err := cmd.Start(); err != nil {
-		log.Printf("[NowTV] Failed to start ffmpeg: %v", err)
-		e.running = false
-		cancel()
-		return
-	}
-	log.Printf("[NowTV] Started dashboard renderer (PID %d)", cmd.Process.Pid)
-
-	// Text refresher: clock every second, the rest every 30s.
-	go func() {
-		t := time.NewTicker(time.Second)
-		defer t.Stop()
-		n := 0
-		for {
-			select {
-			case <-ctx.Done():
-				return
-			case <-t.C:
-				n++
-				e.refreshText(ctx, lat, lon, place, n%30 == 0)
-			}
-		}
-	}()
-
-	go func() {
-		defer func() {
-			if rec := recover(); rec != nil {
-				log.Printf("[NowTV PANIC RECOVERED] %v", rec)
-			}
-			stdout.Close()
-			if waitErr := cmd.Wait(); waitErr != nil && ctx.Err() == nil {
-				log.Printf("[NowTV] ffmpeg exited: %v", waitErr)
-			}
-			cancel()
-			e.mu.Lock()
-			e.running = false
-			for c := range e.clients {
-				close(c)
-			}
-			e.clients = make(map[chan []byte]struct{})
-			e.mu.Unlock()
-			log.Printf("[NowTV] Renderer stopped")
-		}()
-
-		dataChan := make(chan []byte)
-		go func() {
-			buf := make([]byte, 65536)
-			for {
-				n, err := stdout.Read(buf)
-				if n > 0 {
-					chunk := make([]byte, n)
-					copy(chunk, buf[:n])
-					select {
-					case dataChan <- chunk:
-					case <-ctx.Done():
-						return
-					}
-				}
-				if err != nil {
-					close(dataChan)
-					return
-				}
-			}
-		}()
-
-		lastData := time.Now()
-		for {
-			select {
-			case <-ctx.Done():
-				return
-			case chunk, ok := <-dataChan:
-				if !ok {
-					return
-				}
-				lastData = time.Now()
-				e.mu.Lock()
-				if len(e.recentChunks) >= 16 {
-					e.recentChunks = e.recentChunks[1:]
-				}
-				e.recentChunks = append(e.recentChunks, chunk)
-				for ch := range e.clients {
-					select {
-					case ch <- chunk:
-					default:
-					}
-				}
-				e.mu.Unlock()
-			case <-time.After(time.Second):
-				e.mu.Lock()
-				numClients := len(e.clients)
-				idle := time.Since(e.lastAccess)
-				e.mu.Unlock()
-				if numClients == 0 && idle > 30*time.Second {
-					log.Printf("[NowTV] No viewers for 30s, stopping")
-					return
-				}
-				if numClients > 0 && time.Since(lastData) > 15*time.Second {
-					log.Printf("[NowTV] Renderer stalled, restarting on next viewer")
-					return
-				}
-			}
-		}
-	}()
 }
 
 var ptWeekdays = []string{"domingo", "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado"}
