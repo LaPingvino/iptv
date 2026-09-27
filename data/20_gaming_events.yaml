@@ -1,6 +1,6 @@
 - name: GamesDoneQuick (GDQ)
   group: Events & Marathons
-  tvg_id: GamesDoneQuick.tv
+  tvg_id: GDQ.tv
   tvg_name: GamesDoneQuick
   url: https://kiefte.eu/iptv/twitch/gamesdonequick
 - name: Classic Tetris (CTWC Main)

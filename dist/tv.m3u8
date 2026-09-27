@@ -675,7 +675,7 @@ http://iran620.com:1935/live/IranJewishTv/playlist.m3u8
 #EXTINF:-1 tvg-id="ADBTV.pt" tvg-name="ADB TV" tvg-logo="https://i.ibb.co/HGfTJwt/ADBTV.jpg" group-title="Religião" tvg-chno="292",ADB TV
 https://live-tv.waytv.pt/adbtv/adbtv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="GamesDoneQuick.tv" tvg-name="GamesDoneQuick" group-title="Events & Marathons" tvg-chno="400",GamesDoneQuick (GDQ)
+#EXTINF:-1 tvg-id="GDQ.tv" tvg-name="GamesDoneQuick" group-title="Events & Marathons" tvg-chno="400",GamesDoneQuick (GDQ)
 https://kiefte.eu/iptv/twitch/gamesdonequick
 
 #EXTINF:-1 tvg-id="ClassicTetris.tv" tvg-name="ClassicTetris" group-title="Events & Marathons" tvg-chno="401",Classic Tetris (CTWC Main)

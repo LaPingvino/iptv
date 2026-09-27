@@ -2,46 +2,6 @@
 <!DOCTYPE tv SYSTEM "xmltv.dtd">
 <tv source-info-url="https://kiefte.eu/iptv" generator-info-name="IPTV Linear 24/7 EPG Engine">
   <channel id="EsperantoTV.eo@SD"><display-name>Esperanto TV</display-name></channel>
-  <programme start="20260926002430 +0000" stop="20260926010430 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Senlime - Epizodo 1: La unua serio en Esperanto</title>
-    <desc lang="eo">La teamoj ekas sian grandan vojaĝon tra Eŭropo.</desc>
-    <category lang="eo">Realspektaklo / Junularo</category>
-  </programme>
-  <programme start="20260926010430 +0000" stop="20260926010440 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto TV</title>
-    <desc lang="eo">Stacia vineto.</desc>
-    <category lang="eo">Vineto</category>
-  </programme>
-  <programme start="20260926010440 +0000" stop="20260926011100 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
-    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
-    <category lang="eo">Muziko</category>
-  </programme>
-  <programme start="20260926011100 +0000" stop="20260926011110 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto TV</title>
-    <desc lang="eo">Stacia vineto.</desc>
-    <category lang="eo">Vineto</category>
-  </programme>
-  <programme start="20260926011110 +0000" stop="20260926011300 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto Estas: Dokumentario</title>
-    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
-    <category lang="eo">Dokumentario</category>
-  </programme>
-  <programme start="20260926011300 +0000" stop="20260926011310 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto TV</title>
-    <desc lang="eo">Stacia vineto.</desc>
-    <category lang="eo">Vineto</category>
-  </programme>
-  <programme start="20260926011310 +0000" stop="20260926014030 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 2: Kiu estas tiu?</title>
-    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas.</desc>
-    <category lang="eo">Kurso / Komedio</category>
-  </programme>
-  <programme start="20260926014030 +0000" stop="20260926014040 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto TV</title>
-    <desc lang="eo">Stacia vineto.</desc>
-    <category lang="eo">Vineto</category>
-  </programme>
   <programme start="20260926014040 +0000" stop="20260926020830 +0000" channel="EsperantoTV.eo@SD">
     <title lang="eo">Esperanto Senlime - Epizodo 2: Konstruado per dolĉaĵoj kaj spagetoj</title>
     <desc lang="eo">Krea defio uzanta nur dolĉaĵojn kaj spagetojn.</desc>
@@ -2706,5 +2666,25 @@
     <title lang="eo">Insulo de la Rozoj</title>
     <desc lang="eo">Plena filmo en Esperanto pri la historia mikronacio.</desc>
     <category lang="eo">Filmo</category>
+  </programme>
+  <programme start="20260930010330 +0000" stop="20260930010340 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20260930010340 +0000" stop="20260930013220 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 9: Trajnoj kaj biletoj</title>
+    <desc lang="eo">Aventuroj ĉe la stacidomo.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20260930013220 +0000" stop="20260930013230 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20260930013230 +0000" stop="20260930020350 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 9: Vojaĝi sen biletoj</title>
+    <desc lang="eo">Strategiaj vojaĝdefioj kaj amuzaj taskoj.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
 </tv>
