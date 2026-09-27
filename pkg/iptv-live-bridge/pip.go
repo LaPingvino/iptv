@@ -39,12 +39,31 @@ const (
 
 type pipSource struct {
 	path   string
+	alt    string // bridge stream path to fall back to if the direct source fails
 	cancel context.CancelFunc
 
 	mu     sync.Mutex
 	frames [][]byte
 	audio  []byte
+	ready  bool // enough audio buffered to play without stutter
+	// playedOnce: after the first start, rebuffering only needs pipRebuffer
+	playedOnce bool
 }
+
+// Jitter buffer (seconds of media). Sound matters more than picture: a source
+// plays only once pipPrebuffer of audio is queued, and after running dry it
+// rebuffers to pipRebuffer instead of stuttering. Data is dropped only when
+// more than pipMaxBuffer piles up. The warm (next page) source keeps pipWarm.
+const (
+	pipPrebuffer = 1.5
+	pipRebuffer  = 0.5
+	pipMaxBuffer = 8
+	pipSkipTo    = 3
+	pipWarm      = 3
+)
+
+func secsAudio(sec float64) int  { return int(sec*pipFPS) * pipAudioTick }
+func secsFrames(sec float64) int { return int(sec * pipFPS) }
 
 func (s *pipSource) stop() {
 	if s != nil && s.cancel != nil {
@@ -154,7 +173,7 @@ func (p *PiP) current() *pipSource {
 	p.mu.Lock()
 	defer p.mu.Unlock()
 	if w := p.warm; w != nil {
-		w.trim(pipFPS, pipAudioTick*pipFPS) // keep ~1s ready so the switch has sound at once
+		w.trim(secsFrames(pipWarm), secsAudio(pipWarm)) // ready to play the moment the page switches
 	}
 	return p.active
 }
@@ -170,10 +189,10 @@ func (p *PiP) videoWriter(ctx context.Context) {
 		if src := p.current(); src != nil {
 			frame = last
 			src.mu.Lock()
-			if len(src.frames) > 3*pipFPS { // >3s behind: skip ahead to ~1s
-				src.frames = src.frames[len(src.frames)-pipFPS:]
+			if len(src.frames) > secsFrames(pipMaxBuffer) {
+				src.frames = src.frames[len(src.frames)-secsFrames(pipSkipTo):]
 			}
-			if len(src.frames) > 0 {
+			if src.ready && len(src.frames) > 0 {
 				frame, src.frames = src.frames[0], src.frames[1:]
 			}
 			src.mu.Unlock()
@@ -190,10 +209,20 @@ func (p *PiP) audioWriter(ctx context.Context) {
 		chunk := silence
 		if src := p.current(); src != nil {
 			src.mu.Lock()
-			if len(src.audio) > pipAudioTick*3*pipFPS { // >3s behind: skip ahead to ~1s
-				src.audio = src.audio[len(src.audio)-pipAudioTick*pipFPS:]
+			if len(src.audio) > secsAudio(pipMaxBuffer) {
+				src.audio = src.audio[len(src.audio)-secsAudio(pipSkipTo):]
 			}
-			if len(src.audio) >= pipAudioTick {
+			switch {
+			case !src.ready && len(src.audio) >= secsAudio(pipPrebuffer):
+				src.ready = true
+			case !src.ready && src.playedOnce && len(src.audio) >= secsAudio(pipRebuffer):
+				src.ready = true
+			case src.ready && len(src.audio) < pipAudioTick:
+				src.ready = false // ran dry: rebuffer rather than stutter
+				log.Printf("[PiP] %s ran dry, rebuffering", src.path)
+			}
+			if src.ready {
+				src.playedOnce = true
 				chunk = append([]byte(nil), src.audio[:pipAudioTick]...)
 				src.audio = src.audio[pipAudioTick:]
 			}
@@ -204,12 +233,14 @@ func (p *PiP) audioWriter(ctx context.Context) {
 	})
 }
 
-func (p *PiP) startSource(parent context.Context, path string) *pipSource {
-	if path == "" {
+// startSource starts a source; spec is "primary" or "primary|fallback".
+func (p *PiP) startSource(parent context.Context, spec string) *pipSource {
+	if spec == "" {
 		return nil
 	}
+	_, alt, _ := strings.Cut(spec, "|")
 	ctx, cancel := context.WithCancel(parent)
-	s := &pipSource{path: path, cancel: cancel}
+	s := &pipSource{path: spec, alt: alt, cancel: cancel}
 	go s.run(ctx)
 	return s
 }
@@ -217,9 +248,14 @@ func (p *PiP) startSource(parent context.Context, path string) *pipSource {
 // run keeps a transcoder going for the source until ctx ends, restarting it
 // if the upstream drops.
 func (s *pipSource) run(ctx context.Context) {
+	src, _, _ := strings.Cut(s.path, "|")
 	for ctx.Err() == nil {
-		if err := s.runOnce(ctx); err != nil && ctx.Err() == nil {
-			log.Printf("[PiP] %s: %v", s.path, err)
+		if err := s.runOnce(ctx, src); err != nil && ctx.Err() == nil {
+			log.Printf("[PiP] %s: %v", src, err)
+			if s.alt != "" && src != s.alt {
+				src = s.alt // direct source gone (e.g. stream just ended): use the bridge's fallback chain
+				continue
+			}
 		}
 		select {
 		case <-ctx.Done():
@@ -229,9 +265,29 @@ func (s *pipSource) run(ctx context.Context) {
 	}
 }
 
-func (s *pipSource) runOnce(ctx context.Context) error {
-	src := localBridgeURL(s.path)
-	prog := lowestVariantProgram(ctx, src)
+// pipTwitchLow prefixes a source that is a Twitch login: the insert then plays
+// that channel's lowest-resolution variant directly (cheap to fetch and decode).
+const pipTwitchLow = "twitch-low:"
+
+func (s *pipSource) runOnce(ctx context.Context, path string) error {
+	var src string
+	prog := -1
+	if login, ok := strings.CutPrefix(path, pipTwitchLow); ok {
+		cctx, cancel := context.WithTimeout(ctx, 15*time.Second)
+		streams, err := twitchMgr.session.Streams(cctx, "https://www.twitch.tv/"+login)
+		cancel()
+		if err != nil {
+			return fmt.Errorf("twitch variants for %s: %w", login, err)
+		}
+		st, ok := streams["worst"]
+		if !ok {
+			return fmt.Errorf("no low variant for %s", login)
+		}
+		src = st.URL()
+	} else {
+		src = localBridgeURL(path)
+		prog = lowestVariantProgram(ctx, src)
+	}
 	vR, vW, err := os.Pipe()
 	if err != nil {
 		return err
@@ -242,8 +298,9 @@ func (s *pipSource) runOnce(ctx context.Context) error {
 		vW.Close()
 		return err
 	}
-	// -re reads at native speed, smoothing the per-segment bursts of live HLS.
-	args := []string{"-nostdin", "-v", "error", "-re", "-user_agent", "Mozilla/5.0", "-i", src}
+	// No -re: let the HLS demuxer fetch whole segments as fast as it can; the
+	// jitter buffer above absorbs the bursts (-re made big segments stall).
+	args := []string{"-nostdin", "-v", "error", "-user_agent", "Mozilla/5.0", "-i", src}
 	vmap, amap := "0:v:0", "0:a:0?"
 	if prog >= 0 {
 		vmap, amap = fmt.Sprintf("0:p:%d:v:0", prog), fmt.Sprintf("0:p:%d:a:0?", prog)
@@ -281,8 +338,8 @@ func (s *pipSource) runOnce(ctx context.Context) error {
 			}
 			s.mu.Lock()
 			s.frames = append(s.frames, buf)
-			if len(s.frames) > 5*pipFPS {
-				s.frames = s.frames[len(s.frames)-5*pipFPS:]
+			if len(s.frames) > secsFrames(pipMaxBuffer+2) {
+				s.frames = s.frames[len(s.frames)-secsFrames(pipMaxBuffer):]
 			}
 			s.mu.Unlock()
 		}
@@ -296,8 +353,8 @@ func (s *pipSource) runOnce(ctx context.Context) error {
 			if n > 0 {
 				s.mu.Lock()
 				s.audio = append(s.audio, buf[:n]...)
-				if len(s.audio) > pipAudioTick*5*pipFPS {
-					s.audio = s.audio[len(s.audio)-pipAudioTick*5*pipFPS:]
+				if len(s.audio) > secsAudio(pipMaxBuffer+2) {
+					s.audio = s.audio[len(s.audio)-secsAudio(pipMaxBuffer):]
 				}
 				s.mu.Unlock()
 			}

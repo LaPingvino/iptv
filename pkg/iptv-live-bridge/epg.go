@@ -44,7 +44,8 @@ type TwitchNowEntry struct {
 	Game    string `json:"game"`
 	Title   string `json:"title"`
 	Viewers int    `json:"viewers"`
-	Note    string `json:"note,omitempty"` // fallback reason, e.g. "espelho", "raid"
+	Note    string `json:"note,omitempty"`  // fallback reason, e.g. "espelho", "raid"
+	Login   string `json:"login,omitempty"` // Twitch login of whoever is on screen
 }
 
 type EPGManager struct {
@@ -418,6 +419,7 @@ func (m *EPGManager) buildTwitchEPG(ctx context.Context) (string, error) {
 				desc = fmt.Sprintf("Followed streamer #%d (%s) playing %s with %d viewers.", ch.Rank, s.DisplayName, s.Game, s.Viewers)
 				category = s.Game
 				cur.State, cur.Who, cur.Game, cur.Title, cur.Viewers = "live", s.DisplayName, s.Game, s.Title, s.Viewers
+				cur.Login = strings.ToLower(s.Login)
 			} else {
 				cur.State = "standby"
 				title = fmt.Sprintf("Followed Streamer #%d (Standby)", ch.Rank)
@@ -468,7 +470,7 @@ func (m *EPGManager) buildTwitchEPG(ctx context.Context) (string, error) {
 				desc = fmt.Sprintf("%s is offline. Relaying %s (%s) playing %s with %d viewers.", name, d.Who, d.Note, d.Game, d.Viewers)
 			}
 			cur.State, cur.Who, cur.Game, cur.Title, cur.Viewers = d.State, d.Who, d.Game, d.Title, d.Viewers
-			cur.Note = d.Note
+			cur.Note, cur.Login = d.Note, d.Login
 		}
 
 		nowEntries = append(nowEntries, cur)

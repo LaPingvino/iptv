@@ -310,7 +310,7 @@ func (e *NowTVEngine) setPages(p []nowPage) {
 		e.pageIdx = 0
 	}
 	e.pagesMu.Unlock()
-	e.writePage()
+	e.writePage(false) // data refresh: keep the current insert
 }
 
 func (e *NowTVEngine) nextPage() {
@@ -319,10 +319,12 @@ func (e *NowTVEngine) nextPage() {
 		e.pageIdx = (e.pageIdx + 1) % len(e.pages)
 	}
 	e.pagesMu.Unlock()
-	e.writePage()
+	e.writePage(true)
 }
 
-func (e *NowTVEngine) writePage() {
+// writePage renders the current page; advance=true on a real page change
+// (the insert rotates), false when only the data was refreshed.
+func (e *NowTVEngine) writePage(advance bool) {
 	e.pagesMu.Lock()
 	defer e.pagesMu.Unlock()
 	if len(e.pages) == 0 {
@@ -342,16 +344,17 @@ func (e *NowTVEngine) writePage() {
 	if e.pipCycle == nil {
 		e.pipCycle = map[string]int{}
 	}
-	cur := e.pipChoice(pg, true)
+	cur := e.pipChoice(pg, advance)
 	writeAtomic(e.slotPath("piplabel"), cur.label)
 	if e.pip != nil && e.runCtx != nil {
-		next := e.pipChoice(e.pages[(e.pageIdx+1)%len(e.pages)], false)
+		next := e.pipPeek(e.pages[(e.pageIdx+1)%len(e.pages)])
 		e.pip.Show(e.runCtx, cur.path, next.path)
 	}
 }
 
-// pipChoice picks the page's insert: the next candidate each time the page is
-// shown (advance=true counts this showing; false peeks at the next showing).
+// pipChoice picks the page's insert, one candidate further each time the page
+// is shown. advance=true counts a new showing; false returns the candidate of
+// the current showing (or, for a page not yet shown, its first one).
 func (e *NowTVEngine) pipChoice(pg nowPage, advance bool) pipCand {
 	if len(pg.pip) == 0 {
 		return pipCand{}
@@ -359,8 +362,20 @@ func (e *NowTVEngine) pipChoice(pg nowPage, advance bool) pipCand {
 	n := e.pipCycle[pg.title]
 	if advance {
 		e.pipCycle[pg.title] = n + 1
+		return pg.pip[n%len(pg.pip)]
+	}
+	if n > 0 {
+		n--
 	}
 	return pg.pip[n%len(pg.pip)]
+}
+
+// pipPeek is the candidate a page will show on its next showing.
+func (e *NowTVEngine) pipPeek(pg nowPage) pipCand {
+	if len(pg.pip) == 0 {
+		return pipCand{}
+	}
+	return pg.pip[e.pipCycle[pg.title]%len(pg.pip)]
 }
 
 // buildNowPages turns the Twitch EPG decisions (dist/twitch_now.json) into
@@ -388,23 +403,30 @@ func buildNowPages(ctx context.Context) []nowPage {
 		sort.SliceStable(entries, func(i, j int) bool {
 			return playlistChNo(entries[i].StreamPath) < playlistChNo(entries[j].StreamPath)
 		})
+		// spread evenly: page sizes differ by at most one (31 -> 6+5+5+5+5+5)
 		nPages := (len(entries) + nowRowsPerPage - 1) / nowRowsPerPage
-		size := (len(entries) + nPages - 1) / nPages // spread evenly: 8 -> 4+4, not 6+2
-		for p := 0; p < nPages && p*size < len(entries); p++ {
-			end := (p + 1) * size
-			if end > len(entries) {
-				end = len(entries)
+		start := 0
+		for p := 0; p < nPages; p++ {
+			n := len(entries) / nPages
+			if p < len(entries)%nPages {
+				n++
 			}
+			end := start + n
 			pg := nowPage{title: sec.title}
 			if nPages > 1 {
 				pg.title = fmt.Sprintf("%s (%d/%d)", sec.title, p+1, nPages)
 			}
-			for _, en := range entries[p*size : end] {
+			for _, en := range entries[start:end] {
 				st, ti := nowRowText(en, sec.group == "Games (Top Live)")
 				pg.rows = append(pg.rows, nowRow{status: st, title: ti})
 				if r, ok := fallbackRank[en.State]; ok {
+					src := en.StreamPath
+					if en.Login != "" {
+						// lowest-res variant straight from Twitch; bridge URL if that fails
+						src = pipTwitchLow + en.Login + "|" + en.StreamPath
+					}
 					pg.pip = append(pg.pip, pipCand{
-						path:    en.StreamPath,
+						path:    src,
 						label:   fmt.Sprintf("▶ %d  %s", playlistChNo(en.StreamPath), stripEmoji(en.Who)),
 						rank:    r,
 						viewers: en.Viewers,
@@ -418,6 +440,7 @@ func buildNowPages(ctx context.Context) []nowPage {
 				return pg.pip[i].viewers > pg.pip[j].viewers
 			})
 			pages = append(pages, pg)
+			start = end
 		}
 	}
 	if len(pages) == 0 {

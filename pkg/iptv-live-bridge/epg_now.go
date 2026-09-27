@@ -177,6 +177,7 @@ func pickGameStream(g *gqlGame) *gqlGameStream {
 // nowDecision is what a channel shows right now and why.
 type nowDecision struct {
 	State   string // live, raid, host, team, relay, circle, lastgame, lastresort, offline
+	Login   string // Twitch login of whoever is on screen (for the low-res insert)
 	Who     string
 	Game    string
 	Title   string
@@ -190,7 +191,7 @@ func liveUser(users map[string]*gqlUser, login string) (nowDecision, bool) {
 	if u == nil || u.Stream == nil {
 		return nowDecision{}, false
 	}
-	return nowDecision{Who: u.name(login), Game: u.Stream.gameName(), Title: u.Stream.Title, Viewers: u.Stream.ViewersCount}, true
+	return nowDecision{Login: strings.ToLower(u.Login), Who: u.name(login), Game: u.Stream.gameName(), Title: u.Stream.Title, Viewers: u.Stream.ViewersCount}, true
 }
 
 // decideUser mirrors TwitchManager.Resolve for a channel login.
@@ -213,12 +214,12 @@ func decideUser(login string, users map[string]*gqlUser, gameTop map[string]*gql
 		if d, ok := liveUser(users, t.Login); ok {
 			return withState(d, "raid", "raid")
 		}
-		return nowDecision{State: "raid", Who: t.DisplayName, Note: "raid"}
+		return nowDecision{State: "raid", Login: strings.ToLower(t.Login), Who: t.DisplayName, Note: "raid"}
 	}
 	// 3. host target
 	if u.Hosting != nil && u.Hosting.Stream != nil && u.Hosting.Login != "" {
 		s := u.Hosting.Stream
-		return nowDecision{State: "host", Who: u.Hosting.Login, Game: s.gameName(), Title: s.Title, Viewers: s.ViewersCount, Note: "host"}
+		return nowDecision{State: "host", Login: strings.ToLower(u.Hosting.Login), Who: u.Hosting.Login, Game: s.gameName(), Title: s.Title, Viewers: s.ViewersCount, Note: "host"}
 	}
 	// 4. live teammates, followed ones first, then by viewers
 	if u.PrimaryTeam != nil {
@@ -231,7 +232,7 @@ func decideUser(login string, users map[string]*gqlUser, gameTop map[string]*gql
 			}
 			followed := isLapingvinoFollow(strings.ToLower(n.Login))
 			if best == nil || (followed && !bestFollowed) || (followed == bestFollowed && n.Stream.ViewersCount > best.Viewers) {
-				d := nowDecision{State: "team", Who: n.DisplayName, Game: n.Stream.gameName(), Title: n.Stream.Title, Viewers: n.Stream.ViewersCount, Note: "equipa " + u.PrimaryTeam.DisplayName}
+				d := nowDecision{State: "team", Login: strings.ToLower(n.Login), Who: n.DisplayName, Game: n.Stream.gameName(), Title: n.Stream.Title, Viewers: n.Stream.ViewersCount, Note: "equipa " + u.PrimaryTeam.DisplayName}
 				best, bestFollowed = &d, followed
 			}
 		}
@@ -246,7 +247,7 @@ func decideUser(login string, users map[string]*gqlUser, gameTop map[string]*gql
 	if gameOK {
 		for _, f := range liveFollows {
 			if !strings.EqualFold(f.Login, login) && strings.EqualFold(f.Game, last) {
-				return nowDecision{State: "relay", Who: f.DisplayName, Game: f.Game, Title: f.Title, Viewers: f.Viewers, Note: "mesmo jogo"}
+				return nowDecision{State: "relay", Login: strings.ToLower(f.Login), Who: f.DisplayName, Game: f.Game, Title: f.Title, Viewers: f.Viewers, Note: "mesmo jogo"}
 			}
 		}
 	}
@@ -259,7 +260,7 @@ func decideUser(login string, users map[string]*gqlUser, gameTop map[string]*gql
 	// 7. top streamer in the last played game
 	if gameOK {
 		if s := gameTop[strings.ToLower(last)]; s != nil {
-			return nowDecision{State: "lastgame", Who: s.Broadcaster.DisplayName, Game: last, Title: s.Title, Viewers: s.ViewersCount, Note: "último jogo"}
+			return nowDecision{State: "lastgame", Login: strings.ToLower(s.Broadcaster.Login), Who: s.Broadcaster.DisplayName, Game: last, Title: s.Title, Viewers: s.ViewersCount, Note: "último jogo"}
 		}
 		// ResolveGame found no suitable stream: it tries the game's circle next.
 		for _, fb := range creatorCircles[strings.ToLower(last)] {
@@ -274,7 +275,7 @@ func decideUser(login string, users map[string]*gqlUser, gameTop map[string]*gql
 		for _, f := range liveFollows {
 			g := strings.ToLower(strings.TrimSpace(f.Game))
 			if pass == 1 || (!ignoredGameCategories[g] && g != "" && g != "unknown") {
-				return nowDecision{State: "lastresort", Who: f.DisplayName, Game: f.Game, Title: f.Title, Viewers: f.Viewers, Note: "seguido"}
+				return nowDecision{State: "lastresort", Login: strings.ToLower(f.Login), Who: f.DisplayName, Game: f.Game, Title: f.Title, Viewers: f.Viewers, Note: "seguido"}
 			}
 		}
 	}
@@ -284,7 +285,7 @@ func decideUser(login string, users map[string]*gqlUser, gameTop map[string]*gql
 // decideGame mirrors ResolveGame for a game channel (bias from ?bias=...).
 func decideGame(ch EPGChannelDef, g *gqlGame, users map[string]*gqlUser) nowDecision {
 	if s := pickGameStream(g); s != nil {
-		return nowDecision{State: "live", Who: s.Broadcaster.DisplayName, Game: ch.GameName, Title: s.Title, Viewers: s.ViewersCount}
+		return nowDecision{State: "live", Login: strings.ToLower(s.Broadcaster.Login), Who: s.Broadcaster.DisplayName, Game: ch.GameName, Title: s.Title, Viewers: s.ViewersCount}
 	}
 	for _, fb := range gameCircleMembers(ch) {
 		if d, ok := liveUser(users, fb); ok {
