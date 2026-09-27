@@ -1,13 +1,11 @@
 package main
 
 import (
-	"bytes"
 	"context"
 	"encoding/json"
 	"fmt"
 	"html"
 	"log"
-	"net/http"
 	"net/url"
 	"os"
 	"path/filepath"
@@ -46,6 +44,7 @@ type TwitchNowEntry struct {
 	Game    string `json:"game"`
 	Title   string `json:"title"`
 	Viewers int    `json:"viewers"`
+	Note    string `json:"note,omitempty"` // fallback reason, e.g. "espelho", "raid"
 }
 
 type EPGManager struct {
@@ -133,7 +132,7 @@ func getTwitchEPGChannels() []EPGChannelDef {
 				}
 
 				target, _ := url.PathUnescape(parts[len(parts)-1])
-				isGame := strings.Contains(cleanURL, "/game/")
+				isGame := strings.Contains(cleanURL, "/game/") || strings.Contains(cleanURL, "/group/")
 
 				def := EPGChannelDef{
 					ID:         ch.TVGID,
@@ -284,83 +283,97 @@ func sanitizeAlias(s string) string {
 func (m *EPGManager) buildTwitchEPG(ctx context.Context) (string, error) {
 	channels := getTwitchEPGChannels()
 
+	// Batch 1: every user channel, every mirror-circle member, every game.
 	var queries []string
+	seenUser := map[string]bool{}
+	addUser := func(login string) {
+		login = strings.ToLower(login)
+		if login == "" || seenUser[login] {
+			return
+		}
+		seenUser[login] = true
+		queries = append(queries, gqlUserQuery("u_"+sanitizeAlias(login), login))
+	}
+	seenGame := map[string]bool{}
+	addGame := func(game string) {
+		k := strings.ToLower(game)
+		if game == "" || seenGame[k] {
+			return
+		}
+		seenGame[k] = true
+		queries = append(queries, gqlGameQuery("g_"+sanitizeAlias(game), game))
+	}
 	for _, ch := range channels {
 		if ch.IsFollowedRank {
 			continue
 		}
 		if ch.IsGame {
-			alias := "g_" + sanitizeAlias(ch.GameName)
-			queries = append(queries, fmt.Sprintf(`
-			%s: game(name: "%s") {
-				name
-				streams(first: 10) {
-					edges {
-						node {
-							broadcaster { login displayName }
-							title
-							viewersCount
-						}
-					}
+			if games, ok := GameGroups[strings.ToLower(ch.GameName)]; ok {
+				for _, g := range games {
+					addGame(g)
 				}
-			}`, alias, html.EscapeString(ch.GameName)))
+			} else {
+				addGame(ch.GameName)
+			}
+			for _, fb := range gameCircleMembers(ch) {
+				addUser(fb)
+			}
 		} else {
-			alias := "u_" + sanitizeAlias(ch.Login)
-			queries = append(queries, fmt.Sprintf(`
-			%s: user(login: "%s") {
-				displayName
-				stream {
-					title
-					viewersCount
-					game { name }
-				}
-				raid {
-					targetChannel { login displayName }
-				}
-				hosting {
-					login
-					stream { viewersCount }
-				}
-				lastBroadcast {
-					title
-					game { name }
-				}
-			}`, alias, ch.Login))
+			addUser(ch.Login)
+			for _, fb := range creatorCircles[ch.Login] {
+				addUser(fb)
+			}
+		}
+	}
+	data, err := twitchGQL(ctx, queries)
+	if err != nil {
+		return "", err
+	}
+	log.Printf("[Twitch EPG] GQL response keys in data: %d", len(data))
+
+	users := map[string]*gqlUser{}
+	for login := range seenUser {
+		if raw, ok := data["u_"+sanitizeAlias(login)]; ok {
+			var u gqlUser
+			if json.Unmarshal(raw, &u) == nil && u.Login != "" {
+				users[login] = &u
+			}
+		}
+	}
+	games := map[string]*gqlGame{}
+	for k := range seenGame {
+		if raw, ok := data["g_"+sanitizeAlias(k)]; ok {
+			var g gqlGame
+			if json.Unmarshal(raw, &g) == nil {
+				games[k] = &g
+			}
 		}
 	}
 
-	fullQuery := "query BatchTwitchEPG {\n" + strings.Join(queries, "\n") + "\n}"
-	payload, _ := json.Marshal(map[string]string{"query": fullQuery})
-
-	req, err := http.NewRequestWithContext(ctx, http.MethodPost, "https://gql.twitch.tv/gql", bytes.NewReader(payload))
-	if err != nil {
-		return "", err
+	// Batch 2: top stream in the last played game of offline channels (Resolve step 7).
+	var lastQueries []string
+	lastSeen := map[string]bool{}
+	for _, u := range users {
+		if u.Stream != nil {
+			continue
+		}
+		if lg := u.lastGame(); lg != "" && !lastSeen[strings.ToLower(lg)] && games[strings.ToLower(lg)] == nil {
+			lastSeen[strings.ToLower(lg)] = true
+			lastQueries = append(lastQueries, gqlGameQuery("l_"+sanitizeAlias(lg), lg))
+		}
 	}
-	req.Header.Set("Client-Id", "kimne78kx3ncx6brgo4mv6wki5h1ko")
-	req.Header.Set("Content-Type", "application/json")
-
-	resp, err := http.DefaultClient.Do(req)
-	if err != nil {
-		return "", err
+	gameTop := map[string]*gqlGameStream{}
+	for k, g := range games {
+		gameTop[k] = pickGameStream(g)
 	}
-	defer resp.Body.Close()
-
-	if resp.StatusCode != http.StatusOK {
-		return "", fmt.Errorf("twitch GQL returned HTTP %d", resp.StatusCode)
+	if lastData, err := twitchGQL(ctx, lastQueries); err == nil {
+		for k := range lastSeen {
+			var g gqlGame
+			if raw, ok := lastData["l_"+sanitizeAlias(k)]; ok && json.Unmarshal(raw, &g) == nil {
+				gameTop[k] = pickGameStream(&g)
+			}
+		}
 	}
-
-	var result struct {
-		Data   map[string]json.RawMessage `json:"data"`
-		Errors []any                      `json:"errors"`
-	}
-
-	if err := json.NewDecoder(resp.Body).Decode(&result); err != nil {
-		return "", err
-	}
-	if len(result.Errors) > 0 {
-		log.Printf("[Twitch EPG] GQL returned errors: %v", result.Errors)
-	}
-	log.Printf("[Twitch EPG] GQL response keys in data: %d", len(result.Data))
 
 	now := time.Now().UTC()
 	prevStart := now.Add(-3 * time.Hour).Format("20060102150405 +0000")
@@ -399,163 +412,51 @@ func (m *EPGManager) buildTwitchEPG(ctx context.Context) (string, error) {
 				desc = fmt.Sprintf("Slot reserved for live followed streamer #%d. Standby active.", ch.Rank)
 				category = "Standby"
 			}
-		} else if ch.IsGame {
-			alias := "g_" + sanitizeAlias(ch.GameName)
-			raw, exists := result.Data[alias]
-			if exists {
-				var gData struct {
-					Name    string `json:"name"`
-					Streams struct {
-						Edges []struct {
-							Node struct {
-								Broadcaster struct {
-									Login       string `json:"login"`
-									DisplayName string `json:"displayName"`
-								} `json:"broadcaster"`
-								Title        string `json:"title"`
-								ViewersCount int    `json:"viewersCount"`
-							} `json:"node"`
-						} `json:"edges"`
-					} `json:"streams"`
-				}
-				_ = json.Unmarshal(raw, &gData)
-				category = ch.GameName
-				// Pick like ResolveGame: followed streamer first, then the first
-				// non-blacklisted stream with >=3 viewers, then any non-blacklisted one.
-				pick := -1
-				for i, e := range gData.Streams.Edges {
-					l := strings.ToLower(e.Node.Broadcaster.Login)
-					if !blacklistedStreamers[l] && isLapingvinoFollow(l) {
-						pick = i
-						break
-					}
-				}
-				for pass := 0; pass < 2 && pick < 0; pass++ {
-					for i, e := range gData.Streams.Edges {
-						if blacklistedStreamers[strings.ToLower(e.Node.Broadcaster.Login)] {
-							continue
-						}
-						if pass == 1 || e.Node.ViewersCount >= 3 {
-							pick = i
-							break
-						}
-					}
-				}
-				if pick >= 0 {
-					top := gData.Streams.Edges[pick].Node
-					title = fmt.Sprintf("%s - %s", ch.GameName, top.Title)
-					desc = fmt.Sprintf("Live on %s streaming %s with %d viewers.", top.Broadcaster.DisplayName, ch.GameName, top.ViewersCount)
-					cur.State, cur.Who, cur.Game, cur.Title, cur.Viewers = "live", top.Broadcaster.DisplayName, ch.GameName, top.Title, top.ViewersCount
-				} else if fb := gameCircleFallback(ch); fb != "" {
-					title = fmt.Sprintf("%s - Relay: %s", ch.GameName, fb)
-					desc = fmt.Sprintf("No suitable live stream in %s; relaying circle channel %s.", ch.GameName, fb)
-					cur.State, cur.Who, cur.Game = "circle", fb, ch.GameName
-				} else {
-					cur.State, cur.Game = "offline", ch.GameName
-					title = fmt.Sprintf("%s - No username cached", ch.GameName)
-					desc = fmt.Sprintf("No active broadcast in category %s right now. Stream relay is standing by.", ch.GameName)
-				}
-			} else {
-				title = fmt.Sprintf("%s - No username cached", ch.GameName)
-				desc = fmt.Sprintf("No streamer currently cached for category %s. Stream relay is standing by.", ch.GameName)
-			}
 		} else {
-			alias := "u_" + sanitizeAlias(ch.Login)
-			raw, exists := result.Data[alias]
-			if exists {
-				var uData struct {
-					DisplayName string `json:"displayName"`
-					Stream      *struct {
-						Title        string `json:"title"`
-						ViewersCount int    `json:"viewersCount"`
-						Game         *struct {
-							Name string `json:"name"`
-						} `json:"game"`
-					} `json:"stream"`
-					Raid *struct {
-						TargetChannel *struct {
-							Login       string `json:"login"`
-							DisplayName string `json:"displayName"`
-						} `json:"targetChannel"`
-					} `json:"raid"`
-					Hosting *struct {
-						Login  string `json:"login"`
-						Stream *struct {
-							ViewersCount int `json:"viewersCount"`
-						} `json:"stream"`
-					} `json:"hosting"`
-					LastBroadcast *struct {
-						Title string `json:"title"`
-						Game  *struct {
-							Name string `json:"name"`
-						} `json:"game"`
-					} `json:"lastBroadcast"`
-				}
-				_ = json.Unmarshal(raw, &uData)
-
-				name := uData.DisplayName
-				if name == "" {
-					name = ch.Name
-				}
-
-				if uData.Stream != nil {
-					// Live stream
-					gName := "Gaming"
-					if uData.Stream.Game != nil && uData.Stream.Game.Name != "" {
-						gName = uData.Stream.Game.Name
-					}
-					category = gName
-					if uData.Stream.Title != "" {
-						title = fmt.Sprintf("%s - %s", gName, uData.Stream.Title)
-					} else {
-						title = fmt.Sprintf("%s Live", name)
-					}
-					desc = fmt.Sprintf("Live on %s streaming %s with %d viewers.", name, gName, uData.Stream.ViewersCount)
-					cur.State, cur.Who, cur.Game, cur.Title, cur.Viewers = "live", name, gName, uData.Stream.Title, uData.Stream.ViewersCount
-				} else if uData.Raid != nil && uData.Raid.TargetChannel != nil {
-					target := uData.Raid.TargetChannel.DisplayName
-					title = fmt.Sprintf("[Raid -> %s] Stream ended", target)
-					desc = fmt.Sprintf("%s raided %s. Stream auto-relaying to %s.", name, target, target)
-					cur.State, cur.Who = "raid", target
-				} else if uData.Hosting != nil && uData.Hosting.Stream != nil {
-					target := uData.Hosting.Login
-					title = fmt.Sprintf("[Hosting %s] Host Relay", target)
-					desc = fmt.Sprintf("%s is currently hosting %s with %d viewers.", name, target, uData.Hosting.Stream.ViewersCount)
-					cur.State, cur.Who, cur.Viewers = "host", target, uData.Hosting.Stream.ViewersCount
-				} else if uData.LastBroadcast != nil && uData.LastBroadcast.Game != nil {
-					lastGame := uData.LastBroadcast.Game.Name
-					for _, lf := range liveFollows {
-						if lf.Login != ch.Login && strings.EqualFold(lf.Game, lastGame) {
-							title = fmt.Sprintf("[%s Relay] %s - %s", lastGame, lf.DisplayName, lf.Title)
-							desc = fmt.Sprintf("%s is offline. Auto-relaying followed streamer %s playing %s (%d viewers).", name, lf.DisplayName, lf.Game, lf.Viewers)
-							category = lastGame
-							cur.State, cur.Who, cur.Game, cur.Title, cur.Viewers = "relay", lf.DisplayName, lf.Game, lf.Title, lf.Viewers
+			var d nowDecision
+			if ch.IsGame {
+				category = ch.GameName
+				if gl, ok := GameGroups[strings.ToLower(ch.GameName)]; ok {
+					d = nowDecision{State: "offline", Game: ch.GameName}
+					for _, g := range gl {
+						if dd := decideGame(EPGChannelDef{GameName: g, StreamPath: ch.StreamPath}, games[strings.ToLower(g)], users); dd.State == "live" {
+							d = dd
 							break
 						}
 					}
-				}
-
-				if title == "" {
-					// Check creator circles fallback
-					if circle, ok := creatorCircles[ch.Login]; ok && len(circle) > 0 {
-						title = fmt.Sprintf("[Circle: %s] Community Relay", circle[0])
-						desc = fmt.Sprintf("%s is offline. Priority relay to community circle member %s.", name, circle[0])
-						cur.State, cur.Who = "circle", circle[0]
-					} else {
-						title = fmt.Sprintf("%s (Offline)", name)
-						cur.State = "offline"
-						if uData.LastBroadcast != nil && uData.LastBroadcast.Game != nil {
-							cur.Game = uData.LastBroadcast.Game.Name
-							desc = fmt.Sprintf("%s is offline. Last broadcast was %s.", name, uData.LastBroadcast.Game.Name)
-						} else {
-							desc = fmt.Sprintf("%s is offline. Standby slate active.", name)
-						}
+					if d.State != "live" {
+						d = decideGame(ch, nil, users)
 					}
+				} else {
+					d = decideGame(ch, games[strings.ToLower(ch.GameName)], users)
 				}
 			} else {
-				title = fmt.Sprintf("%s - Live status unknown", ch.Name)
-				desc = fmt.Sprintf("Live status for %s is currently unknown. Stream relay is standing by.", ch.Name)
+				d = decideUser(ch.Login, users, gameTop, liveFollows)
 			}
+			name := users[ch.Login].name(ch.Name)
+			if ch.IsGame {
+				name = ch.GameName
+			}
+			switch d.State {
+			case "live":
+				category = d.Game
+				title = fmt.Sprintf("%s - %s", d.Game, d.Title)
+				desc = fmt.Sprintf("Live on %s streaming %s with %d viewers.", d.Who, d.Game, d.Viewers)
+			case "offline":
+				title = fmt.Sprintf("%s (Offline)", name)
+				desc = fmt.Sprintf("%s is offline. Standby slate active.", name)
+				if d.Game != "" && !ch.IsGame {
+					desc = fmt.Sprintf("%s is offline. Last broadcast was %s.", name, d.Game)
+				}
+			default:
+				if d.Game != "" {
+					category = d.Game
+				}
+				title = fmt.Sprintf("[%s → %s] %s", d.Note, d.Who, d.Title)
+				desc = fmt.Sprintf("%s is offline. Relaying %s (%s) playing %s with %d viewers.", name, d.Who, d.Note, d.Game, d.Viewers)
+			}
+			cur.State, cur.Who, cur.Game, cur.Title, cur.Viewers = d.State, d.Who, d.Game, d.Title, d.Viewers
+			cur.Note = d.Note
 		}
 
 		nowEntries = append(nowEntries, cur)
@@ -625,23 +526,21 @@ func (m *EPGManager) TwitchNow(ctx context.Context) []TwitchNowEntry {
 	return entries
 }
 
-// gameCircleFallback mirrors ResolveGame's circle step for a game channel with
-// no suitable stream: bias-specific circle ("nes-tetris") first, then the game's.
-func gameCircleFallback(ch EPGChannelDef) string {
+// gameCircleMembers mirrors ResolveGame's circle step for a game or group
+// channel: bias-specific circle ("nes-tetris") first, then the game's own.
+func gameCircleMembers(ch EPGChannelDef) []string {
 	game := strings.ToLower(strings.ReplaceAll(ch.GameName, "-", " "))
 	bias := ""
 	if u, err := url.Parse("/" + ch.StreamPath); err == nil {
 		bias = u.Query().Get("bias")
 	}
+	var out []string
 	if bias != "" {
-		if c := creatorCircles[bias+"-"+game]; len(c) > 0 {
-			return c[0]
-		}
+		out = append(out, creatorCircles[bias+"-"+game]...)
 	}
-	if c := creatorCircles[game]; len(c) > 0 {
-		return c[0]
-	}
-	return ""
+	out = append(out, creatorCircles[game]...)
+	out = append(out, creatorCircles[strings.ToLower(ch.GameName)]...)
+	return out
 }
 
 // iptvStreamPath returns the part of a bridge URL after "/iptv/" (query kept).
