@@ -14,8 +14,9 @@ func TestLinearStationInterleaving(t *testing.T) {
 	}
 	defer os.RemoveAll(tmpDir)
 
-	// Create mock show segments and bumper segments
+	// Create mock show segments and the station ident (bumper)
 	mockFiles := []string{
+		"stacia_vineto_0000.ts",
 		"dok_estas_parto_01_0001.ts",
 		"dok_estas_parto_01_0002.ts",
 		"pasporto_01_0001.ts",
@@ -41,21 +42,21 @@ func TestLinearStationInterleaving(t *testing.T) {
 		t.Fatal("expected non-empty schedule")
 	}
 
-	// Total expected = 2 (mazi) + 2 (bumper) + 2 (senlime) + 2 (bumper) = 8
-	if len(schedule) != 8 {
-		t.Errorf("expected 8 interleaved segments, got %d", len(schedule))
+	// pasporto (2) + ident (1) + senlime (2) + ident (1) + Esperanto Estas doc (2) + ident (1) = 9
+	if len(schedule) != 9 {
+		t.Errorf("expected 9 interleaved segments, got %d", len(schedule))
 	}
 
 	// Verify bumper is interleaved
 	hasBumperInterleaved := false
 	for i, seg := range schedule {
-		if strings.HasPrefix(seg.Name, "dok_estas_parto_01") && i > 0 {
+		if strings.HasPrefix(seg.Name, "stacia_vineto_") && i > 0 {
 			hasBumperInterleaved = true
 			break
 		}
 	}
 	if !hasBumperInterleaved {
-		t.Error("expected dok_estas_parto_01 bumper to be interleaved between shows")
+		t.Error("expected stacia_vineto ident to be interleaved between shows")
 	}
 
 	// Test playlist generation

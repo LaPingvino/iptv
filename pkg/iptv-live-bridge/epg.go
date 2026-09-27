@@ -27,6 +27,25 @@ type EPGChannelDef struct {
 	Login          string
 	IsFollowedRank bool
 	Rank           int
+	Group          string // playlist group, e.g. "Events & Marathons"
+	StreamPath     string // URL path under /iptv/, e.g. "twitch/gamesdonequick"
+}
+
+// TwitchNowEntry is the per-channel "what is on right now" decision made while
+// building the Twitch EPG, including which fallback is in effect. It is kept in
+// memory and written to dist/twitch_now.json for the Now TV pages (channel 460).
+type TwitchNowEntry struct {
+	TvgID      string `json:"tvg_id"`
+	Name       string `json:"name"`
+	Group      string `json:"group"`
+	StreamPath string `json:"stream_path"`
+	// State: live, raid, host, relay (followed streamer in same game),
+	// circle (mirror channel), offline, standby, unknown.
+	State   string `json:"state"`
+	Who     string `json:"who"` // who is actually on screen, if known
+	Game    string `json:"game"`
+	Title   string `json:"title"`
+	Viewers int    `json:"viewers"`
 }
 
 type EPGManager struct {
@@ -40,6 +59,7 @@ type EPGManager struct {
 	esperantoTS    time.Time
 	bahaiXML       string
 	bahaiTS        time.Time
+	twitchNow      []TwitchNowEntry
 }
 
 var epgManager = &EPGManager{}
@@ -101,6 +121,8 @@ func getTwitchEPGChannels() []EPGChannelDef {
 						Name:           ch.Name,
 						IsFollowedRank: true,
 						Rank:           rank,
+						Group:          ch.Group,
+						StreamPath:     iptvStreamPath(ch.URL),
 					})
 					continue
 				}
@@ -114,8 +136,10 @@ func getTwitchEPGChannels() []EPGChannelDef {
 				isGame := strings.Contains(cleanURL, "/game/")
 
 				def := EPGChannelDef{
-					ID:   ch.TVGID,
-					Name: ch.Name,
+					ID:         ch.TVGID,
+					Name:       ch.Name,
+					Group:      ch.Group,
+					StreamPath: iptvStreamPath(ch.URL),
 				}
 				if isGame {
 					def.IsGame = true
@@ -270,7 +294,7 @@ func (m *EPGManager) buildTwitchEPG(ctx context.Context) (string, error) {
 			queries = append(queries, fmt.Sprintf(`
 			%s: game(name: "%s") {
 				name
-				streams(first: 1) {
+				streams(first: 10) {
 					edges {
 						node {
 							broadcaster { login displayName }
@@ -345,6 +369,7 @@ func (m *EPGManager) buildTwitchEPG(ctx context.Context) (string, error) {
 	nextStop := now.Add(5 * time.Hour).Format("20060102150405 +0000")
 
 	liveFollows := twitchMgr.GetRankedLiveFollows(ctx)
+	var nowEntries []TwitchNowEntry
 
 	var sb strings.Builder
 	sb.WriteString("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n")
@@ -358,6 +383,7 @@ func (m *EPGManager) buildTwitchEPG(ctx context.Context) (string, error) {
 		var title string
 		var desc string
 		var category string = "Gaming"
+		cur := TwitchNowEntry{TvgID: ch.ID, Name: ch.Name, Group: ch.Group, StreamPath: ch.StreamPath, State: "unknown"}
 
 		if ch.IsFollowedRank {
 			idx := ch.Rank - 1
@@ -366,7 +392,9 @@ func (m *EPGManager) buildTwitchEPG(ctx context.Context) (string, error) {
 				title = fmt.Sprintf("#%d: %s - %s", ch.Rank, s.DisplayName, s.Title)
 				desc = fmt.Sprintf("Followed streamer #%d (%s) playing %s with %d viewers.", ch.Rank, s.DisplayName, s.Game, s.Viewers)
 				category = s.Game
+				cur.State, cur.Who, cur.Game, cur.Title, cur.Viewers = "live", s.DisplayName, s.Game, s.Title, s.Viewers
 			} else {
+				cur.State = "standby"
 				title = fmt.Sprintf("Followed Streamer #%d (Standby)", ch.Rank)
 				desc = fmt.Sprintf("Slot reserved for live followed streamer #%d. Standby active.", ch.Rank)
 				category = "Standby"
@@ -392,11 +420,38 @@ func (m *EPGManager) buildTwitchEPG(ctx context.Context) (string, error) {
 				}
 				_ = json.Unmarshal(raw, &gData)
 				category = ch.GameName
-				if len(gData.Streams.Edges) > 0 {
-					top := gData.Streams.Edges[0].Node
+				// Pick like ResolveGame: followed streamer first, then the first
+				// non-blacklisted stream with >=3 viewers, then any non-blacklisted one.
+				pick := -1
+				for i, e := range gData.Streams.Edges {
+					l := strings.ToLower(e.Node.Broadcaster.Login)
+					if !blacklistedStreamers[l] && isLapingvinoFollow(l) {
+						pick = i
+						break
+					}
+				}
+				for pass := 0; pass < 2 && pick < 0; pass++ {
+					for i, e := range gData.Streams.Edges {
+						if blacklistedStreamers[strings.ToLower(e.Node.Broadcaster.Login)] {
+							continue
+						}
+						if pass == 1 || e.Node.ViewersCount >= 3 {
+							pick = i
+							break
+						}
+					}
+				}
+				if pick >= 0 {
+					top := gData.Streams.Edges[pick].Node
 					title = fmt.Sprintf("%s - %s", ch.GameName, top.Title)
 					desc = fmt.Sprintf("Live on %s streaming %s with %d viewers.", top.Broadcaster.DisplayName, ch.GameName, top.ViewersCount)
+					cur.State, cur.Who, cur.Game, cur.Title, cur.Viewers = "live", top.Broadcaster.DisplayName, ch.GameName, top.Title, top.ViewersCount
+				} else if fb := gameCircleFallback(ch); fb != "" {
+					title = fmt.Sprintf("%s - Relay: %s", ch.GameName, fb)
+					desc = fmt.Sprintf("No suitable live stream in %s; relaying circle channel %s.", ch.GameName, fb)
+					cur.State, cur.Who, cur.Game = "circle", fb, ch.GameName
 				} else {
+					cur.State, cur.Game = "offline", ch.GameName
 					title = fmt.Sprintf("%s - No username cached", ch.GameName)
 					desc = fmt.Sprintf("No active broadcast in category %s right now. Stream relay is standing by.", ch.GameName)
 				}
@@ -456,14 +511,17 @@ func (m *EPGManager) buildTwitchEPG(ctx context.Context) (string, error) {
 						title = fmt.Sprintf("%s Live", name)
 					}
 					desc = fmt.Sprintf("Live on %s streaming %s with %d viewers.", name, gName, uData.Stream.ViewersCount)
+					cur.State, cur.Who, cur.Game, cur.Title, cur.Viewers = "live", name, gName, uData.Stream.Title, uData.Stream.ViewersCount
 				} else if uData.Raid != nil && uData.Raid.TargetChannel != nil {
 					target := uData.Raid.TargetChannel.DisplayName
 					title = fmt.Sprintf("[Raid -> %s] Stream ended", target)
 					desc = fmt.Sprintf("%s raided %s. Stream auto-relaying to %s.", name, target, target)
+					cur.State, cur.Who = "raid", target
 				} else if uData.Hosting != nil && uData.Hosting.Stream != nil {
 					target := uData.Hosting.Login
 					title = fmt.Sprintf("[Hosting %s] Host Relay", target)
 					desc = fmt.Sprintf("%s is currently hosting %s with %d viewers.", name, target, uData.Hosting.Stream.ViewersCount)
+					cur.State, cur.Who, cur.Viewers = "host", target, uData.Hosting.Stream.ViewersCount
 				} else if uData.LastBroadcast != nil && uData.LastBroadcast.Game != nil {
 					lastGame := uData.LastBroadcast.Game.Name
 					for _, lf := range liveFollows {
@@ -471,6 +529,7 @@ func (m *EPGManager) buildTwitchEPG(ctx context.Context) (string, error) {
 							title = fmt.Sprintf("[%s Relay] %s - %s", lastGame, lf.DisplayName, lf.Title)
 							desc = fmt.Sprintf("%s is offline. Auto-relaying followed streamer %s playing %s (%d viewers).", name, lf.DisplayName, lf.Game, lf.Viewers)
 							category = lastGame
+							cur.State, cur.Who, cur.Game, cur.Title, cur.Viewers = "relay", lf.DisplayName, lf.Game, lf.Title, lf.Viewers
 							break
 						}
 					}
@@ -481,9 +540,12 @@ func (m *EPGManager) buildTwitchEPG(ctx context.Context) (string, error) {
 					if circle, ok := creatorCircles[ch.Login]; ok && len(circle) > 0 {
 						title = fmt.Sprintf("[Circle: %s] Community Relay", circle[0])
 						desc = fmt.Sprintf("%s is offline. Priority relay to community circle member %s.", name, circle[0])
+						cur.State, cur.Who = "circle", circle[0]
 					} else {
 						title = fmt.Sprintf("%s (Offline)", name)
+						cur.State = "offline"
 						if uData.LastBroadcast != nil && uData.LastBroadcast.Game != nil {
+							cur.Game = uData.LastBroadcast.Game.Name
 							desc = fmt.Sprintf("%s is offline. Last broadcast was %s.", name, uData.LastBroadcast.Game.Name)
 						} else {
 							desc = fmt.Sprintf("%s is offline. Standby slate active.", name)
@@ -495,6 +557,8 @@ func (m *EPGManager) buildTwitchEPG(ctx context.Context) (string, error) {
 				desc = fmt.Sprintf("Live status for %s is currently unknown. Stream relay is standing by.", ch.Name)
 			}
 		}
+
+		nowEntries = append(nowEntries, cur)
 
 		// 1. Previous block (Past 3 hours)
 		sb.WriteString(fmt.Sprintf("  <programme start=\"%s\" stop=\"%s\" channel=\"%s\">\n",
@@ -522,7 +586,70 @@ func (m *EPGManager) buildTwitchEPG(ctx context.Context) (string, error) {
 	}
 
 	sb.WriteString("</tv>\n")
+
+	m.mu.Lock()
+	m.twitchNow = nowEntries
+	m.mu.Unlock()
+	if b, err := json.MarshalIndent(nowEntries, "", " "); err == nil {
+		p := filepath.Join(MediaDir, "dist", "twitch_now.json")
+		if os.MkdirAll(filepath.Dir(p), 0755) == nil {
+			_ = os.WriteFile(p, b, 0644)
+		}
+	}
 	return sb.String(), nil
+}
+
+// TwitchNow returns the latest per-channel decisions from the Twitch EPG build,
+// falling back to dist/twitch_now.json, and building synchronously if neither exists.
+func (m *EPGManager) TwitchNow(ctx context.Context) []TwitchNowEntry {
+	m.GetTwitchEPG(ctx) // triggers the usual lazy 2-minute background refresh
+	m.mu.RLock()
+	entries := m.twitchNow
+	m.mu.RUnlock()
+	if len(entries) > 0 {
+		return entries
+	}
+	if b, err := os.ReadFile(filepath.Join(MediaDir, "dist", "twitch_now.json")); err == nil {
+		if json.Unmarshal(b, &entries) == nil && len(entries) > 0 {
+			return entries
+		}
+	}
+	bctx, cancel := context.WithTimeout(ctx, 20*time.Second)
+	defer cancel()
+	if xml, err := m.buildTwitchEPG(bctx); err == nil && xml != "" {
+		m.mu.Lock()
+		m.twitchXML, m.twitchTS = xml, time.Now()
+		entries = m.twitchNow
+		m.mu.Unlock()
+	}
+	return entries
+}
+
+// gameCircleFallback mirrors ResolveGame's circle step for a game channel with
+// no suitable stream: bias-specific circle ("nes-tetris") first, then the game's.
+func gameCircleFallback(ch EPGChannelDef) string {
+	game := strings.ToLower(strings.ReplaceAll(ch.GameName, "-", " "))
+	bias := ""
+	if u, err := url.Parse("/" + ch.StreamPath); err == nil {
+		bias = u.Query().Get("bias")
+	}
+	if bias != "" {
+		if c := creatorCircles[bias+"-"+game]; len(c) > 0 {
+			return c[0]
+		}
+	}
+	if c := creatorCircles[game]; len(c) > 0 {
+		return c[0]
+	}
+	return ""
+}
+
+// iptvStreamPath returns the part of a bridge URL after "/iptv/" (query kept).
+func iptvStreamPath(u string) string {
+	if i := strings.Index(u, "/iptv/"); i >= 0 {
+		return u[i+len("/iptv/"):]
+	}
+	return u
 }
 
 func (m *EPGManager) GetLinearEPG(station *LinearStation, chID, chName, lang string) string {

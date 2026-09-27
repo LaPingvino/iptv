@@ -31,6 +31,16 @@ type NowTVEngine struct {
 	weatherName            string
 
 	engine *FanoutEngine
+
+	pagesMu sync.Mutex
+	pages   []nowPage
+	pageIdx int
+}
+
+// nowPage is one Teletext-style page of the dashboard.
+type nowPage struct {
+	title string
+	body  string
 }
 
 var nowTV = newNowTV()
@@ -57,7 +67,7 @@ func (e *NowTVEngine) weather() (float64, float64, string) {
 }
 
 // Text slots drawn on the card; each maps to one file in workDir.
-var nowTVSlots = []string{"clock", "date", "weather", "list", "footer"}
+var nowTVSlots = []string{"clock", "date", "pagehdr", "weather", "list", "footer"}
 
 func (e *NowTVEngine) slotPath(name string) string {
 	return filepath.Join(e.workDir, name+".txt")
@@ -105,8 +115,24 @@ func (e *NowTVEngine) onStart(ctx context.Context) {
 	for _, s := range nowTVSlots {
 		writeAtomic(e.slotPath(s), " ")
 	}
-	e.refreshText(ctx, lat, lon, place, true)
+	e.writeClock()
+	e.setPages([]nowPage{{title: "Now Playing", body: "A carregar…"}})
 
+	// Data refresher (network): pages, weather and footer now and every 60s.
+	go func() {
+		t := time.NewTicker(60 * time.Second)
+		defer t.Stop()
+		for {
+			e.refreshData(ctx, lat, lon, place)
+			select {
+			case <-ctx.Done():
+				return
+			case <-t.C:
+			}
+		}
+	}()
+
+	// Clock every second, next page every 10s.
 	go func() {
 		t := time.NewTicker(time.Second)
 		defer t.Stop()
@@ -117,7 +143,10 @@ func (e *NowTVEngine) onStart(ctx context.Context) {
 				return
 			case <-t.C:
 				n++
-				e.refreshText(ctx, lat, lon, place, n%30 == 0)
+				e.writeClock()
+				if n%10 == 0 {
+					e.nextPage()
+				}
 			}
 		}
 	}()
@@ -136,7 +165,7 @@ func (e *NowTVEngine) buildCmd(ctx context.Context) *exec.Cmd {
 		"drawbox=x=770:y=180:w=6:h=230:color=0xf59e0b@1:t=fill",
 		// Static title (drawtext text= needs escaping; keep it plain)
 		fmt.Sprintf("drawtext=fontfile=%s:text='LaPingvino IPTV':fontsize=46:fontcolor=white:x=40:y=34", bold),
-		fmt.Sprintf("drawtext=fontfile=%s:text='Now Playing':fontsize=26:fontcolor=0x93c5fd:x=42:y=94", sans),
+		e.drawtext("pagehdr", sans, 26, "42", "94", "0x93c5fd"),
 		e.drawtext("clock", bold, 72, "w-tw-40", "22", "white"),
 		e.drawtext("date", sans, 24, "w-tw-42", "108", "0xcbd5e1"),
 		e.drawtext("weather", sans, 23, "796", "202", "white"),
@@ -161,16 +190,136 @@ func (e *NowTVEngine) buildCmd(ctx context.Context) *exec.Cmd {
 var ptWeekdays = []string{"domingo", "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado"}
 var ptMonths = []string{"janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"}
 
-func (e *NowTVEngine) refreshText(ctx context.Context, lat, lon float64, place string, full bool) {
+func (e *NowTVEngine) writeClock() {
 	now := time.Now()
 	writeAtomic(e.slotPath("clock"), now.Format("15:04:05"))
 	writeAtomic(e.slotPath("date"), fmt.Sprintf("%s, %d de %s", ptWeekdays[now.Weekday()], now.Day(), ptMonths[now.Month()-1]))
-	if !full {
+}
+
+func (e *NowTVEngine) refreshData(ctx context.Context, lat, lon float64, place string) {
+	writeAtomic(e.slotPath("weather"), weatherText(ctx, lat, lon, place))
+	e.setPages(buildNowPages(ctx))
+	writeAtomic(e.slotPath("footer"), "kiefte.eu/iptv/now  •  atualizado "+time.Now().Format("15:04"))
+}
+
+func (e *NowTVEngine) setPages(p []nowPage) {
+	e.pagesMu.Lock()
+	e.pages = p
+	if e.pageIdx >= len(p) {
+		e.pageIdx = 0
+	}
+	e.pagesMu.Unlock()
+	e.writePage()
+}
+
+func (e *NowTVEngine) nextPage() {
+	e.pagesMu.Lock()
+	if len(e.pages) > 0 {
+		e.pageIdx = (e.pageIdx + 1) % len(e.pages)
+	}
+	e.pagesMu.Unlock()
+	e.writePage()
+}
+
+func (e *NowTVEngine) writePage() {
+	e.pagesMu.Lock()
+	defer e.pagesMu.Unlock()
+	if len(e.pages) == 0 {
 		return
 	}
-	writeAtomic(e.slotPath("weather"), weatherText(ctx, lat, lon, place))
-	writeAtomic(e.slotPath("list"), nowListText(ctx))
-	writeAtomic(e.slotPath("footer"), "kiefte.eu/iptv/now  •  atualizado "+now.Format("15:04"))
+	pg := e.pages[e.pageIdx]
+	writeAtomic(e.slotPath("pagehdr"), fmt.Sprintf("P460 · %d/%d · %s", e.pageIdx+1, len(e.pages), pg.title))
+	writeAtomic(e.slotPath("list"), pg.body)
+}
+
+// buildNowPages: page 1 lists live favourites; the rest show every Twitch-based
+// channel per playlist group, using the decisions of the Twitch EPG build
+// (live / raid / host / relay / mirror / offline), so it matches the guide.
+func buildNowPages(ctx context.Context) []nowPage {
+	pages := []nowPage{{title: "Favoritos ao vivo", body: nowListText(ctx)}}
+
+	cctx, cancel := context.WithTimeout(ctx, 25*time.Second)
+	defer cancel()
+	byGroup := make(map[string][]TwitchNowEntry)
+	for _, en := range epgManager.TwitchNow(cctx) {
+		byGroup[en.Group] = append(byGroup[en.Group], en)
+	}
+	sections := []struct{ group, title string }{
+		{"Events & Marathons", "Eventos & Maratonas"},
+		{"Games (Top Live)", "Jogos · quem joga agora"},
+		{"Streamers", "Streamers"},
+	}
+	const perPage = 12
+	for _, sec := range sections {
+		entries := byGroup[sec.group]
+		if len(entries) == 0 {
+			continue
+		}
+		sort.SliceStable(entries, func(i, j int) bool {
+			return playlistChNo(entries[i].StreamPath) < playlistChNo(entries[j].StreamPath)
+		})
+		nPages := (len(entries) + perPage - 1) / perPage
+		for p := 0; p < nPages; p++ {
+			end := (p + 1) * perPage
+			if end > len(entries) {
+				end = len(entries)
+			}
+			var b strings.Builder
+			for _, en := range entries[p*perPage : end] {
+				b.WriteString(nowRow(en, sec.group == "Games (Top Live)"))
+				b.WriteByte('\n')
+			}
+			title := sec.title
+			if nPages > 1 {
+				title = fmt.Sprintf("%s (%d/%d)", sec.title, p+1, nPages)
+			}
+			pages = append(pages, nowPage{title: title, body: b.String()})
+		}
+	}
+	return pages
+}
+
+func shortViewers(n int) string {
+	if n >= 1000 {
+		return fmt.Sprintf("%.1fk", float64(n)/1000)
+	}
+	return fmt.Sprintf("%d", n)
+}
+
+// nowRow renders one channel line, about 54 monospace columns wide.
+func nowRow(en TwitchNowEntry, isGame bool) string {
+	name := en.Name
+	if i := strings.Index(name, " ("); i > 0 {
+		name = name[:i]
+	}
+	var mark, detail string
+	switch en.State {
+	case "live":
+		mark = "●"
+		if isGame {
+			detail = en.Who + " · " + shortViewers(en.Viewers)
+		} else {
+			detail = en.Game + " · " + shortViewers(en.Viewers)
+		}
+	case "raid":
+		mark, detail = "→", en.Who+" (raid)"
+	case "host":
+		mark, detail = "→", en.Who+" (host)"
+	case "relay":
+		mark, detail = "→", en.Who+" · "+en.Game
+	case "circle":
+		mark, detail = "→", en.Who+" (espelho)"
+	case "standby":
+		mark, detail = "○", "em espera"
+	case "offline":
+		mark, detail = "○", "offline"
+		if en.Game != "" && !isGame {
+			detail = "offline · último: " + en.Game
+		}
+	default:
+		mark, detail = "?", "estado desconhecido"
+	}
+	return fmt.Sprintf("%3d %s %-15s %s", playlistChNo(en.StreamPath), mark, truncRunes(name, 15), truncRunes(detail, 32))
 }
 
 func truncRunes(s string, n int) string {
@@ -196,7 +345,6 @@ func nowListText(ctx context.Context) string {
 	}
 	sort.SliceStable(live, func(i, j int) bool { return live[i].ChNo < live[j].ChNo })
 	var b strings.Builder
-	b.WriteString("AO VIVO\n")
 	for i, c := range live {
 		if i >= 12 {
 			fmt.Fprintf(&b, "   … e mais %d", len(live)-i)

@@ -16,6 +16,8 @@ func TestLinearEPGGeneration(t *testing.T) {
 	defer os.RemoveAll(tmpDir)
 
 	mockFiles := []string{
+		"stacia_vineto_0000.ts",
+		"dok_estas_parto_01_0000.ts", // baked-in old ident: must be skipped
 		"dok_estas_parto_01_0001.ts",
 		"mazi_0001.ts",
 		"mazi_0002.ts",
@@ -39,8 +41,16 @@ func TestLinearEPGGeneration(t *testing.T) {
 	if !strings.Contains(xml, "<programme start=") {
 		t.Error("missing <programme> entries in EPG")
 	}
-	if !strings.Contains(xml, "Esperanto Estas: Enkonduko") {
-		t.Error("missing Esperanto Estas bumper programme entry in EPG")
+	if !strings.Contains(xml, "<title lang=\"eo\">Esperanto TV</title>") && !strings.Contains(xml, ">Esperanto TV<") {
+		t.Error("missing Esperanto TV station ident programme entry in EPG")
+	}
+	if !strings.Contains(xml, "Esperanto Estas: Dokumentario") {
+		t.Error("Esperanto Estas part 1 should air as a regular documentary")
+	}
+	for _, seg := range station.schedule {
+		if seg.Name == "dok_estas_parto_01_0000.ts" {
+			t.Error("baked-in old ident segment dok_estas_parto_01_0000.ts should be skipped")
+		}
 	}
 }
 
