@@ -220,6 +220,15 @@ func monoFont() string {
 	return fontFile("/usr/share/fonts/TTF/DejaVuSansMono.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf")
 }
 
+// sansCJK is the proportional font for text that shows streamer names (the
+// insert label): Noto Sans CJK JP when installed, else the given fallback.
+func sansCJK(fallback string) string {
+	if fontFile("/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc") != "" {
+		return "font:Noto Sans CJK JP"
+	}
+	return fallback
+}
+
 func (e *NowTVEngine) buildCmd(ctx context.Context) *exec.Cmd {
 	sans := fontFile("/usr/share/fonts/TTF/DejaVuSans.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf")
 	bold := fontFile("/usr/share/fonts/TTF/DejaVuSans-Bold.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf")
@@ -240,7 +249,7 @@ func (e *NowTVEngine) buildCmd(ctx context.Context) *exec.Cmd {
 		e.drawtext("date", sans, 24, "w-tw-42", "108", "0xcbd5e1"),
 		e.drawtext("weather", sans, 23, "796", "202", "white"),
 		e.drawtext("list", mono, 22, "40", "185", "0xe2e8f0"),
-		e.drawtext("piplabel", sans, 18, strconv.Itoa(pipX), strconv.Itoa(pipY-26), "0xfbbf24"),
+		e.drawtext("piplabel", sansCJK(sans), 18, strconv.Itoa(pipX), strconv.Itoa(pipY-26), "0xfbbf24"),
 		e.drawtext("footer", sans, 20, "40", "680", "0x64748b"),
 	}, ",")
 	// one bright status line and one dim title line per row, at fixed positions
