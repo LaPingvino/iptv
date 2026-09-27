@@ -5,6 +5,7 @@ Generates XMLTV <programme> blocks synchronized with the wall-clock epoch modulo
 """
 
 import os
+import re
 import time
 import datetime
 from collections import defaultdict
@@ -105,6 +106,16 @@ def format_xmltv_time(epoch_sec):
     dt = datetime.datetime.fromtimestamp(epoch_sec, datetime.timezone.utc)
     return dt.strftime("%Y%m%d%H%M%S +0000")
 
+def _esperanto_baked_ident_keys():
+    """Show keys listed in the bridge's esperanto_idents.go (single source of truth)."""
+    path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                        "pkg", "iptv-live-bridge", "esperanto_idents.go")
+    try:
+        with open(path, encoding="utf-8") as f:
+            return set(re.findall(r'^\s*"([^"]+)":\s*true,', f.read(), re.M))
+    except OSError:
+        return set()
+
 def get_channel_schedule_blocks(media_dir, default_meta=None, seg_duration=10.0):
     """Calculates ordered schedule blocks from directory TS files matching Go LinearStation."""
     if not os.path.exists(media_dir):
@@ -117,8 +128,11 @@ def get_channel_schedule_blocks(media_dir, default_meta=None, seg_duration=10.0)
     if "esperanto" in media_dir.lower():
         shows = defaultdict(list)
         bumper = []
+        baked = _esperanto_baked_ident_keys()
         for s in ts_files:
-            if s.startswith("dok_estas_parto_01_"):
+            if s.endswith("_0000.ts") and s[:-len("_0000.ts")] in baked:
+                continue  # old montage ident baked into the show's first segment
+            if s.startswith("stacia_vineto_"):
                 bumper.append(s)
             elif s.startswith("ident_z_"):
                 continue
@@ -149,8 +163,8 @@ def get_channel_schedule_blocks(media_dir, default_meta=None, seg_duration=10.0)
         max_rounds = max(len(pasporto), len(senlime), len(specials), len(mv_blocks))
         blocks = []
         bumper_block = {
-            "title": "Esperanto Estas: Enkonduko",
-            "desc": "Oficiala stacia vineto kaj enkonduko al la internacia lingvo Esperanto.",
+            "title": "Esperanto TV",
+            "desc": "Stacia vineto.",
             "category": "Vineto",
             "duration": len(bumper) * seg_duration
         }

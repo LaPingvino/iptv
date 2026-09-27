@@ -125,7 +125,8 @@ func (ls *LinearStation) buildEsperantoSchedule(allSegs []string) {
 		if strings.HasSuffix(seg, "_0000.ts") && esperantoBakedIdent[strings.TrimSuffix(seg, "_0000.ts")] {
 			continue // old montage ident baked into the show's first segment
 		}
-		if strings.HasPrefix(seg, "dok_estas_parto_01_") {
+		if strings.HasPrefix(seg, "stacia_vineto_") {
+			// 10s station ident (scripts/render_esperanto_ident.py)
 			bumperSegs = append(bumperSegs, seg)
 		} else if strings.HasPrefix(seg, "ident_z_") {
 			continue // Skip old buggy synthetic vignette
@@ -221,8 +222,8 @@ func (ls *LinearStation) buildEsperantoSchedule(allSegs []string) {
 	var programBlocks []blockDef
 
 	bumperDef := blockDef{
-		title:    "Esperanto Estas: Enkonduko",
-		desc:     "Oficiala stacia vineto kaj enkonduko al la internacia lingvo Esperanto.",
+		title:    "Esperanto TV",
+		desc:     "Stacia vineto.",
 		category: "Vineto",
 		segs:     bumperSegs,
 	}
