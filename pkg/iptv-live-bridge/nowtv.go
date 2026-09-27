@@ -40,7 +40,8 @@ type NowTVEngine struct {
 // nowPage is one Teletext-style page of the dashboard.
 type nowPage struct {
 	title string
-	body  string
+	body  string // bright lines (channel + status)
+	dim   string // dim lines (stream title), interleaved with body via blank lines
 }
 
 var nowTV = newNowTV()
@@ -67,13 +68,23 @@ func (e *NowTVEngine) weather() (float64, float64, string) {
 }
 
 // Text slots drawn on the card; each maps to one file in workDir.
-var nowTVSlots = []string{"clock", "date", "pagehdr", "weather", "list", "footer"}
+var nowTVSlots = []string{"clock", "date", "pagehdr", "weather", "list", "listdim", "footer"}
 
 func (e *NowTVEngine) slotPath(name string) string {
 	return filepath.Join(e.workDir, name+".txt")
 }
 
+// writeAtomic writes a drawtext text file via rename. ffmpeg 9's drawtext
+// renders nothing at all when the text starts with a newline or ends in an
+// empty line, so empty lines become a single space and trailing newlines go.
 func writeAtomic(path, content string) {
+	lines := strings.Split(strings.TrimRight(content, "\n"), "\n")
+	for i, l := range lines {
+		if l == "" {
+			lines[i] = " "
+		}
+	}
+	content = strings.Join(lines, "\n")
 	tmp := path + ".tmp"
 	if err := os.WriteFile(tmp, []byte(content), 0o644); err != nil {
 		return
@@ -170,6 +181,7 @@ func (e *NowTVEngine) buildCmd(ctx context.Context) *exec.Cmd {
 		e.drawtext("date", sans, 24, "w-tw-42", "108", "0xcbd5e1"),
 		e.drawtext("weather", sans, 23, "796", "202", "white"),
 		e.drawtext("list", mono, 22, "40", "185", "0xe2e8f0"),
+		e.drawtext("listdim", mono, 22, "40", "185", "0x94a3b8"),
 		e.drawtext("footer", sans, 20, "40", "680", "0x64748b"),
 	}, ",")
 
@@ -230,14 +242,13 @@ func (e *NowTVEngine) writePage() {
 	pg := e.pages[e.pageIdx]
 	writeAtomic(e.slotPath("pagehdr"), fmt.Sprintf("P460 · %d/%d · %s", e.pageIdx+1, len(e.pages), pg.title))
 	writeAtomic(e.slotPath("list"), pg.body)
+	writeAtomic(e.slotPath("listdim"), pg.dim)
 }
 
-// buildNowPages: page 1 lists live favourites; the rest show every Twitch-based
-// channel per playlist group, using the decisions of the Twitch EPG build
-// (live / raid / host / relay / mirror / offline), so it matches the guide.
+// buildNowPages turns the Twitch EPG decisions (dist/twitch_now.json) into
+// pages: favourites, events, games and streamers, 7 channels per page, each
+// with a status line and the title of what is actually on.
 func buildNowPages(ctx context.Context) []nowPage {
-	pages := []nowPage{{title: "Favoritos ao vivo", body: nowListText(ctx)}}
-
 	cctx, cancel := context.WithTimeout(ctx, 25*time.Second)
 	defer cancel()
 	byGroup := make(map[string][]TwitchNowEntry)
@@ -245,11 +256,13 @@ func buildNowPages(ctx context.Context) []nowPage {
 		byGroup[en.Group] = append(byGroup[en.Group], en)
 	}
 	sections := []struct{ group, title string }{
+		{"LaPingvino Favorites", "Favoritos"},
 		{"Events & Marathons", "Eventos & Maratonas"},
 		{"Games (Top Live)", "Jogos · quem joga agora"},
 		{"Streamers", "Streamers"},
 	}
-	const perPage = 12
+	const perPage = 7
+	var pages []nowPage
 	for _, sec := range sections {
 		entries := byGroup[sec.group]
 		if len(entries) == 0 {
@@ -264,19 +277,36 @@ func buildNowPages(ctx context.Context) []nowPage {
 			if end > len(entries) {
 				end = len(entries)
 			}
-			var b strings.Builder
+			var bright, dim strings.Builder
 			for _, en := range entries[p*perPage : end] {
-				b.WriteString(nowRow(en, sec.group == "Games (Top Live)"))
-				b.WriteByte('\n')
+				b, d := nowRow(en, sec.group == "Games (Top Live)")
+				bright.WriteString(b + "\n\n")
+				dim.WriteString("\n" + d + "\n")
 			}
 			title := sec.title
 			if nPages > 1 {
 				title = fmt.Sprintf("%s (%d/%d)", sec.title, p+1, nPages)
 			}
-			pages = append(pages, nowPage{title: title, body: b.String()})
+			pages = append(pages, nowPage{title: title, body: bright.String(), dim: dim.String()})
 		}
 	}
+	if len(pages) == 0 {
+		pages = []nowPage{{title: "Now Playing", body: nowListText(ctx)}}
+	}
 	return pages
+}
+
+// stripEmoji drops characters the dashboard's monospace font has no glyph for
+// (emoji and pictographs), which would otherwise render as boxes.
+func stripEmoji(s string) string {
+	var b strings.Builder
+	for _, r := range s {
+		if r >= 0x1F000 || (r >= 0x2600 && r <= 0x27BF) || (r >= 0xFE00 && r <= 0xFE0F) || r == 0x200D {
+			continue
+		}
+		b.WriteRune(r)
+	}
+	return strings.Join(strings.Fields(b.String()), " ")
 }
 
 func shortViewers(n int) string {
@@ -286,13 +316,17 @@ func shortViewers(n int) string {
 	return fmt.Sprintf("%d", n)
 }
 
-// nowRow renders one channel line, about 54 monospace columns wide.
-func nowRow(en TwitchNowEntry, isGame bool) string {
+// nowRow renders a channel as a status line (~54 columns) and a title line.
+func nowRow(en TwitchNowEntry, isGame bool) (string, string) {
 	name := en.Name
 	if i := strings.Index(name, " ("); i > 0 {
 		name = name[:i]
 	}
+	if strings.HasPrefix(en.StreamPath, "twitch/followed/") && en.Who != "" {
+		name = en.Who // favourite slots are named after whoever holds the rank
+	}
 	var mark, detail string
+	title := en.Title
 	switch en.State {
 	case "live":
 		mark = "●"
@@ -301,25 +335,31 @@ func nowRow(en TwitchNowEntry, isGame bool) string {
 		} else {
 			detail = en.Game + " · " + shortViewers(en.Viewers)
 		}
-	case "raid":
-		mark, detail = "→", en.Who+" (raid)"
-	case "host":
-		mark, detail = "→", en.Who+" (host)"
-	case "relay":
-		mark, detail = "→", en.Who+" · "+en.Game
-	case "circle":
-		mark, detail = "→", en.Who+" (espelho)"
-	case "standby":
-		mark, detail = "○", "em espera"
 	case "offline":
 		mark, detail = "○", "offline"
 		if en.Game != "" && !isGame {
 			detail = "offline · último: " + en.Game
 		}
-	default:
+	case "standby":
+		mark, detail = "○", "em espera"
+	case "unknown", "":
 		mark, detail = "?", "estado desconhecido"
+	default: // a fallback is on air
+		mark, detail = "→", en.Who
+		if en.Game != "" {
+			detail += " · " + en.Game
+		}
+		if en.Note != "" {
+			title = "(" + en.Note + ") " + title
+		}
 	}
-	return fmt.Sprintf("%3d %s %-15s %s", playlistChNo(en.StreamPath), mark, truncRunes(name, 15), truncRunes(detail, 32))
+	name, detail, title = stripEmoji(name), stripEmoji(detail), stripEmoji(title)
+	line1 := fmt.Sprintf("%3d %s %-15s %s", playlistChNo(en.StreamPath), mark, truncRunes(name, 15), truncRunes(detail, 32))
+	line2 := ""
+	if strings.TrimSpace(title) != "" {
+		line2 = "      " + truncRunes(strings.TrimSpace(title), 48)
+	}
+	return line1, line2
 }
 
 func truncRunes(s string, n int) string {
