@@ -2387,4 +2387,9 @@
     <desc lang="eo">Veteraj defioj dum la subĉiela vojaĝo.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
+  <programme start="20260929235820 +0000" stop="20260930000020 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Enkonduko</title>
+    <desc lang="eo">Oficiala stacia vineto kaj enkonduko al la internacia lingvo Esperanto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
 </tv>

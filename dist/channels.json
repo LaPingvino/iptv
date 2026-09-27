@@ -2413,6 +2413,15 @@
     "chno": 455
   },
   {
+    "name": "Now Playing • Clock \u0026 Weather Dashboard",
+    "group": "LaPingvino Favorites",
+    "tvg_id": "NowPlaying.lapingvino",
+    "tvg_name": "Now Playing Dashboard",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/now.ts",
+    "chno": 460
+  },
+  {
     "name": "Followed Streamer #1",
     "group": "LaPingvino Favorites",
     "tvg_id": "FollowedStreamer1.tv",

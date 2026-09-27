@@ -1,3 +1,9 @@
+- name: "Now Playing • Clock & Weather Dashboard"
+  group: "LaPingvino Favorites"
+  tvg_id: "NowPlaying.lapingvino"
+  tvg_name: "Now Playing Dashboard"
+  chno: 460
+  url: "https://kiefte.eu/iptv/now.ts"
 - name: "Followed Streamer #1"
   group: "LaPingvino Favorites"
   tvg_id: "FollowedStreamer1.tv"

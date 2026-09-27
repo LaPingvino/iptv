@@ -1,0 +1,428 @@
+package main
+
+import (
+	"context"
+	"encoding/json"
+	"fmt"
+	"log"
+	"net/http"
+	"net/url"
+	"os"
+	"os/exec"
+	"path/filepath"
+	"sort"
+	"strings"
+	"sync"
+	"time"
+)
+
+// NowTV renders the Now Playing overview, a clock and the local weather as a
+// live MPEG-TS channel. Like BVN it runs a single on-demand ffmpeg process and
+// fans its output out to every viewer; it stops 30s after the last one leaves.
+//
+// The picture is composed from a handful of text files that ffmpeg's drawtext
+// re-reads every frame. A Go goroutine rewrites them (clock every second,
+// weather and channel list less often) using atomic renames.
+type NowTVEngine struct {
+	mu           sync.Mutex
+	running      bool
+	cancel       context.CancelFunc
+	clients      map[chan []byte]struct{}
+	recentChunks [][]byte
+	lastAccess   time.Time
+
+	workDir string
+
+	weatherLat, weatherLon float64
+	weatherName            string
+}
+
+var nowTV = &NowTVEngine{
+	clients:     make(map[chan []byte]struct{}),
+	weatherLat:  38.7223,
+	weatherLon:  -9.1393,
+	weatherName: "Lisboa",
+}
+
+// ConfigureWeather sets the location used for the weather panel.
+func (e *NowTVEngine) ConfigureWeather(lat, lon float64, name string) {
+	e.mu.Lock()
+	defer e.mu.Unlock()
+	e.weatherLat, e.weatherLon, e.weatherName = lat, lon, name
+}
+
+func (e *NowTVEngine) Subscribe() chan []byte {
+	ch := make(chan []byte, 256)
+	e.mu.Lock()
+	defer e.mu.Unlock()
+
+	e.lastAccess = time.Now()
+	e.clients[ch] = struct{}{}
+
+	if !e.running {
+		e.startWorker()
+	} else {
+		for _, c := range e.recentChunks {
+			select {
+			case ch <- c:
+			default:
+			}
+		}
+	}
+	return ch
+}
+
+func (e *NowTVEngine) Unsubscribe(ch chan []byte) {
+	e.mu.Lock()
+	defer e.mu.Unlock()
+	if _, ok := e.clients[ch]; ok {
+		delete(e.clients, ch)
+		close(ch)
+	}
+	e.lastAccess = time.Now()
+}
+
+// Text slots drawn on the card; each maps to one file in workDir.
+var nowTVSlots = []string{"clock", "date", "weather", "list", "footer"}
+
+func (e *NowTVEngine) slotPath(name string) string {
+	return filepath.Join(e.workDir, name+".txt")
+}
+
+func writeAtomic(path, content string) {
+	tmp := path + ".tmp"
+	if err := os.WriteFile(tmp, []byte(content), 0o644); err != nil {
+		return
+	}
+	os.Rename(tmp, path)
+}
+
+// fontFile returns the first existing font path, or "" to let fontconfig pick.
+func fontFile(candidates ...string) string {
+	for _, c := range candidates {
+		if _, err := os.Stat(c); err == nil {
+			return c
+		}
+	}
+	return ""
+}
+
+func (e *NowTVEngine) drawtext(slot, font string, size int, x, y, color string) string {
+	f := "font=Sans"
+	if font != "" {
+		f = "fontfile=" + font
+	}
+	return fmt.Sprintf("drawtext=%s:textfile=%s:reload=1:expansion=none:fontsize=%d:fontcolor=%s:x=%s:y=%s:line_spacing=10",
+		f, e.slotPath(slot), size, color, x, y)
+}
+
+// Caller holds e.mu.
+func (e *NowTVEngine) startWorker() {
+	if e.workDir == "" {
+		dir, err := os.MkdirTemp("", "iptv-nowtv-")
+		if err != nil {
+			log.Printf("[NowTV] Cannot create work dir: %v", err)
+			return
+		}
+		e.workDir = dir
+	}
+	lat, lon, place := e.weatherLat, e.weatherLon, e.weatherName
+
+	ctx, cancel := context.WithCancel(context.Background())
+	e.cancel = cancel
+	e.running = true
+	e.recentChunks = nil
+
+	// Seed every slot before ffmpeg opens them; drawtext fails on missing files.
+	for _, s := range nowTVSlots {
+		writeAtomic(e.slotPath(s), " ")
+	}
+	e.refreshText(ctx, lat, lon, place, true)
+
+	sans := fontFile("/usr/share/fonts/TTF/DejaVuSans.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf")
+	bold := fontFile("/usr/share/fonts/TTF/DejaVuSans-Bold.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf")
+	mono := fontFile("/usr/share/fonts/TTF/DejaVuSansMono.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf")
+
+	vf := strings.Join([]string{
+		// Header band and weather panel backgrounds
+		"drawbox=x=0:y=0:w=iw:h=150:color=0x1e293b@1:t=fill",
+		"drawbox=x=0:y=150:w=iw:h=4:color=0x3b82f6@1:t=fill",
+		"drawbox=x=770:y=180:w=470:h=230:color=0x1e293b@1:t=fill",
+		"drawbox=x=770:y=180:w=6:h=230:color=0xf59e0b@1:t=fill",
+		// Static title (drawtext text= needs escaping; keep it plain)
+		fmt.Sprintf("drawtext=fontfile=%s:text='LaPingvino IPTV':fontsize=46:fontcolor=white:x=40:y=34", bold),
+		fmt.Sprintf("drawtext=fontfile=%s:text='Now Playing':fontsize=26:fontcolor=0x93c5fd:x=42:y=94", sans),
+		e.drawtext("clock", bold, 72, "w-tw-40", "22", "white"),
+		e.drawtext("date", sans, 24, "w-tw-42", "108", "0xcbd5e1"),
+		e.drawtext("weather", sans, 23, "796", "202", "white"),
+		e.drawtext("list", mono, 22, "40", "185", "0xe2e8f0"),
+		e.drawtext("footer", sans, 20, "40", "680", "0x64748b"),
+	}, ",")
+
+	cmd := exec.CommandContext(ctx,
+		"ffmpeg", "-nostdin", "-v", "warning",
+		"-re",
+		"-f", "lavfi", "-i", "color=c=0x0f172a:s=1280x720:r=25",
+		"-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo",
+		"-vf", vf,
+		"-c:v", "libx264", "-preset", "veryfast", "-tune", "stillimage",
+		"-pix_fmt", "yuv420p", "-g", "50", "-b:v", "800k", "-maxrate", "1200k", "-bufsize", "2400k",
+		"-c:a", "aac", "-b:a", "64k",
+		"-mpegts_flags", "resend_headers+initial_discontinuity",
+		"-f", "mpegts", "pipe:1",
+	)
+	stdout, err := cmd.StdoutPipe()
+	if err != nil {
+		log.Printf("[NowTV] Failed to open ffmpeg pipe: %v", err)
+		e.running = false
+		cancel()
+		return
+	}
+	cmd.Stderr = os.Stderr
+	if err := cmd.Start(); err != nil {
+		log.Printf("[NowTV] Failed to start ffmpeg: %v", err)
+		e.running = false
+		cancel()
+		return
+	}
+	log.Printf("[NowTV] Started dashboard renderer (PID %d)", cmd.Process.Pid)
+
+	// Text refresher: clock every second, the rest every 30s.
+	go func() {
+		t := time.NewTicker(time.Second)
+		defer t.Stop()
+		n := 0
+		for {
+			select {
+			case <-ctx.Done():
+				return
+			case <-t.C:
+				n++
+				e.refreshText(ctx, lat, lon, place, n%30 == 0)
+			}
+		}
+	}()
+
+	go func() {
+		defer func() {
+			if rec := recover(); rec != nil {
+				log.Printf("[NowTV PANIC RECOVERED] %v", rec)
+			}
+			stdout.Close()
+			if waitErr := cmd.Wait(); waitErr != nil && ctx.Err() == nil {
+				log.Printf("[NowTV] ffmpeg exited: %v", waitErr)
+			}
+			cancel()
+			e.mu.Lock()
+			e.running = false
+			for c := range e.clients {
+				close(c)
+			}
+			e.clients = make(map[chan []byte]struct{})
+			e.mu.Unlock()
+			log.Printf("[NowTV] Renderer stopped")
+		}()
+
+		dataChan := make(chan []byte)
+		go func() {
+			buf := make([]byte, 65536)
+			for {
+				n, err := stdout.Read(buf)
+				if n > 0 {
+					chunk := make([]byte, n)
+					copy(chunk, buf[:n])
+					select {
+					case dataChan <- chunk:
+					case <-ctx.Done():
+						return
+					}
+				}
+				if err != nil {
+					close(dataChan)
+					return
+				}
+			}
+		}()
+
+		lastData := time.Now()
+		for {
+			select {
+			case <-ctx.Done():
+				return
+			case chunk, ok := <-dataChan:
+				if !ok {
+					return
+				}
+				lastData = time.Now()
+				e.mu.Lock()
+				if len(e.recentChunks) >= 16 {
+					e.recentChunks = e.recentChunks[1:]
+				}
+				e.recentChunks = append(e.recentChunks, chunk)
+				for ch := range e.clients {
+					select {
+					case ch <- chunk:
+					default:
+					}
+				}
+				e.mu.Unlock()
+			case <-time.After(time.Second):
+				e.mu.Lock()
+				numClients := len(e.clients)
+				idle := time.Since(e.lastAccess)
+				e.mu.Unlock()
+				if numClients == 0 && idle > 30*time.Second {
+					log.Printf("[NowTV] No viewers for 30s, stopping")
+					return
+				}
+				if numClients > 0 && time.Since(lastData) > 15*time.Second {
+					log.Printf("[NowTV] Renderer stalled, restarting on next viewer")
+					return
+				}
+			}
+		}
+	}()
+}
+
+var ptWeekdays = []string{"domingo", "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado"}
+var ptMonths = []string{"janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"}
+
+func (e *NowTVEngine) refreshText(ctx context.Context, lat, lon float64, place string, full bool) {
+	now := time.Now()
+	writeAtomic(e.slotPath("clock"), now.Format("15:04:05"))
+	writeAtomic(e.slotPath("date"), fmt.Sprintf("%s, %d de %s", ptWeekdays[now.Weekday()], now.Day(), ptMonths[now.Month()-1]))
+	if !full {
+		return
+	}
+	writeAtomic(e.slotPath("weather"), weatherText(ctx, lat, lon, place))
+	writeAtomic(e.slotPath("list"), nowListText(ctx))
+	writeAtomic(e.slotPath("footer"), "kiefte.eu/iptv/now  •  atualizado "+now.Format("15:04"))
+}
+
+func truncRunes(s string, n int) string {
+	r := []rune(s)
+	if len(r) <= n {
+		return s
+	}
+	return string(r[:n-1]) + "…"
+}
+
+// nowListText lists live channels from the Now Playing data, busiest first.
+func nowListText(ctx context.Context) string {
+	cctx, cancel := context.WithTimeout(ctx, 10*time.Second)
+	defer cancel()
+	var live []ChannelNow
+	for _, c := range buildNowChannels(cctx) {
+		if c.Live {
+			live = append(live, c)
+		}
+	}
+	if len(live) == 0 {
+		return "Nenhum stream ao vivo neste momento."
+	}
+	sort.SliceStable(live, func(i, j int) bool { return live[i].ChNo < live[j].ChNo })
+	var b strings.Builder
+	b.WriteString("AO VIVO\n")
+	for i, c := range live {
+		if i >= 12 {
+			fmt.Fprintf(&b, "   … e mais %d", len(live)-i)
+			break
+		}
+		who := c.DisplayName
+		if who == "" {
+			who = c.Name
+		}
+		game := c.Game
+		if game == "" {
+			game = "—"
+		}
+		fmt.Fprintf(&b, "%3d  %-17s %-22s %6d\n", c.ChNo, truncRunes(who, 17), truncRunes(game, 22), c.Viewers)
+	}
+	return b.String()
+}
+
+// Weather via Open-Meteo (no API key), cached for 10 minutes.
+var weatherCache struct {
+	sync.Mutex
+	text string
+	at   time.Time
+	key  string
+}
+
+var wmoPT = map[int]string{
+	0: "Céu limpo", 1: "Pouco nublado", 2: "Parcialmente nublado", 3: "Nublado",
+	45: "Nevoeiro", 48: "Nevoeiro gelado",
+	51: "Chuvisco fraco", 53: "Chuvisco", 55: "Chuvisco forte",
+	61: "Chuva fraca", 63: "Chuva", 65: "Chuva forte",
+	66: "Chuva gelada", 67: "Chuva gelada forte",
+	71: "Neve fraca", 73: "Neve", 75: "Neve forte", 77: "Grãos de neve",
+	80: "Aguaceiros fracos", 81: "Aguaceiros", 82: "Aguaceiros fortes",
+	85: "Aguaceiros de neve", 86: "Aguaceiros de neve fortes",
+	95: "Trovoada", 96: "Trovoada com granizo", 99: "Trovoada forte com granizo",
+}
+
+func weatherText(ctx context.Context, lat, lon float64, place string) string {
+	key := fmt.Sprintf("%.4f,%.4f", lat, lon)
+	weatherCache.Lock()
+	if weatherCache.key == key && time.Since(weatherCache.at) < 10*time.Minute && weatherCache.text != "" {
+		t := weatherCache.text
+		weatherCache.Unlock()
+		return t
+	}
+	weatherCache.Unlock()
+
+	q := url.Values{}
+	q.Set("latitude", fmt.Sprintf("%.4f", lat))
+	q.Set("longitude", fmt.Sprintf("%.4f", lon))
+	q.Set("current", "temperature_2m,apparent_temperature,weather_code,wind_speed_10m,relative_humidity_2m")
+	q.Set("daily", "temperature_2m_max,temperature_2m_min,weather_code")
+	q.Set("forecast_days", "3")
+	q.Set("timezone", "auto")
+
+	cctx, cancel := context.WithTimeout(ctx, 8*time.Second)
+	defer cancel()
+	req, _ := http.NewRequestWithContext(cctx, http.MethodGet, "https://api.open-meteo.com/v1/forecast?"+q.Encode(), nil)
+	resp, err := http.DefaultClient.Do(req)
+	if err != nil {
+		return place + "\n\nMeteorologia indisponível"
+	}
+	defer resp.Body.Close()
+
+	var w struct {
+		Current struct {
+			Temp     float64 `json:"temperature_2m"`
+			Feels    float64 `json:"apparent_temperature"`
+			Code     int     `json:"weather_code"`
+			Wind     float64 `json:"wind_speed_10m"`
+			Humidity float64 `json:"relative_humidity_2m"`
+		} `json:"current"`
+		Daily struct {
+			Time []string  `json:"time"`
+			Max  []float64 `json:"temperature_2m_max"`
+			Min  []float64 `json:"temperature_2m_min"`
+			Code []int     `json:"weather_code"`
+		} `json:"daily"`
+	}
+	if err := json.NewDecoder(resp.Body).Decode(&w); err != nil {
+		return place + "\n\nMeteorologia indisponível"
+	}
+
+	var b strings.Builder
+	fmt.Fprintf(&b, "%s\n", place)
+	fmt.Fprintf(&b, "%.0f°C  %s\n", w.Current.Temp, wmoPT[w.Current.Code])
+	fmt.Fprintf(&b, "Sensação %.0f°  •  Vento %.0f km/h\n", w.Current.Feels, w.Current.Wind)
+	for i := 1; i < len(w.Daily.Time) && i < 3; i++ {
+		d, err := time.Parse("2006-01-02", w.Daily.Time[i])
+		label := w.Daily.Time[i]
+		if err == nil {
+			label = strings.SplitN(ptWeekdays[d.Weekday()], "-", 2)[0]
+		}
+		fmt.Fprintf(&b, "%s  %.0f°/%.0f°  %s\n", label, w.Daily.Max[i], w.Daily.Min[i], wmoPT[w.Daily.Code[i]])
+	}
+	t := b.String()
+
+	weatherCache.Lock()
+	weatherCache.text, weatherCache.at, weatherCache.key = t, time.Now(), key
+	weatherCache.Unlock()
+	return t
+}

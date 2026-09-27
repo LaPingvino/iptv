@@ -831,6 +831,9 @@ https://kiefte.eu/iptv/twitch/game/Trackmania
 #EXTINF:-1 tvg-id="Zeepkist.tv" tvg-name="Zeepkist Live" group-title="Indie & Variety Gaming" tvg-chno="455",Zeepkist (Soapbox Physics Racing Live)
 https://kiefte.eu/iptv/twitch/game/Zeepkist
 
+#EXTINF:-1 tvg-id="NowPlaying.lapingvino" tvg-name="Now Playing Dashboard" group-title="LaPingvino Favorites" tvg-chno="460",Now Playing • Clock & Weather Dashboard
+https://kiefte.eu/iptv/now.ts
+
 #EXTINF:-1 tvg-id="FollowedStreamer1.tv" tvg-name="Followed #1" group-title="LaPingvino Favorites" tvg-chno="461",Followed Streamer #1
 https://kiefte.eu/iptv/twitch/followed/1
 

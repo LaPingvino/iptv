@@ -117,6 +117,19 @@ func main() {
 		MediaDir = v
 	}
 
+	// Weather location for the Now TV dashboard: BRIDGE_WEATHER="lat,lon,Name"
+	weatherSpec := conf["BRIDGE_WEATHER"]
+	if v := os.Getenv("BRIDGE_WEATHER"); v != "" {
+		weatherSpec = v
+	}
+	if parts := strings.SplitN(weatherSpec, ",", 3); len(parts) == 3 {
+		lat, err1 := strconv.ParseFloat(strings.TrimSpace(parts[0]), 64)
+		lon, err2 := strconv.ParseFloat(strings.TrimSpace(parts[1]), 64)
+		if err1 == nil && err2 == nil {
+			nowTV.ConfigureWeather(lat, lon, strings.TrimSpace(parts[2]))
+		}
+	}
+
 	// 3. Environment variable overrides
 	if hEnv := os.Getenv("BRIDGE_HOST"); hEnv != "" {
 		Host = hEnv
@@ -207,7 +220,7 @@ func main() {
 			json.NewEncoder(w).Encode(map[string]any{
 				"status":    "ok",
 				"service":   "iptv-live-bridge",
-				"version":   "4.4.8",
+				"version":   "4.4.9",
 				"runtime":   "go",
 				"timestamp": time.Now().Format(time.RFC3339),
 			})
@@ -312,6 +325,37 @@ func main() {
 			w.Header().Set("Cache-Control", "no-cache, must-revalidate")
 			w.Write(data)
 			return
+		}
+
+		// 4c. Now Playing dashboard as a live TV channel (clock, weather, live streams)
+		if path == "now.ts" || path == "nowtv" || path == "nowtv.ts" || path == "dashboard.ts" {
+			w.Header().Set("Content-Type", "video/MP2T")
+			w.Header().Set("Access-Control-Allow-Origin", "*")
+			w.Header().Set("Connection", "close")
+			if r.Method == http.MethodHead {
+				return
+			}
+			flusher, ok := w.(http.Flusher)
+			if !ok {
+				http.Error(w, "Streaming unsupported", http.StatusInternalServerError)
+				return
+			}
+			ch := nowTV.Subscribe()
+			defer nowTV.Unsubscribe(ch)
+			for {
+				select {
+				case <-r.Context().Done():
+					return
+				case chunk, ok := <-ch:
+					if !ok {
+						return
+					}
+					if _, err := w.Write(chunk); err != nil {
+						return
+					}
+					flusher.Flush()
+				}
+			}
 		}
 
 		// 5. BVN Live Decrypted Stream (/bvn, /bvn.ts, /nl/bvn, /nl/bvn.ts)
@@ -997,22 +1041,35 @@ func serveDistFile(w http.ResponseWriter, r *http.Request, filePath, fileName st
 	http.ServeFile(w, r, filePath)
 }
 
-func serveNowJSON(w http.ResponseWriter, r *http.Request, esp, bahai *LinearStation) {
-	liveFollows := twitchMgr.GetRankedLiveFollows(r.Context())
+// ChannelNow is one row of the Now Playing overview (JSON endpoint and Now TV channel).
+type ChannelNow struct {
+	ChNo        int    `json:"chno"`
+	Slot        string `json:"slot"`
+	Name        string `json:"name"`
+	Category    string `json:"category"`
+	Live        bool   `json:"live"`
+	Streamer    string `json:"streamer"`
+	DisplayName string `json:"display_name"`
+	Game        string `json:"game"`
+	Title       string `json:"title"`
+	Viewers     int    `json:"viewers"`
+	StreamURL   string `json:"stream_url"`
+}
 
-	type ChannelNow struct {
-		ChNo        int    `json:"chno"`
-		Slot        string `json:"slot"`
-		Name        string `json:"name"`
-		Category    string `json:"category"`
-		Live        bool   `json:"live"`
-		Streamer    string `json:"streamer"`
-		DisplayName string `json:"display_name"`
-		Game        string `json:"game"`
-		Title       string `json:"title"`
-		Viewers     int    `json:"viewers"`
-		StreamURL   string `json:"stream_url"`
-	}
+func serveNowJSON(w http.ResponseWriter, r *http.Request, esp, bahai *LinearStation) {
+	channels := buildNowChannels(r.Context())
+
+	w.Header().Set("Content-Type", "application/json; charset=utf-8")
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Set("Cache-Control", "no-cache, no-store, must-revalidate")
+	json.NewEncoder(w).Encode(map[string]any{
+		"timestamp": time.Now().Format(time.RFC3339),
+		"channels":  channels,
+	})
+}
+
+func buildNowChannels(ctx context.Context) []ChannelNow {
+	liveFollows := twitchMgr.GetRankedLiveFollows(ctx)
 
 	var channels []ChannelNow
 
@@ -1081,14 +1138,7 @@ func serveNowJSON(w http.ResponseWriter, r *http.Request, esp, bahai *LinearStat
 		}
 		channels = append(channels, item)
 	}
-
-	w.Header().Set("Content-Type", "application/json; charset=utf-8")
-	w.Header().Set("Access-Control-Allow-Origin", "*")
-	w.Header().Set("Cache-Control", "no-cache, no-store, must-revalidate")
-	json.NewEncoder(w).Encode(map[string]any{
-		"timestamp": time.Now().Format(time.RFC3339),
-		"channels":  channels,
-	})
+	return channels
 }
 
 func serveNowDashboard(w http.ResponseWriter, r *http.Request) {
