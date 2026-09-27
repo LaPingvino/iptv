@@ -11,6 +11,7 @@ import (
 	"os/exec"
 	"path/filepath"
 	"sort"
+	"strconv"
 	"strings"
 	"sync"
 	"time"
@@ -35,6 +36,9 @@ type NowTVEngine struct {
 	pagesMu sync.Mutex
 	pages   []nowPage
 	pageIdx int
+
+	pip    *PiP
+	runCtx context.Context
 }
 
 // nowPage is one Teletext-style page of the dashboard.
@@ -42,6 +46,9 @@ type nowPage struct {
 	title string
 	body  string // bright lines (channel + status)
 	dim   string // dim lines (stream title), interleaved with body via blank lines
+
+	pipPath  string // stream shown in the corner insert (first live/fallback on the page)
+	pipLabel string
 }
 
 var nowTV = newNowTV()
@@ -68,7 +75,7 @@ func (e *NowTVEngine) weather() (float64, float64, string) {
 }
 
 // Text slots drawn on the card; each maps to one file in workDir.
-var nowTVSlots = []string{"clock", "date", "pagehdr", "weather", "list", "listdim", "footer"}
+var nowTVSlots = []string{"clock", "date", "pagehdr", "weather", "list", "listdim", "piplabel", "footer"}
 
 func (e *NowTVEngine) slotPath(name string) string {
 	return filepath.Join(e.workDir, name+".txt")
@@ -126,6 +133,12 @@ func (e *NowTVEngine) onStart(ctx context.Context) {
 	for _, s := range nowTVSlots {
 		writeAtomic(e.slotPath(s), " ")
 	}
+	e.runCtx = ctx
+	e.pip = &PiP{}
+	if err := e.pip.Open(ctx); err != nil {
+		log.Printf("[NowTV] PiP disabled: %v", err)
+		e.pip = nil
+	}
 	e.writeClock()
 	e.setPages([]nowPage{{title: "Now Playing", body: "A carregar…"}})
 
@@ -168,12 +181,14 @@ func (e *NowTVEngine) buildCmd(ctx context.Context) *exec.Cmd {
 	bold := fontFile("/usr/share/fonts/TTF/DejaVuSans-Bold.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf")
 	mono := fontFile("/usr/share/fonts/TTF/DejaVuSansMono.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf")
 
-	vf := strings.Join([]string{
-		// Header band and weather panel backgrounds
+	const pipX, pipY = 813, 440
+	card := strings.Join([]string{
+		// Header band, weather panel and insert frame
 		"drawbox=x=0:y=0:w=iw:h=150:color=0x1e293b@1:t=fill",
 		"drawbox=x=0:y=150:w=iw:h=4:color=0x3b82f6@1:t=fill",
 		"drawbox=x=770:y=180:w=470:h=230:color=0x1e293b@1:t=fill",
 		"drawbox=x=770:y=180:w=6:h=230:color=0xf59e0b@1:t=fill",
+		fmt.Sprintf("drawbox=x=%d:y=%d:w=%d:h=%d:color=0x334155@1:t=fill", pipX-3, pipY-3, pipW+6, pipH+6),
 		// Static title (drawtext text= needs escaping; keep it plain)
 		fmt.Sprintf("drawtext=fontfile=%s:text='LaPingvino IPTV':fontsize=46:fontcolor=white:x=40:y=34", bold),
 		e.drawtext("pagehdr", sans, 26, "42", "94", "0x93c5fd"),
@@ -182,21 +197,37 @@ func (e *NowTVEngine) buildCmd(ctx context.Context) *exec.Cmd {
 		e.drawtext("weather", sans, 23, "796", "202", "white"),
 		e.drawtext("list", mono, 22, "40", "185", "0xe2e8f0"),
 		e.drawtext("listdim", mono, 22, "40", "185", "0x94a3b8"),
+		e.drawtext("piplabel", sans, 18, strconv.Itoa(pipX), strconv.Itoa(pipY-26), "0xfbbf24"),
 		e.drawtext("footer", sans, 20, "40", "680", "0x64748b"),
 	}, ",")
 
-	return exec.CommandContext(ctx,
-		"ffmpeg", "-nostdin", "-v", "warning",
-		"-re",
-		"-f", "lavfi", "-i", "color=c=0x0f172a:s=1280x720:r=25",
-		"-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo",
-		"-vf", vf,
-		"-c:v", "libx264", "-preset", "veryfast", "-tune", "stillimage",
-		"-pix_fmt", "yuv420p", "-g", "50", "-b:v", "800k", "-maxrate", "1200k", "-bufsize", "2400k",
-		"-c:a", "aac", "-b:a", "64k",
+	args := []string{"-nostdin", "-v", "warning",
+		"-re", "-f", "lavfi", "-i", "color=c=0x0f172a:s=1280x720:r=25"}
+	var audioMap string
+	if e.pip != nil {
+		args = append(args,
+			"-thread_queue_size", "64", "-f", "rawvideo", "-pix_fmt", "yuv420p",
+			"-video_size", fmt.Sprintf("%dx%d", pipW, pipH), "-framerate", strconv.Itoa(pipFPS), "-i", "pipe:3",
+			"-thread_queue_size", "64", "-f", "s16le", "-ar", strconv.Itoa(pipRate), "-ac", "2", "-i", "pipe:4",
+			"-filter_complex", fmt.Sprintf("[0:v]%s[bg];[bg][1:v]overlay=%d:%d:eof_action=repeat[v]", card, pipX, pipY),
+			"-map", "[v]")
+		audioMap = "2:a"
+	} else {
+		args = append(args, "-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo",
+			"-filter_complex", "[0:v]"+card+"[v]", "-map", "[v]")
+		audioMap = "1:a"
+	}
+	args = append(args, "-map", audioMap,
+		"-c:v", "libx264", "-preset", "veryfast",
+		"-pix_fmt", "yuv420p", "-g", "50", "-b:v", "1500k", "-maxrate", "2000k", "-bufsize", "4000k",
+		"-c:a", "aac", "-b:a", "96k",
 		"-mpegts_flags", "resend_headers+initial_discontinuity",
-		"-f", "mpegts", "pipe:1",
-	)
+		"-f", "mpegts", "pipe:1")
+	cmd := exec.CommandContext(ctx, "ffmpeg", args...)
+	if e.pip != nil {
+		cmd.ExtraFiles = e.pip.ReaderFiles()
+	}
+	return cmd
 }
 
 var ptWeekdays = []string{"domingo", "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado"}
@@ -243,6 +274,11 @@ func (e *NowTVEngine) writePage() {
 	writeAtomic(e.slotPath("pagehdr"), fmt.Sprintf("P460 · %d/%d · %s", e.pageIdx+1, len(e.pages), pg.title))
 	writeAtomic(e.slotPath("list"), pg.body)
 	writeAtomic(e.slotPath("listdim"), pg.dim)
+	writeAtomic(e.slotPath("piplabel"), pg.pipLabel)
+	if e.pip != nil && e.runCtx != nil {
+		next := e.pages[(e.pageIdx+1)%len(e.pages)].pipPath
+		e.pip.Show(e.runCtx, pg.pipPath, next)
+	}
 }
 
 // buildNowPages turns the Twitch EPG decisions (dist/twitch_now.json) into
@@ -278,7 +314,12 @@ func buildNowPages(ctx context.Context) []nowPage {
 				end = len(entries)
 			}
 			var bright, dim strings.Builder
+			var pipPath, pipLabel string
 			for _, en := range entries[p*perPage : end] {
+				if pipPath == "" && en.State != "offline" && en.State != "standby" && en.State != "unknown" && en.State != "" {
+					pipPath = en.StreamPath
+					pipLabel = fmt.Sprintf("▶ %d  %s", playlistChNo(en.StreamPath), stripEmoji(en.Who))
+				}
 				b, d := nowRow(en, sec.group == "Games (Top Live)")
 				bright.WriteString(b + "\n\n")
 				dim.WriteString("\n" + d + "\n")
@@ -287,7 +328,7 @@ func buildNowPages(ctx context.Context) []nowPage {
 			if nPages > 1 {
 				title = fmt.Sprintf("%s (%d/%d)", sec.title, p+1, nPages)
 			}
-			pages = append(pages, nowPage{title: title, body: bright.String(), dim: dim.String()})
+			pages = append(pages, nowPage{title: title, body: bright.String(), dim: dim.String(), pipPath: pipPath, pipLabel: pipLabel})
 		}
 	}
 	if len(pages) == 0 {
