@@ -1077,6 +1077,33 @@
     "chno": 159
   },
   {
+    "name": "Persiana Docs",
+    "group": "Filmes \u0026 Docs",
+    "tvg_id": "PersianaDocs.fr",
+    "tvg_name": "Persiana Docs",
+    "logo": "",
+    "url": "https://scihls.persiana.live/hls/stream.m3u8",
+    "chno": 160
+  },
+  {
+    "name": "Persiana Travel",
+    "group": "Filmes \u0026 Docs",
+    "tvg_id": "PersianaTravel.fr",
+    "tvg_name": "Persiana Travel",
+    "logo": "",
+    "url": "https://ptravelhls.persiana.live/hls/stream.m3u8",
+    "chno": 161
+  },
+  {
+    "name": "Persiana Family",
+    "group": "Filmes \u0026 Docs",
+    "tvg_id": "PersianaFamily.fr",
+    "tvg_name": "Persiana Family",
+    "logo": "https://i.imgur.com/lMZsuWi.png",
+    "url": "https://familyhls.persiana.live/hls/stream.m3u8",
+    "chno": 162
+  },
+  {
     "name": "Doctor Who Classic (24/7 1080p HD)",
     "group": "Sci-Fi \u0026 Cult Retro",
     "tvg_id": "DoctorWhoClassic.uk@HD",
@@ -1755,6 +1782,15 @@
     "chno": 259
   },
   {
+    "name": "Persiana Nostalgia",
+    "group": "Música \u0026 Video",
+    "tvg_id": "PersianaNostalgia.fr",
+    "tvg_name": "Persiana Nostalgia",
+    "logo": "https://i.imgur.com/SWO9CKA.png",
+    "url": "https://noshls.persiana.live/hls/stream.m3u8",
+    "chno": 260
+  },
+  {
     "name": "ARTV (Canal Parlamento PT)",
     "group": "Cívico \u0026 Parlamento",
     "tvg_id": "ARTV.pt",
@@ -1907,42 +1943,6 @@
     "logo": "https://i.ibb.co/HGfTJwt/ADBTV.jpg",
     "url": "https://live-tv.waytv.pt/adbtv/adbtv/playlist.m3u8",
     "chno": 292
-  },
-  {
-    "name": "Persiana Nostalgia",
-    "group": "Persa / Farsi",
-    "tvg_id": "PersianaNostalgia.fr",
-    "tvg_name": "Persiana Nostalgia",
-    "logo": "https://i.imgur.com/SWO9CKA.png",
-    "url": "https://noshls.persiana.live/hls/stream.m3u8",
-    "chno": 295
-  },
-  {
-    "name": "Persiana Travel",
-    "group": "Persa / Farsi",
-    "tvg_id": "PersianaTravel.fr",
-    "tvg_name": "Persiana Travel",
-    "logo": "",
-    "url": "https://ptravelhls.persiana.live/hls/stream.m3u8",
-    "chno": 296
-  },
-  {
-    "name": "Persiana Docs",
-    "group": "Persa / Farsi",
-    "tvg_id": "PersianaDocs.fr",
-    "tvg_name": "Persiana Docs",
-    "logo": "",
-    "url": "https://scihls.persiana.live/hls/stream.m3u8",
-    "chno": 297
-  },
-  {
-    "name": "Persiana Family",
-    "group": "Persa / Farsi",
-    "tvg_id": "PersianaFamily.fr",
-    "tvg_name": "Persiana Family",
-    "logo": "https://i.imgur.com/lMZsuWi.png",
-    "url": "https://familyhls.persiana.live/hls/stream.m3u8",
-    "chno": 298
   },
   {
     "name": "Speedrun (24/7 Speedrun.com)",

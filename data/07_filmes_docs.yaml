@@ -57,4 +57,19 @@
   tvg_name: ZDFinfo
   logo: https://i.imgur.com/vtq1IWp.png
   url: https://kiefte.eu/iptv/zdfinfo.m3u8
-
+- name: Persiana Docs
+  group: Filmes & Docs
+  tvg_id: PersianaDocs.fr
+  tvg_name: Persiana Docs
+  url: https://scihls.persiana.live/hls/stream.m3u8
+- name: Persiana Travel
+  group: Filmes & Docs
+  tvg_id: PersianaTravel.fr
+  tvg_name: Persiana Travel
+  url: https://ptravelhls.persiana.live/hls/stream.m3u8
+- name: Persiana Family
+  group: Filmes & Docs
+  tvg_id: PersianaFamily.fr
+  tvg_name: Persiana Family
+  logo: https://i.imgur.com/lMZsuWi.png
+  url: https://familyhls.persiana.live/hls/stream.m3u8

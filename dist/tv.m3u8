@@ -383,6 +383,15 @@ https://kiefte.eu/iptv/zdfneo.m3u8
 #EXTINF:-1 tvg-id="ZDFinfo.de@SD" tvg-name="ZDFinfo" tvg-logo="https://i.imgur.com/vtq1IWp.png" group-title="Filmes & Docs" tvg-chno="159",ZDFinfo (HD • Documentários)
 https://kiefte.eu/iptv/zdfinfo.m3u8
 
+#EXTINF:-1 tvg-id="PersianaDocs.fr" tvg-name="Persiana Docs" group-title="Filmes & Docs" tvg-chno="160",Persiana Docs
+https://scihls.persiana.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="PersianaTravel.fr" tvg-name="Persiana Travel" group-title="Filmes & Docs" tvg-chno="161",Persiana Travel
+https://ptravelhls.persiana.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="PersianaFamily.fr" tvg-name="Persiana Family" tvg-logo="https://i.imgur.com/lMZsuWi.png" group-title="Filmes & Docs" tvg-chno="162",Persiana Family
+https://familyhls.persiana.live/hls/stream.m3u8
+
 #EXTINF:-1 tvg-id="DoctorWhoClassic.uk@HD" tvg-name="Doctor Who Classic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Doctor_Who_logo_2018.svg/512px-Doctor_Who_logo_2018.svg.png" group-title="Sci-Fi & Cult Retro" tvg-chno="170",Doctor Who Classic (24/7 1080p HD)
 https://bbc-classicdrwho-1-us.roku.wurl.tv/playlist.m3u8
 
@@ -611,6 +620,9 @@ https://sonhls.persiana.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="Radio3.es" tvg-name="RTVE Radio 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/RNE_Radio_3_2026.svg/500px-RNE_Radio_3_2026.svg.png" group-title="Música & Video" tvg-chno="259",RTVE Radio 3 (Visual Radio)
 https://rtvelivestream.rtve.es/rtvesec/rne/rne3_main.m3u8
 
+#EXTINF:-1 tvg-id="PersianaNostalgia.fr" tvg-name="Persiana Nostalgia" tvg-logo="https://i.imgur.com/SWO9CKA.png" group-title="Música & Video" tvg-chno="260",Persiana Nostalgia
+https://noshls.persiana.live/hls/stream.m3u8
+
 #EXTINF:-1 tvg-id="ARTV.pt" tvg-name="ARTV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/AR-TV.png" group-title="Cívico & Parlamento" tvg-chno="270",ARTV (Canal Parlamento PT)
 #EXTVLCOPT:http-user-agent="Mozilla/5.0"
 https://playout175.livextend.cloud/livenlin4/_definst_/2liveartvpub2/playlist.m3u8
@@ -662,18 +674,6 @@ http://iran620.com:1935/live/IranJewishTv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="ADBTV.pt" tvg-name="ADB TV" tvg-logo="https://i.ibb.co/HGfTJwt/ADBTV.jpg" group-title="Religião" tvg-chno="292",ADB TV
 https://live-tv.waytv.pt/adbtv/adbtv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="PersianaNostalgia.fr" tvg-name="Persiana Nostalgia" tvg-logo="https://i.imgur.com/SWO9CKA.png" group-title="Persa / Farsi" tvg-chno="295",Persiana Nostalgia
-https://noshls.persiana.live/hls/stream.m3u8
-
-#EXTINF:-1 tvg-id="PersianaTravel.fr" tvg-name="Persiana Travel" group-title="Persa / Farsi" tvg-chno="296",Persiana Travel
-https://ptravelhls.persiana.live/hls/stream.m3u8
-
-#EXTINF:-1 tvg-id="PersianaDocs.fr" tvg-name="Persiana Docs" group-title="Persa / Farsi" tvg-chno="297",Persiana Docs
-https://scihls.persiana.live/hls/stream.m3u8
-
-#EXTINF:-1 tvg-id="PersianaFamily.fr" tvg-name="Persiana Family" tvg-logo="https://i.imgur.com/lMZsuWi.png" group-title="Persa / Farsi" tvg-chno="298",Persiana Family
-https://familyhls.persiana.live/hls/stream.m3u8
 
 #EXTINF:-1 tvg-id="Speedrun.tv" tvg-name="Speedrun" group-title="Speedrunning & Marathons" tvg-chno="400",Speedrun (24/7 Speedrun.com)
 https://kiefte.eu/iptv/twitch/speedrun

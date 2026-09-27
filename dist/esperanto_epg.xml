@@ -2,16 +2,6 @@
 <!DOCTYPE tv SYSTEM "xmltv.dtd">
 <tv source-info-url="https://kiefte.eu/iptv" generator-info-name="IPTV Linear 24/7 EPG Engine">
   <channel id="EsperantoTV.eo@SD"><display-name>Esperanto TV</display-name></channel>
-  <programme start="20260925235810 +0000" stop="20260926002420 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 1: Bonvenon al nia hejmo!</title>
-    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo.</desc>
-    <category lang="eo">Kurso / Komedio</category>
-  </programme>
-  <programme start="20260926002420 +0000" stop="20260926002430 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto TV</title>
-    <desc lang="eo">Stacia vineto.</desc>
-    <category lang="eo">Vineto</category>
-  </programme>
   <programme start="20260926002430 +0000" stop="20260926010430 +0000" channel="EsperantoTV.eo@SD">
     <title lang="eo">Esperanto Senlime - Epizodo 1: La unua serio en Esperanto</title>
     <desc lang="eo">La teamoj ekas sian grandan vojaĝon tra Eŭropo.</desc>
