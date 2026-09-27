@@ -20,6 +20,8 @@ DST_DIR = "/home/joop/iptv/pkg/iptv-live-bridge/esperantotv"
 os.makedirs(DST_DIR, exist_ok=True)
 
 IDENT_PATH = "/home/joop/iptv/pkg/iptv-live-bridge/testcard/esperanto_ident0.ts"
+# Idents are inserted by the bridge schedule between programmes; do not bake them into shows.
+BAKE_IDENT = False
 
 def transcode_file(src_path, tag):
     out_pattern = os.path.join(DST_DIR, f"{tag}_%04d.ts")
@@ -30,8 +32,8 @@ def transcode_file(src_path, tag):
         print(f"  ✓ [{tag}] already segmented ({len(existing)} segments). Skipping.")
         return
         
-    print(f"  ➔ Transcoding '{os.path.basename(src_path)}' -> '{tag}' (with station ident intro)...")
-    if os.path.exists(IDENT_PATH):
+    print(f"  ➔ Transcoding '{os.path.basename(src_path)}' -> '{tag}'...")
+    if BAKE_IDENT and os.path.exists(IDENT_PATH):
         cmd = [
             "ffmpeg", "-y",
             "-i", IDENT_PATH,

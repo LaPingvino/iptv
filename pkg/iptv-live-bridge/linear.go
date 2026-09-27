@@ -122,6 +122,9 @@ func (ls *LinearStation) buildEsperantoSchedule(allSegs []string) {
 	var bumperSegs []string
 
 	for _, seg := range allSegs {
+		if strings.HasSuffix(seg, "_0000.ts") && esperantoBakedIdent[strings.TrimSuffix(seg, "_0000.ts")] {
+			continue // old montage ident baked into the show's first segment
+		}
 		if strings.HasPrefix(seg, "dok_estas_parto_01_") {
 			bumperSegs = append(bumperSegs, seg)
 		} else if strings.HasPrefix(seg, "ident_z_") {
