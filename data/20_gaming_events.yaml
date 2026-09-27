@@ -1,0 +1,40 @@
+- name: GamesDoneQuick (GDQ)
+  group: Events & Marathons
+  tvg_id: GamesDoneQuick.tv
+  tvg_name: GamesDoneQuick
+  url: https://kiefte.eu/iptv/twitch/gamesdonequick
+- name: Classic Tetris (CTWC Main)
+  group: Events & Marathons
+  tvg_id: ClassicTetris.tv
+  tvg_name: ClassicTetris
+  url: https://kiefte.eu/iptv/twitch/classictetris
+- name: Classic Tetris 2 (CTWC)
+  group: Events & Marathons
+  tvg_id: ClassicTetris2.tv
+  tvg_name: ClassicTetris 2
+  url: https://kiefte.eu/iptv/twitch/classictetris2
+- name: Classic Tetris 3 (CTWC)
+  group: Events & Marathons
+  tvg_id: ClassicTetris3.tv
+  tvg_name: ClassicTetris 3
+  url: https://kiefte.eu/iptv/twitch/classictetris3
+- name: Classic Tetris 4 (CTWC)
+  group: Events & Marathons
+  tvg_id: ClassicTetris4.tv
+  tvg_name: ClassicTetris 4
+  url: https://kiefte.eu/iptv/twitch/classictetris4
+- name: ESAMarathon (European Speedrunner Assembly)
+  group: Events & Marathons
+  tvg_id: ESAMarathon.tv
+  tvg_name: ESAMarathon
+  url: https://kiefte.eu/iptv/twitch/esamarathon
+- name: Hard Drop (Tetris Community & Tourneys)
+  group: Events & Marathons
+  tvg_id: HardDrop.tv
+  tvg_name: Hard Drop
+  url: https://kiefte.eu/iptv/twitch/harddrop
+- name: Speedrun (24/7 Speedrun.com)
+  group: Events & Marathons
+  tvg_id: Speedrun.tv
+  tvg_name: Speedrun
+  url: https://kiefte.eu/iptv/twitch/speedrun

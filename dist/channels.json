@@ -1945,471 +1945,471 @@
     "chno": 292
   },
   {
-    "name": "Speedrun (24/7 Speedrun.com)",
-    "group": "Speedrunning \u0026 Marathons",
-    "tvg_id": "Speedrun.tv",
-    "tvg_name": "Speedrun",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/speedrun",
-    "chno": 400
-  },
-  {
     "name": "GamesDoneQuick (GDQ)",
-    "group": "Speedrunning \u0026 Marathons",
+    "group": "Events \u0026 Marathons",
     "tvg_id": "GamesDoneQuick.tv",
     "tvg_name": "GamesDoneQuick",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/gamesdonequick",
-    "chno": 401
-  },
-  {
-    "name": "ESAMarathon (European Speedrunner Assembly)",
-    "group": "Speedrunning \u0026 Marathons",
-    "tvg_id": "ESAMarathon.tv",
-    "tvg_name": "ESAMarathon",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/esamarathon",
-    "chno": 402
-  },
-  {
-    "name": "TASVideos (Tool-Assisted Speedruns)",
-    "group": "Speedrunning \u0026 Marathons",
-    "tvg_id": "TASVideos.tv",
-    "tvg_name": "TASVideos",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/tasvideos",
-    "chno": 403
-  },
-  {
-    "name": "MitchFlowerPower (SMB3 Speedruns)",
-    "group": "Speedrunning \u0026 Marathons",
-    "tvg_id": "MitchFlowerPower.tv",
-    "tvg_name": "MitchFlowerPower",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/mitchflowerpower",
-    "chno": 404
-  },
-  {
-    "name": "SmallAnt (Challenges \u0026 Speedruns)",
-    "group": "Speedrunning \u0026 Marathons",
-    "tvg_id": "SmallAnt.tv",
-    "tvg_name": "SmallAnt",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/smallant",
-    "chno": 405
-  },
-  {
-    "name": "Carrarium (Celeste \u0026 GDQ)",
-    "group": "Speedrunning \u0026 Marathons",
-    "tvg_id": "Carrarium.tv",
-    "tvg_name": "Carrarium",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/carrarium",
-    "chno": 406
-  },
-  {
-    "name": "TGH (Celeste \u0026 Retro Speedruns)",
-    "group": "Speedrunning \u0026 Marathons",
-    "tvg_id": "TGH.tv",
-    "tvg_name": "TGH",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/tgh_sr",
-    "chno": 407
-  },
-  {
-    "name": "AmberCyprian (Speedruns \u0026 Retro)",
-    "group": "Speedrunning \u0026 Marathons",
-    "tvg_id": "AmberCyprian.tv",
-    "tvg_name": "AmberCyprian",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/ambercyprian",
-    "chno": 408
-  },
-  {
-    "name": "Msushi (Celeste \u0026 Portal Speedruns)",
-    "group": "Speedrunning \u0026 Marathons",
-    "tvg_id": "Msushi.tv",
-    "tvg_name": "Msushi",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/msushi",
-    "chno": 409
-  },
-  {
-    "name": "Shoujo (Speedruns \u0026 Multiworld)",
-    "group": "Speedrunning \u0026 Marathons",
-    "tvg_id": "Shoujo.tv",
-    "tvg_name": "Shoujo",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/shoujo",
-    "chno": 410
-  },
-  {
-    "name": "Super Mario World (Romhacks \u0026 Kaizo Live)",
-    "group": "Mario \u0026 Romhacks",
-    "tvg_id": "SMWRomhacks.tv",
-    "tvg_name": "SMW Romhacks Live",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/game/Super%20Mario%20World?bias=romhack",
-    "chno": 415
-  },
-  {
-    "name": "Super Mario Maker 2 (Top Live Streamer)",
-    "group": "Mario \u0026 Romhacks",
-    "tvg_id": "MarioMaker2.tv",
-    "tvg_name": "Mario Maker 2 Live",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/game/Super%20Mario%20Maker%202",
-    "chno": 416
-  },
-  {
-    "name": "Ryukahr",
-    "group": "Mario \u0026 Romhacks",
-    "tvg_id": "Ryukahr.tv",
-    "tvg_name": "Ryukahr",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/ryukahr",
-    "chno": 417
-  },
-  {
-    "name": "GrandPooBear",
-    "group": "Mario \u0026 Romhacks",
-    "tvg_id": "GrandPooBear.tv",
-    "tvg_name": "GrandPooBear",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/grandpoobear",
-    "chno": 418
-  },
-  {
-    "name": "ThaBeast721 (Kaizo \u0026 Mario 64)",
-    "group": "Mario \u0026 Romhacks",
-    "tvg_id": "ThaBeast721.tv",
-    "tvg_name": "ThaBeast721",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/thabeast721",
-    "chno": 419
-  },
-  {
-    "name": "CarlSagan42 (Kaizo \u0026 Troll Maker)",
-    "group": "Mario \u0026 Romhacks",
-    "tvg_id": "CarlSagan42.tv",
-    "tvg_name": "CarlSagan42",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/carlsagan42",
-    "chno": 420
-  },
-  {
-    "name": "Juzcook (Kaizo \u0026 Mario Maker)",
-    "group": "Mario \u0026 Romhacks",
-    "tvg_id": "Juzcook.tv",
-    "tvg_name": "Juzcook",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/juzcook",
-    "chno": 421
-  },
-  {
-    "name": "Aurateur (Endless Mario Maker)",
-    "group": "Mario \u0026 Romhacks",
-    "tvg_id": "Aurateur.tv",
-    "tvg_name": "Aurateur",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/aurateur",
-    "chno": 422
-  },
-  {
-    "name": "PangaeaPanga (Kaizo SMW)",
-    "group": "Mario \u0026 Romhacks",
-    "tvg_id": "PangaeaPanga.tv",
-    "tvg_name": "PangaeaPanga",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/pangaeapanga",
-    "chno": 423
-  },
-  {
-    "name": "SimpleFlips (SM64 Romhacks)",
-    "group": "Mario \u0026 Romhacks",
-    "tvg_id": "SimpleFlips.tv",
-    "tvg_name": "SimpleFlips",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/simpleflips",
-    "chno": 424
-  },
-  {
-    "name": "Failstream (Mario Maker Builds)",
-    "group": "Mario \u0026 Romhacks",
-    "tvg_id": "Failstream.tv",
-    "tvg_name": "Failstream",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/failstream",
-    "chno": 425
-  },
-  {
-    "name": "GlitchCat7 (SMW Kaizo \u0026 Speedruns)",
-    "group": "Mario \u0026 Romhacks",
-    "tvg_id": "GlitchCat7.tv",
-    "tvg_name": "GlitchCat7",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/glitchcat7",
-    "chno": 426
-  },
-  {
-    "name": "DGR (Mario Maker \u0026 Super Mario)",
-    "group": "Mario \u0026 Romhacks",
-    "tvg_id": "DGR.tv",
-    "tvg_name": "DGR",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/dgr_dave",
-    "chno": 427
-  },
-  {
-    "name": "RBPimlico (Mario Maker \u0026 Kaizo)",
-    "group": "Mario \u0026 Romhacks",
-    "tvg_id": "RBPimlico.tv",
-    "tvg_name": "RBPimlico",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/rbpimlico",
-    "chno": 428
-  },
-  {
-    "name": "BarbarousKing (Mario Romhacks \u0026 Variety)",
-    "group": "Mario \u0026 Romhacks",
-    "tvg_id": "BarbarousKing.tv",
-    "tvg_name": "BarbarousKing",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/barbarousking",
-    "chno": 429
+    "chno": 400
   },
   {
     "name": "Classic Tetris (CTWC Main)",
-    "group": "Tetris",
+    "group": "Events \u0026 Marathons",
     "tvg_id": "ClassicTetris.tv",
     "tvg_name": "ClassicTetris",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/classictetris",
-    "chno": 430
+    "chno": 401
   },
   {
     "name": "Classic Tetris 2 (CTWC)",
-    "group": "Tetris",
+    "group": "Events \u0026 Marathons",
     "tvg_id": "ClassicTetris2.tv",
     "tvg_name": "ClassicTetris 2",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/classictetris2",
-    "chno": 431
+    "chno": 402
   },
   {
     "name": "Classic Tetris 3 (CTWC)",
-    "group": "Tetris",
+    "group": "Events \u0026 Marathons",
     "tvg_id": "ClassicTetris3.tv",
     "tvg_name": "ClassicTetris 3",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/classictetris3",
-    "chno": 432
+    "chno": 403
   },
   {
     "name": "Classic Tetris 4 (CTWC)",
-    "group": "Tetris",
+    "group": "Events \u0026 Marathons",
     "tvg_id": "ClassicTetris4.tv",
     "tvg_name": "ClassicTetris 4",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/classictetris4",
-    "chno": 433
+    "chno": 404
   },
   {
-    "name": "NES Tetris (Top Live Streamer)",
-    "group": "Tetris",
-    "tvg_id": "NESTetris.tv",
-    "tvg_name": "NES Tetris Live",
+    "name": "ESAMarathon (European Speedrunner Assembly)",
+    "group": "Events \u0026 Marathons",
+    "tvg_id": "ESAMarathon.tv",
+    "tvg_name": "ESAMarathon",
     "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/game/Tetris?bias=nes",
-    "chno": 434
-  },
-  {
-    "name": "Modern Tetris (Top Live Streamer)",
-    "group": "Tetris",
-    "tvg_id": "ModernTetris.tv",
-    "tvg_name": "Modern Tetris Live",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/group/modern-tetris",
-    "chno": 435
-  },
-  {
-    "name": "Wumbotize (Modern Tetris Master)",
-    "group": "Tetris",
-    "tvg_id": "Wumbotize.tv",
-    "tvg_name": "Wumbotize",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/wumbotize",
-    "chno": 436
-  },
-  {
-    "name": "Doremy (Modern Tetris \u0026 TETR.IO)",
-    "group": "Tetris",
-    "tvg_id": "Doremy.tv",
-    "tvg_name": "Doremy",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/doremy",
-    "chno": 437
+    "url": "https://kiefte.eu/iptv/twitch/esamarathon",
+    "chno": 405
   },
   {
     "name": "Hard Drop (Tetris Community \u0026 Tourneys)",
-    "group": "Tetris",
+    "group": "Events \u0026 Marathons",
     "tvg_id": "HardDrop.tv",
     "tvg_name": "Hard Drop",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/harddrop",
-    "chno": 438
+    "chno": 406
   },
   {
-    "name": "DogPlayingTetris (3x CTWC World Champion)",
-    "group": "Tetris",
-    "tvg_id": "DogPlayingTetris.tv",
-    "tvg_name": "DogPlayingTetris",
+    "name": "Speedrun (24/7 Speedrun.com)",
+    "group": "Events \u0026 Marathons",
+    "tvg_id": "Speedrun.tv",
+    "tvg_name": "Speedrun",
     "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/dogplayingtetris",
-    "chno": 439
-  },
-  {
-    "name": "EricICX (CTWC World Champion)",
-    "group": "Tetris",
-    "tvg_id": "EricICX.tv",
-    "tvg_name": "EricICX",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/ericicx",
-    "chno": 440
-  },
-  {
-    "name": "Fractal (CTWC World Champion)",
-    "group": "Tetris",
-    "tvg_id": "FractalTetris.tv",
-    "tvg_name": "Fractal",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/fractal",
-    "chno": 441
-  },
-  {
-    "name": "Alex_T (CTWC Champion)",
-    "group": "Tetris",
-    "tvg_id": "AlexT.tv",
-    "tvg_name": "Alex T",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/alex_t",
-    "chno": 442
-  },
-  {
-    "name": "BlueScuti (NES Tetris Crash Record)",
-    "group": "Tetris",
-    "tvg_id": "BlueScuti.tv",
-    "tvg_name": "BlueScuti",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/bluescuti",
-    "chno": 443
-  },
-  {
-    "name": "Anna D. (Tetris)",
-    "group": "Tetris",
-    "tvg_id": "AnnaD.tv",
-    "tvg_name": "Anna D.",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/vinesandwillows",
-    "chno": 444
+    "url": "https://kiefte.eu/iptv/twitch/speedrun",
+    "chno": 407
   },
   {
     "name": "Gaming 24/7 (Auto-Live Streamer)",
-    "group": "Indie \u0026 Variety Gaming",
+    "group": "Games (Top Live)",
     "tvg_id": "GamingAutoLive.tv",
     "tvg_name": "Gaming 24/7 Auto-Live",
     "logo": "",
     "url": "https://kiefte.eu/iptv/gaming/live",
-    "chno": 445
+    "chno": 410
+  },
+  {
+    "name": "Super Mario World (Romhacks \u0026 Kaizo Live)",
+    "group": "Games (Top Live)",
+    "tvg_id": "SMWRomhacks.tv",
+    "tvg_name": "SMW Romhacks Live",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/game/Super%20Mario%20World?bias=romhack",
+    "chno": 411
+  },
+  {
+    "name": "Super Mario Maker 2 (Top Live Streamer)",
+    "group": "Games (Top Live)",
+    "tvg_id": "MarioMaker2.tv",
+    "tvg_name": "Mario Maker 2 Live",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/game/Super%20Mario%20Maker%202",
+    "chno": 412
+  },
+  {
+    "name": "NES Tetris (Top Live Streamer)",
+    "group": "Games (Top Live)",
+    "tvg_id": "NESTetris.tv",
+    "tvg_name": "NES Tetris Live",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/game/Tetris?bias=nes",
+    "chno": 413
+  },
+  {
+    "name": "Modern Tetris (Top Live Streamer)",
+    "group": "Games (Top Live)",
+    "tvg_id": "ModernTetris.tv",
+    "tvg_name": "Modern Tetris Live",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/group/modern-tetris",
+    "chno": 414
   },
   {
     "name": "Blue Prince (Top Live Streamer)",
-    "group": "Indie \u0026 Variety Gaming",
+    "group": "Games (Top Live)",
     "tvg_id": "BluePrince.tv",
     "tvg_name": "Blue Prince Live",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/game/Blue%20Prince",
-    "chno": 446
+    "chno": 415
   },
   {
     "name": "Celeste (Top Live Streamer)",
-    "group": "Indie \u0026 Variety Gaming",
+    "group": "Games (Top Live)",
     "tvg_id": "Celeste.tv",
     "tvg_name": "Celeste Live",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/game/Celeste",
-    "chno": 447
+    "chno": 416
   },
   {
     "name": "Portal (Top Live Streamer)",
-    "group": "Indie \u0026 Variety Gaming",
+    "group": "Games (Top Live)",
     "tvg_id": "Portal.tv",
     "tvg_name": "Portal Live",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/game/Portal",
-    "chno": 448
+    "chno": 417
   },
   {
     "name": "Portal 2 (Top Live Streamer)",
-    "group": "Indie \u0026 Variety Gaming",
+    "group": "Games (Top Live)",
     "tvg_id": "Portal2.tv",
     "tvg_name": "Portal 2 Live",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/game/Portal%202",
-    "chno": 449
-  },
-  {
-    "name": "Tammy (Tammy_BlackMedia)",
-    "group": "Indie \u0026 Variety Gaming",
-    "tvg_id": "TammyBlackMedia.tv",
-    "tvg_name": "Tammy BlackMedia",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/tammy_blackmedia",
-    "chno": 450
-  },
-  {
-    "name": "ElanaOrama (Colony Sim \u0026 Variety)",
-    "group": "Indie \u0026 Variety Gaming",
-    "tvg_id": "ElanaOrama.tv",
-    "tvg_name": "ElanaOrama",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/elanaorama",
-    "chno": 451
+    "chno": 418
   },
   {
     "name": "Chess (Top Live Grandmaster)",
-    "group": "Indie \u0026 Variety Gaming",
+    "group": "Games (Top Live)",
     "tvg_id": "Chess.tv",
     "tvg_name": "Chess Live",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/game/Chess",
-    "chno": 452
+    "chno": 419
   },
   {
     "name": "GeoGuessr (World Exploration)",
-    "group": "Indie \u0026 Variety Gaming",
+    "group": "Games (Top Live)",
     "tvg_id": "GeoGuessr.tv",
     "tvg_name": "GeoGuessr Live",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/game/GeoGuessr",
-    "chno": 453
+    "chno": 420
   },
   {
     "name": "Trackmania (Precision Racing Live)",
-    "group": "Indie \u0026 Variety Gaming",
+    "group": "Games (Top Live)",
     "tvg_id": "Trackmania.tv",
     "tvg_name": "Trackmania Live",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/game/Trackmania",
-    "chno": 454
+    "chno": 421
   },
   {
     "name": "Zeepkist (Soapbox Physics Racing Live)",
-    "group": "Indie \u0026 Variety Gaming",
+    "group": "Games (Top Live)",
     "tvg_id": "Zeepkist.tv",
     "tvg_name": "Zeepkist Live",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/game/Zeepkist",
+    "chno": 422
+  },
+  {
+    "name": "TASVideos (Tool-Assisted Speedruns)",
+    "group": "Streamers",
+    "tvg_id": "TASVideos.tv",
+    "tvg_name": "TASVideos",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/tasvideos",
+    "chno": 425
+  },
+  {
+    "name": "MitchFlowerPower (SMB3 Speedruns)",
+    "group": "Streamers",
+    "tvg_id": "MitchFlowerPower.tv",
+    "tvg_name": "MitchFlowerPower",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/mitchflowerpower",
+    "chno": 426
+  },
+  {
+    "name": "SmallAnt (Challenges \u0026 Speedruns)",
+    "group": "Streamers",
+    "tvg_id": "SmallAnt.tv",
+    "tvg_name": "SmallAnt",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/smallant",
+    "chno": 427
+  },
+  {
+    "name": "Carrarium (Celeste \u0026 GDQ)",
+    "group": "Streamers",
+    "tvg_id": "Carrarium.tv",
+    "tvg_name": "Carrarium",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/carrarium",
+    "chno": 428
+  },
+  {
+    "name": "TGH (Celeste \u0026 Retro Speedruns)",
+    "group": "Streamers",
+    "tvg_id": "TGH.tv",
+    "tvg_name": "TGH",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/tgh_sr",
+    "chno": 429
+  },
+  {
+    "name": "AmberCyprian (Speedruns \u0026 Retro)",
+    "group": "Streamers",
+    "tvg_id": "AmberCyprian.tv",
+    "tvg_name": "AmberCyprian",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/ambercyprian",
+    "chno": 430
+  },
+  {
+    "name": "Msushi (Celeste \u0026 Portal Speedruns)",
+    "group": "Streamers",
+    "tvg_id": "Msushi.tv",
+    "tvg_name": "Msushi",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/msushi",
+    "chno": 431
+  },
+  {
+    "name": "Shoujo (Speedruns \u0026 Multiworld)",
+    "group": "Streamers",
+    "tvg_id": "Shoujo.tv",
+    "tvg_name": "Shoujo",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/shoujo",
+    "chno": 432
+  },
+  {
+    "name": "Ryukahr",
+    "group": "Streamers",
+    "tvg_id": "Ryukahr.tv",
+    "tvg_name": "Ryukahr",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/ryukahr",
+    "chno": 433
+  },
+  {
+    "name": "GrandPooBear",
+    "group": "Streamers",
+    "tvg_id": "GrandPooBear.tv",
+    "tvg_name": "GrandPooBear",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/grandpoobear",
+    "chno": 434
+  },
+  {
+    "name": "ThaBeast721 (Kaizo \u0026 Mario 64)",
+    "group": "Streamers",
+    "tvg_id": "ThaBeast721.tv",
+    "tvg_name": "ThaBeast721",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/thabeast721",
+    "chno": 435
+  },
+  {
+    "name": "CarlSagan42 (Kaizo \u0026 Troll Maker)",
+    "group": "Streamers",
+    "tvg_id": "CarlSagan42.tv",
+    "tvg_name": "CarlSagan42",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/carlsagan42",
+    "chno": 436
+  },
+  {
+    "name": "Juzcook (Kaizo \u0026 Mario Maker)",
+    "group": "Streamers",
+    "tvg_id": "Juzcook.tv",
+    "tvg_name": "Juzcook",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/juzcook",
+    "chno": 437
+  },
+  {
+    "name": "Aurateur (Endless Mario Maker)",
+    "group": "Streamers",
+    "tvg_id": "Aurateur.tv",
+    "tvg_name": "Aurateur",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/aurateur",
+    "chno": 438
+  },
+  {
+    "name": "PangaeaPanga (Kaizo SMW)",
+    "group": "Streamers",
+    "tvg_id": "PangaeaPanga.tv",
+    "tvg_name": "PangaeaPanga",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/pangaeapanga",
+    "chno": 439
+  },
+  {
+    "name": "SimpleFlips (SM64 Romhacks)",
+    "group": "Streamers",
+    "tvg_id": "SimpleFlips.tv",
+    "tvg_name": "SimpleFlips",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/simpleflips",
+    "chno": 440
+  },
+  {
+    "name": "Failstream (Mario Maker Builds)",
+    "group": "Streamers",
+    "tvg_id": "Failstream.tv",
+    "tvg_name": "Failstream",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/failstream",
+    "chno": 441
+  },
+  {
+    "name": "GlitchCat7 (SMW Kaizo \u0026 Speedruns)",
+    "group": "Streamers",
+    "tvg_id": "GlitchCat7.tv",
+    "tvg_name": "GlitchCat7",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/glitchcat7",
+    "chno": 442
+  },
+  {
+    "name": "DGR (Mario Maker \u0026 Super Mario)",
+    "group": "Streamers",
+    "tvg_id": "DGR.tv",
+    "tvg_name": "DGR",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/dgr_dave",
+    "chno": 443
+  },
+  {
+    "name": "RBPimlico (Mario Maker \u0026 Kaizo)",
+    "group": "Streamers",
+    "tvg_id": "RBPimlico.tv",
+    "tvg_name": "RBPimlico",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/rbpimlico",
+    "chno": 444
+  },
+  {
+    "name": "BarbarousKing (Mario Romhacks \u0026 Variety)",
+    "group": "Streamers",
+    "tvg_id": "BarbarousKing.tv",
+    "tvg_name": "BarbarousKing",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/barbarousking",
+    "chno": 445
+  },
+  {
+    "name": "Wumbotize (Modern Tetris Master)",
+    "group": "Streamers",
+    "tvg_id": "Wumbotize.tv",
+    "tvg_name": "Wumbotize",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/wumbotize",
+    "chno": 446
+  },
+  {
+    "name": "Doremy (Modern Tetris \u0026 TETR.IO)",
+    "group": "Streamers",
+    "tvg_id": "Doremy.tv",
+    "tvg_name": "Doremy",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/doremy",
+    "chno": 447
+  },
+  {
+    "name": "DogPlayingTetris (3x CTWC World Champion)",
+    "group": "Streamers",
+    "tvg_id": "DogPlayingTetris.tv",
+    "tvg_name": "DogPlayingTetris",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/dogplayingtetris",
+    "chno": 448
+  },
+  {
+    "name": "EricICX (CTWC World Champion)",
+    "group": "Streamers",
+    "tvg_id": "EricICX.tv",
+    "tvg_name": "EricICX",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/ericicx",
+    "chno": 449
+  },
+  {
+    "name": "Fractal (CTWC World Champion)",
+    "group": "Streamers",
+    "tvg_id": "FractalTetris.tv",
+    "tvg_name": "Fractal",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/fractal",
+    "chno": 450
+  },
+  {
+    "name": "Alex_T (CTWC Champion)",
+    "group": "Streamers",
+    "tvg_id": "AlexT.tv",
+    "tvg_name": "Alex T",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/alex_t",
+    "chno": 451
+  },
+  {
+    "name": "BlueScuti (NES Tetris Crash Record)",
+    "group": "Streamers",
+    "tvg_id": "BlueScuti.tv",
+    "tvg_name": "BlueScuti",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/bluescuti",
+    "chno": 452
+  },
+  {
+    "name": "Anna D. (Tetris)",
+    "group": "Streamers",
+    "tvg_id": "AnnaD.tv",
+    "tvg_name": "Anna D.",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/vinesandwillows",
+    "chno": 453
+  },
+  {
+    "name": "Tammy (Tammy_BlackMedia)",
+    "group": "Streamers",
+    "tvg_id": "TammyBlackMedia.tv",
+    "tvg_name": "Tammy BlackMedia",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/tammy_blackmedia",
+    "chno": 454
+  },
+  {
+    "name": "ElanaOrama (Colony Sim \u0026 Variety)",
+    "group": "Streamers",
+    "tvg_id": "ElanaOrama.tv",
+    "tvg_name": "ElanaOrama",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/twitch/elanaorama",
     "chno": 455
   },
   {

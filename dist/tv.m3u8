@@ -675,161 +675,161 @@ http://iran620.com:1935/live/IranJewishTv/playlist.m3u8
 #EXTINF:-1 tvg-id="ADBTV.pt" tvg-name="ADB TV" tvg-logo="https://i.ibb.co/HGfTJwt/ADBTV.jpg" group-title="Religião" tvg-chno="292",ADB TV
 https://live-tv.waytv.pt/adbtv/adbtv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Speedrun.tv" tvg-name="Speedrun" group-title="Speedrunning & Marathons" tvg-chno="400",Speedrun (24/7 Speedrun.com)
-https://kiefte.eu/iptv/twitch/speedrun
-
-#EXTINF:-1 tvg-id="GamesDoneQuick.tv" tvg-name="GamesDoneQuick" group-title="Speedrunning & Marathons" tvg-chno="401",GamesDoneQuick (GDQ)
+#EXTINF:-1 tvg-id="GamesDoneQuick.tv" tvg-name="GamesDoneQuick" group-title="Events & Marathons" tvg-chno="400",GamesDoneQuick (GDQ)
 https://kiefte.eu/iptv/twitch/gamesdonequick
 
-#EXTINF:-1 tvg-id="ESAMarathon.tv" tvg-name="ESAMarathon" group-title="Speedrunning & Marathons" tvg-chno="402",ESAMarathon (European Speedrunner Assembly)
-https://kiefte.eu/iptv/twitch/esamarathon
-
-#EXTINF:-1 tvg-id="TASVideos.tv" tvg-name="TASVideos" group-title="Speedrunning & Marathons" tvg-chno="403",TASVideos (Tool-Assisted Speedruns)
-https://kiefte.eu/iptv/twitch/tasvideos
-
-#EXTINF:-1 tvg-id="MitchFlowerPower.tv" tvg-name="MitchFlowerPower" group-title="Speedrunning & Marathons" tvg-chno="404",MitchFlowerPower (SMB3 Speedruns)
-https://kiefte.eu/iptv/twitch/mitchflowerpower
-
-#EXTINF:-1 tvg-id="SmallAnt.tv" tvg-name="SmallAnt" group-title="Speedrunning & Marathons" tvg-chno="405",SmallAnt (Challenges & Speedruns)
-https://kiefte.eu/iptv/twitch/smallant
-
-#EXTINF:-1 tvg-id="Carrarium.tv" tvg-name="Carrarium" group-title="Speedrunning & Marathons" tvg-chno="406",Carrarium (Celeste & GDQ)
-https://kiefte.eu/iptv/twitch/carrarium
-
-#EXTINF:-1 tvg-id="TGH.tv" tvg-name="TGH" group-title="Speedrunning & Marathons" tvg-chno="407",TGH (Celeste & Retro Speedruns)
-https://kiefte.eu/iptv/twitch/tgh_sr
-
-#EXTINF:-1 tvg-id="AmberCyprian.tv" tvg-name="AmberCyprian" group-title="Speedrunning & Marathons" tvg-chno="408",AmberCyprian (Speedruns & Retro)
-https://kiefte.eu/iptv/twitch/ambercyprian
-
-#EXTINF:-1 tvg-id="Msushi.tv" tvg-name="Msushi" group-title="Speedrunning & Marathons" tvg-chno="409",Msushi (Celeste & Portal Speedruns)
-https://kiefte.eu/iptv/twitch/msushi
-
-#EXTINF:-1 tvg-id="Shoujo.tv" tvg-name="Shoujo" group-title="Speedrunning & Marathons" tvg-chno="410",Shoujo (Speedruns & Multiworld)
-https://kiefte.eu/iptv/twitch/shoujo
-
-#EXTINF:-1 tvg-id="SMWRomhacks.tv" tvg-name="SMW Romhacks Live" group-title="Mario & Romhacks" tvg-chno="415",Super Mario World (Romhacks & Kaizo Live)
-https://kiefte.eu/iptv/twitch/game/Super%20Mario%20World?bias=romhack
-
-#EXTINF:-1 tvg-id="MarioMaker2.tv" tvg-name="Mario Maker 2 Live" group-title="Mario & Romhacks" tvg-chno="416",Super Mario Maker 2 (Top Live Streamer)
-https://kiefte.eu/iptv/twitch/game/Super%20Mario%20Maker%202
-
-#EXTINF:-1 tvg-id="Ryukahr.tv" tvg-name="Ryukahr" group-title="Mario & Romhacks" tvg-chno="417",Ryukahr
-https://kiefte.eu/iptv/twitch/ryukahr
-
-#EXTINF:-1 tvg-id="GrandPooBear.tv" tvg-name="GrandPooBear" group-title="Mario & Romhacks" tvg-chno="418",GrandPooBear
-https://kiefte.eu/iptv/twitch/grandpoobear
-
-#EXTINF:-1 tvg-id="ThaBeast721.tv" tvg-name="ThaBeast721" group-title="Mario & Romhacks" tvg-chno="419",ThaBeast721 (Kaizo & Mario 64)
-https://kiefte.eu/iptv/twitch/thabeast721
-
-#EXTINF:-1 tvg-id="CarlSagan42.tv" tvg-name="CarlSagan42" group-title="Mario & Romhacks" tvg-chno="420",CarlSagan42 (Kaizo & Troll Maker)
-https://kiefte.eu/iptv/twitch/carlsagan42
-
-#EXTINF:-1 tvg-id="Juzcook.tv" tvg-name="Juzcook" group-title="Mario & Romhacks" tvg-chno="421",Juzcook (Kaizo & Mario Maker)
-https://kiefte.eu/iptv/twitch/juzcook
-
-#EXTINF:-1 tvg-id="Aurateur.tv" tvg-name="Aurateur" group-title="Mario & Romhacks" tvg-chno="422",Aurateur (Endless Mario Maker)
-https://kiefte.eu/iptv/twitch/aurateur
-
-#EXTINF:-1 tvg-id="PangaeaPanga.tv" tvg-name="PangaeaPanga" group-title="Mario & Romhacks" tvg-chno="423",PangaeaPanga (Kaizo SMW)
-https://kiefte.eu/iptv/twitch/pangaeapanga
-
-#EXTINF:-1 tvg-id="SimpleFlips.tv" tvg-name="SimpleFlips" group-title="Mario & Romhacks" tvg-chno="424",SimpleFlips (SM64 Romhacks)
-https://kiefte.eu/iptv/twitch/simpleflips
-
-#EXTINF:-1 tvg-id="Failstream.tv" tvg-name="Failstream" group-title="Mario & Romhacks" tvg-chno="425",Failstream (Mario Maker Builds)
-https://kiefte.eu/iptv/twitch/failstream
-
-#EXTINF:-1 tvg-id="GlitchCat7.tv" tvg-name="GlitchCat7" group-title="Mario & Romhacks" tvg-chno="426",GlitchCat7 (SMW Kaizo & Speedruns)
-https://kiefte.eu/iptv/twitch/glitchcat7
-
-#EXTINF:-1 tvg-id="DGR.tv" tvg-name="DGR" group-title="Mario & Romhacks" tvg-chno="427",DGR (Mario Maker & Super Mario)
-https://kiefte.eu/iptv/twitch/dgr_dave
-
-#EXTINF:-1 tvg-id="RBPimlico.tv" tvg-name="RBPimlico" group-title="Mario & Romhacks" tvg-chno="428",RBPimlico (Mario Maker & Kaizo)
-https://kiefte.eu/iptv/twitch/rbpimlico
-
-#EXTINF:-1 tvg-id="BarbarousKing.tv" tvg-name="BarbarousKing" group-title="Mario & Romhacks" tvg-chno="429",BarbarousKing (Mario Romhacks & Variety)
-https://kiefte.eu/iptv/twitch/barbarousking
-
-#EXTINF:-1 tvg-id="ClassicTetris.tv" tvg-name="ClassicTetris" group-title="Tetris" tvg-chno="430",Classic Tetris (CTWC Main)
+#EXTINF:-1 tvg-id="ClassicTetris.tv" tvg-name="ClassicTetris" group-title="Events & Marathons" tvg-chno="401",Classic Tetris (CTWC Main)
 https://kiefte.eu/iptv/twitch/classictetris
 
-#EXTINF:-1 tvg-id="ClassicTetris2.tv" tvg-name="ClassicTetris 2" group-title="Tetris" tvg-chno="431",Classic Tetris 2 (CTWC)
+#EXTINF:-1 tvg-id="ClassicTetris2.tv" tvg-name="ClassicTetris 2" group-title="Events & Marathons" tvg-chno="402",Classic Tetris 2 (CTWC)
 https://kiefte.eu/iptv/twitch/classictetris2
 
-#EXTINF:-1 tvg-id="ClassicTetris3.tv" tvg-name="ClassicTetris 3" group-title="Tetris" tvg-chno="432",Classic Tetris 3 (CTWC)
+#EXTINF:-1 tvg-id="ClassicTetris3.tv" tvg-name="ClassicTetris 3" group-title="Events & Marathons" tvg-chno="403",Classic Tetris 3 (CTWC)
 https://kiefte.eu/iptv/twitch/classictetris3
 
-#EXTINF:-1 tvg-id="ClassicTetris4.tv" tvg-name="ClassicTetris 4" group-title="Tetris" tvg-chno="433",Classic Tetris 4 (CTWC)
+#EXTINF:-1 tvg-id="ClassicTetris4.tv" tvg-name="ClassicTetris 4" group-title="Events & Marathons" tvg-chno="404",Classic Tetris 4 (CTWC)
 https://kiefte.eu/iptv/twitch/classictetris4
 
-#EXTINF:-1 tvg-id="NESTetris.tv" tvg-name="NES Tetris Live" group-title="Tetris" tvg-chno="434",NES Tetris (Top Live Streamer)
-https://kiefte.eu/iptv/twitch/game/Tetris?bias=nes
+#EXTINF:-1 tvg-id="ESAMarathon.tv" tvg-name="ESAMarathon" group-title="Events & Marathons" tvg-chno="405",ESAMarathon (European Speedrunner Assembly)
+https://kiefte.eu/iptv/twitch/esamarathon
 
-#EXTINF:-1 tvg-id="ModernTetris.tv" tvg-name="Modern Tetris Live" group-title="Tetris" tvg-chno="435",Modern Tetris (Top Live Streamer)
-https://kiefte.eu/iptv/twitch/group/modern-tetris
-
-#EXTINF:-1 tvg-id="Wumbotize.tv" tvg-name="Wumbotize" group-title="Tetris" tvg-chno="436",Wumbotize (Modern Tetris Master)
-https://kiefte.eu/iptv/twitch/wumbotize
-
-#EXTINF:-1 tvg-id="Doremy.tv" tvg-name="Doremy" group-title="Tetris" tvg-chno="437",Doremy (Modern Tetris & TETR.IO)
-https://kiefte.eu/iptv/twitch/doremy
-
-#EXTINF:-1 tvg-id="HardDrop.tv" tvg-name="Hard Drop" group-title="Tetris" tvg-chno="438",Hard Drop (Tetris Community & Tourneys)
+#EXTINF:-1 tvg-id="HardDrop.tv" tvg-name="Hard Drop" group-title="Events & Marathons" tvg-chno="406",Hard Drop (Tetris Community & Tourneys)
 https://kiefte.eu/iptv/twitch/harddrop
 
-#EXTINF:-1 tvg-id="DogPlayingTetris.tv" tvg-name="DogPlayingTetris" group-title="Tetris" tvg-chno="439",DogPlayingTetris (3x CTWC World Champion)
-https://kiefte.eu/iptv/twitch/dogplayingtetris
+#EXTINF:-1 tvg-id="Speedrun.tv" tvg-name="Speedrun" group-title="Events & Marathons" tvg-chno="407",Speedrun (24/7 Speedrun.com)
+https://kiefte.eu/iptv/twitch/speedrun
 
-#EXTINF:-1 tvg-id="EricICX.tv" tvg-name="EricICX" group-title="Tetris" tvg-chno="440",EricICX (CTWC World Champion)
-https://kiefte.eu/iptv/twitch/ericicx
-
-#EXTINF:-1 tvg-id="FractalTetris.tv" tvg-name="Fractal" group-title="Tetris" tvg-chno="441",Fractal (CTWC World Champion)
-https://kiefte.eu/iptv/twitch/fractal
-
-#EXTINF:-1 tvg-id="AlexT.tv" tvg-name="Alex T" group-title="Tetris" tvg-chno="442",Alex_T (CTWC Champion)
-https://kiefte.eu/iptv/twitch/alex_t
-
-#EXTINF:-1 tvg-id="BlueScuti.tv" tvg-name="BlueScuti" group-title="Tetris" tvg-chno="443",BlueScuti (NES Tetris Crash Record)
-https://kiefte.eu/iptv/twitch/bluescuti
-
-#EXTINF:-1 tvg-id="AnnaD.tv" tvg-name="Anna D." group-title="Tetris" tvg-chno="444",Anna D. (Tetris)
-https://kiefte.eu/iptv/twitch/vinesandwillows
-
-#EXTINF:-1 tvg-id="GamingAutoLive.tv" tvg-name="Gaming 24/7 Auto-Live" group-title="Indie & Variety Gaming" tvg-chno="445",Gaming 24/7 (Auto-Live Streamer)
+#EXTINF:-1 tvg-id="GamingAutoLive.tv" tvg-name="Gaming 24/7 Auto-Live" group-title="Games (Top Live)" tvg-chno="410",Gaming 24/7 (Auto-Live Streamer)
 https://kiefte.eu/iptv/gaming/live
 
-#EXTINF:-1 tvg-id="BluePrince.tv" tvg-name="Blue Prince Live" group-title="Indie & Variety Gaming" tvg-chno="446",Blue Prince (Top Live Streamer)
+#EXTINF:-1 tvg-id="SMWRomhacks.tv" tvg-name="SMW Romhacks Live" group-title="Games (Top Live)" tvg-chno="411",Super Mario World (Romhacks & Kaizo Live)
+https://kiefte.eu/iptv/twitch/game/Super%20Mario%20World?bias=romhack
+
+#EXTINF:-1 tvg-id="MarioMaker2.tv" tvg-name="Mario Maker 2 Live" group-title="Games (Top Live)" tvg-chno="412",Super Mario Maker 2 (Top Live Streamer)
+https://kiefte.eu/iptv/twitch/game/Super%20Mario%20Maker%202
+
+#EXTINF:-1 tvg-id="NESTetris.tv" tvg-name="NES Tetris Live" group-title="Games (Top Live)" tvg-chno="413",NES Tetris (Top Live Streamer)
+https://kiefte.eu/iptv/twitch/game/Tetris?bias=nes
+
+#EXTINF:-1 tvg-id="ModernTetris.tv" tvg-name="Modern Tetris Live" group-title="Games (Top Live)" tvg-chno="414",Modern Tetris (Top Live Streamer)
+https://kiefte.eu/iptv/twitch/group/modern-tetris
+
+#EXTINF:-1 tvg-id="BluePrince.tv" tvg-name="Blue Prince Live" group-title="Games (Top Live)" tvg-chno="415",Blue Prince (Top Live Streamer)
 https://kiefte.eu/iptv/twitch/game/Blue%20Prince
 
-#EXTINF:-1 tvg-id="Celeste.tv" tvg-name="Celeste Live" group-title="Indie & Variety Gaming" tvg-chno="447",Celeste (Top Live Streamer)
+#EXTINF:-1 tvg-id="Celeste.tv" tvg-name="Celeste Live" group-title="Games (Top Live)" tvg-chno="416",Celeste (Top Live Streamer)
 https://kiefte.eu/iptv/twitch/game/Celeste
 
-#EXTINF:-1 tvg-id="Portal.tv" tvg-name="Portal Live" group-title="Indie & Variety Gaming" tvg-chno="448",Portal (Top Live Streamer)
+#EXTINF:-1 tvg-id="Portal.tv" tvg-name="Portal Live" group-title="Games (Top Live)" tvg-chno="417",Portal (Top Live Streamer)
 https://kiefte.eu/iptv/twitch/game/Portal
 
-#EXTINF:-1 tvg-id="Portal2.tv" tvg-name="Portal 2 Live" group-title="Indie & Variety Gaming" tvg-chno="449",Portal 2 (Top Live Streamer)
+#EXTINF:-1 tvg-id="Portal2.tv" tvg-name="Portal 2 Live" group-title="Games (Top Live)" tvg-chno="418",Portal 2 (Top Live Streamer)
 https://kiefte.eu/iptv/twitch/game/Portal%202
 
-#EXTINF:-1 tvg-id="TammyBlackMedia.tv" tvg-name="Tammy BlackMedia" group-title="Indie & Variety Gaming" tvg-chno="450",Tammy (Tammy_BlackMedia)
-https://kiefte.eu/iptv/twitch/tammy_blackmedia
-
-#EXTINF:-1 tvg-id="ElanaOrama.tv" tvg-name="ElanaOrama" group-title="Indie & Variety Gaming" tvg-chno="451",ElanaOrama (Colony Sim & Variety)
-https://kiefte.eu/iptv/twitch/elanaorama
-
-#EXTINF:-1 tvg-id="Chess.tv" tvg-name="Chess Live" group-title="Indie & Variety Gaming" tvg-chno="452",Chess (Top Live Grandmaster)
+#EXTINF:-1 tvg-id="Chess.tv" tvg-name="Chess Live" group-title="Games (Top Live)" tvg-chno="419",Chess (Top Live Grandmaster)
 https://kiefte.eu/iptv/twitch/game/Chess
 
-#EXTINF:-1 tvg-id="GeoGuessr.tv" tvg-name="GeoGuessr Live" group-title="Indie & Variety Gaming" tvg-chno="453",GeoGuessr (World Exploration)
+#EXTINF:-1 tvg-id="GeoGuessr.tv" tvg-name="GeoGuessr Live" group-title="Games (Top Live)" tvg-chno="420",GeoGuessr (World Exploration)
 https://kiefte.eu/iptv/twitch/game/GeoGuessr
 
-#EXTINF:-1 tvg-id="Trackmania.tv" tvg-name="Trackmania Live" group-title="Indie & Variety Gaming" tvg-chno="454",Trackmania (Precision Racing Live)
+#EXTINF:-1 tvg-id="Trackmania.tv" tvg-name="Trackmania Live" group-title="Games (Top Live)" tvg-chno="421",Trackmania (Precision Racing Live)
 https://kiefte.eu/iptv/twitch/game/Trackmania
 
-#EXTINF:-1 tvg-id="Zeepkist.tv" tvg-name="Zeepkist Live" group-title="Indie & Variety Gaming" tvg-chno="455",Zeepkist (Soapbox Physics Racing Live)
+#EXTINF:-1 tvg-id="Zeepkist.tv" tvg-name="Zeepkist Live" group-title="Games (Top Live)" tvg-chno="422",Zeepkist (Soapbox Physics Racing Live)
 https://kiefte.eu/iptv/twitch/game/Zeepkist
+
+#EXTINF:-1 tvg-id="TASVideos.tv" tvg-name="TASVideos" group-title="Streamers" tvg-chno="425",TASVideos (Tool-Assisted Speedruns)
+https://kiefte.eu/iptv/twitch/tasvideos
+
+#EXTINF:-1 tvg-id="MitchFlowerPower.tv" tvg-name="MitchFlowerPower" group-title="Streamers" tvg-chno="426",MitchFlowerPower (SMB3 Speedruns)
+https://kiefte.eu/iptv/twitch/mitchflowerpower
+
+#EXTINF:-1 tvg-id="SmallAnt.tv" tvg-name="SmallAnt" group-title="Streamers" tvg-chno="427",SmallAnt (Challenges & Speedruns)
+https://kiefte.eu/iptv/twitch/smallant
+
+#EXTINF:-1 tvg-id="Carrarium.tv" tvg-name="Carrarium" group-title="Streamers" tvg-chno="428",Carrarium (Celeste & GDQ)
+https://kiefte.eu/iptv/twitch/carrarium
+
+#EXTINF:-1 tvg-id="TGH.tv" tvg-name="TGH" group-title="Streamers" tvg-chno="429",TGH (Celeste & Retro Speedruns)
+https://kiefte.eu/iptv/twitch/tgh_sr
+
+#EXTINF:-1 tvg-id="AmberCyprian.tv" tvg-name="AmberCyprian" group-title="Streamers" tvg-chno="430",AmberCyprian (Speedruns & Retro)
+https://kiefte.eu/iptv/twitch/ambercyprian
+
+#EXTINF:-1 tvg-id="Msushi.tv" tvg-name="Msushi" group-title="Streamers" tvg-chno="431",Msushi (Celeste & Portal Speedruns)
+https://kiefte.eu/iptv/twitch/msushi
+
+#EXTINF:-1 tvg-id="Shoujo.tv" tvg-name="Shoujo" group-title="Streamers" tvg-chno="432",Shoujo (Speedruns & Multiworld)
+https://kiefte.eu/iptv/twitch/shoujo
+
+#EXTINF:-1 tvg-id="Ryukahr.tv" tvg-name="Ryukahr" group-title="Streamers" tvg-chno="433",Ryukahr
+https://kiefte.eu/iptv/twitch/ryukahr
+
+#EXTINF:-1 tvg-id="GrandPooBear.tv" tvg-name="GrandPooBear" group-title="Streamers" tvg-chno="434",GrandPooBear
+https://kiefte.eu/iptv/twitch/grandpoobear
+
+#EXTINF:-1 tvg-id="ThaBeast721.tv" tvg-name="ThaBeast721" group-title="Streamers" tvg-chno="435",ThaBeast721 (Kaizo & Mario 64)
+https://kiefte.eu/iptv/twitch/thabeast721
+
+#EXTINF:-1 tvg-id="CarlSagan42.tv" tvg-name="CarlSagan42" group-title="Streamers" tvg-chno="436",CarlSagan42 (Kaizo & Troll Maker)
+https://kiefte.eu/iptv/twitch/carlsagan42
+
+#EXTINF:-1 tvg-id="Juzcook.tv" tvg-name="Juzcook" group-title="Streamers" tvg-chno="437",Juzcook (Kaizo & Mario Maker)
+https://kiefte.eu/iptv/twitch/juzcook
+
+#EXTINF:-1 tvg-id="Aurateur.tv" tvg-name="Aurateur" group-title="Streamers" tvg-chno="438",Aurateur (Endless Mario Maker)
+https://kiefte.eu/iptv/twitch/aurateur
+
+#EXTINF:-1 tvg-id="PangaeaPanga.tv" tvg-name="PangaeaPanga" group-title="Streamers" tvg-chno="439",PangaeaPanga (Kaizo SMW)
+https://kiefte.eu/iptv/twitch/pangaeapanga
+
+#EXTINF:-1 tvg-id="SimpleFlips.tv" tvg-name="SimpleFlips" group-title="Streamers" tvg-chno="440",SimpleFlips (SM64 Romhacks)
+https://kiefte.eu/iptv/twitch/simpleflips
+
+#EXTINF:-1 tvg-id="Failstream.tv" tvg-name="Failstream" group-title="Streamers" tvg-chno="441",Failstream (Mario Maker Builds)
+https://kiefte.eu/iptv/twitch/failstream
+
+#EXTINF:-1 tvg-id="GlitchCat7.tv" tvg-name="GlitchCat7" group-title="Streamers" tvg-chno="442",GlitchCat7 (SMW Kaizo & Speedruns)
+https://kiefte.eu/iptv/twitch/glitchcat7
+
+#EXTINF:-1 tvg-id="DGR.tv" tvg-name="DGR" group-title="Streamers" tvg-chno="443",DGR (Mario Maker & Super Mario)
+https://kiefte.eu/iptv/twitch/dgr_dave
+
+#EXTINF:-1 tvg-id="RBPimlico.tv" tvg-name="RBPimlico" group-title="Streamers" tvg-chno="444",RBPimlico (Mario Maker & Kaizo)
+https://kiefte.eu/iptv/twitch/rbpimlico
+
+#EXTINF:-1 tvg-id="BarbarousKing.tv" tvg-name="BarbarousKing" group-title="Streamers" tvg-chno="445",BarbarousKing (Mario Romhacks & Variety)
+https://kiefte.eu/iptv/twitch/barbarousking
+
+#EXTINF:-1 tvg-id="Wumbotize.tv" tvg-name="Wumbotize" group-title="Streamers" tvg-chno="446",Wumbotize (Modern Tetris Master)
+https://kiefte.eu/iptv/twitch/wumbotize
+
+#EXTINF:-1 tvg-id="Doremy.tv" tvg-name="Doremy" group-title="Streamers" tvg-chno="447",Doremy (Modern Tetris & TETR.IO)
+https://kiefte.eu/iptv/twitch/doremy
+
+#EXTINF:-1 tvg-id="DogPlayingTetris.tv" tvg-name="DogPlayingTetris" group-title="Streamers" tvg-chno="448",DogPlayingTetris (3x CTWC World Champion)
+https://kiefte.eu/iptv/twitch/dogplayingtetris
+
+#EXTINF:-1 tvg-id="EricICX.tv" tvg-name="EricICX" group-title="Streamers" tvg-chno="449",EricICX (CTWC World Champion)
+https://kiefte.eu/iptv/twitch/ericicx
+
+#EXTINF:-1 tvg-id="FractalTetris.tv" tvg-name="Fractal" group-title="Streamers" tvg-chno="450",Fractal (CTWC World Champion)
+https://kiefte.eu/iptv/twitch/fractal
+
+#EXTINF:-1 tvg-id="AlexT.tv" tvg-name="Alex T" group-title="Streamers" tvg-chno="451",Alex_T (CTWC Champion)
+https://kiefte.eu/iptv/twitch/alex_t
+
+#EXTINF:-1 tvg-id="BlueScuti.tv" tvg-name="BlueScuti" group-title="Streamers" tvg-chno="452",BlueScuti (NES Tetris Crash Record)
+https://kiefte.eu/iptv/twitch/bluescuti
+
+#EXTINF:-1 tvg-id="AnnaD.tv" tvg-name="Anna D." group-title="Streamers" tvg-chno="453",Anna D. (Tetris)
+https://kiefte.eu/iptv/twitch/vinesandwillows
+
+#EXTINF:-1 tvg-id="TammyBlackMedia.tv" tvg-name="Tammy BlackMedia" group-title="Streamers" tvg-chno="454",Tammy (Tammy_BlackMedia)
+https://kiefte.eu/iptv/twitch/tammy_blackmedia
+
+#EXTINF:-1 tvg-id="ElanaOrama.tv" tvg-name="ElanaOrama" group-title="Streamers" tvg-chno="455",ElanaOrama (Colony Sim & Variety)
+https://kiefte.eu/iptv/twitch/elanaorama
 
 #EXTINF:-1 tvg-id="NowPlaying.lapingvino" tvg-name="Now Playing Dashboard" group-title="LaPingvino Favorites" tvg-chno="460",Now Playing • Clock & Weather Dashboard
 https://kiefte.eu/iptv/now.ts

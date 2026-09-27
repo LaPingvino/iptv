@@ -69,10 +69,9 @@ GROUP_BASE_CHNO = {
     "Persa / Farsi": 295,
     
     # 🎮 Gaming & Twitch Streams (400 - 499)
-    "Speedrunning & Marathons": 400,
-    "Mario & Romhacks": 415,
-    "Tetris": 430,
-    "Indie & Variety Gaming": 445,
+    "Events & Marathons": 400,
+    "Games (Top Live)": 410,
+    "Streamers": 425,
     "LaPingvino Favorites": 461,
     
     # 🧪 Diagnostics (900+)

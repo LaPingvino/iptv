@@ -1,0 +1,155 @@
+- name: TASVideos (Tool-Assisted Speedruns)
+  group: Streamers
+  tvg_id: TASVideos.tv
+  tvg_name: TASVideos
+  url: https://kiefte.eu/iptv/twitch/tasvideos
+- name: MitchFlowerPower (SMB3 Speedruns)
+  group: Streamers
+  tvg_id: MitchFlowerPower.tv
+  tvg_name: MitchFlowerPower
+  url: https://kiefte.eu/iptv/twitch/mitchflowerpower
+- name: SmallAnt (Challenges & Speedruns)
+  group: Streamers
+  tvg_id: SmallAnt.tv
+  tvg_name: SmallAnt
+  url: https://kiefte.eu/iptv/twitch/smallant
+- name: Carrarium (Celeste & GDQ)
+  group: Streamers
+  tvg_id: Carrarium.tv
+  tvg_name: Carrarium
+  url: https://kiefte.eu/iptv/twitch/carrarium
+- name: TGH (Celeste & Retro Speedruns)
+  group: Streamers
+  tvg_id: TGH.tv
+  tvg_name: TGH
+  url: https://kiefte.eu/iptv/twitch/tgh_sr
+- name: AmberCyprian (Speedruns & Retro)
+  group: Streamers
+  tvg_id: AmberCyprian.tv
+  tvg_name: AmberCyprian
+  url: https://kiefte.eu/iptv/twitch/ambercyprian
+- name: Msushi (Celeste & Portal Speedruns)
+  group: Streamers
+  tvg_id: Msushi.tv
+  tvg_name: Msushi
+  url: https://kiefte.eu/iptv/twitch/msushi
+- name: Shoujo (Speedruns & Multiworld)
+  group: Streamers
+  tvg_id: Shoujo.tv
+  tvg_name: Shoujo
+  url: https://kiefte.eu/iptv/twitch/shoujo
+- name: Ryukahr
+  group: Streamers
+  tvg_id: Ryukahr.tv
+  tvg_name: Ryukahr
+  url: https://kiefte.eu/iptv/twitch/ryukahr
+- name: GrandPooBear
+  group: Streamers
+  tvg_id: GrandPooBear.tv
+  tvg_name: GrandPooBear
+  url: https://kiefte.eu/iptv/twitch/grandpoobear
+- name: ThaBeast721 (Kaizo & Mario 64)
+  group: Streamers
+  tvg_id: ThaBeast721.tv
+  tvg_name: ThaBeast721
+  url: https://kiefte.eu/iptv/twitch/thabeast721
+- name: CarlSagan42 (Kaizo & Troll Maker)
+  group: Streamers
+  tvg_id: CarlSagan42.tv
+  tvg_name: CarlSagan42
+  url: https://kiefte.eu/iptv/twitch/carlsagan42
+- name: Juzcook (Kaizo & Mario Maker)
+  group: Streamers
+  tvg_id: Juzcook.tv
+  tvg_name: Juzcook
+  url: https://kiefte.eu/iptv/twitch/juzcook
+- name: Aurateur (Endless Mario Maker)
+  group: Streamers
+  tvg_id: Aurateur.tv
+  tvg_name: Aurateur
+  url: https://kiefte.eu/iptv/twitch/aurateur
+- name: PangaeaPanga (Kaizo SMW)
+  group: Streamers
+  tvg_id: PangaeaPanga.tv
+  tvg_name: PangaeaPanga
+  url: https://kiefte.eu/iptv/twitch/pangaeapanga
+- name: SimpleFlips (SM64 Romhacks)
+  group: Streamers
+  tvg_id: SimpleFlips.tv
+  tvg_name: SimpleFlips
+  url: https://kiefte.eu/iptv/twitch/simpleflips
+- name: Failstream (Mario Maker Builds)
+  group: Streamers
+  tvg_id: Failstream.tv
+  tvg_name: Failstream
+  url: https://kiefte.eu/iptv/twitch/failstream
+- name: GlitchCat7 (SMW Kaizo & Speedruns)
+  group: Streamers
+  tvg_id: GlitchCat7.tv
+  tvg_name: GlitchCat7
+  url: https://kiefte.eu/iptv/twitch/glitchcat7
+- name: DGR (Mario Maker & Super Mario)
+  group: Streamers
+  tvg_id: DGR.tv
+  tvg_name: DGR
+  url: https://kiefte.eu/iptv/twitch/dgr_dave
+- name: RBPimlico (Mario Maker & Kaizo)
+  group: Streamers
+  tvg_id: RBPimlico.tv
+  tvg_name: RBPimlico
+  url: https://kiefte.eu/iptv/twitch/rbpimlico
+- name: BarbarousKing (Mario Romhacks & Variety)
+  group: Streamers
+  tvg_id: BarbarousKing.tv
+  tvg_name: BarbarousKing
+  url: https://kiefte.eu/iptv/twitch/barbarousking
+- name: Wumbotize (Modern Tetris Master)
+  group: Streamers
+  tvg_id: Wumbotize.tv
+  tvg_name: Wumbotize
+  url: https://kiefte.eu/iptv/twitch/wumbotize
+- name: Doremy (Modern Tetris & TETR.IO)
+  group: Streamers
+  tvg_id: Doremy.tv
+  tvg_name: Doremy
+  url: https://kiefte.eu/iptv/twitch/doremy
+- name: DogPlayingTetris (3x CTWC World Champion)
+  group: Streamers
+  tvg_id: DogPlayingTetris.tv
+  tvg_name: DogPlayingTetris
+  url: https://kiefte.eu/iptv/twitch/dogplayingtetris
+- name: EricICX (CTWC World Champion)
+  group: Streamers
+  tvg_id: EricICX.tv
+  tvg_name: EricICX
+  url: https://kiefte.eu/iptv/twitch/ericicx
+- name: Fractal (CTWC World Champion)
+  group: Streamers
+  tvg_id: FractalTetris.tv
+  tvg_name: Fractal
+  url: https://kiefte.eu/iptv/twitch/fractal
+- name: Alex_T (CTWC Champion)
+  group: Streamers
+  tvg_id: AlexT.tv
+  tvg_name: Alex T
+  url: https://kiefte.eu/iptv/twitch/alex_t
+- name: BlueScuti (NES Tetris Crash Record)
+  group: Streamers
+  tvg_id: BlueScuti.tv
+  tvg_name: BlueScuti
+  url: https://kiefte.eu/iptv/twitch/bluescuti
+- name: Anna D. (Tetris)
+  group: Streamers
+  tvg_id: AnnaD.tv
+  tvg_name: Anna D.
+  url: https://kiefte.eu/iptv/twitch/vinesandwillows
+- name: Tammy (Tammy_BlackMedia)
+  group: Streamers
+  tvg_id: TammyBlackMedia.tv
+  tvg_name: Tammy BlackMedia
+  url: https://kiefte.eu/iptv/twitch/tammy_blackmedia
+- name: ElanaOrama (Colony Sim & Variety)
+  group: Streamers
+  tvg_id: ElanaOrama.tv
+  tvg_name: ElanaOrama
+  url: https://kiefte.eu/iptv/twitch/elanaorama

@@ -220,7 +220,7 @@ func main() {
 			json.NewEncoder(w).Encode(map[string]any{
 				"status":    "ok",
 				"service":   "iptv-live-bridge",
-				"version":   "4.4.12",
+				"version":   "4.4.13",
 				"runtime":   "go",
 				"timestamp": time.Now().Format(time.RFC3339),
 			})
@@ -1062,7 +1062,7 @@ func buildNowChannels(ctx context.Context) []ChannelNow {
 		sInfo := twitchMgr.GetActiveStreamInfo(slotKey)
 
 		item := ChannelNow{
-			ChNo:      groupBaseChNo["LaPingvino Favorites"] + i - 1,
+			ChNo:      playlistChNoOr(fmt.Sprintf("twitch/followed/%d", i), groupBaseChNo["LaPingvino Favorites"]+i-1),
 			Slot:      slotKey,
 			Name:      fmt.Sprintf("Followed Streamer #%d", i),
 			Category:  "LaPingvino Favorites",
@@ -1088,19 +1088,27 @@ func buildNowChannels(ctx context.Context) []ChannelNow {
 		channels = append(channels, item)
 	}
 
-	// 2. Dedicated Gaming Channels
+	// 2. Dedicated gaming event channels (numbers come from the built playlist)
+	ev := groupBaseChNo["Events & Marathons"]
 	gamingChannels := []struct {
 		Slot string
 		ChNo int
 		Name string
 	}{
-		{"speedrun", groupBaseChNo["Speedrunning & Marathons"], "Speedrun (24/7 Speedrun.com)"},
-		{"gamesdonequick", groupBaseChNo["Speedrunning & Marathons"] + 1, "GamesDoneQuick (GDQ)"},
-		{"esamarathon", groupBaseChNo["Speedrunning & Marathons"] + 2, "ESAMarathon"},
-		{"tasvideos", groupBaseChNo["Speedrunning & Marathons"] + 3, "TASVideos"},
-		{"mitchflowerpower", groupBaseChNo["Speedrunning & Marathons"] + 4, "MitchFlowerPower (SMB3)"},
-		{"classictetris", groupBaseChNo["Tetris"], "Classic Tetris (CTWC Main)"},
-		{"classictetris2", groupBaseChNo["Tetris"] + 1, "Classic Tetris 2 (CTWC)"},
+		{"gamesdonequick", ev, "GamesDoneQuick (GDQ)"},
+		{"classictetris", ev + 1, "Classic Tetris (CTWC Main)"},
+		{"classictetris2", ev + 2, "Classic Tetris 2 (CTWC)"},
+		{"classictetris3", ev + 3, "Classic Tetris 3 (CTWC)"},
+		{"classictetris4", ev + 4, "Classic Tetris 4 (CTWC)"},
+		{"esamarathon", ev + 5, "ESAMarathon"},
+		{"speedrun", ev + 7, "Speedrun (24/7 Speedrun.com)"},
+		{"tasvideos", 0, "TASVideos"},
+		{"mitchflowerpower", 0, "MitchFlowerPower (SMB3)"},
+	}
+	for i := range gamingChannels {
+		if n := playlistChNo("twitch/" + gamingChannels[i].Slot); n > 0 {
+			gamingChannels[i].ChNo = n
+		}
 	}
 	for _, g := range gamingChannels {
 		sInfo := twitchMgr.GetActiveStreamInfo(g.Slot)
@@ -1322,7 +1330,7 @@ func serveNowDashboard(w http.ResponseWriter, r *http.Request) {
     <p style="color:var(--subtext);">Loading live follows...</p>
   </div>
 
-  <h2 class="section-title">🎮 Dedicated Gaming Streams (Ch. 400–431)</h2>
+  <h2 class="section-title">🎮 Gaming Events & Marathons (Ch. 400–407)</h2>
   <div class="grid" id="gaming-grid">
     <p style="color:var(--subtext);">Loading gaming streams...</p>
   </div>
@@ -1487,3 +1495,41 @@ func serveOverlayWidget(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte(html))
 }
 
+
+// playlistNumbers maps a stream path under /iptv/ (e.g. "twitch/gamesdonequick")
+// to its channel number, read from the deployed dist/channels.json.
+var playlistNumbers struct {
+	sync.Mutex
+	m  map[string]int
+	at time.Time
+}
+
+func playlistChNo(streamPath string) int {
+	playlistNumbers.Lock()
+	defer playlistNumbers.Unlock()
+	if playlistNumbers.m == nil || time.Since(playlistNumbers.at) > 5*time.Minute {
+		m := make(map[string]int)
+		if b, err := os.ReadFile(filepath.Join(getMediaDir("dist"), "channels.json")); err == nil {
+			var chans []struct {
+				URL  string `json:"url"`
+				ChNo int    `json:"chno"`
+			}
+			if json.Unmarshal(b, &chans) == nil {
+				for _, c := range chans {
+					if i := strings.Index(c.URL, "/iptv/"); i >= 0 {
+						m[c.URL[i+len("/iptv/"):]] = c.ChNo
+					}
+				}
+			}
+		}
+		playlistNumbers.m, playlistNumbers.at = m, time.Now()
+	}
+	return playlistNumbers.m[streamPath]
+}
+
+func playlistChNoOr(streamPath string, fallback int) int {
+	if n := playlistChNo(streamPath); n > 0 {
+		return n
+	}
+	return fallback
+}
