@@ -83,9 +83,21 @@ func init() {
 }
 
 func getTwitchEPGChannels() []EPGChannelDef {
-	dataDir := filepath.Join(ProjectDir, "data")
-	files, err := filepath.Glob(filepath.Join(dataDir, "*.yaml"))
-	if err != nil || len(files) == 0 {
+	// The service runs with ProtectHome=yes, so prefer the deployed data dir
+	// (synced by sync.sh, matches the published playlist) over the project tree.
+	var files []string
+	for _, dir := range []string{
+		filepath.Join(MediaDir, "data"),
+		"/var/lib/iptv-live-bridge/data",
+		"/usr/share/iptv-live-bridge/data",
+		filepath.Join(ProjectDir, "data"),
+	} {
+		if f, err := filepath.Glob(filepath.Join(dir, "*.yaml")); err == nil && len(f) > 0 {
+			files = f
+			break
+		}
+	}
+	if len(files) == 0 {
 		return fallbackTwitchChannels()
 	}
 
