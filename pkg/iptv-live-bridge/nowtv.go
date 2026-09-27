@@ -37,19 +37,31 @@ type NowTVEngine struct {
 	pages   []nowPage
 	pageIdx int
 
-	pip    *PiP
-	runCtx context.Context
+	pip      *PiP
+	runCtx   context.Context
+	pipCycle map[string]int // per page title: how often it was shown
 }
 
 // nowPage is one Teletext-style page of the dashboard.
 type nowPage struct {
 	title string
-	body  string // bright lines (channel + status)
-	dim   string // dim lines (stream title), interleaved with body via blank lines
+	body  string   // free text (fallback page only)
+	rows  []nowRow // channel rows, drawn at fixed positions
 
-	pipPath  string // stream shown in the corner insert (first live/fallback on the page)
-	pipLabel string
+	// insert candidates, least fallback first then most viewers; the insert
+	// moves one step down this list each time the page comes around
+	pip []pipCand
 }
+
+type nowRow struct{ status, title string }
+
+type pipCand struct {
+	path, label   string
+	rank, viewers int
+}
+
+// nowRowsPerPage rows fit between the header and the footer at any font.
+const nowRowsPerPage = 6
 
 var nowTV = newNowTV()
 
@@ -75,7 +87,13 @@ func (e *NowTVEngine) weather() (float64, float64, string) {
 }
 
 // Text slots drawn on the card; each maps to one file in workDir.
-var nowTVSlots = []string{"clock", "date", "pagehdr", "weather", "list", "listdim", "piplabel", "footer"}
+var nowTVSlots = func() []string {
+	sl := []string{"clock", "date", "pagehdr", "weather", "list", "piplabel", "footer"}
+	for i := 0; i < nowRowsPerPage; i++ {
+		sl = append(sl, fmt.Sprintf("r%d", i), fmt.Sprintf("d%d", i))
+	}
+	return sl
+}()
 
 func (e *NowTVEngine) slotPath(name string) string {
 	return filepath.Join(e.workDir, name+".txt")
@@ -110,12 +128,19 @@ func fontFile(candidates ...string) string {
 }
 
 func (e *NowTVEngine) drawtext(slot, font string, size int, x, y, color string) string {
+	return e.drawtextSp(slot, font, size, x, y, color, 10)
+}
+
+func (e *NowTVEngine) drawtextSp(slot, font string, size int, x, y, color string, spacing int) string {
 	f := "font=Sans"
-	if font != "" {
+	switch {
+	case strings.HasPrefix(font, "font:"):
+		f = "font='" + strings.TrimPrefix(font, "font:") + "'"
+	case font != "":
 		f = "fontfile=" + font
 	}
-	return fmt.Sprintf("drawtext=%s:textfile=%s:reload=1:expansion=none:fontsize=%d:fontcolor=%s:x=%s:y=%s:line_spacing=10",
-		f, e.slotPath(slot), size, color, x, y)
+	return fmt.Sprintf("drawtext=%s:textfile=%s:reload=1:expansion=none:fontsize=%d:fontcolor=%s:x=%s:y=%s:line_spacing=%d",
+		f, e.slotPath(slot), size, color, x, y, spacing)
 }
 
 // onStart seeds the text files ffmpeg reads and starts the refresher.
@@ -176,10 +201,29 @@ func (e *NowTVEngine) onStart(ctx context.Context) {
 	}()
 }
 
+// monoFont picks the monospace font for the channel lists. drawtext cannot fall
+// back between fonts, so prefer Noto Sans Mono CJK (package noto-fonts-cjk),
+// which covers Japanese/Chinese/Korean streamer names; DejaVu Sans Mono otherwise.
+func monoFont() string {
+	if f := os.Getenv("NOWTV_MONO_FONT"); f != "" {
+		return f
+	}
+	if f := fontFile(
+		"/usr/share/fonts/noto-cjk/NotoSansMonoCJKjp-Regular.otf",
+		"/usr/share/fonts/opentype/noto/NotoSansMonoCJKjp-Regular.otf",
+	); f != "" {
+		return f
+	}
+	if fontFile("/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc") != "" {
+		return "font:Noto Sans Mono CJK JP" // face inside the .ttc, selected via fontconfig
+	}
+	return fontFile("/usr/share/fonts/TTF/DejaVuSansMono.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf")
+}
+
 func (e *NowTVEngine) buildCmd(ctx context.Context) *exec.Cmd {
 	sans := fontFile("/usr/share/fonts/TTF/DejaVuSans.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf")
 	bold := fontFile("/usr/share/fonts/TTF/DejaVuSans-Bold.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf")
-	mono := fontFile("/usr/share/fonts/TTF/DejaVuSansMono.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf")
+	mono := monoFont()
 
 	const pipX, pipY = 813, 440
 	card := strings.Join([]string{
@@ -196,10 +240,15 @@ func (e *NowTVEngine) buildCmd(ctx context.Context) *exec.Cmd {
 		e.drawtext("date", sans, 24, "w-tw-42", "108", "0xcbd5e1"),
 		e.drawtext("weather", sans, 23, "796", "202", "white"),
 		e.drawtext("list", mono, 22, "40", "185", "0xe2e8f0"),
-		e.drawtext("listdim", mono, 22, "40", "185", "0x94a3b8"),
 		e.drawtext("piplabel", sans, 18, strconv.Itoa(pipX), strconv.Itoa(pipY-26), "0xfbbf24"),
 		e.drawtext("footer", sans, 20, "40", "680", "0x64748b"),
 	}, ",")
+	// one bright status line and one dim title line per row, at fixed positions
+	for i := 0; i < nowRowsPerPage; i++ {
+		y := 182 + i*80
+		card += "," + e.drawtext(fmt.Sprintf("r%d", i), mono, 22, "40", strconv.Itoa(y), "0xe2e8f0")
+		card += "," + e.drawtext(fmt.Sprintf("d%d", i), mono, 19, "40", strconv.Itoa(y+32), "0x94a3b8")
+	}
 
 	args := []string{"-nostdin", "-v", "warning",
 		"-re", "-f", "lavfi", "-i", "color=c=0x0f172a:s=1280x720:r=25"}
@@ -273,12 +322,36 @@ func (e *NowTVEngine) writePage() {
 	pg := e.pages[e.pageIdx]
 	writeAtomic(e.slotPath("pagehdr"), fmt.Sprintf("P460 · %d/%d · %s", e.pageIdx+1, len(e.pages), pg.title))
 	writeAtomic(e.slotPath("list"), pg.body)
-	writeAtomic(e.slotPath("listdim"), pg.dim)
-	writeAtomic(e.slotPath("piplabel"), pg.pipLabel)
-	if e.pip != nil && e.runCtx != nil {
-		next := e.pages[(e.pageIdx+1)%len(e.pages)].pipPath
-		e.pip.Show(e.runCtx, pg.pipPath, next)
+	for i := 0; i < nowRowsPerPage; i++ {
+		var r nowRow
+		if i < len(pg.rows) {
+			r = pg.rows[i]
+		}
+		writeAtomic(e.slotPath(fmt.Sprintf("r%d", i)), r.status)
+		writeAtomic(e.slotPath(fmt.Sprintf("d%d", i)), r.title)
 	}
+	if e.pipCycle == nil {
+		e.pipCycle = map[string]int{}
+	}
+	cur := e.pipChoice(pg, true)
+	writeAtomic(e.slotPath("piplabel"), cur.label)
+	if e.pip != nil && e.runCtx != nil {
+		next := e.pipChoice(e.pages[(e.pageIdx+1)%len(e.pages)], false)
+		e.pip.Show(e.runCtx, cur.path, next.path)
+	}
+}
+
+// pipChoice picks the page's insert: the next candidate each time the page is
+// shown (advance=true counts this showing; false peeks at the next showing).
+func (e *NowTVEngine) pipChoice(pg nowPage, advance bool) pipCand {
+	if len(pg.pip) == 0 {
+		return pipCand{}
+	}
+	n := e.pipCycle[pg.title]
+	if advance {
+		e.pipCycle[pg.title] = n + 1
+	}
+	return pg.pip[n%len(pg.pip)]
 }
 
 // buildNowPages turns the Twitch EPG decisions (dist/twitch_now.json) into
@@ -297,7 +370,6 @@ func buildNowPages(ctx context.Context) []nowPage {
 		{"Games (Top Live)", "Jogos · quem joga agora"},
 		{"Streamers", "Streamers"},
 	}
-	const perPage = 7
 	var pages []nowPage
 	for _, sec := range sections {
 		entries := byGroup[sec.group]
@@ -307,28 +379,36 @@ func buildNowPages(ctx context.Context) []nowPage {
 		sort.SliceStable(entries, func(i, j int) bool {
 			return playlistChNo(entries[i].StreamPath) < playlistChNo(entries[j].StreamPath)
 		})
-		nPages := (len(entries) + perPage - 1) / perPage
-		for p := 0; p < nPages; p++ {
-			end := (p + 1) * perPage
+		nPages := (len(entries) + nowRowsPerPage - 1) / nowRowsPerPage
+		size := (len(entries) + nPages - 1) / nPages // spread evenly: 8 -> 4+4, not 6+2
+		for p := 0; p < nPages && p*size < len(entries); p++ {
+			end := (p + 1) * size
 			if end > len(entries) {
 				end = len(entries)
 			}
-			var bright, dim strings.Builder
-			var pipPath, pipLabel string
-			for _, en := range entries[p*perPage : end] {
-				if pipPath == "" && en.State != "offline" && en.State != "standby" && en.State != "unknown" && en.State != "" {
-					pipPath = en.StreamPath
-					pipLabel = fmt.Sprintf("▶ %d  %s", playlistChNo(en.StreamPath), stripEmoji(en.Who))
-				}
-				b, d := nowRow(en, sec.group == "Games (Top Live)")
-				bright.WriteString(b + "\n\n")
-				dim.WriteString("\n" + d + "\n")
-			}
-			title := sec.title
+			pg := nowPage{title: sec.title}
 			if nPages > 1 {
-				title = fmt.Sprintf("%s (%d/%d)", sec.title, p+1, nPages)
+				pg.title = fmt.Sprintf("%s (%d/%d)", sec.title, p+1, nPages)
 			}
-			pages = append(pages, nowPage{title: title, body: bright.String(), dim: dim.String(), pipPath: pipPath, pipLabel: pipLabel})
+			for _, en := range entries[p*size : end] {
+				st, ti := nowRowText(en, sec.group == "Games (Top Live)")
+				pg.rows = append(pg.rows, nowRow{status: st, title: ti})
+				if r, ok := fallbackRank[en.State]; ok {
+					pg.pip = append(pg.pip, pipCand{
+						path:    en.StreamPath,
+						label:   fmt.Sprintf("▶ %d  %s", playlistChNo(en.StreamPath), stripEmoji(en.Who)),
+						rank:    r,
+						viewers: en.Viewers,
+					})
+				}
+			}
+			sort.SliceStable(pg.pip, func(i, j int) bool {
+				if pg.pip[i].rank != pg.pip[j].rank {
+					return pg.pip[i].rank < pg.pip[j].rank
+				}
+				return pg.pip[i].viewers > pg.pip[j].viewers
+			})
+			pages = append(pages, pg)
 		}
 	}
 	if len(pages) == 0 {
@@ -342,12 +422,19 @@ func buildNowPages(ctx context.Context) []nowPage {
 func stripEmoji(s string) string {
 	var b strings.Builder
 	for _, r := range s {
-		if r >= 0x1F000 || (r >= 0x2600 && r <= 0x27BF) || (r >= 0xFE00 && r <= 0xFE0F) || r == 0x200D {
+		if r >= 0x1F000 || (r >= 0x2600 && r <= 0x27BF) || (r >= 0x2190 && r <= 0x21FF) || (r >= 0xFE00 && r <= 0xFE0F) || r == 0x200D {
 			continue
 		}
 		b.WriteRune(r)
 	}
 	return strings.Join(strings.Fields(b.String()), " ")
+}
+
+// fallbackRank orders "what is on" states from most to least direct, following
+// the Resolve chain; the insert prefers the lowest rank on a page.
+var fallbackRank = map[string]int{
+	"live": 0, "raid": 1, "host": 2, "team": 3, "relay": 4,
+	"circle": 5, "lastgame": 6, "lastresort": 7,
 }
 
 func shortViewers(n int) string {
@@ -357,8 +444,8 @@ func shortViewers(n int) string {
 	return fmt.Sprintf("%d", n)
 }
 
-// nowRow renders a channel as a status line (~54 columns) and a title line.
-func nowRow(en TwitchNowEntry, isGame bool) (string, string) {
+// nowRowText renders a channel as a status line (~54 columns) and a title line.
+func nowRowText(en TwitchNowEntry, isGame bool) (string, string) {
 	name := en.Name
 	if i := strings.Index(name, " ("); i > 0 {
 		name = name[:i]
@@ -384,9 +471,11 @@ func nowRow(en TwitchNowEntry, isGame bool) (string, string) {
 	case "standby":
 		mark, detail = "○", "em espera"
 	case "unknown", "":
-		mark, detail = "?", "estado desconhecido"
+		mark, detail = "◇", "estado desconhecido"
 	default: // a fallback is on air
-		mark, detail = "→", en.Who
+		// ▷ not →: every marker must have the same width (geometric shapes are
+		// double-width in the CJK mono font, arrows are not)
+		mark, detail = "▷", en.Who
 		if en.Game != "" {
 			detail += " · " + en.Game
 		}
@@ -395,20 +484,57 @@ func nowRow(en TwitchNowEntry, isGame bool) (string, string) {
 		}
 	}
 	name, detail, title = stripEmoji(name), stripEmoji(detail), stripEmoji(title)
-	line1 := fmt.Sprintf("%3d %s %-15s %s", playlistChNo(en.StreamPath), mark, truncRunes(name, 15), truncRunes(detail, 32))
+	line1 := fmt.Sprintf("%3d %s %s %s", playlistChNo(en.StreamPath), mark, padWidth(truncRunes(name, 15), 15), truncRunes(detail, 32))
 	line2 := ""
 	if strings.TrimSpace(title) != "" {
-		line2 = "      " + truncRunes(strings.TrimSpace(title), 48)
+		line2 = "      " + truncRunes(strings.TrimSpace(title), 54)
 	}
 	return line1, line2
 }
 
+// cellWidth is the number of monospace cells a rune takes: East Asian wide
+// characters (CJK, Hangul, full-width forms) take two.
+func cellWidth(r rune) int {
+	switch {
+	case r >= 0x1100 && r <= 0x115F, r >= 0x2E80 && r <= 0xA4CF, r >= 0xAC00 && r <= 0xD7A3,
+		r >= 0xF900 && r <= 0xFAFF, r >= 0xFE30 && r <= 0xFE4F, r >= 0xFF00 && r <= 0xFF60,
+		r >= 0xFFE0 && r <= 0xFFE6, r >= 0x20000 && r <= 0x3FFFD:
+		return 2
+	}
+	return 1
+}
+
+func textWidth(s string) int {
+	w := 0
+	for _, r := range s {
+		w += cellWidth(r)
+	}
+	return w
+}
+
+// truncRunes shortens s to at most n monospace cells, ending in "…" when cut.
 func truncRunes(s string, n int) string {
-	r := []rune(s)
-	if len(r) <= n {
+	if textWidth(s) <= n {
 		return s
 	}
-	return string(r[:n-1]) + "…"
+	w := 0
+	var b strings.Builder
+	for _, r := range s {
+		if w+cellWidth(r) > n-1 {
+			break
+		}
+		b.WriteRune(r)
+		w += cellWidth(r)
+	}
+	return b.String() + "…"
+}
+
+// padWidth right-pads s with spaces to n monospace cells.
+func padWidth(s string, n int) string {
+	if w := textWidth(s); w < n {
+		return s + strings.Repeat(" ", n-w)
+	}
+	return s
 }
 
 // nowListText lists live channels from the Now Playing data, busiest first.

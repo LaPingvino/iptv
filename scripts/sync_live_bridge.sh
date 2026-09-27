@@ -43,8 +43,8 @@ mkdir -p /var/lib/iptv-live-bridge/bahaitv
 
 echo "3. Compiling master playlists & EPG distribution files via Go builder..."
 /usr/bin/iptv-live-bridge -build-dist "${PROJECT_DIR}/data" "${PROJECT_DIR}/dist"
-rsync -a "${PROJECT_DIR}/dist/" /var/lib/iptv-live-bridge/dist/
-rsync -a "${PROJECT_DIR}/data/" /var/lib/iptv-live-bridge/data/
+rsync -a --delete "${PROJECT_DIR}/dist/" /var/lib/iptv-live-bridge/dist/
+rsync -a --delete "${PROJECT_DIR}/data/" /var/lib/iptv-live-bridge/data/
 
 echo "4. Syncing Esperanto TV media library (with hardlinks to save disk)..."
 if [ -d "${PKG_DIR}/esperantotv" ]; then
