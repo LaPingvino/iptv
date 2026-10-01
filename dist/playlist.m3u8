@@ -582,7 +582,7 @@ https://xite-rakuten.amagi.tv/playlist.m3u8
 https://d726x48n2pd5h.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-skxr1pazhltvp/XITE_Hits.m3u8
 
 #EXTINF:-1 tvg-id="4FunTV.pl@HD" tvg-name="4Fun TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/4Fun-TV.png" group-title="Música & Video" tvg-chno="244",4Fun.TV
-https://stream.4fun.tv:8888/hls/4f_high/index.m3u8
+https://stream.4fun.tv:8888/sd/4fun_sd_high.m3u8
 
 #EXTINF:-1 tvg-id="DeeJayTV.it@HD" tvg-name="DeeJay TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/DeeJay-TV.png" group-title="Música & Video" tvg-chno="245",DeeJay TV
 https://streamcdng5-4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S85984808/sMO0tz9Sr2Rk/playlist.m3u8

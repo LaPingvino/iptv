@@ -2,16 +2,6 @@
 <!DOCTYPE tv SYSTEM "xmltv.dtd">
 <tv source-info-url="https://kiefte.eu/iptv" generator-info-name="IPTV Linear 24/7 EPG Engine">
   <channel id="EsperantoTV.eo@SD"><display-name>Esperanto TV</display-name></channel>
-  <programme start="20260930213820 +0000" stop="20260930223720 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Insulo de la Rozoj</title>
-    <desc lang="eo">Plena filmo en Esperanto pri la historia mikronacio.</desc>
-    <category lang="eo">Filmo</category>
-  </programme>
-  <programme start="20260930223720 +0000" stop="20260930223730 +0000" channel="EsperantoTV.eo@SD">
-    <title lang="eo">Esperanto TV</title>
-    <desc lang="eo">Stacia vineto.</desc>
-    <category lang="eo">Vineto</category>
-  </programme>
   <programme start="20260930223730 +0000" stop="20260930230610 +0000" channel="EsperantoTV.eo@SD">
     <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 9: Trajnoj kaj biletoj</title>
     <desc lang="eo">Aventuroj ĉe la stacidomo.</desc>

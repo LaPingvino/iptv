@@ -1670,7 +1670,7 @@
     "tvg_id": "4FunTV.pl@HD",
     "tvg_name": "4Fun TV",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/4Fun-TV.png",
-    "url": "https://stream.4fun.tv:8888/hls/4f_high/index.m3u8",
+    "url": "https://stream.4fun.tv:8888/sd/4fun_sd_high.m3u8",
     "chno": 244
   },
   {
