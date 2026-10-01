@@ -55,6 +55,7 @@
 - name: Radio 538
   group: NL Rádio
   tvg_id: Radio538.nl
+  chno: 538 # on its own number, just ahead of the NL block
   tvg_name: Radio 538
   logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/538.png
   url: https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO538.mp3
