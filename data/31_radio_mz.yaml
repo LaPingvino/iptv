@@ -78,3 +78,14 @@
   tvg_id: MaputoCorridor.mz
   tvg_name: Maputo Corridor Radio
   url: http://node.stream-africa.com:8000/MaputoCorridor
+- name: Rádio Miramar (Maputo)
+  group: MZ Rádio
+  tvg_id: RadioMiramar.mz
+  tvg_name: Rádio Miramar
+  logo: https://digitalrmapps.fra1.cdn.digitaloceanspaces.com/images/radios/miramar_icon.png
+  url: http://nl.digitalrm.pt:8066/stream
+- name: Rádio Aleluia Moçambique
+  group: MZ Rádio
+  tvg_id: RadioAleluia.mz
+  tvg_name: Rádio Aleluia
+  url: http://us.digitalrm.pt:8214/stream

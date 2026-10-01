@@ -101,6 +101,12 @@ https://ukwesta.streaming.broadcast.radio/lmradio
 #EXTINF:-1 tvg-id="MaputoCorridor.mz" tvg-name="Maputo Corridor Radio" group-title="MZ Rádio" tvg-chno="535" radio="true",Maputo Corridor Radio
 http://node.stream-africa.com:8000/MaputoCorridor
 
+#EXTINF:-1 tvg-id="RadioMiramar.mz" tvg-name="Rádio Miramar" tvg-logo="https://digitalrmapps.fra1.cdn.digitaloceanspaces.com/images/radios/miramar_icon.png" group-title="MZ Rádio" tvg-chno="536" radio="true",Rádio Miramar (Maputo)
+http://nl.digitalrm.pt:8066/stream
+
+#EXTINF:-1 tvg-id="RadioAleluia.mz" tvg-name="Rádio Aleluia" group-title="MZ Rádio" tvg-chno="537" radio="true",Rádio Aleluia Moçambique
+http://us.digitalrm.pt:8214/stream
+
 #EXTINF:-1 tvg-id="CadenaSER.es" tvg-name="Cadena SER" group-title="ES Rádio" tvg-chno="540" radio="true",Cadena SER España
 https://playerservices.streamtheworld.com/api/livestream-redirect/CADENASER.mp3
 

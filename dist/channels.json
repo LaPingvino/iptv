@@ -123,6 +123,15 @@
     "chno": 22
   },
   {
+    "name": "TV Miramar (Moçambique)",
+    "group": "MZ Geral",
+    "tvg_id": "Miramar.mz",
+    "tvg_name": "TV Miramar",
+    "logo": "https://digitalrmapps.fra1.cdn.digitaloceanspaces.com/images/radios/miramar_icon.png",
+    "url": "https://cdn.mycloudstream.io/hls/live/broadcast/8xdonf9w/index.m3u8?sid=239",
+    "chno": 23
+  },
+  {
     "name": "RTP 3",
     "group": "Notícias",
     "tvg_id": "RTP3.pt",
@@ -2807,6 +2816,24 @@
     "logo": "",
     "url": "http://node.stream-africa.com:8000/MaputoCorridor",
     "chno": 535
+  },
+  {
+    "name": "Rádio Miramar (Maputo)",
+    "group": "MZ Rádio",
+    "tvg_id": "RadioMiramar.mz",
+    "tvg_name": "Rádio Miramar",
+    "logo": "https://digitalrmapps.fra1.cdn.digitaloceanspaces.com/images/radios/miramar_icon.png",
+    "url": "http://nl.digitalrm.pt:8066/stream",
+    "chno": 536
+  },
+  {
+    "name": "Rádio Aleluia Moçambique",
+    "group": "MZ Rádio",
+    "tvg_id": "RadioAleluia.mz",
+    "tvg_name": "Rádio Aleluia",
+    "logo": "",
+    "url": "http://us.digitalrm.pt:8214/stream",
+    "chno": 537
   },
   {
     "name": "Cadena SER España",
