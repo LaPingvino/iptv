@@ -114,22 +114,13 @@
     "chno": 21
   },
   {
-    "name": "MNTV Moçambique",
-    "group": "MZ Geral",
-    "tvg_id": "MNTV.mz",
-    "tvg_name": "MNTV",
-    "logo": "",
-    "url": "https://www.khuwemultimedia.com/hls/mntv/mntv.m3u8",
-    "chno": 22
-  },
-  {
     "name": "TV Miramar (Moçambique)",
     "group": "MZ Geral",
     "tvg_id": "Miramar.mz",
     "tvg_name": "TV Miramar",
     "logo": "https://digitalrmapps.fra1.cdn.digitaloceanspaces.com/images/radios/miramar_icon.png",
     "url": "https://cdn.mycloudstream.io/hls/live/broadcast/8xdonf9w/index.m3u8?sid=239",
-    "chno": 23
+    "chno": 22
   },
   {
     "name": "TVM Internacional",
@@ -138,7 +129,7 @@
     "tvg_name": "TVM Internacional",
     "logo": "",
     "url": "https://stream.tvm.co.mz/hls/tvmi/playlist.m3u8",
-    "chno": 24
+    "chno": 23
   },
   {
     "name": "TV Sucesso (Moçambique)",
@@ -147,6 +138,15 @@
     "tvg_name": "TV Sucesso",
     "logo": "",
     "url": "https://kiefte.eu/iptv/kick/tvsucesso",
+    "chno": 24
+  },
+  {
+    "name": "MNTV Moçambique",
+    "group": "MZ Geral",
+    "tvg_id": "MNTV.mz",
+    "tvg_name": "MNTV",
+    "logo": "",
+    "url": "https://www.khuwemultimedia.com/hls/mntv/mntv.m3u8",
     "chno": 25
   },
   {
