@@ -21,7 +21,7 @@
   url: https://cdn.mycloudstream.io/hls/live/broadcast/8xdonf9w/index.m3u8?sid=239
 - name: TVM Internacional
   group: MZ Geral
-  tvg_id: TVMInternacional.mz
+  tvg_id: TVMInt.mz
   tvg_name: TVM Internacional
   url: https://stream.tvm.co.mz/hls/tvmi/playlist.m3u8
 - name: TV Sucesso (Moçambique)
