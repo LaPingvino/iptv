@@ -1,6 +1,7 @@
 #EXTM3U url-tvg="https://kiefte.eu/iptv/epg.xml.gz,https://kiefte.eu/iptv/twitch/epg.xml,https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/epg.xml.gz,https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-m3upt.xml.xz,https://raw.githubusercontent.com/Free-TV/IPTV/master/epg.xml.gz" x-tvg-url="https://kiefte.eu/iptv/epg.xml.gz,https://kiefte.eu/iptv/twitch/epg.xml,https://raw.githubusercontent.com/LaPingvino/iptv/main/dist/epg.xml.gz,https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-m3upt.xml.xz,https://raw.githubusercontent.com/Free-TV/IPTV/master/epg.xml.gz"
 
 
+
 #EXTINF:-1 tvg-id="RTP1.pt" tvg-name="RTP 1" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP1.png" group-title="PT Geral" tvg-chno="1",RTP 1
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
 #EXTVLCOPT:http-origin=https://www.rtp.pt
@@ -52,11 +53,11 @@ https://streaming-live.rtp.pt/liverepeater/rtpafrica.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TVM.mz" tvg-name="TVM" group-title="MZ Geral" tvg-chno="20",TVM (Televisão de Moçambique)
 https://stream.tvm.co.mz/hls/tvm/playlist.m3u8
 
-#EXTINF:-1 tvg-id="MNTV.mz" tvg-name="MNTV" group-title="MZ Geral" tvg-chno="21",MNTV Moçambique
-https://www.khuwemultimedia.com/hls/mntv/mntv.m3u8
-
-#EXTINF:-1 tvg-id="TVVitoria.mz" tvg-name="TV Vitória" group-title="MZ Geral" tvg-chno="22",TV Vitória Moçambique
+#EXTINF:-1 tvg-id="TVVitoria.mz" tvg-name="TV Vitória" group-title="MZ Geral" tvg-chno="21",TV Vitória Moçambique
 https://stmv1.voxplayer.com.br/inacio/inacio/playlist.m3u8
+
+#EXTINF:-1 tvg-id="MNTV.mz" tvg-name="MNTV" group-title="MZ Geral" tvg-chno="22",MNTV Moçambique
+https://www.khuwemultimedia.com/hls/mntv/mntv.m3u8
 
 #EXTINF:-1 tvg-id="RTP3.pt" tvg-name="RTP 3" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP3.png" group-title="Notícias" tvg-chno="30",RTP 3
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
