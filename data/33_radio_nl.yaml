@@ -229,3 +229,9 @@
   tvg_id: Studio040.nl
   tvg_name: Studio 040
   url: https://stream.studio040.nl/studio040
+- name: Hype Radio (Urban, Latin & Afro • NL/Curaçao)
+  group: NL Rádio
+  tvg_id: HypeRadio.nl
+  tvg_name: Hype Radio
+  logo: https://www.hyperadio.nl/wp-content/uploads/2025/02/cropped-New_Transparent-020-scaled-1-192x192.png
+  url: https://artemis.streamerr.co/listen/hype_radio/radio.mp3

@@ -199,7 +199,8 @@
   tvg_name: Radio Kiss Kiss TV
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Radio_Kiss_Kiss_logo.svg/512px-Radio_Kiss_Kiss_logo.svg.png
   url: https://58f12ffd2447a.streamlock.net/KKMulti/livestream/playlist.m3u8
-# Disabled 2026-10-02: stream 404 and hyperadio.live unreachable
+# Disabled 2026-10-02: stream 404. hyperadio.nl (new site) still uses this same URL
+# for its TV player, so re-enable once it answers again. Radio is in 33_radio_nl.yaml.
 # - name: Hype Visual Radio (1080p Studio Cam)
 #   group: Música & Video
 #   tvg_id: HypeVisualRadio.tv@HD

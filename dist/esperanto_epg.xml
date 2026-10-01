@@ -2657,4 +2657,14 @@
     <desc lang="eo">La granda finalo de Pasporto al la Tuta Mondo.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
+  <programme start="20261004231230 +0000" stop="20261004231240 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261004231240 +0000" stop="20261004233620 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 16: Ni nur parolas Esperanton</title>
+    <desc lang="eo">La grandioza finalo de Esperanto Senlime Sezono 1!</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
 </tv>
