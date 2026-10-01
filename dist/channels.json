@@ -444,7 +444,7 @@
     "tvg_name": "BVN",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/BVN_logo_2018.svg/512px-BVN_logo_2018.svg.png",
     "url": "https://kiefte.eu/iptv/bvn.ts",
-    "chno": 80
+    "chno": 60
   },
   {
     "name": "XON (Ede TV)",
@@ -453,7 +453,7 @@
     "tvg_name": "XON Ede",
     "logo": "",
     "url": "https://live.omroepnet.nl/hls/stream.m3u8",
-    "chno": 81
+    "chno": 61
   },
   {
     "name": "Omroep Gelderland",
@@ -462,7 +462,7 @@
     "tvg_name": "Omroep Gelderland",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepgelderland.png",
     "url": "https://d2od87akyl46nm.cloudfront.net/live/omroepgelderland/tvgelderland-hls/index.m3u8",
-    "chno": 82
+    "chno": 62
   },
   {
     "name": "Omroep Brabant",
@@ -471,7 +471,7 @@
     "tvg_name": "Omroep Brabant",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepbrabant.png",
     "url": "https://d3slqp9xhts6qb.cloudfront.net/live/omroepbrabant/tv/index.m3u8",
-    "chno": 83
+    "chno": 63
   },
   {
     "name": "Omroep West",
@@ -480,7 +480,7 @@
     "tvg_name": "Omroep West",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepwest.png",
     "url": "https://d1axml5ozykh3g.cloudfront.net/live/omroepwest/tv/index.m3u8",
-    "chno": 84
+    "chno": 64
   },
   {
     "name": "Omroep Zeeland",
@@ -489,7 +489,7 @@
     "tvg_name": "Omroep Zeeland",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepzeeland.png",
     "url": "https://d3isaxd2t6q8zm.cloudfront.net/live/omroepzeeland/tv/index.m3u8",
-    "chno": 85
+    "chno": 65
   },
   {
     "name": "Omroep Flevoland",
@@ -498,7 +498,7 @@
     "tvg_name": "Omroep Flevoland",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omroepflevoland.png",
     "url": "https://d5ms27yy6exnf.cloudfront.net/live/omroepflevoland/tv/index.m3u8",
-    "chno": 86
+    "chno": 66
   },
   {
     "name": "RTV Oost",
@@ -507,7 +507,7 @@
     "tvg_name": "RTV Oost",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvoost.png",
     "url": "https://d34cg2bnc08ruf.cloudfront.net/live/rtvoost/tv/index.m3u8",
-    "chno": 87
+    "chno": 67
   },
   {
     "name": "RTV Rijnmond (Rotterdam)",
@@ -516,7 +516,7 @@
     "tvg_name": "RTV Rijnmond",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rijnmond.png",
     "url": "https://dcur8bjarl5c2.cloudfront.net/live/rijnmond/tv/index.m3u8",
-    "chno": 88
+    "chno": 68
   },
   {
     "name": "RTV Utrecht",
@@ -525,7 +525,7 @@
     "tvg_name": "RTV Utrecht",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvutrecht.png",
     "url": "https://d18rwjdhpr8dcw.cloudfront.net/live/rtvutrecht/rtvutrecht/index.m3u8",
-    "chno": 89
+    "chno": 69
   },
   {
     "name": "RTV Drenthe",
@@ -534,7 +534,7 @@
     "tvg_name": "RTV Drenthe",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvdrenthe.png",
     "url": "https://cdn.rtvdrenthe.nl/live/rtvdrenthe/tv/index.m3u8",
-    "chno": 90
+    "chno": 70
   },
   {
     "name": "RTV Noord",
@@ -543,7 +543,7 @@
     "tvg_name": "RTV Noord",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/rtvnoord.png",
     "url": "https://media.rtvnoord.nl/live/rtvnoord/tv/index.m3u8",
-    "chno": 91
+    "chno": 71
   },
   {
     "name": "L1 TV (Limburg)",
@@ -552,7 +552,7 @@
     "tvg_name": "L1",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/l1.png",
     "url": "https://d34pj260kw1xmk.cloudfront.net/live/l1/tv/index.m3u8",
-    "chno": 92
+    "chno": 72
   },
   {
     "name": "Omrop Fryslân TV (Frysk)",
@@ -561,7 +561,7 @@
     "tvg_name": "Omrop Fryslân",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/omropfryslan.png",
     "url": "https://s-d15f8b0b.b.cdn.bluebillywig.com/live/omropfryslan/f8f68bd5/index.m3u8",
-    "chno": 93
+    "chno": 73
   },
   {
     "name": "AT5 (Amsterdam)",
@@ -570,7 +570,7 @@
     "tvg_name": "AT5",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/at5.png",
     "url": "https://takeoff.jetstre.am/?account=atvijf\u0026file=live\u0026output=playlist.m3u8\u0026protocol=https\u0026service=wowza\u0026type=live",
-    "chno": 94
+    "chno": 74
   },
   {
     "name": "NH Nieuws (Noord-Holland)",
@@ -579,7 +579,7 @@
     "tvg_name": "NH Nieuws",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nhnieuws.png",
     "url": "https://takeoff.jetstre.am/?account=nhnieuws\u0026file=live\u0026output=playlist.m3u8\u0026protocol=https\u0026service=wowza\u0026type=live",
-    "chno": 95
+    "chno": 75
   },
   {
     "name": "Streekstad Centraal (Noord-Holland)",
@@ -588,7 +588,7 @@
     "tvg_name": "Streekstad Centraal",
     "logo": "https://i.imgur.com/9gM6rPb.png",
     "url": "https://videostreams.streekstadcentraal.nl/hls/streekstad_alkmaar/streekstad_alkmaar.m3u8",
-    "chno": 96
+    "chno": 76
   },
   {
     "name": "Sleutelstad TV (Leiden)",
@@ -597,7 +597,7 @@
     "tvg_name": "Sleutelstad TV",
     "logo": "https://i.imgur.com/ljVGMWV.png",
     "url": "https://video-eu1.streamerr.co/hls/s7fdeb27a49/live.m3u8",
-    "chno": 97
+    "chno": 77
   },
   {
     "name": "RTV Westerwolde (Groningen)",
@@ -606,7 +606,7 @@
     "tvg_name": "RTV Westerwolde",
     "logo": "https://i.imgur.com/002YXP6.png",
     "url": "https://media.rtvwesterwolde.nl/hls/live/index.m3u8",
-    "chno": 98
+    "chno": 78
   },
   {
     "name": "A1 TV (Achterhoek)",
@@ -615,7 +615,7 @@
     "tvg_name": "A1 TV",
     "logo": "https://i.imgur.com/JZ1oTM2.png",
     "url": "https://stream.a1mediagroep.nl/hls/a1tv.m3u8",
-    "chno": 99
+    "chno": 79
   },
   {
     "name": "Matele (Wallonie)",
@@ -624,7 +624,7 @@
     "tvg_name": "Matele",
     "logo": "https://i.imgur.com/rw72POr.png",
     "url": "https://live.matele.be/hls/live.m3u8",
-    "chno": 100
+    "chno": 80
   },
   {
     "name": "RTL Télé Lëtzebuerg (1080p)",
@@ -633,7 +633,7 @@
     "tvg_name": "RTL Tele Letzebuerg",
     "logo": "",
     "url": "https://stream.rtl.lu/live/hls/channel1/playlist.m3u8",
-    "chno": 101
+    "chno": 81
   },
   {
     "name": "RTL Zwee (Lëtzebuerg)",
@@ -642,7 +642,7 @@
     "tvg_name": "RTL Zwee",
     "logo": "",
     "url": "https://stream.rtl.lu/live/hls/channel2/playlist.m3u8",
-    "chno": 102
+    "chno": 82
   },
   {
     "name": "WDR Fernsehen (HD • Köln / NRW)",
@@ -651,7 +651,7 @@
     "tvg_name": "WDR Fernsehen",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/WDR_Fernsehen_Logo_2018.svg/960px-WDR_Fernsehen_Logo_2018.svg.png",
     "url": "https://kiefte.eu/iptv/wdr.m3u8",
-    "chno": 103
+    "chno": 83
   },
   {
     "name": "Sheffield Live TV",
@@ -660,7 +660,7 @@
     "tvg_name": "Sheffield Live TV",
     "logo": "https://i.imgur.com/p0QzCFs.png",
     "url": "http://tv.sheffieldlive.org/hls/main.m3u8",
-    "chno": 104
+    "chno": 84
   },
   {
     "name": "Fama TV (Famalicão)",
@@ -669,7 +669,73 @@
     "tvg_name": "Fama TV",
     "logo": "https://i.ibb.co/tMmRp18/Fama-TV-cor-whitebg-hotizontal.jpg",
     "url": "https://tv2.fastcast4u.com:3310/live/famatvlive.m3u8",
-    "chno": 105
+    "chno": 85
+  },
+  {
+    "name": "FIFA+",
+    "group": "Desporto",
+    "tvg_id": "FIFAPlus.ch",
+    "tvg_name": "FIFA+",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/FIFA-Plus.png",
+    "url": "https://f7ccf7fc.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLXB0X0ZJRkFQbHVzUG9ydHVndWVzZV9ITFM/playlist.m3u8",
+    "chno": 90
+  },
+  {
+    "name": "Red Bull TV",
+    "group": "Desporto",
+    "tvg_id": "RedBullTV.at@HD",
+    "tvg_name": "Red Bull TV",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Red-Bull-TV.png",
+    "url": "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8",
+    "chno": 91
+  },
+  {
+    "name": "SuperTennis",
+    "group": "Desporto",
+    "tvg_id": "SuperTennis.it@HD",
+    "tvg_name": "SuperTennis",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SuperTennis.png",
+    "url": "https://live-embed.supertennix.hiway.media/restreamer/supertennix_client/gpu-a-c0-16/restreamer/outgest/aa3673f1-e178-44a9-a947-ef41db73211a/manifest.m3u8",
+    "chno": 92
+  },
+  {
+    "name": "Motorvision",
+    "group": "Desporto",
+    "tvg_id": "Motorvision.de@HD",
+    "tvg_name": "Motorvision",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Motorvision.png",
+    "url": "https://mvg-mv-xumo.otteravision.com/mvg/mv/mv.m3u8",
+    "chno": 93
+  },
+  {
+    "name": "Nautical Channel",
+    "group": "Desporto",
+    "tvg_id": "NauticalChannel.fr@HD",
+    "tvg_name": "Nautical Channel",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Nautical-Channel.png",
+    "url": "https://streams2.sofast.tv/vglive-sk-231198/index.m3u8",
+    "chno": 94
+  },
+  {
+    "name": "Porto Canal",
+    "group": "Desporto",
+    "tvg_id": "PortoCanal.pt@HD",
+    "tvg_name": "Porto Canal",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Porto-Canal.png",
+    "url": "https://pull-live-156-1.global.ssl.fastly.net/pc5865dc25400thmb-ea6bf03b14fa318f7133/pc1-jhrgyuoqe5865db-68tkgb14fa318f7133f03.smil/playlist.m3u8",
+    "chno": 95,
+    "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "http_origin": "https://portocanal.sapo.pt",
+    "http_referrer": "https://portocanal.sapo.pt/"
+  },
+  {
+    "name": "Real Madrid TV (English)",
+    "group": "Desporto",
+    "tvg_id": "RealMadridTVEnglish.es",
+    "tvg_name": "Real Madrid TV",
+    "logo": "https://i.imgur.com/5pMo7dL.png",
+    "url": "http://88.212.15.19/live/real_madrid_tv/index.m3u8",
+    "chno": 96
   },
   {
     "name": "RTVE Canal 24 Horas",
@@ -678,7 +744,7 @@
     "tvg_name": "24 Horas",
     "logo": "",
     "url": "https://rtvelivestream.rtve.es/rtvesec/24h/24h_main_dvr_720.m3u8",
-    "chno": 110
+    "chno": 100
   },
   {
     "name": "RTVE Teledeporte (TDP)",
@@ -687,7 +753,7 @@
     "tvg_name": "Teledeporte",
     "logo": "",
     "url": "https://rtve01p.origin.c21livecloud.com/live-origin/tdp-hls/bitrate_1.m3u8",
-    "chno": 111
+    "chno": 101
   },
   {
     "name": "Canal Sur Andalucía",
@@ -696,7 +762,7 @@
     "tvg_name": "Canal Sur",
     "logo": "",
     "url": "https://dfk2a268yviz9.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ddiii1m6jt6of/CanalSurAndaluciaES.m3u8",
-    "chno": 112
+    "chno": 102
   },
   {
     "name": "Real Madrid TV",
@@ -705,7 +771,7 @@
     "tvg_name": "Real Madrid TV",
     "logo": "",
     "url": "https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8",
-    "chno": 113
+    "chno": 103
   },
   {
     "name": "Canal Extremadura (1080p)",
@@ -714,7 +780,7 @@
     "tvg_name": "Canal Extremadura",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/canalextremadura.png",
     "url": "https://d2ymuyhevki1a1.cloudfront.net/wct-ddd2992e-86fc-4611-a491-7f392259e9ba/continuous/9be76611-d2cd-474d-bf19-ef702ba31b02/index.m3u8",
-    "chno": 114
+    "chno": 104
   },
   {
     "name": "ETB 1 (Euskadi / Euskara)",
@@ -723,7 +789,7 @@
     "tvg_name": "ETB 1",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/etb1.png",
     "url": "https://cdn1.etbon.eus/etb1on/index.m3u8",
-    "chno": 115
+    "chno": 105
   },
   {
     "name": "ETB 2 (Euskadi / Castellano)",
@@ -732,7 +798,7 @@
     "tvg_name": "ETB 2",
     "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/etb2.png",
     "url": "https://cdn1.etbon.eus/etb2on/index.m3u8",
-    "chno": 116
+    "chno": 106
   },
   {
     "name": "TVE Internacional (Europa HD)",
@@ -741,7 +807,7 @@
     "tvg_name": "TVE Internacional",
     "logo": "https://i.ibb.co/RpKLCMvp/tve.png",
     "url": "https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/tvei_eu_main_1080.m3u8",
-    "chno": 117
+    "chno": 107
   },
   {
     "name": "TVE Star HD",
@@ -750,7 +816,7 @@
     "tvg_name": "TVE Star HD",
     "logo": "https://i.ibb.co/j98NY8Mr/starcolor.png",
     "url": "https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/star_main_1080.m3u8",
-    "chno": 118
+    "chno": 108
   },
   {
     "name": "Galicia TV Europa (TVG)",
@@ -759,7 +825,7 @@
     "tvg_name": "Galicia TV Europa",
     "logo": "",
     "url": "https://crtvg-europa.flumotion.cloud/playlist.m3u8",
-    "chno": 120
+    "chno": 110
   },
   {
     "name": "TeleVigo (Galicia)",
@@ -768,7 +834,7 @@
     "tvg_name": "TeleVigo",
     "logo": "",
     "url": "https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=12687",
-    "chno": 121
+    "chno": 111
   },
   {
     "name": "TVG Mira Radio Galega (Visual)",
@@ -777,7 +843,7 @@
     "tvg_name": "TVG Mira Radio Galega",
     "logo": "",
     "url": "https://crtvg-mirarg-schlive.flumotion.cloud/crtvglive/smil:channel1PRG.smil/playlist.m3u8",
-    "chno": 122
+    "chno": 112
   },
   {
     "name": "TVG2 (Galicia)",
@@ -786,7 +852,7 @@
     "tvg_name": "TVG2",
     "logo": "https://i.imgur.com/yFy6gxg.png",
     "url": "https://crtvg-tvg2.flumotion.cloud/playlist.m3u8",
-    "chno": 123
+    "chno": 113
   },
   {
     "name": "À Punt (Comunitat Valenciana)",
@@ -795,7 +861,7 @@
     "tvg_name": "À Punt",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Logotip_d%27%C3%80_Punt_%282017-%29.svg/960px-Logotip_d%27%C3%80_Punt_%282017-%29.svg.png",
     "url": "https://fastly.live.brightcove.com/1846756479408303045/eu-central-1/6057955885001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiZWFxNWh4LmVncmVzcy53YzQ3bTEiLCJhY2NvdW50X2lkIjoiNjA1Nzk1NTg4NTAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI2MDU3OTU1ODg1MDAxIl0sImp0aSI6IjE4NDY3NTY0Nzk0MDgzMDMwNDUifQ.o6wb_VA-TVxl3ERgr7FKLlaTjY7smErmsf73QAydySE/playlist-hls-dvr.m3u8",
-    "chno": 130
+    "chno": 120
   },
   {
     "name": "Telemadrid",
@@ -804,7 +870,7 @@
     "tvg_name": "Telemadrid",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/TeleMadrid.svg/960px-TeleMadrid.svg.png",
     "url": "https://live.telemadrid.cross-media.es/6389770581112/eu-central-1/6416060453001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiajI5YjgyLmVncmVzcy5haGc3NmwiLCJhY2NvdW50X2lkIjoiNjQxNjA2MDQ1MzAwMSIsImVobiI6ImxpdmUudGVsZW1hZHJpZC5jcm9zcy1tZWRpYS5lcyIsImlzcyI6ImJsaXZlLXBsYXliYWNrLXNvdXJjZS1hcGkiLCJzdWIiOiJwYXRobWFwdG9rZW4iLCJhdWQiOlsiNjQxNjA2MDQ1MzAwMSJdLCJqdGkiOiI2Mzg5NzcwNTgxMTEyIn0.kqriAMUkHT6m0V6wkCHJum_EUyL4PAi1zJMKlfmYHEU/playlist-hls.m3u8",
-    "chno": 131
+    "chno": 121
   },
   {
     "name": "Televisión Canaria",
@@ -813,7 +879,7 @@
     "tvg_name": "Televisión Canaria",
     "logo": "https://rtvc.es/archivos/2020/03/logo-mobilretina.png",
     "url": "https://rtvclive.flumotion.cloud/rtvc1live/smil:channel1PRG.smil/playlist.m3u8",
-    "chno": 132
+    "chno": 122
   },
   {
     "name": "3CatInfo (Catalunya)",
@@ -822,7 +888,7 @@
     "tvg_name": "3CatInfo",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/3CatInfo_logo.svg/960px-3CatInfo_logo.svg.png",
     "url": "https://directes-tv-int.3catdirectes.cat/live-origin/canal324-hls/master.m3u8",
-    "chno": 133
+    "chno": 123
   },
   {
     "name": "Bon Dia TV (Catalunya)",
@@ -831,7 +897,7 @@
     "tvg_name": "Bon Dia TV",
     "logo": "https://i.imgur.com/VgRCu2U.png",
     "url": "https://directes-tv-int.3catdirectes.cat/live-content/bondia-hls/master.m3u8",
-    "chno": 134
+    "chno": 124
   },
   {
     "name": "28 Kanala (Euskadi)",
@@ -840,7 +906,7 @@
     "tvg_name": "28 Kanala",
     "logo": "https://i.imgur.com/DyvK28q.png",
     "url": "https://streaming.28kanala.eus/hls/z.m3u8",
-    "chno": 135
+    "chno": 125
   },
   {
     "name": "Durangaldeko Telebista (Euskadi)",
@@ -849,7 +915,7 @@
     "tvg_name": "Durangaldeko Telebista",
     "logo": "https://i.imgur.com/qdlW6cg.png",
     "url": "https://nlb2-live.emitstream.com/hls/5f9asjsehd7gmyxsdpzu/master.m3u8",
-    "chno": 136
+    "chno": 126
   },
   {
     "name": "Goiena (Euskadi)",
@@ -858,7 +924,7 @@
     "tvg_name": "Goiena",
     "logo": "https://i.imgur.com/eaLIJzK.png",
     "url": "https://zuzenean.goienamedia.eus/goiena-telebista.m3u8",
-    "chno": 137
+    "chno": 127
   },
   {
     "name": "Hamaika Telebista (Euskadi)",
@@ -867,7 +933,7 @@
     "tvg_name": "Hamaika Telebista",
     "logo": "https://i.imgur.com/HR3G3Ie.png",
     "url": "https://cdn3.wowza.com/1/RERMR282dnU5eE5Z/OHY0dVFs/hls/live/playlist.m3u8",
-    "chno": 138
+    "chno": 128
   },
   {
     "name": "Urola Telebista (Euskadi)",
@@ -876,7 +942,7 @@
     "tvg_name": "Urola Telebista",
     "logo": "https://i.imgur.com/V23bltn.png",
     "url": "https://5940924978228.streamlock.net/j_Directo2/mp4:j_Directo2/playlist.m3u8",
-    "chno": 139
+    "chno": 129
   },
   {
     "name": "Elche 7 TV",
@@ -885,7 +951,7 @@
     "tvg_name": "Elche 7 TV",
     "logo": "https://i.imgur.com/tjI0dLx.png",
     "url": "https://elche7tv.gestec-video.com/hls/canal2.m3u8",
-    "chno": 140
+    "chno": 130
   },
   {
     "name": "Tele Elx",
@@ -894,7 +960,7 @@
     "tvg_name": "Tele Elx",
     "logo": "https://i.imgur.com/w5NTWpl.png",
     "url": "https://tvdirecto.teleelx.es/stream/teleelx.m3u8",
-    "chno": 141
+    "chno": 131
   },
   {
     "name": "Canal 7 TeleValencia",
@@ -903,7 +969,7 @@
     "tvg_name": "Canal 7 TeleValencia",
     "logo": "https://i.imgur.com/ILfXDRs.png",
     "url": "https://play.cdn.enetres.net/9E9557EFCEBB43A89CEC8FBD3C500247022/028/playlist.m3u8",
-    "chno": 142
+    "chno": 132
   },
   {
     "name": "Alacantí TV",
@@ -912,7 +978,7 @@
     "tvg_name": "Alacantí TV",
     "logo": "https://i.imgur.com/pcWU6e1.png",
     "url": "https://streaming01.gestec-video.com/hls/artequatreAlacanti.m3u8",
-    "chno": 143
+    "chno": 133
   },
   {
     "name": "Une Vinalopó",
@@ -921,7 +987,7 @@
     "tvg_name": "Une Vinalopó",
     "logo": "https://i.imgur.com/WpGR7RQ.png",
     "url": "https://streamingtvi.gestec-video.com/hls/unesd.m3u8",
-    "chno": 144
+    "chno": 134
   },
   {
     "name": "Canal 3 TV Biar",
@@ -930,7 +996,7 @@
     "tvg_name": "Canal 3 TV Biar",
     "logo": "https://i.imgur.com/cnKCZkK.png",
     "url": "https://avantstreaming.es/hls/canal3.m3u8",
-    "chno": 145
+    "chno": 135
   },
   {
     "name": "Tele Safor",
@@ -939,7 +1005,7 @@
     "tvg_name": "Tele Safor",
     "logo": "https://i.imgur.com/EowJfr0.png",
     "url": "https://video.telesafor.com/hls/video.m3u8",
-    "chno": 146
+    "chno": 136
   },
   {
     "name": "La 8 Mediterráneo",
@@ -948,7 +1014,7 @@
     "tvg_name": "La 8 Mediterráneo",
     "logo": "https://tbsfibra.es/wp-content/uploads/2022/07/17-8-MEDITERRANEO.png",
     "url": "https://newscript.gestec-video.com/hls/8TVEVENTOS.m3u8",
-    "chno": 147
+    "chno": 137
   },
   {
     "name": "Mijas 3.40 TV",
@@ -957,7 +1023,7 @@
     "tvg_name": "Mijas 3.40 TV",
     "logo": "https://i.imgur.com/RH1zLLs.png",
     "url": "https://streaming004.gestec-video.com/hls/MIJAS.m3u8",
-    "chno": 148
+    "chno": 138
   },
   {
     "name": "RTV Marbella",
@@ -966,7 +1032,7 @@
     "tvg_name": "RTV Marbella",
     "logo": "https://i.imgur.com/o9Ro8TR.png",
     "url": "https://streaming.rtvmarbella.tv/hls/streamingweb.m3u8",
-    "chno": 149
+    "chno": 139
   },
   {
     "name": "M95 Televisión Marbella",
@@ -975,7 +1041,7 @@
     "tvg_name": "M95 Televisión Marbella",
     "logo": "https://i.imgur.com/RzAkP1V.png",
     "url": "https://limited2.todostreaming.es/live/m95-livestream.m3u8",
-    "chno": 150
+    "chno": 140
   },
   {
     "name": "Onda Cádiz",
@@ -984,7 +1050,7 @@
     "tvg_name": "Onda Cádiz",
     "logo": "https://i.imgur.com/sOBMnby.png",
     "url": "https://ondacadiztv.es:30443/octv/24h/playlist.m3u8",
-    "chno": 151
+    "chno": 141
   },
   {
     "name": "Onda Algeciras",
@@ -993,7 +1059,7 @@
     "tvg_name": "Onda Algeciras",
     "logo": "https://i.imgur.com/kUhFkVF.png",
     "url": "https://cloudtv.provideo.es/live/algecirastv-livestream.m3u8",
-    "chno": 152
+    "chno": 142
   },
   {
     "name": "Canal San Roque",
@@ -1002,7 +1068,7 @@
     "tvg_name": "Canal San Roque",
     "logo": "https://i.imgur.com/SN9kFKh.png",
     "url": "https://cdnlivevlc.codev8.net/aytosanroquelive/smil:channel1.smil/playlist.m3u8",
-    "chno": 153
+    "chno": 143
   },
   {
     "name": "Costa Noroeste TV",
@@ -1011,7 +1077,7 @@
     "tvg_name": "Costa Noroeste TV",
     "logo": "https://i.imgur.com/iM9AN6Z.png",
     "url": "https://limited31.todostreaming.es/live/noroestetv-livestream.m3u8",
-    "chno": 154
+    "chno": 144
   },
   {
     "name": "Diez TV Úbeda",
@@ -1020,7 +1086,7 @@
     "tvg_name": "Diez TV Úbeda",
     "logo": "https://i.imgur.com/o2a7s4W.png",
     "url": "https://streaming.cloud.innovasur.es/mmj/index.m3u8",
-    "chno": 155
+    "chno": 145
   },
   {
     "name": "Interalmería TV",
@@ -1029,7 +1095,7 @@
     "tvg_name": "Interalmería TV",
     "logo": "https://i.imgur.com/ulSkAjZ.png",
     "url": "https://interalmeria.tv/directo/live.m3u8",
-    "chno": 156
+    "chno": 146
   },
   {
     "name": "Estepona Televisión",
@@ -1038,7 +1104,7 @@
     "tvg_name": "Estepona Televisión",
     "logo": "https://i.imgur.com/rMAB720.png",
     "url": "https://cloudvideo.servers10.com:8081/8022/index.m3u8",
-    "chno": 157
+    "chno": 147
   },
   {
     "name": "Empordà TV",
@@ -1047,7 +1113,7 @@
     "tvg_name": "Empordà TV",
     "logo": "https://i.imgur.com/jc0lUbX.png",
     "url": "https://video3.lhdserver.es/empordatv2/live.m3u8",
-    "chno": 158
+    "chno": 148
   },
   {
     "name": "Canal 10 Empordà",
@@ -1056,7 +1122,7 @@
     "tvg_name": "Canal 10 Empordà",
     "logo": "https://i.imgur.com/ojQ6wzX.png",
     "url": "https://ventdelnord.tv:8080/escala/directe.m3u8",
-    "chno": 159
+    "chno": 149
   },
   {
     "name": "TV Reus",
@@ -1065,7 +1131,7 @@
     "tvg_name": "TV Reus",
     "logo": "https://i.imgur.com/Ee0C8UH.jpg",
     "url": "https://eu1.servers10.com:8081/8166/index.m3u8",
-    "chno": 160
+    "chno": 150
   },
   {
     "name": "Teleganes",
@@ -1074,7 +1140,7 @@
     "tvg_name": "Teleganes",
     "logo": "https://i.imgur.com/BXyplMX.png",
     "url": "https://nlb2-live.emitstream.com/hls/5z6oj7ziwxzfnj78vg2m/master.m3u8",
-    "chno": 161
+    "chno": 151
   },
   {
     "name": "Canal 33 Madrid",
@@ -1083,7 +1149,7 @@
     "tvg_name": "Canal 33 Madrid",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Logo_Canal_33_Madrid_2025.jpg/960px-Logo_Canal_33_Madrid_2025.jpg",
     "url": "https://media2.streambrothers.com:1936/8140/8140/playlist.m3u8",
-    "chno": 162
+    "chno": 152
   },
   {
     "name": "Distrito TV (Madrid)",
@@ -1092,7 +1158,7 @@
     "tvg_name": "Distrito TV",
     "logo": "https://i.imgur.com/AqGIoIt.png",
     "url": "https://nlb2-live.emitstream.com/hls/3mn7wpcv7hbmxmdzaxap/master.m3u8",
-    "chno": 163
+    "chno": 153
   },
   {
     "name": "Fuerteventura TV",
@@ -1101,7 +1167,7 @@
     "tvg_name": "Fuerteventura TV",
     "logo": "https://i.ibb.co/MpvjCzC/Fuerteventura-tv-service-webtv-488969d1-1.png",
     "url": "https://5c0956165db0b.streamlock.net/ftv/directo/.m3u8",
-    "chno": 164
+    "chno": 154
   },
   {
     "name": "Lancelot TV (Lanzarote)",
@@ -1110,233 +1176,277 @@
     "tvg_name": "Lancelot TV",
     "logo": "https://i.imgur.com/RlzVIJP.png",
     "url": "https://5c0956165db0b.streamlock.net:8090/directo/_definst_/lancelot.television/master.m3u8",
+    "chno": 155
+  },
+  {
+    "name": "Das Erste (ARD Germany)",
+    "group": "Cultura \u0026 Internacional",
+    "tvg_id": "DasErste.de",
+    "tvg_name": "Das Erste",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Das-Erste.png",
+    "url": "https://daserste-live.ard-mcdn.de/daserste/live/hls/int/master.m3u8",
+    "chno": 160
+  },
+  {
+    "name": "Kuriakos Cine",
+    "group": "Cultura \u0026 Internacional",
+    "tvg_id": "KuriakosCine.pt",
+    "tvg_name": "Kuriakos Cine",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Kuriakos-Cine.png",
+    "url": "https://w2.manasat.com/kcine/kcine.smil/playlist.m3u8",
+    "chno": 161
+  },
+  {
+    "name": "TV Cultura (São Paulo)",
+    "group": "Cultura \u0026 Internacional",
+    "tvg_id": "TVCultura.br@HD",
+    "tvg_name": "TV Cultura",
+    "logo": "",
+    "url": "https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8",
+    "chno": 162
+  },
+  {
+    "name": "Esperanto TV (24/7 Kulturo, Muziko \u0026 Filmoj)",
+    "group": "Cultura \u0026 Internacional",
+    "tvg_id": "EsperantoTV.eo@SD",
+    "tvg_name": "Esperanto TV",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_Esperanto.svg/512px-Flag_of_Esperanto.svg.png",
+    "url": "https://kiefte.eu/iptv/esperanto/tv",
+    "chno": 163
+  },
+  {
+    "name": "ARTE France (HD)",
+    "group": "Cultura \u0026 Internacional",
+    "tvg_id": "arte.fr@SD",
+    "tvg_name": "ARTE France",
+    "logo": "https://api-cdn.arte.tv/img/v2/image/j4EoSJjX26uySVWdmt3EmS/1920x1080",
+    "url": "https://kiefte.eu/iptv/arte_fr.m3u8",
+    "chno": 164
+  },
+  {
+    "name": "ARTE Deutschland (HD)",
+    "group": "Cultura \u0026 Internacional",
+    "tvg_id": "arte.de@SD",
+    "tvg_name": "ARTE Deutschland",
+    "logo": "https://api-cdn.arte.tv/img/v2/image/j4EoSJjX26uySVWdmt3EmS/1920x1080",
+    "url": "https://kiefte.eu/iptv/arte_de.m3u8",
     "chno": 165
   },
   {
-    "name": "ARTV (Canal Parlamento PT)",
-    "group": "Cívico \u0026 Parlamento",
-    "tvg_id": "ARTV.pt",
-    "tvg_name": "ARTV",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/AR-TV.png",
-    "url": "https://playout175.livextend.cloud/livenlin4/_definst_/2liveartvpub2/playlist.m3u8",
-    "chno": 170,
-    "http_user_agent": "Mozilla/5.0"
+    "name": "TV5Monde Europe (1080p • Legendas NL/DE/EN/FR)",
+    "group": "Cultura \u0026 Internacional",
+    "tvg_id": "TV5MondeEurope.fr",
+    "tvg_name": "TV5Monde Europe",
+    "logo": "https://i.imgur.com/uPmwTo9.png",
+    "url": "https://kiefte.eu/iptv/tv5monde_europe.m3u8",
+    "chno": 166
   },
   {
-    "name": "Tweede Kamer: Plenaire zaal (NL)",
-    "group": "Cívico \u0026 Parlamento",
-    "tvg_id": "TweedeKamerPlenair.nl",
-    "tvg_name": "Tweede Kamer Plenair",
-    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png",
-    "url": "https://livestreaming.b67buv2.tweedekamer.nl/live/plenairezaal/index.m3u8?hd=1\u0026keyframes=1\u0026subtitles=live",
+    "name": "3sat (HD • DACH Kultur \u0026 Doku)",
+    "group": "Cultura \u0026 Internacional",
+    "tvg_id": "3sat.de@SD",
+    "tvg_name": "3sat",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/3sat_2019.svg/960px-3sat_2019.svg.png",
+    "url": "https://kiefte.eu/iptv/3sat.m3u8",
+    "chno": 167
+  },
+  {
+    "name": "ZDFneo (HD • Séries \u0026 Cinema)",
+    "group": "Cultura \u0026 Internacional",
+    "tvg_id": "ZDFneo.de@SD",
+    "tvg_name": "ZDFneo",
+    "logo": "https://i.imgur.com/1JIIGgL.png",
+    "url": "https://kiefte.eu/iptv/zdfneo.m3u8",
+    "chno": 168
+  },
+  {
+    "name": "ZDFinfo (HD • Documentários)",
+    "group": "Cultura \u0026 Internacional",
+    "tvg_id": "ZDFinfo.de@SD",
+    "tvg_name": "ZDFinfo",
+    "logo": "https://i.imgur.com/vtq1IWp.png",
+    "url": "https://kiefte.eu/iptv/zdfinfo.m3u8",
+    "chno": 169
+  },
+  {
+    "name": "Persiana Docs",
+    "group": "Cultura \u0026 Internacional",
+    "tvg_id": "PersianaDocs.fr",
+    "tvg_name": "Persiana Docs",
+    "logo": "",
+    "url": "https://scihls.persiana.live/hls/stream.m3u8",
+    "chno": 170
+  },
+  {
+    "name": "Persiana Travel",
+    "group": "Cultura \u0026 Internacional",
+    "tvg_id": "PersianaTravel.fr",
+    "tvg_name": "Persiana Travel",
+    "logo": "",
+    "url": "https://ptravelhls.persiana.live/hls/stream.m3u8",
     "chno": 171
   },
   {
-    "name": "Tweede Kamer: Troelstrazaal (NL)",
-    "group": "Cívico \u0026 Parlamento",
-    "tvg_id": "TweedeKamerTroelstra.nl",
-    "tvg_name": "Tweede Kamer Troelstrazaal",
-    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png",
-    "url": "https://livestreaming.b67buv2.tweedekamer.nl/live/troelstrazaal/index.m3u8?hd=1\u0026keyframes=1\u0026subtitles=live",
+    "name": "Persiana Family",
+    "group": "Cultura \u0026 Internacional",
+    "tvg_id": "PersianaFamily.fr",
+    "tvg_name": "Persiana Family",
+    "logo": "https://i.imgur.com/lMZsuWi.png",
+    "url": "https://familyhls.persiana.live/hls/stream.m3u8",
     "chno": 172
   },
   {
-    "name": "Tweede Kamer: Thorbeckezaal (NL)",
-    "group": "Cívico \u0026 Parlamento",
-    "tvg_id": "TweedeKamerThorbecke.nl",
-    "tvg_name": "Tweede Kamer Thorbeckezaal",
-    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png",
-    "url": "https://livestreaming.b67buv2.tweedekamer.nl/live/thorbeckezaal/index.m3u8?hd=1\u0026keyframes=1\u0026subtitles=live",
-    "chno": 173
-  },
-  {
-    "name": "Tweede Kamer: Groen van Prinstererzaal (NL)",
-    "group": "Cívico \u0026 Parlamento",
-    "tvg_id": "TweedeKamerGroen.nl",
-    "tvg_name": "Tweede Kamer Groen van Prinstererzaal",
-    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png",
-    "url": "https://livestreaming.b67buv2.tweedekamer.nl/live/groenvanprinstererzaal/index.m3u8?hd=1\u0026keyframes=1\u0026subtitles=live",
-    "chno": 174
-  },
-  {
-    "name": "Europe by Satellite (EbS 1)",
-    "group": "Cívico \u0026 Parlamento",
-    "tvg_id": "EbS1.eu@HD",
-    "tvg_name": "Europe by Satellite",
-    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/ebs.png",
-    "url": "https://streams.prd.commavservices.eu/live/ebs/index.m3u8",
-    "chno": 175
-  },
-  {
-    "name": "Europe by Satellite+ (EbS+)",
-    "group": "Cívico \u0026 Parlamento",
-    "tvg_id": "EbS2.eu@HD",
-    "tvg_name": "Europe by Satellite Plus",
-    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/ebs_plus.png",
-    "url": "https://streams.prd.commavservices.eu/live/ebsplus/index.m3u8",
-    "chno": 176
-  },
-  {
-    "name": "Phoenix (HD • Parlamento \u0026 Debates DE)",
-    "group": "Cívico \u0026 Parlamento",
-    "tvg_id": "phoenix.de@HD",
-    "tvg_name": "Phoenix",
-    "logo": "https://i.imgur.com/T1532t9.png",
-    "url": "https://kiefte.eu/iptv/phoenix.m3u8",
-    "chno": 177
-  },
-  {
-    "name": "Canal Parlamento (Congreso ES)",
-    "group": "Cívico \u0026 Parlamento",
-    "tvg_id": "CanalParlamento.es",
-    "tvg_name": "Canal Parlamento",
-    "logo": "https://i.imgur.com/BUO0wH6.png",
-    "url": "https://congresodirecto.akamaized.net/hls/live/2037973/canalparlamento/master.m3u8",
-    "chno": 178
-  },
-  {
-    "name": "TV Maná Moçambique",
-    "group": "Religião",
-    "tvg_id": "TVManaMZ.mz",
-    "tvg_name": "TV Maná Moçambique",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-Mocambique.png",
-    "url": "https://w2.manasat.com/tvmana-mz/smil:tvmana-mz.smil/playlist.m3u8",
+    "name": "Doctor Who Classic (24/7 1080p HD)",
+    "group": "Sci-Fi \u0026 Cult Retro",
+    "tvg_id": "DoctorWhoClassic.uk@HD",
+    "tvg_name": "Doctor Who Classic",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Doctor_Who_logo_2018.svg/512px-Doctor_Who_logo_2018.svg.png",
+    "url": "https://bbc-classicdrwho-1-us.roku.wurl.tv/playlist.m3u8",
     "chno": 180
   },
   {
-    "name": "TV Maná 1 (PT)",
-    "group": "Religião",
-    "tvg_id": "TVMana1.pt@HD",
-    "tvg_name": "TV Maná 1",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-1.png",
-    "url": "https://w1.manasat.com/tvmana-1/smil:tvmana-1.smil/playlist.m3u8",
+    "name": "Mystery Science Theater 3000 (MST3K 1080p)",
+    "group": "Sci-Fi \u0026 Cult Retro",
+    "tvg_id": "MST3K.us@HD",
+    "tvg_name": "Mystery Science Theater 3000",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Mystery_Science_Theater_3000_logo.svg/512px-Mystery_Science_Theater_3000_logo.svg.png",
+    "url": "https://kiefte.eu/iptv/twitch/mst3k",
     "chno": 181
   },
   {
-    "name": "TV Maná 2 (PT)",
-    "group": "Religião",
-    "tvg_id": "TVMana2.pt@HD",
-    "tvg_name": "TV Maná 2",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-2.png",
-    "url": "https://w1.manasat.com/tvmana-2/smil:tvmana-2.smil/playlist.m3u8",
+    "name": "Shout! Factory TV (Cult Sci-Fi \u0026 Classics)",
+    "group": "Sci-Fi \u0026 Cult Retro",
+    "tvg_id": "ShoutFactoryTV.us@HD",
+    "tvg_name": "Shout! Factory TV",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Shout%21_Factory_logo.svg/512px-Shout%21_Factory_logo.svg.png",
+    "url": "https://kiefte.eu/iptv/twitch/shoutfactorytv",
     "chno": 182
   },
   {
-    "name": "Kuriakos TV",
-    "group": "Religião",
-    "tvg_id": "KuriakosTV.pt@HD",
-    "tvg_name": "Kuriakos TV",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Kuriakos-TV.png",
-    "url": "https://w1.manasat.com/ktv/ktv.smil/playlist.m3u8",
+    "name": "World of Longplays (Retro Gaming 1080p60)",
+    "group": "Sci-Fi \u0026 Cult Retro",
+    "tvg_id": "WorldOfLongplays.tv@HD",
+    "tvg_name": "World of Longplays",
+    "logo": "https://static-cdn.jtvnw.net/jtv_user_pictures/worldoflongplays-profile_image-144709d73d6e9dc7-300x300.png",
+    "url": "https://kiefte.eu/iptv/twitch/worldoflongplays",
     "chno": 183
   },
   {
-    "name": "Canção Nova Portugal",
-    "group": "Religião",
-    "tvg_id": "CancaoNova.pt@HD",
-    "tvg_name": "Canção Nova",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Cancao-Nova.png",
-    "url": "https://5c65286fc6ace.streamlock.net/cancaonova/CancaoNova.stream_720p/playlist.m3u8",
+    "name": "FailArmy (24/7 Comedy HD)",
+    "group": "Sci-Fi \u0026 Cult Retro",
+    "tvg_id": "FailArmy.us@HD",
+    "tvg_name": "FailArmy",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/FailArmy_logo.png/512px-FailArmy_logo.png",
+    "url": "https://failarmy-international-nl.samsung.wurl.tv/playlist.m3u8",
     "chno": 184
   },
   {
-    "name": "Bahá'í Studio Sessions TV (24/7 Devotional Music)",
-    "group": "Religião",
-    "tvg_id": "BahaiStudioSessions.tv@HD",
-    "tvg_name": "Bahá'í Studio Sessions TV",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/bahai/tv",
+    "name": "Just for Laughs Gags (Slapstick Comedy HD)",
+    "group": "Sci-Fi \u0026 Cult Retro",
+    "tvg_id": "JustForLaughsGags.ca@HD",
+    "tvg_name": "Just for Laughs Gags",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/Just_for_Laughs_Gags_logo.svg/512px-Just_for_Laughs_Gags_logo.svg.png",
+    "url": "https://distributionsjustepourrire-justforlaughsgags-1-nl.samsung.wurl.tv/playlist.m3u8",
     "chno": 185
   },
   {
-    "name": "Iran Jewish TV",
-    "group": "Religião",
-    "tvg_id": "IranJewishTV.ir",
-    "tvg_name": "Iran Jewish TV",
-    "logo": "https://i.ibb.co/JWXs7csN/en.png",
-    "url": "http://iran620.com:1935/live/IranJewishTv/playlist.m3u8",
+    "name": "FilmRise Classic TV (Cult Classics)",
+    "group": "Sci-Fi \u0026 Cult Retro",
+    "tvg_id": "FilmRiseClassicTV.us@HD",
+    "tvg_name": "FilmRise Classic TV",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/FilmRise_logo.png/512px-FilmRise_logo.png",
+    "url": "https://d2tv4k5moji5m7.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-lu4pzh9l4b57p/master.m3u8",
     "chno": 186
   },
   {
-    "name": "ADB TV",
-    "group": "Religião",
-    "tvg_id": "ADBTV.pt",
-    "tvg_name": "ADB TV",
-    "logo": "https://i.ibb.co/HGfTJwt/ADBTV.jpg",
-    "url": "https://live-tv.waytv.pt/adbtv/adbtv/playlist.m3u8",
+    "name": "FilmRise Anime (24/7 Classic Anime HD)",
+    "group": "Sci-Fi \u0026 Cult Retro",
+    "tvg_id": "FilmRiseAnime.us@HD",
+    "tvg_name": "FilmRise Anime",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/FilmRise_logo.png/512px-FilmRise_logo.png",
+    "url": "https://dvu7aia8rjlfm.cloudfront.net/master.m3u8",
     "chno": 187
   },
   {
-    "name": "UNIFE TV Portugal",
-    "group": "Religião",
-    "tvg_id": "UnifeTV.pt",
-    "tvg_name": "UNIFE TV Portugal",
-    "logo": "",
-    "url": "https://view.dacast.com/24b61c472d976075ed46ad1eb530e6ae-live-fdc85437d7631afb59fe3767dcc464dd/adaptive.m3u8",
+    "name": "Autentic History (1080p Full HD)",
+    "group": "Sci-Fi \u0026 Cult Retro",
+    "tvg_id": "AutenticHistory.de@HD",
+    "tvg_name": "Autentic History",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/History_Logo_2021.svg/512px-History_Logo_2021.svg.png",
+    "url": "https://autentic-autentichistory-1-gb.samsung.wurl.tv/playlist.m3u8",
     "chno": 188
   },
   {
-    "name": "TV Universal Argentina",
-    "group": "Religião",
-    "tvg_id": "TVUniversal.ar",
-    "tvg_name": "TV Universal Argentina",
-    "logo": "",
-    "url": "https://cdn.mycloudstream.io/hls/live/broadcast/xundwjvp/index.m3u8",
-    "chno": 189
-  },
-  {
-    "name": "TV Universal Perú",
-    "group": "Religião",
-    "tvg_id": "TVUniversal.pe",
-    "tvg_name": "TV Universal Perú",
-    "logo": "",
-    "url": "https://cdn.mycloudstream.io/hls/live/broadcast/ic1frrzz/index.m3u8",
+    "name": "Bob Ross (24/7 The Joy of Painting)",
+    "group": "Natureza \u0026 Slow TV",
+    "tvg_id": "BobRoss.tv@HD",
+    "tvg_name": "Bob Ross",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bob_Ross_The_Joy_of_Painting_logo.svg/512px-Bob_Ross_The_Joy_of_Painting_logo.svg.png",
+    "url": "https://kiefte.eu/iptv/twitch/bobross",
     "chno": 190
   },
   {
-    "name": "TV Universal Ecuador",
-    "group": "Religião",
-    "tvg_id": "TVUniversal.ec",
-    "tvg_name": "TV Universal Ecuador",
-    "logo": "",
-    "url": "https://cdn.mycloudstream.io/hls/live/broadcast/uwcedjt2/index.m3u8",
+    "name": "Lofi Girl (24/7 Relaxing Beats \u0026 Ambience 1080p)",
+    "group": "Natureza \u0026 Slow TV",
+    "tvg_id": "LofiGirl.tv@HD",
+    "tvg_name": "Lofi Girl",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Lofi_girl_logo.jpg/512px-Lofi_girl_logo.jpg",
+    "url": "https://kiefte.eu/iptv/twitch/lofigirl",
     "chno": 191
   },
   {
-    "name": "Red Aleluya Uruguay",
-    "group": "Religião",
-    "tvg_id": "RedAleluya.uy",
-    "tvg_name": "Red Aleluya Uruguay",
+    "name": "Relax Beats \u0026 Chill Music (24/7 HD)",
+    "group": "Natureza \u0026 Slow TV",
+    "tvg_id": "RelaxBeats.tv@HD",
+    "tvg_name": "Relax Beats",
     "logo": "",
-    "url": "https://stream.universal.org.uy/hls/stream.m3u8",
+    "url": "https://kiefte.eu/iptv/twitch/relaxbeats",
     "chno": 192
   },
   {
-    "name": "UNIFE TV",
-    "group": "Religião",
-    "tvg_id": "UnifeTV.int",
-    "tvg_name": "UNIFE TV",
-    "logo": "",
-    "url": "https://cdn.mycloudstream.io/hls/live/broadcast/pgv5kerk/index.m3u8",
+    "name": "LeekBeats (24/7 Anime Lofi \u0026 Study Beats 1080p)",
+    "group": "Natureza \u0026 Slow TV",
+    "tvg_id": "LeekBeats.tv@HD",
+    "tvg_name": "LeekBeats",
+    "logo": "https://static-cdn.jtvnw.net/jtv_user_pictures/1e46777d-69dd-48da-9f49-4aa749f412f6-profile_image-300x300.png",
+    "url": "https://kiefte.eu/iptv/twitch/leekbeats",
     "chno": 193
   },
   {
-    "name": "Vera TV (Вера ТВ)",
-    "group": "Religião",
-    "tvg_id": "VeraTV.ru",
-    "tvg_name": "Vera TV",
-    "logo": "",
-    "url": "https://live.helpcenter24.ru/hls/stream.m3u8",
+    "name": "NASA Live (Earth from Space \u0026 ISS 1080p)",
+    "group": "Natureza \u0026 Slow TV",
+    "tvg_id": "NASATV.us@HD",
+    "tvg_name": "NASA Live",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/512px-NASA_logo.svg.png",
+    "url": "https://kiefte.eu/iptv/twitch/nasa",
     "chno": 194
   },
   {
-    "name": "Unife TV Chile",
-    "group": "Religião",
-    "tvg_id": "UnifeTV.cl",
-    "tvg_name": "Unife TV Chile",
-    "logo": "",
-    "url": "https://cdn.mycloudstream.io/hls/live/broadcast/pcr5miau/index.m3u8",
+    "name": "WildEarth (24/7 Live Safari \u0026 Wildlife 1080p)",
+    "group": "Natureza \u0026 Slow TV",
+    "tvg_id": "WildEarth.tv@HD",
+    "tvg_name": "WildEarth",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/WildEarth_logo.svg/512px-WildEarth_logo.svg.png",
+    "url": "https://wildearth-adsfree-ono.amagi.tv/playlist.m3u8",
     "chno": 195
+  },
+  {
+    "name": "Adventure Earth (1080p Full HD)",
+    "group": "Natureza \u0026 Slow TV",
+    "tvg_id": "AdventureEarth.de@HD",
+    "tvg_name": "Adventure Earth",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Earth_symbol_%28bold%29.svg/512px-Earth_symbol_%28bold%29.svg.png",
+    "url": "https://autentic-adventure-earth-1-gb.samsung.wurl.tv/playlist.m3u8",
+    "chno": 196
+  },
+  {
+    "name": "3Cat Càmeres del Temps (Weather Cams)",
+    "group": "Natureza \u0026 Slow TV",
+    "tvg_id": "3CatCameresdeltemps.es",
+    "tvg_name": "3Cat Càmeres del Temps",
+    "logo": "https://i.imgur.com/zXy2kbe.png",
+    "url": "https://directes-tv-int.3catdirectes.cat/live-content/beauties-hls/master.m3u8",
+    "chno": 197
   },
   {
     "name": "ON FM (Visual Radio)",
@@ -1645,22 +1755,13 @@
     "chno": 233
   },
   {
-    "name": "Hype Visual Radio (1080p Studio Cam)",
-    "group": "Música \u0026 Video",
-    "tvg_id": "HypeVisualRadio.tv@HD",
-    "tvg_name": "Hype Visual Radio",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/DJ_mixer_icon.svg/512px-DJ_mixer_icon.svg.png",
-    "url": "https://streammix.alsolnet.com/hyperadio/live/playlist.m3u8",
-    "chno": 234
-  },
-  {
     "name": "PMC (Persian Music Channel)",
     "group": "Música \u0026 Video",
     "tvg_id": "PMC.ae",
     "tvg_name": "PMC (Persian Music Channel)",
     "logo": "https://i.imgur.com/AbrHI7K.png",
     "url": "https://pmchls.wns.live/hls/stream.m3u8",
-    "chno": 235
+    "chno": 234
   },
   {
     "name": "PMC Royale",
@@ -1669,7 +1770,7 @@
     "tvg_name": "PMC Royale",
     "logo": "",
     "url": "https://pmcrohls.wns.live/hls/stream.m3u8",
-    "chno": 236
+    "chno": 235
   },
   {
     "name": "RJTV",
@@ -1678,7 +1779,7 @@
     "tvg_name": "RJTV",
     "logo": "https://i.imgur.com/a1zuW2C.png",
     "url": "https://rjtvhls.wns.live/hls/stream.m3u8",
-    "chno": 237
+    "chno": 236
   },
   {
     "name": "Persiana Folk",
@@ -1687,7 +1788,7 @@
     "tvg_name": "Persiana Folk",
     "logo": "",
     "url": "https://sonhls.persiana.live/hls/stream.m3u8",
-    "chno": 238
+    "chno": 237
   },
   {
     "name": "RTVE Radio 3 (Visual Radio)",
@@ -1696,7 +1797,7 @@
     "tvg_name": "RTVE Radio 3",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/RNE_Radio_3_2026.svg/500px-RNE_Radio_3_2026.svg.png",
     "url": "https://rtvelivestream.rtve.es/rtvesec/rne/rne3_main.m3u8",
-    "chno": 239
+    "chno": 238
   },
   {
     "name": "Persiana Nostalgia",
@@ -1705,343 +1806,233 @@
     "tvg_name": "Persiana Nostalgia",
     "logo": "https://i.imgur.com/SWO9CKA.png",
     "url": "https://noshls.persiana.live/hls/stream.m3u8",
-    "chno": 240
+    "chno": 239
   },
   {
-    "name": "Das Erste (ARD Germany)",
-    "group": "Filmes \u0026 Docs",
-    "tvg_id": "DasErste.de",
-    "tvg_name": "Das Erste",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Das-Erste.png",
-    "url": "https://daserste-live.ard-mcdn.de/daserste/live/hls/int/master.m3u8",
-    "chno": 250
+    "name": "ARTV (Canal Parlamento PT)",
+    "group": "Cívico \u0026 Parlamento",
+    "tvg_id": "ARTV.pt",
+    "tvg_name": "ARTV",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/AR-TV.png",
+    "url": "https://playout175.livextend.cloud/livenlin4/_definst_/2liveartvpub2/playlist.m3u8",
+    "chno": 270,
+    "http_user_agent": "Mozilla/5.0"
   },
   {
-    "name": "Kuriakos Cine",
-    "group": "Filmes \u0026 Docs",
-    "tvg_id": "KuriakosCine.pt",
-    "tvg_name": "Kuriakos Cine",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Kuriakos-Cine.png",
-    "url": "https://w2.manasat.com/kcine/kcine.smil/playlist.m3u8",
-    "chno": 251
-  },
-  {
-    "name": "TV Cultura (São Paulo)",
-    "group": "Filmes \u0026 Docs",
-    "tvg_id": "TVCultura.br@HD",
-    "tvg_name": "TV Cultura",
-    "logo": "",
-    "url": "https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8",
-    "chno": 252
-  },
-  {
-    "name": "Esperanto TV (24/7 Kulturo, Muziko \u0026 Filmoj)",
-    "group": "Filmes \u0026 Docs",
-    "tvg_id": "EsperantoTV.eo@SD",
-    "tvg_name": "Esperanto TV",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_Esperanto.svg/512px-Flag_of_Esperanto.svg.png",
-    "url": "https://kiefte.eu/iptv/esperanto/tv",
-    "chno": 253
-  },
-  {
-    "name": "ARTE France (HD)",
-    "group": "Filmes \u0026 Docs",
-    "tvg_id": "arte.fr@SD",
-    "tvg_name": "ARTE France",
-    "logo": "https://api-cdn.arte.tv/img/v2/image/j4EoSJjX26uySVWdmt3EmS/1920x1080",
-    "url": "https://kiefte.eu/iptv/arte_fr.m3u8",
-    "chno": 254
-  },
-  {
-    "name": "ARTE Deutschland (HD)",
-    "group": "Filmes \u0026 Docs",
-    "tvg_id": "arte.de@SD",
-    "tvg_name": "ARTE Deutschland",
-    "logo": "https://api-cdn.arte.tv/img/v2/image/j4EoSJjX26uySVWdmt3EmS/1920x1080",
-    "url": "https://kiefte.eu/iptv/arte_de.m3u8",
-    "chno": 255
-  },
-  {
-    "name": "TV5Monde Europe (1080p • Legendas NL/DE/EN/FR)",
-    "group": "Filmes \u0026 Docs",
-    "tvg_id": "TV5MondeEurope.fr",
-    "tvg_name": "TV5Monde Europe",
-    "logo": "https://i.imgur.com/uPmwTo9.png",
-    "url": "https://kiefte.eu/iptv/tv5monde_europe.m3u8",
-    "chno": 256
-  },
-  {
-    "name": "3sat (HD • DACH Kultur \u0026 Doku)",
-    "group": "Filmes \u0026 Docs",
-    "tvg_id": "3sat.de@SD",
-    "tvg_name": "3sat",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/3sat_2019.svg/960px-3sat_2019.svg.png",
-    "url": "https://kiefte.eu/iptv/3sat.m3u8",
-    "chno": 257
-  },
-  {
-    "name": "ZDFneo (HD • Séries \u0026 Cinema)",
-    "group": "Filmes \u0026 Docs",
-    "tvg_id": "ZDFneo.de@SD",
-    "tvg_name": "ZDFneo",
-    "logo": "https://i.imgur.com/1JIIGgL.png",
-    "url": "https://kiefte.eu/iptv/zdfneo.m3u8",
-    "chno": 258
-  },
-  {
-    "name": "ZDFinfo (HD • Documentários)",
-    "group": "Filmes \u0026 Docs",
-    "tvg_id": "ZDFinfo.de@SD",
-    "tvg_name": "ZDFinfo",
-    "logo": "https://i.imgur.com/vtq1IWp.png",
-    "url": "https://kiefte.eu/iptv/zdfinfo.m3u8",
-    "chno": 259
-  },
-  {
-    "name": "Persiana Docs",
-    "group": "Filmes \u0026 Docs",
-    "tvg_id": "PersianaDocs.fr",
-    "tvg_name": "Persiana Docs",
-    "logo": "",
-    "url": "https://scihls.persiana.live/hls/stream.m3u8",
-    "chno": 260
-  },
-  {
-    "name": "Persiana Travel",
-    "group": "Filmes \u0026 Docs",
-    "tvg_id": "PersianaTravel.fr",
-    "tvg_name": "Persiana Travel",
-    "logo": "",
-    "url": "https://ptravelhls.persiana.live/hls/stream.m3u8",
-    "chno": 261
-  },
-  {
-    "name": "Persiana Family",
-    "group": "Filmes \u0026 Docs",
-    "tvg_id": "PersianaFamily.fr",
-    "tvg_name": "Persiana Family",
-    "logo": "https://i.imgur.com/lMZsuWi.png",
-    "url": "https://familyhls.persiana.live/hls/stream.m3u8",
-    "chno": 262
-  },
-  {
-    "name": "Doctor Who Classic (24/7 1080p HD)",
-    "group": "Sci-Fi \u0026 Cult Retro",
-    "tvg_id": "DoctorWhoClassic.uk@HD",
-    "tvg_name": "Doctor Who Classic",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Doctor_Who_logo_2018.svg/512px-Doctor_Who_logo_2018.svg.png",
-    "url": "https://bbc-classicdrwho-1-us.roku.wurl.tv/playlist.m3u8",
-    "chno": 270
-  },
-  {
-    "name": "Mystery Science Theater 3000 (MST3K 1080p)",
-    "group": "Sci-Fi \u0026 Cult Retro",
-    "tvg_id": "MST3K.us@HD",
-    "tvg_name": "Mystery Science Theater 3000",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Mystery_Science_Theater_3000_logo.svg/512px-Mystery_Science_Theater_3000_logo.svg.png",
-    "url": "https://kiefte.eu/iptv/twitch/mst3k",
+    "name": "Tweede Kamer: Plenaire zaal (NL)",
+    "group": "Cívico \u0026 Parlamento",
+    "tvg_id": "TweedeKamerPlenair.nl",
+    "tvg_name": "Tweede Kamer Plenair",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png",
+    "url": "https://livestreaming.b67buv2.tweedekamer.nl/live/plenairezaal/index.m3u8?hd=1\u0026keyframes=1\u0026subtitles=live",
     "chno": 271
   },
   {
-    "name": "Shout! Factory TV (Cult Sci-Fi \u0026 Classics)",
-    "group": "Sci-Fi \u0026 Cult Retro",
-    "tvg_id": "ShoutFactoryTV.us@HD",
-    "tvg_name": "Shout! Factory TV",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Shout%21_Factory_logo.svg/512px-Shout%21_Factory_logo.svg.png",
-    "url": "https://kiefte.eu/iptv/twitch/shoutfactorytv",
+    "name": "Tweede Kamer: Troelstrazaal (NL)",
+    "group": "Cívico \u0026 Parlamento",
+    "tvg_id": "TweedeKamerTroelstra.nl",
+    "tvg_name": "Tweede Kamer Troelstrazaal",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png",
+    "url": "https://livestreaming.b67buv2.tweedekamer.nl/live/troelstrazaal/index.m3u8?hd=1\u0026keyframes=1\u0026subtitles=live",
     "chno": 272
   },
   {
-    "name": "World of Longplays (Retro Gaming 1080p60)",
-    "group": "Sci-Fi \u0026 Cult Retro",
-    "tvg_id": "WorldOfLongplays.tv@HD",
-    "tvg_name": "World of Longplays",
-    "logo": "https://static-cdn.jtvnw.net/jtv_user_pictures/worldoflongplays-profile_image-144709d73d6e9dc7-300x300.png",
-    "url": "https://kiefte.eu/iptv/twitch/worldoflongplays",
+    "name": "Tweede Kamer: Thorbeckezaal (NL)",
+    "group": "Cívico \u0026 Parlamento",
+    "tvg_id": "TweedeKamerThorbecke.nl",
+    "tvg_name": "Tweede Kamer Thorbeckezaal",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png",
+    "url": "https://livestreaming.b67buv2.tweedekamer.nl/live/thorbeckezaal/index.m3u8?hd=1\u0026keyframes=1\u0026subtitles=live",
     "chno": 273
   },
   {
-    "name": "FailArmy (24/7 Comedy HD)",
-    "group": "Sci-Fi \u0026 Cult Retro",
-    "tvg_id": "FailArmy.us@HD",
-    "tvg_name": "FailArmy",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/FailArmy_logo.png/512px-FailArmy_logo.png",
-    "url": "https://failarmy-international-nl.samsung.wurl.tv/playlist.m3u8",
+    "name": "Tweede Kamer: Groen van Prinstererzaal (NL)",
+    "group": "Cívico \u0026 Parlamento",
+    "tvg_id": "TweedeKamerGroen.nl",
+    "tvg_name": "Tweede Kamer Groen van Prinstererzaal",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png",
+    "url": "https://livestreaming.b67buv2.tweedekamer.nl/live/groenvanprinstererzaal/index.m3u8?hd=1\u0026keyframes=1\u0026subtitles=live",
     "chno": 274
   },
   {
-    "name": "Just for Laughs Gags (Slapstick Comedy HD)",
-    "group": "Sci-Fi \u0026 Cult Retro",
-    "tvg_id": "JustForLaughsGags.ca@HD",
-    "tvg_name": "Just for Laughs Gags",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/Just_for_Laughs_Gags_logo.svg/512px-Just_for_Laughs_Gags_logo.svg.png",
-    "url": "https://distributionsjustepourrire-justforlaughsgags-1-nl.samsung.wurl.tv/playlist.m3u8",
+    "name": "Europe by Satellite (EbS 1)",
+    "group": "Cívico \u0026 Parlamento",
+    "tvg_id": "EbS1.eu@HD",
+    "tvg_name": "Europe by Satellite",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/ebs.png",
+    "url": "https://streams.prd.commavservices.eu/live/ebs/index.m3u8",
     "chno": 275
   },
   {
-    "name": "FilmRise Classic TV (Cult Classics)",
-    "group": "Sci-Fi \u0026 Cult Retro",
-    "tvg_id": "FilmRiseClassicTV.us@HD",
-    "tvg_name": "FilmRise Classic TV",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/FilmRise_logo.png/512px-FilmRise_logo.png",
-    "url": "https://d2tv4k5moji5m7.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-lu4pzh9l4b57p/master.m3u8",
+    "name": "Europe by Satellite+ (EbS+)",
+    "group": "Cívico \u0026 Parlamento",
+    "tvg_id": "EbS2.eu@HD",
+    "tvg_name": "Europe by Satellite Plus",
+    "logo": "https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/ebs_plus.png",
+    "url": "https://streams.prd.commavservices.eu/live/ebsplus/index.m3u8",
     "chno": 276
   },
   {
-    "name": "FilmRise Anime (24/7 Classic Anime HD)",
-    "group": "Sci-Fi \u0026 Cult Retro",
-    "tvg_id": "FilmRiseAnime.us@HD",
-    "tvg_name": "FilmRise Anime",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/FilmRise_logo.png/512px-FilmRise_logo.png",
-    "url": "https://dvu7aia8rjlfm.cloudfront.net/master.m3u8",
+    "name": "Phoenix (HD • Parlamento \u0026 Debates DE)",
+    "group": "Cívico \u0026 Parlamento",
+    "tvg_id": "phoenix.de@HD",
+    "tvg_name": "Phoenix",
+    "logo": "https://i.imgur.com/T1532t9.png",
+    "url": "https://kiefte.eu/iptv/phoenix.m3u8",
     "chno": 277
   },
   {
-    "name": "Autentic History (1080p Full HD)",
-    "group": "Sci-Fi \u0026 Cult Retro",
-    "tvg_id": "AutenticHistory.de@HD",
-    "tvg_name": "Autentic History",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/History_Logo_2021.svg/512px-History_Logo_2021.svg.png",
-    "url": "https://autentic-autentichistory-1-gb.samsung.wurl.tv/playlist.m3u8",
+    "name": "Canal Parlamento (Congreso ES)",
+    "group": "Cívico \u0026 Parlamento",
+    "tvg_id": "CanalParlamento.es",
+    "tvg_name": "Canal Parlamento",
+    "logo": "https://i.imgur.com/BUO0wH6.png",
+    "url": "https://congresodirecto.akamaized.net/hls/live/2037973/canalparlamento/master.m3u8",
     "chno": 278
   },
   {
-    "name": "Bob Ross (24/7 The Joy of Painting)",
-    "group": "Natureza \u0026 Slow TV",
-    "tvg_id": "BobRoss.tv@HD",
-    "tvg_name": "Bob Ross",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bob_Ross_The_Joy_of_Painting_logo.svg/512px-Bob_Ross_The_Joy_of_Painting_logo.svg.png",
-    "url": "https://kiefte.eu/iptv/twitch/bobross",
+    "name": "TV Maná Moçambique",
+    "group": "Religião",
+    "tvg_id": "TVManaMZ.mz",
+    "tvg_name": "TV Maná Moçambique",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-Mocambique.png",
+    "url": "https://w2.manasat.com/tvmana-mz/smil:tvmana-mz.smil/playlist.m3u8",
     "chno": 280
   },
   {
-    "name": "Lofi Girl (24/7 Relaxing Beats \u0026 Ambience 1080p)",
-    "group": "Natureza \u0026 Slow TV",
-    "tvg_id": "LofiGirl.tv@HD",
-    "tvg_name": "Lofi Girl",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Lofi_girl_logo.jpg/512px-Lofi_girl_logo.jpg",
-    "url": "https://kiefte.eu/iptv/twitch/lofigirl",
+    "name": "TV Maná 1 (PT)",
+    "group": "Religião",
+    "tvg_id": "TVMana1.pt@HD",
+    "tvg_name": "TV Maná 1",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-1.png",
+    "url": "https://w1.manasat.com/tvmana-1/smil:tvmana-1.smil/playlist.m3u8",
     "chno": 281
   },
   {
-    "name": "Relax Beats \u0026 Chill Music (24/7 HD)",
-    "group": "Natureza \u0026 Slow TV",
-    "tvg_id": "RelaxBeats.tv@HD",
-    "tvg_name": "Relax Beats",
-    "logo": "",
-    "url": "https://kiefte.eu/iptv/twitch/relaxbeats",
+    "name": "TV Maná 2 (PT)",
+    "group": "Religião",
+    "tvg_id": "TVMana2.pt@HD",
+    "tvg_name": "TV Maná 2",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-2.png",
+    "url": "https://w1.manasat.com/tvmana-2/smil:tvmana-2.smil/playlist.m3u8",
     "chno": 282
   },
   {
-    "name": "LeekBeats (24/7 Anime Lofi \u0026 Study Beats 1080p)",
-    "group": "Natureza \u0026 Slow TV",
-    "tvg_id": "LeekBeats.tv@HD",
-    "tvg_name": "LeekBeats",
-    "logo": "https://static-cdn.jtvnw.net/jtv_user_pictures/1e46777d-69dd-48da-9f49-4aa749f412f6-profile_image-300x300.png",
-    "url": "https://kiefte.eu/iptv/twitch/leekbeats",
+    "name": "Kuriakos TV",
+    "group": "Religião",
+    "tvg_id": "KuriakosTV.pt@HD",
+    "tvg_name": "Kuriakos TV",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Kuriakos-TV.png",
+    "url": "https://w1.manasat.com/ktv/ktv.smil/playlist.m3u8",
     "chno": 283
   },
   {
-    "name": "NASA Live (Earth from Space \u0026 ISS 1080p)",
-    "group": "Natureza \u0026 Slow TV",
-    "tvg_id": "NASATV.us@HD",
-    "tvg_name": "NASA Live",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/512px-NASA_logo.svg.png",
-    "url": "https://kiefte.eu/iptv/twitch/nasa",
+    "name": "Canção Nova Portugal",
+    "group": "Religião",
+    "tvg_id": "CancaoNova.pt@HD",
+    "tvg_name": "Canção Nova",
+    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Cancao-Nova.png",
+    "url": "https://5c65286fc6ace.streamlock.net/cancaonova/CancaoNova.stream_720p/playlist.m3u8",
     "chno": 284
   },
   {
-    "name": "WildEarth (24/7 Live Safari \u0026 Wildlife 1080p)",
-    "group": "Natureza \u0026 Slow TV",
-    "tvg_id": "WildEarth.tv@HD",
-    "tvg_name": "WildEarth",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/WildEarth_logo.svg/512px-WildEarth_logo.svg.png",
-    "url": "https://wildearth-adsfree-ono.amagi.tv/playlist.m3u8",
+    "name": "Bahá'í Studio Sessions TV (24/7 Devotional Music)",
+    "group": "Religião",
+    "tvg_id": "BahaiStudioSessions.tv@HD",
+    "tvg_name": "Bahá'í Studio Sessions TV",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/bahai/tv",
     "chno": 285
   },
   {
-    "name": "Adventure Earth (1080p Full HD)",
-    "group": "Natureza \u0026 Slow TV",
-    "tvg_id": "AdventureEarth.de@HD",
-    "tvg_name": "Adventure Earth",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Earth_symbol_%28bold%29.svg/512px-Earth_symbol_%28bold%29.svg.png",
-    "url": "https://autentic-adventure-earth-1-gb.samsung.wurl.tv/playlist.m3u8",
+    "name": "Iran Jewish TV",
+    "group": "Religião",
+    "tvg_id": "IranJewishTV.ir",
+    "tvg_name": "Iran Jewish TV",
+    "logo": "https://i.ibb.co/JWXs7csN/en.png",
+    "url": "http://iran620.com:1935/live/IranJewishTv/playlist.m3u8",
     "chno": 286
   },
   {
-    "name": "3Cat Càmeres del Temps (Weather Cams)",
-    "group": "Natureza \u0026 Slow TV",
-    "tvg_id": "3CatCameresdeltemps.es",
-    "tvg_name": "3Cat Càmeres del Temps",
-    "logo": "https://i.imgur.com/zXy2kbe.png",
-    "url": "https://directes-tv-int.3catdirectes.cat/live-content/beauties-hls/master.m3u8",
+    "name": "ADB TV",
+    "group": "Religião",
+    "tvg_id": "ADBTV.pt",
+    "tvg_name": "ADB TV",
+    "logo": "https://i.ibb.co/HGfTJwt/ADBTV.jpg",
+    "url": "https://live-tv.waytv.pt/adbtv/adbtv/playlist.m3u8",
     "chno": 287
   },
   {
-    "name": "FIFA+",
-    "group": "Desporto",
-    "tvg_id": "FIFAPlus.ch",
-    "tvg_name": "FIFA+",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/FIFA-Plus.png",
-    "url": "https://f7ccf7fc.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLXB0X0ZJRkFQbHVzUG9ydHVndWVzZV9ITFM/playlist.m3u8",
+    "name": "UNIFE TV Portugal",
+    "group": "Religião",
+    "tvg_id": "UnifeTV.pt",
+    "tvg_name": "UNIFE TV Portugal",
+    "logo": "",
+    "url": "https://view.dacast.com/24b61c472d976075ed46ad1eb530e6ae-live-fdc85437d7631afb59fe3767dcc464dd/adaptive.m3u8",
+    "chno": 288
+  },
+  {
+    "name": "TV Universal Argentina",
+    "group": "Religião",
+    "tvg_id": "TVUniversal.ar",
+    "tvg_name": "TV Universal Argentina",
+    "logo": "",
+    "url": "https://cdn.mycloudstream.io/hls/live/broadcast/xundwjvp/index.m3u8",
+    "chno": 289
+  },
+  {
+    "name": "TV Universal Perú",
+    "group": "Religião",
+    "tvg_id": "TVUniversal.pe",
+    "tvg_name": "TV Universal Perú",
+    "logo": "",
+    "url": "https://cdn.mycloudstream.io/hls/live/broadcast/ic1frrzz/index.m3u8",
     "chno": 290
   },
   {
-    "name": "Red Bull TV",
-    "group": "Desporto",
-    "tvg_id": "RedBullTV.at@HD",
-    "tvg_name": "Red Bull TV",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Red-Bull-TV.png",
-    "url": "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8",
+    "name": "TV Universal Ecuador",
+    "group": "Religião",
+    "tvg_id": "TVUniversal.ec",
+    "tvg_name": "TV Universal Ecuador",
+    "logo": "",
+    "url": "https://cdn.mycloudstream.io/hls/live/broadcast/uwcedjt2/index.m3u8",
     "chno": 291
   },
   {
-    "name": "SuperTennis",
-    "group": "Desporto",
-    "tvg_id": "SuperTennis.it@HD",
-    "tvg_name": "SuperTennis",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SuperTennis.png",
-    "url": "https://live-embed.supertennix.hiway.media/restreamer/supertennix_client/gpu-a-c0-16/restreamer/outgest/aa3673f1-e178-44a9-a947-ef41db73211a/manifest.m3u8",
+    "name": "Red Aleluya Uruguay",
+    "group": "Religião",
+    "tvg_id": "RedAleluya.uy",
+    "tvg_name": "Red Aleluya Uruguay",
+    "logo": "",
+    "url": "https://stream.universal.org.uy/hls/stream.m3u8",
     "chno": 292
   },
   {
-    "name": "Motorvision",
-    "group": "Desporto",
-    "tvg_id": "Motorvision.de@HD",
-    "tvg_name": "Motorvision",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Motorvision.png",
-    "url": "https://mvg-mv-xumo.otteravision.com/mvg/mv/mv.m3u8",
+    "name": "UNIFE TV",
+    "group": "Religião",
+    "tvg_id": "UnifeTV.int",
+    "tvg_name": "UNIFE TV",
+    "logo": "",
+    "url": "https://cdn.mycloudstream.io/hls/live/broadcast/pgv5kerk/index.m3u8",
     "chno": 293
   },
   {
-    "name": "Nautical Channel",
-    "group": "Desporto",
-    "tvg_id": "NauticalChannel.fr@HD",
-    "tvg_name": "Nautical Channel",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Nautical-Channel.png",
-    "url": "https://streams2.sofast.tv/vglive-sk-231198/index.m3u8",
+    "name": "Vera TV (Вера ТВ)",
+    "group": "Religião",
+    "tvg_id": "VeraTV.ru",
+    "tvg_name": "Vera TV",
+    "logo": "",
+    "url": "https://live.helpcenter24.ru/hls/stream.m3u8",
     "chno": 294
   },
   {
-    "name": "Porto Canal",
-    "group": "Desporto",
-    "tvg_id": "PortoCanal.pt@HD",
-    "tvg_name": "Porto Canal",
-    "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Porto-Canal.png",
-    "url": "https://pull-live-156-1.global.ssl.fastly.net/pc5865dc25400thmb-ea6bf03b14fa318f7133/pc1-jhrgyuoqe5865db-68tkgb14fa318f7133f03.smil/playlist.m3u8",
-    "chno": 295,
-    "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-    "http_origin": "https://portocanal.sapo.pt",
-    "http_referrer": "https://portocanal.sapo.pt/"
-  },
-  {
-    "name": "Real Madrid TV (English)",
-    "group": "Desporto",
-    "tvg_id": "RealMadridTVEnglish.es",
-    "tvg_name": "Real Madrid TV",
-    "logo": "https://i.imgur.com/5pMo7dL.png",
-    "url": "http://88.212.15.19/live/real_madrid_tv/index.m3u8",
-    "chno": 296
+    "name": "Unife TV Chile",
+    "group": "Religião",
+    "tvg_id": "UnifeTV.cl",
+    "tvg_name": "Unife TV Chile",
+    "logo": "",
+    "url": "https://cdn.mycloudstream.io/hls/live/broadcast/pcr5miau/index.m3u8",
+    "chno": 295
   },
   {
     "name": "GamesDoneQuick (GDQ)",
