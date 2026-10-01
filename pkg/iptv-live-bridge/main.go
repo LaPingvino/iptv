@@ -220,7 +220,7 @@ func main() {
 			json.NewEncoder(w).Encode(map[string]any{
 				"status":    "ok",
 				"service":   "iptv-live-bridge",
-				"version":   "4.4.22",
+				"version":   "4.4.23",
 				"runtime":   "go",
 				"timestamp": time.Now().Format(time.RFC3339),
 			})
@@ -324,6 +324,12 @@ func main() {
 			w.Header().Set("Access-Control-Allow-Origin", "*")
 			w.Header().Set("Cache-Control", "no-cache, must-revalidate")
 			w.Write(data)
+			return
+		}
+
+		// 4b2. Kick channels (/iptv/kick/<channel>), e.g. TV Sucesso
+		if ch, ok := strings.CutPrefix(path, "kick/"); ok && ch != "" {
+			serveKick(w, r, strings.TrimSuffix(ch, ".m3u8"))
 			return
 		}
 

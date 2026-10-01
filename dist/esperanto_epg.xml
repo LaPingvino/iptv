@@ -2647,4 +2647,14 @@
     <desc lang="eo">Gaja vespero antaŭ la reveno hejmen.</desc>
     <category lang="eo">Kurso / Komedio</category>
   </programme>
+  <programme start="20261004221650 +0000" stop="20261004221700 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261004221700 +0000" stop="20261004224540 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 15: Gajni plej gravas</title>
+    <desc lang="eo">La granda antaŭ-finala konkurso.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
 </tv>

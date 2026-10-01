@@ -132,6 +132,24 @@
     "chno": 23
   },
   {
+    "name": "TVM Internacional",
+    "group": "MZ Geral",
+    "tvg_id": "TVMInternacional.mz",
+    "tvg_name": "TVM Internacional",
+    "logo": "",
+    "url": "https://stream.tvm.co.mz/hls/tvmi/playlist.m3u8",
+    "chno": 24
+  },
+  {
+    "name": "TV Sucesso (Moçambique)",
+    "group": "MZ Geral",
+    "tvg_id": "TVSucesso.mz",
+    "tvg_name": "TV Sucesso",
+    "logo": "",
+    "url": "https://kiefte.eu/iptv/kick/tvsucesso",
+    "chno": 25
+  },
+  {
     "name": "RTP 3",
     "group": "Notícias",
     "tvg_id": "RTP3.pt",

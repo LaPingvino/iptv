@@ -62,6 +62,12 @@ https://www.khuwemultimedia.com/hls/mntv/mntv.m3u8
 #EXTINF:-1 tvg-id="Miramar.mz" tvg-name="TV Miramar" tvg-logo="https://digitalrmapps.fra1.cdn.digitaloceanspaces.com/images/radios/miramar_icon.png" group-title="MZ Geral" tvg-chno="23",TV Miramar (Moçambique)
 https://cdn.mycloudstream.io/hls/live/broadcast/8xdonf9w/index.m3u8?sid=239
 
+#EXTINF:-1 tvg-id="TVMInternacional.mz" tvg-name="TVM Internacional" group-title="MZ Geral" tvg-chno="24",TVM Internacional
+https://stream.tvm.co.mz/hls/tvmi/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TVSucesso.mz" tvg-name="TV Sucesso" group-title="MZ Geral" tvg-chno="25",TV Sucesso (Moçambique)
+https://kiefte.eu/iptv/kick/tvsucesso
+
 #EXTINF:-1 tvg-id="RTP3.pt" tvg-name="RTP 3" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP3.png" group-title="Notícias" tvg-chno="30",RTP 3
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
 #EXTVLCOPT:http-origin=https://www.rtp.pt
