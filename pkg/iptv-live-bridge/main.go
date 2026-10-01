@@ -220,7 +220,7 @@ func main() {
 			json.NewEncoder(w).Encode(map[string]any{
 				"status":    "ok",
 				"service":   "iptv-live-bridge",
-				"version":   "4.4.23",
+				"version":   "4.4.24",
 				"runtime":   "go",
 				"timestamp": time.Now().Format(time.RFC3339),
 			})

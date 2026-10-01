@@ -60,13 +60,12 @@ GROUP_BASE_CHNO = {
     "ES Regional & Local": 110,
     "Filmes & Docs": 150,
     "Sci-Fi & Cult Retro": 170,
-    "Natureza & Slow TV": 185,
-    "Desporto": 195,
-    "Infantil & Kids": 205,
+    "Natureza & Slow TV": 180,
+    "Desporto": 190,
+    "Infantil & Kids": 200,
     "Música & Video": 220,
     "Cívico & Parlamento": 270,
-    "Religião": 285,
-    "Persa / Farsi": 295,
+    "Religião": 280,
     
     # 🎮 Gaming & Twitch Streams (400 - 499)
     "Events & Marathons": 400,

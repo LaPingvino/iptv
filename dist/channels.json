@@ -1218,7 +1218,7 @@
     "tvg_name": "Bob Ross",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bob_Ross_The_Joy_of_Painting_logo.svg/512px-Bob_Ross_The_Joy_of_Painting_logo.svg.png",
     "url": "https://kiefte.eu/iptv/twitch/bobross",
-    "chno": 185
+    "chno": 180
   },
   {
     "name": "Lofi Girl (24/7 Relaxing Beats \u0026 Ambience 1080p)",
@@ -1227,7 +1227,7 @@
     "tvg_name": "Lofi Girl",
     "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Lofi_girl_logo.jpg/512px-Lofi_girl_logo.jpg",
     "url": "https://kiefte.eu/iptv/twitch/lofigirl",
-    "chno": 186
+    "chno": 181
   },
   {
     "name": "Relax Beats \u0026 Chill Music (24/7 HD)",
@@ -1236,7 +1236,7 @@
     "tvg_name": "Relax Beats",
     "logo": "",
     "url": "https://kiefte.eu/iptv/twitch/relaxbeats",
-    "chno": 187
+    "chno": 182
   },
   {
     "name": "LeekBeats (24/7 Anime Lofi \u0026 Study Beats 1080p)",
@@ -1245,7 +1245,7 @@
     "tvg_name": "LeekBeats",
     "logo": "https://static-cdn.jtvnw.net/jtv_user_pictures/1e46777d-69dd-48da-9f49-4aa749f412f6-profile_image-300x300.png",
     "url": "https://kiefte.eu/iptv/twitch/leekbeats",
-    "chno": 188
+    "chno": 183
   },
   {
     "name": "NASA Live (Earth from Space \u0026 ISS 1080p)",
@@ -1254,7 +1254,7 @@
     "tvg_name": "NASA Live",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/512px-NASA_logo.svg.png",
     "url": "https://kiefte.eu/iptv/twitch/nasa",
-    "chno": 189
+    "chno": 184
   },
   {
     "name": "WildEarth (24/7 Live Safari \u0026 Wildlife 1080p)",
@@ -1263,7 +1263,7 @@
     "tvg_name": "WildEarth",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/WildEarth_logo.svg/512px-WildEarth_logo.svg.png",
     "url": "https://wildearth-adsfree-ono.amagi.tv/playlist.m3u8",
-    "chno": 190
+    "chno": 185
   },
   {
     "name": "Adventure Earth (1080p Full HD)",
@@ -1272,7 +1272,7 @@
     "tvg_name": "Adventure Earth",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Earth_symbol_%28bold%29.svg/512px-Earth_symbol_%28bold%29.svg.png",
     "url": "https://autentic-adventure-earth-1-gb.samsung.wurl.tv/playlist.m3u8",
-    "chno": 191
+    "chno": 186
   },
   {
     "name": "3Cat Càmeres del Temps (Weather Cams)",
@@ -1281,7 +1281,7 @@
     "tvg_name": "3Cat Càmeres del Temps",
     "logo": "https://i.imgur.com/zXy2kbe.png",
     "url": "https://directes-tv-int.3catdirectes.cat/live-content/beauties-hls/master.m3u8",
-    "chno": 192
+    "chno": 187
   },
   {
     "name": "FIFA+",
@@ -1290,7 +1290,7 @@
     "tvg_name": "FIFA+",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/FIFA-Plus.png",
     "url": "https://f7ccf7fc.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLXB0X0ZJRkFQbHVzUG9ydHVndWVzZV9ITFM/playlist.m3u8",
-    "chno": 195
+    "chno": 190
   },
   {
     "name": "Red Bull TV",
@@ -1299,7 +1299,7 @@
     "tvg_name": "Red Bull TV",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Red-Bull-TV.png",
     "url": "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8",
-    "chno": 196
+    "chno": 191
   },
   {
     "name": "SuperTennis",
@@ -1308,7 +1308,7 @@
     "tvg_name": "SuperTennis",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SuperTennis.png",
     "url": "https://live-embed.supertennix.hiway.media/restreamer/supertennix_client/gpu-a-c0-16/restreamer/outgest/aa3673f1-e178-44a9-a947-ef41db73211a/manifest.m3u8",
-    "chno": 197
+    "chno": 192
   },
   {
     "name": "Motorvision",
@@ -1317,7 +1317,7 @@
     "tvg_name": "Motorvision",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Motorvision.png",
     "url": "https://mvg-mv-xumo.otteravision.com/mvg/mv/mv.m3u8",
-    "chno": 198
+    "chno": 193
   },
   {
     "name": "Nautical Channel",
@@ -1326,7 +1326,7 @@
     "tvg_name": "Nautical Channel",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Nautical-Channel.png",
     "url": "https://streams2.sofast.tv/vglive-sk-231198/index.m3u8",
-    "chno": 199
+    "chno": 194
   },
   {
     "name": "Porto Canal",
@@ -1335,7 +1335,7 @@
     "tvg_name": "Porto Canal",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Porto-Canal.png",
     "url": "https://pull-live-156-1.global.ssl.fastly.net/pc5865dc25400thmb-ea6bf03b14fa318f7133/pc1-jhrgyuoqe5865db-68tkgb14fa318f7133f03.smil/playlist.m3u8",
-    "chno": 200,
+    "chno": 195,
     "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     "http_origin": "https://portocanal.sapo.pt",
     "http_referrer": "https://portocanal.sapo.pt/"
@@ -1347,7 +1347,7 @@
     "tvg_name": "Real Madrid TV",
     "logo": "https://i.imgur.com/5pMo7dL.png",
     "url": "http://88.212.15.19/live/real_madrid_tv/index.m3u8",
-    "chno": 201
+    "chno": 196
   },
   {
     "name": "Classic Toons 24/7 (Tom \u0026 Jerry / Looney Tunes)",
@@ -1356,7 +1356,7 @@
     "tvg_name": "Classic Toons",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tom_and_Jerry_logo.svg/512px-Tom_and_Jerry_logo.svg.png",
     "url": "https://live20.bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8",
-    "chno": 205
+    "chno": 200
   },
   {
     "name": "Mr. Bean Animado (1080p)",
@@ -1365,7 +1365,7 @@
     "tvg_name": "Mr. Bean Animado",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Mr_Bean_Animated_logo.svg/512px-Mr_Bean_Animated_logo.svg.png",
     "url": "https://amg00627-amg00627c30-rakuten-es-3990.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanescc-rakutenes/playlist.m3u8",
-    "chno": 206
+    "chno": 201
   },
   {
     "name": "RTVE Clan (1080p)",
@@ -1374,7 +1374,7 @@
     "tvg_name": "Clan",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Clan_RTVE_logo.svg/512px-Clan_RTVE_logo.svg.png",
     "url": "https://rtve01p.origin.c21livecloud.com/live-origin/clan-hls/bitrate_1.m3u8",
-    "chno": 207
+    "chno": 202
   },
   {
     "name": "Reino Infantil TV (Moçambique 1080p)",
@@ -1383,7 +1383,7 @@
     "tvg_name": "Reino Infantil TV",
     "logo": "",
     "url": "https://www.khuwemultimedia.com/hls/reinoinfantiltv/reinoinfantiltv.m3u8",
-    "chno": 208
+    "chno": 203
   },
   {
     "name": "Toon Goggles Junior (720p HD)",
@@ -1392,7 +1392,7 @@
     "tvg_name": "Toon Goggles Junior",
     "logo": "",
     "url": "https://d3i6upqaqzosi1.cloudfront.net/tg/jr_us/tg_jr_us.m3u8",
-    "chno": 209
+    "chno": 204
   },
   {
     "name": "Kartoon Channel! (720p HD)",
@@ -1401,7 +1401,7 @@
     "tvg_name": "Kartoon Channel!",
     "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Kartoon_Channel%21_logo.png/512px-Kartoon_Channel%21_logo.png",
     "url": "https://d2z0ysa6dgxhlc.cloudfront.net/kchan.m3u8",
-    "chno": 210
+    "chno": 205
   },
   {
     "name": "DuckTV (Toddlers \u0026 Visual Animation HD)",
@@ -1410,7 +1410,7 @@
     "tvg_name": "DuckTV",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Ducktv_logo.png/512px-Ducktv_logo.png",
     "url": "https://d6lk10bkdgfae.cloudfront.net/playlist.m3u8",
-    "chno": 211
+    "chno": 206
   },
   {
     "name": "HappyKids (1080p Full HD)",
@@ -1419,7 +1419,7 @@
     "tvg_name": "HappyKids",
     "logo": "",
     "url": "https://dil9xdvretp0f.cloudfront.net/index.m3u8",
-    "chno": 212
+    "chno": 207
   },
   {
     "name": "Lego Channel (Animation HD)",
@@ -1428,7 +1428,7 @@
     "tvg_name": "Lego Channel",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/512px-LEGO_logo.svg.png",
     "url": "https://dltiqboxjw21d.cloudfront.net/index.m3u8",
-    "chno": 213
+    "chno": 208
   },
   {
     "name": "KiKa (HD • ARD/ZDF Kinderkanal)",
@@ -1437,7 +1437,7 @@
     "tvg_name": "KiKa",
     "logo": "https://i.imgur.com/vZdNp5S.png",
     "url": "https://kiefte.eu/iptv/kika.m3u8",
-    "chno": 214
+    "chno": 209
   },
   {
     "name": "Persiana Junior",
@@ -1446,7 +1446,7 @@
     "tvg_name": "Persiana Junior",
     "logo": "https://i.imgur.com/zeKHZYG.png",
     "url": "https://junhls.persiana.live/hls/stream.m3u8",
-    "chno": 215
+    "chno": 210
   },
   {
     "name": "ON FM (Visual Radio)",
@@ -1906,7 +1906,7 @@
     "tvg_name": "TV Maná Moçambique",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-Mocambique.png",
     "url": "https://w2.manasat.com/tvmana-mz/smil:tvmana-mz.smil/playlist.m3u8",
-    "chno": 285
+    "chno": 280
   },
   {
     "name": "TV Maná 1 (PT)",
@@ -1915,7 +1915,7 @@
     "tvg_name": "TV Maná 1",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-1.png",
     "url": "https://w1.manasat.com/tvmana-1/smil:tvmana-1.smil/playlist.m3u8",
-    "chno": 286
+    "chno": 281
   },
   {
     "name": "TV Maná 2 (PT)",
@@ -1924,7 +1924,7 @@
     "tvg_name": "TV Maná 2",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-2.png",
     "url": "https://w1.manasat.com/tvmana-2/smil:tvmana-2.smil/playlist.m3u8",
-    "chno": 287
+    "chno": 282
   },
   {
     "name": "Kuriakos TV",
@@ -1933,7 +1933,7 @@
     "tvg_name": "Kuriakos TV",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Kuriakos-TV.png",
     "url": "https://w1.manasat.com/ktv/ktv.smil/playlist.m3u8",
-    "chno": 288
+    "chno": 283
   },
   {
     "name": "Canção Nova Portugal",
@@ -1942,7 +1942,7 @@
     "tvg_name": "Canção Nova",
     "logo": "https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Cancao-Nova.png",
     "url": "https://5c65286fc6ace.streamlock.net/cancaonova/CancaoNova.stream_720p/playlist.m3u8",
-    "chno": 289
+    "chno": 284
   },
   {
     "name": "Bahá'í Studio Sessions TV (24/7 Devotional Music)",
@@ -1951,7 +1951,7 @@
     "tvg_name": "Bahá'í Studio Sessions TV",
     "logo": "",
     "url": "https://kiefte.eu/iptv/bahai/tv",
-    "chno": 290
+    "chno": 285
   },
   {
     "name": "Iran Jewish TV",
@@ -1960,7 +1960,7 @@
     "tvg_name": "Iran Jewish TV",
     "logo": "https://i.ibb.co/JWXs7csN/en.png",
     "url": "http://iran620.com:1935/live/IranJewishTv/playlist.m3u8",
-    "chno": 291
+    "chno": 286
   },
   {
     "name": "ADB TV",
@@ -1969,7 +1969,7 @@
     "tvg_name": "ADB TV",
     "logo": "https://i.ibb.co/HGfTJwt/ADBTV.jpg",
     "url": "https://live-tv.waytv.pt/adbtv/adbtv/playlist.m3u8",
-    "chno": 292
+    "chno": 287
   },
   {
     "name": "UNIFE TV Portugal",
@@ -1978,7 +1978,7 @@
     "tvg_name": "UNIFE TV Portugal",
     "logo": "",
     "url": "https://view.dacast.com/24b61c472d976075ed46ad1eb530e6ae-live-fdc85437d7631afb59fe3767dcc464dd/adaptive.m3u8",
-    "chno": 293
+    "chno": 288
   },
   {
     "name": "TV Universal Argentina",
@@ -1987,7 +1987,7 @@
     "tvg_name": "TV Universal Argentina",
     "logo": "",
     "url": "https://cdn.mycloudstream.io/hls/live/broadcast/xundwjvp/index.m3u8",
-    "chno": 294
+    "chno": 289
   },
   {
     "name": "TV Universal Perú",
@@ -1996,7 +1996,7 @@
     "tvg_name": "TV Universal Perú",
     "logo": "",
     "url": "https://cdn.mycloudstream.io/hls/live/broadcast/ic1frrzz/index.m3u8",
-    "chno": 295
+    "chno": 290
   },
   {
     "name": "TV Universal Ecuador",
@@ -2005,7 +2005,7 @@
     "tvg_name": "TV Universal Ecuador",
     "logo": "",
     "url": "https://cdn.mycloudstream.io/hls/live/broadcast/uwcedjt2/index.m3u8",
-    "chno": 296
+    "chno": 291
   },
   {
     "name": "Red Aleluya Uruguay",
@@ -2014,7 +2014,7 @@
     "tvg_name": "Red Aleluya Uruguay",
     "logo": "",
     "url": "https://stream.universal.org.uy/hls/stream.m3u8",
-    "chno": 297
+    "chno": 292
   },
   {
     "name": "UNIFE TV",
@@ -2023,7 +2023,7 @@
     "tvg_name": "UNIFE TV",
     "logo": "",
     "url": "https://cdn.mycloudstream.io/hls/live/broadcast/pgv5kerk/index.m3u8",
-    "chno": 298
+    "chno": 293
   },
   {
     "name": "Vera TV (Вера ТВ)",
@@ -2032,7 +2032,7 @@
     "tvg_name": "Vera TV",
     "logo": "",
     "url": "https://live.helpcenter24.ru/hls/stream.m3u8",
-    "chno": 299
+    "chno": 294
   },
   {
     "name": "Unife TV Chile",
@@ -2041,7 +2041,7 @@
     "tvg_name": "Unife TV Chile",
     "logo": "",
     "url": "https://cdn.mycloudstream.io/hls/live/broadcast/pcr5miau/index.m3u8",
-    "chno": 300
+    "chno": 295
   },
   {
     "name": "GamesDoneQuick (GDQ)",
