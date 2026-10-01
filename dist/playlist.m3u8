@@ -395,318 +395,318 @@ https://5c0956165db0b.streamlock.net/ftv/directo/.m3u8
 #EXTINF:-1 tvg-id="LancelotTV.es" tvg-name="Lancelot TV" tvg-logo="https://i.imgur.com/RlzVIJP.png" group-title="ES Regional & Local" tvg-chno="165",Lancelot TV (Lanzarote)
 https://5c0956165db0b.streamlock.net:8090/directo/_definst_/lancelot.television/master.m3u8
 
-#EXTINF:-1 tvg-id="DasErste.de" tvg-name="Das Erste" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Das-Erste.png" group-title="Filmes & Docs" tvg-chno="170",Das Erste (ARD Germany)
+#EXTINF:-1 tvg-id="ARTV.pt" tvg-name="ARTV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/AR-TV.png" group-title="Cívico & Parlamento" tvg-chno="170",ARTV (Canal Parlamento PT)
+#EXTVLCOPT:http-user-agent="Mozilla/5.0"
+https://playout175.livextend.cloud/livenlin4/_definst_/2liveartvpub2/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TweedeKamerPlenair.nl" tvg-name="Tweede Kamer Plenair" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png" group-title="Cívico & Parlamento" tvg-chno="171",Tweede Kamer: Plenaire zaal (NL)
+https://livestreaming.b67buv2.tweedekamer.nl/live/plenairezaal/index.m3u8?hd=1&keyframes=1&subtitles=live
+
+#EXTINF:-1 tvg-id="TweedeKamerTroelstra.nl" tvg-name="Tweede Kamer Troelstrazaal" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png" group-title="Cívico & Parlamento" tvg-chno="172",Tweede Kamer: Troelstrazaal (NL)
+https://livestreaming.b67buv2.tweedekamer.nl/live/troelstrazaal/index.m3u8?hd=1&keyframes=1&subtitles=live
+
+#EXTINF:-1 tvg-id="TweedeKamerThorbecke.nl" tvg-name="Tweede Kamer Thorbeckezaal" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png" group-title="Cívico & Parlamento" tvg-chno="173",Tweede Kamer: Thorbeckezaal (NL)
+https://livestreaming.b67buv2.tweedekamer.nl/live/thorbeckezaal/index.m3u8?hd=1&keyframes=1&subtitles=live
+
+#EXTINF:-1 tvg-id="TweedeKamerGroen.nl" tvg-name="Tweede Kamer Groen van Prinstererzaal" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png" group-title="Cívico & Parlamento" tvg-chno="174",Tweede Kamer: Groen van Prinstererzaal (NL)
+https://livestreaming.b67buv2.tweedekamer.nl/live/groenvanprinstererzaal/index.m3u8?hd=1&keyframes=1&subtitles=live
+
+#EXTINF:-1 tvg-id="EbS1.eu@HD" tvg-name="Europe by Satellite" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/ebs.png" group-title="Cívico & Parlamento" tvg-chno="175",Europe by Satellite (EbS 1)
+https://streams.prd.commavservices.eu/live/ebs/index.m3u8
+
+#EXTINF:-1 tvg-id="EbS2.eu@HD" tvg-name="Europe by Satellite Plus" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/ebs_plus.png" group-title="Cívico & Parlamento" tvg-chno="176",Europe by Satellite+ (EbS+)
+https://streams.prd.commavservices.eu/live/ebsplus/index.m3u8
+
+#EXTINF:-1 tvg-id="phoenix.de@HD" tvg-name="Phoenix" tvg-logo="https://i.imgur.com/T1532t9.png" group-title="Cívico & Parlamento" tvg-chno="177",Phoenix (HD • Parlamento & Debates DE)
+https://kiefte.eu/iptv/phoenix.m3u8
+
+#EXTINF:-1 tvg-id="CanalParlamento.es" tvg-name="Canal Parlamento" tvg-logo="https://i.imgur.com/BUO0wH6.png" group-title="Cívico & Parlamento" tvg-chno="178",Canal Parlamento (Congreso ES)
+https://congresodirecto.akamaized.net/hls/live/2037973/canalparlamento/master.m3u8
+
+#EXTINF:-1 tvg-id="TVManaMZ.mz" tvg-name="TV Maná Moçambique" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-Mocambique.png" group-title="Religião" tvg-chno="180",TV Maná Moçambique
+https://w2.manasat.com/tvmana-mz/smil:tvmana-mz.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TVMana1.pt@HD" tvg-name="TV Maná 1" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-1.png" group-title="Religião" tvg-chno="181",TV Maná 1 (PT)
+https://w1.manasat.com/tvmana-1/smil:tvmana-1.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TVMana2.pt@HD" tvg-name="TV Maná 2" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-2.png" group-title="Religião" tvg-chno="182",TV Maná 2 (PT)
+https://w1.manasat.com/tvmana-2/smil:tvmana-2.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="KuriakosTV.pt@HD" tvg-name="Kuriakos TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Kuriakos-TV.png" group-title="Religião" tvg-chno="183",Kuriakos TV
+https://w1.manasat.com/ktv/ktv.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="CancaoNova.pt@HD" tvg-name="Canção Nova" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Cancao-Nova.png" group-title="Religião" tvg-chno="184",Canção Nova Portugal
+https://5c65286fc6ace.streamlock.net/cancaonova/CancaoNova.stream_720p/playlist.m3u8
+
+#EXTINF:-1 tvg-id="BahaiStudioSessions.tv@HD" tvg-name="Bahá'í Studio Sessions TV" group-title="Religião" tvg-chno="185",Bahá'í Studio Sessions TV (24/7 Devotional Music)
+https://kiefte.eu/iptv/bahai/tv
+
+#EXTINF:-1 tvg-id="IranJewishTV.ir" tvg-name="Iran Jewish TV" tvg-logo="https://i.ibb.co/JWXs7csN/en.png" group-title="Religião" tvg-chno="186",Iran Jewish TV
+http://iran620.com:1935/live/IranJewishTv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="ADBTV.pt" tvg-name="ADB TV" tvg-logo="https://i.ibb.co/HGfTJwt/ADBTV.jpg" group-title="Religião" tvg-chno="187",ADB TV
+https://live-tv.waytv.pt/adbtv/adbtv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="UnifeTV.pt" tvg-name="UNIFE TV Portugal" group-title="Religião" tvg-chno="188",UNIFE TV Portugal
+https://view.dacast.com/24b61c472d976075ed46ad1eb530e6ae-live-fdc85437d7631afb59fe3767dcc464dd/adaptive.m3u8
+
+#EXTINF:-1 tvg-id="TVUniversal.ar" tvg-name="TV Universal Argentina" group-title="Religião" tvg-chno="189",TV Universal Argentina
+https://cdn.mycloudstream.io/hls/live/broadcast/xundwjvp/index.m3u8
+
+#EXTINF:-1 tvg-id="TVUniversal.pe" tvg-name="TV Universal Perú" group-title="Religião" tvg-chno="190",TV Universal Perú
+https://cdn.mycloudstream.io/hls/live/broadcast/ic1frrzz/index.m3u8
+
+#EXTINF:-1 tvg-id="TVUniversal.ec" tvg-name="TV Universal Ecuador" group-title="Religião" tvg-chno="191",TV Universal Ecuador
+https://cdn.mycloudstream.io/hls/live/broadcast/uwcedjt2/index.m3u8
+
+#EXTINF:-1 tvg-id="RedAleluya.uy" tvg-name="Red Aleluya Uruguay" group-title="Religião" tvg-chno="192",Red Aleluya Uruguay
+https://stream.universal.org.uy/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="UnifeTV.int" tvg-name="UNIFE TV" group-title="Religião" tvg-chno="193",UNIFE TV
+https://cdn.mycloudstream.io/hls/live/broadcast/pgv5kerk/index.m3u8
+
+#EXTINF:-1 tvg-id="VeraTV.ru" tvg-name="Vera TV" group-title="Religião" tvg-chno="194",Vera TV (Вера ТВ)
+https://live.helpcenter24.ru/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="UnifeTV.cl" tvg-name="Unife TV Chile" group-title="Religião" tvg-chno="195",Unife TV Chile
+https://cdn.mycloudstream.io/hls/live/broadcast/pcr5miau/index.m3u8
+
+#EXTINF:-1 tvg-id="ONFM.pt" tvg-name="ON FM" tvg-logo="https://onfmwordpressfiles.ams3.digitaloceanspaces.com/wp-content/uploads/2023/03/17130121/logo-on-fm.png" group-title="Música & Video" tvg-chno="200",ON FM (Visual Radio)
+https://5ce9406b73c33.streamlock.net/ONFM/livestream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="RadioSines.pt" tvg-name="Rádio Sines" tvg-logo="https://i.imgur.com/Oe6F1nL.png" group-title="Música & Video" tvg-chno="201",Rádio Sines (Visual Radio)
+https://load-balancer.azotosolutions.com/cdnedge19/smil:live19.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="RFPtv.pt" tvg-name="RFPtv" tvg-logo="https://i.imgur.com/I60nQuR.png" group-title="Música & Video" tvg-chno="202",RFPtv (Rádio do Folclore de Portugal)
+https://video03.logicahost.com.br/rfptv/rfptv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="KuriakosMusic.pt" tvg-name="Kuriakos Music" tvg-logo="https://i.imgur.com/Zl40NYi.jpg" group-title="Música & Video" tvg-chno="203",Kuriakos Music
+https://w2.manasat.com/kmusic/kmusic.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Qmusic.nl" tvg-name="Qmusic NL Visual" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Qmusic_logo_2019.svg/512px-Qmusic_logo_2019.svg.png" group-title="Música & Video" tvg-chno="204",Qmusic NL Kijk Live (Visual Radio)
+https://stream.qmusic.nl/qmusic/videohls.m3u8
+
+#EXTINF:-1 tvg-id="Radio350.nl" tvg-name="Radio 350" tvg-logo="https://i.imgur.com/3nkzXup.png" group-title="Música & Video" tvg-chno="205",Radio 350 (Visual Radio)
+https://stream.radio350.nl/hls/radio350.m3u8
+
+#EXTINF:-1 tvg-id="StudioBrussel.be" tvg-name="Studio Brussel Visual" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="Música & Video" tvg-chno="206",Studio Brussel (Visual Radio)
+https://live.vrtcdn.be/groupb/live/450aa9d1-7173-47f3-aaaa-9701426f8ddd/live.isml/live.m3u8
+
+#EXTINF:-1 tvg-id="MNM.be" tvg-name="MNM Visual" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/03/Logo-MNM.svg" group-title="Música & Video" tvg-chno="207",MNM Kijk Live (Visual Radio)
+https://live.vrtcdn.be/groupa/live/1718328a-5c53-410d-87ec-d8db68124cfc/live.isml/live.m3u8
+
+#EXTINF:-1 tvg-id="DeluxeMusic.de@HD" tvg-name="DELUXE MUSIC" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Deluxe_Music_2013_Logo.svg/512px-Deluxe_Music_2013_Logo.svg.png" group-title="Música & Video" tvg-chno="208",DELUXE MUSIC
+https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8
+
+#EXTINF:-1 tvg-id="DeluxeDance.de" tvg-name="DELUXE DANCE" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Deluxe_Music_2013_Logo.svg/512px-Deluxe_Music_2013_Logo.svg.png" group-title="Música & Video" tvg-chno="209",DELUXE DANCE by Kontor
+https://sdn-global-live-streaming-packager-cache.3qsdn.com/64733/64733_264_live.m3u8
+
+#EXTINF:-1 tvg-id="DeluxeRap.de" tvg-name="DELUXE RAP" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Deluxe_Music_2013_Logo.svg/512px-Deluxe_Music_2013_Logo.svg.png" group-title="Música & Video" tvg-chno="210",DELUXE RAP
+https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.m3u8
+
+#EXTINF:-1 tvg-id="DanceTV.nl" tvg-name="Dance TV" group-title="Música & Video" tvg-chno="211",Dance TV
+https://m1b2.worldcast.tv/dancetelevisionone/2/dancetelevisionone.m3u8
+
+#EXTINF:-1 tvg-id="DanceTVDeepHouse.nl@HD" tvg-name="DanceTV Deep House" group-title="Música & Video" tvg-chno="212",DanceTV Deep House District (Sunset & Melodic 1080p)
+https://m1b2.worldcast.tv/dancetelevisiontwo/dancetelevisiontwo.m3u8
+
+#EXTINF:-1 tvg-id="TraceUrban.fr@HD" tvg-name="Trace Urban" tvg-logo="https://i.imgur.com/DLIbUMx.png" group-title="Música & Video" tvg-chno="213",Trace Urban (1080p)
+https://channels.trace.plus/Traceprod/URBAN_INTER_hd/index.m3u8
+
+#EXTINF:-1 tvg-id="TraceToca.fr@HD" tvg-name="Trace Toca" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Toca.png" group-title="Música & Video" tvg-chno="214",Trace Toca (Kizomba / Zouk / PALOP)
+https://channels.trace.plus/Traceprod/TOCA_hd/index.m3u8
+
+#EXTINF:-1 tvg-id="TraceAfrica.fr@HD" tvg-name="Trace Africa" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Africa.png" group-title="Música & Video" tvg-chno="215",Trace Africa
+https://channels.trace.plus/Traceprod/AFRICA_FR_hd/index.m3u8
+
+#EXTINF:-1 tvg-id="TraceBrazuca.br@HD" tvg-name="Trace Brasil" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Brazuca.png" group-title="Música & Video" tvg-chno="216",Trace Brasil
+https://amg01131-tracetv-tracebrazuca-xiaomi-vvr19.amagi.tv/playlist/amg01131-tracetv-tracebrazuca-xiaomi/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TraceNaija.ng@HD" tvg-name="Trace Naija" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Naija.png" group-title="Música & Video" tvg-chno="217",Trace Naija (Afrobeats)
+https://channels.trace.plus/Traceprod/NAIJA_hd/index.m3u8
+
+#EXTINF:-1 tvg-id="TraceKitoko.fr@HD" tvg-name="Trace Kitoko" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Kitoko.png" group-title="Música & Video" tvg-chno="218",Trace Kitoko (Lingala / Central Africa)
+https://channels.trace.plus/Traceprod/KITOKO_hd/index.m3u8
+
+#EXTINF:-1 tvg-id="TraceMziki.ke@HD" tvg-name="Trace Miziki" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Miziki.png" group-title="Música & Video" tvg-chno="219",Trace Miziki (East Africa)
+https://channels.trace.plus/Traceprod/MZIKI_hd/index.m3u8
+
+#EXTINF:-1 tvg-id="TraceLatina.fr@HD" tvg-name="Trace Latina" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Latina.png" group-title="Música & Video" tvg-chno="220",Trace Latina
+https://channels.trace.plus/Traceprod/LATINA_hd/index.m3u8
+
+#EXTINF:-1 tvg-id="TraceUK.uk@HD" tvg-name="Trace UK" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-UK.png" group-title="Música & Video" tvg-chno="221",Trace UK
+https://channels.trace.plus/Traceprod/UK_FAST_hd/index.m3u8
+
+#EXTINF:-1 tvg-id="TraceGospel.fr@HD" tvg-name="Trace Gospel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Gospel.png" group-title="Música & Video" tvg-chno="222",Trace Gospel
+https://channels.trace.plus/Traceprod/GOSPEL_FR/.m3u8
+
+#EXTINF:-1 tvg-id="XITE.nl@HD" tvg-name="XITE" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.png" group-title="Música & Video" tvg-chno="223",XITE
+https://xite-rakuten.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="XITEHitsDE.de@HD" tvg-name="XITE Hits Germany" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.png" group-title="Música & Video" tvg-chno="224",XITE Hits Germany
+https://d726x48n2pd5h.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-skxr1pazhltvp/XITE_Hits.m3u8
+
+#EXTINF:-1 tvg-id="4FunTV.pl@HD" tvg-name="4Fun TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/4Fun-TV.png" group-title="Música & Video" tvg-chno="225",4Fun.TV
+https://stream.4fun.tv:8888/sd/4fun_sd_high.m3u8
+
+#EXTINF:-1 tvg-id="DeeJayTV.it@HD" tvg-name="DeeJay TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/DeeJay-TV.png" group-title="Música & Video" tvg-chno="226",DeeJay TV
+https://streamcdng5-4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S85984808/sMO0tz9Sr2Rk/playlist.m3u8
+
+#EXTINF:-1 tvg-id="NRG91TV.gr@HD" tvg-name="NRG 91 TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/NRG-91-TV.png" group-title="Música & Video" tvg-chno="227",NRG 91 TV
+http://tv.nrg91.gr:1935/onweb/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="FMItaliaTV.it@HD" tvg-name="FM Italia TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/FM-Italia-TV.png" group-title="Música & Video" tvg-chno="228",FM Italia TV
+https://stream1.xdevel.com/video0s975817-1182/stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="CaliforniaMusicChannel.us@HD" tvg-name="California Music Channel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/California-Music-Channel.png" group-title="Música & Video" tvg-chno="229",California Music Channel
+https://cmc-cmctv-cineverse.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="KpopTVPlay.kr@HD" tvg-name="KpopTV Play" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/KpopTV-Play.png" group-title="Música & Video" tvg-chno="230",KpopTV Play
+https://183.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Monstercat.tv@HD" tvg-name="Monstercat" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Monstercat_logo.svg/512px-Monstercat_logo.svg.png" group-title="Música & Video" tvg-chno="231",Monstercat (24/7 Electronic Music HD)
+https://kiefte.eu/iptv/twitch/monstercat
+
+#EXTINF:-1 tvg-id="Insomniac.tv@HD" tvg-name="Insomniac Events" group-title="Música & Video" tvg-chno="232",Insomniac (24/7 EDM Festival TV)
+https://kiefte.eu/iptv/twitch/insomniac
+
+#EXTINF:-1 tvg-id="KissKissTV.it@HD" tvg-name="Radio Kiss Kiss TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Radio_Kiss_Kiss_logo.svg/512px-Radio_Kiss_Kiss_logo.svg.png" group-title="Música & Video" tvg-chno="233",Radio Kiss Kiss TV (Visual Radio 1080p)
+https://58f12ffd2447a.streamlock.net/KKMulti/livestream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="HypeVisualRadio.tv@HD" tvg-name="Hype Visual Radio" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/DJ_mixer_icon.svg/512px-DJ_mixer_icon.svg.png" group-title="Música & Video" tvg-chno="234",Hype Visual Radio (1080p Studio Cam)
+https://streammix.alsolnet.com/hyperadio/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="PMC.ae" tvg-name="PMC (Persian Music Channel)" tvg-logo="https://i.imgur.com/AbrHI7K.png" group-title="Música & Video" tvg-chno="235",PMC (Persian Music Channel)
+https://pmchls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="PMCRoyale.ae" tvg-name="PMC Royale" group-title="Música & Video" tvg-chno="236",PMC Royale
+https://pmcrohls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="RJTV.us" tvg-name="RJTV" tvg-logo="https://i.imgur.com/a1zuW2C.png" group-title="Música & Video" tvg-chno="237",RJTV
+https://rjtvhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="PersianaFolk.fr" tvg-name="Persiana Folk" group-title="Música & Video" tvg-chno="238",Persiana Folk
+https://sonhls.persiana.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="Radio3.es" tvg-name="RTVE Radio 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/RNE_Radio_3_2026.svg/500px-RNE_Radio_3_2026.svg.png" group-title="Música & Video" tvg-chno="239",RTVE Radio 3 (Visual Radio)
+https://rtvelivestream.rtve.es/rtvesec/rne/rne3_main.m3u8
+
+#EXTINF:-1 tvg-id="PersianaNostalgia.fr" tvg-name="Persiana Nostalgia" tvg-logo="https://i.imgur.com/SWO9CKA.png" group-title="Música & Video" tvg-chno="240",Persiana Nostalgia
+https://noshls.persiana.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="DasErste.de" tvg-name="Das Erste" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Das-Erste.png" group-title="Filmes & Docs" tvg-chno="250",Das Erste (ARD Germany)
 https://daserste-live.ard-mcdn.de/daserste/live/hls/int/master.m3u8
 
-#EXTINF:-1 tvg-id="KuriakosCine.pt" tvg-name="Kuriakos Cine" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Kuriakos-Cine.png" group-title="Filmes & Docs" tvg-chno="171",Kuriakos Cine
+#EXTINF:-1 tvg-id="KuriakosCine.pt" tvg-name="Kuriakos Cine" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Kuriakos-Cine.png" group-title="Filmes & Docs" tvg-chno="251",Kuriakos Cine
 https://w2.manasat.com/kcine/kcine.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="TVCultura.br@HD" tvg-name="TV Cultura" group-title="Filmes & Docs" tvg-chno="172",TV Cultura (São Paulo)
+#EXTINF:-1 tvg-id="TVCultura.br@HD" tvg-name="TV Cultura" group-title="Filmes & Docs" tvg-chno="252",TV Cultura (São Paulo)
 https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8
 
-#EXTINF:-1 tvg-id="EsperantoTV.eo@SD" tvg-name="Esperanto TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_Esperanto.svg/512px-Flag_of_Esperanto.svg.png" group-title="Filmes & Docs" tvg-chno="173",Esperanto TV (24/7 Kulturo, Muziko & Filmoj)
+#EXTINF:-1 tvg-id="EsperantoTV.eo@SD" tvg-name="Esperanto TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_Esperanto.svg/512px-Flag_of_Esperanto.svg.png" group-title="Filmes & Docs" tvg-chno="253",Esperanto TV (24/7 Kulturo, Muziko & Filmoj)
 https://kiefte.eu/iptv/esperanto/tv
 
-#EXTINF:-1 tvg-id="arte.fr@SD" tvg-name="ARTE France" tvg-logo="https://api-cdn.arte.tv/img/v2/image/j4EoSJjX26uySVWdmt3EmS/1920x1080" group-title="Filmes & Docs" tvg-chno="174",ARTE France (HD)
+#EXTINF:-1 tvg-id="arte.fr@SD" tvg-name="ARTE France" tvg-logo="https://api-cdn.arte.tv/img/v2/image/j4EoSJjX26uySVWdmt3EmS/1920x1080" group-title="Filmes & Docs" tvg-chno="254",ARTE France (HD)
 https://kiefte.eu/iptv/arte_fr.m3u8
 
-#EXTINF:-1 tvg-id="arte.de@SD" tvg-name="ARTE Deutschland" tvg-logo="https://api-cdn.arte.tv/img/v2/image/j4EoSJjX26uySVWdmt3EmS/1920x1080" group-title="Filmes & Docs" tvg-chno="175",ARTE Deutschland (HD)
+#EXTINF:-1 tvg-id="arte.de@SD" tvg-name="ARTE Deutschland" tvg-logo="https://api-cdn.arte.tv/img/v2/image/j4EoSJjX26uySVWdmt3EmS/1920x1080" group-title="Filmes & Docs" tvg-chno="255",ARTE Deutschland (HD)
 https://kiefte.eu/iptv/arte_de.m3u8
 
-#EXTINF:-1 tvg-id="TV5MondeEurope.fr" tvg-name="TV5Monde Europe" tvg-logo="https://i.imgur.com/uPmwTo9.png" group-title="Filmes & Docs" tvg-chno="176",TV5Monde Europe (1080p • Legendas NL/DE/EN/FR)
+#EXTINF:-1 tvg-id="TV5MondeEurope.fr" tvg-name="TV5Monde Europe" tvg-logo="https://i.imgur.com/uPmwTo9.png" group-title="Filmes & Docs" tvg-chno="256",TV5Monde Europe (1080p • Legendas NL/DE/EN/FR)
 https://kiefte.eu/iptv/tv5monde_europe.m3u8
 
-#EXTINF:-1 tvg-id="3sat.de@SD" tvg-name="3sat" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/3sat_2019.svg/960px-3sat_2019.svg.png" group-title="Filmes & Docs" tvg-chno="177",3sat (HD • DACH Kultur & Doku)
+#EXTINF:-1 tvg-id="3sat.de@SD" tvg-name="3sat" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/3sat_2019.svg/960px-3sat_2019.svg.png" group-title="Filmes & Docs" tvg-chno="257",3sat (HD • DACH Kultur & Doku)
 https://kiefte.eu/iptv/3sat.m3u8
 
-#EXTINF:-1 tvg-id="ZDFneo.de@SD" tvg-name="ZDFneo" tvg-logo="https://i.imgur.com/1JIIGgL.png" group-title="Filmes & Docs" tvg-chno="178",ZDFneo (HD • Séries & Cinema)
+#EXTINF:-1 tvg-id="ZDFneo.de@SD" tvg-name="ZDFneo" tvg-logo="https://i.imgur.com/1JIIGgL.png" group-title="Filmes & Docs" tvg-chno="258",ZDFneo (HD • Séries & Cinema)
 https://kiefte.eu/iptv/zdfneo.m3u8
 
-#EXTINF:-1 tvg-id="ZDFinfo.de@SD" tvg-name="ZDFinfo" tvg-logo="https://i.imgur.com/vtq1IWp.png" group-title="Filmes & Docs" tvg-chno="179",ZDFinfo (HD • Documentários)
+#EXTINF:-1 tvg-id="ZDFinfo.de@SD" tvg-name="ZDFinfo" tvg-logo="https://i.imgur.com/vtq1IWp.png" group-title="Filmes & Docs" tvg-chno="259",ZDFinfo (HD • Documentários)
 https://kiefte.eu/iptv/zdfinfo.m3u8
 
-#EXTINF:-1 tvg-id="PersianaDocs.fr" tvg-name="Persiana Docs" group-title="Filmes & Docs" tvg-chno="180",Persiana Docs
+#EXTINF:-1 tvg-id="PersianaDocs.fr" tvg-name="Persiana Docs" group-title="Filmes & Docs" tvg-chno="260",Persiana Docs
 https://scihls.persiana.live/hls/stream.m3u8
 
-#EXTINF:-1 tvg-id="PersianaTravel.fr" tvg-name="Persiana Travel" group-title="Filmes & Docs" tvg-chno="181",Persiana Travel
+#EXTINF:-1 tvg-id="PersianaTravel.fr" tvg-name="Persiana Travel" group-title="Filmes & Docs" tvg-chno="261",Persiana Travel
 https://ptravelhls.persiana.live/hls/stream.m3u8
 
-#EXTINF:-1 tvg-id="PersianaFamily.fr" tvg-name="Persiana Family" tvg-logo="https://i.imgur.com/lMZsuWi.png" group-title="Filmes & Docs" tvg-chno="182",Persiana Family
+#EXTINF:-1 tvg-id="PersianaFamily.fr" tvg-name="Persiana Family" tvg-logo="https://i.imgur.com/lMZsuWi.png" group-title="Filmes & Docs" tvg-chno="262",Persiana Family
 https://familyhls.persiana.live/hls/stream.m3u8
 
-#EXTINF:-1 tvg-id="DoctorWhoClassic.uk@HD" tvg-name="Doctor Who Classic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Doctor_Who_logo_2018.svg/512px-Doctor_Who_logo_2018.svg.png" group-title="Sci-Fi & Cult Retro" tvg-chno="190",Doctor Who Classic (24/7 1080p HD)
+#EXTINF:-1 tvg-id="DoctorWhoClassic.uk@HD" tvg-name="Doctor Who Classic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Doctor_Who_logo_2018.svg/512px-Doctor_Who_logo_2018.svg.png" group-title="Sci-Fi & Cult Retro" tvg-chno="270",Doctor Who Classic (24/7 1080p HD)
 https://bbc-classicdrwho-1-us.roku.wurl.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="MST3K.us@HD" tvg-name="Mystery Science Theater 3000" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Mystery_Science_Theater_3000_logo.svg/512px-Mystery_Science_Theater_3000_logo.svg.png" group-title="Sci-Fi & Cult Retro" tvg-chno="191",Mystery Science Theater 3000 (MST3K 1080p)
+#EXTINF:-1 tvg-id="MST3K.us@HD" tvg-name="Mystery Science Theater 3000" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Mystery_Science_Theater_3000_logo.svg/512px-Mystery_Science_Theater_3000_logo.svg.png" group-title="Sci-Fi & Cult Retro" tvg-chno="271",Mystery Science Theater 3000 (MST3K 1080p)
 https://kiefte.eu/iptv/twitch/mst3k
 
-#EXTINF:-1 tvg-id="ShoutFactoryTV.us@HD" tvg-name="Shout! Factory TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Shout%21_Factory_logo.svg/512px-Shout%21_Factory_logo.svg.png" group-title="Sci-Fi & Cult Retro" tvg-chno="192",Shout! Factory TV (Cult Sci-Fi & Classics)
+#EXTINF:-1 tvg-id="ShoutFactoryTV.us@HD" tvg-name="Shout! Factory TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Shout%21_Factory_logo.svg/512px-Shout%21_Factory_logo.svg.png" group-title="Sci-Fi & Cult Retro" tvg-chno="272",Shout! Factory TV (Cult Sci-Fi & Classics)
 https://kiefte.eu/iptv/twitch/shoutfactorytv
 
-#EXTINF:-1 tvg-id="WorldOfLongplays.tv@HD" tvg-name="World of Longplays" tvg-logo="https://static-cdn.jtvnw.net/jtv_user_pictures/worldoflongplays-profile_image-144709d73d6e9dc7-300x300.png" group-title="Sci-Fi & Cult Retro" tvg-chno="193",World of Longplays (Retro Gaming 1080p60)
+#EXTINF:-1 tvg-id="WorldOfLongplays.tv@HD" tvg-name="World of Longplays" tvg-logo="https://static-cdn.jtvnw.net/jtv_user_pictures/worldoflongplays-profile_image-144709d73d6e9dc7-300x300.png" group-title="Sci-Fi & Cult Retro" tvg-chno="273",World of Longplays (Retro Gaming 1080p60)
 https://kiefte.eu/iptv/twitch/worldoflongplays
 
-#EXTINF:-1 tvg-id="FailArmy.us@HD" tvg-name="FailArmy" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/FailArmy_logo.png/512px-FailArmy_logo.png" group-title="Sci-Fi & Cult Retro" tvg-chno="194",FailArmy (24/7 Comedy HD)
+#EXTINF:-1 tvg-id="FailArmy.us@HD" tvg-name="FailArmy" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/FailArmy_logo.png/512px-FailArmy_logo.png" group-title="Sci-Fi & Cult Retro" tvg-chno="274",FailArmy (24/7 Comedy HD)
 https://failarmy-international-nl.samsung.wurl.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="JustForLaughsGags.ca@HD" tvg-name="Just for Laughs Gags" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/Just_for_Laughs_Gags_logo.svg/512px-Just_for_Laughs_Gags_logo.svg.png" group-title="Sci-Fi & Cult Retro" tvg-chno="195",Just for Laughs Gags (Slapstick Comedy HD)
+#EXTINF:-1 tvg-id="JustForLaughsGags.ca@HD" tvg-name="Just for Laughs Gags" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/Just_for_Laughs_Gags_logo.svg/512px-Just_for_Laughs_Gags_logo.svg.png" group-title="Sci-Fi & Cult Retro" tvg-chno="275",Just for Laughs Gags (Slapstick Comedy HD)
 https://distributionsjustepourrire-justforlaughsgags-1-nl.samsung.wurl.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="FilmRiseClassicTV.us@HD" tvg-name="FilmRise Classic TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/FilmRise_logo.png/512px-FilmRise_logo.png" group-title="Sci-Fi & Cult Retro" tvg-chno="196",FilmRise Classic TV (Cult Classics)
+#EXTINF:-1 tvg-id="FilmRiseClassicTV.us@HD" tvg-name="FilmRise Classic TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/FilmRise_logo.png/512px-FilmRise_logo.png" group-title="Sci-Fi & Cult Retro" tvg-chno="276",FilmRise Classic TV (Cult Classics)
 https://d2tv4k5moji5m7.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-lu4pzh9l4b57p/master.m3u8
 
-#EXTINF:-1 tvg-id="FilmRiseAnime.us@HD" tvg-name="FilmRise Anime" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/FilmRise_logo.png/512px-FilmRise_logo.png" group-title="Sci-Fi & Cult Retro" tvg-chno="197",FilmRise Anime (24/7 Classic Anime HD)
+#EXTINF:-1 tvg-id="FilmRiseAnime.us@HD" tvg-name="FilmRise Anime" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/FilmRise_logo.png/512px-FilmRise_logo.png" group-title="Sci-Fi & Cult Retro" tvg-chno="277",FilmRise Anime (24/7 Classic Anime HD)
 https://dvu7aia8rjlfm.cloudfront.net/master.m3u8
 
-#EXTINF:-1 tvg-id="AutenticHistory.de@HD" tvg-name="Autentic History" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/History_Logo_2021.svg/512px-History_Logo_2021.svg.png" group-title="Sci-Fi & Cult Retro" tvg-chno="198",Autentic History (1080p Full HD)
+#EXTINF:-1 tvg-id="AutenticHistory.de@HD" tvg-name="Autentic History" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/History_Logo_2021.svg/512px-History_Logo_2021.svg.png" group-title="Sci-Fi & Cult Retro" tvg-chno="278",Autentic History (1080p Full HD)
 https://autentic-autentichistory-1-gb.samsung.wurl.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="BobRoss.tv@HD" tvg-name="Bob Ross" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bob_Ross_The_Joy_of_Painting_logo.svg/512px-Bob_Ross_The_Joy_of_Painting_logo.svg.png" group-title="Natureza & Slow TV" tvg-chno="200",Bob Ross (24/7 The Joy of Painting)
+#EXTINF:-1 tvg-id="BobRoss.tv@HD" tvg-name="Bob Ross" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bob_Ross_The_Joy_of_Painting_logo.svg/512px-Bob_Ross_The_Joy_of_Painting_logo.svg.png" group-title="Natureza & Slow TV" tvg-chno="280",Bob Ross (24/7 The Joy of Painting)
 https://kiefte.eu/iptv/twitch/bobross
 
-#EXTINF:-1 tvg-id="LofiGirl.tv@HD" tvg-name="Lofi Girl" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Lofi_girl_logo.jpg/512px-Lofi_girl_logo.jpg" group-title="Natureza & Slow TV" tvg-chno="201",Lofi Girl (24/7 Relaxing Beats & Ambience 1080p)
+#EXTINF:-1 tvg-id="LofiGirl.tv@HD" tvg-name="Lofi Girl" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Lofi_girl_logo.jpg/512px-Lofi_girl_logo.jpg" group-title="Natureza & Slow TV" tvg-chno="281",Lofi Girl (24/7 Relaxing Beats & Ambience 1080p)
 https://kiefte.eu/iptv/twitch/lofigirl
 
-#EXTINF:-1 tvg-id="RelaxBeats.tv@HD" tvg-name="Relax Beats" group-title="Natureza & Slow TV" tvg-chno="202",Relax Beats & Chill Music (24/7 HD)
+#EXTINF:-1 tvg-id="RelaxBeats.tv@HD" tvg-name="Relax Beats" group-title="Natureza & Slow TV" tvg-chno="282",Relax Beats & Chill Music (24/7 HD)
 https://kiefte.eu/iptv/twitch/relaxbeats
 
-#EXTINF:-1 tvg-id="LeekBeats.tv@HD" tvg-name="LeekBeats" tvg-logo="https://static-cdn.jtvnw.net/jtv_user_pictures/1e46777d-69dd-48da-9f49-4aa749f412f6-profile_image-300x300.png" group-title="Natureza & Slow TV" tvg-chno="203",LeekBeats (24/7 Anime Lofi & Study Beats 1080p)
+#EXTINF:-1 tvg-id="LeekBeats.tv@HD" tvg-name="LeekBeats" tvg-logo="https://static-cdn.jtvnw.net/jtv_user_pictures/1e46777d-69dd-48da-9f49-4aa749f412f6-profile_image-300x300.png" group-title="Natureza & Slow TV" tvg-chno="283",LeekBeats (24/7 Anime Lofi & Study Beats 1080p)
 https://kiefte.eu/iptv/twitch/leekbeats
 
-#EXTINF:-1 tvg-id="NASATV.us@HD" tvg-name="NASA Live" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/512px-NASA_logo.svg.png" group-title="Natureza & Slow TV" tvg-chno="204",NASA Live (Earth from Space & ISS 1080p)
+#EXTINF:-1 tvg-id="NASATV.us@HD" tvg-name="NASA Live" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/512px-NASA_logo.svg.png" group-title="Natureza & Slow TV" tvg-chno="284",NASA Live (Earth from Space & ISS 1080p)
 https://kiefte.eu/iptv/twitch/nasa
 
-#EXTINF:-1 tvg-id="WildEarth.tv@HD" tvg-name="WildEarth" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/WildEarth_logo.svg/512px-WildEarth_logo.svg.png" group-title="Natureza & Slow TV" tvg-chno="205",WildEarth (24/7 Live Safari & Wildlife 1080p)
+#EXTINF:-1 tvg-id="WildEarth.tv@HD" tvg-name="WildEarth" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/WildEarth_logo.svg/512px-WildEarth_logo.svg.png" group-title="Natureza & Slow TV" tvg-chno="285",WildEarth (24/7 Live Safari & Wildlife 1080p)
 https://wildearth-adsfree-ono.amagi.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="AdventureEarth.de@HD" tvg-name="Adventure Earth" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Earth_symbol_%28bold%29.svg/512px-Earth_symbol_%28bold%29.svg.png" group-title="Natureza & Slow TV" tvg-chno="206",Adventure Earth (1080p Full HD)
+#EXTINF:-1 tvg-id="AdventureEarth.de@HD" tvg-name="Adventure Earth" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Earth_symbol_%28bold%29.svg/512px-Earth_symbol_%28bold%29.svg.png" group-title="Natureza & Slow TV" tvg-chno="286",Adventure Earth (1080p Full HD)
 https://autentic-adventure-earth-1-gb.samsung.wurl.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="3CatCameresdeltemps.es" tvg-name="3Cat Càmeres del Temps" tvg-logo="https://i.imgur.com/zXy2kbe.png" group-title="Natureza & Slow TV" tvg-chno="207",3Cat Càmeres del Temps (Weather Cams)
+#EXTINF:-1 tvg-id="3CatCameresdeltemps.es" tvg-name="3Cat Càmeres del Temps" tvg-logo="https://i.imgur.com/zXy2kbe.png" group-title="Natureza & Slow TV" tvg-chno="287",3Cat Càmeres del Temps (Weather Cams)
 https://directes-tv-int.3catdirectes.cat/live-content/beauties-hls/master.m3u8
 
-#EXTINF:-1 tvg-id="FIFAPlus.ch" tvg-name="FIFA+" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/FIFA-Plus.png" group-title="Desporto" tvg-chno="210",FIFA+
+#EXTINF:-1 tvg-id="FIFAPlus.ch" tvg-name="FIFA+" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/FIFA-Plus.png" group-title="Desporto" tvg-chno="290",FIFA+
 https://f7ccf7fc.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLXB0X0ZJRkFQbHVzUG9ydHVndWVzZV9ITFM/playlist.m3u8
 
-#EXTINF:-1 tvg-id="RedBullTV.at@HD" tvg-name="Red Bull TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Red-Bull-TV.png" group-title="Desporto" tvg-chno="211",Red Bull TV
+#EXTINF:-1 tvg-id="RedBullTV.at@HD" tvg-name="Red Bull TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Red-Bull-TV.png" group-title="Desporto" tvg-chno="291",Red Bull TV
 https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
 
-#EXTINF:-1 tvg-id="SuperTennis.it@HD" tvg-name="SuperTennis" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SuperTennis.png" group-title="Desporto" tvg-chno="212",SuperTennis
+#EXTINF:-1 tvg-id="SuperTennis.it@HD" tvg-name="SuperTennis" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SuperTennis.png" group-title="Desporto" tvg-chno="292",SuperTennis
 https://live-embed.supertennix.hiway.media/restreamer/supertennix_client/gpu-a-c0-16/restreamer/outgest/aa3673f1-e178-44a9-a947-ef41db73211a/manifest.m3u8
 
-#EXTINF:-1 tvg-id="Motorvision.de@HD" tvg-name="Motorvision" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Motorvision.png" group-title="Desporto" tvg-chno="213",Motorvision
+#EXTINF:-1 tvg-id="Motorvision.de@HD" tvg-name="Motorvision" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Motorvision.png" group-title="Desporto" tvg-chno="293",Motorvision
 https://mvg-mv-xumo.otteravision.com/mvg/mv/mv.m3u8
 
-#EXTINF:-1 tvg-id="NauticalChannel.fr@HD" tvg-name="Nautical Channel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Nautical-Channel.png" group-title="Desporto" tvg-chno="214",Nautical Channel
+#EXTINF:-1 tvg-id="NauticalChannel.fr@HD" tvg-name="Nautical Channel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Nautical-Channel.png" group-title="Desporto" tvg-chno="294",Nautical Channel
 https://streams2.sofast.tv/vglive-sk-231198/index.m3u8
 
-#EXTINF:-1 tvg-id="PortoCanal.pt@HD" tvg-name="Porto Canal" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Porto-Canal.png" group-title="Desporto" tvg-chno="215",Porto Canal
+#EXTINF:-1 tvg-id="PortoCanal.pt@HD" tvg-name="Porto Canal" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Porto-Canal.png" group-title="Desporto" tvg-chno="295",Porto Canal
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 #EXTVLCOPT:http-origin=https://portocanal.sapo.pt
 #EXTVLCOPT:http-referrer=https://portocanal.sapo.pt/
 https://pull-live-156-1.global.ssl.fastly.net/pc5865dc25400thmb-ea6bf03b14fa318f7133/pc1-jhrgyuoqe5865db-68tkgb14fa318f7133f03.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="RealMadridTVEnglish.es" tvg-name="Real Madrid TV" tvg-logo="https://i.imgur.com/5pMo7dL.png" group-title="Desporto" tvg-chno="216",Real Madrid TV (English)
+#EXTINF:-1 tvg-id="RealMadridTVEnglish.es" tvg-name="Real Madrid TV" tvg-logo="https://i.imgur.com/5pMo7dL.png" group-title="Desporto" tvg-chno="296",Real Madrid TV (English)
 http://88.212.15.19/live/real_madrid_tv/index.m3u8
-
-#EXTINF:-1 tvg-id="ONFM.pt" tvg-name="ON FM" tvg-logo="https://onfmwordpressfiles.ams3.digitaloceanspaces.com/wp-content/uploads/2023/03/17130121/logo-on-fm.png" group-title="Música & Video" tvg-chno="220",ON FM (Visual Radio)
-https://5ce9406b73c33.streamlock.net/ONFM/livestream/playlist.m3u8
-
-#EXTINF:-1 tvg-id="RadioSines.pt" tvg-name="Rádio Sines" tvg-logo="https://i.imgur.com/Oe6F1nL.png" group-title="Música & Video" tvg-chno="221",Rádio Sines (Visual Radio)
-https://load-balancer.azotosolutions.com/cdnedge19/smil:live19.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-id="RFPtv.pt" tvg-name="RFPtv" tvg-logo="https://i.imgur.com/I60nQuR.png" group-title="Música & Video" tvg-chno="222",RFPtv (Rádio do Folclore de Portugal)
-https://video03.logicahost.com.br/rfptv/rfptv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="KuriakosMusic.pt" tvg-name="Kuriakos Music" tvg-logo="https://i.imgur.com/Zl40NYi.jpg" group-title="Música & Video" tvg-chno="223",Kuriakos Music
-https://w2.manasat.com/kmusic/kmusic.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Qmusic.nl" tvg-name="Qmusic NL Visual" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Qmusic_logo_2019.svg/512px-Qmusic_logo_2019.svg.png" group-title="Música & Video" tvg-chno="224",Qmusic NL Kijk Live (Visual Radio)
-https://stream.qmusic.nl/qmusic/videohls.m3u8
-
-#EXTINF:-1 tvg-id="Radio350.nl" tvg-name="Radio 350" tvg-logo="https://i.imgur.com/3nkzXup.png" group-title="Música & Video" tvg-chno="225",Radio 350 (Visual Radio)
-https://stream.radio350.nl/hls/radio350.m3u8
-
-#EXTINF:-1 tvg-id="StudioBrussel.be" tvg-name="Studio Brussel Visual" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="Música & Video" tvg-chno="226",Studio Brussel (Visual Radio)
-https://live.vrtcdn.be/groupb/live/450aa9d1-7173-47f3-aaaa-9701426f8ddd/live.isml/live.m3u8
-
-#EXTINF:-1 tvg-id="MNM.be" tvg-name="MNM Visual" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/03/Logo-MNM.svg" group-title="Música & Video" tvg-chno="227",MNM Kijk Live (Visual Radio)
-https://live.vrtcdn.be/groupa/live/1718328a-5c53-410d-87ec-d8db68124cfc/live.isml/live.m3u8
-
-#EXTINF:-1 tvg-id="DeluxeMusic.de@HD" tvg-name="DELUXE MUSIC" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Deluxe_Music_2013_Logo.svg/512px-Deluxe_Music_2013_Logo.svg.png" group-title="Música & Video" tvg-chno="228",DELUXE MUSIC
-https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8
-
-#EXTINF:-1 tvg-id="DeluxeDance.de" tvg-name="DELUXE DANCE" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Deluxe_Music_2013_Logo.svg/512px-Deluxe_Music_2013_Logo.svg.png" group-title="Música & Video" tvg-chno="229",DELUXE DANCE by Kontor
-https://sdn-global-live-streaming-packager-cache.3qsdn.com/64733/64733_264_live.m3u8
-
-#EXTINF:-1 tvg-id="DeluxeRap.de" tvg-name="DELUXE RAP" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Deluxe_Music_2013_Logo.svg/512px-Deluxe_Music_2013_Logo.svg.png" group-title="Música & Video" tvg-chno="230",DELUXE RAP
-https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.m3u8
-
-#EXTINF:-1 tvg-id="DanceTV.nl" tvg-name="Dance TV" group-title="Música & Video" tvg-chno="231",Dance TV
-https://m1b2.worldcast.tv/dancetelevisionone/2/dancetelevisionone.m3u8
-
-#EXTINF:-1 tvg-id="DanceTVDeepHouse.nl@HD" tvg-name="DanceTV Deep House" group-title="Música & Video" tvg-chno="232",DanceTV Deep House District (Sunset & Melodic 1080p)
-https://m1b2.worldcast.tv/dancetelevisiontwo/dancetelevisiontwo.m3u8
-
-#EXTINF:-1 tvg-id="TraceUrban.fr@HD" tvg-name="Trace Urban" tvg-logo="https://i.imgur.com/DLIbUMx.png" group-title="Música & Video" tvg-chno="233",Trace Urban (1080p)
-https://channels.trace.plus/Traceprod/URBAN_INTER_hd/index.m3u8
-
-#EXTINF:-1 tvg-id="TraceToca.fr@HD" tvg-name="Trace Toca" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Toca.png" group-title="Música & Video" tvg-chno="234",Trace Toca (Kizomba / Zouk / PALOP)
-https://channels.trace.plus/Traceprod/TOCA_hd/index.m3u8
-
-#EXTINF:-1 tvg-id="TraceAfrica.fr@HD" tvg-name="Trace Africa" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Africa.png" group-title="Música & Video" tvg-chno="235",Trace Africa
-https://channels.trace.plus/Traceprod/AFRICA_FR_hd/index.m3u8
-
-#EXTINF:-1 tvg-id="TraceBrazuca.br@HD" tvg-name="Trace Brasil" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Brazuca.png" group-title="Música & Video" tvg-chno="236",Trace Brasil
-https://amg01131-tracetv-tracebrazuca-xiaomi-vvr19.amagi.tv/playlist/amg01131-tracetv-tracebrazuca-xiaomi/playlist.m3u8
-
-#EXTINF:-1 tvg-id="TraceNaija.ng@HD" tvg-name="Trace Naija" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Naija.png" group-title="Música & Video" tvg-chno="237",Trace Naija (Afrobeats)
-https://channels.trace.plus/Traceprod/NAIJA_hd/index.m3u8
-
-#EXTINF:-1 tvg-id="TraceKitoko.fr@HD" tvg-name="Trace Kitoko" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Kitoko.png" group-title="Música & Video" tvg-chno="238",Trace Kitoko (Lingala / Central Africa)
-https://channels.trace.plus/Traceprod/KITOKO_hd/index.m3u8
-
-#EXTINF:-1 tvg-id="TraceMziki.ke@HD" tvg-name="Trace Miziki" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Miziki.png" group-title="Música & Video" tvg-chno="239",Trace Miziki (East Africa)
-https://channels.trace.plus/Traceprod/MZIKI_hd/index.m3u8
-
-#EXTINF:-1 tvg-id="TraceLatina.fr@HD" tvg-name="Trace Latina" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Latina.png" group-title="Música & Video" tvg-chno="240",Trace Latina
-https://channels.trace.plus/Traceprod/LATINA_hd/index.m3u8
-
-#EXTINF:-1 tvg-id="TraceUK.uk@HD" tvg-name="Trace UK" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-UK.png" group-title="Música & Video" tvg-chno="241",Trace UK
-https://channels.trace.plus/Traceprod/UK_FAST_hd/index.m3u8
-
-#EXTINF:-1 tvg-id="TraceGospel.fr@HD" tvg-name="Trace Gospel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Trace-Gospel.png" group-title="Música & Video" tvg-chno="242",Trace Gospel
-https://channels.trace.plus/Traceprod/GOSPEL_FR/.m3u8
-
-#EXTINF:-1 tvg-id="XITE.nl@HD" tvg-name="XITE" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.png" group-title="Música & Video" tvg-chno="243",XITE
-https://xite-rakuten.amagi.tv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="XITEHitsDE.de@HD" tvg-name="XITE Hits Germany" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.png" group-title="Música & Video" tvg-chno="244",XITE Hits Germany
-https://d726x48n2pd5h.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-skxr1pazhltvp/XITE_Hits.m3u8
-
-#EXTINF:-1 tvg-id="4FunTV.pl@HD" tvg-name="4Fun TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/4Fun-TV.png" group-title="Música & Video" tvg-chno="245",4Fun.TV
-https://stream.4fun.tv:8888/sd/4fun_sd_high.m3u8
-
-#EXTINF:-1 tvg-id="DeeJayTV.it@HD" tvg-name="DeeJay TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/DeeJay-TV.png" group-title="Música & Video" tvg-chno="246",DeeJay TV
-https://streamcdng5-4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S85984808/sMO0tz9Sr2Rk/playlist.m3u8
-
-#EXTINF:-1 tvg-id="NRG91TV.gr@HD" tvg-name="NRG 91 TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/NRG-91-TV.png" group-title="Música & Video" tvg-chno="247",NRG 91 TV
-http://tv.nrg91.gr:1935/onweb/live/playlist.m3u8
-
-#EXTINF:-1 tvg-id="FMItaliaTV.it@HD" tvg-name="FM Italia TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/FM-Italia-TV.png" group-title="Música & Video" tvg-chno="248",FM Italia TV
-https://stream1.xdevel.com/video0s975817-1182/stream/playlist.m3u8
-
-#EXTINF:-1 tvg-id="CaliforniaMusicChannel.us@HD" tvg-name="California Music Channel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/California-Music-Channel.png" group-title="Música & Video" tvg-chno="249",California Music Channel
-https://cmc-cmctv-cineverse.amagi.tv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="KpopTVPlay.kr@HD" tvg-name="KpopTV Play" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/KpopTV-Play.png" group-title="Música & Video" tvg-chno="250",KpopTV Play
-https://183.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Monstercat.tv@HD" tvg-name="Monstercat" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Monstercat_logo.svg/512px-Monstercat_logo.svg.png" group-title="Música & Video" tvg-chno="251",Monstercat (24/7 Electronic Music HD)
-https://kiefte.eu/iptv/twitch/monstercat
-
-#EXTINF:-1 tvg-id="Insomniac.tv@HD" tvg-name="Insomniac Events" group-title="Música & Video" tvg-chno="252",Insomniac (24/7 EDM Festival TV)
-https://kiefte.eu/iptv/twitch/insomniac
-
-#EXTINF:-1 tvg-id="KissKissTV.it@HD" tvg-name="Radio Kiss Kiss TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Radio_Kiss_Kiss_logo.svg/512px-Radio_Kiss_Kiss_logo.svg.png" group-title="Música & Video" tvg-chno="253",Radio Kiss Kiss TV (Visual Radio 1080p)
-https://58f12ffd2447a.streamlock.net/KKMulti/livestream/playlist.m3u8
-
-#EXTINF:-1 tvg-id="HypeVisualRadio.tv@HD" tvg-name="Hype Visual Radio" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/DJ_mixer_icon.svg/512px-DJ_mixer_icon.svg.png" group-title="Música & Video" tvg-chno="254",Hype Visual Radio (1080p Studio Cam)
-https://streammix.alsolnet.com/hyperadio/live/playlist.m3u8
-
-#EXTINF:-1 tvg-id="PMC.ae" tvg-name="PMC (Persian Music Channel)" tvg-logo="https://i.imgur.com/AbrHI7K.png" group-title="Música & Video" tvg-chno="255",PMC (Persian Music Channel)
-https://pmchls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 tvg-id="PMCRoyale.ae" tvg-name="PMC Royale" group-title="Música & Video" tvg-chno="256",PMC Royale
-https://pmcrohls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 tvg-id="RJTV.us" tvg-name="RJTV" tvg-logo="https://i.imgur.com/a1zuW2C.png" group-title="Música & Video" tvg-chno="257",RJTV
-https://rjtvhls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 tvg-id="PersianaFolk.fr" tvg-name="Persiana Folk" group-title="Música & Video" tvg-chno="258",Persiana Folk
-https://sonhls.persiana.live/hls/stream.m3u8
-
-#EXTINF:-1 tvg-id="Radio3.es" tvg-name="RTVE Radio 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/RNE_Radio_3_2026.svg/500px-RNE_Radio_3_2026.svg.png" group-title="Música & Video" tvg-chno="259",RTVE Radio 3 (Visual Radio)
-https://rtvelivestream.rtve.es/rtvesec/rne/rne3_main.m3u8
-
-#EXTINF:-1 tvg-id="PersianaNostalgia.fr" tvg-name="Persiana Nostalgia" tvg-logo="https://i.imgur.com/SWO9CKA.png" group-title="Música & Video" tvg-chno="260",Persiana Nostalgia
-https://noshls.persiana.live/hls/stream.m3u8
-
-#EXTINF:-1 tvg-id="ARTV.pt" tvg-name="ARTV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/AR-TV.png" group-title="Cívico & Parlamento" tvg-chno="270",ARTV (Canal Parlamento PT)
-#EXTVLCOPT:http-user-agent="Mozilla/5.0"
-https://playout175.livextend.cloud/livenlin4/_definst_/2liveartvpub2/playlist.m3u8
-
-#EXTINF:-1 tvg-id="TweedeKamerPlenair.nl" tvg-name="Tweede Kamer Plenair" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png" group-title="Cívico & Parlamento" tvg-chno="271",Tweede Kamer: Plenaire zaal (NL)
-https://livestreaming.b67buv2.tweedekamer.nl/live/plenairezaal/index.m3u8?hd=1&keyframes=1&subtitles=live
-
-#EXTINF:-1 tvg-id="TweedeKamerTroelstra.nl" tvg-name="Tweede Kamer Troelstrazaal" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png" group-title="Cívico & Parlamento" tvg-chno="272",Tweede Kamer: Troelstrazaal (NL)
-https://livestreaming.b67buv2.tweedekamer.nl/live/troelstrazaal/index.m3u8?hd=1&keyframes=1&subtitles=live
-
-#EXTINF:-1 tvg-id="TweedeKamerThorbecke.nl" tvg-name="Tweede Kamer Thorbeckezaal" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png" group-title="Cívico & Parlamento" tvg-chno="273",Tweede Kamer: Thorbeckezaal (NL)
-https://livestreaming.b67buv2.tweedekamer.nl/live/thorbeckezaal/index.m3u8?hd=1&keyframes=1&subtitles=live
-
-#EXTINF:-1 tvg-id="TweedeKamerGroen.nl" tvg-name="Tweede Kamer Groen van Prinstererzaal" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/tweedekamer.png" group-title="Cívico & Parlamento" tvg-chno="274",Tweede Kamer: Groen van Prinstererzaal (NL)
-https://livestreaming.b67buv2.tweedekamer.nl/live/groenvanprinstererzaal/index.m3u8?hd=1&keyframes=1&subtitles=live
-
-#EXTINF:-1 tvg-id="EbS1.eu@HD" tvg-name="Europe by Satellite" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/ebs.png" group-title="Cívico & Parlamento" tvg-chno="275",Europe by Satellite (EbS 1)
-https://streams.prd.commavservices.eu/live/ebs/index.m3u8
-
-#EXTINF:-1 tvg-id="EbS2.eu@HD" tvg-name="Europe by Satellite Plus" tvg-logo="https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/ebs_plus.png" group-title="Cívico & Parlamento" tvg-chno="276",Europe by Satellite+ (EbS+)
-https://streams.prd.commavservices.eu/live/ebsplus/index.m3u8
-
-#EXTINF:-1 tvg-id="phoenix.de@HD" tvg-name="Phoenix" tvg-logo="https://i.imgur.com/T1532t9.png" group-title="Cívico & Parlamento" tvg-chno="277",Phoenix (HD • Parlamento & Debates DE)
-https://kiefte.eu/iptv/phoenix.m3u8
-
-#EXTINF:-1 tvg-id="CanalParlamento.es" tvg-name="Canal Parlamento" tvg-logo="https://i.imgur.com/BUO0wH6.png" group-title="Cívico & Parlamento" tvg-chno="278",Canal Parlamento (Congreso ES)
-https://congresodirecto.akamaized.net/hls/live/2037973/canalparlamento/master.m3u8
-
-#EXTINF:-1 tvg-id="TVManaMZ.mz" tvg-name="TV Maná Moçambique" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-Mocambique.png" group-title="Religião" tvg-chno="280",TV Maná Moçambique
-https://w2.manasat.com/tvmana-mz/smil:tvmana-mz.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-id="TVMana1.pt@HD" tvg-name="TV Maná 1" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-1.png" group-title="Religião" tvg-chno="281",TV Maná 1 (PT)
-https://w1.manasat.com/tvmana-1/smil:tvmana-1.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-id="TVMana2.pt@HD" tvg-name="TV Maná 2" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV-Mana-2.png" group-title="Religião" tvg-chno="282",TV Maná 2 (PT)
-https://w1.manasat.com/tvmana-2/smil:tvmana-2.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-id="KuriakosTV.pt@HD" tvg-name="Kuriakos TV" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Kuriakos-TV.png" group-title="Religião" tvg-chno="283",Kuriakos TV
-https://w1.manasat.com/ktv/ktv.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-id="CancaoNova.pt@HD" tvg-name="Canção Nova" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Cancao-Nova.png" group-title="Religião" tvg-chno="284",Canção Nova Portugal
-https://5c65286fc6ace.streamlock.net/cancaonova/CancaoNova.stream_720p/playlist.m3u8
-
-#EXTINF:-1 tvg-id="BahaiStudioSessions.tv@HD" tvg-name="Bahá'í Studio Sessions TV" group-title="Religião" tvg-chno="285",Bahá'í Studio Sessions TV (24/7 Devotional Music)
-https://kiefte.eu/iptv/bahai/tv
-
-#EXTINF:-1 tvg-id="IranJewishTV.ir" tvg-name="Iran Jewish TV" tvg-logo="https://i.ibb.co/JWXs7csN/en.png" group-title="Religião" tvg-chno="286",Iran Jewish TV
-http://iran620.com:1935/live/IranJewishTv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="ADBTV.pt" tvg-name="ADB TV" tvg-logo="https://i.ibb.co/HGfTJwt/ADBTV.jpg" group-title="Religião" tvg-chno="287",ADB TV
-https://live-tv.waytv.pt/adbtv/adbtv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="UnifeTV.pt" tvg-name="UNIFE TV Portugal" group-title="Religião" tvg-chno="288",UNIFE TV Portugal
-https://view.dacast.com/24b61c472d976075ed46ad1eb530e6ae-live-fdc85437d7631afb59fe3767dcc464dd/adaptive.m3u8
-
-#EXTINF:-1 tvg-id="TVUniversal.ar" tvg-name="TV Universal Argentina" group-title="Religião" tvg-chno="289",TV Universal Argentina
-https://cdn.mycloudstream.io/hls/live/broadcast/xundwjvp/index.m3u8
-
-#EXTINF:-1 tvg-id="TVUniversal.pe" tvg-name="TV Universal Perú" group-title="Religião" tvg-chno="290",TV Universal Perú
-https://cdn.mycloudstream.io/hls/live/broadcast/ic1frrzz/index.m3u8
-
-#EXTINF:-1 tvg-id="TVUniversal.ec" tvg-name="TV Universal Ecuador" group-title="Religião" tvg-chno="291",TV Universal Ecuador
-https://cdn.mycloudstream.io/hls/live/broadcast/uwcedjt2/index.m3u8
-
-#EXTINF:-1 tvg-id="RedAleluya.uy" tvg-name="Red Aleluya Uruguay" group-title="Religião" tvg-chno="292",Red Aleluya Uruguay
-https://stream.universal.org.uy/hls/stream.m3u8
-
-#EXTINF:-1 tvg-id="UnifeTV.int" tvg-name="UNIFE TV" group-title="Religião" tvg-chno="293",UNIFE TV
-https://cdn.mycloudstream.io/hls/live/broadcast/pgv5kerk/index.m3u8
-
-#EXTINF:-1 tvg-id="VeraTV.ru" tvg-name="Vera TV" group-title="Religião" tvg-chno="294",Vera TV (Вера ТВ)
-https://live.helpcenter24.ru/hls/stream.m3u8
-
-#EXTINF:-1 tvg-id="UnifeTV.cl" tvg-name="Unife TV Chile" group-title="Religião" tvg-chno="295",Unife TV Chile
-https://cdn.mycloudstream.io/hls/live/broadcast/pcr5miau/index.m3u8
 
 #EXTINF:-1 tvg-id="GDQ.tv" tvg-name="GamesDoneQuick" group-title="Events & Marathons" tvg-chno="400",GamesDoneQuick (GDQ)
 https://kiefte.eu/iptv/twitch/gamesdonequick
