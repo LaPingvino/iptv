@@ -4,19 +4,30 @@
 # ==============================================================================
 
 # --- Kids & Família (Little ones, toddlers & family cartoons) ---
-- name: Classic Toons 24/7 (Tom & Jerry / Looney Tunes)
+- name: DuckTV (Toddlers & Visual Animation HD)
   group: Infantil & Kids
-  tvg_id: ClassicToons.us
-  tvg_name: Classic Toons
-  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tom_and_Jerry_logo.svg/512px-Tom_and_Jerry_logo.svg.png
-  url: https://live20.bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8
+  tvg_id: DuckTV.sk@HD
+  tvg_name: DuckTV
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Ducktv_logo.png/512px-Ducktv_logo.png
+  url: https://d6lk10bkdgfae.cloudfront.net/playlist.m3u8
 
-- name: Mr. Bean Animado (1080p)
+- name: Toon Goggles Junior (720p HD)
   group: Infantil & Kids
-  tvg_id: MrBeanAnimated.es@HD
-  tvg_name: Mr. Bean Animado
-  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Mr_Bean_Animated_logo.svg/512px-Mr_Bean_Animated_logo.svg.png
-  url: https://amg00627-amg00627c30-rakuten-es-3990.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanescc-rakutenes/playlist.m3u8
+  tvg_id: ToonGogglesJr.us@HD
+  tvg_name: Toon Goggles Junior
+  url: https://d3i6upqaqzosi1.cloudfront.net/tg/jr_us/tg_jr_us.m3u8
+
+- name: HappyKids (1080p Full HD)
+  group: Infantil & Kids
+  tvg_id: HappyKids.us@HD
+  tvg_name: HappyKids
+  url: https://dil9xdvretp0f.cloudfront.net/index.m3u8
+
+- name: Reino Infantil TV (Moçambique 1080p)
+  group: Infantil & Kids
+  tvg_id: ReinoInfantilTV.mz@HD
+  tvg_name: Reino Infantil TV
+  url: https://www.khuwemultimedia.com/hls/reinoinfantiltv/reinoinfantiltv.m3u8
 
 - name: RTVE Clan (1080p)
   group: Infantil & Kids
@@ -25,37 +36,19 @@
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Clan_RTVE_logo.svg/512px-Clan_RTVE_logo.svg.png
   url: https://rtve01p.origin.c21livecloud.com/live-origin/clan-hls/bitrate_1.m3u8
 
-- name: Reino Infantil TV (Moçambique 1080p)
+- name: KiKa (HD • ARD/ZDF Kinderkanal)
   group: Infantil & Kids
-  tvg_id: ReinoInfantilTV.mz@HD
-  tvg_name: Reino Infantil TV
-  url: https://www.khuwemultimedia.com/hls/reinoinfantiltv/reinoinfantiltv.m3u8
+  tvg_id: KiKA.de@SD
+  tvg_name: KiKa
+  logo: https://i.imgur.com/vZdNp5S.png
+  url: https://kiefte.eu/iptv/kika.m3u8
 
-- name: Toon Goggles Junior (720p HD)
+- name: Persiana Junior
   group: Infantil & Kids
-  tvg_id: ToonGogglesJr.us@HD
-  tvg_name: Toon Goggles Junior
-  url: https://d3i6upqaqzosi1.cloudfront.net/tg/jr_us/tg_jr_us.m3u8
-
-- name: Kartoon Channel! (720p HD)
-  group: Infantil & Kids
-  tvg_id: KartoonChannel.us@HD
-  tvg_name: Kartoon Channel!
-  logo: https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Kartoon_Channel%21_logo.png/512px-Kartoon_Channel%21_logo.png
-  url: https://d2z0ysa6dgxhlc.cloudfront.net/kchan.m3u8
-
-- name: DuckTV (Toddlers & Visual Animation HD)
-  group: Infantil & Kids
-  tvg_id: DuckTV.sk@HD
-  tvg_name: DuckTV
-  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Ducktv_logo.png/512px-Ducktv_logo.png
-  url: https://d6lk10bkdgfae.cloudfront.net/playlist.m3u8
-
-- name: HappyKids (1080p Full HD)
-  group: Infantil & Kids
-  tvg_id: HappyKids.us@HD
-  tvg_name: HappyKids
-  url: https://dil9xdvretp0f.cloudfront.net/index.m3u8
+  tvg_id: PersianaJunior.fr
+  tvg_name: Persiana Junior
+  logo: https://i.imgur.com/zeKHZYG.png
+  url: https://junhls.persiana.live/hls/stream.m3u8
 
 - name: Lego Channel (Animation HD)
   group: Infantil & Kids
@@ -64,12 +57,19 @@
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/512px-LEGO_logo.svg.png
   url: https://dltiqboxjw21d.cloudfront.net/index.m3u8
 
-- name: KiKa (HD • ARD/ZDF Kinderkanal)
+- name: Kartoon Channel! (720p HD)
   group: Infantil & Kids
-  tvg_id: KiKA.de@SD
-  tvg_name: KiKa
-  logo: https://i.imgur.com/vZdNp5S.png
-  url: https://kiefte.eu/iptv/kika.m3u8
+  tvg_id: KartoonChannel.us@HD
+  tvg_name: Kartoon Channel!
+  logo: https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Kartoon_Channel%21_logo.png/512px-Kartoon_Channel%21_logo.png
+  url: https://d2z0ysa6dgxhlc.cloudfront.net/kchan.m3u8
+
+- name: Mr. Bean Animado (1080p)
+  group: Infantil & Kids
+  tvg_id: MrBeanAnimated.es@HD
+  tvg_name: Mr. Bean Animado
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Mr_Bean_Animated_logo.svg/512px-Mr_Bean_Animated_logo.svg.png
+  url: https://amg00627-amg00627c30-rakuten-es-3990.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanescc-rakutenes/playlist.m3u8
 
 
 
@@ -89,9 +89,9 @@
 #   url: http://23.237.104.106:8080/USA_CARTOON_NETWORK/tracks-v1a1/mono.m3u8
 # - name: FXX (The Simpsons & Family Guy 720p60)
 #   url: http://23.237.104.106:8080/USA_FXX/tracks-v1a1/mono.m3u8
-- name: Persiana Junior
+- name: Classic Toons 24/7 (Tom & Jerry / Looney Tunes)
   group: Infantil & Kids
-  tvg_id: PersianaJunior.fr
-  tvg_name: Persiana Junior
-  logo: https://i.imgur.com/zeKHZYG.png
-  url: https://junhls.persiana.live/hls/stream.m3u8
+  tvg_id: ClassicToons.us
+  tvg_name: Classic Toons
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tom_and_Jerry_logo.svg/512px-Tom_and_Jerry_logo.svg.png
+  url: https://live20.bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8

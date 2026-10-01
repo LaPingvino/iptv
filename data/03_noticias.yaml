@@ -31,89 +31,17 @@
   tvg_name: CNN Brasil
   logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CNN-Brasil.png
   url: https://d25usgadhphvwi.cloudfront.net/hls/main.m3u8
-- name: France 24 (Français)
+- name: TV Brasil (EBC)
   group: Notícias
-  tvg_id: France24.fr
-  tvg_name: France 24 Français
-  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png
-  url: https://live.france24.com/hls/live/2037179/F24_FR_HI_HLS/master_5000.m3u8
-- name: France 24 (English)
-  group: Notícias
-  tvg_id: France24English.fr
-  tvg_name: France 24 English
-  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png
-  url: https://live.france24.com/hls/live/2037218/F24_EN_HI_HLS/master_5000.m3u8
-- name: France 24 (Español)
-  group: Notícias
-  tvg_id: France24Spanish.fr
-  tvg_name: France 24 Español
-  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png
-  url: https://live.france24.com/hls/live/2037220/F24_ES_HI_HLS/master_5000.m3u8
-- name: BFM TV (France 24/7 HD)
-  group: Notícias
-  tvg_id: BFMTV.fr@HD
-  tvg_name: BFM TV
-  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/BFM-TV.png
-  url: https://live-cdn-stream-euw1.bfmtv.bct.nextradiotv.com/master.m3u8
-- name: DW Español
-  group: Notícias
-  tvg_id: DWEspanol.de
-  tvg_name: DW Español
-  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png
-  url: https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8
-- name: DW English
-  group: Notícias
-  tvg_id: DWEnglish.de
-  tvg_name: DW English
-  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png
-  url: https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
+  tvg_id: TVBrasil.br@HD
+  tvg_name: TV Brasil
+  url: https://tvbrasilinternacional-stream.ebc.com.br/index.m3u8
 - name: Euronews Português
   group: Notícias
   tvg_id: EuronewsPortuguese.fr
   tvg_name: Euronews (Português)
   logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png
   url: https://6e52fb8b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheHhUVi1ldV9FdXJvbmV3c1BvcnR1Z3Vlc19ITFM/playlist.m3u8
-- name: Euronews English
-  group: Notícias
-  tvg_id: EuronewsEnglish.fr
-  tvg_name: Euronews (English)
-  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png
-  url: https://a-cdn.klowdtv.com/live3/euronews_720p/playlist.m3u8
-- name: Euronews Français
-  group: Notícias
-  tvg_id: EuronewsFrench.fr
-  tvg_name: Euronews (Français)
-  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png
-  url: https://2f6c5bf4.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheHhUVi1ldV9FdXJvbmV3c0ZyYW5jYWlzX0hMUw/playlist.m3u8
-- name: NHK World-Japan (English 1080p)
-  group: Notícias
-  tvg_id: NHKWorldJapan.jp@HD
-  tvg_name: NHK World Japan
-  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nhkworld.png
-  url: https://media-tyo.hls.nhkworld.jp/hls/w/live/master.m3u8
-- name: TV Brasil (EBC)
-  group: Notícias
-  tvg_id: TVBrasil.br@HD
-  tvg_name: TV Brasil
-  url: https://tvbrasilinternacional-stream.ebc.com.br/index.m3u8
-- name: TV5Monde Info (1080p • Monde & Actualité)
-  group: Notícias
-  tvg_id: TV5MondeInfo.fr@SD
-  tvg_name: TV5Monde Info
-  logo: https://i.imgur.com/NcysrWH.png
-  url: https://kiefte.eu/iptv/tv5monde_info.ts
-- name: Tagesschau 24 (HD • ARD Notícias 24/7)
-  group: Notícias
-  tvg_id: tagesschau24.de@SD
-  tvg_name: Tagesschau 24
-  logo: https://i.imgur.com/LH0Gctv.png
-  url: https://kiefte.eu/iptv/tagesschau24.m3u8
-- name: ZDF (HD • Informação & Geral)
-  group: Notícias
-  tvg_id: ZDF.de@SD
-  tvg_name: ZDF
-  logo: https://i.imgur.com/rtLb6m9.png
-  url: https://kiefte.eu/iptv/zdf.m3u8
 - name: 24 Horas Catalunya
   group: Notícias
   tvg_id: 24HorasCatalunya.es
@@ -126,3 +54,75 @@
   tvg_name: Negocios TV
   logo: https://m.media-amazon.com/images/I/21HEgSJn2gL.png
   url: https://streaming013.gestec-video.com/hls/negociostv.m3u8
+- name: France 24 (Español)
+  group: Notícias
+  tvg_id: France24Spanish.fr
+  tvg_name: France 24 Español
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png
+  url: https://live.france24.com/hls/live/2037220/F24_ES_HI_HLS/master_5000.m3u8
+- name: DW Español
+  group: Notícias
+  tvg_id: DWEspanol.de
+  tvg_name: DW Español
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png
+  url: https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8
+- name: France 24 (Français)
+  group: Notícias
+  tvg_id: France24.fr
+  tvg_name: France 24 Français
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png
+  url: https://live.france24.com/hls/live/2037179/F24_FR_HI_HLS/master_5000.m3u8
+- name: BFM TV (France 24/7 HD)
+  group: Notícias
+  tvg_id: BFMTV.fr@HD
+  tvg_name: BFM TV
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/BFM-TV.png
+  url: https://live-cdn-stream-euw1.bfmtv.bct.nextradiotv.com/master.m3u8
+- name: TV5Monde Info (1080p • Monde & Actualité)
+  group: Notícias
+  tvg_id: TV5MondeInfo.fr@SD
+  tvg_name: TV5Monde Info
+  logo: https://i.imgur.com/NcysrWH.png
+  url: https://kiefte.eu/iptv/tv5monde_info.ts
+- name: Euronews Français
+  group: Notícias
+  tvg_id: EuronewsFrench.fr
+  tvg_name: Euronews (Français)
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png
+  url: https://2f6c5bf4.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheHhUVi1ldV9FdXJvbmV3c0ZyYW5jYWlzX0hMUw/playlist.m3u8
+- name: France 24 (English)
+  group: Notícias
+  tvg_id: France24English.fr
+  tvg_name: France 24 English
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/france24.png
+  url: https://live.france24.com/hls/live/2037218/F24_EN_HI_HLS/master_5000.m3u8
+- name: DW English
+  group: Notícias
+  tvg_id: DWEnglish.de
+  tvg_name: DW English
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/dw.png
+  url: https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
+- name: Euronews English
+  group: Notícias
+  tvg_id: EuronewsEnglish.fr
+  tvg_name: Euronews (English)
+  logo: https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png
+  url: https://a-cdn.klowdtv.com/live3/euronews_720p/playlist.m3u8
+- name: NHK World-Japan (English 1080p)
+  group: Notícias
+  tvg_id: NHKWorldJapan.jp@HD
+  tvg_name: NHK World Japan
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/nhkworld.png
+  url: https://media-tyo.hls.nhkworld.jp/hls/w/live/master.m3u8
+- name: Tagesschau 24 (HD • ARD Notícias 24/7)
+  group: Notícias
+  tvg_id: tagesschau24.de@SD
+  tvg_name: Tagesschau 24
+  logo: https://i.imgur.com/LH0Gctv.png
+  url: https://kiefte.eu/iptv/tagesschau24.m3u8
+- name: ZDF (HD • Informação & Geral)
+  group: Notícias
+  tvg_id: ZDF.de@SD
+  tvg_name: ZDF
+  logo: https://i.imgur.com/rtLb6m9.png
+  url: https://kiefte.eu/iptv/zdf.m3u8

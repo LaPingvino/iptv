@@ -2647,4 +2647,24 @@
     <desc lang="eo">La granda antaŭ-finala konkurso.</desc>
     <category lang="eo">Realspektaklo / Junularo</category>
   </programme>
+  <programme start="20261004224540 +0000" stop="20261004224550 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261004224550 +0000" stop="20261004224900 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261004224900 +0000" stop="20261004224910 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261004224910 +0000" stop="20261004231230 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 16: Ĝis revido, amikoj!</title>
+    <desc lang="eo">La granda finalo de Pasporto al la Tuta Mondo.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
 </tv>

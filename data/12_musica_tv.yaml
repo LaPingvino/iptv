@@ -22,6 +22,18 @@
   tvg_name: Kuriakos Music
   logo: https://i.imgur.com/Zl40NYi.jpg
   url: https://w2.manasat.com/kmusic/kmusic.smil/playlist.m3u8
+- name: Qmusic NL Kijk Live (Visual Radio)
+  group: Música & Video
+  tvg_id: Qmusic.nl
+  tvg_name: Qmusic NL Visual
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Qmusic_logo_2019.svg/512px-Qmusic_logo_2019.svg.png
+  url: https://stream.qmusic.nl/qmusic/videohls.m3u8
+- name: Radio 350 (Visual Radio)
+  group: Música & Video
+  tvg_id: Radio350.nl
+  tvg_name: Radio 350
+  logo: https://i.imgur.com/3nkzXup.png
+  url: https://stream.radio350.nl/hls/radio350.m3u8
 - name: Studio Brussel (Visual Radio)
   group: Música & Video
   tvg_id: StudioBrussel.be
@@ -34,12 +46,6 @@
   tvg_name: MNM Visual
   logo: https://upload.wikimedia.org/wikipedia/commons/0/03/Logo-MNM.svg
   url: https://live.vrtcdn.be/groupa/live/1718328a-5c53-410d-87ec-d8db68124cfc/live.isml/live.m3u8
-- name: Qmusic NL Kijk Live (Visual Radio)
-  group: Música & Video
-  tvg_id: Qmusic.nl
-  tvg_name: Qmusic NL Visual
-  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Qmusic_logo_2019.svg/512px-Qmusic_logo_2019.svg.png
-  url: https://stream.qmusic.nl/qmusic/videohls.m3u8
 - name: DELUXE MUSIC
   group: Música & Video
   tvg_id: DeluxeMusic.de@HD
@@ -199,12 +205,6 @@
   tvg_name: Hype Visual Radio
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/DJ_mixer_icon.svg/512px-DJ_mixer_icon.svg.png
   url: https://streammix.alsolnet.com/hyperadio/live/playlist.m3u8
-- name: Radio 350 (Visual Radio)
-  group: Música & Video
-  tvg_id: Radio350.nl
-  tvg_name: Radio 350
-  logo: https://i.imgur.com/3nkzXup.png
-  url: https://stream.radio350.nl/hls/radio350.m3u8
 - name: PMC (Persian Music Channel)
   group: Música & Video
   tvg_id: PMC.ae

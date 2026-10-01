@@ -3,27 +3,27 @@
   tvg_id: TVM.mz
   tvg_name: TVM
   url: https://stream.tvm.co.mz/hls/tvm/playlist.m3u8
-- name: TV Vitória Moçambique
+- name: TVM Internacional
   group: MZ Geral
-  tvg_id: TVVitoria.mz
-  tvg_name: TV Vitória
-  url: https://stmv1.voxplayer.com.br/inacio/inacio/playlist.m3u8
+  tvg_id: TVMInt.mz
+  tvg_name: TVM Internacional
+  url: https://stream.tvm.co.mz/hls/tvmi/playlist.m3u8
 - name: TV Miramar (Moçambique)
   group: MZ Geral
   tvg_id: Miramar.mz
   tvg_name: TV Miramar
   logo: https://digitalrmapps.fra1.cdn.digitaloceanspaces.com/images/radios/miramar_icon.png
   url: https://cdn.mycloudstream.io/hls/live/broadcast/8xdonf9w/index.m3u8?sid=239
-- name: TVM Internacional
-  group: MZ Geral
-  tvg_id: TVMInt.mz
-  tvg_name: TVM Internacional
-  url: https://stream.tvm.co.mz/hls/tvmi/playlist.m3u8
 - name: TV Sucesso (Moçambique)
   group: MZ Geral
   tvg_id: TVSucesso.mz
   tvg_name: TV Sucesso
   url: https://kiefte.eu/iptv/kick/tvsucesso
+- name: TV Vitória Moçambique
+  group: MZ Geral
+  tvg_id: TVVitoria.mz
+  tvg_name: TV Vitória
+  url: https://stmv1.voxplayer.com.br/inacio/inacio/playlist.m3u8
 - name: MNTV Moçambique
   group: MZ Geral
   tvg_id: MNTV.mz
