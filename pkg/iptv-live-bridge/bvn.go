@@ -28,11 +28,11 @@ var (
 )
 
 type BVNMPDCache struct {
-	mu     sync.RWMutex
-	url    string
-	urlTS  time.Time
-	xml    []byte
-	xmlTS  time.Time
+	mu    sync.RWMutex
+	url   string
+	urlTS time.Time
+	xml   []byte
+	xmlTS time.Time
 }
 
 var bvnCache BVNMPDCache
@@ -331,41 +331,23 @@ func (e *BVNEngine) startWorker() {
 	e.running = true
 	e.recentChunks = nil
 
-	// Caller (Subscribe) already holds e.mu; locking again here deadlocks.
-	targetAddr := e.listenAddr
-
-	if targetAddr == "" {
-		targetAddr = ListenAddr
+	// The bridge fetches the DASH segments itself (bvn_dash.go) and pipes one
+	// continuous fragmented MP4 per track into ffmpeg: fd 3 video, fd 4 audio.
+	vR, aR, err := startBVNFeeds(ctx)
+	if err != nil {
+		log.Printf("[BVN] Cannot start segment feeds: %v", err)
+		e.running = false
+		cancel()
+		return
 	}
-
-	host, port, err := net.SplitHostPort(targetAddr)
-	var connectHost string
-	if err == nil {
-		if host == "" || host == "0.0.0.0" {
-			connectHost = "127.0.0.1"
-		} else if host == "::" {
-			connectHost = "[::1]"
-		} else {
-			if strings.Contains(host, ":") && !strings.HasPrefix(host, "[") {
-				connectHost = "[" + host + "]"
-			} else {
-				connectHost = host
-			}
-		}
-	} else {
-		connectHost = "127.0.0.1"
-		port = strconv.Itoa(Port)
-	}
-	mpdURL := fmt.Sprintf("http://%s:%s/bvn_internal.mpd", connectHost, port)
 
 	cmd := exec.CommandContext(
 		ctx,
 		"ffmpeg", "-nostdin", "-v", "warning",
-		"-re",
-		"-cenc_decryption_key", BVNDecryptionKey,
-		"-i", mpdURL,
+		"-decryption_key", BVNDecryptionKey, "-f", "mp4", "-i", "pipe:3",
+		"-decryption_key", BVNDecryptionKey, "-f", "mp4", "-i", "pipe:4",
 		"-map", "0:v:0",
-		"-map", "0:a:0",
+		"-map", "1:a:0",
 		"-c:v", "copy",
 		"-bsf:v", "h264_mp4toannexb",
 		"-c:a", "aac",
@@ -376,6 +358,9 @@ func (e *BVNEngine) startWorker() {
 		"-f", "mpegts",
 		"pipe:1",
 	)
+	cmd.ExtraFiles = []*os.File{vR, aR}
+	defer vR.Close() // the child has its own copies after Start
+	defer aR.Close()
 
 	stdout, err := cmd.StdoutPipe()
 	if err != nil {
