@@ -1954,6 +1954,78 @@
     "chno": 292
   },
   {
+    "name": "UNIFE TV Portugal",
+    "group": "Religião",
+    "tvg_id": "UnifeTV.pt",
+    "tvg_name": "UNIFE TV Portugal",
+    "logo": "",
+    "url": "https://view.dacast.com/24b61c472d976075ed46ad1eb530e6ae-live-fdc85437d7631afb59fe3767dcc464dd/adaptive.m3u8",
+    "chno": 293
+  },
+  {
+    "name": "TV Universal Argentina",
+    "group": "Religião",
+    "tvg_id": "TVUniversal.ar",
+    "tvg_name": "TV Universal Argentina",
+    "logo": "",
+    "url": "https://cdn.mycloudstream.io/hls/live/broadcast/xundwjvp/index.m3u8",
+    "chno": 294
+  },
+  {
+    "name": "TV Universal Perú",
+    "group": "Religião",
+    "tvg_id": "TVUniversal.pe",
+    "tvg_name": "TV Universal Perú",
+    "logo": "",
+    "url": "https://cdn.mycloudstream.io/hls/live/broadcast/ic1frrzz/index.m3u8",
+    "chno": 295
+  },
+  {
+    "name": "TV Universal Ecuador",
+    "group": "Religião",
+    "tvg_id": "TVUniversal.ec",
+    "tvg_name": "TV Universal Ecuador",
+    "logo": "",
+    "url": "https://cdn.mycloudstream.io/hls/live/broadcast/uwcedjt2/index.m3u8",
+    "chno": 296
+  },
+  {
+    "name": "Red Aleluya Uruguay",
+    "group": "Religião",
+    "tvg_id": "RedAleluya.uy",
+    "tvg_name": "Red Aleluya Uruguay",
+    "logo": "",
+    "url": "https://stream.universal.org.uy/hls/stream.m3u8",
+    "chno": 297
+  },
+  {
+    "name": "UNIFE TV",
+    "group": "Religião",
+    "tvg_id": "UnifeTV.int",
+    "tvg_name": "UNIFE TV",
+    "logo": "",
+    "url": "https://cdn.mycloudstream.io/hls/live/broadcast/pgv5kerk/index.m3u8",
+    "chno": 298
+  },
+  {
+    "name": "Vera TV (Вера ТВ)",
+    "group": "Religião",
+    "tvg_id": "VeraTV.ru",
+    "tvg_name": "Vera TV",
+    "logo": "",
+    "url": "https://live.helpcenter24.ru/hls/stream.m3u8",
+    "chno": 299
+  },
+  {
+    "name": "Unife TV Chile",
+    "group": "Religião",
+    "tvg_id": "UnifeTV.cl",
+    "tvg_name": "Unife TV Chile",
+    "logo": "",
+    "url": "https://cdn.mycloudstream.io/hls/live/broadcast/pcr5miau/index.m3u8",
+    "chno": 300
+  },
+  {
     "name": "GamesDoneQuick (GDQ)",
     "group": "Events \u0026 Marathons",
     "tvg_id": "GDQ.tv",

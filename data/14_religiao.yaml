@@ -45,3 +45,43 @@
   tvg_name: ADB TV
   logo: https://i.ibb.co/HGfTJwt/ADBTV.jpg
   url: https://live-tv.waytv.pt/adbtv/adbtv/playlist.m3u8
+- name: UNIFE TV Portugal
+  group: Religião
+  tvg_id: UnifeTV.pt
+  tvg_name: UNIFE TV Portugal
+  url: https://view.dacast.com/24b61c472d976075ed46ad1eb530e6ae-live-fdc85437d7631afb59fe3767dcc464dd/adaptive.m3u8
+- name: TV Universal Argentina
+  group: Religião
+  tvg_id: TVUniversal.ar
+  tvg_name: TV Universal Argentina
+  url: https://cdn.mycloudstream.io/hls/live/broadcast/xundwjvp/index.m3u8
+- name: TV Universal Perú
+  group: Religião
+  tvg_id: TVUniversal.pe
+  tvg_name: TV Universal Perú
+  url: https://cdn.mycloudstream.io/hls/live/broadcast/ic1frrzz/index.m3u8
+- name: TV Universal Ecuador
+  group: Religião
+  tvg_id: TVUniversal.ec
+  tvg_name: TV Universal Ecuador
+  url: https://cdn.mycloudstream.io/hls/live/broadcast/uwcedjt2/index.m3u8
+- name: Red Aleluya Uruguay
+  group: Religião
+  tvg_id: RedAleluya.uy
+  tvg_name: Red Aleluya Uruguay
+  url: https://stream.universal.org.uy/hls/stream.m3u8
+- name: UNIFE TV
+  group: Religião
+  tvg_id: UnifeTV.int
+  tvg_name: UNIFE TV
+  url: https://cdn.mycloudstream.io/hls/live/broadcast/pgv5kerk/index.m3u8
+- name: Vera TV (Вера ТВ)
+  group: Religião
+  tvg_id: VeraTV.ru
+  tvg_name: Vera TV
+  url: https://live.helpcenter24.ru/hls/stream.m3u8
+- name: Unife TV Chile
+  group: Religião
+  tvg_id: UnifeTV.cl
+  tvg_name: Unife TV Chile
+  url: https://cdn.mycloudstream.io/hls/live/broadcast/pcr5miau/index.m3u8

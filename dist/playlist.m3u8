@@ -678,6 +678,30 @@ http://iran620.com:1935/live/IranJewishTv/playlist.m3u8
 #EXTINF:-1 tvg-id="ADBTV.pt" tvg-name="ADB TV" tvg-logo="https://i.ibb.co/HGfTJwt/ADBTV.jpg" group-title="Religião" tvg-chno="292",ADB TV
 https://live-tv.waytv.pt/adbtv/adbtv/playlist.m3u8
 
+#EXTINF:-1 tvg-id="UnifeTV.pt" tvg-name="UNIFE TV Portugal" group-title="Religião" tvg-chno="293",UNIFE TV Portugal
+https://view.dacast.com/24b61c472d976075ed46ad1eb530e6ae-live-fdc85437d7631afb59fe3767dcc464dd/adaptive.m3u8
+
+#EXTINF:-1 tvg-id="TVUniversal.ar" tvg-name="TV Universal Argentina" group-title="Religião" tvg-chno="294",TV Universal Argentina
+https://cdn.mycloudstream.io/hls/live/broadcast/xundwjvp/index.m3u8
+
+#EXTINF:-1 tvg-id="TVUniversal.pe" tvg-name="TV Universal Perú" group-title="Religião" tvg-chno="295",TV Universal Perú
+https://cdn.mycloudstream.io/hls/live/broadcast/ic1frrzz/index.m3u8
+
+#EXTINF:-1 tvg-id="TVUniversal.ec" tvg-name="TV Universal Ecuador" group-title="Religião" tvg-chno="296",TV Universal Ecuador
+https://cdn.mycloudstream.io/hls/live/broadcast/uwcedjt2/index.m3u8
+
+#EXTINF:-1 tvg-id="RedAleluya.uy" tvg-name="Red Aleluya Uruguay" group-title="Religião" tvg-chno="297",Red Aleluya Uruguay
+https://stream.universal.org.uy/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="UnifeTV.int" tvg-name="UNIFE TV" group-title="Religião" tvg-chno="298",UNIFE TV
+https://cdn.mycloudstream.io/hls/live/broadcast/pgv5kerk/index.m3u8
+
+#EXTINF:-1 tvg-id="VeraTV.ru" tvg-name="Vera TV" group-title="Religião" tvg-chno="299",Vera TV (Вера ТВ)
+https://live.helpcenter24.ru/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="UnifeTV.cl" tvg-name="Unife TV Chile" group-title="Religião" tvg-chno="300",Unife TV Chile
+https://cdn.mycloudstream.io/hls/live/broadcast/pcr5miau/index.m3u8
+
 #EXTINF:-1 tvg-id="GDQ.tv" tvg-name="GamesDoneQuick" group-title="Events & Marathons" tvg-chno="400",GamesDoneQuick (GDQ)
 https://kiefte.eu/iptv/twitch/gamesdonequick
 
