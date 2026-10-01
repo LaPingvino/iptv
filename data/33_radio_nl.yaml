@@ -1,3 +1,24 @@
+- name: Radio 538
+  group: NL Rádio
+  tvg_id: Radio538.nl
+  chno: 538 # on its own number, just ahead of the NL block
+  tvg_name: Radio 538
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/538.png
+  url: https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO538.mp3
+- name: Radio 538 Ibiza (Sunset & Deep House)
+  group: NL Rádio
+  tvg_id: Radio538Ibiza.nl
+  chno: 539
+  tvg_name: Radio 538 Ibiza
+  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/538.png
+  url: https://playerservices.streamtheworld.com/api/livestream-redirect/TLPSTR19.mp3
+- name: Qmusic NL
+  group: NL Rádio
+  tvg_id: QmusicRadio.nl
+  chno: 540
+  tvg_name: Qmusic
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Qmusic_logo_2019.svg/512px-Qmusic_logo_2019.svg.png
+  url: https://stream.qmusic.nl/qmusic/mp3
 - name: NPO Radio 1
   group: NL Rádio
   tvg_id: NPORadio1.nl
@@ -22,18 +43,6 @@
   tvg_name: NPO Klassiek
   logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/npoklassiek.png
   url: https://icecast.omroep.nl/radio4-bb-mp3
-- name: Classicnl (Klassiek & Film)
-  group: NL Rádio
-  tvg_id: Classicnl.nl
-  tvg_name: Classicnl
-  logo: https://www.classic.nl/images/logo_classicnl_square.jpg
-  url: https://stream.classic.nl/classicnl.mp3
-- name: Concertzender (Klassiek & Jazz)
-  group: NL Rádio
-  tvg_id: Concertzender.nl
-  tvg_name: Concertzender
-  logo: https://www.concertzender.nl/wp-content/uploads/2017/01/Concertzender-FB-OpengrapFoto-1.jpg
-  url: http://streams.greenhost.nl:8080/live
 - name: NPO Radio 5
   group: NL Rádio
   tvg_id: NPORadio5.nl
@@ -52,31 +61,24 @@
   tvg_name: NPO Blend
   logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/funx.png
   url: https://icecast.omroep.nl/radio6-bb-mp3
-- name: Radio 538
+- name: Classicnl (Klassiek & Film)
   group: NL Rádio
-  tvg_id: Radio538.nl
-  chno: 538 # on its own number, just ahead of the NL block
-  tvg_name: Radio 538
-  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/538.png
-  url: https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO538.mp3
-- name: Radio 538 Ibiza (Sunset & Deep House)
+  tvg_id: Classicnl.nl
+  tvg_name: Classicnl
+  logo: https://www.classic.nl/images/logo_classicnl_square.jpg
+  url: https://stream.classic.nl/classicnl.mp3
+- name: Concertzender (Klassiek & Jazz)
   group: NL Rádio
-  tvg_id: Radio538Ibiza.nl
-  tvg_name: Radio 538 Ibiza
-  logo: https://raw.githubusercontent.com/Free-TV/IPTV/master/logos/538.png
-  url: https://playerservices.streamtheworld.com/api/livestream-redirect/TLPSTR19.mp3
+  tvg_id: Concertzender.nl
+  tvg_name: Concertzender
+  logo: https://www.concertzender.nl/wp-content/uploads/2017/01/Concertzender-FB-OpengrapFoto-1.jpg
+  url: http://streams.greenhost.nl:8080/live
 - name: SLAM!
   group: NL Rádio
   tvg_id: SLAM.nl
   tvg_name: SLAM!
   logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/SLAM%21_logo_2020.svg/512px-SLAM%21_logo_2020.svg.png
   url: https://stream.slam.nl/slam_mp3
-- name: Qmusic NL
-  group: NL Rádio
-  tvg_id: QmusicRadio.nl
-  tvg_name: Qmusic
-  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Qmusic_logo_2019.svg/512px-Qmusic_logo_2019.svg.png
-  url: https://stream.qmusic.nl/qmusic/mp3
 - name: Radio Veronica
   group: NL Rádio
   tvg_id: RadioVeronica.nl

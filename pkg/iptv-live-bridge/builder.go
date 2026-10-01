@@ -60,7 +60,7 @@ var groupBaseChNo = map[string]int{
 	"PT Rádio":                    500,
 	"MZ Rádio":                    520,
 	"ES Rádio":                    620,
-	"NL Rádio":                    540,
+	"NL Rádio":                    541,
 	"BE Rádio":                    600,
 	"Rádio Global":                630,
 	"Esperanto & Afrikaans Rádio": 680,
