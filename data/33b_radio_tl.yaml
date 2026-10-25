@@ -1,0 +1,35 @@
+- name: Rádio Liberdade 95.8 FM (Díli • Timor-Leste)
+  group: TL Rádio
+  tvg_id: RadioLiberdade.tl
+  tvg_name: Rádio Liberdade Díli
+  url: https://streaming.kalohan.net/proxy/raliber?mp=/stream
+- name: Rádio Comunidade Comoro 94.1 FM (Díli • Timor-Leste)
+  group: TL Rádio
+  tvg_id: RadioComoro.tl
+  tvg_name: Rádio Comunidade Comoro
+  url: https://streaming.kalohan.net/proxy/comoro?mp=/stream
+- name: Rádio Rakambia 99.5 FM (Díli • Timor-Leste)
+  group: TL Rádio
+  tvg_id: RadioRakambia.tl
+  tvg_name: Rádio Rakambia Díli
+  url: https://streaming.kalohan.net/proxy/rakambia?mp=/stream
+- name: RAFA FM 103.5 (Díli • Timor-Leste)
+  group: TL Rádio
+  tvg_id: RAFAFM.tl
+  tvg_name: RAFA FM 103.5 Díli
+  url: https://radios.justweb.pt/8026/stream
+- name: AWR Timor-Leste 92.3 FM (Díli • Timor-Leste)
+  group: TL Rádio
+  tvg_id: AWRTimorLeste.tl
+  tvg_name: AWR Timor-Leste
+  url: https://mediacp-id1.arenastreaming.com:2020/stream/awrtimorleste/;
+- name: Rádio Comunidade Mauloko 89.7 FM (Maubisse • Timor-Leste)
+  group: TL Rádio
+  tvg_id: RadioMauloko.tl
+  tvg_name: Rádio Mauloko Maubisse
+  url: https://streaming.kalohan.net/proxy/mauloko?mp=/stream
+- name: Rádio Orluli 88.5 FM (Ainaro • Timor-Leste)
+  group: TL Rádio
+  tvg_id: RadioOrluli.tl
+  tvg_name: Rádio Orluli Ainaro
+  url: http://streaming.kalohan.net:8000/stream

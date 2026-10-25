@@ -52,6 +52,7 @@ def load_channels(data_dir):
 GROUP_BASE_CHNO = {
     # 📺 Television (1 - 499)
     "PT Geral": 1,
+    "CPLP Geral": 10,
     "MZ Geral": 10,
     "Notícias": 40,
     "ES Geral & TDT": 100,
@@ -79,9 +80,10 @@ GROUP_BASE_CHNO = {
     # 📻 Unified Radio Block (500 - 699)
     "PT Rádio": 500,
     "MZ Rádio": 520,
-    "ES Rádio": 620,
     "NL Rádio": 541,
+    "TL Rádio": 580,
     "BE Rádio": 600,
+    "ES Rádio": 620,
     "Rádio Global": 630,
     "Esperanto & Afrikaans Rádio": 680,
 }

@@ -140,6 +140,8 @@ func TestResolveProxiedChannel(t *testing.T) {
 		{"kika.m3u8", "kika"},
 		{"tagesschau24.m3u8", "tagesschau24"},
 		{"wdr.m3u8", "wdr"},
+		{"rttl.m3u8", "rttl"},
+		{"tvtl.m3u8", "rttl"},
 	}
 
 	for _, tc := range testCases {

@@ -38,6 +38,7 @@ type ChannelDef struct {
 
 var groupBaseChNo = map[string]int{
 	"PT Geral":                    1,
+	"CPLP Geral":                  10,
 	"MZ Geral":                    10,
 	"Notícias":                    40,
 	"ES Geral & TDT":              100,
@@ -59,9 +60,10 @@ var groupBaseChNo = map[string]int{
 	"Diag":                        900,
 	"PT Rádio":                    500,
 	"MZ Rádio":                    520,
-	"ES Rádio":                    620,
 	"NL Rádio":                    541,
+	"TL Rádio":                    580,
 	"BE Rádio":                    600,
+	"ES Rádio":                    620,
 	"Rádio Global":                630,
 	"Esperanto & Afrikaans Rádio": 680,
 }

@@ -1,8 +1,2700 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tv SYSTEM "xmltv.dtd">
-<tv source-info-url="https://kiefte.eu/iptv" generator-info-name="IPTV Live Bridge Deterministic EPG Engine">
-  <channel id="EsperantoTV.eo@SD">
-    <display-name>Esperanto TV</display-name>
-  </channel>
-
+<tv source-info-url="https://kiefte.eu/iptv" generator-info-name="IPTV Linear 24/7 EPG Engine">
+  <channel id="EsperantoTV.eo@SD"><display-name>Esperanto TV</display-name></channel>
+  <programme start="20261024122120 +0000" stop="20261024124920 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 12: La restoracio</title>
+    <desc lang="eo">Mendo de manĝaĵoj kaj lingvaj defioj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261024124920 +0000" stop="20261024124930 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024124930 +0000" stop="20261024133220 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 12: Plaĝa tago</title>
+    <desc lang="eo">Amuzaj ludoj kaj defioj ĉe la marbordo.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261024133220 +0000" stop="20261024133230 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024133230 +0000" stop="20261024134050 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261024134050 +0000" stop="20261024134100 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024134100 +0000" stop="20261024140010 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">Klasika animacia Esperanto-kurso kun Mazi, Silvia kaj Bob.</desc>
+    <category lang="eo">Animacio</category>
+  </programme>
+  <programme start="20261024140010 +0000" stop="20261024140020 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024140020 +0000" stop="20261024141410 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 13: Sur la strando</title>
+    <desc lang="eo">Someraj ferioj kaj amuzaj agadoj ĉe la maro.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261024141410 +0000" stop="20261024141420 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024141420 +0000" stop="20261024145150 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 13: La voko de Ĥthuluzo</title>
+    <desc lang="eo">Mistera vespera defio kun mitologia etoso.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261024145150 +0000" stop="20261024145200 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024145200 +0000" stop="20261024150150 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261024150150 +0000" stop="20261024150200 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024150200 +0000" stop="20261024152110 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">Klasika animacia Esperanto-kurso kun Mazi, Silvia kaj Bob.</desc>
+    <category lang="eo">Animacio</category>
+  </programme>
+  <programme start="20261024152110 +0000" stop="20261024152120 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024152120 +0000" stop="20261024154950 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 14: La muzeo</title>
+    <desc lang="eo">Kultura vizito al muzeo kun historiaj sekretoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261024154950 +0000" stop="20261024155000 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024155000 +0000" stop="20261024160430 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 14: Nia plej granda perdo</title>
+    <desc lang="eo">Dramaj momentoj kaj poentaj ŝanĝoj.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261024160430 +0000" stop="20261024160440 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024160440 +0000" stop="20261024161050 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261024161050 +0000" stop="20261024161100 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024161100 +0000" stop="20261024164110 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 15: La adiaŭa vespero</title>
+    <desc lang="eo">Gaja vespero antaŭ la reveno hejmen.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261024164110 +0000" stop="20261024164120 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024164120 +0000" stop="20261024171000 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 15: Gajni plej gravas</title>
+    <desc lang="eo">La granda antaŭ-finala konkurso.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261024171000 +0000" stop="20261024171010 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024171010 +0000" stop="20261024171320 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261024171320 +0000" stop="20261024171330 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024171330 +0000" stop="20261024173650 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 16: Ĝis revido, amikoj!</title>
+    <desc lang="eo">La granda finalo de Pasporto al la Tuta Mondo.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261024173650 +0000" stop="20261024173700 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024173700 +0000" stop="20261024180040 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 16: Ni nur parolas Esperanton</title>
+    <desc lang="eo">La grandioza finalo de Esperanto Senlime Sezono 1!</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261024180040 +0000" stop="20261024180050 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024180050 +0000" stop="20261024182700 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261024182700 +0000" stop="20261024182710 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024182710 +0000" stop="20261024190710 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 1: La unua serio en Esperanto</title>
+    <desc lang="eo">La teamoj ekas sian grandan vojaĝon tra Eŭropo.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261024190710 +0000" stop="20261024190720 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024190720 +0000" stop="20261024191340 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261024191340 +0000" stop="20261024191350 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024191350 +0000" stop="20261024191540 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261024191540 +0000" stop="20261024191550 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024191550 +0000" stop="20261024194310 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261024194310 +0000" stop="20261024194320 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024194320 +0000" stop="20261024201110 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 2: Konstruado per dolĉaĵoj kaj spagetoj</title>
+    <desc lang="eo">Krea defio uzanta nur dolĉaĵojn kaj spagetojn.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261024201110 +0000" stop="20261024201120 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024201120 +0000" stop="20261024201710 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261024201710 +0000" stop="20261024201720 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024201720 +0000" stop="20261024202530 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261024202530 +0000" stop="20261024202540 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024202540 +0000" stop="20261024205240 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261024205240 +0000" stop="20261024205250 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024205250 +0000" stop="20261024212110 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 3: Riskante la vivon sur du radoj</title>
+    <desc lang="eo">Biciklaj defioj kaj rapidaj kuroj tra la urbo.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261024212110 +0000" stop="20261024212120 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024212120 +0000" stop="20261024212750 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261024212750 +0000" stop="20261024212800 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024212800 +0000" stop="20261024213430 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261024213430 +0000" stop="20261024213440 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024213440 +0000" stop="20261024220300 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 4: Surprizo en la kuirejo</title>
+    <desc lang="eo">Kuirartaj aventuroj kaj nekutimaj petoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261024220300 +0000" stop="20261024220310 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024220310 +0000" stop="20261024223340 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 4: Filmproduktado en trajnoj</title>
+    <desc lang="eo">Kreado de filmetoj dum veturado per trajno.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261024223340 +0000" stop="20261024223350 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024223350 +0000" stop="20261024223920 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261024223920 +0000" stop="20261024223930 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024223930 +0000" stop="20261024224520 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261024224520 +0000" stop="20261024224530 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024224530 +0000" stop="20261024231430 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 5: La granda festo</title>
+    <desc lang="eo">Preparado por granda familia festo kun amikoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261024231430 +0000" stop="20261024231440 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024231440 +0000" stop="20261024234810 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 5: La venĝo de la trajnoj</title>
+    <desc lang="eo">Fervojaj misaventuroj kaj horar-defioj.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261024234810 +0000" stop="20261024234820 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024234820 +0000" stop="20261024235550 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261024235550 +0000" stop="20261024235600 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261024235600 +0000" stop="20261025000340 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261025000340 +0000" stop="20261025000350 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025000350 +0000" stop="20261025003250 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 6: Nekonata vizitanto</title>
+    <desc lang="eo">Mistera vizitanto aperas ĉe la pordo.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261025003250 +0000" stop="20261025003300 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025003300 +0000" stop="20261025010440 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 6: Rilaksado inter bestoj</title>
+    <desc lang="eo">Vizito al bestoj kaj trankvilaj momentoj.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261025010440 +0000" stop="20261025010450 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025010450 +0000" stop="20261025011120 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261025011120 +0000" stop="20261025011130 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025011130 +0000" stop="20261025011550 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261025011550 +0000" stop="20261025011600 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025011600 +0000" stop="20261025014420 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 7: La sekreto malkaŝita</title>
+    <desc lang="eo">Gravaj sekretoj kaj komediaj klarigoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261025014420 +0000" stop="20261025014430 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025014430 +0000" stop="20261025021420 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 7: ASMR kun arboj</title>
+    <desc lang="eo">Nekutima kaj amuza natura ASMR-defio.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261025021420 +0000" stop="20261025021430 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025021430 +0000" stop="20261025022350 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261025022350 +0000" stop="20261025022400 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025022400 +0000" stop="20261025023340 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261025023340 +0000" stop="20261025023350 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025023350 +0000" stop="20261025030240 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 8: Vojaĝaj planoj</title>
+    <desc lang="eo">La familio kaj gastoj planas novajn vojaĝojn tra la mondo.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261025030240 +0000" stop="20261025030250 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025030250 +0000" stop="20261025034310 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 8: Pluvo kaj suno</title>
+    <desc lang="eo">Veteraj defioj dum la subĉiela vojaĝo.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261025034310 +0000" stop="20261025034320 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025034320 +0000" stop="20261025035140 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261025035140 +0000" stop="20261025035150 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025035150 +0000" stop="20261025045050 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Insulo de la Rozoj</title>
+    <desc lang="eo">Plena filmo en Esperanto pri la historia mikronacio.</desc>
+    <category lang="eo">Filmo</category>
+  </programme>
+  <programme start="20261025045050 +0000" stop="20261025045100 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025045100 +0000" stop="20261025051940 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 9: Trajnoj kaj biletoj</title>
+    <desc lang="eo">Aventuroj ĉe la stacidomo.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261025051940 +0000" stop="20261025051950 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025051950 +0000" stop="20261025055110 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 9: Vojaĝi sen biletoj</title>
+    <desc lang="eo">Strategiaj vojaĝdefioj kaj amuzaj taskoj.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261025055110 +0000" stop="20261025055120 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025055120 +0000" stop="20261025055630 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261025055630 +0000" stop="20261025055640 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025055640 +0000" stop="20261025070320 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">KEF 2005: La Plejpleja Festivalo</title>
+    <desc lang="eo">Kultura Esperanto-Festivalo en Helsinki.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261025070320 +0000" stop="20261025070330 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025070330 +0000" stop="20261025073140 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 10: Aventuro en la urbo</title>
+    <desc lang="eo">Esplorado de nova urbo kaj renkontoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261025073140 +0000" stop="20261025073150 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025073150 +0000" stop="20261025075850 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 10: Mangirdito scias kion vi faris</title>
+    <desc lang="eo">Misteraj ludoj kaj teamaj taktikoj.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261025075850 +0000" stop="20261025075900 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025075900 +0000" stop="20261025080310 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261025080310 +0000" stop="20261025080320 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025080320 +0000" stop="20261025082230 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">Klasika animacia Esperanto-kurso kun Mazi, Silvia kaj Bob.</desc>
+    <category lang="eo">Animacio</category>
+  </programme>
+  <programme start="20261025082230 +0000" stop="20261025082240 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025082240 +0000" stop="20261025085140 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 11: La hotelo</title>
+    <desc lang="eo">Restado en hotelo kun neatenditaj surprizoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261025085140 +0000" stop="20261025085150 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025085150 +0000" stop="20261025092610 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 11: Supren, suben kaj akven</title>
+    <desc lang="eo">Akvo-defioj kaj sportaj agadoj.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261025092610 +0000" stop="20261025092620 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025092620 +0000" stop="20261025093540 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261025093540 +0000" stop="20261025093550 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025093550 +0000" stop="20261025095500 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">Klasika animacia Esperanto-kurso kun Mazi, Silvia kaj Bob.</desc>
+    <category lang="eo">Animacio</category>
+  </programme>
+  <programme start="20261025095500 +0000" stop="20261025095510 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025095510 +0000" stop="20261025102310 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 12: La restoracio</title>
+    <desc lang="eo">Mendo de manĝaĵoj kaj lingvaj defioj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261025102310 +0000" stop="20261025102320 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025102320 +0000" stop="20261025110610 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 12: Plaĝa tago</title>
+    <desc lang="eo">Amuzaj ludoj kaj defioj ĉe la marbordo.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261025110610 +0000" stop="20261025110620 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025110620 +0000" stop="20261025111440 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261025111440 +0000" stop="20261025111450 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025111450 +0000" stop="20261025113400 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">Klasika animacia Esperanto-kurso kun Mazi, Silvia kaj Bob.</desc>
+    <category lang="eo">Animacio</category>
+  </programme>
+  <programme start="20261025113400 +0000" stop="20261025113410 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025113410 +0000" stop="20261025114800 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 13: Sur la strando</title>
+    <desc lang="eo">Someraj ferioj kaj amuzaj agadoj ĉe la maro.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261025114800 +0000" stop="20261025114810 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025114810 +0000" stop="20261025122540 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 13: La voko de Ĥthuluzo</title>
+    <desc lang="eo">Mistera vespera defio kun mitologia etoso.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261025122540 +0000" stop="20261025122550 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025122550 +0000" stop="20261025123540 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261025123540 +0000" stop="20261025123550 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025123550 +0000" stop="20261025125500 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">Klasika animacia Esperanto-kurso kun Mazi, Silvia kaj Bob.</desc>
+    <category lang="eo">Animacio</category>
+  </programme>
+  <programme start="20261025125500 +0000" stop="20261025125510 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025125510 +0000" stop="20261025132340 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 14: La muzeo</title>
+    <desc lang="eo">Kultura vizito al muzeo kun historiaj sekretoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261025132340 +0000" stop="20261025132350 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025132350 +0000" stop="20261025133820 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 14: Nia plej granda perdo</title>
+    <desc lang="eo">Dramaj momentoj kaj poentaj ŝanĝoj.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261025133820 +0000" stop="20261025133830 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025133830 +0000" stop="20261025134440 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261025134440 +0000" stop="20261025134450 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025134450 +0000" stop="20261025141500 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 15: La adiaŭa vespero</title>
+    <desc lang="eo">Gaja vespero antaŭ la reveno hejmen.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261025141500 +0000" stop="20261025141510 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025141510 +0000" stop="20261025144350 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 15: Gajni plej gravas</title>
+    <desc lang="eo">La granda antaŭ-finala konkurso.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261025144350 +0000" stop="20261025144400 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025144400 +0000" stop="20261025144710 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261025144710 +0000" stop="20261025144720 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025144720 +0000" stop="20261025151040 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 16: Ĝis revido, amikoj!</title>
+    <desc lang="eo">La granda finalo de Pasporto al la Tuta Mondo.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261025151040 +0000" stop="20261025151050 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025151050 +0000" stop="20261025153430 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 16: Ni nur parolas Esperanton</title>
+    <desc lang="eo">La grandioza finalo de Esperanto Senlime Sezono 1!</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261025153430 +0000" stop="20261025153440 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025153440 +0000" stop="20261025160050 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261025160050 +0000" stop="20261025160100 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025160100 +0000" stop="20261025164100 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 1: La unua serio en Esperanto</title>
+    <desc lang="eo">La teamoj ekas sian grandan vojaĝon tra Eŭropo.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261025164100 +0000" stop="20261025164110 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025164110 +0000" stop="20261025164730 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261025164730 +0000" stop="20261025164740 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025164740 +0000" stop="20261025164930 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261025164930 +0000" stop="20261025164940 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025164940 +0000" stop="20261025171700 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261025171700 +0000" stop="20261025171710 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025171710 +0000" stop="20261025174500 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 2: Konstruado per dolĉaĵoj kaj spagetoj</title>
+    <desc lang="eo">Krea defio uzanta nur dolĉaĵojn kaj spagetojn.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261025174500 +0000" stop="20261025174510 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025174510 +0000" stop="20261025175100 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261025175100 +0000" stop="20261025175110 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025175110 +0000" stop="20261025175920 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261025175920 +0000" stop="20261025175930 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025175930 +0000" stop="20261025182630 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261025182630 +0000" stop="20261025182640 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025182640 +0000" stop="20261025185500 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 3: Riskante la vivon sur du radoj</title>
+    <desc lang="eo">Biciklaj defioj kaj rapidaj kuroj tra la urbo.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261025185500 +0000" stop="20261025185510 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025185510 +0000" stop="20261025190140 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261025190140 +0000" stop="20261025190150 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025190150 +0000" stop="20261025190820 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261025190820 +0000" stop="20261025190830 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025190830 +0000" stop="20261025193650 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 4: Surprizo en la kuirejo</title>
+    <desc lang="eo">Kuirartaj aventuroj kaj nekutimaj petoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261025193650 +0000" stop="20261025193700 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025193700 +0000" stop="20261025200730 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 4: Filmproduktado en trajnoj</title>
+    <desc lang="eo">Kreado de filmetoj dum veturado per trajno.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261025200730 +0000" stop="20261025200740 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025200740 +0000" stop="20261025201310 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261025201310 +0000" stop="20261025201320 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025201320 +0000" stop="20261025201910 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261025201910 +0000" stop="20261025201920 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025201920 +0000" stop="20261025204820 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 5: La granda festo</title>
+    <desc lang="eo">Preparado por granda familia festo kun amikoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261025204820 +0000" stop="20261025204830 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025204830 +0000" stop="20261025212200 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 5: La venĝo de la trajnoj</title>
+    <desc lang="eo">Fervojaj misaventuroj kaj horar-defioj.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261025212200 +0000" stop="20261025212210 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025212210 +0000" stop="20261025212940 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261025212940 +0000" stop="20261025212950 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025212950 +0000" stop="20261025213730 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261025213730 +0000" stop="20261025213740 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025213740 +0000" stop="20261025220640 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 6: Nekonata vizitanto</title>
+    <desc lang="eo">Mistera vizitanto aperas ĉe la pordo.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261025220640 +0000" stop="20261025220650 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025220650 +0000" stop="20261025223830 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 6: Rilaksado inter bestoj</title>
+    <desc lang="eo">Vizito al bestoj kaj trankvilaj momentoj.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261025223830 +0000" stop="20261025223840 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025223840 +0000" stop="20261025224510 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261025224510 +0000" stop="20261025224520 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025224520 +0000" stop="20261025224940 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261025224940 +0000" stop="20261025224950 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025224950 +0000" stop="20261025231810 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 7: La sekreto malkaŝita</title>
+    <desc lang="eo">Gravaj sekretoj kaj komediaj klarigoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261025231810 +0000" stop="20261025231820 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025231820 +0000" stop="20261025234810 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 7: ASMR kun arboj</title>
+    <desc lang="eo">Nekutima kaj amuza natura ASMR-defio.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261025234810 +0000" stop="20261025234820 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025234820 +0000" stop="20261025235740 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261025235740 +0000" stop="20261025235750 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261025235750 +0000" stop="20261026000730 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261026000730 +0000" stop="20261026000740 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026000740 +0000" stop="20261026003630 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 8: Vojaĝaj planoj</title>
+    <desc lang="eo">La familio kaj gastoj planas novajn vojaĝojn tra la mondo.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261026003630 +0000" stop="20261026003640 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026003640 +0000" stop="20261026011700 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 8: Pluvo kaj suno</title>
+    <desc lang="eo">Veteraj defioj dum la subĉiela vojaĝo.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261026011700 +0000" stop="20261026011710 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026011710 +0000" stop="20261026012530 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261026012530 +0000" stop="20261026012540 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026012540 +0000" stop="20261026022440 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Insulo de la Rozoj</title>
+    <desc lang="eo">Plena filmo en Esperanto pri la historia mikronacio.</desc>
+    <category lang="eo">Filmo</category>
+  </programme>
+  <programme start="20261026022440 +0000" stop="20261026022450 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026022450 +0000" stop="20261026025330 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 9: Trajnoj kaj biletoj</title>
+    <desc lang="eo">Aventuroj ĉe la stacidomo.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261026025330 +0000" stop="20261026025340 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026025340 +0000" stop="20261026032500 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 9: Vojaĝi sen biletoj</title>
+    <desc lang="eo">Strategiaj vojaĝdefioj kaj amuzaj taskoj.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261026032500 +0000" stop="20261026032510 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026032510 +0000" stop="20261026033020 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261026033020 +0000" stop="20261026033030 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026033030 +0000" stop="20261026043710 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">KEF 2005: La Plejpleja Festivalo</title>
+    <desc lang="eo">Kultura Esperanto-Festivalo en Helsinki.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261026043710 +0000" stop="20261026043720 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026043720 +0000" stop="20261026050530 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 10: Aventuro en la urbo</title>
+    <desc lang="eo">Esplorado de nova urbo kaj renkontoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261026050530 +0000" stop="20261026050540 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026050540 +0000" stop="20261026053240 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 10: Mangirdito scias kion vi faris</title>
+    <desc lang="eo">Misteraj ludoj kaj teamaj taktikoj.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261026053240 +0000" stop="20261026053250 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026053250 +0000" stop="20261026053700 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261026053700 +0000" stop="20261026053710 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026053710 +0000" stop="20261026055620 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">Klasika animacia Esperanto-kurso kun Mazi, Silvia kaj Bob.</desc>
+    <category lang="eo">Animacio</category>
+  </programme>
+  <programme start="20261026055620 +0000" stop="20261026055630 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026055630 +0000" stop="20261026062530 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 11: La hotelo</title>
+    <desc lang="eo">Restado en hotelo kun neatenditaj surprizoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261026062530 +0000" stop="20261026062540 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026062540 +0000" stop="20261026070000 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 11: Supren, suben kaj akven</title>
+    <desc lang="eo">Akvo-defioj kaj sportaj agadoj.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261026070000 +0000" stop="20261026070010 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026070010 +0000" stop="20261026070930 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261026070930 +0000" stop="20261026070940 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026070940 +0000" stop="20261026072850 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">Klasika animacia Esperanto-kurso kun Mazi, Silvia kaj Bob.</desc>
+    <category lang="eo">Animacio</category>
+  </programme>
+  <programme start="20261026072850 +0000" stop="20261026072900 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026072900 +0000" stop="20261026075700 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 12: La restoracio</title>
+    <desc lang="eo">Mendo de manĝaĵoj kaj lingvaj defioj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261026075700 +0000" stop="20261026075710 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026075710 +0000" stop="20261026084000 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 12: Plaĝa tago</title>
+    <desc lang="eo">Amuzaj ludoj kaj defioj ĉe la marbordo.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261026084000 +0000" stop="20261026084010 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026084010 +0000" stop="20261026084830 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261026084830 +0000" stop="20261026084840 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026084840 +0000" stop="20261026090750 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">Klasika animacia Esperanto-kurso kun Mazi, Silvia kaj Bob.</desc>
+    <category lang="eo">Animacio</category>
+  </programme>
+  <programme start="20261026090750 +0000" stop="20261026090800 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026090800 +0000" stop="20261026092150 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 13: Sur la strando</title>
+    <desc lang="eo">Someraj ferioj kaj amuzaj agadoj ĉe la maro.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261026092150 +0000" stop="20261026092200 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026092200 +0000" stop="20261026095930 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 13: La voko de Ĥthuluzo</title>
+    <desc lang="eo">Mistera vespera defio kun mitologia etoso.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261026095930 +0000" stop="20261026095940 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026095940 +0000" stop="20261026100930 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261026100930 +0000" stop="20261026100940 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026100940 +0000" stop="20261026102850 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">Klasika animacia Esperanto-kurso kun Mazi, Silvia kaj Bob.</desc>
+    <category lang="eo">Animacio</category>
+  </programme>
+  <programme start="20261026102850 +0000" stop="20261026102900 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026102900 +0000" stop="20261026105730 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 14: La muzeo</title>
+    <desc lang="eo">Kultura vizito al muzeo kun historiaj sekretoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261026105730 +0000" stop="20261026105740 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026105740 +0000" stop="20261026111210 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 14: Nia plej granda perdo</title>
+    <desc lang="eo">Dramaj momentoj kaj poentaj ŝanĝoj.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261026111210 +0000" stop="20261026111220 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026111220 +0000" stop="20261026111830 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261026111830 +0000" stop="20261026111840 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026111840 +0000" stop="20261026114850 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 15: La adiaŭa vespero</title>
+    <desc lang="eo">Gaja vespero antaŭ la reveno hejmen.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261026114850 +0000" stop="20261026114900 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026114900 +0000" stop="20261026121740 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 15: Gajni plej gravas</title>
+    <desc lang="eo">La granda antaŭ-finala konkurso.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261026121740 +0000" stop="20261026121750 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026121750 +0000" stop="20261026122100 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261026122100 +0000" stop="20261026122110 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026122110 +0000" stop="20261026124430 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 16: Ĝis revido, amikoj!</title>
+    <desc lang="eo">La granda finalo de Pasporto al la Tuta Mondo.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261026124430 +0000" stop="20261026124440 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026124440 +0000" stop="20261026130820 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 16: Ni nur parolas Esperanton</title>
+    <desc lang="eo">La grandioza finalo de Esperanto Senlime Sezono 1!</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261026130820 +0000" stop="20261026130830 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026130830 +0000" stop="20261026133440 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261026133440 +0000" stop="20261026133450 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026133450 +0000" stop="20261026141450 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 1: La unua serio en Esperanto</title>
+    <desc lang="eo">La teamoj ekas sian grandan vojaĝon tra Eŭropo.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261026141450 +0000" stop="20261026141500 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026141500 +0000" stop="20261026142120 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261026142120 +0000" stop="20261026142130 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026142130 +0000" stop="20261026142320 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261026142320 +0000" stop="20261026142330 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026142330 +0000" stop="20261026145050 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261026145050 +0000" stop="20261026145100 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026145100 +0000" stop="20261026151850 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 2: Konstruado per dolĉaĵoj kaj spagetoj</title>
+    <desc lang="eo">Krea defio uzanta nur dolĉaĵojn kaj spagetojn.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261026151850 +0000" stop="20261026151900 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026151900 +0000" stop="20261026152450 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261026152450 +0000" stop="20261026152500 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026152500 +0000" stop="20261026153310 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261026153310 +0000" stop="20261026153320 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026153320 +0000" stop="20261026160020 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261026160020 +0000" stop="20261026160030 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026160030 +0000" stop="20261026162850 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 3: Riskante la vivon sur du radoj</title>
+    <desc lang="eo">Biciklaj defioj kaj rapidaj kuroj tra la urbo.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261026162850 +0000" stop="20261026162900 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026162900 +0000" stop="20261026163530 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261026163530 +0000" stop="20261026163540 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026163540 +0000" stop="20261026164210 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261026164210 +0000" stop="20261026164220 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026164220 +0000" stop="20261026171040 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 4: Surprizo en la kuirejo</title>
+    <desc lang="eo">Kuirartaj aventuroj kaj nekutimaj petoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261026171040 +0000" stop="20261026171050 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026171050 +0000" stop="20261026174120 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 4: Filmproduktado en trajnoj</title>
+    <desc lang="eo">Kreado de filmetoj dum veturado per trajno.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261026174120 +0000" stop="20261026174130 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026174130 +0000" stop="20261026174700 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261026174700 +0000" stop="20261026174710 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026174710 +0000" stop="20261026175300 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261026175300 +0000" stop="20261026175310 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026175310 +0000" stop="20261026182210 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 5: La granda festo</title>
+    <desc lang="eo">Preparado por granda familia festo kun amikoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261026182210 +0000" stop="20261026182220 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026182220 +0000" stop="20261026185550 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 5: La venĝo de la trajnoj</title>
+    <desc lang="eo">Fervojaj misaventuroj kaj horar-defioj.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261026185550 +0000" stop="20261026185600 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026185600 +0000" stop="20261026190330 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261026190330 +0000" stop="20261026190340 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026190340 +0000" stop="20261026191120 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261026191120 +0000" stop="20261026191130 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026191130 +0000" stop="20261026194030 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 6: Nekonata vizitanto</title>
+    <desc lang="eo">Mistera vizitanto aperas ĉe la pordo.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261026194030 +0000" stop="20261026194040 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026194040 +0000" stop="20261026201220 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 6: Rilaksado inter bestoj</title>
+    <desc lang="eo">Vizito al bestoj kaj trankvilaj momentoj.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261026201220 +0000" stop="20261026201230 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026201230 +0000" stop="20261026201900 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261026201900 +0000" stop="20261026201910 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026201910 +0000" stop="20261026202330 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261026202330 +0000" stop="20261026202340 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026202340 +0000" stop="20261026205200 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 7: La sekreto malkaŝita</title>
+    <desc lang="eo">Gravaj sekretoj kaj komediaj klarigoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261026205200 +0000" stop="20261026205210 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026205210 +0000" stop="20261026212200 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 7: ASMR kun arboj</title>
+    <desc lang="eo">Nekutima kaj amuza natura ASMR-defio.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261026212200 +0000" stop="20261026212210 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026212210 +0000" stop="20261026213130 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261026213130 +0000" stop="20261026213140 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026213140 +0000" stop="20261026214120 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261026214120 +0000" stop="20261026214130 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026214130 +0000" stop="20261026221020 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 8: Vojaĝaj planoj</title>
+    <desc lang="eo">La familio kaj gastoj planas novajn vojaĝojn tra la mondo.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261026221020 +0000" stop="20261026221030 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026221030 +0000" stop="20261026225050 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 8: Pluvo kaj suno</title>
+    <desc lang="eo">Veteraj defioj dum la subĉiela vojaĝo.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261026225050 +0000" stop="20261026225100 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026225100 +0000" stop="20261026225920 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261026225920 +0000" stop="20261026225930 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026225930 +0000" stop="20261026235830 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Insulo de la Rozoj</title>
+    <desc lang="eo">Plena filmo en Esperanto pri la historia mikronacio.</desc>
+    <category lang="eo">Filmo</category>
+  </programme>
+  <programme start="20261026235830 +0000" stop="20261026235840 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261026235840 +0000" stop="20261027002720 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 9: Trajnoj kaj biletoj</title>
+    <desc lang="eo">Aventuroj ĉe la stacidomo.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261027002720 +0000" stop="20261027002730 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027002730 +0000" stop="20261027005850 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 9: Vojaĝi sen biletoj</title>
+    <desc lang="eo">Strategiaj vojaĝdefioj kaj amuzaj taskoj.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261027005850 +0000" stop="20261027005900 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027005900 +0000" stop="20261027010410 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261027010410 +0000" stop="20261027010420 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027010420 +0000" stop="20261027021100 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">KEF 2005: La Plejpleja Festivalo</title>
+    <desc lang="eo">Kultura Esperanto-Festivalo en Helsinki.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261027021100 +0000" stop="20261027021110 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027021110 +0000" stop="20261027023920 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 10: Aventuro en la urbo</title>
+    <desc lang="eo">Esplorado de nova urbo kaj renkontoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261027023920 +0000" stop="20261027023930 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027023930 +0000" stop="20261027030630 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 10: Mangirdito scias kion vi faris</title>
+    <desc lang="eo">Misteraj ludoj kaj teamaj taktikoj.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261027030630 +0000" stop="20261027030640 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027030640 +0000" stop="20261027031050 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261027031050 +0000" stop="20261027031100 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027031100 +0000" stop="20261027033010 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">Klasika animacia Esperanto-kurso kun Mazi, Silvia kaj Bob.</desc>
+    <category lang="eo">Animacio</category>
+  </programme>
+  <programme start="20261027033010 +0000" stop="20261027033020 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027033020 +0000" stop="20261027035920 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 11: La hotelo</title>
+    <desc lang="eo">Restado en hotelo kun neatenditaj surprizoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261027035920 +0000" stop="20261027035930 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027035930 +0000" stop="20261027043350 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 11: Supren, suben kaj akven</title>
+    <desc lang="eo">Akvo-defioj kaj sportaj agadoj.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261027043350 +0000" stop="20261027043400 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027043400 +0000" stop="20261027044320 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261027044320 +0000" stop="20261027044330 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027044330 +0000" stop="20261027050240 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">Klasika animacia Esperanto-kurso kun Mazi, Silvia kaj Bob.</desc>
+    <category lang="eo">Animacio</category>
+  </programme>
+  <programme start="20261027050240 +0000" stop="20261027050250 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027050250 +0000" stop="20261027053050 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 12: La restoracio</title>
+    <desc lang="eo">Mendo de manĝaĵoj kaj lingvaj defioj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261027053050 +0000" stop="20261027053100 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027053100 +0000" stop="20261027061350 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 12: Plaĝa tago</title>
+    <desc lang="eo">Amuzaj ludoj kaj defioj ĉe la marbordo.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261027061350 +0000" stop="20261027061400 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027061400 +0000" stop="20261027062220 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261027062220 +0000" stop="20261027062230 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027062230 +0000" stop="20261027064140 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">Klasika animacia Esperanto-kurso kun Mazi, Silvia kaj Bob.</desc>
+    <category lang="eo">Animacio</category>
+  </programme>
+  <programme start="20261027064140 +0000" stop="20261027064150 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027064150 +0000" stop="20261027065540 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 13: Sur la strando</title>
+    <desc lang="eo">Someraj ferioj kaj amuzaj agadoj ĉe la maro.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261027065540 +0000" stop="20261027065550 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027065550 +0000" stop="20261027073320 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 13: La voko de Ĥthuluzo</title>
+    <desc lang="eo">Mistera vespera defio kun mitologia etoso.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261027073320 +0000" stop="20261027073330 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027073330 +0000" stop="20261027074320 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261027074320 +0000" stop="20261027074330 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027074330 +0000" stop="20261027080240 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">Klasika animacia Esperanto-kurso kun Mazi, Silvia kaj Bob.</desc>
+    <category lang="eo">Animacio</category>
+  </programme>
+  <programme start="20261027080240 +0000" stop="20261027080250 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027080250 +0000" stop="20261027083120 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 14: La muzeo</title>
+    <desc lang="eo">Kultura vizito al muzeo kun historiaj sekretoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261027083120 +0000" stop="20261027083130 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027083130 +0000" stop="20261027084600 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 14: Nia plej granda perdo</title>
+    <desc lang="eo">Dramaj momentoj kaj poentaj ŝanĝoj.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261027084600 +0000" stop="20261027084610 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027084610 +0000" stop="20261027085220 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261027085220 +0000" stop="20261027085230 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027085230 +0000" stop="20261027092240 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 15: La adiaŭa vespero</title>
+    <desc lang="eo">Gaja vespero antaŭ la reveno hejmen.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261027092240 +0000" stop="20261027092250 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027092250 +0000" stop="20261027095130 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 15: Gajni plej gravas</title>
+    <desc lang="eo">La granda antaŭ-finala konkurso.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261027095130 +0000" stop="20261027095140 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027095140 +0000" stop="20261027095450 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261027095450 +0000" stop="20261027095500 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027095500 +0000" stop="20261027101820 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 16: Ĝis revido, amikoj!</title>
+    <desc lang="eo">La granda finalo de Pasporto al la Tuta Mondo.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261027101820 +0000" stop="20261027101830 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027101830 +0000" stop="20261027104210 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 16: Ni nur parolas Esperanton</title>
+    <desc lang="eo">La grandioza finalo de Esperanto Senlime Sezono 1!</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261027104210 +0000" stop="20261027104220 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027104220 +0000" stop="20261027110830 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261027110830 +0000" stop="20261027110840 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027110840 +0000" stop="20261027114840 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 1: La unua serio en Esperanto</title>
+    <desc lang="eo">La teamoj ekas sian grandan vojaĝon tra Eŭropo.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261027114840 +0000" stop="20261027114850 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027114850 +0000" stop="20261027115510 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261027115510 +0000" stop="20261027115520 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027115520 +0000" stop="20261027115710 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261027115710 +0000" stop="20261027115720 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027115720 +0000" stop="20261027122440 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261027122440 +0000" stop="20261027122450 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027122450 +0000" stop="20261027125240 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 2: Konstruado per dolĉaĵoj kaj spagetoj</title>
+    <desc lang="eo">Krea defio uzanta nur dolĉaĵojn kaj spagetojn.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261027125240 +0000" stop="20261027125250 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027125250 +0000" stop="20261027125840 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261027125840 +0000" stop="20261027125850 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027125850 +0000" stop="20261027130700 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261027130700 +0000" stop="20261027130710 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027130710 +0000" stop="20261027133410 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261027133410 +0000" stop="20261027133420 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027133420 +0000" stop="20261027140240 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 3: Riskante la vivon sur du radoj</title>
+    <desc lang="eo">Biciklaj defioj kaj rapidaj kuroj tra la urbo.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261027140240 +0000" stop="20261027140250 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027140250 +0000" stop="20261027140920 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261027140920 +0000" stop="20261027140930 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027140930 +0000" stop="20261027141600 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261027141600 +0000" stop="20261027141610 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027141610 +0000" stop="20261027144430 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 4: Surprizo en la kuirejo</title>
+    <desc lang="eo">Kuirartaj aventuroj kaj nekutimaj petoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261027144430 +0000" stop="20261027144440 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027144440 +0000" stop="20261027151510 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 4: Filmproduktado en trajnoj</title>
+    <desc lang="eo">Kreado de filmetoj dum veturado per trajno.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261027151510 +0000" stop="20261027151520 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027151520 +0000" stop="20261027152050 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261027152050 +0000" stop="20261027152100 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027152100 +0000" stop="20261027152650 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261027152650 +0000" stop="20261027152700 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027152700 +0000" stop="20261027155600 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 5: La granda festo</title>
+    <desc lang="eo">Preparado por granda familia festo kun amikoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261027155600 +0000" stop="20261027155610 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027155610 +0000" stop="20261027162940 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 5: La venĝo de la trajnoj</title>
+    <desc lang="eo">Fervojaj misaventuroj kaj horar-defioj.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261027162940 +0000" stop="20261027162950 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027162950 +0000" stop="20261027163720 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261027163720 +0000" stop="20261027163730 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027163730 +0000" stop="20261027164510 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261027164510 +0000" stop="20261027164520 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027164520 +0000" stop="20261027171420 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 6: Nekonata vizitanto</title>
+    <desc lang="eo">Mistera vizitanto aperas ĉe la pordo.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261027171420 +0000" stop="20261027171430 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027171430 +0000" stop="20261027174610 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 6: Rilaksado inter bestoj</title>
+    <desc lang="eo">Vizito al bestoj kaj trankvilaj momentoj.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261027174610 +0000" stop="20261027174620 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027174620 +0000" stop="20261027175250 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261027175250 +0000" stop="20261027175300 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027175300 +0000" stop="20261027175720 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261027175720 +0000" stop="20261027175730 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027175730 +0000" stop="20261027182550 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 7: La sekreto malkaŝita</title>
+    <desc lang="eo">Gravaj sekretoj kaj komediaj klarigoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261027182550 +0000" stop="20261027182600 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027182600 +0000" stop="20261027185550 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 7: ASMR kun arboj</title>
+    <desc lang="eo">Nekutima kaj amuza natura ASMR-defio.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261027185550 +0000" stop="20261027185600 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027185600 +0000" stop="20261027190520 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261027190520 +0000" stop="20261027190530 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027190530 +0000" stop="20261027191510 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261027191510 +0000" stop="20261027191520 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027191520 +0000" stop="20261027194410 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 8: Vojaĝaj planoj</title>
+    <desc lang="eo">La familio kaj gastoj planas novajn vojaĝojn tra la mondo.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261027194410 +0000" stop="20261027194420 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027194420 +0000" stop="20261027202440 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 8: Pluvo kaj suno</title>
+    <desc lang="eo">Veteraj defioj dum la subĉiela vojaĝo.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261027202440 +0000" stop="20261027202450 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027202450 +0000" stop="20261027203310 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261027203310 +0000" stop="20261027203320 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027203320 +0000" stop="20261027213220 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Insulo de la Rozoj</title>
+    <desc lang="eo">Plena filmo en Esperanto pri la historia mikronacio.</desc>
+    <category lang="eo">Filmo</category>
+  </programme>
+  <programme start="20261027213220 +0000" stop="20261027213230 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027213230 +0000" stop="20261027220110 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 9: Trajnoj kaj biletoj</title>
+    <desc lang="eo">Aventuroj ĉe la stacidomo.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261027220110 +0000" stop="20261027220120 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027220120 +0000" stop="20261027223240 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 9: Vojaĝi sen biletoj</title>
+    <desc lang="eo">Strategiaj vojaĝdefioj kaj amuzaj taskoj.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261027223240 +0000" stop="20261027223250 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027223250 +0000" stop="20261027223800 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261027223800 +0000" stop="20261027223810 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027223810 +0000" stop="20261027234450 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">KEF 2005: La Plejpleja Festivalo</title>
+    <desc lang="eo">Kultura Esperanto-Festivalo en Helsinki.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261027234450 +0000" stop="20261027234500 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261027234500 +0000" stop="20261028001310 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 10: Aventuro en la urbo</title>
+    <desc lang="eo">Esplorado de nova urbo kaj renkontoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261028001310 +0000" stop="20261028001320 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028001320 +0000" stop="20261028004020 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 10: Mangirdito scias kion vi faris</title>
+    <desc lang="eo">Misteraj ludoj kaj teamaj taktikoj.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261028004020 +0000" stop="20261028004030 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028004030 +0000" stop="20261028004440 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261028004440 +0000" stop="20261028004450 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028004450 +0000" stop="20261028010400 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">Klasika animacia Esperanto-kurso kun Mazi, Silvia kaj Bob.</desc>
+    <category lang="eo">Animacio</category>
+  </programme>
+  <programme start="20261028010400 +0000" stop="20261028010410 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028010410 +0000" stop="20261028013310 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 11: La hotelo</title>
+    <desc lang="eo">Restado en hotelo kun neatenditaj surprizoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261028013310 +0000" stop="20261028013320 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028013320 +0000" stop="20261028020740 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 11: Supren, suben kaj akven</title>
+    <desc lang="eo">Akvo-defioj kaj sportaj agadoj.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261028020740 +0000" stop="20261028020750 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028020750 +0000" stop="20261028021710 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261028021710 +0000" stop="20261028021720 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028021720 +0000" stop="20261028023630 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">Klasika animacia Esperanto-kurso kun Mazi, Silvia kaj Bob.</desc>
+    <category lang="eo">Animacio</category>
+  </programme>
+  <programme start="20261028023630 +0000" stop="20261028023640 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028023640 +0000" stop="20261028030440 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 12: La restoracio</title>
+    <desc lang="eo">Mendo de manĝaĵoj kaj lingvaj defioj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261028030440 +0000" stop="20261028030450 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028030450 +0000" stop="20261028034740 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 12: Plaĝa tago</title>
+    <desc lang="eo">Amuzaj ludoj kaj defioj ĉe la marbordo.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261028034740 +0000" stop="20261028034750 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028034750 +0000" stop="20261028035610 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261028035610 +0000" stop="20261028035620 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028035620 +0000" stop="20261028041530 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">Klasika animacia Esperanto-kurso kun Mazi, Silvia kaj Bob.</desc>
+    <category lang="eo">Animacio</category>
+  </programme>
+  <programme start="20261028041530 +0000" stop="20261028041540 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028041540 +0000" stop="20261028042930 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 13: Sur la strando</title>
+    <desc lang="eo">Someraj ferioj kaj amuzaj agadoj ĉe la maro.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261028042930 +0000" stop="20261028042940 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028042940 +0000" stop="20261028050710 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 13: La voko de Ĥthuluzo</title>
+    <desc lang="eo">Mistera vespera defio kun mitologia etoso.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261028050710 +0000" stop="20261028050720 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028050720 +0000" stop="20261028051710 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261028051710 +0000" stop="20261028051720 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028051720 +0000" stop="20261028053630 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Mazi en Gondolando</title>
+    <desc lang="eo">Klasika animacia Esperanto-kurso kun Mazi, Silvia kaj Bob.</desc>
+    <category lang="eo">Animacio</category>
+  </programme>
+  <programme start="20261028053630 +0000" stop="20261028053640 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028053640 +0000" stop="20261028060510 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 14: La muzeo</title>
+    <desc lang="eo">Kultura vizito al muzeo kun historiaj sekretoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261028060510 +0000" stop="20261028060520 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028060520 +0000" stop="20261028061950 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 14: Nia plej granda perdo</title>
+    <desc lang="eo">Dramaj momentoj kaj poentaj ŝanĝoj.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261028061950 +0000" stop="20261028062000 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028062000 +0000" stop="20261028062610 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261028062610 +0000" stop="20261028062620 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028062620 +0000" stop="20261028065630 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 15: La adiaŭa vespero</title>
+    <desc lang="eo">Gaja vespero antaŭ la reveno hejmen.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261028065630 +0000" stop="20261028065640 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028065640 +0000" stop="20261028072520 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 15: Gajni plej gravas</title>
+    <desc lang="eo">La granda antaŭ-finala konkurso.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261028072520 +0000" stop="20261028072530 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028072530 +0000" stop="20261028072840 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261028072840 +0000" stop="20261028072850 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028072850 +0000" stop="20261028075210 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 16: Ĝis revido, amikoj!</title>
+    <desc lang="eo">La granda finalo de Pasporto al la Tuta Mondo.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261028075210 +0000" stop="20261028075220 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028075220 +0000" stop="20261028081600 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 16: Ni nur parolas Esperanton</title>
+    <desc lang="eo">La grandioza finalo de Esperanto Senlime Sezono 1!</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261028081600 +0000" stop="20261028081610 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028081610 +0000" stop="20261028084220 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 1: Bonvenon al nia hejmo!</title>
+    <desc lang="eo">Enkonduko al la familio Bonvolo kaj ilia gastiga hejmo.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261028084220 +0000" stop="20261028084230 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028084230 +0000" stop="20261028092230 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 1: La unua serio en Esperanto</title>
+    <desc lang="eo">La teamoj ekas sian grandan vojaĝon tra Eŭropo.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261028092230 +0000" stop="20261028092240 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028092240 +0000" stop="20261028092900 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261028092900 +0000" stop="20261028092910 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028092910 +0000" stop="20261028093100 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261028093100 +0000" stop="20261028093110 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028093110 +0000" stop="20261028095830 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 2: Kiu estas tiu?</title>
+    <desc lang="eo">Novaj gastoj alvenas kaj misteraj situacioj komenciĝas.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261028095830 +0000" stop="20261028095840 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028095840 +0000" stop="20261028102630 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 2: Konstruado per dolĉaĵoj kaj spagetoj</title>
+    <desc lang="eo">Krea defio uzanta nur dolĉaĵojn kaj spagetojn.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261028102630 +0000" stop="20261028102640 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028102640 +0000" stop="20261028103230 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261028103230 +0000" stop="20261028103240 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028103240 +0000" stop="20261028104050 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261028104050 +0000" stop="20261028104100 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028104100 +0000" stop="20261028110800 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 3: La perdita valizo</title>
+    <desc lang="eo">Serĉado de perdita valizo kaj amuzaj miskomprenoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261028110800 +0000" stop="20261028110810 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028110810 +0000" stop="20261028113630 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 3: Riskante la vivon sur du radoj</title>
+    <desc lang="eo">Biciklaj defioj kaj rapidaj kuroj tra la urbo.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
+  <programme start="20261028113630 +0000" stop="20261028113640 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028113640 +0000" stop="20261028114310 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto-Muziko (Muzikvideoj)</title>
+    <desc lang="eo">Kolekto de popularaj Esperanto-muzikvideoj kaj kantoj.</desc>
+    <category lang="eo">Muziko</category>
+  </programme>
+  <programme start="20261028114310 +0000" stop="20261028114320 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028114320 +0000" stop="20261028114950 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Estas: Dokumentario</title>
+    <desc lang="eo">Dokumenta serio pri la historio kaj moderna komunumo de Esperanto.</desc>
+    <category lang="eo">Dokumentario</category>
+  </programme>
+  <programme start="20261028114950 +0000" stop="20261028115000 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028115000 +0000" stop="20261028121820 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Pasporto al la Tuta Mondo - Epizodo 4: Surprizo en la kuirejo</title>
+    <desc lang="eo">Kuirartaj aventuroj kaj nekutimaj petoj.</desc>
+    <category lang="eo">Kurso / Komedio</category>
+  </programme>
+  <programme start="20261028121820 +0000" stop="20261028121830 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto TV</title>
+    <desc lang="eo">Stacia vineto.</desc>
+    <category lang="eo">Vineto</category>
+  </programme>
+  <programme start="20261028121830 +0000" stop="20261028124900 +0000" channel="EsperantoTV.eo@SD">
+    <title lang="eo">Esperanto Senlime - Epizodo 4: Filmproduktado en trajnoj</title>
+    <desc lang="eo">Kreado de filmetoj dum veturado per trajno.</desc>
+    <category lang="eo">Realspektaklo / Junularo</category>
+  </programme>
 </tv>

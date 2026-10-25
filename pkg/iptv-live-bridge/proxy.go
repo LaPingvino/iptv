@@ -1,6 +1,8 @@
 package main
 
 import (
+	"context"
+	"crypto/tls"
 	"encoding/base64"
 	"fmt"
 	"io"
@@ -23,14 +25,27 @@ var (
 			IdleConnTimeout:     90 * time.Second,
 		},
 	}
+
+	proxyInsecureClient = &http.Client{
+		Timeout: 5 * time.Second,
+		Transport: &http.Transport{
+			MaxIdleConns:        20,
+			MaxIdleConnsPerHost: 10,
+			IdleConnTimeout:     60 * time.Second,
+			TLSClientConfig:     &tls.Config{InsecureSkipVerify: true},
+		},
+	}
 )
 
 type ProxiedChannel struct {
-	ID          string
-	Name        string
-	UpstreamURL string
-	Logo        string
-	TvgID       string
+	ID                 string
+	Name               string
+	UpstreamURL        string
+	Logo               string
+	TvgID              string
+	InsecureSkipVerify bool
+	FallbackOffline    bool
+	Timeout            time.Duration
 }
 
 var ProxiedChannels = map[string]ProxiedChannel{
@@ -118,6 +133,16 @@ var ProxiedChannels = map[string]ProxiedChannel{
 		Logo:        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/WDR_Fernsehen_Logo_2018.svg/960px-WDR_Fernsehen_Logo_2018.svg.png",
 		TvgID:       "WDRFernsehen.de@Koln",
 	},
+	"rttl": {
+		ID:                 "rttl",
+		Name:               "RTTL (Televisão de Timor-Leste)",
+		UpstreamURL:        "https://tv.rttlep.tl:443/live/myStream/playlist.m3u8",
+		Logo:               "http://live.rttlep.tl/img/og_video.png",
+		TvgID:              "TVTimorLeste.tl",
+		InsecureSkipVerify: true,
+		FallbackOffline:    true,
+		Timeout:            4 * time.Second,
+	},
 }
 
 // ResolveProxiedChannel maps incoming path requests to a known ProxiedChannel.
@@ -152,6 +177,8 @@ func ResolveProxiedChannel(path string) (ProxiedChannel, bool) {
 		return ProxiedChannels["tagesschau24"], true
 	case "wdr", "wdr.m3u8":
 		return ProxiedChannels["wdr"], true
+	case "rttl", "rttl.m3u8", "tvtl", "tvtl.m3u8":
+		return ProxiedChannels["rttl"], true
 	}
 
 	trimmedExt := strings.TrimSuffix(norm, ".m3u8")
@@ -301,14 +328,30 @@ func RewriteM3U8(content string, upstreamURL string) (string, error) {
 	return strings.Join(out, "\n"), nil
 }
 
+func selectProxyClient(targetURL string, insecure bool) *http.Client {
+	if insecure || strings.Contains(strings.ToLower(targetURL), ".rttlep.tl") {
+		return proxyInsecureClient
+	}
+	return proxyHTTPClient
+}
+
 // HandleProxiedChannel serves the root master playlist for a named channel.
 func HandleProxiedChannel(w http.ResponseWriter, r *http.Request, ch ProxiedChannel) {
+	if ch.Timeout > 0 {
+		ctx, cancel := context.WithTimeout(r.Context(), ch.Timeout)
+		defer cancel()
+		r = r.WithContext(ctx)
+	}
 	token := base64.RawURLEncoding.EncodeToString([]byte(ch.UpstreamURL))
-	HandleHLSManifest(w, r, token)
+	handleHLSManifestInternal(w, r, token, ch.InsecureSkipVerify, ch.FallbackOffline)
 }
 
 // HandleHLSManifest fetches and rewrites an upstream HLS playlist.
 func HandleHLSManifest(w http.ResponseWriter, r *http.Request, rawToken string) {
+	handleHLSManifestInternal(w, r, rawToken, false, false)
+}
+
+func handleHLSManifestInternal(w http.ResponseWriter, r *http.Request, rawToken string, insecure bool, fallbackOffline bool) {
 	if r.Method == http.MethodOptions {
 		w.Header().Set("Access-Control-Allow-Origin", "*")
 		w.Header().Set("Access-Control-Allow-Headers", "*")
@@ -331,14 +374,23 @@ func HandleHLSManifest(w http.ResponseWriter, r *http.Request, rawToken string) 
 	}
 	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36")
 
-	resp, err := proxyHTTPClient.Do(req)
+	client := selectProxyClient(manifestURL, insecure)
+	resp, err := client.Do(req)
 	if err != nil {
+		if fallbackOffline {
+			serveOfflineSlate(w, r)
+			return
+		}
 		http.Error(w, fmt.Sprintf("upstream error: %v", err), http.StatusBadGateway)
 		return
 	}
 	defer resp.Body.Close()
 
 	if resp.StatusCode != http.StatusOK {
+		if fallbackOffline {
+			serveOfflineSlate(w, r)
+			return
+		}
 		http.Error(w, fmt.Sprintf("upstream returned HTTP %d", resp.StatusCode), resp.StatusCode)
 		return
 	}
@@ -396,7 +448,8 @@ func HandleHLSSegment(w http.ResponseWriter, r *http.Request, rawToken string) {
 	}
 	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36")
 
-	resp, err := proxyHTTPClient.Do(req)
+	client := selectProxyClient(segURL, false)
+	resp, err := client.Do(req)
 	if err != nil {
 		log.Printf("[HLS-Proxy] Upstream segment error: %v (url: %s)", err, segURL)
 		http.Error(w, fmt.Sprintf("upstream error: %v", err), http.StatusBadGateway)

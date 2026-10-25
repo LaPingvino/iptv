@@ -97,7 +97,7 @@
   },
   {
     "name": "TVM (Televisão de Moçambique)",
-    "group": "MZ Geral",
+    "group": "CPLP Geral",
     "tvg_id": "TVM.mz",
     "tvg_name": "TVM",
     "url": "https://stream.tvm.co.mz/hls/tvm/playlist.m3u8",
@@ -105,7 +105,7 @@
   },
   {
     "name": "TVM Internacional",
-    "group": "MZ Geral",
+    "group": "CPLP Geral",
     "tvg_id": "TVMInt.mz",
     "tvg_name": "TVM Internacional",
     "url": "https://stream.tvm.co.mz/hls/tvmi/playlist.m3u8",
@@ -113,7 +113,7 @@
   },
   {
     "name": "TV Miramar (Moçambique)",
-    "group": "MZ Geral",
+    "group": "CPLP Geral",
     "tvg_id": "Miramar.mz",
     "tvg_name": "TV Miramar",
     "logo": "https://digitalrmapps.fra1.cdn.digitaloceanspaces.com/images/radios/miramar_icon.png",
@@ -122,7 +122,7 @@
   },
   {
     "name": "TV Sucesso (Moçambique)",
-    "group": "MZ Geral",
+    "group": "CPLP Geral",
     "tvg_id": "TVSucesso.mz",
     "tvg_name": "TV Sucesso",
     "url": "https://kiefte.eu/iptv/kick/tvsucesso",
@@ -130,7 +130,7 @@
   },
   {
     "name": "TV Vitória Moçambique",
-    "group": "MZ Geral",
+    "group": "CPLP Geral",
     "tvg_id": "TVVitoria.mz",
     "tvg_name": "TV Vitória",
     "url": "https://stmv1.voxplayer.com.br/inacio/inacio/playlist.m3u8",
@@ -138,15 +138,24 @@
   },
   {
     "name": "MNTV Moçambique",
-    "group": "MZ Geral",
+    "group": "CPLP Geral",
     "tvg_id": "MNTV.mz",
     "tvg_name": "MNTV",
     "url": "https://www.khuwemultimedia.com/hls/mntv/mntv.m3u8",
     "chno": 15
   },
   {
-    "name": "DuckTV (Toddlers & Visual Animation HD)",
-    "group": "Infantil & Kids",
+    "name": "RTTL / TVTL (Televisão de Timor-Leste)",
+    "group": "CPLP Geral",
+    "tvg_id": "TVTimorLeste.tl",
+    "tvg_name": "RTTL Timor-Leste",
+    "logo": "http://live.rttlep.tl/img/og_video.png",
+    "url": "https://kiefte.eu/iptv/rttl.m3u8",
+    "chno": 16
+  },
+  {
+    "name": "DuckTV (Toddlers \u0026 Visual Animation HD)",
+    "group": "Infantil \u0026 Kids",
     "tvg_id": "DuckTV.sk@HD",
     "tvg_name": "DuckTV",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Ducktv_logo.png/512px-Ducktv_logo.png",
@@ -3161,6 +3170,69 @@
     "logo": "https://www.hyperadio.nl/wp-content/uploads/2025/02/cropped-New_Transparent-020-scaled-1-192x192.png",
     "url": "https://artemis.streamerr.co/listen/hype_radio/radio.mp3",
     "chno": 579
+  },
+  {
+    "name": "Rádio Liberdade 95.8 FM (Díli • Timor-Leste)",
+    "group": "TL Rádio",
+    "tvg_id": "RadioLiberdade.tl",
+    "tvg_name": "Rádio Liberdade Díli",
+    "logo": "",
+    "url": "https://streaming.kalohan.net/proxy/raliber?mp=/stream",
+    "chno": 580
+  },
+  {
+    "name": "Rádio Comunidade Comoro 94.1 FM (Díli • Timor-Leste)",
+    "group": "TL Rádio",
+    "tvg_id": "RadioComoro.tl",
+    "tvg_name": "Rádio Comunidade Comoro",
+    "logo": "",
+    "url": "https://streaming.kalohan.net/proxy/comoro?mp=/stream",
+    "chno": 581
+  },
+  {
+    "name": "Rádio Rakambia 99.5 FM (Díli • Timor-Leste)",
+    "group": "TL Rádio",
+    "tvg_id": "RadioRakambia.tl",
+    "tvg_name": "Rádio Rakambia Díli",
+    "logo": "",
+    "url": "https://streaming.kalohan.net/proxy/rakambia?mp=/stream",
+    "chno": 582
+  },
+  {
+    "name": "RAFA FM 103.5 (Díli • Timor-Leste)",
+    "group": "TL Rádio",
+    "tvg_id": "RAFAFM.tl",
+    "tvg_name": "RAFA FM 103.5 Díli",
+    "logo": "",
+    "url": "https://radios.justweb.pt/8026/stream",
+    "chno": 583
+  },
+  {
+    "name": "AWR Timor-Leste 92.3 FM (Díli • Timor-Leste)",
+    "group": "TL Rádio",
+    "tvg_id": "AWRTimorLeste.tl",
+    "tvg_name": "AWR Timor-Leste",
+    "logo": "",
+    "url": "https://mediacp-id1.arenastreaming.com:2020/stream/awrtimorleste/;",
+    "chno": 584
+  },
+  {
+    "name": "Rádio Comunidade Mauloko 89.7 FM (Maubisse • Timor-Leste)",
+    "group": "TL Rádio",
+    "tvg_id": "RadioMauloko.tl",
+    "tvg_name": "Rádio Mauloko Maubisse",
+    "logo": "",
+    "url": "https://streaming.kalohan.net/proxy/mauloko?mp=/stream",
+    "chno": 585
+  },
+  {
+    "name": "Rádio Orluli 88.5 FM (Ainaro • Timor-Leste)",
+    "group": "TL Rádio",
+    "tvg_id": "RadioOrluli.tl",
+    "tvg_name": "Rádio Orluli Ainaro",
+    "logo": "",
+    "url": "http://streaming.kalohan.net:8000/stream",
+    "chno": 586
   },
   {
     "name": "Studio Brussel",

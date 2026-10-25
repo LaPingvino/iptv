@@ -49,23 +49,26 @@ https://streaming-live.rtp.pt/liverepeater/rtpacoresHD.smil/playlist.m3u8
 #EXTVLCOPT:http-referrer=https://www.rtp.pt/play/direto/rtpafrica
 https://streaming-live.rtp.pt/liverepeater/rtpafrica.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="TVM.mz" tvg-name="TVM" group-title="MZ Geral" tvg-chno="10",TVM (Televisão de Moçambique)
+#EXTINF:-1 tvg-id="TVM.mz" tvg-name="TVM" group-title="CPLP Geral" tvg-chno="10",TVM (Televisão de Moçambique)
 https://stream.tvm.co.mz/hls/tvm/playlist.m3u8
 
-#EXTINF:-1 tvg-id="TVMInt.mz" tvg-name="TVM Internacional" group-title="MZ Geral" tvg-chno="11",TVM Internacional
+#EXTINF:-1 tvg-id="TVMInt.mz" tvg-name="TVM Internacional" group-title="CPLP Geral" tvg-chno="11",TVM Internacional
 https://stream.tvm.co.mz/hls/tvmi/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Miramar.mz" tvg-name="TV Miramar" tvg-logo="https://digitalrmapps.fra1.cdn.digitaloceanspaces.com/images/radios/miramar_icon.png" group-title="MZ Geral" tvg-chno="12",TV Miramar (Moçambique)
+#EXTINF:-1 tvg-id="Miramar.mz" tvg-name="TV Miramar" tvg-logo="https://digitalrmapps.fra1.cdn.digitaloceanspaces.com/images/radios/miramar_icon.png" group-title="CPLP Geral" tvg-chno="12",TV Miramar (Moçambique)
 https://cdn.mycloudstream.io/hls/live/broadcast/8xdonf9w/index.m3u8?sid=239
 
-#EXTINF:-1 tvg-id="TVSucesso.mz" tvg-name="TV Sucesso" group-title="MZ Geral" tvg-chno="13",TV Sucesso (Moçambique)
+#EXTINF:-1 tvg-id="TVSucesso.mz" tvg-name="TV Sucesso" group-title="CPLP Geral" tvg-chno="13",TV Sucesso (Moçambique)
 https://kiefte.eu/iptv/kick/tvsucesso
 
-#EXTINF:-1 tvg-id="TVVitoria.mz" tvg-name="TV Vitória" group-title="MZ Geral" tvg-chno="14",TV Vitória Moçambique
+#EXTINF:-1 tvg-id="TVVitoria.mz" tvg-name="TV Vitória" group-title="CPLP Geral" tvg-chno="14",TV Vitória Moçambique
 https://stmv1.voxplayer.com.br/inacio/inacio/playlist.m3u8
 
-#EXTINF:-1 tvg-id="MNTV.mz" tvg-name="MNTV" group-title="MZ Geral" tvg-chno="15",MNTV Moçambique
+#EXTINF:-1 tvg-id="MNTV.mz" tvg-name="MNTV" group-title="CPLP Geral" tvg-chno="15",MNTV Moçambique
 https://www.khuwemultimedia.com/hls/mntv/mntv.m3u8
+
+#EXTINF:-1 tvg-id="TVTimorLeste.tl" tvg-name="RTTL Timor-Leste" tvg-logo="http://live.rttlep.tl/img/og_video.png" group-title="CPLP Geral" tvg-chno="16",RTTL / TVTL (Televisão de Timor-Leste)
+https://kiefte.eu/iptv/rttl.m3u8
 
 #EXTINF:-1 tvg-id="DuckTV.sk@HD" tvg-name="DuckTV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Ducktv_logo.png/512px-Ducktv_logo.png" group-title="Infantil & Kids" tvg-chno="20",DuckTV (Toddlers & Visual Animation HD)
 https://d6lk10bkdgfae.cloudfront.net/playlist.m3u8
@@ -1123,6 +1126,27 @@ https://stream.studio040.nl/studio040
 
 #EXTINF:-1 tvg-id="HypeRadio.nl" tvg-name="Hype Radio" tvg-logo="https://www.hyperadio.nl/wp-content/uploads/2025/02/cropped-New_Transparent-020-scaled-1-192x192.png" group-title="NL Rádio" tvg-chno="579" radio="true",Hype Radio (Urban, Latin & Afro • NL/Curaçao)
 https://artemis.streamerr.co/listen/hype_radio/radio.mp3
+
+#EXTINF:-1 tvg-id="RadioLiberdade.tl" tvg-name="Rádio Liberdade Díli" group-title="TL Rádio" tvg-chno="580" radio="true",Rádio Liberdade 95.8 FM (Díli • Timor-Leste)
+https://streaming.kalohan.net/proxy/raliber?mp=/stream
+
+#EXTINF:-1 tvg-id="RadioComoro.tl" tvg-name="Rádio Comunidade Comoro" group-title="TL Rádio" tvg-chno="581" radio="true",Rádio Comunidade Comoro 94.1 FM (Díli • Timor-Leste)
+https://streaming.kalohan.net/proxy/comoro?mp=/stream
+
+#EXTINF:-1 tvg-id="RadioRakambia.tl" tvg-name="Rádio Rakambia Díli" group-title="TL Rádio" tvg-chno="582" radio="true",Rádio Rakambia 99.5 FM (Díli • Timor-Leste)
+https://streaming.kalohan.net/proxy/rakambia?mp=/stream
+
+#EXTINF:-1 tvg-id="RAFAFM.tl" tvg-name="RAFA FM 103.5 Díli" group-title="TL Rádio" tvg-chno="583" radio="true",RAFA FM 103.5 (Díli • Timor-Leste)
+https://radios.justweb.pt/8026/stream
+
+#EXTINF:-1 tvg-id="AWRTimorLeste.tl" tvg-name="AWR Timor-Leste" group-title="TL Rádio" tvg-chno="584" radio="true",AWR Timor-Leste 92.3 FM (Díli • Timor-Leste)
+https://mediacp-id1.arenastreaming.com:2020/stream/awrtimorleste/;
+
+#EXTINF:-1 tvg-id="RadioMauloko.tl" tvg-name="Rádio Mauloko Maubisse" group-title="TL Rádio" tvg-chno="585" radio="true",Rádio Comunidade Mauloko 89.7 FM (Maubisse • Timor-Leste)
+https://streaming.kalohan.net/proxy/mauloko?mp=/stream
+
+#EXTINF:-1 tvg-id="RadioOrluli.tl" tvg-name="Rádio Orluli Ainaro" group-title="TL Rádio" tvg-chno="586" radio="true",Rádio Orluli 88.5 FM (Ainaro • Timor-Leste)
+http://streaming.kalohan.net:8000/stream
 
 #EXTINF:-1 tvg-id="StudioBrussel.be" tvg-name="Studio Brussel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="BE Rádio" tvg-chno="600" radio="true",Studio Brussel
 https://icecast.vrtcdn.be/stubru-high.mp3

@@ -232,6 +232,27 @@ https://stream.studio040.nl/studio040
 #EXTINF:-1 tvg-id="HypeRadio.nl" tvg-name="Hype Radio" tvg-logo="https://www.hyperadio.nl/wp-content/uploads/2025/02/cropped-New_Transparent-020-scaled-1-192x192.png" group-title="NL Rádio" tvg-chno="579" radio="true",Hype Radio (Urban, Latin & Afro • NL/Curaçao)
 https://artemis.streamerr.co/listen/hype_radio/radio.mp3
 
+#EXTINF:-1 tvg-id="RadioLiberdade.tl" tvg-name="Rádio Liberdade Díli" group-title="TL Rádio" tvg-chno="580" radio="true",Rádio Liberdade 95.8 FM (Díli • Timor-Leste)
+https://streaming.kalohan.net/proxy/raliber?mp=/stream
+
+#EXTINF:-1 tvg-id="RadioComoro.tl" tvg-name="Rádio Comunidade Comoro" group-title="TL Rádio" tvg-chno="581" radio="true",Rádio Comunidade Comoro 94.1 FM (Díli • Timor-Leste)
+https://streaming.kalohan.net/proxy/comoro?mp=/stream
+
+#EXTINF:-1 tvg-id="RadioRakambia.tl" tvg-name="Rádio Rakambia Díli" group-title="TL Rádio" tvg-chno="582" radio="true",Rádio Rakambia 99.5 FM (Díli • Timor-Leste)
+https://streaming.kalohan.net/proxy/rakambia?mp=/stream
+
+#EXTINF:-1 tvg-id="RAFAFM.tl" tvg-name="RAFA FM 103.5 Díli" group-title="TL Rádio" tvg-chno="583" radio="true",RAFA FM 103.5 (Díli • Timor-Leste)
+https://radios.justweb.pt/8026/stream
+
+#EXTINF:-1 tvg-id="AWRTimorLeste.tl" tvg-name="AWR Timor-Leste" group-title="TL Rádio" tvg-chno="584" radio="true",AWR Timor-Leste 92.3 FM (Díli • Timor-Leste)
+https://mediacp-id1.arenastreaming.com:2020/stream/awrtimorleste/;
+
+#EXTINF:-1 tvg-id="RadioMauloko.tl" tvg-name="Rádio Mauloko Maubisse" group-title="TL Rádio" tvg-chno="585" radio="true",Rádio Comunidade Mauloko 89.7 FM (Maubisse • Timor-Leste)
+https://streaming.kalohan.net/proxy/mauloko?mp=/stream
+
+#EXTINF:-1 tvg-id="RadioOrluli.tl" tvg-name="Rádio Orluli Ainaro" group-title="TL Rádio" tvg-chno="586" radio="true",Rádio Orluli 88.5 FM (Ainaro • Timor-Leste)
+http://streaming.kalohan.net:8000/stream
+
 #EXTINF:-1 tvg-id="StudioBrussel.be" tvg-name="Studio Brussel" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Studio-Brussel.png" group-title="BE Rádio" tvg-chno="600" radio="true",Studio Brussel
 https://icecast.vrtcdn.be/stubru-high.mp3
 
