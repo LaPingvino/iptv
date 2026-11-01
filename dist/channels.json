@@ -154,8 +154,8 @@
     "chno": 16
   },
   {
-    "name": "DuckTV (Toddlers \u0026 Visual Animation HD)",
-    "group": "Infantil \u0026 Kids",
+    "name": "DuckTV (Toddlers & Visual Animation HD)",
+    "group": "Infantil & Kids",
     "tvg_id": "DuckTV.sk@HD",
     "tvg_name": "DuckTV",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Ducktv_logo.png/512px-Ducktv_logo.png",
@@ -3176,7 +3176,6 @@
     "group": "TL Rádio",
     "tvg_id": "RadioLiberdade.tl",
     "tvg_name": "Rádio Liberdade Díli",
-    "logo": "",
     "url": "https://streaming.kalohan.net/proxy/raliber?mp=/stream",
     "chno": 580
   },
@@ -3185,7 +3184,6 @@
     "group": "TL Rádio",
     "tvg_id": "RadioComoro.tl",
     "tvg_name": "Rádio Comunidade Comoro",
-    "logo": "",
     "url": "https://streaming.kalohan.net/proxy/comoro?mp=/stream",
     "chno": 581
   },
@@ -3194,7 +3192,6 @@
     "group": "TL Rádio",
     "tvg_id": "RadioRakambia.tl",
     "tvg_name": "Rádio Rakambia Díli",
-    "logo": "",
     "url": "https://streaming.kalohan.net/proxy/rakambia?mp=/stream",
     "chno": 582
   },
@@ -3203,7 +3200,6 @@
     "group": "TL Rádio",
     "tvg_id": "RAFAFM.tl",
     "tvg_name": "RAFA FM 103.5 Díli",
-    "logo": "",
     "url": "https://radios.justweb.pt/8026/stream",
     "chno": 583
   },
@@ -3212,7 +3208,6 @@
     "group": "TL Rádio",
     "tvg_id": "AWRTimorLeste.tl",
     "tvg_name": "AWR Timor-Leste",
-    "logo": "",
     "url": "https://mediacp-id1.arenastreaming.com:2020/stream/awrtimorleste/;",
     "chno": 584
   },
@@ -3221,7 +3216,6 @@
     "group": "TL Rádio",
     "tvg_id": "RadioMauloko.tl",
     "tvg_name": "Rádio Mauloko Maubisse",
-    "logo": "",
     "url": "https://streaming.kalohan.net/proxy/mauloko?mp=/stream",
     "chno": 585
   },
@@ -3230,7 +3224,6 @@
     "group": "TL Rádio",
     "tvg_id": "RadioOrluli.tl",
     "tvg_name": "Rádio Orluli Ainaro",
-    "logo": "",
     "url": "http://streaming.kalohan.net:8000/stream",
     "chno": 586
   },
